@@ -1,0 +1,58 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #4285f4;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.map {
+    flex: 1;
+    position: relative;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.icon-button:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}

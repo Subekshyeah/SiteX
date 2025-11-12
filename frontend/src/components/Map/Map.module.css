@@ -1,0 +1,17 @@
+/* Give the map a visible height. Adjust `--top-offset` to match your navbar height */
+:root { --top-offset: 56px; }
+
+.map-container {
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.map {
+  width: 100%;
+  height: calc(100vh - var(--top-offset));
+  min-height: 300px;
+}

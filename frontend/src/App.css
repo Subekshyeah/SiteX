@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.leaflet-container {
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+}
