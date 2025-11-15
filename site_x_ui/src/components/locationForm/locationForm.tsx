@@ -164,8 +164,13 @@ export default function LocationForm() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [geoDataList, setGeoDataList] = useState<Array<{ id: string; name: string; data: any }>>([]);
   const DATASETS = [
+    { id: 'none', name: 'None', path: '' },
     { id: 'cafes', name: 'Cafes', path: '/data/cafes.geojson' },
     { id: 'temples', name: 'Temples', path: '/data/temples.geojson' },
+    { id: 'banks', name: 'Banks', path: '/data/banks.geojson' },
+    { id: 'education', name: 'Education', path: '/data/education.geojson' },
+    { id: 'health', name: 'Health', path: '/data/health.geojson' },
+    { id: 'other', name: 'Other', path: '/data/other.geojson' },
   ];
   const [datasetId, setDatasetId] = useState<string>(DATASETS[0].id);
   const [showPlaces, setShowPlaces] = useState(false);
@@ -185,7 +190,23 @@ export default function LocationForm() {
   useEffect(() => {
     let mounted = true;
     const ds = DATASETS.find((d) => d.id === datasetId);
-    if (!ds) return;
+    if (!ds) {
+      setGeoDataList([]);
+      setSelectedFeatureId(null);
+      setGeoLoading(false);
+      setShowPlaces(false);
+      return;
+    }
+
+    // special-case: "None" — clear any loaded data and hide places
+    if (ds.id === 'none') {
+      setGeoDataList([]);
+      setSelectedFeatureId(null);
+      setShowPlaces(false);
+      setGeoLoading(false);
+      return;
+    }
+
     setGeoLoading(true);
     fetch(ds.path)
       .then((r) => {
@@ -196,10 +217,13 @@ export default function LocationForm() {
         if (!mounted) return;
         setGeoDataList([{ id: ds.id, name: ds.name, data: json }]);
         setSelectedFeatureId(null);
+        // auto-show places when a valid dataset is loaded
+        setShowPlaces(true);
       })
       .catch(() => {
         if (!mounted) return;
         setGeoDataList([]);
+        setShowPlaces(false);
       })
       .finally(() => mounted && setGeoLoading(false));
 
@@ -510,16 +534,7 @@ export default function LocationForm() {
                     ))}
                   </select>
                 </div>
-                <div className="flex items-center gap-3 mt-3">
-                  <input
-                    id="show-places-toggle-mobile"
-                    type="checkbox"
-                    checked={showPlaces}
-                    onChange={(e) => setShowPlaces(e.target.checked)}
-                    className="w-4 h-4 rounded"
-                  />
-                  <Label htmlFor="show-places-toggle-mobile">Show data points</Label>
-                </div>
+                
               </form>
             </CardContent>
           </Card>
