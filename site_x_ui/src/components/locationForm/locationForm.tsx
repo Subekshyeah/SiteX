@@ -156,8 +156,8 @@ function MapResizeHandler({ sheetOpen }: { sheetOpen: boolean }) {
 }
 
 export default function LocationForm() {
-  const [lat, setLat] = useState<number>(27.7172); // Kathmandu
-  const [lng, setLng] = useState<number>(85.3240);
+  const [lat, setLat] = useState<number>(27.670587); // Kathmandu
+  const [lng, setLng] = useState<number>(85.420868);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
@@ -166,6 +166,8 @@ export default function LocationForm() {
   const [showPlaces, setShowPlaces] = useState(false);
   const [geoLoading, setGeoLoading] = useState(false);
   const [selectedFeatureId, setSelectedFeatureId] = useState<string | number | null>(null);
+  const [csvRows, setCsvRows] = useState<Array<Record<string, string>> | null>(null);
+  const [selectedCsvRow, setSelectedCsvRow] = useState<Record<string, string> | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -196,6 +198,99 @@ export default function LocationForm() {
     })
     .finally(() => setGeoLoading(false));
   }, [showPlaces]);
+
+  // --- CSV parsing and matching ---
+  const parseCsvLine = (line: string) => {
+    const out: string[] = [];
+    let cur = "";
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') {
+        if (inQuotes && i + 1 < line.length && line[i + 1] === '"') {
+          // escaped quote
+          cur += '"';
+          i++;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (ch === ',' && !inQuotes) {
+        out.push(cur);
+        cur = "";
+      } else {
+        cur += ch;
+      }
+    }
+    out.push(cur);
+    return out;
+  };
+
+  const parseCsv = (text: string) => {
+    const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);
+    if (lines.length === 0) return [];
+    const headers = parseCsvLine(lines[0]).map((h) => h.trim());
+    const rows: Array<Record<string, string>> = [];
+    for (let i = 1; i < lines.length; i++) {
+      const cols = parseCsvLine(lines[i]);
+      if (cols.length === 0) continue;
+      const row: Record<string, string> = {};
+      for (let j = 0; j < headers.length; j++) {
+        row[headers[j]] = (cols[j] ?? "").trim();
+      }
+      rows.push(row);
+    }
+    return rows;
+  };
+
+  const loadCsvIfNeeded = async () => {
+    if (csvRows) return csvRows;
+    try {
+      const res = await fetch('/data/compact_summary_images.csv');
+      if (!res.ok) return null;
+      const txt = await res.text();
+      const parsed = parseCsv(txt);
+      setCsvRows(parsed);
+      return parsed;
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const findNearestRow = (lat: number, lng: number, rows: Array<Record<string, string>> | null) => {
+    if (!rows || rows.length === 0) return null;
+    let best: Record<string, string> | null = null;
+    let bestDist = Infinity;
+    for (const r of rows) {
+      const rl = parseFloat((r['lat'] ?? r['Lat'] ?? '').toString());
+      const rln = parseFloat((r['lng'] ?? r['Lng'] ?? r['lon'] ?? '').toString());
+      if (Number.isFinite(rl) && Number.isFinite(rln)) {
+        const dx = rl - lat;
+        const dy = rln - lng;
+        const dist = dx * dx + dy * dy; // squared degrees
+        if (dist < bestDist) {
+          bestDist = dist;
+          best = r;
+        }
+      }
+    }
+    // threshold: within ~0.0005 degrees (~50m) squared -> 2.5e-7
+    if (best && bestDist < 0.0005 * 0.0005) return best;
+    return null;
+  };
+
+  // watch lat/lng and try to find CSV row
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      const rows = await loadCsvIfNeeded();
+      if (!mounted) return;
+      const found = findNearestRow(lat, lng, rows);
+      setSelectedCsvRow(found);
+    })();
+    return () => {
+      mounted = false;
+    };
+  }, [lat, lng]);
 
   useEffect(() => {
     if (!showPlaces) {
@@ -453,6 +548,37 @@ export default function LocationForm() {
               )}
             </div>
           </div>
+          {/* CSV info overlay for matched location */}
+          {selectedCsvRow && (
+            <div className="absolute bottom-6 left-4 z-[9999]">
+              <div
+                className="w-80 h-44 rounded-lg overflow-hidden shadow-lg text-white"
+                style={{
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundImage: selectedCsvRow['imageUrl'] ? `url(${selectedCsvRow['imageUrl']})` : undefined,
+                }}
+              >
+                <div className="w-full h-full bg-black/30 p-3 flex flex-col justify-end">
+                  <div className="text-lg font-bold leading-tight">{selectedCsvRow['name'] || selectedCsvRow['place_id'] || 'Place'}</div>
+                  <div className="text-sm mt-1">{selectedCsvRow['address']}</div>
+                  <div className="flex items-center justify-between mt-2">
+                    <div className="text-sm">{selectedCsvRow['phone'] ? selectedCsvRow['phone'] : ''}</div>
+                    {selectedCsvRow['url'] && (
+                      <a
+                        href={selectedCsvRow['url']}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-xs bg-white/20 px-2 py-1 rounded-md hover:bg-white/30"
+                      >
+                        Open in Maps
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
       </div>
     </div>
   );
