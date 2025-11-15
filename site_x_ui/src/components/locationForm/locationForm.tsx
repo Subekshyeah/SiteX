@@ -165,6 +165,7 @@ export default function LocationForm() {
   const [geoDataList, setGeoDataList] = useState<Array<{ id: string; name: string; data: any }>>([]);
   const [showPlaces, setShowPlaces] = useState(false);
   const [geoLoading, setGeoLoading] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedFeatureId, setSelectedFeatureId] = useState<string | number | null>(null);
   const [csvRows, setCsvRows] = useState<Array<Record<string, string>> | null>(null);
   const [selectedCsvRow, setSelectedCsvRow] = useState<Record<string, string> | null>(null);
@@ -176,8 +177,7 @@ export default function LocationForm() {
   };
 
   useEffect(() => {
-    // load geojson files only when the user requests (showPlaces)
-    if (!showPlaces) return;
+    // load geojson files on mount so the places panel can search them
     if (geoDataList.length > 0) return; // already loaded
 
     const files = ["/data/cafe.geojson"];
@@ -197,7 +197,7 @@ export default function LocationForm() {
       if (filtered.length > 0) setGeoDataList((prev) => [...prev, ...filtered]);
     })
     .finally(() => setGeoLoading(false));
-  }, [showPlaces]);
+  }, []);
 
   // --- CSV parsing and matching ---
   const parseCsvLine = (line: string) => {
@@ -503,51 +503,67 @@ export default function LocationForm() {
           </MapContainer>
 
           {/* Places panel (toggle) */}
-          <div className="absolute top-4 right-4 z-[9999]">
-            <div className="bg-white/90 backdrop-blur-sm rounded-md p-2 shadow max-w-xs">
-              <button
-                className="px-3 py-1 bg-primary text-white rounded-md"
-                onClick={() => setShowPlaces((s) => !s)}
-              >
-                {showPlaces ? "Close Places" : "Places"}
-              </button>
-              {showPlaces && (
+          {showPlaces && (
+            <div className="absolute top-4 right-4 z-[9999]">
+              <div className="bg-white/90 backdrop-blur-sm rounded-md p-2 shadow max-w-xs">
+                <div className="px-2 pb-2">
+                  <input
+                    type="search"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search places..."
+                    className="w-full px-2 py-1 rounded border text-sm"
+                  />
+                </div>
                 <div className="mt-2 max-h-60 overflow-auto">
                   {geoLoading && <div className="text-sm text-muted-foreground p-2">Loading...</div>}
                   {!geoLoading && geoDataList.length === 0 && <div className="text-sm text-muted-foreground p-2">No places loaded</div>}
-                  {geoDataList.map((item) => (
-                    <div key={item.id} className="mb-2">
-                      <div className="text-sm font-semibold">{item.name}</div>
-                      <ul className="text-sm">
-                        {(item.data?.features || []).map((f: any, idx: number) => {
-                          const fid = f.id ?? f.properties?.id ?? f.properties?.name ?? `${item.id}-${idx}`;
-                          const label = f.properties?.name ?? fid;
-                          return (
-                            <li key={fid} className="py-1">
-                              <button
-                                className="text-left w-full text-slate-700 hover:underline"
-                                onClick={() => {
-                                  try {
-                                    const coords = f.geometry.type === "Point" ? f.geometry.coordinates : f.geometry.coordinates[0];
-                                    setLat(coords[1]);
-                                    setLng(coords[0]);
-                                  } catch (e) {}
-                                  setSelectedFeatureId(f.properties?.name ?? f.id ?? fid);
-                                  setShowPlaces(false);
-                                }}
-                              >
-                                {label}
-                              </button>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  ))}
+                  {geoDataList.map((item) => {
+                    const features = (item.data?.features || []) as any[];
+                    const q = searchQuery.trim().toLowerCase();
+                    const hasQuery = q.length > 0;
+                    const filtered = hasQuery
+                      ? features.filter((f) => {
+                          const label = (f.properties?.name ?? '').toString().toLowerCase();
+                          return label.includes(q) || item.name.toLowerCase().includes(q);
+                        })
+                      : features;
+
+                    if (filtered.length === 0) return null;
+
+                    return (
+                      <div key={item.id} className="mb-2">
+                        <div className="text-sm font-semibold">{item.name}</div>
+                        <ul className="text-sm">
+                          {filtered.map((f: any, idx: number) => {
+                            const fid = f.id ?? f.properties?.id ?? f.properties?.name ?? `${item.id}-${idx}`;
+                            const label = f.properties?.name ?? fid;
+                            return (
+                              <li key={fid} className="py-1">
+                                <button
+                                  className="text-left w-full text-slate-700 hover:underline"
+                                  onClick={() => {
+                                    try {
+                                      const coords = f.geometry.type === "Point" ? f.geometry.coordinates : f.geometry.coordinates[0];
+                                      setLat(coords[1]);
+                                      setLng(coords[0]);
+                                    } catch (e) {}
+                                    setSelectedFeatureId(f.properties?.name ?? f.id ?? fid);
+                                  }}
+                                >
+                                  {label}
+                                </button>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
                 </div>
-              )}
+              </div>
             </div>
-          </div>
+          )}
           {/* CSV info overlay for matched location */}
           {selectedCsvRow && (
             <div className="absolute bottom-6 left-4 z-[9999]">
