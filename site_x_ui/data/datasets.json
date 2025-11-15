@@ -1,0 +1,17 @@
+[
+  {
+    "id": "banks",
+    "name": "Banks",
+    "path": "/data/banks.geojson"
+  },
+  {
+    "id": "cafes",
+    "name": "Cafes",
+    "path": "/data/cafes.geojson"
+  },
+  {
+    "id": "temples",
+    "name": "Temples",
+    "path": "/data/temples.geojson"
+  }
+]

@@ -163,6 +163,11 @@ export default function LocationForm() {
   const [address, setAddress] = useState("");
   const [sheetOpen, setSheetOpen] = useState(false);
   const [geoDataList, setGeoDataList] = useState<Array<{ id: string; name: string; data: any }>>([]);
+  const DATASETS = [
+    { id: 'cafes', name: 'Cafes', path: '/data/cafes.geojson' },
+    { id: 'temples', name: 'Temples', path: '/data/temples.geojson' },
+  ];
+  const [datasetId, setDatasetId] = useState<string>(DATASETS[0].id);
   const [showPlaces, setShowPlaces] = useState(false);
   const [geoLoading, setGeoLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -176,28 +181,32 @@ export default function LocationForm() {
     alert(`Submitted!\nLat: ${lat}\nLng: ${lng}`);
   };
 
+  // Load selected dataset (prefer geojson files in /data)
   useEffect(() => {
-    // load geojson files on mount so the places panel can search them
-    if (geoDataList.length > 0) return; // already loaded
-
-    const files = ["/data/cafe.geojson"];
+    let mounted = true;
+    const ds = DATASETS.find((d) => d.id === datasetId);
+    if (!ds) return;
     setGeoLoading(true);
-    Promise.all(
-      files.map((path) =>
-        fetch(path)
-          .then((r) => {
-            if (!r.ok) throw new Error("not found");
-            return r.json();
-          })
-          .then((json) => ({ id: path, name: json.name || path.split("/").pop() || path, data: json }))
-          .catch(() => null)
-      )
-    ).then((results) => {
-      const filtered = results.filter(Boolean) as Array<{ id: string; name: string; data: any }>;
-      if (filtered.length > 0) setGeoDataList((prev) => [...prev, ...filtered]);
-    })
-    .finally(() => setGeoLoading(false));
-  }, []);
+    fetch(ds.path)
+      .then((r) => {
+        if (!r.ok) throw new Error('not found');
+        return r.json();
+      })
+      .then((json) => {
+        if (!mounted) return;
+        setGeoDataList([{ id: ds.id, name: ds.name, data: json }]);
+        setSelectedFeatureId(null);
+      })
+      .catch(() => {
+        if (!mounted) return;
+        setGeoDataList([]);
+      })
+      .finally(() => mounted && setGeoLoading(false));
+
+    return () => {
+      mounted = false;
+    };
+  }, [datasetId]);
 
   // --- CSV parsing and matching ---
   const parseCsvLine = (line: string) => {
@@ -281,11 +290,36 @@ export default function LocationForm() {
   // watch lat/lng and try to find CSV row
   useEffect(() => {
     let mounted = true;
+    // find nearest feature in loaded geoDataList for the selected dataset
     (async () => {
-      const rows = await loadCsvIfNeeded();
-      if (!mounted) return;
-      const found = findNearestRow(lat, lng, rows);
-      setSelectedCsvRow(found);
+      try {
+        if (!geoDataList || geoDataList.length === 0) {
+          setSelectedCsvRow(null);
+          return;
+        }
+        const ds = geoDataList.find((g) => g.id === datasetId) || geoDataList[0];
+        const features = (ds.data?.features || []) as any[];
+        let best: any = null;
+        let bestDist = Infinity;
+        for (const f of features) {
+          const coords = f.geometry?.coordinates;
+          if (!coords || coords.length < 2) continue;
+          const fx = parseFloat(coords[1]);
+          const fy = parseFloat(coords[0]);
+          if (!Number.isFinite(fx) || !Number.isFinite(fy)) continue;
+          const dx = fx - lat;
+          const dy = fy - lng;
+          const dist = dx * dx + dy * dy;
+          if (dist < bestDist) {
+            bestDist = dist;
+            best = f;
+          }
+        }
+        if (best && bestDist < 0.0005 * 0.0005) setSelectedCsvRow(best.properties || null);
+        else setSelectedCsvRow(null);
+      } catch (e) {
+        setSelectedCsvRow(null);
+      }
     })();
     return () => {
       mounted = false;
@@ -302,7 +336,7 @@ export default function LocationForm() {
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-gray-50">
       {/* ---------- LEFT SIDE – FORM (desktop) ---------- */}
-      <div className="hidden md:block w-full md:w-96 bg-white shadow-lg overflow-y-auto p-8 md:p-10 flex-shrink-0 border-r">
+      <div className="hidden md:block w-full md:w-96 liquid-glass shadow-lg overflow-y-auto p-8 md:p-10 flex-shrink-0 border-r">
         <Card className="border-0 shadow-none">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center gap-3 text-2xl font-semibold">
@@ -364,6 +398,19 @@ export default function LocationForm() {
               <Button type="submit" className="w-full py-3">
                 Submit Location
               </Button>
+              <div>
+                <Label htmlFor="dataset">Dataset</Label>
+                <select
+                  id="dataset"
+                  value={datasetId}
+                  onChange={(e) => setDatasetId(e.target.value)}
+                  className="mt-1 w-full px-2 py-1 rounded border text-sm"
+                >
+                  {DATASETS.map((d) => (
+                    <option key={d.id} value={d.id}>{d.name}</option>
+                  ))}
+                </select>
+              </div>
               <div className="flex items-center gap-3 mt-3">
                 <input
                   id="show-places-toggle-desktop"
@@ -396,7 +443,7 @@ export default function LocationForm() {
           }
           aria-hidden={!sheetOpen}
         >
-          <div className="mx-auto max-w-3xl bg-white rounded-t-xl shadow-xl p-6 h-[70vh] overflow-auto">
+          <div className="mx-auto max-w-3xl liquid-glass rounded-t-xl shadow-xl p-6 h-[70vh] overflow-auto">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3 text-lg font-semibold">
               <MapPin className="w-5 h-5" />
@@ -450,6 +497,19 @@ export default function LocationForm() {
                 <Button type="submit" className="w-full py-3">
                   Submit Location
                 </Button>
+                <div>
+                  <Label htmlFor="dataset-mobile">Dataset</Label>
+                  <select
+                    id="dataset-mobile"
+                    value={datasetId}
+                    onChange={(e) => setDatasetId(e.target.value)}
+                    className="mt-1 w-full px-2 py-1 rounded border text-sm"
+                  >
+                    {DATASETS.map((d) => (
+                      <option key={d.id} value={d.id}>{d.name}</option>
+                    ))}
+                  </select>
+                </div>
                 <div className="flex items-center gap-3 mt-3">
                   <input
                     id="show-places-toggle-mobile"
@@ -469,7 +529,7 @@ export default function LocationForm() {
 
       {/* Floating toggle button (mobile) */}
       <button
-        className="fixed bottom-6 right-4 z-50 md:hidden bg-white rounded-full p-3 shadow-lg border"
+        className="fixed bottom-6 right-4 z-50 md:hidden liquid-btn rounded-full p-3 shadow-lg border"
         onClick={() => setSheetOpen(true)}
         aria-label="Open location form"
         title="Open location form"
@@ -504,8 +564,8 @@ export default function LocationForm() {
 
           {/* Places panel (toggle) */}
           {showPlaces && (
-            <div className="absolute top-4 right-4 z-[9999]">
-              <div className="bg-white/90 backdrop-blur-sm rounded-md p-2 shadow max-w-xs">
+              <div className="absolute top-4 right-4 z-[9999]">
+                <div className="liquid-glass rounded-md p-2 max-w-xs">
                 <div className="px-2 pb-2">
                   <input
                     type="search"
