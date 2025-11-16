@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.12);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --glass-strong-bg: rgba(255, 255, 255, 0.18);
+    --glass-shadow: 0 6px 24px rgba(2, 6, 23, 0.28);
+    --accent: 220 90% 60%;
+    /* hue-sat-light for accent via hsl+alpha */
+}
+
+/* page background: subtle gradient + soft blur */
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.03), transparent 10%),
+        linear-gradient(135deg, rgba(16, 24, 40, 1) 0%, rgba(12, 18, 30, 1) 100%);
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Liquid glass card */
+.liquid-glass {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    box-shadow: var(--glass-shadow);
+    color: inherit;
+}
+
+.liquid-btn {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #000000;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+}
+
+.liquid-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(2, 6, 23, 0.28);
+}
+
+/* subtle accent outlines for focused inputs */
+input[type="search"],
+input[type="text"],
+textarea {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: inherit;
+}
+
+/* small helper to dim text on glass */
+.glass-muted {
+    color: rgba(230, 238, 248, 0.8);
+}
+
+/* ensure map controls keep contrast */
+.leaflet-container {
+    background: transparent;
+}
