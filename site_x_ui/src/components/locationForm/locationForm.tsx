@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { MapContainer, TileLayer, Marker, useMapEvents, useMap, GeoJSON } from "react-leaflet";
+import axios from "axios";
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,25 @@ const coffeeIcon = L.divIcon({
   iconSize: [24, 24],
   iconAnchor: [12, 24],
 });
+
+// Generic POI icon: small circle with type initial
+const poiIcon = (type: string) => {
+  const colorMap: Record<string, string> = {
+    cafes: '#d97706',
+    banks: '#0ea5e9',
+    education: '#10b981',
+    health: '#ef4444',
+    temples: '#7c3aed',
+    other: '#64748b',
+  };
+  const c = colorMap[type] || '#111827';
+  return L.divIcon({
+    className: 'poi-marker',
+    html: `<div style="width:20px;height:20px;border-radius:9999px;background:${c};display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:600;border:2px solid white">${(type||'?').charAt(0).toUpperCase()}</div>`,
+    iconSize: [20, 20],
+    iconAnchor: [10, 10],
+  });
+};
 
 // Fix Leaflet default icons
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -155,9 +175,28 @@ function MapResizeHandler({ sheetOpen }: { sheetOpen: boolean }) {
   return null;
 }
 
+function MapRefSetter({ mapRef }: { mapRef: React.MutableRefObject<L.Map | null> }) {
+  const map = useMap();
+  useEffect(() => {
+    mapRef.current = map;
+    return () => {
+      mapRef.current = null;
+    };
+  }, [map, mapRef]);
+  return null;
+}
+
 export default function LocationForm() {
   const [lat, setLat] = useState<number>(27.670587); // Kathmandu
   const [lng, setLng] = useState<number>(85.420868);
+  const [radiusKm, setRadiusKm] = useState<number>(0.3);
+  const [poisData, setPoisData] = useState<any | null>(null);
+  const [poisFlat, setPoisFlat] = useState<Array<any>>([]);
+  const [poiLoading, setPoiLoading] = useState(false);
+  const [lastSubmitted, setLastSubmitted] = useState<{ lat: number; lng: number; at: number } | null>(null);
+  const mapRef = useRef<L.Map | null>(null);
+  const poiMarkersRef = useRef<Record<string, L.Marker>>({});
+  const [expandedPoi, setExpandedPoi] = useState<string | null>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
@@ -183,8 +222,132 @@ export default function LocationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({ name, email, address, lat, lng });
-    alert(`Submitted!\nLat: ${lat}\nLng: ${lng}`);
+    setLastSubmitted({ lat, lng, at: Date.now() });
+    // also fetch POIs on submit so user sees nearby places immediately
+    fetchPois();
   };
+
+  async function fetchPois() {
+    setPoiLoading(true);
+    try {
+      const params = new URLSearchParams({
+        lat: String(lat),
+        lon: String(lng),
+        radius_km: String(radiusKm),
+      });
+      // call explicit backend URL (use full origin to avoid dev-server proxy returning HTML)
+      const url = `http://127.0.0.1:8000/api/v1/pois/?${params.toString()}`;
+      const res = await axios.get(url, { timeout: 10000 });
+      const data = res.data;
+      console.log(data);
+      setPoisData(data);
+      // Ensure geoDataList contains datasets for all returned POI categories
+      try {
+        const neededTypes = Object.keys((data.pois || {}));
+        const missing = neededTypes.filter((t) => !geoDataList.find((g) => g.id === t));
+        if (missing.length > 0) {
+          const loaders = missing.map(async (tid) => {
+            const ds = DATASETS.find((d) => d.id === tid);
+            if (!ds || !ds.path) return null;
+            try {
+              const r = await fetch(ds.path);
+              if (!r.ok) return null;
+              const json = await r.json();
+              return { id: ds.id, name: ds.name, data: json };
+            } catch (e) {
+              return null;
+            }
+          });
+          const loaded = (await Promise.all(loaders)).filter(Boolean) as any[];
+          if (loaded.length > 0) {
+            setGeoDataList((prev) => {
+              const map = new Map(prev.map((p) => [p.id, p]));
+              for (const l of loaded) map.set(l.id, l);
+              return Array.from(map.values());
+            });
+          }
+        }
+      } catch (e) {
+        // non-fatal
+      }
+      const flat: any[] = [];
+      for (const [type, items] of Object.entries(data.pois || {})) {
+        (items as any[]).forEach((it) => flat.push({ ...it, type }));
+      }
+      // Try to match each POI to a feature in the loaded geoDataList (by dataset id)
+      const matchThreshold = 0.0001; // ~11m
+      const findGeoFeatureForPoi = (type: string, poi: any) => {
+        try {
+          const ds = geoDataList.find((g) => g.id === type);
+          if (!ds) return null;
+          const features = (ds.data?.features || []) as any[];
+          // attempt match by name first
+          if (poi.name) {
+            const byName = features.find((f) => (f.properties?.name || '').toString().trim() === poi.name.toString().trim());
+            if (byName) return byName;
+          }
+          // attempt match by coordinates
+          for (const f of features) {
+            const coords = f.geometry?.coordinates;
+            if (!coords || coords.length < 2) continue;
+            const flon = Number(coords[0]);
+            const flat = Number(coords[1]);
+            if (!Number.isFinite(flon) || !Number.isFinite(flat)) continue;
+            if (Math.abs(flat - Number(poi.lat)) <= matchThreshold && Math.abs(flon - Number(poi.lon)) <= matchThreshold) {
+              return f;
+            }
+          }
+          return null;
+        } catch (e) {
+          return null;
+        }
+      };
+      // augment each flat item with matchedFeature when possible
+      for (const item of flat) {
+        try {
+          item.matchedFeature = findGeoFeatureForPoi(item.type, item);
+        } catch (e) {
+          item.matchedFeature = null;
+        }
+      }
+      // sort by distance
+      flat.sort((a, b) => (a.distance_km ?? 0) - (b.distance_km ?? 0));
+      setPoisFlat(flat);
+      // fly map to center? MapContainer center is controlled by lat/lng already via state
+    } catch (e: any) {
+      if (axios.isAxiosError(e)) {
+        console.error('POIs request failed', e.response?.data ?? e.message);
+      } else {
+        console.error('Failed to fetch POIs', e);
+      }
+      setPoisData(null);
+      setPoisFlat([]);
+    } finally {
+      setPoiLoading(false);
+    }
+  }
+
+  function openPoi(type: string, idx: number, item: any) {
+    const key = `${type}-${idx}`;
+    const marker = poiMarkersRef.current[key];
+    try {
+      if (marker && mapRef.current) {
+        const latlng = (marker as any).getLatLng();
+        mapRef.current.flyTo(latlng, 16, { animate: true });
+        (marker as any).openPopup && (marker as any).openPopup();
+        return;
+      }
+    } catch (e) {}
+    if (item?.lat && item?.lon) {
+      setLat(Number(item.lat));
+      setLng(Number(item.lon));
+      setTimeout(() => {
+        try {
+          mapRef.current && mapRef.current.flyTo([Number(item.lat), Number(item.lon)], 16, { animate: true });
+        } catch (e) {}
+      }, 120);
+    }
+  }
 
   // Load selected dataset (prefer geojson files in /data)
   useEffect(() => {
@@ -419,9 +582,23 @@ export default function LocationForm() {
                 </div>
               </div>
 
-              <Button type="submit" className="w-full py-3">
-                Submit Location
-              </Button>
+              <div>
+                <Label htmlFor="radius">Radius (km)</Label>
+                <Input
+                  id="radius"
+                  type="number"
+                  value={radiusKm}
+                  onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
+                  step="0.1"
+                  className="mt-1 w-full"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Button type="submit" className="w-full py-3">
+                  Submit Location
+                </Button>
+              </div>
               <div>
                 <Label htmlFor="dataset">Dataset</Label>
                 <select
@@ -518,9 +695,23 @@ export default function LocationForm() {
                   </div>
                 </div>
 
-                <Button type="submit" className="w-full py-3">
-                  Submit Location
-                </Button>
+                <div>
+                  <Label htmlFor="radius-mobile">Radius (km)</Label>
+                  <Input
+                    id="radius-mobile"
+                    type="number"
+                    value={radiusKm}
+                    onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
+                    step="0.1"
+                    className="mt-1 w-full"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Button type="submit" className="w-full py-3">
+                    Submit Location
+                  </Button>
+                </div>
                 <div>
                   <Label htmlFor="dataset-mobile">Dataset</Label>
                   <select
@@ -559,6 +750,7 @@ export default function LocationForm() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
           />
+            <MapRefSetter mapRef={mapRef} />
             <MapPicker lat={lat} lng={lng} setLat={setLat} setLng={setLng} />
             {showPlaces && geoDataList.map((item) => (
               <MapFeatures
@@ -574,6 +766,32 @@ export default function LocationForm() {
                   setSelectedFeatureId(feature.properties?.name ?? feature.id ?? null);
                 }}
               />
+            ))}
+            {/* POI markers from augmented poisFlat grouped by category (keeps index in sync with panel) */}
+            {Object.entries(poisFlat.reduce((acc: Record<string, any[]>, p: any) => { (acc[p.type] = acc[p.type] || []).push(p); return acc; }, {})).map(([type, items]: any) => (
+              (items as any[]).map((p: any, idx: number) => {
+                const key = `${type}-${idx}`;
+                return (
+                  <Marker
+                    key={key}
+                    position={[Number(p.lat), Number(p.lon)]}
+                    icon={poiIcon(type)}
+                    ref={(r) => {
+                      try {
+                        if (r) poiMarkersRef.current[key] = (r as unknown) as L.Marker;
+                        else delete poiMarkersRef.current[key];
+                      } catch (e) {}
+                    }}
+                  >
+                    <Popup>
+                      <div className="text-sm">
+                        <div style={{ fontWeight: 600 }}>{p.name ?? 'Unnamed'}</div>
+                        <div className="text-xs">{type} — {p.distance_km ?? ''} km</div>
+                      </div>
+                    </Popup>
+                  </Marker>
+                );
+              })
             ))}
           </MapContainer>
 
@@ -635,6 +853,84 @@ export default function LocationForm() {
                       </div>
                     );
                   })}
+                </div>
+              </div>
+            </div>
+          )}
+          {/* POIs concise panel */}
+          {poisData && (
+            <div className="absolute bottom-4 right-4 z-[9999]">
+              <div className="liquid-glass rounded-md p-3 w-72">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <div className="text-sm text-muted-foreground">Center</div>
+                    <div className="font-mono text-sm">{Number(poisData?.center?.lat ?? lat).toFixed(6)}</div>
+                    <div className="font-mono text-sm">{Number(poisData?.center?.lon ?? lng).toFixed(6)}</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-muted-foreground">Radius</div>
+                    <div className="font-semibold">{(poisData.radius_km ?? radiusKm)} km</div>
+                  </div>
+                </div>
+
+                <div className="mt-2 text-sm">
+                  <div className="font-semibold">Categories</div>
+                  <div className="mt-1">
+                    {Object.entries(poisData.pois || {}).map(([k, v]: any) => (
+                      <div key={k} className="text-xs">{k}: {(v as any[]).length}</div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-2">
+                  <div className="text-sm font-semibold">Nearby by Category</div>
+                  <div className="mt-1 max-h-48 overflow-auto text-xs">
+                    {
+                      // build grouped map from augmented flat list so we can access matchedFeature
+                      Object.entries(poisFlat.reduce((acc: Record<string, any[]>, p: any) => {
+                        (acc[p.type] = acc[p.type] || []).push(p);
+                        return acc;
+                      }, {})).map(([cat, items]: any) => (
+                        <div key={cat} className="mb-2">
+                          <div className="font-medium">{cat} <span className="text-muted-foreground">({(items as any[]).length})</span></div>
+                          <ul className="mt-1">
+                            {(items as any[]).slice(0, 5).map((it: any, idx: number) => (
+                              <li key={`${cat}-${idx}`} className="py-0.5">
+                                <div className="flex items-start justify-between gap-2">
+                                  <button
+                                    className="text-left w-full hover:underline"
+                                    onClick={() => { openPoi(cat, idx, it); }}
+                                  >
+                                    {it.name ?? 'Unnamed'} <span className="text-muted-foreground">— {it.distance_km} km</span>
+                                  </button>
+                                  <button
+                                    className="text-xs text-slate-500 hover:underline"
+                                    onClick={() => setExpandedPoi(expandedPoi === `${cat}-${idx}` ? null : `${cat}-${idx}`)}
+                                  >
+                                    details
+                                  </button>
+                                </div>
+                                {expandedPoi === `${cat}-${idx}` && (
+                                  <div className="mt-1 text-[11px] text-slate-700 bg-white/5 p-2 rounded">
+                                    {it.matchedFeature ? (
+                                      <div>
+                                        {Object.entries(it.matchedFeature.properties || {}).map(([k, v]: any) => (
+                                          <div key={k}><strong>{k}</strong>: {String(v)}</div>
+                                        ))}
+                                      </div>
+                                    ) : (
+                                      <div className="text-muted-foreground">No matching dataset feature found.</div>
+                                    )}
+                                  </div>
+                                )}
+                              </li>
+                            ))}
+                            {(items as any[]).length === 0 && <li className="text-muted-foreground">No items</li>}
+                          </ul>
+                        </div>
+                      ))
+                    }
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,14 +1,33 @@
 # app/main.py
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.api.endpoints import cafe_processing
+from app.api.endpoints import pois
 
 app = FastAPI(
     title="Cafe Location Intelligence API",
     description="API for processing and predicting cafe suitability."
 )
 
-# Include the router from the cafe_processing endpoint file
+# CORS: allow frontend dev servers to call this API during development
+origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["*"],
+)
+
+# Include the router from endpoint files
 app.include_router(cafe_processing.router, prefix="/api/v1", tags=["Cafe Processing"])
+app.include_router(pois.router, prefix="/api/v1", tags=["POIS"])
 
 @app.get("/", tags=["Root"])
 async def read_root():
