@@ -1,0 +1,65 @@
+"use client"
+
+import { TrendingUp } from "lucide-react"
+import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts"
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+  type ChartConfig,
+} from "@/components/ui/chart"
+
+export const description = "Count"
+
+const chartData = [
+  { POI: "Education", count: 207, },
+  { POI: "Cafes", count: 185, },
+  { POI: "Temples", count: 186, },
+  { POI: "Health", count: 160, },
+  { POI: "Banks", count: 173, },
+  { POI: "Other", count: 174, },
+]
+
+const chartConfig = {
+  count: {
+    label: "count",
+    color: "#2C84CB",
+  },
+} satisfies ChartConfig
+
+export function ChartRadarLinesOnly() {
+  return (
+    <Card>
+      <CardContent className="pb-0">
+        <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
+          <RadarChart data={chartData} cx="50%" cy="50%" outerRadius="80%">
+            <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="line" />} />
+            {/* use POI as the angle axis and 'count' as the value */}
+            <PolarAngleAxis dataKey="POI" />
+            <PolarGrid radialLines={false} />
+            <Radar
+              dataKey="count"
+              fill={chartConfig.count.color}
+              fillOpacity={0}
+              stroke={chartConfig.count.color}
+              strokeWidth={2}
+            />
+          </RadarChart>
+        </ChartContainer>
+      </CardContent>
+      <CardFooter className="flex-col gap-2 text-sm">
+        <CardTitle>Count Around The Pois</CardTitle>
+        <CardDescription>count of each types of POIs  </CardDescription>
+      </CardFooter>
+    </Card>
+  )
+}

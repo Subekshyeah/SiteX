@@ -8,13 +8,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { ChartRadarLinesOnly } from "@/components/ui/chart-radar-lines-only";
 import { MapPin, X } from "lucide-react";
 import * as L from "leaflet";
 
 // Coffee cup marker icon (divIcon with inline SVG)
 const coffeeIcon = L.divIcon({
   className: "coffee-marker",
-  html: `<div style="display:inline-flex;align-items:center;justify-content:center;background:white;border-radius:9999px;padding:4px;box-shadow:0 1px 4px rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.08)"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 8h1a3 3 0 0 1 0 6h-1\"></path><path d=\"M3 8h13v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z\"></path></svg></div>`,
+  html: `<div style="display:inline-flex;align-items:center;justify-content:center;background:white;border-radius:9999px;padding:4px;box-shadow:0 1px 4px rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.08)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a3 3 0 0 1 0 6h-1"></path><path d="M3 8h13v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"></path></svg></div>`,
   iconSize: [24, 24],
   iconAnchor: [12, 24],
 });
@@ -76,14 +77,45 @@ function MapPicker({
   );
 }
 
+// We'll replace MapFeatures with a version that accepts a datasetId and uses per-dataset icons.
+function getDatasetIcon(type: string) {
+  // common wrapper style
+  const wrapperStart = '<div style="display:inline-flex;align-items:center;justify-content:center;background:white;border-radius:9999px;padding:4px;box-shadow:0 1px 4px rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.08)">';
+  const wrapperEnd = '</div>';
+  let svg = '';
+  switch (type) {
+    case 'cafes':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#92400e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a3 3 0 0 1 0 6h-1"/><path d="M3 8h13v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/></svg>';
+      break;
+    case 'temples':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7C9 6 12 3 12 3C12 3 15 6 18 7"/><path d="M8 6.0729V9M8 9C8 9 7 11 4 12H20C17 11 16 9 16 9M6 12V15M6 15C6 15 5 17 2 18H22C19 17 18 15 18 15M5 18V21M19 18V21M12 18V21"/></svg>';
+      break;
+    case 'banks':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 5l9 5.5"/><path d="M4 11v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/><path d="M10 16v-4"/><path d="M14 16v-4"/></svg>';
+      break;
+    case 'education':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4-7 4-7-4 7-4z"/><path d="M5 10v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
+      break;
+    case 'health':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v10"/><path d="M7 12h10"/><path d="M5 3h14v4H5z"/></svg>';
+      break;
+    default:
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/></svg>';
+  }
+  const html = wrapperStart + svg + wrapperEnd;
+  return L.divIcon({ className: `${type}-icon`, html, iconSize: [24, 24], iconAnchor: [12, 24] });
+}
+
 function MapFeatures({
   geoData,
   selectedFeatureId,
   onFeatureClick,
+  datasetId,
 }: {
   geoData: any | null;
   selectedFeatureId: string | number | null;
   onFeatureClick: (feature: any, layer: L.Layer) => void;
+  datasetId: string;
 }) {
   const map = useMap();
   const layerMap = useRef<Record<string | number, L.Layer>>({});
@@ -102,15 +134,11 @@ function MapFeatures({
     const layer = layerMap.current[selectedFeatureId as any];
     if (layer) {
       try {
-        // if marker-like
-        // @ts-ignore
         const latlng = (layer.getLatLng && layer.getLatLng()) || null;
         if (latlng) {
           map.flyTo(latlng, 16, { animate: true });
-          // @ts-ignore
-          layer.openPopup && layer.openPopup();
+          layer.openPopup && (layer as any).openPopup();
         } else if ((layer as any).getBounds && (layer as any).getBounds()) {
-          // @ts-ignore
           map.fitBounds((layer as any).getBounds());
         }
       } catch (e) {}
@@ -127,8 +155,12 @@ function MapFeatures({
   };
 
   const pointToLayer = (feature: any, latlng: L.LatLng) => {
-    // render point features as coffee icons
-    return L.marker(latlng, { icon: coffeeIcon as any });
+    // choose an icon based on datasetId
+    try {
+      return L.marker(latlng, { icon: getDatasetIcon(datasetId) as any });
+    } catch (e) {
+      return L.marker(latlng, { icon: coffeeIcon as any });
+    }
   };
 
   return <GeoJSON data={geoData} onEachFeature={onEachFeature as any} pointToLayer={pointToLayer as any} />;
@@ -203,7 +235,7 @@ export default function LocationForm() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [geoDataList, setGeoDataList] = useState<Array<{ id: string; name: string; data: any }>>([]);
   const DATASETS = [
-    { id: 'none', name: 'None', path: '' },
+    { id: 'none', name: 'None', path: '', },
     { id: 'cafes', name: 'Cafes', path: '/data/cafes.geojson' },
     { id: 'temples', name: 'Temples', path: '/data/temples.geojson' },
     { id: 'banks', name: 'Banks', path: '/data/banks.geojson' },
@@ -625,6 +657,7 @@ export default function LocationForm() {
             </form>
           </CardContent>
         </Card>
+        <ChartRadarLinesOnly/>
       </div>
 
       {/* ---------- MOBILE BOTTOM SHEET ---------- */}
@@ -755,6 +788,7 @@ export default function LocationForm() {
             {showPlaces && geoDataList.map((item) => (
               <MapFeatures
                 key={item.id}
+                datasetId={item.id}
                 geoData={item.data}
                 selectedFeatureId={selectedFeatureId}
                 onFeatureClick={(feature, layer) => {
