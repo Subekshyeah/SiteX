@@ -36,12 +36,15 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function ChartRadarLinesOnly() {
+type CountItem = { POI: string; count: number }
+
+export function ChartRadarLinesOnly({ data }: { data?: CountItem[] }) {
+  const display = data && data.length > 0 ? data : chartData
   return (
     <Card>
       <CardContent className="pb-0">
         <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
-          <RadarChart data={chartData} cx="50%" cy="50%" outerRadius="80%">
+          <RadarChart data={display} cx="50%" cy="50%" outerRadius="80%">
             <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="line" />} />
             {/* use POI as the angle axis and 'count' as the value */}
             <PolarAngleAxis dataKey="POI" />
@@ -58,7 +61,7 @@ export function ChartRadarLinesOnly() {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <CardTitle>Count Around The Pois</CardTitle>
-        <CardDescription>count of each types of POIs  </CardDescription>
+        <CardDescription>count of each types of POIs</CardDescription>
       </CardFooter>
     </Card>
   )
