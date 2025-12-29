@@ -285,8 +285,14 @@ export default function LocationForm() {
     e.preventDefault();
     console.log({ name, email, address, lat, lng });
     setLastSubmitted({ lat, lng, at: Date.now() });
-    // also fetch POIs on submit so user sees nearby places immediately
-    fetchPois();
+    // navigate to React result route (reads query params)
+    const params = new URLSearchParams({ name: String(name || ''), lat: String(lat), lng: String(lng) });
+    // navigate to /result so SPA can handle it; fallback to result.html if not routed
+    try {
+      window.location.href = `/result?${params.toString()}`;
+    } catch {
+      window.location.href = `/result.html?${params.toString()}`;
+    }
   };
 
   // Haversine distance utility (km)
