@@ -1,20 +1,21 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import axios from "axios";
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap, GeoJSON } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, useMapEvents, useMap, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { ChartRadarLinesOnly } from "@/components/ui/chart-radar-lines-only";
 import { MapPin, X } from "lucide-react";
 import * as L from "leaflet";
 
 // Coffee cup marker icon (divIcon with inline SVG)
 const coffeeIcon = L.divIcon({
   className: "coffee-marker",
-  html: `<div style="display:inline-flex;align-items:center;justify-content:center;background:white;border-radius:9999px;padding:4px;box-shadow:0 1px 4px rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.08)"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 8h1a3 3 0 0 1 0 6h-1\"></path><path d=\"M3 8h13v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z\"></path></svg></div>`,
+  html: `<div style="display:inline-flex;align-items:center;justify-content:center;background:white;border-radius:9999px;padding:4px;box-shadow:0 1px 4px rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.08)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a3 3 0 0 1 0 6h-1"></path><path d="M3 8h13v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"></path></svg></div>`,
   iconSize: [24, 24],
   iconAnchor: [12, 24],
 });
@@ -32,10 +33,36 @@ const poiIcon = (type: string) => {
   const c = colorMap[type] || '#111827';
   return L.divIcon({
     className: 'poi-marker',
-    html: `<div style="width:20px;height:20px;border-radius:9999px;background:${c};display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:600;border:2px solid white">${(type||'?').charAt(0).toUpperCase()}</div>`,
+    html: `<div style="width:20px;height:20px;border-radius:9999px;background:${c};display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:600;border:2px solid white">${(type || '?').charAt(0).toUpperCase()}</div>`,
     iconSize: [20, 20],
     iconAnchor: [10, 10],
   });
+};
+
+// color helper used for selected marker styling
+function getColorForType(type?: string) {
+  const colorMap: Record<string, string> = {
+    cafes: '#d97706',
+    banks: '#0ea5e9',
+    education: '#10b981',
+    health: '#ef4444',
+    temples: '#7c3aed',
+    other: '#64748b',
+  };
+  return (type && colorMap[type]) || '#111827';
+}
+
+// selected POI icon: outer ring + inner colored circle
+const selectedPoiIcon = (type?: string) => {
+  const c = getColorForType(type);
+  const html = `
+    <div style="display:flex;align-items:center;justify-content:center;">
+      <div style="width:36px;height:36px;border-radius:9999px;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;border:3px solid ${c};box-shadow:0 4px 10px rgba(0,0,0,0.15)">
+        <div style="width:18px;height:18px;border-radius:9999px;background:${c};display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;border:2px solid white">${(type || '?').charAt(0).toUpperCase()}</div>
+      </div>
+    </div>
+  `;
+  return L.divIcon({ className: 'poi-selected-marker', html, iconSize: [36, 36], iconAnchor: [18, 36] });
 };
 
 // Fix Leaflet default icons
@@ -67,7 +94,6 @@ function MapPicker({
     });
     return null;
   }
-
   return (
     <>
       <MapEvents />
@@ -76,14 +102,45 @@ function MapPicker({
   );
 }
 
+// We'll replace MapFeatures with a version that accepts a datasetId and uses per-dataset icons.
+function getDatasetIcon(type: string) {
+  // common wrapper style
+  const wrapperStart = '<div style="display:inline-flex;align-items:center;justify-content:center;background:white;border-radius:9999px;padding:4px;box-shadow:0 1px 4px rgba(0,0,0,0.3);border:1px solid rgba(0,0,0,0.08)">';
+  const wrapperEnd = '</div>';
+  let svg = '';
+  switch (type) {
+    case 'cafes':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#92400e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a3 3 0 0 1 0 6h-1"/><path d="M3 8h13v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/></svg>';
+      break;
+    case 'temples':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6d28d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7C9 6 12 3 12 3C12 3 15 6 18 7"/><path d="M8 6.0729V9M8 9C8 9 7 11 4 12H20C17 11 16 9 16 9M6 12V15M6 15C6 15 5 17 2 18H22C19 17 18 15 18 15M5 18V21M19 18V21M12 18V21"/></svg>';
+      break;
+    case 'banks':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 5l9 5.5"/><path d="M4 11v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/><path d="M10 16v-4"/><path d="M14 16v-4"/></svg>';
+      break;
+    case 'education':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4-7 4-7-4 7-4z"/><path d="M5 10v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
+      break;
+    case 'health':
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v10"/><path d="M7 12h10"/><path d="M5 3h14v4H5z"/></svg>';
+      break;
+    default:
+      svg = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/></svg>';
+  }
+  const html = wrapperStart + svg + wrapperEnd;
+  return L.divIcon({ className: `${type}-icon`, html, iconSize: [24, 24], iconAnchor: [12, 24] });
+}
+
 function MapFeatures({
   geoData,
   selectedFeatureId,
   onFeatureClick,
+  datasetId,
 }: {
   geoData: any | null;
   selectedFeatureId: string | number | null;
   onFeatureClick: (feature: any, layer: L.Layer) => void;
+  datasetId: string;
 }) {
   const map = useMap();
   const layerMap = useRef<Record<string | number, L.Layer>>({});
@@ -93,7 +150,7 @@ function MapFeatures({
     setTimeout(() => {
       try {
         map.invalidateSize();
-      } catch (e) {}
+      } catch (e) { }
     }, 200);
   }, [geoData, map]);
 
@@ -102,18 +159,14 @@ function MapFeatures({
     const layer = layerMap.current[selectedFeatureId as any];
     if (layer) {
       try {
-        // if marker-like
-        // @ts-ignore
         const latlng = (layer.getLatLng && layer.getLatLng()) || null;
         if (latlng) {
           map.flyTo(latlng, 16, { animate: true });
-          // @ts-ignore
-          layer.openPopup && layer.openPopup();
+          // layer.openPopup && (layer as any).openPopup();
         } else if ((layer as any).getBounds && (layer as any).getBounds()) {
-          // @ts-ignore
           map.fitBounds((layer as any).getBounds());
         }
-      } catch (e) {}
+      } catch (e) { }
     }
   }, [selectedFeatureId, geoData, map]);
 
@@ -122,13 +175,17 @@ function MapFeatures({
     const id = feature.id ?? feature.properties?.id ?? feature.properties?.name ?? Math.random().toString(36).slice(2, 9);
     layerMap.current[id] = layer;
     const name = feature.properties?.name || id;
-    layer.bindPopup(`<strong>${name}</strong>`);
+    // layer.bindPopup(`<strong>${name}</strong>`);
     layer.on("click", () => onFeatureClick(feature, layer));
   };
 
   const pointToLayer = (feature: any, latlng: L.LatLng) => {
-    // render point features as coffee icons
-    return L.marker(latlng, { icon: coffeeIcon as any });
+    // choose an icon based on datasetId
+    try {
+      return L.marker(latlng, { icon: getDatasetIcon(datasetId) as any });
+    } catch (e) {
+      return L.marker(latlng, { icon: coffeeIcon as any });
+    }
   };
 
   return <GeoJSON data={geoData} onEachFeature={onEachFeature as any} pointToLayer={pointToLayer as any} />;
@@ -153,7 +210,7 @@ function MapResizeHandler({ sheetOpen }: { sheetOpen: boolean }) {
     const t0 = setTimeout(() => {
       try {
         map.invalidateSize();
-      } catch (e) {}
+      } catch (e) { }
     }, 200);
 
     return () => {
@@ -167,7 +224,7 @@ function MapResizeHandler({ sheetOpen }: { sheetOpen: boolean }) {
     const t = setTimeout(() => {
       try {
         map.invalidateSize();
-      } catch (e) {}
+      } catch (e) { }
     }, sheetOpen ? 350 : 120);
     return () => clearTimeout(t);
   }, [sheetOpen, map]);
@@ -203,7 +260,7 @@ export default function LocationForm() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [geoDataList, setGeoDataList] = useState<Array<{ id: string; name: string; data: any }>>([]);
   const DATASETS = [
-    { id: 'none', name: 'None', path: '' },
+    { id: 'all', name: 'All', path: '' },
     { id: 'cafes', name: 'Cafes', path: '/data/cafes.geojson' },
     { id: 'temples', name: 'Temples', path: '/data/temples.geojson' },
     { id: 'banks', name: 'Banks', path: '/data/banks.geojson' },
@@ -213,9 +270,14 @@ export default function LocationForm() {
   ];
   const [datasetId, setDatasetId] = useState<string>(DATASETS[0].id);
   const [showPlaces, setShowPlaces] = useState(false);
+  const [showWithinRadius, setShowWithinRadius] = useState(true);
   const [geoLoading, setGeoLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedFeatureId, setSelectedFeatureId] = useState<string | number | null>(null);
+  const [poiLat, setPoiLat] = useState<number>(0);
+  const [poiLng, setPoiLng] = useState<number>(0);
+  const [hoverTempPoiLat, setHoverTempPoiLat] = useState<number>(0);
+  const [hoverTempPoiLng, setHoverTempPoiLng] = useState<number>(0);
   const [csvRows, setCsvRows] = useState<Array<Record<string, string>> | null>(null);
   const [selectedCsvRow, setSelectedCsvRow] = useState<Record<string, string> | null>(null);
 
@@ -223,9 +285,148 @@ export default function LocationForm() {
     e.preventDefault();
     console.log({ name, email, address, lat, lng });
     setLastSubmitted({ lat, lng, at: Date.now() });
-    // also fetch POIs on submit so user sees nearby places immediately
-    fetchPois();
+    // navigate to React result route (reads query params)
+    const params = new URLSearchParams({ name: String(name || ''), lat: String(lat), lng: String(lng) });
+    // navigate to /result so SPA can handle it; fallback to result.html if not routed
+    try {
+      window.location.href = `/result?${params.toString()}`;
+    } catch {
+      window.location.href = `/result.html?${params.toString()}`;
+    }
   };
+
+  // Haversine distance utility (km)
+  const distanceKm = (aLat: number, aLon: number, bLat: number, bLon: number) => {
+    const toRad = (v: number) => (v * Math.PI) / 180;
+    const R = 6371; // earth radius km
+    const dLat = toRad(bLat - aLat);
+    const dLon = toRad(bLon - aLon);
+    const lat1 = toRad(aLat);
+    const lat2 = toRad(bLat);
+    const u = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+    const c = 2 * Math.atan2(Math.sqrt(u), Math.sqrt(1 - u));
+    return R * c;
+  };
+
+  // return feature count for a dataset id, or null if dataset not loaded
+  // This counts features honoring the current `searchQuery` and `showWithinRadius` + radius/center
+  const getDatasetCount = (id: string) => {
+    try {
+      const q = (searchQuery || '').trim().toLowerCase();
+      const countForDs = (ds: { id: string; name: string; data: any }) => {
+        try {
+          const allFeatures = ds.data?.features || [];
+          let cnt = 0;
+          for (const f of allFeatures) {
+            try {
+              const name = (f.properties?.name ?? '').toString().toLowerCase();
+              if (q && !(name.includes(q) || ds.name.toLowerCase().includes(q))) continue;
+              if (showWithinRadius) {
+                const coords = f.geometry?.type === 'Point' ? f.geometry.coordinates : (f.geometry?.coordinates && f.geometry.coordinates[0]);
+                if (!coords || coords.length < 2) continue;
+                const flon = Number(coords[0]);
+                const flat = Number(coords[1]);
+                if (!Number.isFinite(flon) || !Number.isFinite(flat)) continue;
+                const d = distanceKm(lat, lng, flat, flon);
+                if (d > radiusKm) continue;
+              }
+              cnt++;
+            } catch {
+              continue;
+            }
+          }
+          return cnt;
+        } catch {
+          return 0;
+        }
+      };
+
+      // 'all' is a virtual dataset: combine counts from all loaded datasets (except 'all' itself)
+      if (id === 'all') {
+        let total = 0;
+        for (const ds of geoDataList) {
+          if (ds.id === 'all') continue;
+          total += countForDs(ds);
+        }
+        return total;
+      }
+
+      const ds = geoDataList.find((g) => g.id === id);
+      if (!ds) return null;
+      return countForDs(ds);
+    } catch {
+      return null;
+    }
+  };
+
+  // filtered dataset result based on selected dataset, searchQuery and radius filter
+  const filteredGeoData = useMemo(() => {
+    try {
+      const q = searchQuery.trim().toLowerCase();
+      const dsList = datasetId === 'all' ? geoDataList : geoDataList.filter((g) => g.id === datasetId);
+      return dsList.map((ds) => {
+        const features = (ds.data?.features || []).filter((f: any) => {
+          try {
+            const name = (f.properties?.name ?? '').toString().toLowerCase();
+            if (q && !(name.includes(q) || ds.name.toLowerCase().includes(q))) return false;
+            if (showWithinRadius) {
+              const coords = f.geometry?.type === 'Point' ? f.geometry.coordinates : (f.geometry?.coordinates && f.geometry.coordinates[0]);
+              if (!coords || coords.length < 2) return false;
+              const flon = Number(coords[0]);
+              const flat = Number(coords[1]);
+              if (!Number.isFinite(flon) || !Number.isFinite(flat)) return false;
+              const d = distanceKm(lat, lng, flat, flon);
+              if (d > radiusKm) return false;
+            }
+            return true;
+          } catch (e) {
+            return false;
+          }
+        });
+        return { id: ds.id, name: ds.name, features };
+      }).filter((d) => (d.features || []).length > 0);
+    } catch (e) {
+      return [];
+    }
+  }, [geoDataList, datasetId, searchQuery, showWithinRadius, lat, lng, radiusKm]);
+
+  // compute counts for the radar chart (6 feature categories) by scanning loaded geoDataList
+  const radarCounts = useMemo(() => {
+    const ids = ['education', 'cafes', 'temples', 'health', 'banks', 'other'];
+    const q = (searchQuery || '').trim().toLowerCase();
+    const countFeatures = (ds: any) => {
+      try {
+        const allFeatures = ds.data?.features || [];
+        let cnt = 0;
+        for (const f of allFeatures) {
+          try {
+            const name = (f.properties?.name ?? '').toString().toLowerCase();
+            if (q && !(name.includes(q) || ds.name.toLowerCase().includes(q))) continue;
+            if (showWithinRadius) {
+              const coords = f.geometry?.type === 'Point' ? f.geometry.coordinates : (f.geometry?.coordinates && f.geometry.coordinates[0]);
+              if (!coords || coords.length < 2) continue;
+              const flon = Number(coords[0]);
+              const flat = Number(coords[1]);
+              if (!Number.isFinite(flon) || !Number.isFinite(flat)) continue;
+              const d = distanceKm(lat, lng, flat, flon);
+              if (d > radiusKm) continue;
+            }
+            cnt++;
+          } catch {
+            continue;
+          }
+        }
+        return cnt;
+      } catch {
+        return 0;
+      }
+    };
+
+    return ids.map((id) => {
+      const ds = geoDataList.find((g) => g.id === id);
+      return { POI: id.charAt(0).toUpperCase() + id.slice(1), count: ds ? countFeatures(ds) : 0 };
+    });
+  }, [geoDataList, searchQuery, showWithinRadius, lat, lng, radiusKm]);
 
   async function fetchPois() {
     setPoiLoading(true);
@@ -334,66 +535,103 @@ export default function LocationForm() {
       if (marker && mapRef.current) {
         const latlng = (marker as any).getLatLng();
         mapRef.current.flyTo(latlng, 16, { animate: true });
-        (marker as any).openPopup && (marker as any).openPopup();
+        // (marker as any).openPopup && (marker as any).openPopup();
         return;
       }
-    } catch (e) {}
+    } catch (e) { }
     if (item?.lat && item?.lon) {
-      setLat(Number(item.lat));
-      setLng(Number(item.lon));
+      setPoiLat(Number(item.lat));
+      setPoiLng(Number(item.lon));
       setTimeout(() => {
         try {
           mapRef.current && mapRef.current.flyTo([Number(item.lat), Number(item.lon)], 16, { animate: true });
-        } catch (e) {}
+        } catch (e) { }
       }, 120);
     }
   }
 
-  // Load selected dataset (prefer geojson files in /data)
+  // Load all datasets (prefer geojson files in /data)
+  // When `datasetId` changes we eagerly (re)load all category geojsons so
+  // the UI can show counts and results immediately for any category.
   useEffect(() => {
     let mounted = true;
-    const ds = DATASETS.find((d) => d.id === datasetId);
-    if (!ds) {
+    const toLoad = DATASETS.filter((d) => d.path && d.id !== 'all');
+    if (toLoad.length === 0) {
       setGeoDataList([]);
       setSelectedFeatureId(null);
       setGeoLoading(false);
       setShowPlaces(false);
-      return;
-    }
-
-    // special-case: "None" — clear any loaded data and hide places
-    if (ds.id === 'none') {
-      setGeoDataList([]);
-      setSelectedFeatureId(null);
-      setShowPlaces(false);
-      setGeoLoading(false);
       return;
     }
 
     setGeoLoading(true);
-    fetch(ds.path)
-      .then((r) => {
-        if (!r.ok) throw new Error('not found');
-        return r.json();
-      })
-      .then((json) => {
+    (async () => {
+      try {
+        const loaders = toLoad.map(async (ds) => {
+          try {
+            const r = await fetch(ds.path);
+            if (!r.ok) return { id: ds.id, name: ds.name, data: null };
+            const json = await r.json();
+            return { id: ds.id, name: ds.name, data: json };
+          } catch {
+            return { id: ds.id, name: ds.name, data: null };
+          }
+        });
+        const results = await Promise.all(loaders);
         if (!mounted) return;
-        setGeoDataList([{ id: ds.id, name: ds.name, data: json }]);
+        const loaded = results.filter((r) => r.data);
+        // Replace geoDataList with all successfully loaded datasets
+        setGeoDataList(loaded.map((l) => ({ id: l.id, name: l.name, data: l.data })));
         setSelectedFeatureId(null);
-        // auto-show places when a valid dataset is loaded
         setShowPlaces(true);
-      })
-      .catch(() => {
+      } catch {
         if (!mounted) return;
         setGeoDataList([]);
         setShowPlaces(false);
-      })
-      .finally(() => mounted && setGeoLoading(false));
+      } finally {
+        if (mounted) setGeoLoading(false);
+      }
+    })();
 
-    return () => {
-      mounted = false;
-    };
+    return () => { mounted = false; };
   }, [datasetId]);
+
+  // Preload all dataset geojsons on mount and whenever `searchQuery` changes
+  useEffect(() => {
+    let mounted = true;
+    const toLoad = DATASETS.filter((d) => d.path && d.id !== 'all');
+    if (toLoad.length === 0) return;
+    setGeoLoading(true);
+    (async () => {
+      try {
+        const loaders = toLoad.map(async (ds) => {
+          try {
+            const r = await fetch(ds.path);
+            if (!r.ok) return { id: ds.id, name: ds.name, data: null };
+            const json = await r.json();
+            return { id: ds.id, name: ds.name, data: json };
+          } catch {
+            return { id: ds.id, name: ds.name, data: null };
+          }
+        });
+        const results = await Promise.all(loaders);
+        if (!mounted) return;
+        // keep only loaded datasets that have data
+        const loaded = results.filter((r) => r.data);
+        setGeoDataList((prev) => {
+          const map = new Map(prev.map((p) => [p.id, p]));
+          for (const l of loaded) map.set(l.id, l);
+          return Array.from(map.values());
+        });
+      } catch {
+        // ignore
+      } finally {
+        if (mounted) setGeoLoading(false);
+      }
+    })();
+    return () => { mounted = false; };
+    // load on mount and whenever the search changes so counts update quickly
+  }, [searchQuery]);
 
   // --- CSV parsing and matching ---
   const parseCsvLine = (line: string) => {
@@ -494,8 +732,8 @@ export default function LocationForm() {
           const fx = parseFloat(coords[1]);
           const fy = parseFloat(coords[0]);
           if (!Number.isFinite(fx) || !Number.isFinite(fy)) continue;
-          const dx = fx - lat;
-          const dy = fy - lng;
+          const dx = fx - poiLat;
+          const dy = fy - poiLng;
           const dist = dx * dx + dy * dy;
           if (dist < bestDist) {
             bestDist = dist;
@@ -511,7 +749,7 @@ export default function LocationForm() {
     return () => {
       mounted = false;
     };
-  }, [lat, lng]);
+  }, [poiLat, poiLng]);
 
   useEffect(() => {
     if (!showPlaces) {
@@ -559,7 +797,7 @@ export default function LocationForm() {
                 />
               </div> */}
 
-        
+
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -590,6 +828,8 @@ export default function LocationForm() {
                   value={radiusKm}
                   onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
                   step="0.1"
+                  min="0.1"
+                  max="5"
                   className="mt-1 w-full"
                 />
               </div>
@@ -599,19 +839,7 @@ export default function LocationForm() {
                   Submit Location
                 </Button>
               </div>
-              <div>
-                <Label htmlFor="dataset">Dataset</Label>
-                <select
-                  id="dataset"
-                  value={datasetId}
-                  onChange={(e) => setDatasetId(e.target.value)}
-                  className="mt-1 w-full px-2 py-1 rounded border text-sm"
-                >
-                  {DATASETS.map((d) => (
-                    <option key={d.id} value={d.id}>{d.name}</option>
-                  ))}
-                </select>
-              </div>
+              {/* Dataset selector moved to Places panel */}
               <div className="flex items-center gap-3 mt-3">
                 <input
                   id="show-places-toggle-desktop"
@@ -622,9 +850,20 @@ export default function LocationForm() {
                 />
                 <Label htmlFor="show-places-toggle-desktop">Show data points</Label>
               </div>
+              <div className="flex items-center gap-3 mt-2">
+                <input
+                  id="show-all-pois-desktop"
+                  type="checkbox"
+                  checked={showWithinRadius}
+                  onChange={(e) => setShowWithinRadius(e.target.checked)}
+                  className="w-4 h-4 rounded"
+                />
+                <Label htmlFor="show-all-pois-desktop">poiswithin given radius)</Label>
+              </div>
             </form>
           </CardContent>
         </Card>
+        <ChartRadarLinesOnly data={radarCounts} />
       </div>
 
       {/* ---------- MOBILE BOTTOM SHEET ---------- */}
@@ -645,90 +884,78 @@ export default function LocationForm() {
           aria-hidden={!sheetOpen}
         >
           <div className="mx-auto max-w-3xl liquid-glass rounded-t-xl shadow-xl p-6 h-[70vh] overflow-auto">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3 text-lg font-semibold">
-              <MapPin className="w-5 h-5" />
-              Location Analysis
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3 text-lg font-semibold">
+                <MapPin className="w-5 h-5" />
+                Location Analysis
+              </div>
+              <button
+                className="rounded-md p-2 hover:bg-gray-100"
+                onClick={() => setSheetOpen(false)}
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
             </div>
-            <button
-              className="rounded-md p-2 hover:bg-gray-100"
-              onClick={() => setSheetOpen(false)}
-              aria-label="Close"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
 
-          <Card className="border-0 shadow-none">
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name">Cafe Name</Label>
-                  <Input
-                    id="name"
-                    placeholder="Napang Chussa Tonewa"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                    className="mt-1"
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
+            <Card className="border-0 shadow-none">
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <Label htmlFor="lat">Latitude</Label>
+                    <Label htmlFor="name">Cafe Name</Label>
                     <Input
-                      id="lat"
-                      value={lat.toFixed(6)}
-                      readOnly
-                      className="mt-1 bg-muted font-mono text-sm"
+                      id="name"
+                      placeholder="Napang Chussa Tonewa"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
+                      className="mt-1"
                     />
                   </div>
+
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <Label htmlFor="lat">Latitude</Label>
+                      <Input
+                        id="lat"
+                        value={lat.toFixed(6)}
+                        readOnly
+                        className="mt-1 bg-muted font-mono text-sm"
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="lng">Longitude</Label>
+                      <Input
+                        id="lng"
+                        value={lng.toFixed(6)}
+                        readOnly
+                        className="mt-1 bg-muted font-mono text-sm"
+                      />
+                    </div>
+                  </div>
+
                   <div>
-                    <Label htmlFor="lng">Longitude</Label>
+                    <Label htmlFor="radius-mobile">Radius (km)</Label>
                     <Input
-                      id="lng"
-                      value={lng.toFixed(6)}
-                      readOnly
-                      className="mt-1 bg-muted font-mono text-sm"
+                      id="radius-mobile"
+                      type="number"
+                      value={radiusKm}
+                      onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
+                      step="0.1"
+                      className="mt-1 w-full"
                     />
                   </div>
-                </div>
 
-                <div>
-                  <Label htmlFor="radius-mobile">Radius (km)</Label>
-                  <Input
-                    id="radius-mobile"
-                    type="number"
-                    value={radiusKm}
-                    onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
-                    step="0.1"
-                    className="mt-1 w-full"
-                  />
-                </div>
+                  <div className="space-y-2">
+                    <Button type="submit" className="w-full py-3">
+                      Submit Location
+                    </Button>
+                  </div>
+                  {/* Dataset selector moved to Places panel */}
 
-                <div className="space-y-2">
-                  <Button type="submit" className="w-full py-3">
-                    Submit Location
-                  </Button>
-                </div>
-                <div>
-                  <Label htmlFor="dataset-mobile">Dataset</Label>
-                  <select
-                    id="dataset-mobile"
-                    value={datasetId}
-                    onChange={(e) => setDatasetId(e.target.value)}
-                    className="mt-1 w-full px-2 py-1 rounded border text-sm"
-                  >
-                    {DATASETS.map((d) => (
-                      <option key={d.id} value={d.id}>{d.name}</option>
-                    ))}
-                  </select>
-                </div>
-                
-              </form>
-            </CardContent>
-          </Card>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       )}
@@ -744,228 +971,311 @@ export default function LocationForm() {
       </button>
 
       {/* ---------- RIGHT SIDE – FULL-SCREEN MAP ---------- */}
-      <div className="flex-1 relative min-h-[480px] bg-transparent z-100">
+      <div className="flex-1 relative min-h-[480px] bg-transparent z-100 group">
         <MapContainer center={[lat, lng]} zoom={13} className="h-full w-full bg-transparent" scrollWheelZoom>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
           />
-            <MapRefSetter mapRef={mapRef} />
-            <MapPicker lat={lat} lng={lng} setLat={setLat} setLng={setLng} />
-            {showPlaces && geoDataList.map((item) => (
-              <MapFeatures
-                key={item.id}
-                geoData={item.data}
-                selectedFeatureId={selectedFeatureId}
-                onFeatureClick={(feature, layer) => {
-                  try {
-                    const coords = feature.geometry.type === "Point" ? feature.geometry.coordinates : feature.geometry.coordinates[0];
-                    setLat(coords[1]);
-                    setLng(coords[0]);
-                  } catch (e) {}
-                  setSelectedFeatureId(feature.properties?.name ?? feature.id ?? null);
-                }}
-              />
-            ))}
-            {/* POI markers from augmented poisFlat grouped by category (keeps index in sync with panel) */}
-            {Object.entries(poisFlat.reduce((acc: Record<string, any[]>, p: any) => { (acc[p.type] = acc[p.type] || []).push(p); return acc; }, {})).map(([type, items]: any) => (
-              (items as any[]).map((p: any, idx: number) => {
-                const key = `${type}-${idx}`;
+          <MapRefSetter mapRef={mapRef} />
+          <MapPicker lat={lat} lng={lng} setLat={setLat} setLng={setLng} />
+          {showPlaces && !showWithinRadius && filteredGeoData.map((item) => (
+            <MapFeatures
+              key={item.id}
+              datasetId={item.id}
+              geoData={{ type: 'FeatureCollection', features: item.features }}
+              selectedFeatureId={selectedFeatureId}
+              onFeatureClick={(feature, layer) => {
+                try {
+                  const coords = feature.geometry.type === "Point" ? feature.geometry.coordinates : feature.geometry.coordinates[0];
+                  setPoiLat(coords[1]);
+                  setPoiLng(coords[0]);
+                } catch (e) { }
+                setSelectedFeatureId(feature.properties?.name ?? feature.id ?? null);
+              }}
+            />
+          ))}
+
+          {/* When showing every POI, render individual markers from geojson features filtered by radiusKm */}
+          {showPlaces && showWithinRadius && filteredGeoData.map((ds) => (
+            (ds.features || []).map((f: any, idx: number) => {
+              try {
+                const geom = f.geometry;
+                if (!geom) return null;
+                const coords = geom.type === 'Point' ? geom.coordinates : (geom.coordinates && geom.coordinates[0]);
+                if (!coords || coords.length < 2) return null;
+                const flon = Number(coords[0]);
+                const flat = Number(coords[1]);
+                if (!Number.isFinite(flon) || !Number.isFinite(flat)) return null;
+                const d = distanceKm(lat, lng, flat, flon);
+                if (d > radiusKm) return null;
+                const fid = f.id ?? f.properties?.id ?? `${ds.id}-${idx}`;
+                const isSelectedDs = Math.abs(flat - poiLat) < 1e-6 && Math.abs(flon - poiLng) < 1e-6;
                 return (
                   <Marker
-                    key={key}
-                    position={[Number(p.lat), Number(p.lon)]}
-                    icon={poiIcon(type)}
-                    ref={(r) => {
-                      try {
-                        if (r) poiMarkersRef.current[key] = (r as unknown) as L.Marker;
-                        else delete poiMarkersRef.current[key];
-                      } catch (e) {}
+                    key={`${ds.id}-${fid}`}
+                    position={[flat, flon]}
+                    icon={isSelectedDs ? selectedPoiIcon(ds.id) : getDatasetIcon(ds.id)}
+                    zIndexOffset={isSelectedDs ? 1000 : 0}
+                    eventHandlers={{
+                      click: () => {
+                        setPoiLat(flat);
+                        setPoiLng(flon);
+                        setHoverTempPoiLat(flat);
+                        setHoverTempPoiLng(flon);
+                      },
+                      mouseover: () => {
+                        setPoiLat(flat);
+                        setPoiLng(flon);
+                      },
+                      mouseout: () => {
+                        setPoiLat(hoverTempPoiLat);
+                        setPoiLng(hoverTempPoiLng);
+                      },
                     }}
-                  >
-                    <Popup>
-                      <div className="text-sm">
-                        <div style={{ fontWeight: 600 }}>{p.name ?? 'Unnamed'}</div>
-                        <div className="text-xs">{type} — {p.distance_km ?? ''} km</div>
-                      </div>
-                    </Popup>
-                  </Marker>
-                );
-              })
-            ))}
-          </MapContainer>
-
-          {/* Places panel (toggle) */}
-          {showPlaces && (
-              <div className="absolute top-4 right-4 z-[9999]">
-                <div className="liquid-glass rounded-md p-2 max-w-xs">
-                <div className="px-2 pb-2">
-                  <input
-                    type="search"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search places..."
-                    className="w-full px-2 py-1 rounded border text-sm"
                   />
-                </div>
-                <div className="mt-2 max-h-60 overflow-auto">
-                  {geoLoading && <div className="text-sm text-muted-foreground p-2">Loading...</div>}
-                  {!geoLoading && geoDataList.length === 0 && <div className="text-sm text-muted-foreground p-2">No places loaded</div>}
-                  {geoDataList.map((item) => {
-                    const features = (item.data?.features || []) as any[];
-                    const q = searchQuery.trim().toLowerCase();
-                    const hasQuery = q.length > 0;
-                    const filtered = hasQuery
-                      ? features.filter((f) => {
-                          const label = (f.properties?.name ?? '').toString().toLowerCase();
-                          return label.includes(q) || item.name.toLowerCase().includes(q);
-                        })
-                      : features;
+                );
+              } catch (e) {
+                return null;
+              }
+            })
+          ))}
+          {/* POI markers from augmented poisFlat grouped by category (keeps index in sync with panel) */}
+          {Object.entries(poisFlat.reduce((acc: Record<string, any[]>, p: any) => { (acc[p.type] = acc[p.type] || []).push(p); return acc; }, {})).map(([type, items]: any) => (
+            (items as any[]).map((p: any, idx: number) => {
+              const key = `${type}-${idx}`;
+              const plat = Number(p.lat);
+              const plon = Number(p.lon);
+              const isSelected = Math.abs(plat - poiLat) < 1e-6 && Math.abs(plon - poiLng) < 1e-6;
+              return (
+                <Marker
+                  key={key}
+                  position={[plat, plon]}
+                  icon={isSelected ? selectedPoiIcon(type) : poiIcon(type)}
+                  zIndexOffset={isSelected ? 1000 : 0}
+                  ref={(r) => {
+                    try {
+                      if (r) poiMarkersRef.current[key] = (r as unknown) as L.Marker;
+                      else delete poiMarkersRef.current[key];
+                    } catch (e) { }
+                  }}
+                />
+              );
+            })
+          ))}
+        </MapContainer>
 
-                    if (filtered.length === 0) return null;
-
+        {/* Places panel (toggle) */}
+        {showPlaces && (
+          <div className="absolute top-4 right-4 z-[9999]">
+            <div className="liquid-glass rounded-md p-2 max-w-xs">
+              <div className="px-2 pb-2 flex items-center gap-2">
+                <input
+                  type="search"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search places..."
+                  className="flex-1 px-2 py-1 rounded border text-sm"
+                />
+                <div className="text-xs text-muted-foreground">{filteredGeoData.reduce((s, it) => s + ((it.features?.length) || 0), 0)} results</div>
+              </div>
+              <div className="px-2 pb-2 overflow-x-auto">
+                <div className="flex flex-wrap items-center gap-2">
+                  {DATASETS.map((d) => {
+                    const cnt = getDatasetCount(d.id);
+                    const label = `${d.name}${cnt === null ? ' (…)' : ` (${cnt})`}`;
+                    const active = d.id === datasetId;
                     return (
-                      <div key={item.id} className="mb-2">
-                        <div className="text-sm font-semibold">{item.name}</div>
-                        <ul className="text-sm">
-                          {filtered.map((f: any, idx: number) => {
-                            const fid = f.id ?? f.properties?.id ?? f.properties?.name ?? `${item.id}-${idx}`;
-                            const label = f.properties?.name ?? fid;
-                            return (
-                              <li key={fid} className="py-1">
-                                <button
-                                  className="text-left w-full text-slate-700 hover:underline"
-                                  onClick={() => {
-                                    try {
-                                      const coords = f.geometry.type === "Point" ? f.geometry.coordinates : f.geometry.coordinates[0];
-                                      setLat(coords[1]);
-                                      setLng(coords[0]);
-                                    } catch (e) {}
-                                    setSelectedFeatureId(f.properties?.name ?? f.id ?? fid);
-                                  }}
-                                >
-                                  {label}
-                                </button>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
+                      <button
+                        key={d.id}
+                        onClick={() => { setDatasetId(d.id); setShowPlaces(true); }}
+                        className={"text-sm px-3 py-1 rounded " + (active ? 'bg-slate-800 text-white' : 'bg-white/30 text-slate-700')}
+                      >
+                        {label}
+                      </button>
                     );
                   })}
                 </div>
               </div>
+              <div className="mt-2 max-h-60 overflow-auto">
+                {geoLoading && <div className="text-sm text-muted-foreground p-2">Loading...</div>}
+                {!geoLoading && geoDataList.length === 0 && <div className="text-sm text-muted-foreground p-2">No places loaded</div>}
+                {filteredGeoData.map((item) => {
+                  const allFeatures = (item.features || []) as any[];
+                  // when showWithinRadius is enabled, restrict to features within radiusKm of the center
+                  const features = showWithinRadius
+                    ? allFeatures.filter((f) => {
+                      try {
+                        const coords = f.geometry?.type === 'Point' ? f.geometry.coordinates : (f.geometry?.coordinates && f.geometry.coordinates[0]);
+                        if (!coords || coords.length < 2) return false;
+                        const flon = Number(coords[0]);
+                        const flat = Number(coords[1]);
+                        if (!Number.isFinite(flon) || !Number.isFinite(flat)) return false;
+                        const d = distanceKm(lat, lng, flat, flon);
+                        return d <= radiusKm;
+                      } catch (e) {
+                        return false;
+                      }
+                    })
+                    : allFeatures;
+                  const q = searchQuery.trim().toLowerCase();
+                  const hasQuery = q.length > 0;
+                  const filtered = hasQuery
+                    ? features.filter((f) => {
+                      const label = (f.properties?.name ?? '').toString().toLowerCase();
+                      return label.includes(q) || item.name.toLowerCase().includes(q);
+                    })
+                    : features;
+
+                  if (filtered.length === 0) return null;
+
+                  return (
+                    <div key={item.id} className="mb-2">
+                      <div className="text-sm font-semibold">{item.name}</div>
+                      <ul className="text-sm">
+                        {filtered.map((f: any, idx: number) => {
+                          const fid = f.id ?? f.properties?.id ?? f.properties?.name ?? `${item.id}-${idx}`;
+                          const label = f.properties?.name ?? fid;
+                          return (
+                            <li key={fid} className="py-1">
+                              <button
+                                className="text-left w-full text-slate-700 hover:underline"
+                                onClick={() => {
+                                  try {
+                                    const coords = f.geometry.type === "Point" ? f.geometry.coordinates : f.geometry.coordinates[0];
+                                    // setLat(coords[1]);
+                                    // setLng(coords[0]);
+                                    setPoiLat(coords[1]);
+                                    setPoiLng(coords[0]);
+                                    setHoverTempPoiLat(coords[1]);
+                                    setHoverTempPoiLng(coords[0]);
+                                  } catch (e) { }
+                                  setSelectedFeatureId(f.properties?.name ?? f.id ?? fid);
+                                }}
+                              >
+                                {label}
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          )}
-          {/* POIs concise panel */}
-          {poisData && (
-            <div className="absolute bottom-4 right-4 z-[9999]">
-              <div className="liquid-glass rounded-md p-3 w-72">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <div className="text-sm text-muted-foreground">Center</div>
-                    <div className="font-mono text-sm">{Number(poisData?.center?.lat ?? lat).toFixed(6)}</div>
-                    <div className="font-mono text-sm">{Number(poisData?.center?.lon ?? lng).toFixed(6)}</div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-sm text-muted-foreground">Radius</div>
-                    <div className="font-semibold">{(poisData.radius_km ?? radiusKm)} km</div>
-                  </div>
+          </div>
+        )}
+        {/* POIs concise panel */}
+        {poisData && (
+          <div className="absolute bottom-4 right-4 z-[9999] opacity-0 invisible group-hover:opacity-100 group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200">
+            <div className="liquid-glass rounded-md p-3 w-72">
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="text-sm text-muted-foreground">Center</div>
+                  <div className="font-mono text-sm">{Number(poisData?.center?.lat ?? lat).toFixed(6)}</div>
+                  <div className="font-mono text-sm">{Number(poisData?.center?.lon ?? lng).toFixed(6)}</div>
                 </div>
-
-                <div className="mt-2 text-sm">
-                  <div className="font-semibold">Categories</div>
-                  <div className="mt-1">
-                    {Object.entries(poisData.pois || {}).map(([k, v]: any) => (
-                      <div key={k} className="text-xs">{k}: {(v as any[]).length}</div>
-                    ))}
-                  </div>
+                <div className="text-right">
+                  <div className="text-sm text-muted-foreground">Radius</div>
+                  <div className="font-semibold">{(poisData.radius_km ?? radiusKm)} km</div>
                 </div>
+              </div>
 
-                <div className="mt-2">
-                  <div className="text-sm font-semibold">Nearby by Category</div>
-                  <div className="mt-1 max-h-48 overflow-auto text-xs">
-                    {
-                      // build grouped map from augmented flat list so we can access matchedFeature
-                      Object.entries(poisFlat.reduce((acc: Record<string, any[]>, p: any) => {
-                        (acc[p.type] = acc[p.type] || []).push(p);
-                        return acc;
-                      }, {})).map(([cat, items]: any) => (
-                        <div key={cat} className="mb-2">
-                          <div className="font-medium">{cat} <span className="text-muted-foreground">({(items as any[]).length})</span></div>
-                          <ul className="mt-1">
-                            {(items as any[]).slice(0, 5).map((it: any, idx: number) => (
-                              <li key={`${cat}-${idx}`} className="py-0.5">
-                                <div className="flex items-start justify-between gap-2">
-                                  <button
-                                    className="text-left w-full hover:underline"
-                                    onClick={() => { openPoi(cat, idx, it); }}
-                                  >
-                                    {it.name ?? 'Unnamed'} <span className="text-muted-foreground">— {it.distance_km} km</span>
-                                  </button>
-                                  <button
-                                    className="text-xs text-slate-500 hover:underline"
-                                    onClick={() => setExpandedPoi(expandedPoi === `${cat}-${idx}` ? null : `${cat}-${idx}`)}
-                                  >
-                                    details
-                                  </button>
+              <div className="mt-2 text-sm">
+                <div className="font-semibold">Categories</div>
+                <div className="mt-1">
+                  {Object.entries(poisData.pois || {}).map(([k, v]: any) => (
+                    <div key={k} className="text-xs">{k}: {(v as any[]).length}</div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-2">
+                <div className="text-sm font-semibold">Nearby by Category</div>
+                <div className="mt-1 max-h-48 overflow-auto text-xs">
+                  {
+                    // build grouped map from augmented flat list so we can access matchedFeature
+                    Object.entries(poisFlat.reduce((acc: Record<string, any[]>, p: any) => {
+                      (acc[p.type] = acc[p.type] || []).push(p);
+                      return acc;
+                    }, {})).map(([cat, items]: any) => (
+                      <div key={cat} className="mb-2">
+                        <div className="font-medium">{cat} <span className="text-muted-foreground">({(items as any[]).length})</span></div>
+                        <ul className="mt-1">
+                          {(items as any[]).slice(0, 5).map((it: any, idx: number) => (
+                            <li key={`${cat}-${idx}`} className="py-0.5">
+                              <div className="flex items-start justify-between gap-2">
+                                <button
+                                  className="text-left w-full hover:underline"
+                                  onClick={() => { openPoi(cat, idx, it); }}
+                                >
+                                  {it.name ?? 'Unnamed'} <span className="text-muted-foreground">— {it.distance_km} km</span>
+                                </button>
+                                <button
+                                  className="text-xs text-slate-500 hover:underline"
+                                  onClick={() => setExpandedPoi(expandedPoi === `${cat}-${idx}` ? null : `${cat}-${idx}`)}
+                                >
+                                  details
+                                </button>
+                              </div>
+                              {expandedPoi === `${cat}-${idx}` && (
+                                <div className="mt-1 text-[11px] text-slate-700 bg-white/5 p-2 rounded">
+                                  {it.matchedFeature ? (
+                                    <div>
+                                      {Object.entries(it.matchedFeature.properties || {}).map(([k, v]: any) => (
+                                        <div key={k}><strong>{k}</strong>: {String(v)}</div>
+                                      ))}
+                                    </div>
+                                  ) : (
+                                    <div className="text-muted-foreground">No matching dataset feature found.</div>
+                                  )}
                                 </div>
-                                {expandedPoi === `${cat}-${idx}` && (
-                                  <div className="mt-1 text-[11px] text-slate-700 bg-white/5 p-2 rounded">
-                                    {it.matchedFeature ? (
-                                      <div>
-                                        {Object.entries(it.matchedFeature.properties || {}).map(([k, v]: any) => (
-                                          <div key={k}><strong>{k}</strong>: {String(v)}</div>
-                                        ))}
-                                      </div>
-                                    ) : (
-                                      <div className="text-muted-foreground">No matching dataset feature found.</div>
-                                    )}
-                                  </div>
-                                )}
-                              </li>
-                            ))}
-                            {(items as any[]).length === 0 && <li className="text-muted-foreground">No items</li>}
-                          </ul>
-                        </div>
-                      ))
-                    }
-                  </div>
+                              )}
+                            </li>
+                          ))}
+                          {(items as any[]).length === 0 && <li className="text-muted-foreground">No items</li>}
+                        </ul>
+                      </div>
+                    ))
+                  }
                 </div>
               </div>
             </div>
-          )}
-          {/* CSV info overlay for matched location */}
-          {selectedCsvRow && (
-            <div className="absolute bottom-6 left-4 z-[9999]">
-              <div
-                className="w-80 h-44 rounded-lg overflow-hidden shadow-lg text-white"
-                style={{
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundImage: selectedCsvRow['imageUrl'] ? `url(${selectedCsvRow['imageUrl']})` : undefined,
-                }}
-              >
-                <div className="w-full h-full bg-black/30 p-3 flex flex-col justify-end">
-                  <div className="text-lg font-bold leading-tight">{selectedCsvRow['name'] || selectedCsvRow['place_id'] || 'Place'}</div>
-                  <div className="text-sm mt-1">{selectedCsvRow['address']}</div>
-                  <div className="flex items-center justify-between mt-2">
-                    <div className="text-sm">{selectedCsvRow['phone'] ? selectedCsvRow['phone'] : ''}</div>
-                    {selectedCsvRow['url'] && (
-                      <a
-                        href={selectedCsvRow['url']}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-xs bg-white/20 px-2 py-1 rounded-md hover:bg-white/30"
-                      >
-                        Open in Maps
-                      </a>
-                    )}
-                  </div>
+          </div>
+        )}
+        {/* CSV info overlay for matched location */}
+        {selectedCsvRow && (
+          <div className="absolute bottom-6 left-4 z-[9999]">
+            <div
+              className="w-80 h-44 rounded-lg overflow-hidden shadow-lg text-white"
+              style={{
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundImage: selectedCsvRow['imageUrl'] ? `url(${selectedCsvRow['imageUrl']})` : undefined,
+              }}
+            >
+              <div className="w-full h-full bg-black/30 p-3 flex flex-col justify-end">
+                <div className="text-lg font-bold leading-tight">{selectedCsvRow['name'] || selectedCsvRow['place_id'] || 'Place'}</div>
+                <div className="text-sm mt-1">{selectedCsvRow['address']}</div>
+                <div className="text-sm mt-1">Distance: {distanceKm(poiLat, poiLng, lat, lng).toFixed(2)} KM</div>
+                <div className="flex items-center justify-between mt-2">
+                  <div className="text-sm">{selectedCsvRow['phone'] ? selectedCsvRow['phone'] : ''}</div>
+                  {selectedCsvRow['url'] && (
+                    <a
+                      href={selectedCsvRow['url']}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xs bg-white/20 px-2 py-1 rounded-md hover:bg-white/30"
+                    >
+                      Open in Maps
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
-          )}
+          </div>
+        )}
       </div>
     </div>
   );
