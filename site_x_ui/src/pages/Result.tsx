@@ -46,6 +46,21 @@ export default function ResultPage() {
 
     const [loadedPois, setLoadedPois] = useState<Record<string, Poi[]> | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
+    const [prediction, setPrediction] = useState<{ score: number; risk: string } | null>(null);
+
+    useEffect(() => {
+        if (!lat || !lng) return;
+        fetch("http://127.0.0.1:8000/api/v1/predict-score/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ lat, lng })
+        })
+        .then(res => res.json())
+        .then(data => {
+            setPrediction({ score: data.predicted_score, risk: data.risk_level });
+        })
+        .catch(err => console.error("Prediction fetch error:", err));
+    }, [lat, lng]);
 
     const analysis = useMemo(() => {
         const s = `${name}|${lat}|${lng}`;
@@ -219,11 +234,11 @@ export default function ResultPage() {
                     <h1 style={{ margin: 0, color: '#0f172a' }}>{name || "Place"} — Analysis</h1>
                     <div style={{ color: "#475569", marginTop: 6 }}>{`lat: ${lat.toFixed(6)} · lng: ${lng.toFixed(6)}`}</div>
                     <div style={{ marginTop: 12 }}>
-                        <div style={{ fontSize: 13, color: "#475569" }}>Success Score</div>
+                        <div style={{ fontSize: 13, color: "#475569" }}>Success Score {prediction ? `(${prediction.risk})` : ''}</div>
                         <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
-                            <div style={{ height: 14, width: `${analysis.success_score * 100}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8 }} />
+                            <div style={{ height: 14, width: `${Math.min(((prediction?.score || 0) / 3) * 100, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.5s" }} />
                         </div>
-                        <div style={{ marginTop: 6, color: '#0f172a' }}>{analysis.success_score}</div>
+                        <div style={{ marginTop: 6, color: '#0f172a' }}>{prediction ? prediction.score.toFixed(3) : "Calculating..."}</div>
                     </div>
                 </div>
 
