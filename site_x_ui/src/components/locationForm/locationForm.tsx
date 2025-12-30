@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import { ChartRadarLinesOnly } from "@/components/ui/chart-radar-lines-only";
 import { MapPin, X } from "lucide-react";
 import * as L from "leaflet";
@@ -246,7 +247,7 @@ function MapRefSetter({ mapRef }: { mapRef: React.MutableRefObject<L.Map | null>
 export default function LocationForm() {
   const [lat, setLat] = useState<number>(27.670587); // Kathmandu
   const [lng, setLng] = useState<number>(85.420868);
-  const [radiusKm, setRadiusKm] = useState<number>(0.3);
+  const [radiusKm, setRadiusKm] = useState<number>(1.0);
   const [poisData, setPoisData] = useState<any | null>(null);
   const [poisFlat, setPoisFlat] = useState<Array<any>>([]);
   const [poiLoading, setPoiLoading] = useState(false);
@@ -280,6 +281,12 @@ export default function LocationForm() {
   const [hoverTempPoiLng, setHoverTempPoiLng] = useState<number>(0);
   const [csvRows, setCsvRows] = useState<Array<Record<string, string>> | null>(null);
   const [selectedCsvRow, setSelectedCsvRow] = useState<Record<string, string> | null>(null);
+  const [overlayImageFailed, setOverlayImageFailed] = useState<boolean>(false);
+
+  useEffect(() => {
+    // reset image failure state when selected row changes
+    setOverlayImageFailed(false);
+  }, [selectedCsvRow]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -820,19 +827,6 @@ export default function LocationForm() {
                 </div>
               </div>
 
-              <div>
-                <Label htmlFor="radius">Radius (km)</Label>
-                <Input
-                  id="radius"
-                  type="number"
-                  value={radiusKm}
-                  onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
-                  step="0.1"
-                  min="0.1"
-                  max="5"
-                  className="mt-1 w-full"
-                />
-              </div>
 
               <div className="space-y-2">
                 <Button type="submit" className="w-full py-3">
@@ -850,20 +844,10 @@ export default function LocationForm() {
                 />
                 <Label htmlFor="show-places-toggle-desktop">Show data points</Label>
               </div>
-              <div className="flex items-center gap-3 mt-2">
-                <input
-                  id="show-all-pois-desktop"
-                  type="checkbox"
-                  checked={showWithinRadius}
-                  onChange={(e) => setShowWithinRadius(e.target.checked)}
-                  className="w-4 h-4 rounded"
-                />
-                <Label htmlFor="show-all-pois-desktop">poiswithin given radius)</Label>
-              </div>
             </form>
           </CardContent>
+          <ChartRadarLinesOnly data={radarCounts} />
         </Card>
-        <ChartRadarLinesOnly data={radarCounts} />
       </div>
 
       {/* ---------- MOBILE BOTTOM SHEET ---------- */}
@@ -935,7 +919,7 @@ export default function LocationForm() {
                   </div>
 
                   <div>
-                    <Label htmlFor="radius-mobile">Radius (km)</Label>
+                    <Label htmlFor="radius-mobile">r: </Label>
                     <Input
                       id="radius-mobile"
                       type="number"
@@ -972,7 +956,7 @@ export default function LocationForm() {
 
       {/* ---------- RIGHT SIDE – FULL-SCREEN MAP ---------- */}
       <div className="flex-1 relative min-h-[480px] bg-transparent z-100 group">
-        <MapContainer center={[lat, lng]} zoom={13} className="h-full w-full bg-transparent" scrollWheelZoom>
+        <MapContainer center={[lat, lng]} zoom={23} className="h-full w-full bg-transparent" scrollWheelZoom>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
@@ -1069,15 +1053,28 @@ export default function LocationForm() {
         {showPlaces && (
           <div className="absolute top-4 right-4 z-[9999]">
             <div className="liquid-glass rounded-md p-2 max-w-xs">
-              <div className="px-2 pb-2 flex items-center gap-2">
+              <div className="px-2 pb-2 flex items-center gap-2 min-w-0">
                 <input
                   type="search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search places..."
-                  className="flex-1 px-2 py-1 rounded border text-sm"
+                  className="flex-1 min-w-0 px-2 py-1 rounded border text-sm"
                 />
-                <div className="text-xs text-muted-foreground">{filteredGeoData.reduce((s, it) => s + ((it.features?.length) || 0), 0)} results</div>
+                <div className="ml-0 flex items-center gap-2 flex-none">
+                  {/* <Label htmlFor="radius" className="text-sm whitespace-nowrap"></Label> */}
+                  <Input
+                    id="radius"
+                    type="number"
+                    value={radiusKm}
+                    onChange={(e) => setRadiusKm(Number(e.target.value) || 0)}
+                    step="0.1"
+                    min="0.1"
+                    max="5"
+                    className="mt-0 w-12 p-0 "
+                  />
+                  <div className="text-xs text-muted-foreground">km</div>
+                </div>
               </div>
               <div className="px-2 pb-2 overflow-x-auto">
                 <div className="flex flex-wrap items-center gap-2">
@@ -1247,15 +1244,17 @@ export default function LocationForm() {
         {/* CSV info overlay for matched location */}
         {selectedCsvRow && (
           <div className="absolute bottom-6 left-4 z-[9999]">
-            <div
-              className="w-80 h-44 rounded-lg overflow-hidden shadow-lg text-white"
-              style={{
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundImage: selectedCsvRow['imageUrl'] ? `url(${selectedCsvRow['imageUrl']})` : undefined,
-              }}
-            >
-              <div className="w-full h-full bg-black/30 p-3 flex flex-col justify-end">
+            <div className="w-80 h-44 rounded-lg overflow-hidden shadow-lg text-white relative">
+              {selectedCsvRow?.imageUrl && !overlayImageFailed && (
+                <img
+                  src={selectedCsvRow.imageUrl}
+                  alt={selectedCsvRow?.name || selectedCsvRow?.place_id || 'image'}
+                  className="absolute inset-0 w-full h-full object-cover z-0"
+                  onError={() => setOverlayImageFailed(true)}
+                  onLoad={() => setOverlayImageFailed(false)}
+                />
+              )}
+              <div className="w-full h-full bg-black/30 p-3 flex flex-col justify-end relative z-10">
                 <div className="text-lg font-bold leading-tight">{selectedCsvRow['name'] || selectedCsvRow['place_id'] || 'Place'}</div>
                 <div className="text-sm mt-1">{selectedCsvRow['address']}</div>
                 <div className="text-sm mt-1">Distance: {distanceKm(poiLat, poiLng, lat, lng).toFixed(2)} KM</div>
