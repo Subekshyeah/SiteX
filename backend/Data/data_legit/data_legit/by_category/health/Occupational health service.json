@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Basic Health Service Centre operated by Bhaktapur Municipality Napali Bhaktapur",
+    "price": null,
+    "categoryName": "Occupational health service",
+    "address": "MCF3+8GG, Srijana Nagar, Bhaktapur, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF3+8GG, Srijana Nagar",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6620246",
+    "phoneUnformatted": "+97716620246",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6735754,
+      "lng": 85.4038655
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrRRYAQAb6zkR3V7wn0VznOA",
+    "categories": [
+      "Occupational health service"
+    ],
+    "fid": "0x39eb1b00015814ad:0xe09c73459ff05edd",
+    "cid": "16184937903735987933",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:56.900Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Basic%20Health%20Service%20Centre%20operated%20by%20Bhaktapur%20Municipality%20Napali%20Bhaktapur&query_place_id=ChIJrRRYAQAb6zkR3V7wn0VznOA",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSymY5-JDwKWednuW8tfcBQ0NyZynHaOh3Z3IoZu4c5A5sx0Hl8Y_GcncZq-5DIaeNAjRBNxVntxu4AvNyuC2tIqJr33Bi2GAImXVwqt018MideHasa3UyQXmB4VzhECg_smG_NnSQ=w408-h544-k-no",
+    "kgmid": "/g/11lthhj2j_"
+  }
+]

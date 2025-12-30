@@ -1,0 +1,671 @@
+[
+  {
+    "title": "Bagiswori College",
+    "subTitle": "बागिश्वरी कलेज",
+    "price": null,
+    "categoryName": "University",
+    "address": "Kamal Pokhari Path, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamal Pokhari Path",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.bagisworicollege.edu.np/",
+    "phone": "+977 1-6610270",
+    "phoneUnformatted": "+97716610270",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675307,
+      "lng": 85.4390974
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJC4GYbE0F6zkRfGQY-AhNDts",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb054d6c98810b:0xdb0e4d08f818647c",
+    "cid": "15784638444897592444",
+    "reviewsCount": 67,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:15 to 10:10 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bagiswori%20College&query_place_id=ChIJC4GYbE0F6zkRfGQY-AhNDts",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwcvfJAjxMoXa0pKBhngR9BPbj2vQH0q2px2ccEmP203tMrTCMZVfUyH4vsDJJqTPOvX-pwMZ6HJTPNsRXGQtxcSHsd7YoKP0JGMDVh1_L-lMuO4aLhy4yyjhPjtMp0Tg8cYVQ=w408-h725-k-no",
+    "kgmid": "/g/11c5rmpdvq"
+  },
+  {
+    "title": "Nepal Innovation Centre",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCCP+9G8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCP+9G8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1130592",
+    "phoneUnformatted": "+9779841130592",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709235,
+      "lng": 85.4363431
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJlefudkcb6zkRhwVqsXJYRrA",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb1b4776eee795:0xb0465872b16a0587",
+    "cid": "12701937048671094151",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:34.734Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nepal%20Innovation%20Centre&query_place_id=ChIJlefudkcb6zkRhwVqsXJYRrA",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=55aLFE-giu_ZbJPL7ZIYcg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=243.35986&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sz_yv7h5"
+  },
+  {
+    "title": "Khec library",
+    "price": null,
+    "categoryName": "University",
+    "address": "Khwopa Engineering College Premises44800, BYASI BHAKTAPUR- 02, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Khwopa Engineering College Premises44800, BYASI BHAKTAPUR- 02",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709871,
+      "lng": 85.4392
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDxp5XAAF6zkRjuenoSqarQg",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb05005c791a0f:0x8ad9a2aa1a7e78e",
+    "cid": "625325431165806478",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:34.735Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khec%20library&query_place_id=ChIJDxp5XAAF6zkRjuenoSqarQg",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=qTirYTwTV-D_aWRLoXEPVQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=60.71347&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w3lc1k90"
+  },
+  {
+    "title": "Saraswathi Vidyagraha",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCGP+8F5, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+8F5",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6757599,
+      "lng": 85.4362276
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVVWF6rIa6zkR7Y2LI8y9REM",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb1ab2ea855555:0x4344bdcc238b8ded",
+    "cid": "4847207783424822765",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:34.735Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saraswathi%20Vidyagraha&query_place_id=ChIJVVWF6rIa6zkR7Y2LI8y9REM",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Azzk41hq3BHvsibtZabCMA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=185.5465&pitch=0&thumbfov=100",
+    "kgmid": "/g/11kj902p45"
+  },
+  {
+    "title": "Sajita majhi",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCF3+5H3, Bhaktapur, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCF3+5H3",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6728868,
+      "lng": 85.4039087
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4WNodmcb6zkRYMbrfB5pzDQ",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb1b67766863e1:0x34cc691e7cebc660",
+    "cid": "3804531364886988384",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:57.634Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sajita%20majhi&query_place_id=ChIJ4WNodmcb6zkRYMbrfB5pzDQ",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=6I_56dcIu2pIu1WbzBrKBw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=225.24193&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rhnxvzp8"
+  },
+  {
+    "title": "Bagiswori College",
+    "subTitle": "बागिश्वरी कलेज",
+    "price": null,
+    "categoryName": "University",
+    "address": "Kamal Pokhari Path, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamal Pokhari Path",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.bagisworicollege.edu.np/",
+    "phone": "+977 1-6610270",
+    "phoneUnformatted": "+97716610270",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675307,
+      "lng": 85.4390974
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJC4GYbE0F6zkRfGQY-AhNDts",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb054d6c98810b:0xdb0e4d08f818647c",
+    "cid": "15784638444897592444",
+    "reviewsCount": 67,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:15 to 10:10 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:15 to 10:10 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bagiswori%20College&query_place_id=ChIJC4GYbE0F6zkRfGQY-AhNDts",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwcvfJAjxMoXa0pKBhngR9BPbj2vQH0q2px2ccEmP203tMrTCMZVfUyH4vsDJJqTPOvX-pwMZ6HJTPNsRXGQtxcSHsd7YoKP0JGMDVh1_L-lMuO4aLhy4yyjhPjtMp0Tg8cYVQ=w408-h725-k-no",
+    "kgmid": "/g/11c5rmpdvq"
+  },
+  {
+    "title": "Khec library",
+    "price": null,
+    "categoryName": "University",
+    "address": "Khwopa Engineering College Premises44800, BYASI BHAKTAPUR- 02, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Khwopa Engineering College Premises44800, BYASI BHAKTAPUR- 02",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709871,
+      "lng": 85.4392
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDxp5XAAF6zkRjuenoSqarQg",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb05005c791a0f:0x8ad9a2aa1a7e78e",
+    "cid": "625325431165806478",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.706Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khec%20library&query_place_id=ChIJDxp5XAAF6zkRjuenoSqarQg",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=qTirYTwTV-D_aWRLoXEPVQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=60.71347&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w3lc1k90"
+  },
+  {
+    "title": "Nepal Innovation Centre",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCCP+9G8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCP+9G8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1130592",
+    "phoneUnformatted": "+9779841130592",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709235,
+      "lng": 85.4363431
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJlefudkcb6zkRhwVqsXJYRrA",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb1b4776eee795:0xb0465872b16a0587",
+    "cid": "12701937048671094151",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.706Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nepal%20Innovation%20Centre&query_place_id=ChIJlefudkcb6zkRhwVqsXJYRrA",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=55aLFE-giu_ZbJPL7ZIYcg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=243.35986&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sz_yv7h5"
+  },
+  {
+    "title": "Sharada Campus",
+    "subTitle": "शारदा क्याम्पस",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCHV+VRX, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHV+VRX",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6796905,
+      "lng": 85.4445284
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVVWlz04F6zkRwkpLQvo4Sak",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb054ecfa55555:0xa94938fa424b4ac2",
+    "cid": "12198343713214909122",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:41.064Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sharada%20Campus&query_place_id=ChIJVVWlz04F6zkRwkpLQvo4Sak",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ol18JZNbu2zVHMbE63BVsg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=302.3402&pitch=0&thumbfov=100",
+    "kgmid": "/g/11txv1r5ct"
+  },
+  {
+    "title": "Bhaktapur Multiple Campus",
+    "subTitle": "भक्तपुर बहुमुखी क्याम्पस",
+    "price": null,
+    "categoryName": "University",
+    "address": "MC9C+J9R, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+J9R, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://bkmc.tu.edu.np/",
+    "phone": "+977 1-6610200 ext. 6613199",
+    "phoneUnformatted": "+97716610200",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6691024,
+      "lng": 85.4208909
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYeQVlaMa6zkRHSx4RwGKG4o",
+    "categories": [
+      "University",
+      "Community college"
+    ],
+    "fid": "0x39eb1aa39515e461:0x8a1b8a0147782c1d",
+    "cid": "9951699539703901213",
+    "reviewsCount": 176,
+    "imagesCount": 330,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:41.064Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Multiple%20Campus&query_place_id=ChIJYeQVlaMa6zkRHSx4RwGKG4o",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw95XCVf6t09gQAVWkIHNi1qObuRU_oQic4-Gw3KWEwml69j8Lfeay0lpfGbCWkhbMfdKL13Ia6-WkH2sYuBFxd5yTEJHnjRXsllJ1YTUWgKLggvUeWySZprdgHjL9hekMP-haq=w426-h240-k-no",
+    "kgmid": "/g/1v_slnnw"
+  },
+  {
+    "title": "Saraswathi Vidyagraha",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCGP+8F5, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+8F5",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6757599,
+      "lng": 85.4362276
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVVWF6rIa6zkR7Y2LI8y9REM",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb1ab2ea855555:0x4344bdcc238b8ded",
+    "cid": "4847207783424822765",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.999Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saraswathi%20Vidyagraha&query_place_id=ChIJVVWF6rIa6zkR7Y2LI8y9REM",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Azzk41hq3BHvsibtZabCMA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=185.5465&pitch=0&thumbfov=100",
+    "kgmid": "/g/11kj902p45"
+  },
+  {
+    "title": "Sajita majhi",
+    "price": null,
+    "categoryName": "University",
+    "address": "MCF3+5H3, Bhaktapur, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCF3+5H3",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6728868,
+      "lng": 85.4039087
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4WNodmcb6zkRYMbrfB5pzDQ",
+    "categories": [
+      "University"
+    ],
+    "fid": "0x39eb1b67766863e1:0x34cc691e7cebc660",
+    "cid": "3804531364886988384",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:28.680Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sajita%20majhi&query_place_id=ChIJ4WNodmcb6zkRYMbrfB5pzDQ",
+    "searchPageUrl": "https://www.google.com/maps/search/university/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "university",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=6I_56dcIu2pIu1WbzBrKBw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=225.24193&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rhnxvzp8"
+  }
+]

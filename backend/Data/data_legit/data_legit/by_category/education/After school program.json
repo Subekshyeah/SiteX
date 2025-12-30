@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Durga Dhakal",
+    "price": null,
+    "categoryName": "After school program",
+    "address": "PC28+CW4, Unnamed Road, Changunarayan 44600, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "PC28+CW4, Unnamed Road",
+    "city": "Changunarayan",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.7010207,
+      "lng": 85.4173131
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJT9iSAeUb6zkRTQgPqpx2rhU",
+    "categories": [
+      "After school program"
+    ],
+    "fid": "0x39eb1be50192d84f:0x15ae769caa0f084d",
+    "cid": "1562316535984228429",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:29.569Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Durga%20Dhakal&query_place_id=ChIJT9iSAeUb6zkRTQgPqpx2rhU",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.6974209298533,85.42012009644444,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 26,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ge65ARWJ8iTiy43S--zDkA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=270.64294&pitch=0&thumbfov=100",
+    "kgmid": "/g/11jwl85ymj"
+  }
+]

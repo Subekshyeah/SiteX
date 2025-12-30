@@ -1,0 +1,2119 @@
+[
+  {
+    "title": "Timmure kamalbinayak",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "Jagati-KamalBinayak Rd, Bhaktapur 44600, Nepal",
+    "neighborhood": null,
+    "street": "Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/TimmureKB?mibextid=ZbWKwL",
+    "phone": "+977 981-3585227",
+    "phoneUnformatted": "+9779813585227",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6768151,
+      "lng": 85.4368339
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYW1_5lcb6zkReAo2PqzJjxY",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1b57e67f6d61:0x168fc9ac3e360a78",
+    "cid": "1625739732119325304",
+    "reviewsCount": 115,
+    "imagesCount": 99,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:37.512Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9:30 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Fireplace": true
+        },
+        {
+          "Live music": true
+        },
+        {
+          "Rooftop seating": true
+        },
+        {
+          "Sports": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Assistive hearing loop": true
+        },
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        },
+        {
+          "Wheelchair accessible seating": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "All you can eat": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Braille menu": true
+        },
+        {
+          "Cocktails": true
+        },
+        {
+          "Halal food": true
+        },
+        {
+          "Happy hour drinks": true
+        },
+        {
+          "Happy hour food": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Organic dishes": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Salad bar": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Vegetarian options": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Brunch": true
+        },
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Counter service": true
+        },
+        {
+          "Seating": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        },
+        {
+          "Wi-Fi": true
+        },
+        {
+          "Free Wi-Fi": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Cozy": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Family-friendly": true
+        },
+        {
+          "Groups": true
+        },
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Tourists": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "Debit cards": true
+        },
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "High chairs": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Usually plenty of parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Timmure%20kamalbinayak&query_place_id=ChIJYW1_5lcb6zkReAo2PqzJjxY",
+    "searchPageUrl": "https://www.google.com/maps/search/barbecue%20restaurant/@27.667695459098024,85.41290913650586,17z?hl=en",
+    "searchString": "barbecue restaurant",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw6yn1YpYbTJHmEOaXkBm9torJOdItzi9r87_9NuOHRcC34AturjfS-beW4ETKSZcDa4L6jwtdQQv99q1AojOdJtPZiZXsl-bit6RezbfAZkHkQtOMNmeRJ5l_bUzhKEU4eW_FNlg=w426-h240-k-no",
+    "kgmid": "/g/11shsv1glg"
+  },
+  {
+    "title": "Eagle King sekuwa corner",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MCH5+G9H, Bhaktapur 44800, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCH5+G9H",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6788165,
+      "lng": 85.4084699
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_UC2DV0b6zkRIJ3Z1L5pQ1g",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1b5d0db640fd:0x584369bed4d99d20",
+    "cid": "6360043367113006368",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:37.512Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 11 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 11 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 11 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 11 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 11 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 11 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 11 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Eagle%20King%20sekuwa%20corner&query_place_id=ChIJ_UC2DV0b6zkRIJ3Z1L5pQ1g",
+    "searchPageUrl": "https://www.google.com/maps/search/barbecue%20restaurant/@27.667695459098024,85.41290913650586,17z?hl=en",
+    "searchString": "barbecue restaurant",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx98K-1iffduFPYbvu5MP6Jx9Ym1L1ywSocw9NklksXfBxCfb18II8_sDdRZrYGuLA8U5ogyuCt_dNWtSFTRE2gWNDloA3YilxQwthHNyUgrg9QIn3WSH9jZ71HGWNtd3ZaEQwQvJ1KczbJ=w408-h544-k-no",
+    "kgmid": "/g/11v9lhj1x4"
+  },
+  {
+    "title": "BC Fast Foodl",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MC8G+3WM, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8G+3WM",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6652101,
+      "lng": 85.4272984
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSVg7gaga6zkRteeXglhdhAc",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1aa8813b5849:0x7845d588297e7b5",
+    "cid": "541660489920800693",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:49.148Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Brunch": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BC%20Fast%20Foodl&query_place_id=ChIJSVg7gaga6zkRteeXglhdhAc",
+    "searchPageUrl": "https://www.google.com/maps/search/barbecue%20restaurant/@27.67530454090198,85.41290913650586,17z?hl=en",
+    "searchString": "barbecue restaurant",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3ZzpZThgz-5DGLJ0y1AfSQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=190.61497&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fy_1ldr_"
+  },
+  {
+    "title": "Bansbari Kitchen",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MFP5+JJF, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MFP5+JJF",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6865656,
+      "lng": 85.4590553
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjfIMaQAF6zkRkAL30ZlvtBk",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb0500690cf28d:0x19b46f99d1f70290",
+    "cid": "1852228053199422096",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:51:42.777Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bansbari%20Kitchen&query_place_id=ChIJjfIMaQAF6zkRkAL30ZlvtBk",
+    "searchPageUrl": "https://www.google.com/maps/search/barbecue%20restaurant/@27.674599999999995,85.44775980735567,17z?hl=en",
+    "searchString": "barbecue restaurant",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=J6-0JIHik9I42W8JI-TgFA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=3.8879824&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x_d7k8mp"
+  },
+  {
+    "title": "Sekuwa park",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "Radhe Radhe Rd, Bhaktapur, Nepal",
+    "neighborhood": "Nikoshera",
+    "street": "Radhe Radhe Rd",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3704061",
+    "phoneUnformatted": "+9779843704061",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6809911,
+      "lng": 85.397652
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ52n16igb6zkRaPwxHAbG9k8",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1b28eaf569e7:0x4ff6c6061c31fc68",
+    "cid": "5762010502812269672",
+    "reviewsCount": 117,
+    "imagesCount": 77,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:52:05.693Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Outdoor seating": true
+        },
+        {
+          "No-contact delivery": true
+        },
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great beer selection": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Seating": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "Usually plenty of parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sekuwa%20park&query_place_id=ChIJ52n16igb6zkRaPwxHAbG9k8",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.680106502310814,85.39674438680153,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzzGewtN29RgTmMY7WfmAD-B_l0VSheQiMsIkMuaRaFXOI1xz4uC0BzxFOku1EzBbz68RiCnt7giv3LzYz7QxPrevh6kQe9XR_jfdbeZYWP6YITW2qysROkURPSAgkzLgFEm_w=w408-h544-k-no",
+    "kgmid": "/g/11k3qtzb_r"
+  },
+  {
+    "title": "Bajeko Sekuwa Gatthaghar",
+    "price": "$$",
+    "categoryName": "Barbecue restaurant",
+    "address": "Araniko Highway, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "Araniko Highway",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.bajekosekuwa.com/",
+    "phone": "+977 1-6633688",
+    "phoneUnformatted": "+97716633688",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6743794,
+      "lng": 85.3707034
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ9dXKO0Eb6zkRUZfxwvrQ4yU",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1b413bcad5f5:0x25e3d0fac2f19751",
+    "cid": "2730255574547666769",
+    "reviewsCount": 288,
+    "imagesCount": 225,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:10.412Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great coffee": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Cocktails": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Dessert": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "Usually somewhat difficult to find a space": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bajeko%20Sekuwa%20Gatthaghar&query_place_id=ChIJ9dXKO0Eb6zkRUZfxwvrQ4yU",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyglTINdVSqAo6q5JRg8s2R996WiULnocbfQXyHrmHPwW9eMssbgxCqbJfUpLOatArpbCNnI2CAV104IfT_x7Kduorx1IZQkoPP_Y69feEiMyIJYmPA1r5ZYYPWkbwHpsJZFB1f=w408-h306-k-no",
+    "kgmid": "/g/11h8038cb9"
+  },
+  {
+    "title": "Aageno Sekuwa Ghar",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "M9FF+9Q3, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9FF+9Q3",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.aagenosekuwaghar.com.np/",
+    "phone": "+977 976-1806992",
+    "phoneUnformatted": "+9779761806992",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6733981,
+      "lng": 85.3743297
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGyk5kA4b6zkRxdhbhrTMaHs",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1b0e9039291b:0x7b68ccb4865bd8c5",
+    "cid": "8892582539963390149",
+    "reviewsCount": 21,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 2,
+      "fourStar": 5,
+      "fiveStar": 13
+    },
+    "imagesCount": 65,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:11.205Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Service options": [
+        {
+          "Outdoor seating": true
+        },
+        {
+          "No-contact delivery": true
+        },
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Fireplace": true
+        },
+        {
+          "Great beer selection": true
+        },
+        {
+          "Great coffee": true
+        },
+        {
+          "Great wine list": true
+        },
+        {
+          "Live music": true
+        },
+        {
+          "Rooftop seating": true
+        },
+        {
+          "Sports": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Assistive hearing loop": true
+        },
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        },
+        {
+          "Wheelchair accessible restroom": true
+        },
+        {
+          "Wheelchair accessible seating": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Cocktails": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Late-night food": true
+        },
+        {
+          "Private dining room": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Brunch": true
+        },
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Seating": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        },
+        {
+          "Wi-Fi": true
+        },
+        {
+          "Free Wi-Fi": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Quiet": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Family-friendly": true
+        },
+        {
+          "Groups": true
+        },
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Lunch reservations recommended": true
+        },
+        {
+          "Reservations required": true
+        },
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        },
+        {
+          "Has changing table(s)": true
+        },
+        {
+          "High chairs": true
+        },
+        {
+          "Kids' menu": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ],
+      "Pets": [
+        {
+          "Dogs allowed": true
+        },
+        {
+          "Dogs allowed outside": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aageno%20Sekuwa%20Ghar&query_place_id=ChIJGyk5kA4b6zkRxdhbhrTMaHs",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 27,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy_MmIAZxtbhJOKKYpKHiQ8DgUHHXLkmA1oK758V20s44pI4SpuM1ezN8vfjGZe9dkgiCC0KGdazSxy6JbI7X-lV3i7Lx4zW-QtrOwyEJwIV1aPfd4-Ajoulx4KBPIG7iUpwzEQlg=w408-h544-k-no",
+    "kgmid": "/g/11v4mzcwzn"
+  },
+  {
+    "title": "Taj Sekuwa And Pakku House",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "M9F8+C2M, Kaushaltar - Balkot Rd, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": "Kausaltar",
+    "street": "M9F8+C2M, Kaushaltar - Balkot Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 970-7647225",
+    "phoneUnformatted": "+9779707647225",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6735913,
+      "lng": 85.3650429
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJD9gyVgAb6zkReaY9xrf2RBY",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1b005632d80f:0x1644f6b7c63da679",
+    "cid": "1604678636416116345",
+    "reviewsCount": 10,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 9
+    },
+    "imagesCount": 12,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:11.205Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Sekuwa%20And%20Pakku%20House&query_place_id=ChIJD9gyVgAb6zkReaY9xrf2RBY",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 28,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzb5AJzvejbuQkUzmh9KNMWCSqmwaw3lWXSSwErMtu2PM9pyKxhe01ZwYIkh1GR1qIl-Eu9tm3NfF5wy5hD4tRl2SX9ghYAO_lISrIY3pIO2SnT6mARoCgSxfXgr78JDrkAT1lxEg=w408-h542-k-no",
+    "kgmid": "/g/11w3l5hn68"
+  },
+  {
+    "title": "Corner and black pigs barbecues Dharan",
+    "subTitle": "सेकुवा कर्नर एण्ड धरान कालो बंगुर",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "M9FF+Q9G, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9FF+Q9G",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745692,
+      "lng": 85.3735235
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJEYqPxRIa6zkRBgg5hBQBabg",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1a12c58f8a11:0xb869011484390806",
+    "cid": "13288153363162662918",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:11.961Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Corner%20and%20black%20pigs%20barbecues%20Dharan&query_place_id=ChIJEYqPxRIa6zkRBgg5hBQBabg",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 47,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXxwjCa-jt7ne2yhQq--TScTENEh-AAdNEopr-NlSxRiKvTncL_mSrUySE4gVcATB-fYSUSzx456WFTs5YO_w5u3Tlii8b7-odVS5i3pGx2lSkDVZDZNbPlwYSy2kj6puci6A0Pw=w408-h306-k-no",
+    "kgmid": "/g/11b6s0f_g7"
+  },
+  {
+    "title": "Airport A-One Sekuwa Corner",
+    "subTitle": "एयरपोर्ट ए-वन सेकुवा कर्नर",
+    "price": "$$",
+    "categoryName": "Barbecue restaurant",
+    "address": "M9FC+PH8, Araniko Highway, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9FC+PH8, Araniko Highway",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6633096",
+    "phoneUnformatted": "+97716633096",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.674294,
+      "lng": 85.371442
+    },
+    "totalScore": 3.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJQ05KNxIa6zkRqp_kL7Et1vM",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1a12374a4e43:0xf3d62db12fe49faa",
+    "cid": "17570281235268542378",
+    "reviewsCount": 101,
+    "reviewsDistribution": {
+      "oneStar": 21,
+      "twoStar": 11,
+      "threeStar": 23,
+      "fourStar": 27,
+      "fiveStar": 19
+    },
+    "imagesCount": 51,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:12.805Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great beer selection": true
+        },
+        {
+          "Great cocktails": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Cocktails": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Brunch": true
+        },
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Airport%20A-One%20Sekuwa%20Corner&query_place_id=ChIJQ05KNxIa6zkRqp_kL7Et1vM",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 66,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwVFcrLCnsFLIG2siN7zNMe9rrnRnWKTcHuIsefNM_i4TWsgGSB6og1dQLOzqg5r49xqi52Qam2EMcyEo5oR3XUjMyr8MJiUd3-eQ5XdmLF2IlK3Rjtkp9QZgnWVp4AM2RKhtHLaQ=w408-h306-k-no",
+    "kgmid": "/g/11b6skct4k"
+  },
+  {
+    "title": "Bansbari Kitchen",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MFP5+JJF, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MFP5+JJF",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6865656,
+      "lng": 85.4590553
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjfIMaQAF6zkRkAL30ZlvtBk",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb0500690cf28d:0x19b46f99d1f70290",
+    "cid": "1852228053199422096",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:27.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bansbari%20Kitchen&query_place_id=ChIJjfIMaQAF6zkRkAL30ZlvtBk",
+    "searchPageUrl": "https://www.google.com/maps/search/non%20vegetarian%20restaurant/@27.680106502310814,85.4568408175979,17z?hl=en",
+    "searchString": "non vegetarian restaurant",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=J6-0JIHik9I42W8JI-TgFA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=3.8879824&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x_d7k8mp"
+  },
+  {
+    "title": "BC Fast Foodl",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MC8G+3WM, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8G+3WM",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6652101,
+      "lng": 85.4272984
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSVg7gaga6zkRteeXglhdhAc",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1aa8813b5849:0x7845d588297e7b5",
+    "cid": "541660489920800693",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:49.714Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Brunch": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BC%20Fast%20Foodl&query_place_id=ChIJSVg7gaga6zkRteeXglhdhAc",
+    "searchPageUrl": "https://www.google.com/maps/search/fast%20food/@27.6662604,85.4234316,17.82753972079701z?hl=en",
+    "searchString": "fast food",
+    "language": "en",
+    "rank": 28,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3ZzpZThgz-5DGLJ0y1AfSQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=190.61497&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fy_1ldr_"
+  },
+  {
+    "title": "Sekuwa ghar",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MC5H+57C Darjeling hight, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC5H+57C Darjeling hight",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.657943,
+      "lng": 85.428135
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJu3qqJgAR6zkR9mRAEe2adH4",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb110026aa7abb:0x7e749aed114064f6",
+    "cid": "9112078289064715510",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:54:57.376Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sekuwa%20ghar&query_place_id=ChIJu3qqJgAR6zkR9mRAEe2adH4",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.65728699537838,85.43108520439945,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwyR9lrs79XHWU0SvNB6N3Vzb8NCwCWS-AdT1W-UUDjO9ABpPyYyhnmkwJDAXJKLnmALQ8GdJWJdFzV_IhsehBHp7YnPs8bcIvBstejz2Oq7F3K3Nh7PGz1Qv45oqwZfeKOFwJH=w408-h306-k-no",
+    "kgmid": "/g/11vk1w14fn"
+  },
+  {
+    "title": "Khuwalung Sekuwa Ghar",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "M9PR+22M, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9PR+22M",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 974-8284914",
+    "phoneUnformatted": "+9779748284914",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6850836,
+      "lng": 85.3900443
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJc_-X9skb6zkRKlrBkRyJCxs",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1bc9f697ff73:0x1b0b891c91c15a2a",
+    "cid": "1948802019565328938",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:56:25.513Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khuwalung%20Sekuwa%20Ghar&query_place_id=ChIJc_-X9skb6zkRKlrBkRyJCxs",
+    "searchPageUrl": "https://www.google.com/maps/search/non%20vegetarian%20restaurant/@27.687713004621624,85.39674438680153,17z?hl=en",
+    "searchString": "non vegetarian restaurant",
+    "language": "en",
+    "rank": 32,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=WnYwxlmyIKU70EesgRp-uA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=160.01509&pitch=0&thumbfov=100",
+    "kgmid": "/g/11jz9l1rh2"
+  },
+  {
+    "title": "BC Fast Foodl",
+    "price": null,
+    "categoryName": "Barbecue restaurant",
+    "address": "MC8G+3WM, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8G+3WM",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6652101,
+      "lng": 85.4272984
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSVg7gaga6zkRteeXglhdhAc",
+    "categories": [
+      "Barbecue restaurant"
+    ],
+    "fid": "0x39eb1aa8813b5849:0x7845d588297e7b5",
+    "cid": "541660489920800693",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-11T10:08:20.473Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Brunch": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BC%20Fast%20Foodl&query_place_id=ChIJSVg7gaga6zkRteeXglhdhAc",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.640686196818166,85.46050991168464,14z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 94,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3ZzpZThgz-5DGLJ0y1AfSQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=190.61497&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fy_1ldr_"
+  }
+]

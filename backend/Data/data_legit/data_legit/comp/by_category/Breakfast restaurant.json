@@ -1,0 +1,781 @@
+[
+  {
+    "title": "Suddha Sakahari Khaja Ghar",
+    "subTitle": "शुद्ध साहाकारी ताजा खाजा घर",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1753069",
+    "phoneUnformatted": "+9779841753069",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.669819,
+      "lng": 85.408712
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ60FXBJsa6zkR1MSo9D9-iqw",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb1a9b045741eb:0xac8a7e3ff4a8c4d4",
+    "cid": "12432888534462416084",
+    "reviewsCount": 0,
+    "imagesCount": 37,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:29.112Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Service options": [
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Suddha%20Sakahari%20Khaja%20Ghar&query_place_id=ChIJ60FXBJsa6zkR1MSo9D9-iqw",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.667695459098024,85.41290913650586,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 35,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNXVs7WD-cxFBKTJNWgRBXqvK26k0RuYVP2byf9=w408-h407-k-no",
+    "kgmid": "/g/11b6r_snxt"
+  },
+  {
+    "title": "Bhadrakali Snooker,pool,Cafe and Hookah",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "MCCF+94J, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+94J",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 982-8885904",
+    "phoneUnformatted": "+9779828885904",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709669,
+      "lng": 85.4227737
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4z9zPQ0b6zkRdC2H7rkooW0",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb1b0d3d733fe3:0x6da128b9ee872d74",
+    "cid": "7899640000420457844",
+    "reviewsCount": 1,
+    "imagesCount": 20,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:48.584Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great coffee": true
+        },
+        {
+          "Great tea selection": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Coffee": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhadrakali%20Snooker%2Cpool%2CCafe%20and%20Hookah&query_place_id=ChIJ4z9zPQ0b6zkRdC2H7rkooW0",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.67530454090198,85.41290913650586,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyVk5pE-IOiDngmM0fOcR57yMIYoTWBFNkP4fi3K1vt6G4jxC9HNydrtQqqANN2s1FB7lp8WXdDWJzy-_vN-6TsbNgimqENCP7Q5z-zCHv6x9GKNBd4io8D-CwWWMbAj2WkO10S=w408-h306-k-no",
+    "kgmid": "/g/11qyn8qktj"
+  },
+  {
+    "title": "J block",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "MCCQ+9MM, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCQ+9MM",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709633,
+      "lng": 85.4391693
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJf5dgRgAF6zkRoJSKSpnm4Es",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb05004660977f:0x4be0e6994a8a94a0",
+    "cid": "5467623493682762912",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:38:03.460Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Dining options": [
+        {
+          "Breakfast": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=J%20block&query_place_id=ChIJf5dgRgAF6zkRoJSKSpnm4Es",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "kgmid": "/g/11mltdjj59"
+  },
+  {
+    "title": "तारा दाईको डुनट पसल",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "MC9M+366, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9M+366, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1006668",
+    "phoneUnformatted": "+9779841006668",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6676619,
+      "lng": 85.4330136
+    },
+    "totalScore": 3.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJFybi-qsa6zkRknkjQ7v4I-8",
+    "categories": [
+      "Breakfast restaurant",
+      "Donut shop"
+    ],
+    "fid": "0x39eb1aabfae22617:0xef23f8bb43237992",
+    "cid": "17231890082418620818",
+    "reviewsCount": 9,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:38:15.785Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Dessert": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": false
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%A4%E0%A4%BE%E0%A4%B0%E0%A4%BE%20%E0%A4%A6%E0%A4%BE%E0%A4%88%E0%A4%95%E0%A5%8B%20%E0%A4%A1%E0%A5%81%E0%A4%A8%E0%A4%9F%20%E0%A4%AA%E0%A4%B8%E0%A4%B2&query_place_id=ChIJFybi-qsa6zkRknkjQ7v4I-8",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.660086377294068,85.43009086349416,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxCvBkJAaegQadAa5OtV2DepgT1tBH0Las4A96eCNdychVUhOgltC9hv497j3FEHmHoecUHCmXq3awU1a0FK5El9-s1N0rps7doNVmtsYDR69l6dOkwj8Kqp5Vpr93fTrai2QkJuw=w408-h306-k-no",
+    "kgmid": "/g/11b6p1vhg0"
+  },
+  {
+    "title": "Kusheshwor sweets house",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "M9MP+6WG, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9MP+6WG",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6830584,
+      "lng": 85.3873146
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJr-CoQwAb6zkRjExePf_AB8E",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb1b0043a8e0af:0xc107c0ff3d5e4c8c",
+    "cid": "13909298176635849868",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:38.015Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Dining options": [
+        {
+          "Breakfast": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kusheshwor%20sweets%20house&query_place_id=ChIJr-CoQwAb6zkRjExePf_AB8E",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "kgmid": "/g/11mlcz0mxl"
+  },
+  {
+    "title": "Mathura Takeaway",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "Bode ,08 Madhyapur Thimi, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Bode ,08 Madhyapur Thimi",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0139589",
+    "phoneUnformatted": "+9779860139589",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6890283,
+      "lng": 85.3896276
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJK4ONt3Yb6zkRPucjaKcF9Ys",
+    "categories": [
+      "Breakfast restaurant",
+      "Diner",
+      "Lunch restaurant"
+    ],
+    "fid": "0x39eb1b76b78d832b:0x8bf505a76823e73e",
+    "cid": "10084973157130954558",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:38.015Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Delivery": false
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mathura%20Takeaway&query_place_id=ChIJK4ONt3Yb6zkRPucjaKcF9Ys",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=hyw8RLeffEkEZhpV5AfZ2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=115.955605&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x74v2nz3"
+  },
+  {
+    "title": "Gufa Cafe",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "MCQ7+83F, Changunarayan, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCQ7+83F",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6883099,
+      "lng": 85.4126701
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJn0twMgAb6zkR6NwTw8sGd8s",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb1b0032704b9f:0xcb7706cbc313dce8",
+    "cid": "14661194584148925672",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:52:50.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Dining options": [
+        {
+          "Breakfast": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gufa%20Cafe&query_place_id=ChIJn0twMgAb6zkR6NwTw8sGd8s",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.710532511554057,85.42249999999997,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zBebB4V4b6ZtNZCDu0wvpA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=244.83884&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xnr2xs_l"
+  },
+  {
+    "title": "🔪",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": null,
+    "city": "Anantalingeshwar",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-5120000",
+    "phoneUnformatted": "+9779845120000",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6638406,
+      "lng": 85.3673292
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": true,
+    "placeId": "ChIJF23LWQAb6zkRejpT_DCutJA",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb1b0059cb6d17:0x90b4ae30fc533a7a",
+    "cid": "10427150562684516986",
+    "reviewsCount": 9,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 9
+    },
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:25.340Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%F0%9F%94%AA&query_place_id=ChIJF23LWQAb6zkRejpT_DCutJA",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.664893497689192,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 39,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP3oCnUUmpMrreA74KQP1S_pSDpl1ecSc_LT2__=w408-h726-k-no",
+    "kgmid": "/g/11vwm670jq"
+  },
+  {
+    "title": "Bhansa Ghar",
+    "price": null,
+    "categoryName": "Breakfast restaurant",
+    "address": "M9FP+66P, Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": "M9FP+66P",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6730011,
+      "lng": 85.3856447
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJW0EMrkb6zkR1XWLsOLvSv0",
+    "categories": [
+      "Breakfast restaurant"
+    ],
+    "fid": "0x39eb1bb932046d25:0xfd4aefe2b08b75d5",
+    "cid": "18251664196775933397",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:48.684Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Breakfast": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhansa%20Ghar&query_place_id=ChIJJW0EMrkb6zkR1XWLsOLvSv0",
+    "searchPageUrl": "https://www.google.com/maps/search/breakfast%20restaurant/@27.664893497689192,85.39674438680153,17z?hl=en",
+    "searchString": "breakfast restaurant",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxo7mr1UVru3lofnbl9HejHkB5DdrZx9CO9HNHA0mAb_ewPBxZFBifc1yTm_eD-BgyNu4ymguzGDoMHn2NMRxYqDqgGeNrF97YIcieiIY03azYgBq3KO2-gT8LjCAWiHTQHQh4=w408-h544-k-no",
+    "kgmid": "/g/11rk8zjmdk"
+  }
+]

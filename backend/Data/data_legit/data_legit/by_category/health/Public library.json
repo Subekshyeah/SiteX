@@ -1,0 +1,901 @@
+[
+  {
+    "title": "Janajyoti Library जनज्योति पुस्तकालय",
+    "subTitle": "जनज्योति पुस्तकालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "Nah Pukhu, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nah Pukhu",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617212",
+    "phoneUnformatted": "+97716617212",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736267,
+      "lng": 85.4239798
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbYyVx68a6zkRucQY0gvGjv8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aafc7958c6d:0xff8ec60bd218c4b9",
+    "cid": "18414873680436315321",
+    "reviewsCount": 31,
+    "imagesCount": 29,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Janajyoti%20Library%20%E0%A4%9C%E0%A4%A8%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%A4%E0%A4%BF%20%E0%A4%AA%E0%A5%81%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A4%BE%E0%A4%B2%E0%A4%AF&query_place_id=ChIJbYyVx68a6zkRucQY0gvGjv8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhH5pz-afuqpZngCw1RzUd9UCUJ0Oehg6RUNUyn2V5wHEz1PGB7QjNhYnRtmKIUKmW1_-E9kFGm07dTNOhov5nSoU9s6Ef3Td7GfkTuigILyGhZoYU2I0AQxKEn9Y8p1plaFDc94hlfTveSfbxCldcxHk2EoLbTCeUFOWxi9f7mLoNrG8dLPN5Zs6QFqnH1fd9vhGw=w408-h306-k-no",
+    "kgmid": "/g/11b6q3hs9z"
+  },
+  {
+    "title": "Martyr Memorial Library",
+    "subTitle": "शहिद स्मृति पुस्तकालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "MCCJ+5VW, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCJ+5VW, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6704964,
+      "lng": 85.4321917
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJfYwGg64a6zkR8a7aPmJyzP8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aae83068c7d:0xffcc72623edaaef1",
+    "cid": "18432233141207478001",
+    "reviewsCount": 1,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Martyr%20Memorial%20Library&query_place_id=ChIJfYwGg64a6zkR8a7aPmJyzP8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFlpLkYRJPmsL5_69KFauVkJQ08rF0b1FsRmJ05KMs29bFeuKRMbYzenZzimDJfBcqsnBMz-Ke7RMKD0ZCHqXP8XBPEoHsBtEHI7okst5IbNF9QZYgAT2EWggBR38bKHxtKDqnkzBRfnpG_xoQN5RZ6gXX1ZCFXIqzAtpfjszuWSeHbuytEZiNl2VhgpRat4P7b6A=w408-h306-k-no",
+    "kgmid": "/g/11b6r_5dbd"
+  },
+  {
+    "title": "Yug Vijaya Public Library",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "MCFP+C5W, Dattatraya Square Marg, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFP+C5W, Dattatraya Square Marg",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736015,
+      "lng": 85.4354604
+    },
+    "totalScore": 2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPcZvea0a6zkROPKwkrJ6p1M",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aad796fc63d:0x53a77ab292b0f238",
+    "cid": "6027921533642535480",
+    "reviewsCount": 2,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Yug%20Vijaya%20Public%20Library&query_place_id=ChIJPcZvea0a6zkROPKwkrJ6p1M",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHPSP-ubYIZ7yUcIt_iPY7JkWDd8Kpof7cQF6T14QGXiQHKhde_mbGpJQp89qKQPpe9Sh8a0CFxrokSy9UYHIcYTON2GRgVct1MhLlL2IYwaBBO5GOA9VCKeJjL4fnZ4sEds5CRYfioC4YTBAg5s6CAZkah5HVF5CFRqKmKK4N-s46-BfLsQIRm59I3x4_ofJbAb4Y=w408-h306-k-no",
+    "kgmid": "/g/11b6rz34nb"
+  },
+  {
+    "title": "Nawa Chatrodaya Library",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "M9MP+7V8, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9MP+7V8",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6638860",
+    "phoneUnformatted": "+97716638860",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.683151,
+      "lng": 85.3871977
+    },
+    "totalScore": 2.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJT1yl7Gca6zkR0B9a3rylty8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1a67eca55c4f:0x2fb7a5bcde5a1fd0",
+    "cid": "3438399071123546064",
+    "reviewsCount": 7,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:30.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nawa%20Chatrodaya%20Library&query_place_id=ChIJT1yl7Gca6zkR0B9a3rylty8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=vHWTzlFJq86bZR8Bn4ckvA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=12.063931&pitch=0&thumbfov=100",
+    "kgmid": "/g/11c76m432s"
+  },
+  {
+    "title": "Saubhagya Pustakalaya (𑐳𑑁𑐨𑐵𑐐𑑂𑐫 𑐳𑐦𑐹𑐎𑐸𑐠𑐶)",
+    "subTitle": "सौभाग्य पुस्तकालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "M9GP+X8C, ठिमी, 44800, Nepal",
+    "neighborhood": "मध्यपुर",
+    "street": "M9GP+X8C, ठिमी",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.67743,
+      "lng": 85.3857699
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHVMHWW8a6zkRoa1PxDPtzoQ",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1a6f5907531d:0x84ceed33c44fada1",
+    "cid": "9569847064801553825",
+    "reviewsCount": 3,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:30.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saubhagya%20Pustakalaya%20(%F0%91%90%B3%F0%91%91%81%F0%91%90%A8%F0%91%90%B5%F0%91%90%90%F0%91%91%82%F0%91%90%AB%20%F0%91%90%B3%F0%91%90%A6%F0%91%90%B9%F0%91%90%8E%F0%91%90%B8%F0%91%90%A0%F0%91%90%B6)&query_place_id=ChIJHVMHWW8a6zkRoa1PxDPtzoQ",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhH6FXpmqY8pO4WkSOpCNKMg_Od196Wibt3MEANLfHZUl5kF31O6wBHYWNe5eY-SdSIBCom9x_WkABy8ya49Vvjgz7Nkyh5GnNcu2GGs3DjWmyo-5gx7zmq8A5_4nMZM_iHCjPp32cbLmtdZzfCn5pyCjNFJNfzGfEmZxmFQz38DHCc0xXrEV2wSEpjJqcJTLd_kvA=w408-h306-k-no",
+    "kgmid": "/g/11b6p3dsvq"
+  },
+  {
+    "title": "Janajyoti Library जनज्योति पुस्तकालय",
+    "subTitle": "जनज्योति पुस्तकालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "Nah Pukhu, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nah Pukhu",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617212",
+    "phoneUnformatted": "+97716617212",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736267,
+      "lng": 85.4239798
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbYyVx68a6zkRucQY0gvGjv8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aafc7958c6d:0xff8ec60bd218c4b9",
+    "cid": "18414873680436315321",
+    "reviewsCount": 31,
+    "imagesCount": 29,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:30.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Janajyoti%20Library%20%E0%A4%9C%E0%A4%A8%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%A4%E0%A4%BF%20%E0%A4%AA%E0%A5%81%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A4%BE%E0%A4%B2%E0%A4%AF&query_place_id=ChIJbYyVx68a6zkRucQY0gvGjv8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhF-_yGhpypVtFEKE3PD9V3ugIwIC35NP2wLjbRZCZefdxdaDD1WmiWW-LPPWRMjZZg8EXJBC7QHaNKnrQ5KY5_TGe8zxxRvcU9HYtA2UhWW6meGyfZpFpehkVElwePiG2yYTyv3KjrUo5MXAwVhT9491L7WovcSwCkSv3sZvMZaPX5Mx9x_sOLDheGWOkpXkztYzQ=w408-h306-k-no",
+    "kgmid": "/g/11b6q3hs9z"
+  },
+  {
+    "title": "श्री जन जागृति बाचनालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "M9GP+6CM, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": null,
+    "street": "M9GP+6CM",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675592,
+      "lng": 85.386033
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOx1egGUa6zkRcJBBDEf8oe8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1a65805e1d3b:0xefa1fc470c419070",
+    "cid": "17267359828393693296",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:40.517Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%20%E0%A4%9C%E0%A4%A8%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%83%E0%A4%A4%E0%A4%BF%20%E0%A4%AC%E0%A4%BE%E0%A4%9A%E0%A4%A8%E0%A4%BE%E0%A4%B2%E0%A4%AF&query_place_id=ChIJOx1egGUa6zkRcJBBDEf8oe8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhG-jN7PT5SuSLK2vsvI4OdLur8nFaI8EdkyPqVXolFG_T1gV5FeG37_oEy0icMFLsCcgwisR4Zar1w7jiCBtQV6fuUzxDCGfdlJvP32HuXLWizCzdUtY-kLvTdBCPu_cbNfx7ZHXB4xCFoM2DxOyfmjavHvwMxr5jc-q6mqYcpScMp9X1XppjbzfKIx0YeerntXRA=w408-h306-k-no",
+    "kgmid": "/g/11b6nzy8fq"
+  },
+  {
+    "title": "Devitar Library",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "MF47+V3Q, Suryabinayak, Nepal",
+    "neighborhood": "Chittapol",
+    "street": "MF47+V3Q",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9364181",
+    "phoneUnformatted": "+9779849364181",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6572124,
+      "lng": 85.4627423
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCR_Lw6gP6zkRmS0kfvDhnjo",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb0fa8c3cb1f09:0x3a9ee1f07e242d99",
+    "cid": "4224061923544804761",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:59.955Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Devitar%20Library&query_place_id=ChIJCR_Lw6gP6zkRmS0kfvDhnjo",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.64207399075676,85.4568408175979,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=FGxTNSV7vRZzLN-aCYPckQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=327.31137&pitch=0&thumbfov=100",
+    "kgmid": "/g/11k0xr4z7l"
+  },
+  {
+    "title": "Garima Library",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "MFQ3+FJ5, Nagarkot Road, Changunarayan, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MFQ3+FJ5, Nagarkot Road",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+358 9 7798",
+    "phoneUnformatted": "+35897798",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6886344,
+      "lng": 85.4540977
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJsW-EOz8F6zkRgax6ukLbKi0",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb053f3b846fb1:0x2d2adb42ba7aac81",
+    "cid": "3254654760371530881",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:59.956Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Garima%20Library&query_place_id=ChIJsW-EOz8F6zkRgax6ukLbKi0",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.64207399075676,85.4568408175979,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=mBKuB9xxjxat84s08z6A9A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=2.3680632&pitch=0&thumbfov=100",
+    "kgmid": "/g/11c0p_6x95"
+  },
+  {
+    "title": "Cartrule Pathsala",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "P92J+J8M, Kathmandu 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "P92J+J8M",
+    "city": "Kathmandu",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0928983",
+    "phoneUnformatted": "+9779860928983",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.7015916,
+      "lng": 85.3807886
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": true,
+    "placeId": "ChIJNyWu0dMb6zkRyFfmdNwxyoA",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1bd3d1ae2537:0x80ca31dc74e657c8",
+    "cid": "9280284805074147272",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:23:25.964Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Cartrule%20Pathsala&query_place_id=ChIJNyWu0dMb6zkRyFfmdNwxyoA",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.702926009243246,85.37957397800257,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 21,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=pS79C_Nh6NHzLvq_rGSc7Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=350.27304&pitch=0&thumbfov=100",
+    "kgmid": "/g/11k34xjyl7"
+  },
+  {
+    "title": "Yug Vijaya Public Library",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "MCFP+C5W, Dattatraya Square Marg, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFP+C5W, Dattatraya Square Marg",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736015,
+      "lng": 85.4354604
+    },
+    "totalScore": 2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPcZvea0a6zkROPKwkrJ6p1M",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aad796fc63d:0x53a77ab292b0f238",
+    "cid": "6027921533642535480",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:32.544Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Yug%20Vijaya%20Public%20Library&query_place_id=ChIJPcZvea0a6zkROPKwkrJ6p1M",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 34,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHPSP-ubYIZ7yUcIt_iPY7JkWDd8Kpof7cQF6T14QGXiQHKhde_mbGpJQp89qKQPpe9Sh8a0CFxrokSy9UYHIcYTON2GRgVct1MhLlL2IYwaBBO5GOA9VCKeJjL4fnZ4sEds5CRYfioC4YTBAg5s6CAZkah5HVF5CFRqKmKK4N-s46-BfLsQIRm59I3x4_ofJbAb4Y=w408-h306-k-no",
+    "kgmid": "/g/11b6rz34nb"
+  },
+  {
+    "title": "Martyr Memorial Library",
+    "subTitle": "शहिद स्मृति पुस्तकालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "MCCJ+5VW, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCJ+5VW, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6704964,
+      "lng": 85.4321917
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJfYwGg64a6zkR8a7aPmJyzP8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aae83068c7d:0xffcc72623edaaef1",
+    "cid": "18432233141207478001",
+    "reviewsCount": 1,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.121Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Martyr%20Memorial%20Library&query_place_id=ChIJfYwGg64a6zkR8a7aPmJyzP8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFlpLkYRJPmsL5_69KFauVkJQ08rF0b1FsRmJ05KMs29bFeuKRMbYzenZzimDJfBcqsnBMz-Ke7RMKD0ZCHqXP8XBPEoHsBtEHI7okst5IbNF9QZYgAT2EWggBR38bKHxtKDqnkzBRfnpG_xoQN5RZ6gXX1ZCFXIqzAtpfjszuWSeHbuytEZiNl2VhgpRat4P7b6A=w408-h306-k-no",
+    "kgmid": "/g/11b6r_5dbd"
+  },
+  {
+    "title": "Janajyoti Library जनज्योति पुस्तकालय",
+    "subTitle": "जनज्योति पुस्तकालय",
+    "price": null,
+    "categoryName": "Public library",
+    "address": "Nah Pukhu, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nah Pukhu",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617212",
+    "phoneUnformatted": "+97716617212",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736267,
+      "lng": 85.4239798
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbYyVx68a6zkRucQY0gvGjv8",
+    "categories": [
+      "Public library"
+    ],
+    "fid": "0x39eb1aafc7958c6d:0xff8ec60bd218c4b9",
+    "cid": "18414873680436315321",
+    "reviewsCount": 31,
+    "imagesCount": 29,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.121Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Janajyoti%20Library%20%E0%A4%9C%E0%A4%A8%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A5%8B%E0%A4%A4%E0%A4%BF%20%E0%A4%AA%E0%A5%81%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A4%BE%E0%A4%B2%E0%A4%AF&query_place_id=ChIJbYyVx68a6zkRucQY0gvGjv8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhH5pz-afuqpZngCw1RzUd9UCUJ0Oehg6RUNUyn2V5wHEz1PGB7QjNhYnRtmKIUKmW1_-E9kFGm07dTNOhov5nSoU9s6Ef3Td7GfkTuigILyGhZoYU2I0AQxKEn9Y8p1plaFDc94hlfTveSfbxCldcxHk2EoLbTCeUFOWxi9f7mLoNrG8dLPN5Zs6QFqnH1fd9vhGw=w408-h306-k-no",
+    "kgmid": "/g/11b6q3hs9z"
+  }
+]

@@ -1,0 +1,889 @@
+[
+  {
+    "title": "Doraemon Pre School",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "JCWV+23W, Kapur Marga, Suryabinayak, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "JCWV+23W, Kapur Marga",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6451028,
+      "lng": 85.4427153
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl-VXBAAP6zkRRIrRjZQu2IQ",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb0f000457e597:0x84d82e948dd18a44",
+    "cid": "9572452223545346628",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Doraemon%20Pre%20School&query_place_id=ChIJl-VXBAAP6zkRRIrRjZQu2IQ",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gSqp8N6vBh3aDuTOhf5EmQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=33.612236&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y3w2b1cv"
+  },
+  {
+    "title": "Bhairabi Adharbhut School",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "JCWV+23W, Suryabinayak, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "JCWV+23W",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6451028,
+      "lng": 85.4427153
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb_nKZtwP6zkRVCPF454bzvY",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb0fdc66caf96f:0xf6ce1b9ee3c52354",
+    "cid": "17784182347772797780",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:29.986Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhairabi%20Adharbhut%20School&query_place_id=ChIJb_nKZtwP6zkRVCPF454bzvY",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gSqp8N6vBh3aDuTOhf5EmQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=33.612236&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rzpw5zb3"
+  },
+  {
+    "title": "Shanti Bhairab Basic School",
+    "subTitle": "शान्ति भैरव आधारभूत विद्यालय",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MF33+JG5, Araniko Highway, Suryabinayak, Nepal",
+    "neighborhood": "Nangkhel",
+    "street": "MF33+JG5, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6540003,
+      "lng": 85.4538616
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJtTOxM_IP6zkR_Ixai5kJp88",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb0ff233b133b5:0xcfa709998b5a8cfc",
+    "cid": "14962938842034375932",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:29.986Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shanti%20Bhairab%20Basic%20School&query_place_id=ChIJtTOxM_IP6zkR_Ixai5kJp88",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "kgmid": "/g/11cks6w8nb"
+  },
+  {
+    "title": "National Basic school worlang",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MC7Q+236 Ichchhakamana rural municipality, ward no-2, worlang 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7Q+236 Ichchhakamana rural municipality, ward no-2",
+    "city": "worlang",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6625397,
+      "lng": 85.4376381
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJoYmBfwAR6zkR0Bny-eCjLWM",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb11007f8189a1:0x632da3e0f9f219d0",
+    "cid": "7146548370368240080",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:29.986Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=National%20Basic%20school%20worlang&query_place_id=ChIJoYmBfwAR6zkR0Bny-eCjLWM",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=m-9lkWeeejr35S1OyxjWTw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=73.52788&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w94y_dy3"
+  },
+  {
+    "title": "Bhim Aadarsha Basic School",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MC9Q+MWM, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9Q+MWM",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6692042,
+      "lng": 85.4397979
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ20JMSUkF6zkRHtnmio2JsYA",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb0549494c42db:0x80b1898d8ae6d91e",
+    "cid": "9273344348746340638",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:29.986Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhim%20Aadarsha%20Basic%20School&query_place_id=ChIJ20JMSUkF6zkRHtnmio2JsYA",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=2P7hCRlBzG4H5IKly630Aw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=250.88205&pitch=0&thumbfov=100",
+    "kgmid": "/g/11k4wzzw1w"
+  },
+  {
+    "title": "Shree Bharati Primary School",
+    "subTitle": "श्री भारती प्रा.वि.",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MC9H+FVJ, Lesingkhel, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+FVJ, Lesingkhel",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6687,
+      "lng": 85.429643
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJk8H2KK8a6zkRCmaHHO1MSgQ",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1aaf28f6c193:0x44a4ced1c87660a",
+    "cid": "309144105697895946",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.485Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Bharati%20Primary%20School&query_place_id=ChIJk8H2KK8a6zkRCmaHHO1MSgQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEehO_18Y53L1giIUdZKMXLf8lT9_Fp6qjTY_iGxK0P8apfXKo6s7SZU4KxqCL5HduhMtyki1OOU2oVfI5gD24u8y1hEMVUm4yUWSB_g6MFhR5qbuJFJZ8LiYJ8-el4B6h8T2GmbDQF8IamHiF79bySOtbiqzjmQzp11mT7P8EUrr-TjTqJ2FafBQAXxKuPyX3AHgk=w408-h306-k-no",
+    "kgmid": "/g/11b6s06x0c"
+  },
+  {
+    "title": "Ganesh school",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MCWM+7VH, Lakila Tole Rd, Changunarayan, Nepal",
+    "neighborhood": "Jhaukhel",
+    "street": "MCWM+7VH, Lakila Tole Rd",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6956945,
+      "lng": 85.4347373
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJoVor3Rcb6zkREWXIRNRdAV0",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1b17dd2b5aa1:0x5d015dd444c86511",
+    "cid": "6701740886772442385",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:04.209Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ganesh%20school&query_place_id=ChIJoVor3Rcb6zkREWXIRNRdAV0",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=TOYVFwD5KU1I2XKT1Se6og&cb_client=search.gws-prod.gps&w=408&h=240&yaw=300.45786&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sh47hwtq"
+  },
+  {
+    "title": "RHOMBUS NATIONAL SCHOOL",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MC9X+QM2, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Tathali",
+    "street": "MC9X+QM2",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6684703,
+      "lng": 85.4495995
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJW7DhagAF6zkRG6aPeeycRIQ",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb05006ae1b05b:0x84449cec798fa61b",
+    "cid": "9530915250888484379",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:08.394Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=RHOMBUS%20NATIONAL%20SCHOOL&query_place_id=ChIJW7DhagAF6zkRG6aPeeycRIQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.45446650592592,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=xhffnZTkGQE9OAdeoj0dBA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=221.8384&pitch=0&thumbfov=100",
+    "kgmid": "/g/11whp81xx5"
+  },
+  {
+    "title": "Little Souls Child care and Montessori School",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "Suryabinayak, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/LSCCM",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6701928,
+      "lng": 85.4042687
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhYz9Eo0b6zkR4Trg57VEFEQ",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1b8d12fd8c85:0x441444b5e7e03ae1",
+    "cid": "4905621442183314145",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.005Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 4:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Little%20Souls%20Child%20care%20and%20Montessori%20School&query_place_id=ChIJhYz9Eo0b6zkR4Trg57VEFEQ",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwx21xRtZvSn973fAT0I7Jj9q2zR6eswctmRsVqf0UPAfmg8a_fVWqN1Hjgzw0iSrSmv1eUgcK0sPwGq-DIgYoehmWoEmCTuRKLcswIpbK9aBBBRYUCOSsI9EcMNVU_dgd2qAyj=w408-h306-k-no",
+    "kgmid": "/g/11s977tbsj"
+  },
+  {
+    "title": "Shree Katunje elementary school",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MC75+QPR, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC75+QPR",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6644992,
+      "lng": 85.4092605
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJzYLZ4d8b6zkRjv-lbG-rqs4",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1bdfe1d982cd:0xceaaab6f6ca5ff8e",
+    "cid": "14891903612906504078",
+    "reviewsCount": 0,
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Katunje%20elementary%20school&query_place_id=ChIJzYLZ4d8b6zkRjv-lbG-rqs4",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyQiDkF-RfXbga9jmx0iR36RYUHWf6GjIOM7VV45ibYblDkXKjgJQouXFIowBwdrSr8NZCJPsJR7NyWviVQ4M5nPn-wkpZLc3DVeRrsUyNMnZbMRhtVnvb5sbf2GvWSKq-vd5Vmmw=w408-h306-k-no",
+    "kgmid": "/g/11jz739w8s"
+  },
+  {
+    "title": "Himalayan Academy Boarding School",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.habs.edu.np/",
+    "phone": "+977 981-0136313",
+    "phoneUnformatted": "+9779810136313",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6755699,
+      "lng": 85.4171709
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJLeZzCAAb6zkRDrN1MbOKtXw",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1b000873e62d:0x7cb58ab33175b30e",
+    "cid": "8986241133721269006",
+    "reviewsCount": 0,
+    "imagesCount": 12,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Himalayan%20Academy%20Boarding%20School&query_place_id=ChIJLeZzCAAb6zkRDrN1MbOKtXw",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNvF0k2TF7vopdpRjcNoyt6rCC1RsSHB5UI4YXY=w408-h306-k-no",
+    "kgmid": "/g/11y2cc0v64"
+  },
+  {
+    "title": "Vinayak Saraswoti School",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MCV4+3P, Changunarayan 44600, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCV4+3P",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6929298,
+      "lng": 85.4062717
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI7anCuwb6zkRBMOcNhiiRNs",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1bec0aa7b623:0xdb44a218369cc304",
+    "cid": "15799931617601700612",
+    "reviewsCount": 0,
+    "imagesCount": 13,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:51.842Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Vinayak%20Saraswoti%20School&query_place_id=ChIJI7anCuwb6zkRBMOcNhiiRNs",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPZYxo15ZYIax7qshMw3ZqBCmnjyYjE3tD-wk4d=w408-h306-k-no",
+    "kgmid": "/g/11sgcw935b"
+  },
+  {
+    "title": "Khadka Deal,Duwakot 1",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MCR6+9P6 Gurukul vidhya Mandir (Doreman Montessori, Changunarayan, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCR6+9P6 Gurukul vidhya Mandir (Doreman Montessori",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.690913,
+      "lng": 85.4117608
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJmUwYCgAb6zkRF0R2KEs5is0",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1b000a184c99:0xcd8a394b28764417",
+    "cid": "14810713319525467159",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:29.011Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khadka%20Deal%2CDuwakot%201&query_place_id=ChIJmUwYCgAb6zkRF0R2KEs5is0",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "kgmid": "/g/11y2qd7q2y"
+  },
+  {
+    "title": "Amarjyoti Montessori",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MCGQ+27V, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGQ+27V",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614257",
+    "phoneUnformatted": "+97716614257",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6751161,
+      "lng": 85.4381742
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcU53T00F6zkR3XujEk7mlYU",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb054d4f774e71:0x8595e64e12a37bdd",
+    "cid": "9625853001568844765",
+    "reviewsCount": 0,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:58.390Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Amarjyoti%20Montessori&query_place_id=ChIJcU53T00F6zkR3XujEk7mlYU",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLHcWv1IkcT_AjaNKL9hbBE3mcK_VMTBlps45udEsDiUQtqUM7mKqaUJahOfirZ4au0kpp14nzeec-cYwRPfZpiqBLhsT1V7br18m290WFBeAfzWpOI5nm-UK6KsEdtGH--zz7=w426-h240-k-no",
+    "kgmid": "/g/11dxd0bb7s"
+  },
+  {
+    "title": "Amarjyoti Gyankunja",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MCGQ+569, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGQ+569",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6754056,
+      "lng": 85.438107
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPdj-YwAb6zkRpIrQkHh-N6g",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1b0063fed83d:0xa8377e7890d08aa4",
+    "cid": "12121295978381740708",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:58.390Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Amarjyoti%20Gyankunja&query_place_id=ChIJPdj-YwAb6zkRpIrQkHh-N6g",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=48Vw9mqksz_JEaGLLVgy0A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=86.830124&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w4twdbyc"
+  },
+  {
+    "title": "Parhibhara Academy",
+    "price": null,
+    "categoryName": "Elementary school",
+    "address": "MCC2+6GX, Bhaktapur, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC2+6GX",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://pathibharaacademy.edu.np/",
+    "phone": "+977 1-6620354",
+    "phoneUnformatted": "+97716620354",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6712111,
+      "lng": 85.4006973
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSbABTQAb6zkRkJtvOzeLjPU",
+    "categories": [
+      "Elementary school"
+    ],
+    "fid": "0x39eb1b004d01b049:0xf58c8b373b6f9b90",
+    "cid": "17693670105368468368",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.184Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 4:45 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 4:45 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 4:45 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 4:45 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 4:45 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 4:45 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Parhibhara%20Academy&query_place_id=ChIJSbABTQAb6zkRkJtvOzeLjPU",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=HT220TAP3H2p_UgSLRKTPg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=138.54897&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w3kk792s"
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "title": "Durbar Thakali Grill",
+    "price": "$$",
+    "categoryName": "Rice restaurant",
+    "address": "M9GX+J7, Radhe Radhe Rd, Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": "M9GX+J7, Radhe Radhe Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5910992",
+    "phoneUnformatted": "+97715910992",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6765194,
+      "lng": 85.3982044
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-6p-wuYb6zkRi5d8PhptS0M",
+    "categories": [
+      "Rice restaurant"
+    ],
+    "fid": "0x39eb1be6c27eaafb:0x434b6d1a3e7c978b",
+    "cid": "4849089383279400843",
+    "reviewsCount": 340,
+    "reviewsDistribution": {
+      "oneStar": 84,
+      "twoStar": 19,
+      "threeStar": 42,
+      "fourStar": 48,
+      "fiveStar": 147
+    },
+    "imagesCount": 280,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:52:07.650Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 9:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 9:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 9:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 9:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 9:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Fireplace": true
+        },
+        {
+          "Great beer selection": true
+        },
+        {
+          "Great cocktails": true
+        },
+        {
+          "Great dessert": true
+        },
+        {
+          "Great tea selection": true
+        },
+        {
+          "Great wine list": true
+        },
+        {
+          "Live music": true
+        },
+        {
+          "Rooftop seating": true
+        },
+        {
+          "Sports": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        },
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Cocktails": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Brunch": true
+        },
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Dessert": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Cozy": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        },
+        {
+          "Tourists": true
+        }
+      ],
+      "Planning": [
+        {
+          "Dinner reservations recommended": true
+        },
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "Credit cards": true
+        },
+        {
+          "Debit cards": true
+        },
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Usually plenty of parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Durbar%20Thakali%20Grill&query_place_id=ChIJ-6p-wuYb6zkRi5d8PhptS0M",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.680106502310814,85.39674438680153,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 51,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMGVms6S7epJkf6IcTGeI2F-1uPgyqngL7NZJVS=w408-h271-k-no",
+    "kgmid": "/g/11ppd1prgq"
+  },
+  {
+    "title": "Daura Chulo",
+    "price": null,
+    "categoryName": "Rice restaurant",
+    "address": "JFV9+875, Banepa, Nepal",
+    "neighborhood": "Nangkhel",
+    "street": "JFV9+875",
+    "city": "Banepa",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1078396",
+    "phoneUnformatted": "+9779851078396",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6432728,
+      "lng": 85.4682241
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdQ2pkGsP6zkRrX52XXBNwO8",
+    "categories": [
+      "Rice restaurant"
+    ],
+    "fid": "0x39eb0f6b90a90d75:0xefc04d705d767ead",
+    "cid": "17275893315592945325",
+    "reviewsCount": 26,
+    "imagesCount": 19,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:52:23.717Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "Usually plenty of parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Daura%20Chulo&query_place_id=ChIJdQ2pkGsP6zkRrX52XXBNwO8",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.64207399075676,85.4568408175979,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzo9Ppfkpotx6FyYhgk_kcvPE-06yW1tnIPMxK0MZVrXLA5dysHhkN8_SAy3h12z4gdaiuZwn34vR5LNNDimJXGHqX-_JlWCnJ3wsl5dYgg8iJpJ1OAG8k13OgUXb_NyBNhpXE=w408-h544-k-no",
+    "kgmid": "/g/11vkn_5rsz"
+  }
+]

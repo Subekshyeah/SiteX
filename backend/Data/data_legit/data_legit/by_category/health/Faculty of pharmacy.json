@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Lifeline 365 Polyclinic",
+    "price": null,
+    "categoryName": "Faculty of pharmacy",
+    "address": "27, 85 665060938400895, Suryabinayak 44600, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "27, 85 665060938400895",
+    "city": "Suryabinayak",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/p/Lifeline-365-polyclinic-100076855346357/",
+    "phone": "+977 1-6620474",
+    "phoneUnformatted": "+97716620474",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6634411,
+      "lng": 85.4261153
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJR02FSIsF6zkRr1wzXypX0n0",
+    "categories": [
+      "Faculty of pharmacy"
+    ],
+    "fid": "0x39eb058b48854d47:0x7dd2572a5f335caf",
+    "cid": "9066404839347674287",
+    "reviewsCount": 11,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 11
+    },
+    "imagesCount": 30,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.253Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Parking": [
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Lifeline%20365%20Polyclinic&query_place_id=ChIJR02FSIsF6zkRr1wzXypX0n0",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 50,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMcy7_saEBvNMqWPxqjyaCbJ4iM8LqCMkPYo7J0=w408-h508-k-no",
+    "kgmid": "/g/11q4hbwbs8"
+  }
+]

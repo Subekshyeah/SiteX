@@ -1,0 +1,5122 @@
+[
+  {
+    "title": "Bhaktapur Dental Home",
+    "subTitle": "भक्तपुर दन्त घर",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCCH+PV5 रत्न भवन, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+PV5 रत्न भवन",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610264",
+    "phoneUnformatted": "+97716610264",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671946,
+      "lng": 85.429851
+    },
+    "totalScore": 2.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJF7LXTK4a6zkRp13JENG1DQI",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aae4cd7b217:0x20db5d110c95da7",
+    "cid": "147974272307518887",
+    "reviewsCount": 5,
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.486Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Dental%20Home&query_place_id=ChIJF7LXTK4a6zkRp13JENG1DQI",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 30,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHqXhkhNVTkvQVXQxyI9BMAEpL-ual5aQwgpa932eJUt5cex76EXq2WdhfmPAQd0vXmUFk42vLclaxWyF2m7TxyirqWdqh_1m1hV2DsjEh4jWqvfCfmSFzFUb5vBQbXNLfYStFtUjzMPcRnS4dRzbjajF0xRKsepTuEl4fHclnfJXg7dklortZBFbrCbEtskXbZvho=w408-h306-k-no",
+    "kgmid": "/g/11b6p9q675"
+  },
+  {
+    "title": "Nawadurga Dental Clinic | Dentist in Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Kamal-Vinayak Bus Park, Garud Kundal Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamal-Vinayak Bus Park, Garud Kundal Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://nawadurgadentalclinic.com.np/",
+    "phone": "+977 980-8576334",
+    "phoneUnformatted": "+9779808576334",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6756978,
+      "lng": 85.4372217
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJQXQYAKIb6zkRammxVNN4YmQ",
+    "categories": [
+      "Dental clinic",
+      "Dental hygienist",
+      "Dental implants periodontist",
+      "Dentist",
+      "Emergency dental service",
+      "Oral surgeon",
+      "Orthodontist",
+      "Pediatrician",
+      "Prosthodontist",
+      "Teeth whitening service"
+    ],
+    "fid": "0x39eb1ba200187441:0x646278d354b1696a",
+    "cid": "7233476800564783466",
+    "reviewsCount": 12,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 12
+    },
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:21.422Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Children": [
+        {
+          "Nursing room": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nawadurga%20Dental%20Clinic%20%7C%20Dentist%20in%20Bhaktapur&query_place_id=ChIJQXQYAKIb6zkRammxVNN4YmQ",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 43,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMpISQiCzOMlHfpIagt_zYp7bFyWzI52eoCHoTz=w408-h544-k-no",
+    "kgmid": "/g/11hdsrz7rw"
+  },
+  {
+    "title": "SEWAA DENTAL HOME",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCGJ+GW3, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGJ+GW3, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://sewaadentalhome.com.np/",
+    "phone": "+977 981-8822777",
+    "phoneUnformatted": "+9779818822777",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6713143,
+      "lng": 85.422301
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJD0CIFQAb6zkReJZN_JiXsT4",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b001588400f:0x3eb19798fc4d9678",
+    "cid": "4517558584553084536",
+    "reviewsCount": 14,
+    "imagesCount": 336,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 1 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=SEWAA%20DENTAL%20HOME&query_place_id=ChIJD0CIFQAb6zkReJZN_JiXsT4",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz98_lxNBdqshToPccgFdkXWPglgVIOKrJaY2nFlv5zqU3hjXk92qg2VvY5bzr0pKnA57OyDBkAFYlTcbQVvTxBOv3X5t9_Hi0QM-w5OrfX8EG2_meQn4sSgzgIjCgLsL6wnnYZ=w535-h240-k-no",
+    "kgmid": "/g/11x20gxx2h"
+  },
+  {
+    "title": "Dental World Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Tourism market, Bhaktapur 00977, Nepal",
+    "neighborhood": null,
+    "street": "Tourism market",
+    "city": "Bhaktapur",
+    "postalCode": "00977",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-5546502",
+    "phoneUnformatted": "+9779765546502",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6674267,
+      "lng": 85.4261986
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJaZpalGsb6zkRH7LMWnJpnE8",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b6b945a9a69:0x4f9c69725accb21f",
+    "cid": "5736575965233721887",
+    "reviewsCount": 17,
+    "imagesCount": 25,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dental%20World%20Clinic&query_place_id=ChIJaZpalGsb6zkRH7LMWnJpnE8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPi5hmjvfLxsG9zMDI_ZQQGcQGHmC9Gnrjtgywg=w408-h306-k-no",
+    "kgmid": "/g/11tjmgb_2_"
+  },
+  {
+    "title": "Indrayani dental home Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1531458",
+    "phoneUnformatted": "+9779841531458",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6727561,
+      "lng": 85.4243765
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrVjUM-Ab6zkRiGwBBPHoITw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1be033d458ad:0x3c21e8f104016c88",
+    "cid": "4333000438359092360",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:24.723Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Indrayani%20dental%20home%20Pvt.%20Ltd.&query_place_id=ChIJrVjUM-Ab6zkRiGwBBPHoITw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 38,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=C4eB0PV0MIcFpicQcEv1sA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=45.17618&pitch=0&thumbfov=100",
+    "kgmid": "/g/11szf0l60l"
+  },
+  {
+    "title": "Total Care Dental Clinic, Chyamasingh - 8, Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Chyamasingh - 8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Chyamasingh - 8",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1145587",
+    "phoneUnformatted": "+9779851145587",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6720858,
+      "lng": 85.4383593
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJV0Wy0Twb6zkRRez6HD7dNQo",
+    "categories": [
+      "Dental clinic",
+      "Dental hygienist",
+      "Dental laboratory",
+      "Dental radiology",
+      "Dentist"
+    ],
+    "fid": "0x39eb1b3cd1b24557:0xa35dd3e1cfaec45",
+    "cid": "735737372988861509",
+    "reviewsCount": 11,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.992Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Total%20Care%20Dental%20Clinic%2C%20Chyamasingh%20-%208%2C%20Bhaktapur&query_place_id=ChIJV0Wy0Twb6zkRRez6HD7dNQo",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPZMc2ThjEAZC-UaqZRLKYyNUWiIPu2cbgjUNc=w408-h303-k-no",
+    "kgmid": "/g/11kc98d_lx"
+  },
+  {
+    "title": "Prime dental clinic pvt.ltd",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "dudhpati ward 17, bhaktapur, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "dudhpati ward 17, bhaktapur",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619494",
+    "phoneUnformatted": "+97716619494",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6716249,
+      "lng": 85.4218072
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVT4aY6Ma6zkRdMGXxq2HNBU",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa3631a3e55:0x153487adc697c174",
+    "cid": "1527995354016366964",
+    "reviewsCount": 7,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prime%20dental%20clinic%20pvt.ltd&query_place_id=ChIJVT4aY6Ma6zkRdMGXxq2HNBU",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOmgJk4XxoJ53OrpUJst1VmIQ6MsVtJlabdWg9t=w408-h306-k-no",
+    "kgmid": "/g/11b6q27039"
+  },
+  {
+    "title": "Premier Dental Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Inside Ram Devi Complex, Ghalate tol Suryabinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Inside Ram Devi Complex, Ghalate tol Suryabinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://premierdental.com.np/",
+    "phone": "+977 981-3538101",
+    "phoneUnformatted": "+9779813538101",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.667254,
+      "lng": 85.4260352
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJid86VQAb6zkRY3nZl8BmlCs",
+    "categories": [
+      "Dental clinic",
+      "Dental implants periodontist",
+      "Dental radiology",
+      "Emergency dental service",
+      "Endodontist",
+      "Oral and maxillofacial surgeon",
+      "Oral surgeon",
+      "Orthodontist",
+      "Periodontist",
+      "Prosthodontist"
+    ],
+    "fid": "0x39eb1b00553adf89:0x2b9466c097d97963",
+    "cid": "3140247817551444323",
+    "reviewsCount": 20,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Cosmetic dentistry": true
+        },
+        {
+          "Emergency services": true
+        },
+        {
+          "Pediatric care": true
+        },
+        {
+          "Sedation dentistry": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        }
+      ],
+      "Payments": [
+        {
+          "Checks": true
+        },
+        {
+          "Credit cards": true
+        },
+        {
+          "Debit cards": true
+        },
+        {
+          "NFC mobile payments": true
+        },
+        {
+          "Payment plans": true
+        },
+        {
+          "Credit cards": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        },
+        {
+          "Paid street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Premier%20Dental%20Bhaktapur&query_place_id=ChIJid86VQAb6zkRY3nZl8BmlCs",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOsriSqmz6dPmiaLMa86xM7xlpwSc_3slz80VsZ=w408-h541-k-no",
+    "kgmid": "/g/11vk76w40_"
+  },
+  {
+    "title": "Rose Dental Care Private Limited",
+    "subTitle": "गुलाब दन्त हेरविचार निजी लिमिटेड",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCCC+MVJ, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+MVJ",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614905",
+    "phoneUnformatted": "+97716614905",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6717214,
+      "lng": 85.4221394
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdyWanaQa6zkR1S1cVldQ4sc",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa49d9a2577:0xc7e25057565c2dd5",
+    "cid": "14403162894325525973",
+    "reviewsCount": 3,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Rose%20Dental%20Care%20Private%20Limited&query_place_id=ChIJdyWanaQa6zkR1S1cVldQ4sc",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGuYinOHkAeAUlG0dMODhlbxH5pos1o45-6V58oIyNOP_t75zkncBmX8uXTVIhncZl5gmu1ESeHUagrNUeX3oDfU3TYGLXdGcmxXCuHhWX5gZlZWiO5fKB6f786MQYurkIDgQNTmH07SzjebGcs3dN6GvVVCbGOBhFmuzYdQNstODjL_fPtRtxswLP2W1NdyZ6tbmw=w408-h306-k-no",
+    "kgmid": "/g/11dzx8qn5d"
+  },
+  {
+    "title": "Anjal Dental Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+445, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+445, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 974-1878149",
+    "phoneUnformatted": "+9779741878149",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6777758,
+      "lng": 85.4378766
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJKQpGOecF6zkRGyb8gquR4oQ",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05e739460a29:0x84e291ab82fc261b",
+    "cid": "9575375923566093851",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Anjal%20Dental%20Clinic&query_place_id=ChIJKQpGOecF6zkRGyb8gquR4oQ",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSztDBKzxUOuWUCsu_UfUKnn4TdUpSNntLD9nJpLRb1pE-azXfDLpRC9EZXbaNPJKorUgCmkKXFVRw8-U0aLQoqW2iRh0wgyOp2H3US6Zoc6kn4TvIA1r6DyBl9xAjpCOUHzFodTBQ=w426-h240-k-no",
+    "kgmid": "/g/11kk10lsmt"
+  },
+  {
+    "title": "Nova Smile Care Dental Suryabinayak branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Suryabinayak, buspark, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Suryabinayak, buspark",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1150461",
+    "phoneUnformatted": "+9779851150461",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6655064,
+      "lng": 85.4249108
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJo70EcqMb6zkRZ2COUtMwZFc",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1ba37204bda3:0x576430d3528e6067",
+    "cid": "6297211863152091239",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nova%20Smile%20Care%20Dental%20Suryabinayak%20branch&query_place_id=ChIJo70EcqMb6zkRZ2COUtMwZFc",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwgcGkYXyaqTtrnXcyFLHrltAmMpsoxjn5ycAi70uKkt1WEf0NMTWiZiShnHzch6SOtTGBGiM4ur5VITbZK1jlipKS15IJubFU1fQjzUdoM28BE2CgNcarwSKx8Hc8ymtKObFFTStSIsrPz=w408-h544-k-no",
+    "kgmid": "/g/11xm2c1wwy"
+  },
+  {
+    "title": "Total Care Dental Clinic ,Jagati -8 Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Jagati Chwok (Bus Stop, Jagati Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Jagati Chwok (Bus Stop, Jagati Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1145587",
+    "phoneUnformatted": "+9779851145587",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6661943,
+      "lng": 85.4374087
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrRM6ED0F6zkRzTjm3cesVXM",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb053d103a13ad:0x7355acc7dde638cd",
+    "cid": "8310738661803440333",
+    "reviewsCount": 7,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10:30 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Total%20Care%20Dental%20Clinic%20%2CJagati%20-8%20Bhaktapur&query_place_id=ChIJrRM6ED0F6zkRzTjm3cesVXM",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMPkrrgXGRB4QSllSe41-DVyuj_pAiHqV0tG82j=w408-h288-k-no",
+    "kgmid": "/g/11y0g2wszh"
+  },
+  {
+    "title": "Smile Tech Dental clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCFQ+FR3, Chyamasing 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFQ+FR3",
+    "city": "Chyamasing",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0906020",
+    "phoneUnformatted": "+9779860906020",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736352,
+      "lng": 85.4395347
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSQYbNgAF6zkRpx50a6h104A",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb0500361b0649:0x80d375a86b741ea7",
+    "cid": "9282892623158451879",
+    "reviewsCount": 3,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Smile%20Tech%20Dental%20clinic&query_place_id=ChIJSQYbNgAF6zkRpx50a6h104A",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5wOy9KlLlO8usdNk9tqe3t6wmu-HBsSJjOUjCqeAljdEJdh7Y0OH51D33udbZE0PwvDXE3xv84BWwRpO_dW4S4UjeeozT2mfv-5OK-IebZvAMs4Mb-cpwT-LcKQyw32846mmr=w408-h544-k-no",
+    "kgmid": "/g/11x1pmp8dv"
+  },
+  {
+    "title": "Suryavinayak Dental Care",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8F+5XR, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC8F+5XR",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6618021",
+    "phoneUnformatted": "+97716618021",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6654943,
+      "lng": 85.4248763
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwejuVqYa6zkRkL5bz236F7Q",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa656eee8c1:0xb417fa6dcf5bbe90",
+    "cid": "12977116200828649104",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Suryavinayak%20Dental%20Care&query_place_id=ChIJwejuVqYa6zkRkL5bz236F7Q",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=paGOpOS344epkKVF3NynZg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=283.98105&pitch=0&thumbfov=100",
+    "kgmid": "/g/11f0_b43c3"
+  },
+  {
+    "title": "Dentocare Nepal Dental Clinic, Kamalbinayak branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+33X, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+33X",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6777323,
+      "lng": 85.437725
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJZYWGfccF6zkRIbppuQ4VDL0",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05c77d868565:0xbd0c150eb969ba21",
+    "cid": "13622286125873347105",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dentocare%20Nepal%20Dental%20Clinic%2C%20Kamalbinayak%20branch&query_place_id=ChIJZYWGfccF6zkRIbppuQ4VDL0",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=89aQRyMct8-w8PYQ02JMmQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=7.907128&pitch=0&thumbfov=100",
+    "kgmid": "/g/11mtjw13_f"
+  },
+  {
+    "title": "Mediland dental clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+4FP, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+4FP, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1102184",
+    "phoneUnformatted": "+9779851102184",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6778279,
+      "lng": 85.4386946
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcTtKu6IF6zkRf5T1Ja2-TkU",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05a2bb4a3b71:0x454ebead25f5947f",
+    "cid": "4994138687675929727",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:25.993Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "12 to 7 AM, 10 AM to 12 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mediland%20dental%20clinic&query_place_id=ChIJcTtKu6IF6zkRf5T1Ja2-TkU",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBTMjQKmvYsKfLFDVN2WD2bDMvsbMsI1_TPqmyAger4duSo_WNVfKgruHCFD-n1EomunbPLHGfpmq7RiCHl0wx_EiAEsKDl79Y-Ts1NJ4tvp7-Dn6qknTvx4wi8ou4Fm4mB0Lr=w408-h725-k-no",
+    "kgmid": "/g/11qrgptdbr"
+  },
+  {
+    "title": "Dental Service - Clinic One Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC9G+297, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9G+297",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1310113",
+    "phoneUnformatted": "+9779851310113",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6675463,
+      "lng": 85.4259317
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1Ve0IKgb6zkRwUUi61kR30s",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1ba820b457d5:0x4bdf1159eb2245c1",
+    "cid": "5467107550545724865",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:53.262Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "11 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dental%20Service%20-%20Clinic%20One%20Bhaktapur&query_place_id=ChIJ1Ve0IKgb6zkRwUUi61kR30s",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=HqPwADmKsaLPOfy_6G2wPA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=213.21712&pitch=0&thumbfov=100",
+    "kgmid": "/g/11t4wt3tzj"
+  },
+  {
+    "title": "Om Dental and Implant Centre ( ओम डेन्टल एन्ड इम्प्लन्ट सेन्टर)",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6638741,
+      "lng": 85.4220527
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJp0dOgmQb6zkRKcuQwm7ANmk",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b64824e47a7:0x6936c06ec290cb29",
+    "cid": "7581458604668013353",
+    "reviewsCount": 3,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:53.263Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        },
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Children": [
+        {
+          "Nursing room": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Om%20Dental%20and%20Implant%20Centre%20(%20%E0%A4%93%E0%A4%AE%20%E0%A4%A1%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A4%B2%20%E0%A4%8F%E0%A4%A8%E0%A5%8D%E0%A4%A1%20%E0%A4%87%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A5%8D%E0%A4%B2%E0%A4%A8%E0%A5%8D%E0%A4%9F%20%E0%A4%B8%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A4%B0)&query_place_id=ChIJp0dOgmQb6zkRKcuQwm7ANmk",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMCqc7I-JzU62nA71Pfge5zQxn3R1yKieZzrTHv=w408-h304-k-no",
+    "kgmid": "/g/11rt__j7j4"
+  },
+  {
+    "title": "Smile Impress Dental Suryabinayak Branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8F+6M5, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC8F+6M5",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6655011,
+      "lng": 85.4242405
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJKV1xdgAb6zkR7oUHKNY0xOA",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b0076715d29:0xe0c434d6280785ee",
+    "cid": "16196128254330373614",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.061Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Smile%20Impress%20Dental%20Suryabinayak%20Branch&query_place_id=ChIJKV1xdgAb6zkR7oUHKNY0xOA",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=tG2FZ-_FbGBfkPv98QaZkQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=161.37349&pitch=0&thumbfov=100",
+    "kgmid": "/g/11m6m53fv6"
+  },
+  {
+    "title": "Care 32 Dental Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Changunarayan-2, Duwakot mod, Bhaktapur 44800, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "Changunarayan-2, Duwakot mod",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.instagram.com/_care32_dentalclinic?igsh=eWl0OTM3bGVvMXV1",
+    "phone": "+977 981-3510103",
+    "phoneUnformatted": "+9779813510103",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6781372,
+      "lng": 85.4072938
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOwu1hfkb6zkRXKdD_sbIw_w",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1bf985b50b3b:0xfcc3c8c6fe43a75c",
+    "cid": "18213622075011344220",
+    "reviewsCount": 82,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.061Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        },
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "On-site parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Care%2032%20Dental%20Clinic&query_place_id=ChIJOwu1hfkb6zkRXKdD_sbIw_w",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyfPheneBfbAbblgEKnmDIYKrvTzJFRqQcFk4YT45YXdpw4TUml2XT_0cmoh7Zde0LPzUIT6ctzZ_G5t-EhzxH-VD_67FyhtmGQFvHyjbIh6vDx16IaD7LXkk5eEYJlUPByof-Z=w408-h306-k-no",
+    "kgmid": "/g/11y21cq6zv"
+  },
+  {
+    "title": "OM BHAKTAPUR DENTAL CLINIC",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCH5+FF7, Changunarayan 44800, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCH5+FF7",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-3493186",
+    "phoneUnformatted": "+9779763493186",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6786529,
+      "lng": 85.4086741
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_WAyNQAb6zkRRYahHWZOhnM",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b00353260fd:0x73864e661da18645",
+    "cid": "8324427161731696197",
+    "reviewsCount": 19,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.061Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=OM%20BHAKTAPUR%20DENTAL%20CLINIC&query_place_id=ChIJ_WAyNQAb6zkRRYahHWZOhnM",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXPox0sRV8_qTxZFhLqoXiDkh73RALgHKftqq3PejS8353-YlPCS4d0QBG2cEZJWEe2Cr-mzqDLAetLDyeb01XISibWJbP2or_NiWu5hdxPixwzEwDR3ieny88n70kxchn-Ky0=w408-h544-k-no",
+    "kgmid": "/g/11wy4hlt4n"
+  },
+  {
+    "title": "Himalaya Dental Care Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC7H+HQC, Suryabinayak 08, Nepal",
+    "neighborhood": "Itabu",
+    "street": "MC7H+HQC",
+    "city": "Suryabinayak",
+    "postalCode": "08",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1102371",
+    "phoneUnformatted": "+9779841102371",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6639422,
+      "lng": 85.4293945
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGa2FLAAb6zkR_iHfPl5G4Ow",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b002c85ad19:0xece0465e3edf21fe",
+    "cid": "17068719958329860606",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.062Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Himalaya%20Dental%20Care%20Bhaktapur&query_place_id=ChIJGa2FLAAb6zkR_iHfPl5G4Ow",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=srOubGv_or9FbT1xl5xUug&cb_client=search.gws-prod.gps&w=408&h=240&yaw=106.825096&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vyzcf4mc"
+  },
+  {
+    "title": "Aesthetic Oro-Dental and Implantology Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://aestheticorodental.com.np/",
+    "phone": "+977 980-2062626",
+    "phoneUnformatted": "+9779802062626",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6750699,
+      "lng": 85.4094876
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJXUcpI_sb6zkRNDorLF8TCb4",
+    "categories": [
+      "Dental clinic",
+      "Dental hygienist",
+      "Dentist",
+      "Teeth whitening service"
+    ],
+    "fid": "0x39eb1bfb2329475d:0xbe09135f2c2b3a34",
+    "cid": "13693497441480555060",
+    "reviewsCount": 20,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.062Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aesthetic%20Oro-Dental%20and%20Implantology%20Clinic&query_place_id=ChIJXUcpI_sb6zkRNDorLF8TCb4",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw6wsQLdylSv6lhQeDKIF3J6t9tni8YFSBVqVye1UeisV2Y2hiXbWQtm9S2t2xHMYoDmXwGilcftMdTAjElke6uMU4msPsVfurro2dM2lB7XVYfQZdVz5iCvrmhswEpwjEc-Jwkfw=w533-h240-k-no",
+    "kgmid": "/g/11kjp1fpr5"
+  },
+  {
+    "title": "Subhakamana Dental Care,Pandubazar,Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8F+56H, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC8F+56H",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1119857",
+    "phoneUnformatted": "+9779851119857",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6653987,
+      "lng": 85.4229971
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOaoDr6kb6zkR1TqRdT1jEyw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1ba9af03aa39:0x2c13633d75913ad5",
+    "cid": "3175991277842938581",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.876Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Subhakamana%20Dental%20Care%2CPandubazar%2CBhaktapur&query_place_id=ChIJOaoDr6kb6zkR1TqRdT1jEyw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 53,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=70iOmgRTbl19L1QsPpr9Bw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=96.62048&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vdb9wz7j"
+  },
+  {
+    "title": "Start Dental Clinic",
+    "subTitle": "स्टार डेण्टल किल्निक",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8G+98X, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+98X, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616380",
+    "phoneUnformatted": "+97716616380",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6659879,
+      "lng": 85.4258633
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJgQ0HR6Ya6zkRlbM8oiMRyqw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa647070d81:0xacca1123a23cb395",
+    "cid": "12450782964562572181",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.902Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Start%20Dental%20Clinic&query_place_id=ChIJgQ0HR6Ya6zkRlbM8oiMRyqw",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 29,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFhaXfa3Hx_iGq1177oH1CODI8B4_41URXA_2w0S3XyOEOkYeqM7nA3fM-0VU5QMAUoEtKz4mImWeh1TRTduORhjSUOcC-CtO0PkG2rGAt4edwNuySdrKfhjVhrkp2BskREvhS_izo-hdF-RYtkQZYD92jxT1o2lcHlPM8LHVDJ8Hp9Q5prRA10YhzKEvoXt5dKzbE=w408-h306-k-no",
+    "kgmid": "/g/11b6rt0bs8"
+  },
+  {
+    "title": "Dental World Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Tourism market, Bhaktapur 00977, Nepal",
+    "neighborhood": null,
+    "street": "Tourism market",
+    "city": "Bhaktapur",
+    "postalCode": "00977",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-5546502",
+    "phoneUnformatted": "+9779765546502",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6674267,
+      "lng": 85.4261986
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJaZpalGsb6zkRH7LMWnJpnE8",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b6b945a9a69:0x4f9c69725accb21f",
+    "cid": "5736575965233721887",
+    "reviewsCount": 17,
+    "imagesCount": 25,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.965Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dental%20World%20Clinic&query_place_id=ChIJaZpalGsb6zkRH7LMWnJpnE8",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOFnZggw4PrpVoedt7JMMb2eFyHWMZd_0Zvn79T=w408-h544-k-no",
+    "kgmid": "/g/11tjmgb_2_"
+  },
+  {
+    "title": "Elite Dental",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Opposite of Paragon Academy, Kamalbinayak Near, Kamal Pokhari Path, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Opposite of Paragon Academy, Kamalbinayak Near, Kamal Pokhari Path",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.elitedental-bkt.com/",
+    "phone": "+977 984-3170467",
+    "phoneUnformatted": "+9779843170467",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6770498,
+      "lng": 85.4395433
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbx7QGHIF6zkRG9_hjIL3NWI",
+    "categories": [
+      "Dental clinic",
+      "Dental hygienist",
+      "Dental implants periodontist",
+      "Dental laboratory",
+      "Dental radiology",
+      "Dentist",
+      "Emergency dental service",
+      "Orthodontist",
+      "Teeth whitening service"
+    ],
+    "fid": "0x39eb057218d01e6f:0x6235f7828ce1df1b",
+    "cid": "7076834529564024603",
+    "reviewsCount": 40,
+    "imagesCount": 55,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Elite%20Dental&query_place_id=ChIJbx7QGHIF6zkRG9_hjIL3NWI",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPzaRiKwREkyGYKrnIMfHj-6bEZtdY6-CEL6rIQ=w408-h306-k-no",
+    "kgmid": "/g/11szbzt_yp"
+  },
+  {
+    "title": "Nawadurga Dental Clinic | Dentist in Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Kamal-Vinayak Bus Park, Garud Kundal Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamal-Vinayak Bus Park, Garud Kundal Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://nawadurgadentalclinic.com.np/",
+    "phone": "+977 980-8576334",
+    "phoneUnformatted": "+9779808576334",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6756978,
+      "lng": 85.4372217
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJQXQYAKIb6zkRammxVNN4YmQ",
+    "categories": [
+      "Dental clinic",
+      "Dental hygienist",
+      "Dental implants periodontist",
+      "Dentist",
+      "Emergency dental service",
+      "Oral surgeon",
+      "Orthodontist",
+      "Pediatrician",
+      "Prosthodontist",
+      "Teeth whitening service"
+    ],
+    "fid": "0x39eb1ba200187441:0x646278d354b1696a",
+    "cid": "7233476800564783466",
+    "reviewsCount": 12,
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11:30 AM to 4:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Children": [
+        {
+          "Nursing room": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nawadurga%20Dental%20Clinic%20%7C%20Dentist%20in%20Bhaktapur&query_place_id=ChIJQXQYAKIb6zkRammxVNN4YmQ",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNQomPvvbjftN0G1RdhK7QKpON0_JOlPO3YcnPs=w408-h544-k-no",
+    "kgmid": "/g/11hdsrz7rw"
+  },
+  {
+    "title": "Care 32 Dental Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Changunarayan-2, Duwakot mod, Bhaktapur 44800, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "Changunarayan-2, Duwakot mod",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.instagram.com/_care32_dentalclinic?igsh=eWl0OTM3bGVvMXV1",
+    "phone": "+977 981-3510103",
+    "phoneUnformatted": "+9779813510103",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6781372,
+      "lng": 85.4072938
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOwu1hfkb6zkRXKdD_sbIw_w",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1bf985b50b3b:0xfcc3c8c6fe43a75c",
+    "cid": "18213622075011344220",
+    "reviewsCount": 82,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        },
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "On-site parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Care%2032%20Dental%20Clinic&query_place_id=ChIJOwu1hfkb6zkRXKdD_sbIw_w",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyfPheneBfbAbblgEKnmDIYKrvTzJFRqQcFk4YT45YXdpw4TUml2XT_0cmoh7Zde0LPzUIT6ctzZ_G5t-EhzxH-VD_67FyhtmGQFvHyjbIh6vDx16IaD7LXkk5eEYJlUPByof-Z=w408-h306-k-no",
+    "kgmid": "/g/11y21cq6zv"
+  },
+  {
+    "title": "Alfa Dental Home",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.alfadentalhome.com.np/",
+    "phone": "+977 981-8437512",
+    "phoneUnformatted": "+9779818437512",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.678437,
+      "lng": 85.4412225
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJS1R1SukF6zkRBadfhrxwhv0",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05e94a75544b:0xfd8670bc865fa705",
+    "cid": "18268412893485573893",
+    "reviewsCount": 60,
+    "imagesCount": 50,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        },
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Parking": [
+        {
+          "On-site parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Alfa%20Dental%20Home&query_place_id=ChIJS1R1SukF6zkRBadfhrxwhv0",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOeJSJz2lotP93b72REj7kAuNnST5GR2R8f-kDC=w408-h544-k-no",
+    "kgmid": "/g/11qnzx2t9s"
+  },
+  {
+    "title": "Total Care Dental Clinic, Chyamasingh - 8, Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Chyamasingh - 8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Chyamasingh - 8",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1145587",
+    "phoneUnformatted": "+9779851145587",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6720858,
+      "lng": 85.4383593
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJV0Wy0Twb6zkRRez6HD7dNQo",
+    "categories": [
+      "Dental clinic",
+      "Dental hygienist",
+      "Dental laboratory",
+      "Dental radiology",
+      "Dentist"
+    ],
+    "fid": "0x39eb1b3cd1b24557:0xa35dd3e1cfaec45",
+    "cid": "735737372988861509",
+    "reviewsCount": 11,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Total%20Care%20Dental%20Clinic%2C%20Chyamasingh%20-%208%2C%20Bhaktapur&query_place_id=ChIJV0Wy0Twb6zkRRez6HD7dNQo",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPZMc2ThjEAZC-UaqZRLKYyNUWiIPu2cbgjUNc=w408-h303-k-no",
+    "kgmid": "/g/11kc98d_lx"
+  },
+  {
+    "title": "B and B dental care center pvt. Ltd",
+    "subTitle": "बी र बी दन्त हेरविचार केन्द्र प्रा। लिमिटेड",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Bhaktapur, Suryabinayak 44805 Araniko Highway, Suryabinayak 44805, Nepal",
+    "neighborhood": "Nangkhel",
+    "street": "Bhaktapur, Suryabinayak 44805 Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44805",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9350963",
+    "phoneUnformatted": "+9779849350963",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6544387,
+      "lng": 85.4579416
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBZobKvMP6zkR88JbodmfWxg",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb0ff32a1b9a05:0x185b9fd9a15bc2f3",
+    "cid": "1755172236854805235",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=B%20and%20B%20dental%20care%20center%20pvt.%20Ltd&query_place_id=ChIJBZobKvMP6zkR88JbodmfWxg",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=sdTk3Tcrw_QfIW-HQ7KPsQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=7.516395&pitch=0&thumbfov=100",
+    "kgmid": "/g/11gbl3171l"
+  },
+  {
+    "title": "Premier Dental Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Inside Ram Devi Complex, Ghalate tol Suryabinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Inside Ram Devi Complex, Ghalate tol Suryabinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://premierdental.com.np/",
+    "phone": "+977 981-3538101",
+    "phoneUnformatted": "+9779813538101",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.667254,
+      "lng": 85.4260352
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJid86VQAb6zkRY3nZl8BmlCs",
+    "categories": [
+      "Dental clinic",
+      "Dental implants periodontist",
+      "Dental radiology",
+      "Emergency dental service",
+      "Endodontist",
+      "Oral and maxillofacial surgeon",
+      "Oral surgeon",
+      "Orthodontist",
+      "Periodontist",
+      "Prosthodontist"
+    ],
+    "fid": "0x39eb1b00553adf89:0x2b9466c097d97963",
+    "cid": "3140247817551444323",
+    "reviewsCount": 20,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Cosmetic dentistry": true
+        },
+        {
+          "Emergency services": true
+        },
+        {
+          "Pediatric care": true
+        },
+        {
+          "Sedation dentistry": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        }
+      ],
+      "Payments": [
+        {
+          "Checks": true
+        },
+        {
+          "Credit cards": true
+        },
+        {
+          "Debit cards": true
+        },
+        {
+          "NFC mobile payments": true
+        },
+        {
+          "Payment plans": true
+        },
+        {
+          "Credit cards": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        },
+        {
+          "Paid street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Premier%20Dental%20Bhaktapur&query_place_id=ChIJid86VQAb6zkRY3nZl8BmlCs",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOsriSqmz6dPmiaLMa86xM7xlpwSc_3slz80VsZ=w408-h541-k-no",
+    "kgmid": "/g/11vk76w40_"
+  },
+  {
+    "title": "Re-Smile Dental Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+7GV, Pipeline Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+7GV, Pipeline Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-1118000",
+    "phoneUnformatted": "+9779761118000",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6782342,
+      "lng": 85.4387945
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ9ZQwJwAF6zkRBPIIV3SJef8",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb0500273094f5:0xff7989745708f204",
+    "cid": "18408896084623028740",
+    "reviewsCount": 9,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Re-Smile%20Dental%20Clinic&query_place_id=ChIJ9ZQwJwAF6zkRBPIIV3SJef8",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwCLm--QrS1UlqiMLgmmcvMRikOspiUFUtvHTwpE0Kt1HtIddQTlgTK_Sl1BGYHl7KpHTanuV45v8zMGDgk0DPV0hdad8NqJxKj-1EOBXy11amsqDO6hjD-IlxsAOdxhbxxzdA3MMYuo6c=w408-h544-k-no",
+    "kgmid": "/g/11xvs8j_w1"
+  },
+  {
+    "title": "Total Care Dental Clinic ,Jagati -8 Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Jagati Chwok (Bus Stop, Jagati Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Jagati Chwok (Bus Stop, Jagati Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1145587",
+    "phoneUnformatted": "+9779851145587",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6661943,
+      "lng": 85.4374087
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrRM6ED0F6zkRzTjm3cesVXM",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb053d103a13ad:0x7355acc7dde638cd",
+    "cid": "8310738661803440333",
+    "reviewsCount": 7,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10:30 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Total%20Care%20Dental%20Clinic%20%2CJagati%20-8%20Bhaktapur&query_place_id=ChIJrRM6ED0F6zkRzTjm3cesVXM",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMPkrrgXGRB4QSllSe41-DVyuj_pAiHqV0tG82j=w408-h288-k-no",
+    "kgmid": "/g/11y0g2wszh"
+  },
+  {
+    "title": "Nova Smile Care Dental Suryabinayak branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Suryabinayak, buspark, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Suryabinayak, buspark",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1150461",
+    "phoneUnformatted": "+9779851150461",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6655064,
+      "lng": 85.4249108
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJo70EcqMb6zkRZ2COUtMwZFc",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1ba37204bda3:0x576430d3528e6067",
+    "cid": "6297211863152091239",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nova%20Smile%20Care%20Dental%20Suryabinayak%20branch&query_place_id=ChIJo70EcqMb6zkRZ2COUtMwZFc",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwgcGkYXyaqTtrnXcyFLHrltAmMpsoxjn5ycAi70uKkt1WEf0NMTWiZiShnHzch6SOtTGBGiM4ur5VITbZK1jlipKS15IJubFU1fQjzUdoM28BE2CgNcarwSKx8Hc8ymtKObFFTStSIsrPz=w408-h544-k-no",
+    "kgmid": "/g/11xm2c1wwy"
+  },
+  {
+    "title": "Prime dental clinic pvt.ltd",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "dudhpati ward 17, bhaktapur, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "dudhpati ward 17, bhaktapur",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619494",
+    "phoneUnformatted": "+97716619494",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6716249,
+      "lng": 85.4218072
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVT4aY6Ma6zkRdMGXxq2HNBU",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa3631a3e55:0x153487adc697c174",
+    "cid": "1527995354016366964",
+    "reviewsCount": 7,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prime%20dental%20clinic%20pvt.ltd&query_place_id=ChIJVT4aY6Ma6zkRdMGXxq2HNBU",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOmgJk4XxoJ53OrpUJst1VmIQ6MsVtJlabdWg9t=w408-h306-k-no",
+    "kgmid": "/g/11b6q27039"
+  },
+  {
+    "title": "SEWAA DENTAL HOME",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCGJ+GW3, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGJ+GW3, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://sewaadentalhome.com.np/",
+    "phone": "+977 981-8822777",
+    "phoneUnformatted": "+9779818822777",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6713143,
+      "lng": 85.422301
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJD0CIFQAb6zkReJZN_JiXsT4",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b001588400f:0x3eb19798fc4d9678",
+    "cid": "4517558584553084536",
+    "reviewsCount": 14,
+    "imagesCount": 336,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 1 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=SEWAA%20DENTAL%20HOME&query_place_id=ChIJD0CIFQAb6zkReJZN_JiXsT4",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzJuxDEY9_mYA3UIZzIKtoxNsGyd1ftU6EGVEtaWpzb7EODLPm-IcPA1_rpxQrPNgEFumeZznsnehH-KMbDs91JfnXz5ykTzp_-xNe5yndOX2_gPgqi0I2FdEIEztZOuudxQ1e9=w408-h269-k-no",
+    "kgmid": "/g/11x20gxx2h"
+  },
+  {
+    "title": "Suryavinayak Dental Care",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8F+5XR, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC8F+5XR",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6618021",
+    "phoneUnformatted": "+97716618021",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6654943,
+      "lng": 85.4248763
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwejuVqYa6zkRkL5bz236F7Q",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa656eee8c1:0xb417fa6dcf5bbe90",
+    "cid": "12977116200828649104",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Suryavinayak%20Dental%20Care&query_place_id=ChIJwejuVqYa6zkRkL5bz236F7Q",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=paGOpOS344epkKVF3NynZg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=283.98105&pitch=0&thumbfov=100",
+    "kgmid": "/g/11f0_b43c3"
+  },
+  {
+    "title": "OM BHAKTAPUR DENTAL CLINIC",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCH5+FF7, Changunarayan 44800, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCH5+FF7",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-3493186",
+    "phoneUnformatted": "+9779763493186",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6786529,
+      "lng": 85.4086741
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_WAyNQAb6zkRRYahHWZOhnM",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b00353260fd:0x73864e661da18645",
+    "cid": "8324427161731696197",
+    "reviewsCount": 19,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:15.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=OM%20BHAKTAPUR%20DENTAL%20CLINIC&query_place_id=ChIJ_WAyNQAb6zkRRYahHWZOhnM",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXPox0sRV8_qTxZFhLqoXiDkh73RALgHKftqq3PejS8353-YlPCS4d0QBG2cEZJWEe2Cr-mzqDLAetLDyeb01XISibWJbP2or_NiWu5hdxPixwzEwDR3ieny88n70kxchn-Ky0=w408-h544-k-no",
+    "kgmid": "/g/11wy4hlt4n"
+  },
+  {
+    "title": "Anjal Dental Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+445, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+445, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 974-1878149",
+    "phoneUnformatted": "+9779741878149",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6777758,
+      "lng": 85.4378766
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJKQpGOecF6zkRGyb8gquR4oQ",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05e739460a29:0x84e291ab82fc261b",
+    "cid": "9575375923566093851",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.947Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Anjal%20Dental%20Clinic&query_place_id=ChIJKQpGOecF6zkRGyb8gquR4oQ",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSztDBKzxUOuWUCsu_UfUKnn4TdUpSNntLD9nJpLRb1pE-azXfDLpRC9EZXbaNPJKorUgCmkKXFVRw8-U0aLQoqW2iRh0wgyOp2H3US6Zoc6kn4TvIA1r6DyBl9xAjpCOUHzFodTBQ=w426-h240-k-no",
+    "kgmid": "/g/11kk10lsmt"
+  },
+  {
+    "title": "Bhaktapur Dental Home",
+    "subTitle": "भक्तपुर दन्त घर",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCCH+PV5 रत्न भवन, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+PV5 रत्न भवन",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610264",
+    "phoneUnformatted": "+97716610264",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671946,
+      "lng": 85.429851
+    },
+    "totalScore": 2.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJF7LXTK4a6zkRp13JENG1DQI",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aae4cd7b217:0x20db5d110c95da7",
+    "cid": "147974272307518887",
+    "reviewsCount": 5,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:33.846Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Dental%20Home&query_place_id=ChIJF7LXTK4a6zkRp13JENG1DQI",
+    "searchPageUrl": "https://www.google.com/maps/search/dentist/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "dentist",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzCDTGwx4C49TYH_DByrghEqm74O3Cdhfu4clmjDaUJ6PI0M-WdLKOWtlZOnwVDzSNjIIdXIMNVxe9nfVMumWg8Ygbm2VCz3gr5Y2DG87sj98zsZiRtN9tI-YAPEsvNS0ROMSfi=w408-h725-k-no",
+    "kgmid": "/g/11b6p9q675"
+  },
+  {
+    "title": "Smile Tech Dental clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCFQ+FR3, Chyamasing 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFQ+FR3",
+    "city": "Chyamasing",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0906020",
+    "phoneUnformatted": "+9779860906020",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736352,
+      "lng": 85.4395347
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSQYbNgAF6zkRpx50a6h104A",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb0500361b0649:0x80d375a86b741ea7",
+    "cid": "9282892623158451879",
+    "reviewsCount": 3,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:38.035Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Smile%20Tech%20Dental%20clinic&query_place_id=ChIJSQYbNgAF6zkRpx50a6h104A",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5wOy9KlLlO8usdNk9tqe3t6wmu-HBsSJjOUjCqeAljdEJdh7Y0OH51D33udbZE0PwvDXE3xv84BWwRpO_dW4S4UjeeozT2mfv-5OK-IebZvAMs4Mb-cpwT-LcKQyw32846mmr=w408-h544-k-no",
+    "kgmid": "/g/11x1pmp8dv"
+  },
+  {
+    "title": "Smile Impress Dental Suryabinayak Branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8F+6M5, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC8F+6M5",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6655011,
+      "lng": 85.4242405
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJKV1xdgAb6zkR7oUHKNY0xOA",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b0076715d29:0xe0c434d6280785ee",
+    "cid": "16196128254330373614",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Smile%20Impress%20Dental%20Suryabinayak%20Branch&query_place_id=ChIJKV1xdgAb6zkR7oUHKNY0xOA",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=tG2FZ-_FbGBfkPv98QaZkQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=161.37349&pitch=0&thumbfov=100",
+    "kgmid": "/g/11m6m53fv6"
+  },
+  {
+    "title": "Dental Service - Clinic One Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC9G+297, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9G+297",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1310113",
+    "phoneUnformatted": "+9779851310113",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6675463,
+      "lng": 85.4259317
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1Ve0IKgb6zkRwUUi61kR30s",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1ba820b457d5:0x4bdf1159eb2245c1",
+    "cid": "5467107550545724865",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "11 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dental%20Service%20-%20Clinic%20One%20Bhaktapur&query_place_id=ChIJ1Ve0IKgb6zkRwUUi61kR30s",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=HqPwADmKsaLPOfy_6G2wPA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=213.21712&pitch=0&thumbfov=100",
+    "kgmid": "/g/11t4wt3tzj"
+  },
+  {
+    "title": "Himalaya Dental Care Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC7H+HQC, Suryabinayak 08, Nepal",
+    "neighborhood": "Itabu",
+    "street": "MC7H+HQC",
+    "city": "Suryabinayak",
+    "postalCode": "08",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1102371",
+    "phoneUnformatted": "+9779841102371",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6639422,
+      "lng": 85.4293945
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGa2FLAAb6zkR_iHfPl5G4Ow",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b002c85ad19:0xece0465e3edf21fe",
+    "cid": "17068719958329860606",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Himalaya%20Dental%20Care%20Bhaktapur&query_place_id=ChIJGa2FLAAb6zkR_iHfPl5G4Ow",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=srOubGv_or9FbT1xl5xUug&cb_client=search.gws-prod.gps&w=408&h=240&yaw=106.825096&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vyzcf4mc"
+  },
+  {
+    "title": "Start Dental Clinic",
+    "subTitle": "स्टार डेण्टल किल्निक",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8G+98X, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+98X, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616380",
+    "phoneUnformatted": "+97716616380",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6659879,
+      "lng": 85.4258633
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJgQ0HR6Ya6zkRlbM8oiMRyqw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa647070d81:0xacca1123a23cb395",
+    "cid": "12450782964562572181",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Start%20Dental%20Clinic&query_place_id=ChIJgQ0HR6Ya6zkRlbM8oiMRyqw",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEzA0UBBw0jLMqN0t7wZzpBYsTx8QUkAPkqCvNskT_WicDy2Le2RSaiyNHl9JMpiVfnHoPDSeYsTA7SQrrtHtg3dRGYVV2bCwimb4JA42dJRbN247hYLIbbtvD6iAzb2pMqBFNyCPNW5uFpWqG1uvAvwMsXkKn3-9YXGic-zAQkDK4cImo1BpTFjhXzxCCsX3VbDxs=w408-h306-k-no",
+    "kgmid": "/g/11b6rt0bs8"
+  },
+  {
+    "title": "Om Dental and Implant Centre ( ओम डेन्टल एन्ड इम्प्लन्ट सेन्टर)",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6638741,
+      "lng": 85.4220527
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJp0dOgmQb6zkRKcuQwm7ANmk",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b64824e47a7:0x6936c06ec290cb29",
+    "cid": "7581458604668013353",
+    "reviewsCount": 3,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        },
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Children": [
+        {
+          "Nursing room": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Om%20Dental%20and%20Implant%20Centre%20(%20%E0%A4%93%E0%A4%AE%20%E0%A4%A1%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A4%B2%20%E0%A4%8F%E0%A4%A8%E0%A5%8D%E0%A4%A1%20%E0%A4%87%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A5%8D%E0%A4%B2%E0%A4%A8%E0%A5%8D%E0%A4%9F%20%E0%A4%B8%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A4%B0)&query_place_id=ChIJp0dOgmQb6zkRKcuQwm7ANmk",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMCqc7I-JzU62nA71Pfge5zQxn3R1yKieZzrTHv=w408-h304-k-no",
+    "kgmid": "/g/11rt__j7j4"
+  },
+  {
+    "title": "Rose Dental Care Private Limited",
+    "subTitle": "गुलाब दन्त हेरविचार निजी लिमिटेड",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCCC+MVJ, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+MVJ",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614905",
+    "phoneUnformatted": "+97716614905",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6717214,
+      "lng": 85.4221394
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdyWanaQa6zkR1S1cVldQ4sc",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aa49d9a2577:0xc7e25057565c2dd5",
+    "cid": "14403162894325525973",
+    "reviewsCount": 3,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Rose%20Dental%20Care%20Private%20Limited&query_place_id=ChIJdyWanaQa6zkR1S1cVldQ4sc",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGuYinOHkAeAUlG0dMODhlbxH5pos1o45-6V58oIyNOP_t75zkncBmX8uXTVIhncZl5gmu1ESeHUagrNUeX3oDfU3TYGLXdGcmxXCuHhWX5gZlZWiO5fKB6f786MQYurkIDgQNTmH07SzjebGcs3dN6GvVVCbGOBhFmuzYdQNstODjL_fPtRtxswLP2W1NdyZ6tbmw=w408-h306-k-no",
+    "kgmid": "/g/11dzx8qn5d"
+  },
+  {
+    "title": "Subhakamana Dental Care,Pandubazar,Bhaktapur",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8F+56H, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC8F+56H",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1119857",
+    "phoneUnformatted": "+9779851119857",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6653987,
+      "lng": 85.4229971
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOaoDr6kb6zkR1TqRdT1jEyw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1ba9af03aa39:0x2c13633d75913ad5",
+    "cid": "3175991277842938581",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.059Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Subhakamana%20Dental%20Care%2CPandubazar%2CBhaktapur&query_place_id=ChIJOaoDr6kb6zkR1TqRdT1jEyw",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=70iOmgRTbl19L1QsPpr9Bw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=96.62048&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vdb9wz7j"
+  },
+  {
+    "title": "Mediland dental clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+4FP, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+4FP, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1102184",
+    "phoneUnformatted": "+9779851102184",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6778279,
+      "lng": 85.4386946
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcTtKu6IF6zkRf5T1Ja2-TkU",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05a2bb4a3b71:0x454ebead25f5947f",
+    "cid": "4994138687675929727",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:02.968Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "12 to 7 AM, 8 AM to 12 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "12 to 7 AM, 10 AM to 12 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mediland%20dental%20clinic&query_place_id=ChIJcTtKu6IF6zkRf5T1Ja2-TkU",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.689813953235532,85.43729330118518,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBTMjQKmvYsKfLFDVN2WD2bDMvsbMsI1_TPqmyAger4duSo_WNVfKgruHCFD-n1EomunbPLHGfpmq7RiCHl0wx_EiAEsKDl79Y-Ts1NJ4tvp7-Dn6qknTvx4wi8ou4Fm4mB0Lr=w408-h725-k-no",
+    "kgmid": "/g/11qrgptdbr"
+  },
+  {
+    "title": "Dentocare Nepal Dental Clinic, Kamalbinayak branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCHQ+33X, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+33X",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6777323,
+      "lng": 85.437725
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJZYWGfccF6zkRIbppuQ4VDL0",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05c77d868565:0xbd0c150eb969ba21",
+    "cid": "13622286125873347105",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:02.968Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dentocare%20Nepal%20Dental%20Clinic%2C%20Kamalbinayak%20branch&query_place_id=ChIJZYWGfccF6zkRIbppuQ4VDL0",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.689813953235532,85.43729330118518,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=89aQRyMct8-w8PYQ02JMmQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=7.907128&pitch=0&thumbfov=100",
+    "kgmid": "/g/11mtjw13_f"
+  },
+  {
+    "title": "Barahi dental clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCFR+HPH, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFR+HPH",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-5103911",
+    "phoneUnformatted": "+9779845103911",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6739362,
+      "lng": 85.441863
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAUhosLoF6zkREATisPnXqeo",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb05bab0684801:0xeaa9d7f9b0e20410",
+    "cid": "16909283743353668624",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:06.846Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Barahi%20dental%20clinic&query_place_id=ChIJAUhosLoF6zkREATisPnXqeo",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.45446650592592,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=obB9XhYhb28IEJXJ4J-YdQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=18.588728&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rnjx_dc8"
+  },
+  {
+    "title": "Bhaktapur Swastha Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MC8Q+F2G, Bhaktapur 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8Q+F2G",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1069209",
+    "phoneUnformatted": "+9779851069209",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6661939,
+      "lng": 85.4375827
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJE7a5Mqsa6zkRnAYk8zapjNo",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1aab32b9b613:0xda8ca936f324069c",
+    "cid": "15748148050480334492",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:06.846Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Swastha%20Clinic&query_place_id=ChIJE7a5Mqsa6zkRnAYk8zapjNo",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.45446650592592,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxNtUBqvaVpb3g-wMtLeOSbUUR7yV8jd2WHCGUu60epXfAcG0VW969ol4ptH1aItuKYEYze_ZBHflCV7KMZiMpUiZX1o6rIbKs5tU3FpYIogQ5Z25d3tcDL3AqbGuBKwDUqEs_8=w426-h240-k-no",
+    "kgmid": "/g/11f4l9hyq4"
+  },
+  {
+    "title": "Milestone dental clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCFR+F3Q, Chyamasing degaina, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFR+F3Q, Chyamasing degaina",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3158604",
+    "phoneUnformatted": "+9779843158604",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6737075,
+      "lng": 85.440246
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJfZWaBAAF6zkRMTWDVUJw-3U",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb0500049a957d:0x75fb704255833531",
+    "cid": "8501512151796757809",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:06.846Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Milestone%20dental%20clinic&query_place_id=ChIJfZWaBAAF6zkRMTWDVUJw-3U",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.45446650592592,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=dRn_FWyFmyDrXl8T6M7c-A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=314.4782&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w2zl7wyw"
+  },
+  {
+    "title": "Bhishan Dental Clinic Pvt.Ltd",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Srijananagar Suryabinayak -5, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Srijananagar Suryabinayak -5",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1346715",
+    "phoneUnformatted": "+9779851346715",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6722659,
+      "lng": 85.4055761
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJpWH0nOob6zkRLoLe8CPwbzY",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1bea9cf461a5:0x366ff023f0de822e",
+    "cid": "3922617837618627118",
+    "reviewsCount": 7,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:23.056Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhishan%20Dental%20Clinic%20Pvt.Ltd&query_place_id=ChIJpWH0nOob6zkRLoLe8CPwbzY",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9yFX43w3V4eKb2R6u0rTBHr3XHMxgFM44AHj469bZYi7YWCuNeHG453oGhYKorDWxEBpPGtzB5luf-PYXCA6B1upPRrmwRwL9WI5tqg5y_Gbgzctd4TVxPjujjrp5dsfRipo=w408-h725-k-no",
+    "kgmid": "/g/11v0x4sbvj"
+  },
+  {
+    "title": "Crystal Dental Hospital- Srijananagar Branch",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCF3+7J, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF3+7J",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://crystaldentalhospital.com/",
+    "phone": "+977 1-5920826",
+    "phoneUnformatted": "+97715920826",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6731875,
+      "lng": 85.4040625
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJH4kHKkcb6zkRaXsnNm4FBp0",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b472a07891f:0x9d06056e36277b69",
+    "cid": "11314737084728048489",
+    "reviewsCount": 1,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:24.880Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Crystal%20Dental%20Hospital-%20Srijananagar%20Branch&query_place_id=ChIJH4kHKkcb6zkRaXsnNm4FBp0",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNuFKCt9wMrNoUCRRvhf8FggCsL7lftrfYzDNy9=w408-h254-k-no",
+    "kgmid": "/g/11vz6l05_w"
+  },
+  {
+    "title": "Creative Oral Dental Care",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "MCC4+WH3, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCC4+WH3, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1189419",
+    "phoneUnformatted": "+9779851189419",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.672262,
+      "lng": 85.4064366
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUyw-JAAb6zkRl7s4PeTJd50",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b00243e2c53:0x9d77c9e43d38bb97",
+    "cid": "11346759768300108695",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:24.880Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Creative%20Oral%20Dental%20Care&query_place_id=ChIJUyw-JAAb6zkRl7s4PeTJd50",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwFr3GS255fx2XI2EX44S3___9whlJ8gZEB1RPeea8BStgZkPe2p_pxb3MM5oA5CmYkw6WP8ZdVqKbuvetv658285zBuI_ZhkvDAzSnxmbFI781yogd5H9Tcr1pRpxsEDnBMpg=w408-h306-k-no",
+    "kgmid": "/g/11y8b_hnn9"
+  },
+  {
+    "title": "Everest Dental Clinic",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Changunarayan Road, Changunarayan, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "Changunarayan Road",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9728909",
+    "phoneUnformatted": "+9779849728909",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6842671,
+      "lng": 85.4113814
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdVc8YH8b6zkR2VU5XLXTVlw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1b7f603c5775:0x5c56d3b55c3955d9",
+    "cid": "6653738275376289241",
+    "reviewsCount": 1,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:31.709Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Everest%20Dental%20Clinic&query_place_id=ChIJdVc8YH8b6zkR2VU5XLXTVlw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.6974209298533,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxdST48CEjW84Ck3SXUI08Vu1AhsvdZv2b003wfR7zIbN7RXAMz0bcLIme_Yqa859Swi6fZZgrws7dj3wOX2tyFonQiZBz8j4FO1xXFzLmuzsID1KmCBdODTbT9l8by6VAhaUZM=w426-h240-k-no",
+    "kgmid": "/g/11t0rbmhj_"
+  },
+  {
+    "title": "AARATI PHARMACY",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": null,
+    "phone": "+977 984-9861998",
+    "phoneUnformatted": "+9779849861998",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6953638,
+      "lng": 85.4105258
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJxbRdh4WPVq4RG8MWW_rRplc",
+    "categories": [
+      "Dental clinic",
+      "Service establishment"
+    ],
+    "fid": "0xae568f85875db4c5:0x57a6d1fa5b16c31b",
+    "cid": "6315966400633946907",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:23.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=AARATI%20PHARMACY&query_place_id=ChIJxbRdh4WPVq4RG8MWW_rRplc",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.41153349407406,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "kgmid": "/g/11lyntmmd4"
+  },
+  {
+    "title": "Mid Valley Dental Care",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": null,
+    "phone": "+977 984-3351119",
+    "phoneUnformatted": "+9779843351119",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6742443,
+      "lng": 85.4384739
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNeHXMr7tikIRxwwIsMQdrhY",
+    "categories": [
+      "Dental clinic",
+      "Service establishment"
+    ],
+    "fid": "0x428aedbe32d7e135:0x16ae1dc4b0080cc7",
+    "cid": "1634276445386181831",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:27.330Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "12 to 7 AM, 10 AM to 12 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 to 7 AM, 10 AM to 12 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "12 to 7 AM, 10 AM to 12 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "12 to 7 AM, 10 AM to 12 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "12 to 7 AM, 10 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 12 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mid%20Valley%20Dental%20Care&query_place_id=ChIJNeHXMr7tikIRxwwIsMQdrhY",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.666993023382226,85.44587990355555,17z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOi9OW3QvZfkpPxF1BYBE0yWz2-ye6VZKdXrQ7Z=w408-h272-k-no",
+    "kgmid": "/g/11ydwqssv7"
+  },
+  {
+    "title": "Indrayani dental home Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Dental clinic",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1531458",
+    "phoneUnformatted": "+9779841531458",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6727561,
+      "lng": 85.4243765
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrVjUM-Ab6zkRiGwBBPHoITw",
+    "categories": [
+      "Dental clinic"
+    ],
+    "fid": "0x39eb1be033d458ad:0x3c21e8f104016c88",
+    "cid": "4333000438359092360",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:02.262Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Indrayani%20dental%20home%20Pvt.%20Ltd.&query_place_id=ChIJrVjUM-Ab6zkRiGwBBPHoITw",
+    "searchPageUrl": "https://www.google.com/maps/search/dental%20clinic/@27.6716249,85.4218072,17.82746889720152z?hl=en",
+    "searchString": "dental clinic",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=C4eB0PV0MIcFpicQcEv1sA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=45.17618&pitch=0&thumbfov=100",
+    "kgmid": "/g/11szf0l60l"
+  }
+]

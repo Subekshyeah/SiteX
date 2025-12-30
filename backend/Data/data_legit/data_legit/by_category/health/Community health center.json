@@ -1,0 +1,116 @@
+[
+  {
+    "title": "सामुदायिक स्वास्थ्य केन्द्र",
+    "price": null,
+    "categoryName": "Community health center",
+    "address": "Suryabinayak Bus Station, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Suryabinayak Bus Station, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6654541,
+      "lng": 85.425116
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPxFmgwIb6zkReH624mZnHQY",
+    "categories": [
+      "Community health center"
+    ],
+    "fid": "0x39eb1b028366113f:0x61d6766e2b67e78",
+    "cid": "440622030140112504",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:53.262Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%81%E0%A4%A6%E0%A4%BE%E0%A4%AF%E0%A4%BF%E0%A4%95%20%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A5%8D%E0%A4%AF%20%E0%A4%95%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%8D%E0%A4%B0&query_place_id=ChIJPxFmgwIb6zkReH624mZnHQY",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz1wKVsioeNxsmTYDmGIth6JJLBqT9mXVQhyfalXPjNJ7sLKj8V9e89FnagQ5_IY4O6RRjvF9o6ilzKtHrJDIB7KsdchVCWznfTX2pXPKOkfI2Kkt4xBVKe5VnvNcbdr2Kcxowp=w408-h306-k-no",
+    "kgmid": "/g/11nsrllws9"
+  },
+  {
+    "title": "Chittapol health post",
+    "price": null,
+    "categoryName": "Community health center",
+    "address": "MF36+XX4, Suryabinayak, Nepal",
+    "neighborhood": "Chittapol",
+    "street": "MF36+XX4",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6548982,
+      "lng": 85.4624661
+    },
+    "totalScore": 5,
+    "permanentlyClosed": true,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ93S6PYwP6zkRBr44D2x3T7Q",
+    "categories": [
+      "Community health center",
+      "Hospital"
+    ],
+    "fid": "0x39eb0f8c3dba74f7:0xb44f776c0f38be06",
+    "cid": "12992734755982720518",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:01.768Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Chittapol%20health%20post&query_place_id=ChIJ93S6PYwP6zkRBr44D2x3T7Q",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.651779070146688,85.4630531082963,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=6W2HVSXPFJdS0hJ6eptmig&cb_client=search.gws-prod.gps&w=408&h=240&yaw=323.22986&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g6s5jtw5"
+  }
+]

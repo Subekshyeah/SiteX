@@ -1,0 +1,546 @@
+[
+  {
+    "title": "Icon Music",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "Kamalbinayak Bus Park, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak Bus Park, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1708537",
+    "phoneUnformatted": "+9779841708537",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6759639,
+      "lng": 85.437378
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ14YL8b0b6zkRnji_ZRzEeko",
+    "categories": [
+      "Music school",
+      "Music store",
+      "Recording studio"
+    ],
+    "fid": "0x39eb1bbdf10b86d7:0x4a7ac41c65bf389e",
+    "cid": "5366817532210526366",
+    "reviewsCount": 4,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 4
+    },
+    "imagesCount": 21,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:35.777Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Icon%20Music&query_place_id=ChIJ14YL8b0b6zkRnji_ZRzEeko",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 64,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPZQ4jnshMgHTDc0iAtzCVyRaSW2eb-X47whk8D=w408-h306-k-no",
+    "kgmid": "/g/11gnpn5ktr"
+  },
+  {
+    "title": "Nepali traditional Music Studio",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "Kamalbinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "Kamalbinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6827708,
+      "lng": 85.4493108
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl7qQeIYF6zkRZNbbTVdAGVw",
+    "categories": [
+      "Music school"
+    ],
+    "fid": "0x39eb05867890ba97:0x5c1940574ddbd664",
+    "cid": "6636406269619721828",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:45.008Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nepali%20traditional%20Music%20Studio&query_place_id=ChIJl7qQeIYF6zkRZNbbTVdAGVw",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.682206976617763,85.45446650592592,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 26,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOPtGN2GWhVp586ek9iNUR5gEKXpnM-TVRc4CBq=w408-h285-k-no",
+    "kgmid": "/g/11xtjyd6hv"
+  },
+  {
+    "title": "Sankalpa institute of Music, Dance and Arts",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "MCC5+7P5, Bhaktapur 44811, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC5+7P5",
+    "city": "Bhaktapur",
+    "postalCode": "44811",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-8912891",
+    "phoneUnformatted": "+9779818912891",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6706317,
+      "lng": 85.4093747
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": true,
+    "placeId": "ChIJUVSo7CEb6zkRhW6gpB8lN0M",
+    "categories": [
+      "Music school"
+    ],
+    "fid": "0x39eb1b21eca85451:0x4337251fa4a06e85",
+    "cid": "4843380742096449157",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:14.407Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sankalpa%20institute%20of%20Music%2C%20Dance%20and%20Arts&query_place_id=ChIJUVSo7CEb6zkRhW6gpB8lN0M",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 37,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=b4YVtBvZo5cPOVQPS0vBEw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=201.6088&pitch=0&thumbfov=100",
+    "kgmid": "/g/11j4dn15p4"
+  },
+  {
+    "title": "Fusion Music And Dance Academy",
+    "subTitle": "फ्युजन संगीत र नृत्य एकेडेमी",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "Kamalvinayak - Dekocha Path, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalvinayak - Dekocha Path",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-3662038",
+    "phoneUnformatted": "+9779863662038",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6762311,
+      "lng": 85.4375939
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDcAfM00F6zkRrQftt5o6KkI",
+    "categories": [
+      "Music school",
+      "Dance school",
+      "Music store"
+    ],
+    "fid": "0x39eb054d331fc00d:0x422a3a9ab7ed07ad",
+    "cid": "4767687591710230445",
+    "reviewsCount": 25,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 6,
+      "fiveStar": 19
+    },
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:59.649Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "2 to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        },
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Fusion%20Music%20And%20Dance%20Academy&query_place_id=ChIJDcAfM00F6zkRrQftt5o6KkI",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 55,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwtYdtdEO7LSaDGsTw5REjyzookeTnOwBWIuh5AX5uXyWRDJTivoe0x3PM7quYWJJtfW_XfRgtDYu_57y7PIsVsAC8_JnR7t4KxTvQy-Cfevl0kcIiRSzSdKEjnGJ1GiDJF_J8IhA=w408-h306-k-no",
+    "kgmid": "/g/11g6yq7ccc"
+  },
+  {
+    "title": "Mukti Music Training Center",
+    "subTitle": "मुक्ति संगीत प्रशिक्षण केन्द्र",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "MCCJ+J3H, सकोथा सडक, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCJ+J3H, सकोथा सडक",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1138035",
+    "phoneUnformatted": "+9779851138035",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671551,
+      "lng": 85.4302259
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJC9kMUa4a6zkRRNfG_1sSe7o",
+    "categories": [
+      "Music school"
+    ],
+    "fid": "0x39eb1aae510cd90b:0xba7b125bffc6d744",
+    "cid": "13437354099532552004",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:59.649Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mukti%20Music%20Training%20Center&query_place_id=ChIJC9kMUa4a6zkRRNfG_1sSe7o",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 60,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHjIK_LKkJl5MdkYw8uAJBP9CiigtiGbCA67zi5Q-qrQnqcmuTIbrKC58YgyvQnnoIKWaYywB7BsfwJzIj5yr2yaa2iVp0JxUKn3TFuy_duGEJi2J3MnYn3ixpJqpdhvtDfDlZU4MSidTR4h6SqwPNZvm4Dayy9rbCCC19Xf70VSZWyO_BEmvJgpLkenJmquPnNtTk=w408-h306-k-no",
+    "kgmid": "/g/11b6rv72q9"
+  },
+  {
+    "title": "Icon Music",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "Kamalbinayak Bus Park, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak Bus Park, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1708537",
+    "phoneUnformatted": "+9779841708537",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6759639,
+      "lng": 85.437378
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ14YL8b0b6zkRnji_ZRzEeko",
+    "categories": [
+      "Music school",
+      "Music store",
+      "Recording studio"
+    ],
+    "fid": "0x39eb1bbdf10b86d7:0x4a7ac41c65bf389e",
+    "cid": "5366817532210526366",
+    "reviewsCount": 4,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 4
+    },
+    "imagesCount": 21,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Icon%20Music&query_place_id=ChIJ14YL8b0b6zkRnji_ZRzEeko",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 62,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPZQ4jnshMgHTDc0iAtzCVyRaSW2eb-X47whk8D=w408-h306-k-no",
+    "kgmid": "/g/11gnpn5ktr"
+  },
+  {
+    "title": "Sa Re Ga Ma Music School & RecordingStudio",
+    "price": null,
+    "categoryName": "Music school",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 980-3048961",
+    "phoneUnformatted": "+9779803048961",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6716621,
+      "lng": 85.4079405
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_8xxpzgb6zkRc6IxVylO2xA",
+    "categories": [
+      "Music school"
+    ],
+    "fid": "0x39eb1b38a771ccff:0x10db4e295731a273",
+    "cid": "1214650463969976947",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:01.056Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sa%20Re%20Ga%20Ma%20Music%20School%20%26%20RecordingStudio&query_place_id=ChIJ_8xxpzgb6zkRc6IxVylO2xA",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 40,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=zy-1ZJ0V3I2GKqn2FngkUA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=234.43843&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xtgzkbb3"
+  }
+]

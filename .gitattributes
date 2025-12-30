@@ -17,5 +17,10 @@
 *.json text eol=lf
 *.md text eol=lf
 
+# Data files
+*.csv text eol=lf
+*.txt text eol=lf
+*.geojson text eol=lf
+
 # Shell scripts
 *.sh text eol=lf

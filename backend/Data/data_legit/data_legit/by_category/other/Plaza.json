@@ -1,0 +1,208 @@
+[
+  {
+    "title": "Bhaktapur Durbar Square",
+    "subTitle": "भक्तपुर दरबार क्षेत्र",
+    "description": "Time-tested city square with an 1427 CE palace, multiple temples, statues & intricate gates.",
+    "price": null,
+    "categoryName": "Plaza",
+    "address": "Durbar square, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Durbar square",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.67207,
+      "lng": 85.4282951
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMd8y7K8a6zkR_ZuvMec5o90",
+    "categories": [
+      "Plaza",
+      "Tourist attraction"
+    ],
+    "fid": "0x39eb1aafec32df31:0xdda339e731af9bfd",
+    "cid": "15970672368719731709",
+    "reviewsCount": 22730,
+    "imagesCount": 148564,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:44.321Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "Paid parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Durbar%20Square&query_place_id=ChIJMd8y7K8a6zkR_ZuvMec5o90",
+    "searchPageUrl": "https://www.google.com/maps/search/tourist%20attraction/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "tourist attraction",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwOSUd8J6vDLcAZNAxsgmZngNXyCybi1__VdqZDCCsqmE6fzTsdtN-5TkxSAPfKyogKsgwKe_9Td5QaMx5A-z9SguxYiPlM3IiaU6avKmkIGDCi6fDD7iD2f9AvMJBJySXngA0=w408-h273-k-no",
+    "kgmid": "/m/0h1g9sk"
+  },
+  {
+    "title": "Bhaktapur Durbar Square",
+    "subTitle": "भक्तपुर दरबार क्षेत्र",
+    "description": "Time-tested city square with an 1427 CE palace, multiple temples, statues & intricate gates.",
+    "price": null,
+    "categoryName": "Plaza",
+    "address": "Durbar square, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Durbar square",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.67207,
+      "lng": 85.4282951
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMd8y7K8a6zkR_ZuvMec5o90",
+    "categories": [
+      "Plaza",
+      "Tourist attraction"
+    ],
+    "fid": "0x39eb1aafec32df31:0xdda339e731af9bfd",
+    "cid": "15970672368719731709",
+    "reviewsCount": 22730,
+    "imagesCount": 148564,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:38.375Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "Paid parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Durbar%20Square&query_place_id=ChIJMd8y7K8a6zkR_ZuvMec5o90",
+    "searchPageUrl": "https://www.google.com/maps/search/tourist%20attraction/@27.660086377294068,85.4386817269883,17z?hl=en",
+    "searchString": "tourist attraction",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwOSUd8J6vDLcAZNAxsgmZngNXyCybi1__VdqZDCCsqmE6fzTsdtN-5TkxSAPfKyogKsgwKe_9Td5QaMx5A-z9SguxYiPlM3IiaU6avKmkIGDCi6fDD7iD2f9AvMJBJySXngA0=w408-h273-k-no",
+    "kgmid": "/m/0h1g9sk"
+  }
+]

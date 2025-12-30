@@ -1,0 +1,1118 @@
+[
+  {
+    "title": "First step Montessori",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MC6Q+6CG, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC6Q+6CG",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6605568,
+      "lng": 85.4385723
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJq0ISZwAP6zkRvooOomMjLdA",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb0f00671242ab:0xd02d2363a20e8abe",
+    "cid": "15000684844668586686",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=First%20step%20Montessori&query_place_id=ChIJq0ISZwAP6zkRvooOomMjLdA",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=SwlZkXq81zpviRprmunSNg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=232.43982&pitch=0&thumbfov=100",
+    "kgmid": "/g/11t9p5_49m"
+  },
+  {
+    "title": "EuroKids, Suryabinayak",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MC7P+F6V, Jagati-KamalBinayak Rd, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7P+F6V, Jagati-KamalBinayak Rd",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 974-5607313",
+    "phoneUnformatted": "+9779745607313",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6635858,
+      "lng": 85.4356702
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNwdNfAAb6zkR4TLRbvpD1I0",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1b007c4d0737:0x8dd443fa6ed132e1",
+    "cid": "10219868197290586849",
+    "reviewsCount": 5,
+    "imagesCount": 48,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=EuroKids%2C%20Suryabinayak&query_place_id=ChIJNwdNfAAb6zkR4TLRbvpD1I0",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNcUjPcQoYEDjxAulqPRpjrv7RhqI30pI4fsDP7=w408-h306-k-no",
+    "kgmid": "/g/11vwn9dj8c"
+  },
+  {
+    "title": "We Kids School",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MC6C+G63, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC6C+G63",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.facebook.com/wekidsbhaktapur",
+    "phone": "+977 1-5177338",
+    "phoneUnformatted": "+97715177338",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6612573,
+      "lng": 85.4205433
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJv63RGlEP6zkRvvuzxZYb-90",
+    "categories": [
+      "Preschool",
+      "School"
+    ],
+    "fid": "0x39eb0f511ad1adbf:0xddfb1b96c5b3fbbe",
+    "cid": "15995408835912399806",
+    "reviewsCount": 21,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=We%20Kids%20School&query_place_id=ChIJv63RGlEP6zkRvvuzxZYb-90",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqBwf62_OuaUmwh4aTwk32iKlSic3taNd8xu34pX2qHNfqaTDQlMUch8PkvLXn5sYfNQmm-CizVu2ZMH4dHolwb9oj6zpxSfKA0t3NtN37QRpIgyGsUfv1WEQymGb8r1N74YM=w497-h240-k-no",
+    "kgmid": "/g/11h3m7xjqq"
+  },
+  {
+    "title": "Morning Glory Kindergarten",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "Liwali-8, Bhaktapur, Nepal",
+    "neighborhood": null,
+    "street": "Liwali-8",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-9317373",
+    "phoneUnformatted": "+9779869317373",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6703865,
+      "lng": 85.4415235
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJq1DPFNcF6zkRzlhv9t8NQOQ",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb05d714cf50ab:0xe4400ddff66f58ce",
+    "cid": "16447161094720411854",
+    "reviewsCount": 3,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Morning%20Glory%20Kindergarten&query_place_id=ChIJq1DPFNcF6zkRzlhv9t8NQOQ",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPd2Fy1lX6XKa0vVDb-4FukGs97gLcIC8S4aDMg=w426-h240-k-no",
+    "kgmid": "/g/11h26zbrjg"
+  },
+  {
+    "title": "Child Heaven Pre-School",
+    "subTitle": "बाल स्वर्ग पूर्व-विद्यालय",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MC9F+MV5, भक्तपुर मार्ग, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9F+MV5, भक्तपुर मार्ग",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6691274,
+      "lng": 85.4247273
+    },
+    "totalScore": 1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhR4_y6Ua6zkR0RT6ti0DjKU",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1aa5cb3f1e85:0xa58c032db6fa14d1",
+    "cid": "11928913007875855569",
+    "reviewsCount": 1,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Child%20Heaven%20Pre-School&query_place_id=ChIJhR4_y6Ua6zkR0RT6ti0DjKU",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyLRglbGMsvfluqxwU_WtjuBPiMiHyn6hWx-5pQsPbnxLtYCyiT_w7sm4U4OssewwvHpf8Q97ZEsBuLzT_eRjwyCt72n0Wg3CIb-tQO44AMN4u1prSDTuRRerj3aauu9WfYHFMcqg=w408-h408-k-no",
+    "kgmid": "/g/11b6qjt49x"
+  },
+  {
+    "title": "Seraph World Pre - School",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MCCC+8VP, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+8VP, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6708385,
+      "lng": 85.4221894
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl4R4gKQa6zkRf0epWP39z4Y",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1aa480788497:0x86cffdfd58a9477f",
+    "cid": "9714262185817491327",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Seraph%20World%20Pre%20-%20School&query_place_id=ChIJl4R4gKQa6zkRf0epWP39z4Y",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzjMfhaNHN9O5BXqiRLSdDFJFVhIipr7LkKXI8W7SGSLQ52mYW2rwtUdZZJURtDOAyPGhfU07suWUN2JtPGqKONFJ5A5ZFD6NIZplaxPcU7JTiK9_UfGKy3bbvrJSd8MWWaR0HkHw=w408-h544-k-no",
+    "kgmid": "/g/11b6qk_43d"
+  },
+  {
+    "title": "Anshumali Pre-Primary School",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MC76+WPJ Simdhara, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC76+WPJ Simdhara",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9504180",
+    "phoneUnformatted": "+9779849504180",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6648316,
+      "lng": 85.4117597
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOdksXQAb6zkRQrJaMN6vk9M",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1b005d2cd939:0xd393afde305ab242",
+    "cid": "15245722532408111682",
+    "reviewsCount": 2,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Anshumali%20Pre-Primary%20School&query_place_id=ChIJOdksXQAb6zkRQrJaMN6vk9M",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyZoSVNPrOPNikIl4sl8xMRF0DYTH2mLq4GRym26f1KnpZ9RbFXlECKuPSs_HHMx8QEdd6ZR0GQFosP3jIv9V6eQrxR2cz6q3smBstabWavLiz58kUndxd9Pm7Iz3x69tiKnQb_=w426-h240-k-no",
+    "kgmid": "/g/11vwn7jy8t"
+  },
+  {
+    "title": "The Great Beginning Education Foundation (Pre School)",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "Nepal, 4 palpasa marga, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nepal, 4 palpasa marga",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6618139",
+    "phoneUnformatted": "+97716618139",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6669158,
+      "lng": 85.4276983
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI5QtZgAb6zkRK0kwOn_YNQI",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1b00662d9423:0x235d87f3a30492b",
+    "cid": "159271402790209835",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=The%20Great%20Beginning%20Education%20Foundation%20(Pre%20School)&query_place_id=ChIJI5QtZgAb6zkRK0kwOn_YNQI",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "kgmid": "/g/11vwzs_pd_"
+  },
+  {
+    "title": "Shubharambha Pre School",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "Madhyapur Thimi, Nepal",
+    "neighborhood": "Nikoshera",
+    "street": null,
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6792107,
+      "lng": 85.4047827
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcUvg0I0a6zkRr_Qq79a_xU0",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1a8dd0e04b71:0x4dc5bfd6ef2af4af",
+    "cid": "5604096241188926639",
+    "reviewsCount": 4,
+    "imagesCount": 25,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.292Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shubharambha%20Pre%20School&query_place_id=ChIJcUvg0I0a6zkRr_Qq79a_xU0",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJl7nsxYJ5WnBQBBvblfylUmcv5HDds8F6ySWIifZydxucX0-PBR_svRmQQXyaoUhV6raLtU5lyO7zx65fC3dZIXrraxyHCYH7IsuLGIEWG4f8yEp7NPjetD1-zE2HanEc8KrB5g=w408-h306-k-no",
+    "kgmid": "/g/11dzdf9g6l"
+  },
+  {
+    "title": "Kamal Binayak Kinder School",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "04 Pipeline Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "04 Pipeline Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6781339,
+      "lng": 85.4375155
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMaT5g_wF6zkRcfseTdl_Kjs",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb05fc83f9a431:0x3b2a7fd94d1efb71",
+    "cid": "4263360568538102641",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:26.293Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 3 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 3 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 3 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 3 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 3 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 3 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kamal%20Binayak%20Kinder%20School&query_place_id=ChIJMaT5g_wF6zkRcfseTdl_Kjs",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=_R914FtKmHntl2YwpyoZmQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=311.57565&pitch=0&thumbfov=100",
+    "kgmid": "/g/11f62wklv6"
+  },
+  {
+    "title": "Amarawati Modern Academy",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MCMX+4V5, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MCMX+4V5",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3612939",
+    "phoneUnformatted": "+9779843612939",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6827505,
+      "lng": 85.4497263
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJm4SvJgAF6zkRB25h5MKAus0",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb050026af849b:0xcdba80c2e4616e07",
+    "cid": "14824302697987010055",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:39.578Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Amarawati%20Modern%20Academy&query_place_id=ChIJm4SvJgAF6zkRB25h5MKAus0",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxcJgtPNjuRjEp77tyJBf6KhB2cZT705UowtogjtjfbFVrNkKuwXWG3r7SwaCsjRgATJxl3yQ97uNV4SUM0dymXa16hIhHiFA4qAvvWrJ7v5iBiHGJ5DzAnrh4ueDzahmavyDslVxaUpHAT=w408-h306-k-no",
+    "kgmid": "/g/11vm9g9gcj"
+  },
+  {
+    "title": "Smart kids Montessori",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MCVR+X34, Changunarayan Rd, Changunarayan, Nepal",
+    "neighborhood": "Chhaling",
+    "street": "MCVR+X34, Changunarayan Rd",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6948454,
+      "lng": 85.4402371
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJtSsQeAAF6zkRwKRokj6aLQ8",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb050078102bb5:0xf2d9a3e9268a4c0",
+    "cid": "1093699878055879872",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:39.578Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Smart%20kids%20Montessori&query_place_id=ChIJtSsQeAAF6zkRwKRokj6aLQ8",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=P2KtUrJD4S1fOIx0ibbtwQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=283.77716&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vxk8j6r1"
+  },
+  {
+    "title": "Shree Bal Sewak Lower Sec. School",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "Hanuman Ghat / ShivaLinga, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Hanuman Ghat / ShivaLinga, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6693729,
+      "lng": 85.4339686
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJoxQVaawa6zkROnvmhxrRwWc",
+    "categories": [
+      "Preschool",
+      "High school"
+    ],
+    "fid": "0x39eb1aac691514a3:0x67c1d11a87e67b3a",
+    "cid": "7476486768291117882",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:57.333Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 1 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Bal%20Sewak%20Lower%20Sec.%20School&query_place_id=ChIJoxQVaawa6zkROnvmhxrRwWc",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGBNKJEpJ75zkrh1Z54Gfm01XOr6B_bjgK8dOYbmxT7u-SG-RHKUieNXfOdGdHbdpXZM0_FoOEXryYDBz3PYFDMNEIQrIu4XLuIAmkYUjhbMHk4w48n-pf18U951SJve4wo9QW4PPbgRZ1iLu_ks5Y5310CLAfWlYXzj5IXcD25Rxgano5Z2qOPkEqtZH_n5-KCt0s=w408-h306-k-no",
+    "kgmid": "/g/11b6qn_pt9"
+  },
+  {
+    "title": "Himalayan Glory English School",
+    "subTitle": "हिमालयन ग्लोरी इङ्ग्लिस स्कूल",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "Sahidsmriti Khelmaidan, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Sahidsmriti Khelmaidan",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/himalayan.glory",
+    "phone": "+977 1-6619160",
+    "phoneUnformatted": "+97716619160",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6738973,
+      "lng": 85.4242467
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ582MLLsa6zkRZTGlPwovs14",
+    "categories": [
+      "Preschool",
+      "Montessori preschool",
+      "High school"
+    ],
+    "fid": "0x39eb1abb2c8ccde7:0x5eb32f0a3fa53165",
+    "cid": "6823849581460402533",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:57.334Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 2:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Himalayan%20Glory%20English%20School&query_place_id=ChIJ582MLLsa6zkRZTGlPwovs14",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw_Qzo1PxO844byhbqD-S9Y5jrMfTW_JR3rio4u353SibFAyKz_Pebl7QYhzHmaR6ZK24gimjNgVG2Ly-m9OgKCBmFCoKlTrFC_kl6xOREi_9HG38q6Zuu4JZR0YAixdQVr4SHX=w408-h272-k-no",
+    "kgmid": "/g/1q65ylhq9"
+  },
+  {
+    "title": "Siddhartha Academy",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MCC3+RFR, Sallaghari- Duwakot Rd, Suryabinayak, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC3+RFR, Sallaghari- Duwakot Rd",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/siddacademy/",
+    "phone": "+977 1-6615178",
+    "phoneUnformatted": "+97716615178",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6721087,
+      "lng": 85.4036271
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJh6V_nIUa6zkRzZzj5MPUr0U",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1a859c7fa587:0x45afd4c3e4e39ccd",
+    "cid": "5021466047365225677",
+    "reviewsCount": 3,
+    "imagesCount": 17,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.004Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddhartha%20Academy&query_place_id=ChIJh6V_nIUa6zkRzZzj5MPUr0U",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwhTxRJUcFT5_s4UssJ_dB5Z3Akx9N5k4I9Cznes7nMMYsN9UPmNSTpsDS76-uKYKag84Iu99DcZIK8H73fdJT7SUwTvWkB2ytOw5l16Ejdz52tNIESANj5kR2LjMg2PogaUbj1Fg=w408-h305-k-no",
+    "kgmid": "/g/11c54gjf48"
+  },
+  {
+    "title": "Shikchhyalaya Montessori",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": "MCR6+9M9, Bhaktapur, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCR6+9M9",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5090871",
+    "phoneUnformatted": "+97715090871",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6909221,
+      "lng": 85.411736
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwVRCRwsb6zkR6YgkeRijmF0",
+    "categories": [
+      "Preschool"
+    ],
+    "fid": "0x39eb1b0b474254c1:0x5d98a318792488e9",
+    "cid": "6744319767494297833",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:34.684Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shikchhyalaya%20Montessori&query_place_id=ChIJwVRCRwsb6zkR6YgkeRijmF0",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.6974209298533,85.4287066988148,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "kgmid": "/g/11spqdd87l"
+  },
+  {
+    "title": "Wee Can Pre-School Bhaktapur-Nepal",
+    "price": null,
+    "categoryName": "Preschool",
+    "address": null,
+    "website": "https://www.facebook.com/profile.php?id=61558624763017",
+    "phone": "+977 984-1531507",
+    "phoneUnformatted": "+9779841531507",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6554638,
+      "lng": 85.4048932
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3wmTjoZBx0ARlFuENiyeHKs",
+    "categories": [
+      "Preschool",
+      "Service establishment"
+    ],
+    "fid": "0x40c741868e9309df:0xab1c9e2c36845b94",
+    "cid": "12329903792563968916",
+    "reviewsCount": 0,
+    "imagesCount": 31,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:07.936Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 3 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Wee%20Can%20Pre-School%20Bhaktapur-Nepal&query_place_id=ChIJ3wmTjoZBx0ARlFuENiyeHKs",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.682206976617763,85.42012009644444,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 21,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPgf58VAX_G_OXIepCX4rUzLvu0JeNr2jdsmo1H=w408-h306-k-no",
+    "kgmid": "/g/11vz1wy6bn"
+  }
+]

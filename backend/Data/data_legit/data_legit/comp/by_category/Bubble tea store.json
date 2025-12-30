@@ -1,0 +1,93 @@
+[
+  {
+    "title": "BUBBLE TEA (ORIGINAL) BHAKTAPUR",
+    "price": null,
+    "categoryName": "Bubble tea store",
+    "address": "Taumadhi Square, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Taumadhi Square",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1038867",
+    "phoneUnformatted": "+9779851038867",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6712877,
+      "lng": 85.429486
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJp6TtfiEb6zkRclaFfmeIspg",
+    "categories": [
+      "Bubble tea store"
+    ],
+    "fid": "0x39eb1b217eeda4a7:0x98b288677e855672",
+    "cid": "11003006817705219698",
+    "reviewsCount": 2,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-11T10:08:18.801Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9:30 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great tea selection": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BUBBLE%20TEA%20(ORIGINAL)%20BHAKTAPUR&query_place_id=ChIJp6TtfiEb6zkRclaFfmeIspg",
+    "searchPageUrl": "https://www.google.com/maps/search/tea%20store/@27.640686196818166,85.46050991168464,14z?hl=en",
+    "searchString": "tea store",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyo7-iEXw-l7LV7RcG09_vXlH30BsZPfUF7aAb25CzWk7z9gQ6jIRYWitVScH9jyz-WHCTjZNre02HV_-R-nraPJZudtKhZp5QDkgMfeN7zYHSq1m76GOtiseZ3TexU81J6meRQdg=w408-h544-k-no",
+    "kgmid": "/g/11rzgnpcsc"
+  }
+]

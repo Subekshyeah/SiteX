@@ -1,0 +1,360 @@
+[
+  {
+    "title": "Parichaya Bakery परिचय बेकरी",
+    "price": null,
+    "categoryName": "Wholesale bakery",
+    "address": "Gatthaghar Rd, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "Gatthaghar Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5639557",
+    "phoneUnformatted": "+97715639557",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6742791,
+      "lng": 85.3720911
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVz5ITxIa6zkRjsVJuc7pV-I",
+    "categories": [
+      "Wholesale bakery"
+    ],
+    "fid": "0x39eb1a124f483e57:0xe257e9ceb949c58e",
+    "cid": "16309761649626695054",
+    "reviewsCount": 42,
+    "imagesCount": 639,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:40.910Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Parichaya%20Bakery%20%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF%20%E0%A4%AC%E0%A5%87%E0%A4%95%E0%A4%B0%E0%A5%80&query_place_id=ChIJVz5ITxIa6zkRjsVJuc7pV-I",
+    "searchPageUrl": "https://www.google.com/maps/search/bakery/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "bakery",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxzB2UZE0hDK5G8b9bhDHAc3MXURadAYJ03rmwdwypCk5CCOhzDyJsar_AYt8BDntnYr6S2d6e9yYyAD7X_wY9XVe8Ht3iPuvQi_PxHHim2pIriYEUHQUKELePwZxlURvJejAg=w408-h306-k-no",
+    "kgmid": "/g/11g9grphy8"
+  },
+  {
+    "title": "Samriddhi Bakery Cafe",
+    "price": null,
+    "categoryName": "Wholesale bakery",
+    "address": "MCFG+GVW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+GVW",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 988-9055388",
+    "phoneUnformatted": "+9779889055388",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6738729,
+      "lng": 85.4272013
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbbzkBQQb6zkR4CqSZjtY-HI",
+    "categories": [
+      "Wholesale bakery"
+    ],
+    "fid": "0x39eb1b0405e4bc6d:0x72f8583b66922ae0",
+    "cid": "8284468526695197408",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:52:22.828Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Samriddhi%20Bakery%20Cafe&query_place_id=ChIJbbzkBQQb6zkR4CqSZjtY-HI",
+    "searchPageUrl": "https://www.google.com/maps/search/bakery/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "bakery",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=U0T8W1nXdil8KVW6mGGq2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=101.72272&pitch=0&thumbfov=100",
+    "kgmid": "/g/11nlbms412"
+  },
+  {
+    "title": "SURYA VINAYAK BAKERY AND FOODS",
+    "price": null,
+    "categoryName": "Wholesale bakery",
+    "address": "Balkot, Near Redcross, about 150 Meters Kaushaltar - Balkot Rd, Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "Balkot, Near Redcross, about 150 Meters Kaushaltar - Balkot Rd",
+    "city": "Anantalingeshwar",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670018,
+      "lng": 85.3676968
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJX1WDsw8a6zkRbKGGohO1UF0",
+    "categories": [
+      "Wholesale bakery"
+    ],
+    "fid": "0x39eb1a0fb383555f:0x5d50b513a286a16c",
+    "cid": "6724073339599888748",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 0
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:23.316Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=SURYA%20VINAYAK%20BAKERY%20AND%20FOODS&query_place_id=ChIJX1WDsw8a6zkRbKGGohO1UF0",
+    "searchPageUrl": "https://www.google.com/maps/search/bakery/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "bakery",
+    "language": "en",
+    "rank": 34,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nJQ0jLRhynlkFSQyr3PdEA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=19.476482&pitch=0&thumbfov=100",
+    "kgmid": "/g/11c1xgqq52"
+  },
+  {
+    "title": "Warm Delight Bakery",
+    "price": null,
+    "categoryName": "Wholesale bakery",
+    "address": "M9F9+WVM, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9F9+WVM",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1404008",
+    "phoneUnformatted": "+9779841404008",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.674833,
+      "lng": 85.3696693
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6bNP334b6zkR8J8CwxG1XCM",
+    "categories": [
+      "Wholesale bakery"
+    ],
+    "fid": "0x39eb1b7edf4fb3e9:0x235cb511c3029ff0",
+    "cid": "2548110577075658736",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:23.316Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Warm%20Delight%20Bakery&query_place_id=ChIJ6bNP334b6zkR8J8CwxG1XCM",
+    "searchPageUrl": "https://www.google.com/maps/search/bakery/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "bakery",
+    "language": "en",
+    "rank": 40,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=BVb50YptE6h7g4P3fDp--Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=199.22923&pitch=0&thumbfov=100",
+    "kgmid": "/g/11glwjr0yn"
+  },
+  {
+    "title": "Laxmi Breads and Bakery",
+    "price": null,
+    "categoryName": "Wholesale bakery",
+    "address": "MC8G+276, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8G+276",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/Laxmi-Breads-and-Confectioneries-101442914936604",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6650492,
+      "lng": 85.4256411
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJff1TGgUb6zkRGX3JDNn-HEg",
+    "categories": [
+      "Wholesale bakery"
+    ],
+    "fid": "0x39eb1b051a53fd7d:0x481cfed90cc97d19",
+    "cid": "5196308278254599449",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:55:05.966Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Laxmi%20Breads%20and%20Bakery&query_place_id=ChIJff1TGgUb6zkRGX3JDNn-HEg",
+    "searchPageUrl": "https://www.google.com/maps/search/bakery/@27.664893497689192,85.42249999999997,17z?hl=en",
+    "searchString": "bakery",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=aA3NCZFdC7C72qYVHWOBng&cb_client=search.gws-prod.gps&w=408&h=240&yaw=107.88436&pitch=0&thumbfov=100",
+    "kgmid": "/g/11m1f_bqkg"
+  }
+]

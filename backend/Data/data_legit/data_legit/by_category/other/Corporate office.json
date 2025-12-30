@@ -1,0 +1,1314 @@
+[
+  {
+    "title": "Gayatri office",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670994,
+      "lng": 85.4298429
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJW8xuBwAb6zkRK_kLvA1CQ7k",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1b00076ecc5b:0xb943420dbc0bf92b",
+    "cid": "13349586347213191467",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:49.631Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gayatri%20office&query_place_id=ChIJW8xuBwAb6zkRK_kLvA1CQ7k",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.4451&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vph3pm2q"
+  },
+  {
+    "title": "Siddhi Ganesh Saving & Credit Co-operative",
+    "subTitle": "सिद्धि गणेश बचत तथा ऋण सहकारी",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFM+8J4, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFM+8J4",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://sgsaccos.com.np/",
+    "phone": "+977 1-6621201",
+    "phoneUnformatted": "+97716621201",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6732523,
+      "lng": 85.4340823
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGWyVlK0a6zkRANfu4XBzXRA",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1aad94956c19:0x105d7370e1eed700",
+    "cid": "1179225606104995584",
+    "reviewsCount": 34,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 7,
+      "fourStar": 9,
+      "fiveStar": 17
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:50.661Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddhi%20Ganesh%20Saving%20%26%20Credit%20Co-operative&query_place_id=ChIJGWyVlK0a6zkRANfu4XBzXRA",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 44,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzP-3OiOwklc-hG47Fi98kofu5Oh_vQKOsub7U25nXTkjUgUQ0rcYN_22MpDzbyB_leu3iTJoqqiP4qfYVNTtpRjHmA-485jDhjMEVXF6hc_XlnQflhVzeHenWr_SJDNugB2P0=w408-h544-k-no",
+    "kgmid": "/g/11c20q8z4g"
+  },
+  {
+    "title": "Cosmic Saving & Credit Co-opt.Ltd.",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFF+5X3, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFF+5X3",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612596",
+    "phoneUnformatted": "+97716612596",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6728794,
+      "lng": 85.4249373
+    },
+    "totalScore": 3.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJj3Uh57ob6zkRFfV4t75p4Hc",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1bbae721758f:0x77e069beb778f515",
+    "cid": "8638020353139471637",
+    "reviewsCount": 17,
+    "reviewsDistribution": {
+      "oneStar": 6,
+      "twoStar": 0,
+      "threeStar": 2,
+      "fourStar": 3,
+      "fiveStar": 6
+    },
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:50.661Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Cosmic%20Saving%20%26%20Credit%20Co-opt.Ltd.&query_place_id=ChIJj3Uh57ob6zkRFfV4t75p4Hc",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 51,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxDpKPhyVv_41xVgMQR_h7IK9aG92SpSElgmtzFi3xJqdcuky6dMG5cgufAtmcmqSGmPteQZxP3DOghQg8-V8AE43JQCPkxJujC2fuBMgRGdckiMlK87Ps0dTQ7mfWHxaN71ims=w408-h304-k-no",
+    "kgmid": "/g/11gmfx_0l2"
+  },
+  {
+    "title": "Lokeshwor SACCOS",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFF+3XH, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFF+3XH",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619068",
+    "phoneUnformatted": "+97716619068",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6726922,
+      "lng": 85.4249831
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJfyuXGgAb6zkRmFCtBXNyRBE",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1b001a972b7f:0x1144727305ad5098",
+    "cid": "1244245235403149464",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:50.874Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 2:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 2:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 2:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 2:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 2:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 2:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Lokeshwor%20SACCOS&query_place_id=ChIJfyuXGgAb6zkRmFCtBXNyRBE",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ANGc2hC6pinxAUye6q7t5g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=358.49655&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h0ct56pl"
+  },
+  {
+    "title": "Pixel Production Nepal",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "pixel production nepal, Bhaktapur 44600, Nepal",
+    "neighborhood": null,
+    "street": "pixel production nepal",
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1141791",
+    "phoneUnformatted": "+9779851141791",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.674592,
+      "lng": 85.4251421
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhRde_DEZ6zkRyvoKtzGNsEs",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1931fc5e1785:0x4bb08d31b70afaca",
+    "cid": "5454014393409534666",
+    "reviewsCount": 11,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 2,
+      "fiveStar": 7
+    },
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:50.874Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Pixel%20Production%20Nepal&query_place_id=ChIJhRde_DEZ6zkRyvoKtzGNsEs",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 35,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz19YhJXk58wanUMkY7EsvVGdd_FJ7wKc-LqaenahryxlL1bKTkdckgIMw4Fzaej7N5h5RDUlzY3XsBQuiLahR0l_A7zOX88yHrzlpeBJdMk0g6-l2br6zUEwsWxnsU8th8rs-NXIWRZTBs=w408-h306-k-no",
+    "kgmid": "/g/11g1q7124b"
+  },
+  {
+    "title": "Sahridayata Society Nepal",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCGM+MX7, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGM+MX7, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1795073",
+    "phoneUnformatted": "+9779841795073",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.676665,
+      "lng": 85.4349201
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb7jUXpIb6zkR1OiItW9Qkzs",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1b925ed4b86f:0x3b93506fb588e8d4",
+    "cid": "4292863310531455188",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:50.874Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sahridayata%20Society%20Nepal&query_place_id=ChIJb7jUXpIb6zkR1OiItW9Qkzs",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 38,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gIAtCesO40k5-9EdVNGXag&cb_client=search.gws-prod.gps&w=408&h=240&yaw=342.54086&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g0gqmh7m"
+  },
+  {
+    "title": "Ryams Eecovan service",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCGP+9PQ, Kwathandaou - Kamalbinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+9PQ, Kwathandaou - Kamalbinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9675893",
+    "phoneUnformatted": "+9779849675893",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6759635,
+      "lng": 85.4368661
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ2xB_STwb6zkR2UuQ-EUBJcc",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1b3c497f10db:0xc7250145f8904bd9",
+    "cid": "14349877187720530905",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ryams%20Eecovan%20service&query_place_id=ChIJ2xB_STwb6zkR2UuQ-EUBJcc",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 42,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzpNEiSzdxPRnoFEfS-D5NSQWz8yiOzUxW1G0r0ewy4DbF0eTNl7IRbdckJBb1ESeJX3sNR18IldmjjYH2SJhgxAKQ6LsqzIPxZmSjUSwUat76j501jyUL9asLo1qq-CHEyeBFe=w408-h306-k-no",
+    "kgmid": "/g/11h3clg5lz"
+  },
+  {
+    "title": "Laxmi Chiura Udhog, Jatti Chiura",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFM+P29, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFM+P29",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612591",
+    "phoneUnformatted": "+97716612591",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6742975,
+      "lng": 85.4326103
+    },
+    "totalScore": 2.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNTeDAbIa6zkRyIZNk6WZPTo",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1ab201833735:0x3a3d99a5934d86c8",
+    "cid": "4196679364199155400",
+    "reviewsCount": 5,
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 12,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Laxmi%20Chiura%20Udhog%2C%20Jatti%20Chiura&query_place_id=ChIJNTeDAbIa6zkRyIZNk6WZPTo",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 45,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSypgZlTUZC1kec4ypq7rqy09UoSTT64Qk30cvIov4k7Ovxrq_LEPKon2nZX1SxTZaJu1db3PS7qOW1e_DjVeByJEuDYPHia_uiIwKHh_N_xgpkuDIbmtuoqc0hGtK_st7_eyTDcAxJdek0=w426-h240-k-no",
+    "kgmid": "/g/11c310jkx4"
+  },
+  {
+    "title": "Dreamy Destiny",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCGP+V9Q, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+V9Q, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6772118,
+      "lng": 85.4359751
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJh7-Xh7Ub6zkRpQovnv7J5e0",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1bb58797bf87:0xede5c9fe9e2f0aa5",
+    "cid": "17142329652068420261",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dreamy%20Destiny&query_place_id=ChIJh7-Xh7Ub6zkRpQovnv7J5e0",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 48,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=c4WnIO8RhXk-rJUssZtkNw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=338.84323&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fcrh9d0m"
+  },
+  {
+    "title": "Sunibha",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCCM+V6Q, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCM+V6Q",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6718626,
+      "lng": 85.4324705
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJc0PZOvAb6zkRBeCjpnvWMA8",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1bf03ad94373:0xf30d67ba6a3e005",
+    "cid": "1094610536016109573",
+    "reviewsCount": 0,
+    "imagesCount": 18,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sunibha&query_place_id=ChIJc0PZOvAb6zkRBeCjpnvWMA8",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 53,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0IN6bZET_TYj-vbT_4-hf4x3FWN9xMtMMt4e_yop929yxMXaP0PcjZog0Sr0GkVxTKQIab1AZoCQm0apykf15Us5xRqjZ3iWqgmos9WbNNI75zZrRCNXAT_Qie3ONDdE_Cny8=w408-h544-k-no",
+    "kgmid": "/g/11rhq0dfb1"
+  },
+  {
+    "title": "JANASMRITI SACOOS",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCGF+5MR Bhaktapur Municipality Office, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGF+5MR Bhaktapur Municipality Office",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6754929,
+      "lng": 85.424142
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ57kuPwAb6zkRzISikwvWbKI",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1b003f2eb9e7:0xa26cd60b93a284cc",
+    "cid": "11703964876838962380",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=JANASMRITI%20SACOOS&query_place_id=ChIJ57kuPwAb6zkRzISikwvWbKI",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 57,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=mq9LXZG9sYrNFZjdO3-_Jg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=38.542862&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y9qdhddf"
+  },
+  {
+    "title": "कल कल ग्रुप प्रा. लि..",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "Ekata Marg, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Ekata Marg",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1142369",
+    "phoneUnformatted": "+9779851142369",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6738729,
+      "lng": 85.4272013
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGxKaDvMb6zkRCxaPtpmJpkY",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1bf30e9a121b:0x46a68999b68f160b",
+    "cid": "5090907722074756619",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%95%E0%A4%B2%20%E0%A4%95%E0%A4%B2%20%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%AA%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE.%20%E0%A4%B2%E0%A4%BF..&query_place_id=ChIJGxKaDvMb6zkRCxaPtpmJpkY",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 58,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=U0T8W1nXdil8KVW6mGGq2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=101.72272&pitch=0&thumbfov=100",
+    "kgmid": "/g/11hyntcvb0"
+  },
+  {
+    "title": "JuJu Event Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCGM+37V, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGM+37V",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 980-3878922",
+    "phoneUnformatted": "+9779803878922",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6752432,
+      "lng": 85.4331836
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ390Vm6cb6zkR5OIUuDrXRQs",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1ba79b15dddf:0xb45d73ab814e2e4",
+    "cid": "812291955006694116",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:52.955Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=JuJu%20Event%20Pvt.%20Ltd.&query_place_id=ChIJ390Vm6cb6zkR5OIUuDrXRQs",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 64,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=kXzhKOJuoRtOIg0U08DCVw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=60.711903&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h22jhw_g"
+  },
+  {
+    "title": "Khwopa Feed Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFG+GQV, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+GQV",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610223",
+    "phoneUnformatted": "+97716610223",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6738722,
+      "lng": 85.4269281
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTXzxq7oa6zkReZ0BeqYcYZQ",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1abaabf17c4d:0x94611ca67a019d79",
+    "cid": "10691858491691343225",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:52.955Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20Feed%20Pvt.%20Ltd.&query_place_id=ChIJTXzxq7oa6zkReZ0BeqYcYZQ",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 66,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=cn-YjcLXCghaTsNcONTXPw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=85.04602&pitch=0&thumbfov=100",
+    "kgmid": "/g/11dxcqf99l"
+  },
+  {
+    "title": "Santulit dana udhyog",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFG+HV7, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+HV7",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6739074,
+      "lng": 85.4271682
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJnX2-qroa6zkRouPY7XsWCu4",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1abaaabe7d9d:0xee0a167bedd8e3a2",
+    "cid": "17152546852321158050",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:52.955Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Santulit%20dana%20udhyog&query_place_id=ChIJnX2-qroa6zkRouPY7XsWCu4",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 67,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=U0T8W1nXdil8KVW6mGGq2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=97.098465&pitch=0&thumbfov=100",
+    "kgmid": "/g/11c5754tdr"
+  },
+  {
+    "title": "Boktupur.santir hat",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFG+WX2 Grameen Bank.boktopur Branch, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+WX2 Grameen Bank.boktopur Branch",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.674766,
+      "lng": 85.4273979
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJxXCDcAAb6zkRMo3g2OfJX5Q",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1b00708370c5:0x945fc9e7d8e08d32",
+    "cid": "10691486038014070066",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:52.955Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Boktupur.santir%20hat&query_place_id=ChIJxXCDcAAb6zkRMo3g2OfJX5Q",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 70,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=y_M10KsmajGRI-lSxwUKMw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=136.01321&pitch=0&thumbfov=100",
+    "kgmid": "/g/11wp08hxmk"
+  },
+  {
+    "title": "Shramajivi Saving & Credit Co-operative Limited",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCFJ+VPQ, Bholachhen - Yachhen Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFJ+VPQ, Bholachhen - Yachhen Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6618341",
+    "phoneUnformatted": "+97716618341",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6747205,
+      "lng": 85.4318731
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJr0P18LEa6zkRyx8_diAcS_0",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1ab1f0f543af:0xfd4b1c20763f1fcb",
+    "cid": "18251712840597446603",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:52.955Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shramajivi%20Saving%20%26%20Credit%20Co-operative%20Limited&query_place_id=ChIJr0P18LEa6zkRyx8_diAcS_0",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 76,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=daPogaYqSC4Hw4-ZKsfHTQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=307.0682&pitch=0&thumbfov=100",
+    "kgmid": "/g/11gg_tyd5m"
+  },
+  {
+    "title": "Trekking House Pvt. Ltd",
+    "subTitle": "ट्रेकिङ हाउस प्रा। लिमिटेड",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "MCCM+QP6, Inacho - Hanumanghat Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCM+QP6, Inacho - Hanumanghat Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.trekkinghouse.com/",
+    "phone": "+977 986-0916192",
+    "phoneUnformatted": "+9779860916192",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6719121,
+      "lng": 85.4342699
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJz38Tuq0a6zkRSsFbJ4TBLR0",
+    "categories": [
+      "Corporate office"
+    ],
+    "fid": "0x39eb1aadba137fcf:0x1d2dc184275bc14a",
+    "cid": "2102549374392058186",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.045Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Trekking%20House%20Pvt.%20Ltd&query_place_id=ChIJz38Tuq0a6zkRSsFbJ4TBLR0",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 95,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=IGMow_OFxWdhmiAjv5WnUQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=105.49941&pitch=0&thumbfov=100",
+    "kgmid": "/g/11dxb2syxq"
+  }
+]

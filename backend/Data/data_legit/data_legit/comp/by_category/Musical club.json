@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Hungry Musician Terrace & Bhaktapur Workshop Residency",
+    "price": null,
+    "categoryName": "Musical club",
+    "address": "Jaganathan road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Jaganathan road",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-5159666",
+    "phoneUnformatted": "+9779765159666",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6721859,
+      "lng": 85.43032
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6Umv5Osb6zkR9n2xsftbTPQ",
+    "categories": [
+      "Musical club",
+      "Art studio",
+      "Bar",
+      "Hostel"
+    ],
+    "fid": "0x39eb1bebe4af49e9:0xf44c5bfbb1b17df6",
+    "cid": "17603546180060544502",
+    "reviewsCount": 18,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 2,
+      "fiveStar": 15
+    },
+    "imagesCount": 55,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:38:04.891Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Assistive hearing loop": false
+        },
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        },
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Hungry%20Musician%20Terrace%20%26%20Bhaktapur%20Workshop%20Residency&query_place_id=ChIJ6Umv5Osb6zkR9n2xsftbTPQ",
+    "searchPageUrl": "https://www.google.com/maps/search/bar/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "bar",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMHxGQlfVx1WzRJzPl5E5SFtaWTKoutZApPT9xz=w426-h240-k-no",
+    "kgmid": "/g/11vzqgbcfq"
+  }
+]

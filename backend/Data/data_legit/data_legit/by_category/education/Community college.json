@@ -1,0 +1,267 @@
+[
+  {
+    "title": "Bhaktapur Multiple Campus",
+    "subTitle": "भक्तपुर बहुमुखी क्याम्पस",
+    "price": null,
+    "categoryName": "Community college",
+    "address": "MC9C+J9R, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+J9R, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://bkmc.tu.edu.np/",
+    "phone": "+977 1-6610200 ext. 6613199",
+    "phoneUnformatted": "+97716610200",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6691024,
+      "lng": 85.4208909
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYeQVlaMa6zkRHSx4RwGKG4o",
+    "categories": [
+      "Community college",
+      "University"
+    ],
+    "fid": "0x39eb1aa39515e461:0x8a1b8a0147782c1d",
+    "cid": "9951699539703901213",
+    "reviewsCount": 176,
+    "imagesCount": 330,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9:30 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9:30 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Multiple%20Campus&query_place_id=ChIJYeQVlaMa6zkRHSx4RwGKG4o",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxLYcM3aFsBJQ0iX54-EHyZRNwKcMIT7-bax_EJ2gceRMX_hl2BYks9U1Ins3ZLG4e1xq8akCbhAqIzo7rZfTpNQFTBm-dy3fXuY-9Sxa0BBwyxwLG1GtFRTGz2Jh1PZ-cdtedeTQ=w426-h240-k-no",
+    "kgmid": "/g/1v_slnnw"
+  },
+  {
+    "title": "Khwopa College of Engineering",
+    "subTitle": "ख्वप कलेज अफ इञ्जिनीयरिङ",
+    "price": null,
+    "categoryName": "Community college",
+    "address": "Libali, Bhaktapur - 8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Libali, Bhaktapur - 8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.khec.edu.np/department/architecture.html",
+    "phone": "+977 1-5122098",
+    "phoneUnformatted": "+97715122098",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6709871,
+      "lng": 85.4392
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY1D0G1MF6zkRzKE-mg7nye4",
+    "categories": [
+      "Community college"
+    ],
+    "fid": "0x39eb05531bf45063:0xeec9e70e9a3ea1cc",
+    "cid": "17206537901249044940",
+    "reviewsCount": 412,
+    "imagesCount": 534,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "11 AM to 5:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20College%20of%20Engineering&query_place_id=ChIJY1D0G1MF6zkRzKE-mg7nye4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNDHXyv2E2UygniJSqaywHwLbxtQn3ouqeAvNuj=w505-h240-k-no",
+    "kgmid": "/m/02qb7gg"
+  },
+  {
+    "title": "Khwopa College of Engineering",
+    "subTitle": "ख्वप कलेज अफ इञ्जिनीयरिङ",
+    "price": null,
+    "categoryName": "Community college",
+    "address": "Libali, Bhaktapur - 8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Libali, Bhaktapur - 8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.khec.edu.np/department/architecture.html",
+    "phone": "+977 1-5122098",
+    "phoneUnformatted": "+97715122098",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6709871,
+      "lng": 85.4392
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY1D0G1MF6zkRzKE-mg7nye4",
+    "categories": [
+      "Community college"
+    ],
+    "fid": "0x39eb05531bf45063:0xeec9e70e9a3ea1cc",
+    "cid": "17206537901249044940",
+    "reviewsCount": 412,
+    "imagesCount": 534,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 5:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "11 AM to 5:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20College%20of%20Engineering&query_place_id=ChIJY1D0G1MF6zkRzKE-mg7nye4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNDHXyv2E2UygniJSqaywHwLbxtQn3ouqeAvNuj=w505-h240-k-no",
+    "kgmid": "/m/02qb7gg"
+  }
+]

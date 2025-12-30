@@ -1,0 +1,387 @@
+[
+  {
+    "title": "Tourist Bus Park",
+    "price": null,
+    "categoryName": "Park & ride",
+    "address": "MCFG+XP8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+XP8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6748617,
+      "lng": 85.4266767
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY7HB9Zsb6zkRQVEbzshV29I",
+    "categories": [
+      "Park & ride"
+    ],
+    "fid": "0x39eb1b9bf5c1b163:0xd2db55c8ce1b5141",
+    "cid": "15193832088804217153",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 22,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:41.422Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tourist%20Bus%20Park&query_place_id=ChIJY7HB9Zsb6zkRQVEbzshV29I",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxkiuDpfSQHdod9wKalYTXU9XpfPopSXYcePAw0qV7YCveOzBNfWVE1l5SEojW5Hvh3a6D5et_zJ0AuJ6xd6_z3HSW7IqR-wYmN9jb-CJ34a3Cu6DnPqLhrXolAZSt-jCxl31NT3w=w408-h544-k-no",
+    "kgmid": "/g/11s96c_s30"
+  },
+  {
+    "title": "Tourist Bus Park",
+    "price": null,
+    "categoryName": "Park & ride",
+    "address": "MCFG+XP8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+XP8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6748617,
+      "lng": 85.4266767
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY7HB9Zsb6zkRQVEbzshV29I",
+    "categories": [
+      "Park & ride"
+    ],
+    "fid": "0x39eb1b9bf5c1b163:0xd2db55c8ce1b5141",
+    "cid": "15193832088804217153",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 22,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:33.912Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tourist%20Bus%20Park&query_place_id=ChIJY7HB9Zsb6zkRQVEbzshV29I",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 31,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxkiuDpfSQHdod9wKalYTXU9XpfPopSXYcePAw0qV7YCveOzBNfWVE1l5SEojW5Hvh3a6D5et_zJ0AuJ6xd6_z3HSW7IqR-wYmN9jb-CJ34a3Cu6DnPqLhrXolAZSt-jCxl31NT3w=w408-h544-k-no",
+    "kgmid": "/g/11s96c_s30"
+  },
+  {
+    "title": "Dreams Roller Skate",
+    "price": null,
+    "categoryName": "Park & ride",
+    "address": "M9F8+F2, Kaushaltar - Balkot Rd, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": "Kausaltar",
+    "street": "M9F8+F2, Kaushaltar - Balkot Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1313451",
+    "phoneUnformatted": "+9779851313451",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6736875,
+      "lng": 85.3650625
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIwsEm_Ab6zkRIDFIs81B1B8",
+    "categories": [
+      "Park & ride"
+    ],
+    "fid": "0x39eb1bf09b040b23:0x1fd441cdb3483120",
+    "cid": "2293530461970379040",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:59.347Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dreams%20Roller%20Skate&query_place_id=ChIJIwsEm_Ab6zkRIDFIs81B1B8",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bVxKHJ9SNSfTpbqlF7YEwQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=120.05481&pitch=0&thumbfov=100",
+    "kgmid": "/g/11zjxz6qzh"
+  },
+  {
+    "title": "नेपाल यातायात बसपार्क (Nepal Yatayat Buspark)",
+    "price": null,
+    "categoryName": "Park & ride",
+    "address": "Kageshwori Manohara 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": null,
+    "city": "Kageshwori Manohara",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6968496,
+      "lng": 85.3806346
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJewMYiGIb6zkR7S6-4jVucok",
+    "categories": [
+      "Park & ride"
+    ],
+    "fid": "0x39eb1b628818037b:0x89726e35e2be2eed",
+    "cid": "9904099708257578733",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 1,
+      "fourStar": 1,
+      "fiveStar": 0
+    },
+    "imagesCount": 33,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:57.007Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 9:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%20%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A4%BE%E0%A4%AF%E0%A4%BE%E0%A4%A4%20%E0%A4%AC%E0%A4%B8%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%95%20(Nepal%20Yatayat%20Buspark)&query_place_id=ChIJewMYiGIb6zkR7S6-4jVucok",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.695319506932435,85.37957397800257,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 29,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwYnxfNeaW71Tl4t6-EXyxJm6yJXI7XpAYySh-inYma_nb2cG091T9BIlt0Ls0ip5gczcUOWr7uZXWsGl8FFsD27IIJ_xAbB0e-gao7H-8xEUYMMs3trZgj9E7yf4Cyfx_AxWA=w426-h240-k-no",
+    "kgmid": "/g/11fmc57x5g"
+  },
+  {
+    "title": "अन्नपूर्ण सार्वजनिक यातयात बसपार्क",
+    "price": null,
+    "categoryName": "Park & ride",
+    "address": "M9WJ+C5V, Kageshwori Manohara 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "M9WJ+C5V",
+    "city": "Kageshwori Manohara",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6961146,
+      "lng": 85.3801334
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw1N5XgAb6zkR_NKOOi9Xass",
+    "categories": [
+      "Park & ride"
+    ],
+    "fid": "0x39eb1b005e7953c3:0xcb6a572f3a8ed2fc",
+    "cid": "14657623797588218620",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:57.007Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%A3%20%E0%A4%B8%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%9C%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A4%AF%E0%A4%BE%E0%A4%A4%20%E0%A4%AC%E0%A4%B8%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%95&query_place_id=ChIJw1N5XgAb6zkR_NKOOi9Xass",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.695319506932435,85.37957397800257,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 31,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Po1feHQD7n9M6p0izIDPqg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=302.9392&pitch=0&thumbfov=100",
+    "kgmid": "/g/11wxl0c4m8"
+  },
+  {
+    "title": "Tourist Bus Park",
+    "price": null,
+    "categoryName": "Park & ride",
+    "address": "MCFG+XP8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+XP8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6748617,
+      "lng": 85.4266767
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY7HB9Zsb6zkRQVEbzshV29I",
+    "categories": [
+      "Park & ride"
+    ],
+    "fid": "0x39eb1b9bf5c1b163:0xd2db55c8ce1b5141",
+    "cid": "15193832088804217153",
+    "reviewsCount": 3,
+    "imagesCount": 22,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:33.889Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tourist%20Bus%20Park&query_place_id=ChIJY7HB9Zsb6zkRQVEbzshV29I",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxkiuDpfSQHdod9wKalYTXU9XpfPopSXYcePAw0qV7YCveOzBNfWVE1l5SEojW5Hvh3a6D5et_zJ0AuJ6xd6_z3HSW7IqR-wYmN9jb-CJ34a3Cu6DnPqLhrXolAZSt-jCxl31NT3w=w408-h544-k-no",
+    "kgmid": "/g/11s96c_s30"
+  }
+]

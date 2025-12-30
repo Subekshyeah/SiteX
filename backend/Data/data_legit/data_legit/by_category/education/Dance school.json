@@ -1,0 +1,151 @@
+[
+  {
+    "title": "Bhaktapur Dance Academy",
+    "price": null,
+    "categoryName": "Dance school",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-3408683",
+    "phoneUnformatted": "+9779813408683",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6641126,
+      "lng": 85.4220125
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJs0vKJgAb6zkRbZ9vPzYkdvI",
+    "categories": [
+      "Dance school"
+    ],
+    "fid": "0x39eb1b0026ca4bb3:0xf27624363f6f9f6d",
+    "cid": "17471191619841531757",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Dance%20Academy&query_place_id=ChIJs0vKJgAb6zkRbZ9vPzYkdvI",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 74,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=klFZJ5eznYx_DJ1MMWq0eQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=163.49997&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vsw80vr3"
+  },
+  {
+    "title": "Dynamic Dance Destination",
+    "price": null,
+    "categoryName": "Dance school",
+    "address": "Degaina Chyamasing, Nala road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Degaina Chyamasing, Nala road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6734266,
+      "lng": 85.4412374
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJP9PA4L4b6zkR4TdXBfflIkQ",
+    "categories": [
+      "Dance school"
+    ],
+    "fid": "0x39eb1bbee0c0d33f:0x4422e5f7055737e1",
+    "cid": "4909739392896546785",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 3
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dynamic%20Dance%20Destination&query_place_id=ChIJP9PA4L4b6zkR4TdXBfflIkQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 71,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSybrcsUYa4ZoDRovUGMBbCHfHysZUvjNQwMGidS9K10K_eUKFmGzplayh6khyufQ74ocoaMejLLszN57V7eN0u-xcbdEKXHjaKAPaVc8-oS3ZCGD7jfcB86PlfxCqS-gANrPVgDoEZa4OMk=w408-h544-k-no",
+    "kgmid": "/g/11vwrgmhsh"
+  }
+]

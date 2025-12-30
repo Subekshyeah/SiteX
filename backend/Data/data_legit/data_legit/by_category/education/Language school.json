@@ -1,0 +1,1477 @@
+[
+  {
+    "title": "YOUKOSO JAPANESE LANGUAGE CENTRE",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "7 Inacho - Hanumanghat Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "7 Inacho - Hanumanghat Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617687",
+    "phoneUnformatted": "+97716617687",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6716781,
+      "lng": 85.4348008
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJodqfQqgZ6zkRHqYRDdMOKE4",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb19a8429fdaa1:0x4e280ed30d11a61e",
+    "cid": "5631767633646954014",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 0
+    },
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:34.374Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=YOUKOSO%20JAPANESE%20LANGUAGE%20CENTRE&query_place_id=ChIJodqfQqgZ6zkRHqYRDdMOKE4",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 58,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFKHE7c7eyASPpan9f1HroKJv4l87XaTA4_5na_fHMmLckDkq5msBlydBnCCVtb3G6UuGbHbI8NvYdHnnNYqKfm7_v1em5tnQviIYR47skcamzhQPLOVGcjNjGdjoThT5yKyecNdmj_eGm4wX9yoJyBIuDSc-MDQ0sf-9miurJl_cE6nfxAxDGkEpSsHl_Zat-TcKQ=w408-h306-k-no",
+    "kgmid": "/g/11b6g8ptxy"
+  },
+  {
+    "title": "Nyatapola Japanese Institute",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MCCJ+XH9, दाम्ला गल्लि, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCJ+XH9, दाम्ला गल्लि",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1394404",
+    "phoneUnformatted": "+9779841394404",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.672412,
+      "lng": 85.4314699
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl4WabK4a6zkROmVkwetNoaQ",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aae6c9a8597:0xa4a14debc164653a",
+    "cid": "11862848568427832634",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:35.777Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nyatapola%20Japanese%20Institute&query_place_id=ChIJl4WabK4a6zkROmVkwetNoaQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 65,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFtKG_V5LbldD0m4FKh5cwFV1ci9RiuZIaWgyhna_QHr_KUC5L6GbJMqplFF_8IYDkn5V6MG3xRUbo9vS__NsW6ah74Dy4orjfKxNRVDeOKchsE6k8GF7mL7RAsuwHgvx24-ZNn5T2gOYxKm7QieScm8hOM1JqrFhPJtu4fgPBCMRUJgswkSlrAF67vHqedLMTMf30=w408-h306-k-no",
+    "kgmid": "/g/11b6qpjq6g"
+  },
+  {
+    "title": "Alpha Korean Language School",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6923070",
+    "phoneUnformatted": "+97716923070",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6654709,
+      "lng": 85.4237743
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJD3oaJSIa6zkRlUqzgbl_2Ck",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1a22251a7a0f:0x29d87fb981b34a95",
+    "cid": "3015300385246235285",
+    "reviewsCount": 17,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 2,
+      "fourStar": 2,
+      "fiveStar": 12
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:59.547Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Alpha%20Korean%20Language%20School&query_place_id=ChIJD3oaJSIa6zkRlUqzgbl_2Ck",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 44,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyU7QkygW1wHmiJBc-fr2075OT5uOFA_z6IokiXR8E74l00Y6i8Y4IAdZb7g7dXuS1_igyszjOiOT_1dykz_YKJIO2IdTGUKFeA-LBeJYnslUuZMj8JwnolYnEZ_yaTgb3bSUm3jA=w408-h545-k-no",
+    "kgmid": "/g/11cp7kxkz6"
+  },
+  {
+    "title": "Ashai Japanese Language & Culture Center",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC8F+9VQ, Suryabinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+9VQ, Suryabinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613625",
+    "phoneUnformatted": "+97716613625",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.665965,
+      "lng": 85.424719
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJvfGRWKYa6zkRheBKIMZVWQs",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aa65891f1bd:0xb5955c6204ae085",
+    "cid": "817779116778119301",
+    "reviewsCount": 7,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 7
+    },
+    "imagesCount": 19,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:59.547Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ashai%20Japanese%20Language%20%26%20Culture%20Center&query_place_id=ChIJvfGRWKYa6zkRheBKIMZVWQs",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 47,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6b7X90RjadIEftgqYEgudR7pK234rX6ySJLa98Gw_A2gvrnuK1tPTgc1DxgmHqB3cNGNNDpmlbGqRS8kESsuHoznOOhOTzjQHQoKTCUKtHCJ_Wm36XGFrUQ_haYcAsBO4qjUpOW2YlW8=w408-h306-k-no",
+    "kgmid": "/g/11b6s16lwy"
+  },
+  {
+    "title": "Saino Japanese Language School",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.sainojls.edu.np/",
+    "phone": "+977 985-1199310",
+    "phoneUnformatted": "+9779851199310",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659563,
+      "lng": 85.4246072
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI6S7DvQb6zkRYdzUO0mBw6I",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1bf40ebba423:0xa2c381493bd4dc61",
+    "cid": "11728360006139305057",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:59.547Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        },
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        },
+        {
+          "Wheelchair accessible seating": true
+        },
+        {
+          "Assistive hearing loop": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        },
+        {
+          "Paid parking garage": true
+        },
+        {
+          "Paid parking lot": true
+        },
+        {
+          "Paid street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saino%20Japanese%20Language%20School&query_place_id=ChIJI6S7DvQb6zkRYdzUO0mBw6I",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 55,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPOXSfY6RyTNfF1_SrOauRqAC0lU7S94AAAESQy=w408-h272-k-no",
+    "kgmid": "/g/11x8lq31m8"
+  },
+  {
+    "title": "Bhaktapur Japanese Language Institute",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC8G+25H, Suryabinayak Chowk, Bhaktapur Nepal, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8G+25H, Suryabinayak Chowk, Bhaktapur Nepal, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5092718",
+    "phoneUnformatted": "+97715092718",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6650691,
+      "lng": 85.4254818
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ82fXTKYa6zkRtFzmWn9WWbo",
+    "categories": [
+      "Language school",
+      "Educational consultant"
+    ],
+    "fid": "0x39eb1aa64cd767f3:0xba59567f5ae65cb4",
+    "cid": "13427858868967726260",
+    "reviewsCount": 22,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 17
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:02.093Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Japanese%20Language%20Institute&query_place_id=ChIJ82fXTKYa6zkRtFzmWn9WWbo",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 50,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEmeWi3bGBzffxY0PvIyPr5NiWWOf-U4IYniLqXS61m9V9SH3M2ME1_29uu5SurNTpWhG43BASOCr32weMC6QyJV7h1AQpeTQV45_sWlZVZOu0xHqaUUIYMhmrQ-m3_omuI1TSlqZs2Zb0_GC8NjZDpwF8E5Nmr3kk3HNzPxGeGKW511rIqCW2H2Hb7Qebu5mw35w=w408-h306-k-no",
+    "kgmid": "/g/1hd_4lgsy"
+  },
+  {
+    "title": "Alpha Korean Language School",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6923070",
+    "phoneUnformatted": "+97716923070",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6654709,
+      "lng": 85.4237743
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJD3oaJSIa6zkRlUqzgbl_2Ck",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1a22251a7a0f:0x29d87fb981b34a95",
+    "cid": "3015300385246235285",
+    "reviewsCount": 17,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 2,
+      "fourStar": 2,
+      "fiveStar": 12
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:58.364Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Alpha%20Korean%20Language%20School&query_place_id=ChIJD3oaJSIa6zkRlUqzgbl_2Ck",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 51,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyU7QkygW1wHmiJBc-fr2075OT5uOFA_z6IokiXR8E74l00Y6i8Y4IAdZb7g7dXuS1_igyszjOiOT_1dykz_YKJIO2IdTGUKFeA-LBeJYnslUuZMj8JwnolYnEZ_yaTgb3bSUm3jA=w408-h545-k-no",
+    "kgmid": "/g/11cp7kxkz6"
+  },
+  {
+    "title": "Ashai Japanese Language & Culture Center",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC8F+9VQ, Suryabinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+9VQ, Suryabinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613625",
+    "phoneUnformatted": "+97716613625",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.665965,
+      "lng": 85.424719
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJvfGRWKYa6zkRheBKIMZVWQs",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aa65891f1bd:0xb5955c6204ae085",
+    "cid": "817779116778119301",
+    "reviewsCount": 7,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 7
+    },
+    "imagesCount": 19,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:58.364Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ashai%20Japanese%20Language%20%26%20Culture%20Center&query_place_id=ChIJvfGRWKYa6zkRheBKIMZVWQs",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 55,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6b7X90RjadIEftgqYEgudR7pK234rX6ySJLa98Gw_A2gvrnuK1tPTgc1DxgmHqB3cNGNNDpmlbGqRS8kESsuHoznOOhOTzjQHQoKTCUKtHCJ_Wm36XGFrUQ_haYcAsBO4qjUpOW2YlW8=w408-h306-k-no",
+    "kgmid": "/g/11b6s16lwy"
+  },
+  {
+    "title": "Saino Japanese Language School",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.sainojls.edu.np/",
+    "phone": "+977 985-1199310",
+    "phoneUnformatted": "+9779851199310",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659563,
+      "lng": 85.4246072
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI6S7DvQb6zkRYdzUO0mBw6I",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1bf40ebba423:0xa2c381493bd4dc61",
+    "cid": "11728360006139305057",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        },
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        },
+        {
+          "Wheelchair accessible seating": true
+        },
+        {
+          "Assistive hearing loop": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        },
+        {
+          "Paid parking garage": true
+        },
+        {
+          "Paid parking lot": true
+        },
+        {
+          "Paid street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saino%20Japanese%20Language%20School&query_place_id=ChIJI6S7DvQb6zkRYdzUO0mBw6I",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 64,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPOXSfY6RyTNfF1_SrOauRqAC0lU7S94AAAESQy=w408-h272-k-no",
+    "kgmid": "/g/11x8lq31m8"
+  },
+  {
+    "title": "RC Language & Study Abroad Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1271974",
+    "phoneUnformatted": "+9779841271974",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6662511,
+      "lng": 85.4264714
+    },
+    "totalScore": 1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJC13yPKYa6zkRo-zbx8IQEZM",
+    "categories": [
+      "Language school",
+      "Educational consultant"
+    ],
+    "fid": "0x39eb1aa63cf25d0b:0x931110c2c7dbeca3",
+    "cid": "10597269826942266531",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 50,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=RC%20Language%20%26%20Study%20Abroad%20Pvt.%20Ltd.&query_place_id=ChIJC13yPKYa6zkRo-zbx8IQEZM",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 71,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNPdQViF_dpWUTi5Q_UWeuMT8c5QX8l6RuiMRrN=w408-h305-k-no",
+    "kgmid": "/g/11b6rxspcy"
+  },
+  {
+    "title": "Kavi Ram Language Instutute",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC9H+Q36, Pottery Square Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+Q36, Pottery Square Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6611311",
+    "phoneUnformatted": "+97716611311",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.669418,
+      "lng": 85.4276529
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ74CUXa8a6zkRFGPg8XuCUOs",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aaf5d9480ef:0xeb50827bf1e06314",
+    "cid": "16956196065900520212",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kavi%20Ram%20Language%20Instutute&query_place_id=ChIJ74CUXa8a6zkRFGPg8XuCUOs",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 75,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=H-Qzcl6OYcUcO5FHdiXUzg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=276.5525&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6qf915t"
+  },
+  {
+    "title": "Awakening Language Instutute",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC8F+JWR, गःपलि मार्ग, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+JWR, गःपलि मार्ग",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616028",
+    "phoneUnformatted": "+97716616028",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.666621,
+      "lng": 85.424781
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJox9OYKYa6zkRtm6The1BxqQ",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aa6604e1fa3:0xa4c641ed85936eb6",
+    "cid": "11873249956012977846",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Awakening%20Language%20Instutute&query_place_id=ChIJox9OYKYa6zkRtm6The1BxqQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 78,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=fu-OJnTddbuIezxHvT0WKQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=323.12686&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6qjmjf2"
+  },
+  {
+    "title": "Bhaktapur Japanese Language Institute",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC8G+25H, Suryabinayak Chowk, Bhaktapur Nepal, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8G+25H, Suryabinayak Chowk, Bhaktapur Nepal, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5092718",
+    "phoneUnformatted": "+97715092718",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6650691,
+      "lng": 85.4254818
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ82fXTKYa6zkRtFzmWn9WWbo",
+    "categories": [
+      "Language school",
+      "Educational consultant"
+    ],
+    "fid": "0x39eb1aa64cd767f3:0xba59567f5ae65cb4",
+    "cid": "13427858868967726260",
+    "reviewsCount": 22,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 17
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.378Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Japanese%20Language%20Institute&query_place_id=ChIJ82fXTKYa6zkRtFzmWn9WWbo",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 80,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEmeWi3bGBzffxY0PvIyPr5NiWWOf-U4IYniLqXS61m9V9SH3M2ME1_29uu5SurNTpWhG43BASOCr32weMC6QyJV7h1AQpeTQV45_sWlZVZOu0xHqaUUIYMhmrQ-m3_omuI1TSlqZs2Zb0_GC8NjZDpwF8E5Nmr3kk3HNzPxGeGKW511rIqCW2H2Hb7Qebu5mw35w=w408-h306-k-no",
+    "kgmid": "/g/1hd_4lgsy"
+  },
+  {
+    "title": "हान्गुक एजुकेशन Korean Vasa Centre",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MC8G+98X, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+98X, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.hangukeducation.com/",
+    "phone": "+977 1-6620657",
+    "phoneUnformatted": "+97716620657",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6659902,
+      "lng": 85.4258604
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ9_KoR6Ya6zkRSefaPS8GKCI",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aa647a8f2f7:0x2228062f3ddae749",
+    "cid": "2461223996328961865",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:00.191Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 6:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 6:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%B9%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%97%E0%A5%81%E0%A4%95%20%E0%A4%8F%E0%A4%9C%E0%A5%81%E0%A4%95%E0%A5%87%E0%A4%B6%E0%A4%A8%20Korean%20Vasa%20Centre&query_place_id=ChIJ9_KoR6Ya6zkRSefaPS8GKCI",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 82,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhF0Aw8QzKFZU7ojys5nycqKNipCm1EtiTLY_OuFgG9ozB3rm5bFE5-V_WgIrG02NCKwxU8CHVnoiy_AZSjwb0JBY3hjHW931AszkSJH3RLsO7x4qmGOqJC3AydIaQdl8_M54asRARlaToBwkjrNoiu1nN4wn9YHlE8RukyQ4Rd1Ht2ZZrNwKP-9bDE6zIzRJH9F26w=w408-h306-k-no",
+    "kgmid": "/g/11b6rrpkxr"
+  },
+  {
+    "title": "Language Classes (IELTS, PTE, Japanese and Korean)",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "Tourism Market, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "Tourism Market",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.odc.edu.np/",
+    "phone": "+977 981-3429984",
+    "phoneUnformatted": "+9779813429984",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.667468,
+      "lng": 85.4267195
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ15YdV8Ub6zkRWN_MNDa0quA",
+    "categories": [
+      "Language school",
+      "Airline ticket agency",
+      "Educational consultant"
+    ],
+    "fid": "0x39eb1bc5571d96d7:0xe0aab43634ccdf58",
+    "cid": "16188949955443744600",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:00.191Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        },
+        {
+          "Online classes": false
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Language%20Classes%20(IELTS%2C%20PTE%2C%20Japanese%20and%20Korean)&query_place_id=ChIJ15YdV8Ub6zkRWN_MNDa0quA",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 84,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZaFuLMVEv3aslLzOinQrxQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=174.6929&pitch=0&thumbfov=100",
+    "kgmid": "/g/11ptqvj5rx"
+  },
+  {
+    "title": "YOUKOSO JAPANESE LANGUAGE CENTRE",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "7 Inacho - Hanumanghat Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "7 Inacho - Hanumanghat Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617687",
+    "phoneUnformatted": "+97716617687",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6716781,
+      "lng": 85.4348008
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJodqfQqgZ6zkRHqYRDdMOKE4",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb19a8429fdaa1:0x4e280ed30d11a61e",
+    "cid": "5631767633646954014",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 0
+    },
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:59.649Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=YOUKOSO%20JAPANESE%20LANGUAGE%20CENTRE&query_place_id=ChIJodqfQqgZ6zkRHqYRDdMOKE4",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 53,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFKHE7c7eyASPpan9f1HroKJv4l87XaTA4_5na_fHMmLckDkq5msBlydBnCCVtb3G6UuGbHbI8NvYdHnnNYqKfm7_v1em5tnQviIYR47skcamzhQPLOVGcjNjGdjoThT5yKyecNdmj_eGm4wX9yoJyBIuDSc-MDQ0sf-9miurJl_cE6nfxAxDGkEpSsHl_Zat-TcKQ=w408-h306-k-no",
+    "kgmid": "/g/11b6g8ptxy"
+  },
+  {
+    "title": "Nyatapola Japanese Institute",
+    "price": null,
+    "categoryName": "Language school",
+    "address": "MCCJ+XH9, दाम्ला गल्लि, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCJ+XH9, दाम्ला गल्लि",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1394404",
+    "phoneUnformatted": "+9779841394404",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.672412,
+      "lng": 85.4314699
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl4WabK4a6zkROmVkwetNoaQ",
+    "categories": [
+      "Language school"
+    ],
+    "fid": "0x39eb1aae6c9a8597:0xa4a14debc164653a",
+    "cid": "11862848568427832634",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nyatapola%20Japanese%20Institute&query_place_id=ChIJl4WabK4a6zkROmVkwetNoaQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 65,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFtKG_V5LbldD0m4FKh5cwFV1ci9RiuZIaWgyhna_QHr_KUC5L6GbJMqplFF_8IYDkn5V6MG3xRUbo9vS__NsW6ah74Dy4orjfKxNRVDeOKchsE6k8GF7mL7RAsuwHgvx24-ZNn5T2gOYxKm7QieScm8hOM1JqrFhPJtu4fgPBCMRUJgswkSlrAF67vHqedLMTMf30=w408-h306-k-no",
+    "kgmid": "/g/11b6qpjq6g"
+  }
+]

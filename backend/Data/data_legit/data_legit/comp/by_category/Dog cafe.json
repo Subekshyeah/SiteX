@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Suwal's Café",
+    "price": null,
+    "categoryName": "Dog cafe",
+    "address": "MC2G+FVV, Suryabinayak, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC2G+FVV",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6512426,
+      "lng": 85.4271773
+    },
+    "totalScore": 3.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbdDu9w8Q6zkRVDr59lJIqmI",
+    "categories": [
+      "Dog cafe"
+    ],
+    "fid": "0x39eb100ff7eed06d:0x62aa4852f6f93a54",
+    "cid": "7109574482925795924",
+    "reviewsCount": 17,
+    "imagesCount": 15,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:55:54.497Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Suwal's%20Caf%C3%A9&query_place_id=ChIJbdDu9w8Q6zkRVDr59lJIqmI",
+    "searchPageUrl": "https://www.google.com/maps/search/cafe/@27.64968049306757,85.42249999999997,17z?hl=en",
+    "searchString": "cafe",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzA_Kmycrfg3R5bfEgTOMEi5xs9poUD6JU0zGofZQLKsloDufHqUp8g2UtrgTp8XIDEq6IO5XsYdlK4XUNht4Xd5loc240nn2FKwNoBYRd8ByNcgixCgBQpOQ7IBPbPardSrNkZ=w408-h544-k-no",
+    "kgmid": "/g/11dxchfnlz"
+  }
+]

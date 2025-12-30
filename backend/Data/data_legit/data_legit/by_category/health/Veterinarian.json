@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Gyan Ganga Group Pvt Ltd",
+    "price": null,
+    "categoryName": "Veterinarian",
+    "address": "Kamalbinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 980-2348864",
+    "phoneUnformatted": "+9779802348864",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6795143,
+      "lng": 85.4427105
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJg-4lqBMF6zkRak76hLIP1gw",
+    "categories": [
+      "Veterinarian",
+      "Laboratory",
+      "Pet store",
+      "Veterinary pharmacy"
+    ],
+    "fid": "0x39eb0513a825ee83:0xcd60fb284fa4e6a",
+    "cid": "924944032880807530",
+    "reviewsCount": 7,
+    "imagesCount": 21,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:37.259Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gyan%20Ganga%20Group%20Pvt%20Ltd&query_place_id=ChIJg-4lqBMF6zkRak76hLIP1gw",
+    "searchPageUrl": "https://www.google.com/maps/search/pharmacy/@27.682206976617763,85.44587990355555,17z?hl=en",
+    "searchString": "pharmacy",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMa4Rp4Wze1v5fLh6wA1KD8VOjNxxw19rKitjB_=w425-h240-k-no",
+    "kgmid": "/g/11v6k9k3rq"
+  }
+]

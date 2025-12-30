@@ -1,0 +1,907 @@
+[
+  {
+    "title": "Safal Ayurveda Pharma",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "MC8F+VH4, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+VH4",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0465471",
+    "phoneUnformatted": "+9779860465471",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6671694,
+      "lng": 85.4240416
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjWvZW0Ib6zkRuP96xb_1q_A",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1b425bd96b8d:0xf0abf5bfc57affb8",
+    "cid": "17342224994120957880",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:50.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Safal%20Ayurveda%20Pharma&query_place_id=ChIJjWvZW0Ib6zkRuP96xb_1q_A",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 35,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzE-VkedxjuMPGP-JHFGdAs1QrRrXNXg6-HuNdrCkppT1ADhPa0BfqMyIH9w8bDPAwLIljhr6eu93GjUIu5QyfBJC1X4fNNRq8d4agbzNa1bS55EP4wB-K114lxjCLHsYpDaHGgrQ=w408-h723-k-no",
+    "kgmid": "/g/11tdqwmrr9"
+  },
+  {
+    "title": "Aswini Ayurved",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "Gapali- suryabinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Gapali- suryabinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6615930",
+    "phoneUnformatted": "+97716615930",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6660659,
+      "lng": 85.4255741
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI87wvPEb6zkR7nGPoynQzdE",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1bf1bcf0ce23:0xd1cdd029a38f71ee",
+    "cid": "15117968401408946670",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 30,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.087Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:30 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aswini%20Ayurved&query_place_id=ChIJI87wvPEb6zkR7nGPoynQzdE",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNfpShY_SA4s3qNrusupt4DjgTn9JGrBpPxTsGr=w523-h240-k-no",
+    "kgmid": "/g/11rr2jl07t"
+  },
+  {
+    "title": "Joshi Ayurved",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "MCCG+4QJ, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCG+4QJ",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1648555",
+    "phoneUnformatted": "+9779841648555",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6706198,
+      "lng": 85.4268092
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ0-36tEMb6zkRiFTCWVq6jko",
+    "categories": [
+      "Ayurvedic clinic",
+      "Herbal medicine store",
+      "Pharmacy"
+    ],
+    "fid": "0x39eb1b43b4faedd3:0x4a8eba5a59c25488",
+    "cid": "5372436302715311240",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.875Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "additionalOpeningHours": {
+      "Online service hours": [
+        {
+          "day": "Monday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Tuesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Wednesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Thursday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Friday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Sunday",
+          "hours": "9 AM–5 PM"
+        }
+      ]
+    },
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Joshi%20Ayurved&query_place_id=ChIJ0-36tEMb6zkRiFTCWVq6jko",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 46,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=d1_l4RNaxfsWN_5RjS-N0g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=31.555782&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rhvvh94f"
+  },
+  {
+    "title": "Amba ayurvedic pharma",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "Suryabinayak Road to ganesh mandir 100 metre, Bhaktapur, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Suryabinayak Road to ganesh mandir 100 metre",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3477369",
+    "phoneUnformatted": "+9779843477369",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6645248,
+      "lng": 85.4257775
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjfxNOqgb6zkR_uCR9H5difA",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1ba83a4dfc8d:0xf0895d7ef491e0fe",
+    "cid": "17332487440762527998",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.876Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Amba%20ayurvedic%20pharma&query_place_id=ChIJjfxNOqgb6zkR_uCR9H5difA",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 48,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=LfHN_9gA4TAg2f0weGgv0A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=30.542444&pitch=0&thumbfov=100",
+    "kgmid": "/g/11pz86m5kj"
+  },
+  {
+    "title": "Safal Ayurveda Pharma",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "MC8F+VH4, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+VH4",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0465471",
+    "phoneUnformatted": "+9779860465471",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6671694,
+      "lng": 85.4240416
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjWvZW0Ib6zkRuP96xb_1q_A",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1b425bd96b8d:0xf0abf5bfc57affb8",
+    "cid": "17342224994120957880",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:51.004Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Safal%20Ayurveda%20Pharma&query_place_id=ChIJjWvZW0Ib6zkRuP96xb_1q_A",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 39,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzE-VkedxjuMPGP-JHFGdAs1QrRrXNXg6-HuNdrCkppT1ADhPa0BfqMyIH9w8bDPAwLIljhr6eu93GjUIu5QyfBJC1X4fNNRq8d4agbzNa1bS55EP4wB-K114lxjCLHsYpDaHGgrQ=w408-h723-k-no",
+    "kgmid": "/g/11tdqwmrr9"
+  },
+  {
+    "title": "Aswini Ayurved",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "Gapali- suryabinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Gapali- suryabinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6615930",
+    "phoneUnformatted": "+97716615930",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6660659,
+      "lng": 85.4255741
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI87wvPEb6zkR7nGPoynQzdE",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1bf1bcf0ce23:0xd1cdd029a38f71ee",
+    "cid": "15117968401408946670",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 30,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:53.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:30 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aswini%20Ayurved&query_place_id=ChIJI87wvPEb6zkR7nGPoynQzdE",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 38,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNfpShY_SA4s3qNrusupt4DjgTn9JGrBpPxTsGr=w523-h240-k-no",
+    "kgmid": "/g/11rr2jl07t"
+  },
+  {
+    "title": "Joshi Ayurved",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "MCCG+4QJ, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCG+4QJ",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1648555",
+    "phoneUnformatted": "+9779841648555",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6706198,
+      "lng": 85.4268092
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ0-36tEMb6zkRiFTCWVq6jko",
+    "categories": [
+      "Ayurvedic clinic",
+      "Herbal medicine store",
+      "Pharmacy"
+    ],
+    "fid": "0x39eb1b43b4faedd3:0x4a8eba5a59c25488",
+    "cid": "5372436302715311240",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:54.470Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "additionalOpeningHours": {
+      "Online service hours": [
+        {
+          "day": "Monday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Tuesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Wednesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Thursday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Friday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Sunday",
+          "hours": "9 AM–5 PM"
+        }
+      ]
+    },
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Joshi%20Ayurved&query_place_id=ChIJ0-36tEMb6zkRiFTCWVq6jko",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 47,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=d1_l4RNaxfsWN_5RjS-N0g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=31.555782&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rhvvh94f"
+  },
+  {
+    "title": "Amba ayurvedic pharma",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "Suryabinayak Road to ganesh mandir 100 metre, Bhaktapur, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Suryabinayak Road to ganesh mandir 100 metre",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3477369",
+    "phoneUnformatted": "+9779843477369",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6645248,
+      "lng": 85.4257775
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjfxNOqgb6zkR_uCR9H5difA",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1ba83a4dfc8d:0xf0895d7ef491e0fe",
+    "cid": "17332487440762527998",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:54.470Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Amba%20ayurvedic%20pharma&query_place_id=ChIJjfxNOqgb6zkR_uCR9H5difA",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 49,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=LfHN_9gA4TAg2f0weGgv0A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=30.542444&pitch=0&thumbfov=100",
+    "kgmid": "/g/11pz86m5kj"
+  },
+  {
+    "title": "Haridra Ayurved Pharma",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "Suryabinayak - 5, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Suryabinayak - 5",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-2195839",
+    "phoneUnformatted": "+9779862195839",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6700513,
+      "lng": 85.4051675
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJkweoFjwb6zkRBrkgU3qn1aU",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1b3c16a80793:0xa5d5a77a5320b906",
+    "cid": "11949641330119981318",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:36.171Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8:30 PM"
+      }
+    ],
+    "additionalOpeningHours": {
+      "Delivery": [
+        {
+          "day": "Monday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Tuesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Wednesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Thursday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Friday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Sunday",
+          "hours": "9 AM–5 PM"
+        }
+      ]
+    },
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Haridra%20Ayurved%20Pharma&query_place_id=ChIJkweoFjwb6zkRBrkgU3qn1aU",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.40294689170369,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 26,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNaawoyjRf0VUOfPVAtjDLa0adzzn583LiHK1OG=w408-h543-k-no",
+    "kgmid": "/g/11t2r56nf6"
+  },
+  {
+    "title": "Asia ayurveda clinic",
+    "price": null,
+    "categoryName": "Ayurvedic clinic",
+    "address": "MCC5+M4H, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCC5+M4H",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6716863,
+      "lng": 85.4078543
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJmVpoLAAb6zkRXvDp1JPMVJg",
+    "categories": [
+      "Ayurvedic clinic"
+    ],
+    "fid": "0x39eb1b002c685a99:0x9854cc93d4e9f05e",
+    "cid": "10976623127113101406",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:24.222Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Asia%20ayurveda%20clinic&query_place_id=ChIJmVpoLAAb6zkRXvDp1JPMVJg",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.41153349407406,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=jjDRjWll7sqeh6w2VFgWJg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=221.16353&pitch=0&thumbfov=100",
+    "kgmid": "/g/11yj352yc6"
+  }
+]

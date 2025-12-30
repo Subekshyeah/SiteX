@@ -1,0 +1,208 @@
+[
+  {
+    "title": "KFC Head Office",
+    "price": null,
+    "categoryName": "American restaurant",
+    "address": "MCF2+7J5, Madhyapur Thimi, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCF2+7J5",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.673364,
+      "lng": 85.4014606
+    },
+    "totalScore": 2.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJfb_nXAAb6zkRB0Vz9CJiZrw",
+    "categories": [
+      "American restaurant"
+    ],
+    "fid": "0x39eb1b005ce7bf7d:0xbc666222f4734507",
+    "cid": "13575646029024544007",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:54:29.528Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=KFC%20Head%20Office&query_place_id=ChIJfb_nXAAb6zkRB0Vz9CJiZrw",
+    "searchPageUrl": "https://www.google.com/maps/search/non%20vegetarian%20restaurant/@27.672500000000003,85.40532959120101,17z?hl=en",
+    "searchString": "non vegetarian restaurant",
+    "language": "en",
+    "rank": 72,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nm78MWqhDkWKk5MbhqNlDw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=211.7156&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vz48h78s"
+  },
+  {
+    "title": "Him babu",
+    "price": null,
+    "categoryName": "American restaurant",
+    "address": "MC5G+942, F099, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC5G+942, F099",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.658384,
+      "lng": 85.425281
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOYwbBsUR6zkRXaYCVhBFHzo",
+    "categories": [
+      "American restaurant"
+    ],
+    "fid": "0x39eb11c5061b8c39:0x3a1f45105602a65d",
+    "cid": "4188142114942658141",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:54:57.376Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Dinner": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Him%20babu&query_place_id=ChIJOYwbBsUR6zkRXaYCVhBFHzo",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.65728699537838,85.43108520439945,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=RVmYrVTFBW-ZfhHmNyT82A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=278.12015&pitch=0&thumbfov=100",
+    "kgmid": "/g/11p0klv8g3"
+  }
+]

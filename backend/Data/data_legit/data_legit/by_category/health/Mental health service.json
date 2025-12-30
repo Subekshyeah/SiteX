@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Aashakiran Psychological Counseling And Autism Care Center",
+    "price": null,
+    "categoryName": "Mental health service",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-1668133",
+    "phoneUnformatted": "+9779761668133",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6643255,
+      "lng": 85.4264016
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbTCpT_Ub6zkRakazjK80Un4",
+    "categories": [
+      "Mental health service"
+    ],
+    "fid": "0x39eb1bf54fa9306d:0x7e5234af8cb3466a",
+    "cid": "9102395725453674090",
+    "reviewsCount": 3,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:53.263Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "1:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aashakiran%20Psychological%20Counseling%20And%20Autism%20Care%20Center&query_place_id=ChIJbTCpT_Ub6zkRakazjK80Un4",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhpuJ5525RFv8hcpaG6fT4hMhMW2T2cWduXKfCIHoTDN9Xcu-wT1_hnH7XY_G_LtaU64uS9nraj6hDgfnCarWzhlXAGlpTVS3wA0Hv8iUL1JIgnTZfyF6mwD81RWol0b2xLtgH=w532-h240-k-no",
+    "kgmid": "/g/11sk2nxzj4"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Healt and fitness tips",
+    "price": null,
+    "categoryName": "Self service health station",
+    "address": "MCFG+GVW, Kathmandu 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+GVW",
+    "city": "Kathmandu",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6738729,
+      "lng": 85.4272013
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIWrW5BYb6zkR8rMsgTyTFbE",
+    "categories": [
+      "Self service health station"
+    ],
+    "fid": "0x39eb1b16e4d66a21:0xb115933c812cb3f2",
+    "cid": "12760267007298679794",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:29.789Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Healt%20and%20fitness%20tips&query_place_id=ChIJIWrW5BYb6zkR8rMsgTyTFbE",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=U0T8W1nXdil8KVW6mGGq2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=101.72272&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rfy61s6_"
+  }
+]
