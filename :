@@ -36,21 +36,19 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-const darkColor = '#111827'
-
 type CountItem = { POI: string; count: number }
 
 export function ChartRadarLinesOnly({ data }: { data?: CountItem[] }) {
   const display = data && data.length > 0 ? data : chartData
   return (
-    <Card className="border-0">
+    <Card>
       <CardContent className="pb-0">
         <ChartContainer config={chartConfig} className="mx-auto aspect-square max-h-[250px]">
           <RadarChart data={display} cx="50%" cy="50%" outerRadius="80%">
             <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="line" />} />
             {/* use POI as the angle axis and 'count' as the value */}
-            <PolarAngleAxis dataKey="POI" tick={{ fill: darkColor, fontSize: 11 }} />
-            <PolarGrid radialLines={true} />
+            <PolarAngleAxis dataKey="POI" />
+            <PolarGrid radialLines={false} />
             <Radar
               dataKey="count"
               fill={chartConfig.count.color}
