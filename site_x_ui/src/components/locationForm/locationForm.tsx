@@ -8,7 +8,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
 import { ChartRadarLinesOnly } from "@/components/ui/chart-radar-lines-only";
 import { MapPin, X } from "lucide-react";
 import * as L from "leaflet";
@@ -66,6 +65,17 @@ const selectedPoiIcon = (type?: string) => {
   return L.divIcon({ className: 'poi-selected-marker', html, iconSize: [36, 36], iconAnchor: [18, 36] });
 };
 
+const DEFAULT_TOLET_POINTS: Array<{ lat: number; lng: number }> = [
+  { lat: 27.670535, lng: 85.424404 },
+  { lat: 27.672540, lng: 85.429875 },
+  { lat: 27.672980, lng: 85.431220 },
+  { lat: 27.671420, lng: 85.428640 },
+  { lat: 27.673610, lng: 85.426980 },
+  { lat: 27.669980, lng: 85.430540 },
+  { lat: 27.670820, lng: 85.432180 },
+  { lat: 27.671860, lng: 85.425960 },
+];
+
 // Fix Leaflet default icons
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -78,19 +88,16 @@ L.Icon.Default.mergeOptions({
 function MapPicker({
   lat,
   lng,
-  setLat,
-  setLng,
+  onPick,
 }: {
   lat: number;
   lng: number;
-  setLat: (v: number) => void;
-  setLng: (v: number) => void;
+  onPick: (lat: number, lng: number) => void;
 }) {
   function MapEvents() {
     useMapEvents({
       click(e) {
-        setLat(Number(e.latlng.lat.toFixed(6)));
-        setLng(Number(e.latlng.lng.toFixed(6)));
+        onPick(Number(e.latlng.lat.toFixed(6)), Number(e.latlng.lng.toFixed(6)));
       },
     });
     return null;
@@ -98,10 +105,31 @@ function MapPicker({
   return (
     <>
       <MapEvents />
-      {lat && lng && <Marker position={[lat, lng]} />}
+      {Number.isFinite(lat) && Number.isFinite(lng) && <Marker position={[lat, lng]} />}
     </>
   );
 }
+
+const pointPickIcon = L.divIcon({
+  className: "point-pick-marker",
+  html: `<div style="width:18px;height:18px;border-radius:9999px;background:#2563eb;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.2)"></div>`,
+  iconSize: [18, 18],
+  iconAnchor: [9, 9],
+});
+
+const toLetPickIcon = L.divIcon({
+  className: "tolet-pick-marker",
+  html: `<div style="width:18px;height:18px;border-radius:9999px;background:#16a34a;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.2)"></div>`,
+  iconSize: [18, 18],
+  iconAnchor: [9, 9],
+});
+
+const toLetHoverIcon = L.divIcon({
+  className: "tolet-hover-marker",
+  html: `<div style="width:18px;height:18px;border-radius:9999px;background:rgba(22,163,74,0.5);border:2px dashed #16a34a;box-shadow:0 2px 6px rgba(0,0,0,0.15)"></div>`,
+  iconSize: [18, 18],
+  iconAnchor: [9, 9],
+});
 
 // We'll replace MapFeatures with a version that accepts a datasetId and uses per-dataset icons.
 function getDatasetIcon(type: string) {
@@ -245,9 +273,15 @@ function MapRefSetter({ mapRef }: { mapRef: React.MutableRefObject<L.Map | null>
 }
 
 export default function LocationForm() {
-  const [lat, setLat] = useState<number>(27.670587); // Kathmandu
+  const [lat, setLat] = useState<number>(27.670587);
   const [lng, setLng] = useState<number>(85.420868);
-  const [radiusKm, setRadiusKm] = useState<number>(1.0);
+  const [analysisMode, setAnalysisMode] = useState<"point" | "tolet">("point");
+  const [pointList, setPointList] = useState<Array<{ lat: number; lng: number }>>([]);
+  const [toLetList, setToLetList] = useState<Array<{ lat: number; lng: number }>>(DEFAULT_TOLET_POINTS);
+  const [toLetSelected, setToLetSelected] = useState<Record<string, boolean>>({});
+  const [pointSelected, setPointSelected] = useState<Record<string, boolean>>({});
+  const [hoverToLet, setHoverToLet] = useState<{ lat: number; lng: number } | null>(null);
+  const [radiusKm, setRadiusKm] = useState<number>(0.5);
   const [poisData, setPoisData] = useState<any | null>(null);
   const [poisFlat, setPoisFlat] = useState<Array<any>>([]);
   const [poiLoading, setPoiLoading] = useState(false);
@@ -291,15 +325,143 @@ export default function LocationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({ name, email, address, lat, lng });
-    setLastSubmitted({ lat, lng, at: Date.now() });
+
+    const activeList = analysisMode === "point"
+      ? (selectedPointList.length > 0 ? selectedPointList : pointList)
+      : selectedToLetList;
+    if (analysisMode === "tolet" && activeList.length === 0) {
+      alert("Select at least one to-let location.");
+      return;
+    }
+    const list = activeList.length > 0 ? activeList : [{ lat, lng }];
+    const listForSubmit: Array<{ lat: number; lng: number }> = list;
+    const primary = listForSubmit[0] || { lat, lng };
+    setLastSubmitted({ lat: primary.lat, lng: primary.lng, at: Date.now() });
+
+    const pointsParam = listForSubmit
+      .map((p: { lat: number; lng: number }) => `${Number(p.lat).toFixed(6)},${Number(p.lng).toFixed(6)}`)
+      .join(";");
+
     // navigate to React result route (reads query params)
-    const params = new URLSearchParams({ name: String(name || ''), lat: String(lat), lng: String(lng) });
+    const params = new URLSearchParams({
+      name: String(name || ""),
+      mode: analysisMode,
+      pick: "multiple",
+      lat: String(primary.lat),
+      lng: String(primary.lng),
+    });
+    if (pointsParam) params.set("points", pointsParam);
     // navigate to /result so SPA can handle it; fallback to result.html if not routed
     try {
       window.location.href = `/result?${params.toString()}`;
     } catch {
       window.location.href = `/result.html?${params.toString()}`;
     }
+  };
+
+  const toKey = (p: { lat: number; lng: number }) => `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+  const mergeUniquePoints = (base: Array<{ lat: number; lng: number }>, incoming: Array<{ lat: number; lng: number }>) => {
+    const next = [...base];
+    for (const p of incoming) {
+      const exists = next.some((it) => Math.abs(it.lat - p.lat) < 1e-6 && Math.abs(it.lng - p.lng) < 1e-6);
+      if (!exists) next.push(p);
+    }
+    return next;
+  };
+
+  useEffect(() => {
+    try {
+      const savedPointList = window.localStorage.getItem("siteX.pointList");
+      const savedPointSelected = window.localStorage.getItem("siteX.pointSelected");
+      const savedToLetList = window.localStorage.getItem("siteX.toLetList");
+      const savedToLetSelected = window.localStorage.getItem("siteX.toLetSelected");
+
+      if (savedPointList) {
+        const parsed = JSON.parse(savedPointList) as Array<{ lat: number; lng: number }>;
+        if (Array.isArray(parsed)) setPointList(parsed);
+      }
+      if (savedPointSelected) {
+        const parsed = JSON.parse(savedPointSelected) as Record<string, boolean>;
+        if (parsed && typeof parsed === "object") setPointSelected(parsed);
+      }
+      if (savedToLetList) {
+        const parsed = JSON.parse(savedToLetList) as Array<{ lat: number; lng: number }>;
+        if (Array.isArray(parsed)) setToLetList(mergeUniquePoints(DEFAULT_TOLET_POINTS, parsed));
+      }
+      if (savedToLetSelected) {
+        const parsed = JSON.parse(savedToLetSelected) as Record<string, boolean>;
+        if (parsed && typeof parsed === "object") setToLetSelected(parsed);
+      }
+    } catch {
+      // ignore storage errors
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem("siteX.pointList", JSON.stringify(pointList));
+      window.localStorage.setItem("siteX.pointSelected", JSON.stringify(pointSelected));
+      window.localStorage.setItem("siteX.toLetList", JSON.stringify(toLetList));
+      window.localStorage.setItem("siteX.toLetSelected", JSON.stringify(toLetSelected));
+    } catch {
+      // ignore storage errors
+    }
+  }, [pointList, pointSelected, toLetList, toLetSelected]);
+
+  const selectedToLetList = useMemo(() => {
+    return toLetList.filter((p) => toLetSelected[toKey(p)]);
+  }, [toLetList, toLetSelected]);
+
+  const selectedPointList = useMemo(() => {
+    return pointList.filter((p) => pointSelected[toKey(p)]);
+  }, [pointList, pointSelected]);
+
+  useEffect(() => {
+    if (selectedPointList.length === 0) return;
+    setToLetList((prev) => mergeUniquePoints(prev, selectedPointList));
+    setToLetSelected((prev) => {
+      const next = { ...prev };
+      for (const p of selectedPointList) next[toKey(p)] = true;
+      return next;
+    });
+  }, [selectedPointList]);
+
+  const mapPickList = useMemo(() => {
+    if (analysisMode === "point") {
+      return selectedPointList.length > 0 ? selectedPointList : pointList;
+    }
+    return selectedToLetList;
+  }, [analysisMode, pointList, selectedPointList, selectedToLetList]);
+
+  const addPointToActiveList = (p: { lat: number; lng: number }) => {
+    setLat(p.lat);
+    setLng(p.lng);
+    if (analysisMode === "point") {
+      setPointList((prev) => {
+        const exists = prev.some((it) => Math.abs(it.lat - p.lat) < 1e-6 && Math.abs(it.lng - p.lng) < 1e-6);
+        return exists ? prev : [...prev, p];
+      });
+      setPointSelected((prev) => ({ ...prev, [toKey(p)]: true }));
+    } else {
+      setToLetList((prev) => {
+        const exists = prev.some((it) => Math.abs(it.lat - p.lat) < 1e-6 && Math.abs(it.lng - p.lng) < 1e-6);
+        return exists ? prev : [...prev, p];
+      });
+      setToLetSelected((prev) => ({ ...prev, [toKey(p)]: true }));
+    }
+  };
+
+  const removeFromPointList = (idx: number) => {
+    setPointList((prev) => {
+      const next = prev.filter((_, i) => i !== idx);
+      return next;
+    });
+    setPointSelected((prev) => {
+      const next = { ...prev };
+      const p = pointList[idx];
+      if (p) delete next[toKey(p)];
+      return next;
+    });
   };
 
   // Haversine distance utility (km)
@@ -791,6 +953,26 @@ export default function LocationForm() {
                 />
               </div>
 
+              <div className="space-y-2">
+                <Label>Analysis Mode</Label>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setAnalysisMode("point")}
+                    className={`px-3 py-1 rounded text-sm border ${analysisMode === "point" ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}
+                  >
+                    Point pick
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setAnalysisMode("tolet")}
+                    className={`px-3 py-1 rounded text-sm border ${analysisMode === "tolet" ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}
+                  >
+                    To-let pick
+                  </button>
+                </div>
+              </div>
+
               {/* <div>
                 <Label htmlFor="email">Email</Label>
                 <Input
@@ -826,6 +1008,122 @@ export default function LocationForm() {
                   />
                 </div>
               </div>
+
+              {analysisMode === "point" ? (
+                <div className="space-y-2">
+                  <Label>Point list</Label>
+                  <div className="flex gap-2">
+                    <Button type="button" variant="outline" onClick={() => setPointSelected({})}>
+                      Clear selection
+                    </Button>
+                    <Button type="button" variant="outline" onClick={() => { setPointList([]); setPointSelected({}); }}>
+                      Clear all
+                    </Button>
+                  </div>
+                  <div className="max-h-40 overflow-auto rounded border p-2 text-sm">
+                    {pointList.length === 0 ? (
+                      <div className="text-muted-foreground text-xs">No locations added.</div>
+                    ) : (
+                      <ul className="space-y-1">
+                        {pointList.map((p, idx) => {
+                          const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                          return (
+                            <li
+                              key={`point-${idx}`}
+                              className="flex items-center justify-between gap-2"
+                              onMouseEnter={() => {
+                                setLat(p.lat);
+                                setLng(p.lng);
+                                mapRef.current?.flyTo([p.lat, p.lng], 18);
+                              }}
+                              onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
+                            >
+                              <label className="flex items-center gap-2">
+                                <input
+                                  type="checkbox"
+                                  checked={!!pointSelected[key]}
+                                  onChange={(e) => setPointSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
+                                />
+                                <span className="font-mono">{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
+                              </label>
+                              <button
+                                type="button"
+                                onClick={() => removeFromPointList(idx)}
+                                className="text-xs text-slate-500 hover:underline"
+                              >
+                                remove
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  <Label>To-let list</Label>
+                  <div className="flex gap-2">
+                    <Button type="button" variant="outline" onClick={() => setToLetSelected({})}>
+                      Clear selection
+                    </Button>
+                  </div>
+                  <div className="max-h-40 overflow-auto rounded border p-2 text-sm">
+                    {toLetList.length === 0 ? (
+                      <div className="text-muted-foreground text-xs">No to-let locations added.</div>
+                    ) : (
+                      <ul className="space-y-1">
+                        {toLetList.map((p, idx) => {
+                          const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                          const isSelected = !!toLetSelected[key];
+                          return (
+                            <li
+                              key={`tolet-${idx}`}
+                              className="flex items-center gap-2"
+                              onMouseEnter={() => {
+                                mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                setLat(p.lat);
+                                setLng(p.lng);
+                                if (!isSelected) setHoverToLet(p);
+                              }}
+                              onMouseLeave={() => {
+                                mapRef.current?.flyTo([lat, lng], 16);
+                                if (!isSelected) setHoverToLet(null);
+                              }}
+                            >
+                              <input
+                                type="checkbox"
+                                checked={isSelected}
+                                onChange={(e) => setToLetSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
+                              />
+                              <span className="font-mono">{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </div>
+                  <div className="rounded border p-2 text-sm">
+                    <div className="text-xs text-muted-foreground mb-1">Selected points</div>
+                    {selectedToLetList.length === 0 ? (
+                      <div className="text-muted-foreground text-xs">None selected.</div>
+                    ) : (
+                      <ul className="space-y-1">
+                        {selectedToLetList.map((p, idx) => (
+                          <li
+                            key={`tolet-selected-${idx}`}
+                            className="font-mono text-xs"
+                            onMouseEnter={() => mapRef.current?.flyTo([p.lat, p.lng], 18)}
+                            onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
+                          >
+                            {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              )}
 
 
               <div className="space-y-2">
@@ -897,6 +1195,26 @@ export default function LocationForm() {
                     />
                   </div>
 
+                  <div className="space-y-2">
+                    <Label>Analysis Mode</Label>
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setAnalysisMode("point")}
+                        className={`px-3 py-1 rounded text-sm border ${analysisMode === "point" ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}
+                      >
+                        Point pick
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setAnalysisMode("tolet")}
+                        className={`px-3 py-1 rounded text-sm border ${analysisMode === "tolet" ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}
+                      >
+                        To-let pick
+                      </button>
+                    </div>
+                  </div>
+
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="lat">Latitude</Label>
@@ -917,6 +1235,152 @@ export default function LocationForm() {
                       />
                     </div>
                   </div>
+
+                  {analysisMode === "point" ? (
+                    <div className="space-y-2">
+                      <Label>Point list</Label>
+                      <div className="flex gap-2">
+                        <Button type="button" onClick={() => addPointToActiveList({ lat, lng })}>
+                          Add current
+                        </Button>
+                        <Button type="button" variant="outline" onClick={() => setPointSelected({})}>
+                          Clear selection
+                        </Button>
+                        <Button type="button" variant="outline" onClick={() => { setPointList([]); setPointSelected({}); }}>
+                          Clear all
+                        </Button>
+                      </div>
+                      <div className="max-h-40 overflow-auto rounded border p-2 text-sm">
+                        {pointList.length === 0 ? (
+                          <div className="text-muted-foreground text-xs">No locations added.</div>
+                        ) : (
+                          <ul className="space-y-1">
+                            {pointList.map((p, idx) => {
+                              const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                              return (
+                                <li
+                                  key={`point-${idx}`}
+                                  className="flex items-center justify-between gap-2"
+                                  onMouseEnter={() => {
+                                    setLat(p.lat);
+                                    setLng(p.lng);
+                                    mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                  }}
+                                  onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
+                                >
+                                  <label className="flex items-center gap-2">
+                                    <input
+                                      type="checkbox"
+                                      checked={!!pointSelected[key]}
+                                      onChange={(e) => setPointSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
+                                    />
+                                    <span className="font-mono">{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
+                                  </label>
+                                  <button
+                                    type="button"
+                                    onClick={() => removeFromPointList(idx)}
+                                    className="text-xs text-slate-500 hover:underline"
+                                  >
+                                    remove
+                                  </button>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        )}
+                      </div>
+                      <div className="rounded border p-2 text-sm">
+                        <div className="text-xs text-muted-foreground mb-1">Selected points</div>
+                        {selectedPointList.length === 0 ? (
+                          <div className="text-muted-foreground text-xs">None selected.</div>
+                        ) : (
+                          <ul className="space-y-1">
+                            {selectedPointList.map((p, idx) => (
+                              <li
+                                key={`point-selected-${idx}`}
+                                className="font-mono text-xs"
+                                onMouseEnter={() => {
+                                  setLat(p.lat);
+                                  setLng(p.lng);
+                                  mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                }}
+                                onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
+                              >
+                                {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="space-y-2">
+                      <Label>To-let list</Label>
+                      <div className="flex gap-2">
+                        <Button type="button" variant="outline" onClick={() => setToLetSelected({})}>
+                          Clear selection
+                        </Button>
+                      </div>
+                      <div className="max-h-40 overflow-auto rounded border p-2 text-sm">
+                        {toLetList.length === 0 ? (
+                          <div className="text-muted-foreground text-xs">No to-let locations added.</div>
+                        ) : (
+                          <ul className="space-y-1">
+                            {toLetList.map((p, idx) => {
+                              const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                              const isSelected = !!toLetSelected[key];
+                              return (
+                                <li
+                                  key={`tolet-${idx}`}
+                                  className="flex items-center gap-2"
+                                  onMouseEnter={() => {
+                                    setLat(p.lat);
+                                    setLng(p.lng);
+                                    mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                    if (!isSelected) setHoverToLet(p);
+                                  }}
+                                  onMouseLeave={() => {
+                                    mapRef.current?.flyTo([lat, lng], 16);
+                                    if (!isSelected) setHoverToLet(null);
+                                  }}
+                                >
+                                  <input
+                                    type="checkbox"
+                                    checked={isSelected}
+                                    onChange={(e) => setToLetSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
+                                  />
+                                  <span className="font-mono">{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        )}
+                      </div>
+                      <div className="rounded border p-2 text-sm">
+                        <div className="text-xs text-muted-foreground mb-1">Selected points</div>
+                        {selectedToLetList.length === 0 ? (
+                          <div className="text-muted-foreground text-xs">None selected.</div>
+                        ) : (
+                          <ul className="space-y-1">
+                            {selectedToLetList.map((p, idx) => (
+                              <li
+                                key={`tolet-selected-${idx}`}
+                                className="font-mono text-xs"
+                                onMouseEnter={() => {
+                                  setLat(p.lat);
+                                  setLng(p.lng);
+                                  mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                }}
+                                onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
+                              >
+                                {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  )}
 
                   <div>
                     <Label htmlFor="radius-mobile">r: </Label>
@@ -962,19 +1426,33 @@ export default function LocationForm() {
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
           />
           <MapRefSetter mapRef={mapRef} />
-          <MapPicker lat={lat} lng={lng} setLat={setLat} setLng={setLng} />
+          <MapPicker lat={lat} lng={lng} onPick={(plat, plng) => addPointToActiveList({ lat: plat, lng: plng })} />
+          {mapPickList.map((p: { lat: number; lng: number }, idx: number) => (
+            <Marker
+              key={`${analysisMode}-${idx}`}
+              position={[p.lat, p.lng]}
+              icon={analysisMode === "point" ? pointPickIcon : toLetPickIcon}
+            />
+          ))}
+          {hoverToLet && (
+            <Marker
+              key={`tolet-hover`}
+              position={[hoverToLet.lat, hoverToLet.lng]}
+              icon={toLetHoverIcon}
+            />
+          )}
           {showPlaces && !showWithinRadius && filteredGeoData.map((item) => (
             <MapFeatures
               key={item.id}
               datasetId={item.id}
               geoData={{ type: 'FeatureCollection', features: item.features }}
               selectedFeatureId={selectedFeatureId}
-              onFeatureClick={(feature, layer) => {
+              onFeatureClick={(feature, _layer) => {
                 try {
                   const coords = feature.geometry.type === "Point" ? feature.geometry.coordinates : feature.geometry.coordinates[0];
                   setPoiLat(coords[1]);
                   setPoiLng(coords[0]);
-                } catch (e) { }
+                } catch { }
                 setSelectedFeatureId(feature.properties?.name ?? feature.id ?? null);
               }}
             />

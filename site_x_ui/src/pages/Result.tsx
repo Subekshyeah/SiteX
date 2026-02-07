@@ -9,21 +9,6 @@ function qs(key: string) {
     return new URLSearchParams(window.location.search).get(key) || "";
 }
 
-function seededRandom(seed: string) {
-    let h = 2166136261 >>> 0;
-    for (let i = 0; i < seed.length; i++) {
-        h += seed.charCodeAt(i);
-        h += h << 1;
-        h ^= h >>> 7;
-    }
-    return function () {
-        h += 0x6d2b79f5;
-        let t = Math.imul(h ^ (h >>> 15), 1 | h);
-        t ^= t + Math.imul(t ^ (t >>> 7), 61 | t);
-        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-    };
-}
-
 function haversineKm(aLat: number, aLon: number, bLat: number, bLon: number) {
     const toRad = (v: number) => (v * Math.PI) / 180;
     const R = 6371;
@@ -36,66 +21,100 @@ function haversineKm(aLat: number, aLon: number, bLat: number, bLon: number) {
     return R * c;
 }
 
-type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: Record<string, string> };
-type Category = { score: number; pois: Poi[] };
+type Point = { lat: number; lng: number };
 
+function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Point[] {
+    const cleaned = (raw || "").trim();
+    if (!cleaned) {
+        if (Number.isFinite(fallbackLat) && Number.isFinite(fallbackLng) && (fallbackLat !== 0 || fallbackLng !== 0)) {
+            return [{ lat: fallbackLat, lng: fallbackLng }];
+        }
+        return [];
+    }
+    const lines = cleaned.split(/\r?\n|;/).map(l => l.trim()).filter(Boolean);
+    const points: Point[] = [];
+    for (const line of lines) {
+        const parts = line.split(/[\s,]+/).filter(Boolean);
+        if (parts.length < 2) continue;
+        const plat = Number(parts[0]);
+        const plng = Number(parts[1]);
+        if (!Number.isFinite(plat) || !Number.isFinite(plng)) continue;
+        points.push({ lat: Number(plat.toFixed(6)), lng: Number(plng.toFixed(6)) });
+    }
+    if (points.length === 0 && Number.isFinite(fallbackLat) && Number.isFinite(fallbackLng) && (fallbackLat !== 0 || fallbackLng !== 0)) {
+        return [{ lat: fallbackLat, lng: fallbackLng }];
+    }
+    return points;
+}
+
+type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: Record<string, string> };
 export default function ResultPage() {
     const name = decodeURIComponent(qs("name") || "");
     const lat = parseFloat(qs("lat") || "0");
     const lng = parseFloat(qs("lng") || "0");
+    const mode = qs("mode") || "point";
+    const pick = qs("pick") || (qs("points") ? "multiple" : "single");
+    const pointsParam = qs("points");
+    const points = useMemo(() => parsePoints(pointsParam, lat, lng), [pointsParam, lat, lng]);
+    const center = useMemo(() => {
+        if (!points.length) return { lat, lng };
+        const total = points.reduce((acc, p) => ({ lat: acc.lat + p.lat, lng: acc.lng + p.lng }), { lat: 0, lng: 0 });
+        return { lat: total.lat / points.length, lng: total.lng / points.length };
+    }, [points, lat, lng]);
+    const centerLat = center.lat;
+    const centerLng = center.lng;
 
     const [loadedPois, setLoadedPois] = useState<Record<string, Poi[]> | null>(null);
+    const [selectedPointIdx, setSelectedPointIdx] = useState<number>(0);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
-    const [prediction, setPrediction] = useState<{ score: number; risk: string } | null>(null);
+    const [predictions, setPredictions] = useState<Record<string, { score: number; risk: string }>>({});
+    const primaryPoint = points[0] || { lat, lng };
+    const primaryKey = `${primaryPoint.lat.toFixed(6)},${primaryPoint.lng.toFixed(6)}`;
+    const primaryPrediction = predictions[primaryKey] || null;
+    const averageScore = useMemo(() => {
+        const vals = Object.values(predictions).map((p) => p.score).filter((v) => Number.isFinite(v));
+        if (vals.length === 0) return null;
+        return vals.reduce((s, v) => s + v, 0) / vals.length;
+    }, [predictions]);
+    const selectedPoint = useMemo(() => {
+        return points[selectedPointIdx] || points[0] || { lat: centerLat, lng: centerLng };
+    }, [points, selectedPointIdx, centerLat, centerLng]);
+    const MAX_RADIUS_KM = 1;
 
     useEffect(() => {
-        if (!lat || !lng) return;
-        fetch("http://127.0.0.1:8000/api/v1/predict-score/", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ lat, lng })
-        })
-        .then(res => res.json())
-        .then(data => {
-            setPrediction({ score: data.predicted_score, risk: data.risk_level });
-        })
-        .catch(err => console.error("Prediction fetch error:", err));
-    }, [lat, lng]);
-
-    const analysis = useMemo(() => {
-        const s = `${name}|${lat}|${lng}`;
-        const rnd = seededRandom(s);
-
-        const categories = ["competitor", "education", "banks", "health", "temples", "other"] as const;
-        const catMap: Record<string, Category> = {};
-        const scores: number[] = [];
-
-        categories.forEach((cat) => {
-            const score = Number((rnd()).toFixed(3));
-            scores.push(score);
-            const count = Math.floor(rnd() * 1000);
-            const pois: Poi[] = [];
-            for (let i = 0; i < count; i++) {
-                const dlat = (rnd() - 0.5) * 0.02; // ~±1km
-                const dlng = (rnd() - 0.5) * 0.02;
-                const plat = lat + dlat;
-                const plng = lng + dlng;
-                const distance_km = Number(haversineKm(lat, lng, plat, plng).toFixed(3));
-                pois.push({ name: `${cat} ${i + 1}`, lat: Number(plat.toFixed(6)), lng: Number(plng.toFixed(6)), weight: Number(rnd().toFixed(3)), distance_km });
+        if (!points.length) return;
+        let mounted = true;
+        (async () => {
+            try {
+                const results = await Promise.all(points.map(async (p) => {
+                    try {
+                        const res = await fetch("http://127.0.0.1:8000/api/v1/predict-score/", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ lat: p.lat, lng: p.lng })
+                        });
+                        const data = await res.json();
+                        return { key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`, score: data.predicted_score, risk: data.risk_level };
+                    } catch {
+                        return { key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`, score: NaN, risk: "Error" };
+                    }
+                }));
+                if (!mounted) return;
+                const next: Record<string, { score: number; risk: string }> = {};
+                results.forEach((r) => {
+                    if (Number.isFinite(r.score)) next[r.key] = { score: r.score, risk: r.risk };
+                });
+                setPredictions(next);
+            } catch (err) {
+                if (mounted) console.error("Prediction fetch error:", err);
             }
-            catMap[cat] = { score, pois };
-        });
-
-        // success_score: simple aggregate of scores
-        const success_score = Number((scores.reduce((s, v) => s + v, 0) / scores.length).toFixed(3));
-
-        return { success_score, categories: catMap } as { success_score: number; categories: Record<string, Category> };
-    }, [name, lat, lng]);
+        })();
+        return () => { mounted = false; };
+    }, [points]);
 
     // --- CSV loading + mapping images ---
     useEffect(() => {
         let mounted = true;
-        const MAX_RADIUS_KM = 1; // filter radius
         const csvFiles = [
             "education_final.csv",
             "health_final.csv",
@@ -162,8 +181,6 @@ export default function ResultPage() {
                             const plat = Number(latStr);
                             const plng = Number(lngStr);
                             if (!Number.isFinite(plat) || !Number.isFinite(plng)) continue;
-                            const distance_km = Number(haversineKm(lat, lng, plat, plng).toFixed(3));
-                            if (distance_km > MAX_RADIUS_KM) continue;
                             // choose weight field
                             let weight = NaN;
                             if ((row['cafe_individual_score'] ?? row['cafe_individual_score '])) weight = Number(row['cafe_individual_score'] ?? row['cafe_individual_score ']);
@@ -183,7 +200,7 @@ export default function ResultPage() {
                             // Determine Subcategory from the category column
                             const subCat = (row['category'] ?? row['Category'])?.toString() || '';
 
-                            const poi: Poi = { name: nameVal || fname.replace(/\.csv$/, ''), lat: plat, lng: plng, weight, distance_km, subcategory: subCat, raw: row };
+                            const poi: Poi = { name: nameVal || fname.replace(/\.csv$/, ''), lat: plat, lng: plng, weight, distance_km: 0, subcategory: subCat, raw: row };
                             categoriesMap[mainCat] = categoriesMap[mainCat] || [];
                             categoriesMap[mainCat].push(poi);
                         }
@@ -206,41 +223,106 @@ export default function ResultPage() {
         })();
 
         return () => { mounted = false; };
-    }, [lat, lng]);
+    }, []);
 
     const mapRef = useRef<L.Map | null>(null);
     const [hoverPos, setHoverPos] = useState<{ lat: number; lng: number } | null>(null);
     const [searchQuery, setSearchQuery] = useState("");
 
+    useEffect(() => {
+        try {
+            mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16);
+        } catch (err) { void err; }
+    }, [selectedPoint]);
+
+    const filteredPois = useMemo(() => {
+        if (!loadedPois) return null;
+        const result: Record<string, Poi[]> = {};
+        Object.entries(loadedPois).forEach(([cat, list]) => {
+            const items = list
+                .map((p) => ({
+                    ...p,
+                    distance_km: Number(haversineKm(selectedPoint.lat, selectedPoint.lng, p.lat, p.lng).toFixed(3))
+                }))
+                .filter((p) => p.distance_km <= MAX_RADIUS_KM);
+            result[cat] = items;
+        });
+        return result;
+    }, [loadedPois, selectedPoint, MAX_RADIUS_KM]);
+
     const categoryCounts = useMemo(() => {
-        if (!loadedPois) return {};
+        if (!filteredPois) return {};
         const counts: Record<string, number> = {};
         let total = 0;
-        Object.entries(loadedPois).forEach(([cat, list]) => {
+        Object.entries(filteredPois).forEach(([cat, list]) => {
             const filteredList = list.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
             counts[cat] = filteredList.length;
             total += filteredList.length;
         });
         counts['All'] = total;
         return counts;
-    }, [loadedPois, searchQuery]);
-
-    const analysisEntries = Object.entries(analysis.categories) as [string, Category][];
+    }, [filteredPois, searchQuery]);
 
     return (
         <div style={{ padding: 20, fontFamily: "Inter, system-ui, Arial", background: "#ffffff", minHeight: "100vh", color: "#0f172a" }}>
             <div style={{ maxWidth: 1100, margin: "0 auto" }}>
                 <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)" }}>
                     <h1 style={{ margin: 0, color: '#0f172a' }}>{name || "Place"} — Analysis</h1>
-                    <div style={{ color: "#475569", marginTop: 6 }}>{`lat: ${lat.toFixed(6)} · lng: ${lng.toFixed(6)}`}</div>
+                    {points.length > 1 ? (
+                        <div style={{ color: "#475569", marginTop: 6 }}>{`points: ${points.length} · center: ${centerLat.toFixed(6)} · ${centerLng.toFixed(6)}`}</div>
+                    ) : (
+                        <div style={{ color: "#475569", marginTop: 6 }}>{`lat: ${centerLat.toFixed(6)} · lng: ${centerLng.toFixed(6)}`}</div>
+                    )}
+                    <div style={{ color: "#94a3b8", fontSize: 12, marginTop: 4 }}>{`mode: ${mode} · pick: ${pick}`}</div>
                     <div style={{ marginTop: 12 }}>
-                        <div style={{ fontSize: 13, color: "#475569" }}>Success Score {prediction ? `(${prediction.risk})` : ''}</div>
+                        <div style={{ fontSize: 13, color: "#475569" }}>Success Score {points.length > 1 ? "(Multiple)" : (primaryPrediction ? `(${primaryPrediction.risk})` : "")}</div>
                         <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
-                            <div style={{ height: 14, width: `${Math.min(((prediction?.score || 0) / 3) * 100, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.5s" }} />
+                            <div style={{ height: 14, width: `${Math.min((((averageScore ?? primaryPrediction?.score ?? 0) || 0) / 3) * 100, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.5s" }} />
                         </div>
-                        <div style={{ marginTop: 6, color: '#0f172a' }}>{prediction ? prediction.score.toFixed(3) : "Calculating..."}</div>
+                        <div style={{ marginTop: 6, color: '#0f172a' }}>
+                            {averageScore != null ? averageScore.toFixed(3) : (primaryPrediction ? primaryPrediction.score.toFixed(3) : "Calculating...")}
+                        </div>
                     </div>
+                    {points.length > 1 && (
+                        <div style={{ marginTop: 10, fontSize: 12, color: "#475569" }}>
+                            {points.map((p, idx) => {
+                                const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                                const pred = predictions[key];
+                                return (
+                                    <div key={key} style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                                        <span>{`${idx + 1}. ${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
+                                        <span style={{ color: '#0f172a', fontWeight: 600 }}>{pred ? pred.score.toFixed(3) : "…"}</span>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    )}
                 </div>
+
+                {points.length > 0 && (
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
+                        <h3 style={{ marginTop: 0 }}>Per-point Analysis</h3>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 10 }}>
+                            {points.map((p, idx) => {
+                                const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                                const pred = predictions[key];
+                                const score = pred?.score;
+                                const width = Math.min((((score ?? 0) / 3) * 100), 100);
+                                return (
+                                    <div key={`card-${key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 8, padding: 12 }}>
+                                        <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
+                                        <div style={{ color: '#64748b', fontSize: 12, marginTop: 4 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                        <div style={{ fontSize: 12, color: '#64748b', marginTop: 6 }}>{pred ? `Risk: ${pred.risk}` : 'Risk: …'}</div>
+                                        <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                            <div style={{ height: 10, width: `${width}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
+                                        </div>
+                                        <div style={{ marginTop: 6, fontWeight: 700 }}>{pred ? pred.score.toFixed(3) : "Calculating..."}</div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
 
                 <div style={{ display: "grid", gap: 12, marginTop: 12 }}>
                     <div style={{ background: "#ffffff", padding: 8, borderRadius: 8, border: "1px solid rgba(15,23,42,0.04)" }}>
@@ -250,13 +332,15 @@ export default function ResultPage() {
                                 <div style={{ width: '100%', aspectRatio: '1 / 1' }}>
                                     <MapContainer
                                         ref={(m: unknown) => { mapRef.current = m as L.Map | null; }}
-                                        center={[lat || 27.670587, lng || 85.420868]}
+                                        center={[selectedPoint.lat || 27.670587, selectedPoint.lng || 85.420868]}
                                         zoom={16}
                                         style={{ width: '100%', height: '100%', borderRadius: 8 }}
                                     >
                                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                                        {/* center marker */}
-                                        <Marker position={[lat, lng]} />
+                                        {/* selected points */}
+                                        {points.map((p, idx) => (
+                                            <Marker key={`point-${idx}`} position={[p.lat, p.lng]} />
+                                        ))}
                                         {/* hover marker */}
                                         {hoverPos && <Marker position={[hoverPos.lat, hoverPos.lng]} />}
                                     </MapContainer>
@@ -267,6 +351,29 @@ export default function ResultPage() {
                                 <div style={{ position: 'sticky', top: 0, background: '#ffffff', zIndex: 10, paddingBottom: 8, paddingTop: 0 }}>
                                     <div style={{ fontWeight: 700, marginBottom: 4 }}>Nearby POIs (within 1 km)</div>
                                     <div style={{ fontSize: 13, color: '#64748b', marginBottom: 8 }}>{name}</div>
+
+                                    {points.length > 1 && (
+                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                                            {points.map((p, idx) => (
+                                                <button
+                                                    key={`pt-${idx}`}
+                                                    onClick={() => setSelectedPointIdx(idx)}
+                                                    style={{
+                                                        padding: '4px 8px',
+                                                        borderRadius: 14,
+                                                        border: '1px solid #e2e8f0',
+                                                        background: selectedPointIdx === idx ? '#0f172a' : '#ffffff',
+                                                        color: selectedPointIdx === idx ? '#ffffff' : '#64748b',
+                                                        fontSize: 11,
+                                                        cursor: 'pointer',
+                                                        fontWeight: 600
+                                                    }}
+                                                >
+                                                    {`P${idx + 1}`}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    )}
 
                                     <div style={{ marginBottom: 8 }}>
                                         <input
@@ -300,12 +407,24 @@ export default function ResultPage() {
                                     </div>
                                 </div>
 
-                                {!loadedPois && <div>Loading...</div>}
-                                {loadedPois && Object.keys(loadedPois).length === 0 && <div>No POIs found within radius.</div>}
-                                {loadedPois && Object.entries(loadedPois)
+                                {!filteredPois && <div>Loading...</div>}
+                                {filteredPois && Object.keys(filteredPois).length === 0 && <div>No POIs found within radius.</div>}
+                                {filteredPois && Object.entries(filteredPois)
                                     .filter(([cat]) => selectedCategory === 'All' || cat === selectedCategory)
                                     .map(([cat, list]) => {
-                                        const filteredList = list.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+                                        const DECAY_SCALE_KM = 1.0;
+                                        const filteredList = list
+                                            .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                            .slice()
+                                            .sort((a, b) => {
+                                                const aw = Number(a.weight) || 0;
+                                                const bw = Number(b.weight) || 0;
+                                                const ad = Number(a.distance_km) || 0;
+                                                const bd = Number(b.distance_km) || 0;
+                                                const aScore = aw * Math.exp(-ad / DECAY_SCALE_KM);
+                                                const bScore = bw * Math.exp(-bd / DECAY_SCALE_KM);
+                                                return bScore - aScore;
+                                            });
                                         if (filteredList.length === 0) return null;
                                         return (
                                             <div key={cat} style={{ marginBottom: 12 }}>
@@ -313,7 +432,7 @@ export default function ResultPage() {
                                                 {filteredList.map((p, idx) => (
                                                     <div key={`${p.name}-${idx}`}
                                                         onMouseEnter={() => { setHoverPos({ lat: p.lat, lng: p.lng }); try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; } }}
-                                                        onMouseLeave={() => { setHoverPos(null); try { mapRef.current?.flyTo([lat, lng], 16); } catch (err) { void err; } }}
+                                                        onMouseLeave={() => { setHoverPos(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
                                                         style={{ display: 'flex', gap: 8, padding: 8, borderRadius: 6, alignItems: 'center', cursor: 'pointer', border: '1px solid rgba(15,23,42,0.03)', marginBottom: 8 }}>
                                                         <div style={{ flex: 1 }}>
                                                             <div style={{ fontWeight: 700 }}>{p.name}</div>
@@ -321,8 +440,18 @@ export default function ResultPage() {
                                                             <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
                                                         </div>
                                                         <div style={{ textAlign: 'right' }}>
-                                                            <div style={{ fontWeight: 800, fontSize: 15 }}>{`w: ${Number(p.weight).toFixed(3)}`}</div>
-                                                            <div style={{ color: '#64748b', fontSize: 12 }}>{p.distance_km} km</div>
+                                                            {(() => {
+                                                                const w = Number(p.weight) || 0;
+                                                                const d = Number(p.distance_km) || 0;
+                                                                const wEff = w * Math.exp(-d / DECAY_SCALE_KM);
+                                                                return (
+                                                                    <>
+                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div>
+                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`${d.toFixed(3)} km`}</div>
+                                                                        <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${w.toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
+                                                                    </>
+                                                                );
+                                                            })()}
                                                         </div>
                                                     </div>
                                                 ))}
