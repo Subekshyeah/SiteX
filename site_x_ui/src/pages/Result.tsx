@@ -321,8 +321,9 @@ export default function ResultPage() {
                                                             <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
                                                         </div>
                                                         <div style={{ textAlign: 'right' }}>
-                                                            <div style={{ fontWeight: 800, fontSize: 15 }}>{`w: ${Number(p.weight).toFixed(3)}`}</div>
-                                                            <div style={{ color: '#64748b', fontSize: 12 }}>{p.distance_km} km</div>
+                                                            {/* <div style={{ fontWeight: 800, fontSize: 15 }}>{`w: ${Number(p.weight).toFixed(3)}`}</div> */}
+                                                            {/* <div style={{ color: '#64748b', fontSize: 12 }}>{p.distance_km} km</div> */}
+                                                            <div style={{ fontWeight: 800, fontSize: 15 }}>{p.distance_km} km</div>
                                                         </div>
                                                     </div>
                                                 ))}
