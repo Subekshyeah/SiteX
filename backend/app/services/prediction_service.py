@@ -15,10 +15,9 @@ class PredictionService:
         self.feature_names = None
         self.reference_df = None
         # Paths relative to this file: backend/app/services/prediction_service.py
-        # We want: backend/models and backend/Data/CSV/final
-        self.backend_root = Path(__file__).parent.parent.parent
+        self.backend_root = Path(__file__).resolve().parent.parent.parent
         self.model_dir = self.backend_root / "models"
-        self.data_dir = self.backend_root / "Data" / "CSV" / "final"
+        self.data_dir = self._resolve_data_dir()
         self._load_resources()
 
     @classmethod
@@ -26,6 +25,35 @@ class PredictionService:
         if cls._instance is None:
             cls._instance = cls()
         return cls._instance
+
+    def _resolve_data_dir(self) -> Path:
+        """Locate the directory containing reference CSV outputs."""
+        env_override = os.getenv("SITEX_DATA_DIR")
+        if env_override:
+            candidate = Path(env_override).expanduser().resolve()
+            if (candidate / "master_cafes_minimal.csv").is_file():
+                return candidate
+            print(
+                f"Warning: SITEX_DATA_DIR={candidate} missing master_cafes_minimal.csv; falling back to defaults."
+            )
+
+        candidates = [
+            self.backend_root / "Data" / "CSV" / "final",
+            self.backend_root / "Data" / "CSV_Reference" / "final",
+            self.backend_root / "Data" / "CSV",
+            self.backend_root / "Data" / "CSV_Reference",
+        ]
+
+        for candidate in candidates:
+            candidate = candidate.resolve()
+            if (candidate / "master_cafes_minimal.csv").is_file():
+                return candidate
+
+        print(
+            "Warning: Could not locate master_cafes_minimal.csv in default locations. "
+            "Continuing with backend/Data/CSV/final."
+        )
+        return candidates[0]
 
     def _load_resources(self):
         # Load Model
