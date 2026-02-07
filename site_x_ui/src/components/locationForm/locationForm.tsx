@@ -273,7 +273,7 @@ function MapRefSetter({ mapRef }: { mapRef: React.MutableRefObject<L.Map | null>
 }
 
 export default function LocationForm() {
-  const [lat, setLat] = useState<number>(27.670587); // Kathmandu
+  const [lat, setLat] = useState<number>(27.670587);
   const [lng, setLng] = useState<number>(85.420868);
   const [analysisMode, setAnalysisMode] = useState<"point" | "tolet">("point");
   const [pointList, setPointList] = useState<Array<{ lat: number; lng: number }>>([]);
@@ -281,7 +281,7 @@ export default function LocationForm() {
   const [toLetSelected, setToLetSelected] = useState<Record<string, boolean>>({});
   const [pointSelected, setPointSelected] = useState<Record<string, boolean>>({});
   const [hoverToLet, setHoverToLet] = useState<{ lat: number; lng: number } | null>(null);
-  const [radiusKm, setRadiusKm] = useState<number>(1.0);
+  const [radiusKm, setRadiusKm] = useState<number>(0.5);
   const [poisData, setPoisData] = useState<any | null>(null);
   const [poisFlat, setPoisFlat] = useState<Array<any>>([]);
   const [poiLoading, setPoiLoading] = useState(false);
@@ -1031,7 +1031,11 @@ export default function LocationForm() {
                             <li
                               key={`point-${idx}`}
                               className="flex items-center justify-between gap-2"
-                              onMouseEnter={() => mapRef.current?.flyTo([p.lat, p.lng], 18)}
+                              onMouseEnter={() => {
+                                setLat(p.lat);
+                                setLng(p.lng);
+                                mapRef.current?.flyTo([p.lat, p.lng], 18);
+                              }}
                               onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
                             >
                               <label className="flex items-center gap-2">
@@ -1078,6 +1082,8 @@ export default function LocationForm() {
                               className="flex items-center gap-2"
                               onMouseEnter={() => {
                                 mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                setLat(p.lat);
+                                setLng(p.lng);
                                 if (!isSelected) setHoverToLet(p);
                               }}
                               onMouseLeave={() => {
@@ -1255,7 +1261,11 @@ export default function LocationForm() {
                                 <li
                                   key={`point-${idx}`}
                                   className="flex items-center justify-between gap-2"
-                                  onMouseEnter={() => mapRef.current?.flyTo([p.lat, p.lng], 18)}
+                                  onMouseEnter={() => {
+                                    setLat(p.lat);
+                                    setLng(p.lng);
+                                    mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                  }}
                                   onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
                                 >
                                   <label className="flex items-center gap-2">
@@ -1289,7 +1299,11 @@ export default function LocationForm() {
                               <li
                                 key={`point-selected-${idx}`}
                                 className="font-mono text-xs"
-                                onMouseEnter={() => mapRef.current?.flyTo([p.lat, p.lng], 18)}
+                                onMouseEnter={() => {
+                                  setLat(p.lat);
+                                  setLng(p.lng);
+                                  mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                }}
                                 onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
                               >
                                 {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}
@@ -1320,6 +1334,8 @@ export default function LocationForm() {
                                   key={`tolet-${idx}`}
                                   className="flex items-center gap-2"
                                   onMouseEnter={() => {
+                                    setLat(p.lat);
+                                    setLng(p.lng);
                                     mapRef.current?.flyTo([p.lat, p.lng], 18);
                                     if (!isSelected) setHoverToLet(p);
                                   }}
@@ -1350,7 +1366,11 @@ export default function LocationForm() {
                               <li
                                 key={`tolet-selected-${idx}`}
                                 className="font-mono text-xs"
-                                onMouseEnter={() => mapRef.current?.flyTo([p.lat, p.lng], 18)}
+                                onMouseEnter={() => {
+                                  setLat(p.lat);
+                                  setLng(p.lng);
+                                  mapRef.current?.flyTo([p.lat, p.lng], 18);
+                                }}
                                 onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
                               >
                                 {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}

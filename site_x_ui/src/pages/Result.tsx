@@ -412,7 +412,19 @@ export default function ResultPage() {
                                 {filteredPois && Object.entries(filteredPois)
                                     .filter(([cat]) => selectedCategory === 'All' || cat === selectedCategory)
                                     .map(([cat, list]) => {
-                                        const filteredList = list.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+                                        const DECAY_SCALE_KM = 1.0;
+                                        const filteredList = list
+                                            .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                            .slice()
+                                            .sort((a, b) => {
+                                                const aw = Number(a.weight) || 0;
+                                                const bw = Number(b.weight) || 0;
+                                                const ad = Number(a.distance_km) || 0;
+                                                const bd = Number(b.distance_km) || 0;
+                                                const aScore = aw * Math.exp(-ad / DECAY_SCALE_KM);
+                                                const bScore = bw * Math.exp(-bd / DECAY_SCALE_KM);
+                                                return bScore - aScore;
+                                            });
                                         if (filteredList.length === 0) return null;
                                         return (
                                             <div key={cat} style={{ marginBottom: 12 }}>
@@ -428,9 +440,18 @@ export default function ResultPage() {
                                                             <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
                                                         </div>
                                                         <div style={{ textAlign: 'right' }}>
-                                                            {/* <div style={{ fontWeight: 800, fontSize: 15 }}>{`w: ${Number(p.weight).toFixed(3)}`}</div> */}
-                                                            {/* <div style={{ color: '#64748b', fontSize: 12 }}>{p.distance_km} km</div> */}
-                                                            <div style={{ fontWeight: 800, fontSize: 15 }}>{p.distance_km} km</div>
+                                                            {(() => {
+                                                                const w = Number(p.weight) || 0;
+                                                                const d = Number(p.distance_km) || 0;
+                                                                const wEff = w * Math.exp(-d / DECAY_SCALE_KM);
+                                                                return (
+                                                                    <>
+                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div>
+                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`${d.toFixed(3)} km`}</div>
+                                                                        <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${w.toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
+                                                                    </>
+                                                                );
+                                                            })()}
                                                         </div>
                                                     </div>
                                                 ))}
