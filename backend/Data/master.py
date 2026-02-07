@@ -13,7 +13,7 @@ from typing import Optional, Tuple, List, Dict
 import numpy as np
 import pandas as pd
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "CSV")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "CSV_Reference")
 CAFE_FILE = os.path.join(DATA_DIR, "cafes.csv")
 MASTER_OUT = os.path.join(DATA_DIR, "master_cafes_metrics.csv")
 
