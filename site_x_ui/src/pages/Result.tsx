@@ -317,7 +317,7 @@ export default function ResultPage() {
                         const bScore = bw * Math.exp(-bd / DECAY_SCALE_KM);
                         return bScore - aScore;
                     });
-                const topPois = within.slice(0, 30).map((poi) => {
+                const topPois = within.slice(0, 20).map((poi) => {
                     const w = Number(poi.weight) || 0;
                     const d = Number(poi.distance_km) || 0;
                     const decayed_weight = w * Math.exp(-d / DECAY_SCALE_KM);
@@ -365,6 +365,7 @@ export default function ResultPage() {
                                 distance_km: p.distance_km,
                                 weight: p.weight,
                                 decayed_weight: p.decayed_weight,
+                                avg_weight_value: p.decayed_weight,
                                 subcategory: p.subcategory || null
                             }))
                         }))
