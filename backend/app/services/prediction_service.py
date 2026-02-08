@@ -208,16 +208,11 @@ class PredictionService:
             sample_df = sample_full
 
         # Make prediction
-        try:
+        if isinstance(self.model, xgb.Booster):
+            dtest = xgb.DMatrix(sample_df)
+            predicted_score = float(self.model.predict(dtest)[0])
+        else:
             predicted_score = float(self.model.predict(sample_df)[0])
-        except Exception as e:
-            print(f"Prediction error: {e}")
-            # Try converting to DMatrix if it's a raw Booster
-            if isinstance(self.model, xgb.Booster):
-                dtest = xgb.DMatrix(sample_df)
-                predicted_score = float(self.model.predict(dtest)[0])
-            else:
-                raise e
         
         # Risk assessment
         if predicted_score < 1.0:
