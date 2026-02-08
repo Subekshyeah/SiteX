@@ -1,14 +1,14 @@
 # app/schemas/cafe.py
-from pydantic import BaseModel
 from typing import List, Dict, Any
 
-class CafeDataPayload(BaseModel):
-    """ The expected structure for the incoming raw data. """
-    data: List[Dict[str, Any]]
+from pydantic import BaseModel, ConfigDict
 
-    class Config:
-        # Example to show how to handle example data in OpenAPI docs
-        schema_extra = {
+
+class CafeDataPayload(BaseModel):
+    """The expected structure for the incoming raw data."""
+
+    model_config = ConfigDict(
+        json_schema_extra={
             "example": {
                 "data": [
                     {
@@ -19,3 +19,6 @@ class CafeDataPayload(BaseModel):
                 ]
             }
         }
+    )
+
+    data: List[Dict[str, Any]]

@@ -6,16 +6,31 @@ Creates: backend/Data/master_cafes_metrics.csv
 """
 
 import os
+import sys
 import math
 import argparse
+from collections import defaultdict
 from typing import Optional, Tuple, List, Dict
 
 import numpy as np
 import pandas as pd
 
+BACKEND_ROOT = os.path.dirname(os.path.dirname(__file__))
+if BACKEND_ROOT not in sys.path:
+    sys.path.insert(0, BACKEND_ROOT)
+
+try:
+    from app.lib.road_network import RoadNetwork
+except Exception:  # pragma: no cover
+    RoadNetwork = None
+
 DATA_DIR = os.path.join(os.path.dirname(__file__), "CSV_Reference")
 CAFE_FILE = os.path.join(DATA_DIR, "cafes.csv")
 MASTER_OUT = os.path.join(DATA_DIR, "master_cafes_metrics.csv")
+
+ROADWAY_GEOJSON = os.path.join(os.path.dirname(__file__), "Roadway.geojson")
+ROAD_GRAPH_CACHE = os.path.join(os.path.dirname(__file__), "road_graph_cache.pkl")
+ROAD_SNAP_TOLERANCE_M = 120.0
 
 POI_FILES = {
     "banks": os.path.join(DATA_DIR, "banks.csv"),
@@ -261,6 +276,8 @@ def compute_poi_metrics_for_cafes(
     poi_name: str,
     category_weight: float,
     radius_m: float = 1000.0,
+    road_network: Optional["RoadNetwork"] = None,
+    snap_tolerance_m: float = ROAD_SNAP_TOLERANCE_M,
 ) -> pd.DataFrame:
     latlon = detect_latlon(poi)
     if latlon is None:
@@ -271,8 +288,8 @@ def compute_poi_metrics_for_cafes(
         return cafes
 
     poi_lat_col, poi_lon_col = latlon
-    poi_lats = poi[poi_lat_col].astype(float).to_numpy()
-    poi_lons = poi[poi_lon_col].astype(float).to_numpy()
+    poi_lats = pd.to_numeric(poi[poi_lat_col], errors="coerce").to_numpy(dtype=float)
+    poi_lons = pd.to_numeric(poi[poi_lon_col], errors="coerce").to_numpy(dtype=float)
 
     weight_col = detect_weight_col(poi)
     # if a precomputed weight column exists (created by helper), use it
@@ -348,6 +365,8 @@ def compute_poi_metrics_for_cafes(
             else:
                 poi_weights = np.ones_like(poi_lats, dtype=float)
 
+    poi_weights = np.asarray(poi_weights, dtype=float)
+
     # Prepare result columns (use suffix based on radius)
     try:
         suffix = f"_{int(radius_m/1000)}km"
@@ -363,13 +382,64 @@ def compute_poi_metrics_for_cafes(
         raise ValueError("Could not detect lat/lon in cafes CSV")
 
     cafe_lat_col, cafe_lon_col = cafe_latlon
-    cafe_lats = cafes[cafe_lat_col].astype(float).to_numpy()
-    cafe_lons = cafes[cafe_lon_col].astype(float).to_numpy()
+    cafe_lats = pd.to_numeric(cafes[cafe_lat_col], errors="coerce").to_numpy(dtype=float)
+    cafe_lons = pd.to_numeric(cafes[cafe_lon_col], errors="coerce").to_numpy(dtype=float)
 
-    # Iterate cafes and compute vectorized distances
+    use_network = bool(road_network) and getattr(road_network, "node_count", 0) > 0
+    node_to_poi: Dict[int, List[int]] = defaultdict(list)
+    poi_snap_offsets: List[float] = []
+    if use_network:
+        poi_nodes, poi_snap_offsets = road_network.snap_points(poi_lats, poi_lons, max_snap_m=snap_tolerance_m)
+        for idx, node_id in enumerate(poi_nodes):
+            if node_id is not None and math.isfinite(poi_snap_offsets[idx]):
+                node_to_poi[int(node_id)].append(idx)
+        if not node_to_poi:
+            use_network = False
+
+    def _network_stats(cafe_node: int, cafe_offset: float) -> Optional[Tuple[int, float, float]]:
+        if not use_network:
+            return None
+        lengths = road_network.shortest_paths_from(cafe_node, cutoff=radius_m)
+        if not lengths:
+            return None
+        total_count = 0
+        total_weight = 0.0
+        min_dist = None
+        for node_id, path_dist in lengths.items():
+            poi_indices = node_to_poi.get(node_id)
+            if not poi_indices:
+                continue
+            for poi_idx in poi_indices:
+                total_dist = path_dist + cafe_offset + poi_snap_offsets[poi_idx]
+                if total_dist <= radius_m:
+                    total_count += 1
+                    total_weight += float(poi_weights[poi_idx])
+                    if min_dist is None or total_dist < min_dist:
+                        min_dist = total_dist
+        if total_count == 0 or min_dist is None:
+            return None
+        return total_count, total_weight, float(min_dist)
+
+    # Iterate cafes and compute distances
     for i in range(len(cafes)):
         lat = cafe_lats[i]
         lon = cafe_lons[i]
+        if not math.isfinite(lat) or not math.isfinite(lon):
+            counts.append(0)
+            weight_sums.append(0.0)
+            min_dists.append(float(np.nan))
+            continue
+        if use_network:
+            cafe_node, cafe_offset = road_network.snap_point(lat, lon, max_snap_m=snap_tolerance_m)
+            if cafe_node is not None:
+                cafe_offset = float(cafe_offset or 0.0)
+                net_stats = _network_stats(cafe_node, cafe_offset)
+                if net_stats is not None:
+                    cnt, wsum, mind = net_stats
+                    counts.append(int(cnt))
+                    weight_sums.append(float(wsum))
+                    min_dists.append(float(mind))
+                    continue
         dists = haversine_m(lat, lon, poi_lats, poi_lons)  # meters
         within_mask = dists <= radius_m
         counts.append(int(np.count_nonzero(within_mask)))
@@ -396,6 +466,10 @@ def generate_master_metrics(
     poi_files: Dict[str, str] = POI_FILES,
     category_weights: Dict[str, float] = CATEGORY_WEIGHTS,
     out_file: str = MASTER_OUT,
+    road_geojson_path: Optional[str] = ROADWAY_GEOJSON,
+    use_road_network: bool = True,
+    road_cache_path: Optional[str] = ROAD_GRAPH_CACHE,
+    snap_tolerance_m: float = ROAD_SNAP_TOLERANCE_M,
 ):
     cafes = pd.read_csv(cafe_file)
     if detect_latlon(cafes) is None:
@@ -403,6 +477,24 @@ def generate_master_metrics(
 
     # Ensure deterministic order
     cafes = cafes.reset_index(drop=True)
+
+    road_network = None
+    if use_road_network and road_geojson_path and RoadNetwork is not None:
+        try:
+            road_network = RoadNetwork.from_geojson(
+                road_geojson_path,
+                cache_path=road_cache_path,
+                snap_tolerance_m=snap_tolerance_m,
+            )
+            print(
+                "Loaded road network graph: "
+                f"{road_network.node_count} nodes / {road_network.edge_count} edges."
+            )
+        except Exception as exc:
+            print(f"Warning: Failed to initialize road network ({exc}); using haversine distances.")
+            road_network = None
+    elif use_road_network and RoadNetwork is None:
+        print("Warning: RoadNetwork utilities unavailable; using haversine distances instead.")
 
     # For each POI dataset, compute metrics and merge into cafes
     # Use configured radius for master aggregation unless overridden
@@ -487,7 +579,15 @@ def generate_master_metrics(
         # override the category weight for this category so later scoring uses the dynamic value
         category_weights[name] = dyn_cat_w
         # pass annotated poi (which includes '_computed_weight') into metric computation
-        cafes = compute_poi_metrics_for_cafes(cafes, annotated_poi, name, dyn_cat_w, radius_m=master_radius)
+        cafes = compute_poi_metrics_for_cafes(
+            cafes,
+            annotated_poi,
+            name,
+            dyn_cat_w,
+            radius_m=master_radius,
+            road_network=road_network,
+            snap_tolerance_m=snap_tolerance_m,
+        )
 
     # After processing all POI categories, build the composite score (using master radius)
     suffix = f"_{int(master_radius/1000)}km"
@@ -848,9 +948,38 @@ def main():
     parser = argparse.ArgumentParser(description="Generate cafe POI metrics and master dataset.")
     parser.add_argument("--cafes", default=CAFE_FILE, help="Path to cafes CSV")
     parser.add_argument("--out", default=MASTER_OUT, help="Output master CSV path")
+    parser.add_argument(
+        "--road-geojson",
+        default=ROADWAY_GEOJSON,
+        help="Path to Roadway.geojson for network distances (set empty to skip)",
+    )
+    parser.add_argument(
+        "--road-cache",
+        default=ROAD_GRAPH_CACHE,
+        help="Optional cache file for serialized road graph",
+    )
+    parser.add_argument(
+        "--disable-road-network",
+        action="store_true",
+        help="Force fallback to direct haversine distances",
+    )
+    parser.add_argument(
+        "--snap-max-meters",
+        type=float,
+        default=ROAD_SNAP_TOLERANCE_M,
+        help="Maximum allowed snap distance from a point to the nearest road node",
+    )
     args = parser.parse_args()
 
-    generate_master_metrics(cafe_file=args.cafes, out_file=args.out)
+    road_geojson = args.road_geojson if args.road_geojson else None
+    generate_master_metrics(
+        cafe_file=args.cafes,
+        out_file=args.out,
+        road_geojson_path=road_geojson,
+        use_road_network=not args.disable_road_network,
+        road_cache_path=args.road_cache,
+        snap_tolerance_m=args.snap_max_meters,
+    )
 
 
 if __name__ == "__main__":
