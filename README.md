@@ -42,6 +42,22 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
+Environment variable for Gemini (optional, for AI explanations):
+
+- macOS/Linux (bash/zsh):
+
+```bash
+export GEMINI_API_KEY="YOUR_API_KEY"
+```
+
+- Windows PowerShell:
+
+```powershell
+$env:GEMINI_API_KEY = "YOUR_API_KEY"
+```
+
+Note: keep your API key out of git (do not commit it). You can also set it in your shell profile so it persists across sessions.
+
 Then open:
 
 - Swagger UI: http://127.0.0.1:8000/docs
@@ -114,6 +130,12 @@ Response:
 	}
 }
 ```
+
+### `POST /api/v1/explain/`
+
+Generates a natural-language explanation of per-point scores and top POI contributors using Google Gemini.
+
+Requires: `GEMINI_API_KEY` environment variable (see Quickstart section).
 
 ### POIs endpoint (currently disabled)
 
