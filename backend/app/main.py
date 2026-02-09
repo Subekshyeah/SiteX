@@ -29,7 +29,7 @@ app.add_middleware(
 # Include the router from endpoint files
 app.include_router(cafe_processing.router, prefix="/api/v1", tags=["Cafe Processing"])
 app.include_router(predict.router, prefix="/api/v1", tags=["Prediction"])
-# app.include_router(pois.router, prefix="/api/v1", tags=["POIS"])
+app.include_router(pois.router, prefix="/api/v1", tags=["POIS"])
 
 @app.get("/", tags=["Root"])
 async def read_root():
