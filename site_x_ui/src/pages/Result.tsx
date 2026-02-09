@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useEffect, useState, useRef } from "react";
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Polyline } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
 
@@ -83,154 +83,113 @@ export default function ResultPage() {
         return points[selectedPointIdx] || points[0] || { lat: centerLat, lng: centerLng };
     }, [points, selectedPointIdx, centerLat, centerLng]);
     const MAX_RADIUS_KM = 1;
+    // --- Load POIs from backend POI endpoint instead of CSVs ---
     const DECAY_SCALE_KM = 1.0;
 
     useEffect(() => {
-        if (!points.length) return;
         let mounted = true;
+        const controller = new AbortController();
         (async () => {
             try {
-                const results = await Promise.all(points.map(async (p) => {
-                    try {
-                        const res = await fetch("http://127.0.0.1:8000/api/v1/predict-score/", {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ lat: p.lat, lng: p.lng })
-                        });
-                        const data = await res.json();
-                        return { key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`, score: data.predicted_score, risk: data.risk_level };
-                    } catch {
-                        return { key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`, score: NaN, risk: "Error" };
-                    }
-                }));
-                if (!mounted) return;
-                const next: Record<string, { score: number; risk: string }> = {};
-                results.forEach((r) => {
-                    if (Number.isFinite(r.score)) next[r.key] = { score: r.score, risk: r.risk };
-                });
-                setPredictions(next);
-            } catch (err) {
-                if (mounted) console.error("Prediction fetch error:", err);
-            }
-        })();
-        return () => { mounted = false; };
-    }, [points]);
-
-    // --- CSV loading + mapping images ---
-    useEffect(() => {
-        let mounted = true;
-        const csvFiles = [
-            "education_final.csv",
-            "health_final.csv",
-            "other_final.csv",
-            "temples_final.csv",
-            "banks_final.csv",
-            "cafe_final.csv",
-        ];
-
-        // const imageCsvs = ["/data/d/compact_summary_images.csv", "/data/d/education.csv", "/data/d/health.csv", "/data/d/other.csv", "/data/d/temples.csv", "/data/d/banks.csv"];
-
-        const parseCsv = (text: string): Record<string, string>[] => {
-            const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
-            if (lines.length === 0) return [];
-            const header = lines[0];
-            const cols = header.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/).map(c => c.replace(/^"|"$/g, "").trim());
-            const rows: Record<string, string>[] = [];
-            for (let i = 1; i < lines.length; i++) {
-                const parts = lines[i].split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/).map(p => p.replace(/^"|"$/g, "").trim());
-                if (parts.length === 0) continue;
-                const row: Record<string, string> = {};
-                for (let j = 0; j < cols.length; j++) row[cols[j]] = parts[j] ?? "";
-                rows.push(row);
-            }
-            return rows;
-        };
-
-        (async () => {
-            try {
-                // load image metadata first
-                // const imageMap = new Map<string, string>(); // key: lat|lng or name -> image url
-                // for (const p of imageCsvs) {
-                //     try {
-                //         const resp = await fetch(p);
-                //         if (!resp.ok) continue;
-                //         const txt = await resp.text();
-                //         const rows = parseCsv(txt);
-                //         rows.forEach((row) => {
-                //             const lat = (row['lat'] ?? row['Lat'] ?? row['lat '])?.toString();
-                //             const lng = (row['lng'] ?? row['Lng'] ?? row['lon'] ?? row['Lon'])?.toString();
-                //             const name = (row['name'] ?? row['Name'] ?? row['place'] ?? row['place_name'])?.toString();
-                //             const image = (row['image'] ?? row['img'] ?? row['image_url'] ?? row['photo'])?.toString();
-                //             if (image && lat && lng) imageMap.set(`${Number(lat).toFixed(6)}|${Number(lng).toFixed(6)}`, image);
-                //             if (image && name) imageMap.set(name.trim().toLowerCase(), image);
-                //         });
-                //     } catch { void 0; }
-                // }
-
-                // persist image map for rendering
-                // if (mounted) setImageMapState(Object.fromEntries(imageMap.entries()));
-
+                const radius = 0.3; // km
+                const base = `http://127.0.0.1:8000/api/v1/pois/?lat=${encodeURIComponent(centerLat)}&lon=${encodeURIComponent(centerLng)}&radius_km=${radius}`;
+                const streamUrl = base + `&stream=true`;
+                const res = await fetch(streamUrl, { signal: controller.signal });
+                const mapName: Record<string, string> = { cafes: 'Cafes', banks: 'Bank', education: 'Education', health: 'Health', temples: 'Temples', other: 'Other' };
                 const categoriesMap: Record<string, Poi[]> = {};
-                for (const fname of csvFiles) {
-                    try {
-                        const url = `/data/${fname}`;
-                        const res = await fetch(url);
-                        if (!res.ok) continue;
-                        const txt = await res.text();
-                        const rows = parseCsv(txt);
-                        for (const row of rows) {
-                            const latStr = (row['lat'] ?? row['Lat'] ?? row['lat '])?.toString();
-                            const lngStr = (row['lng'] ?? row['Lng'] ?? row['lon'] ?? row['Lng '])?.toString();
-                            if (!latStr || !lngStr) continue;
-                            const plat = Number(latStr);
-                            const plng = Number(lngStr);
-                            if (!Number.isFinite(plat) || !Number.isFinite(plng)) continue;
-                            // choose weight field
-                            let weight = NaN;
-                            if ((row['cafe_individual_score'] ?? row['cafe_individual_score '])) weight = Number(row['cafe_individual_score'] ?? row['cafe_individual_score ']);
-                            if (Number.isNaN(weight) || weight === 0) weight = Number(row['final_weight'] ?? row['final_weight '] ?? row['final_weight'] ?? NaN);
-                            if (!Number.isFinite(weight)) weight = 0;
-                            const nameVal = (row['name'] ?? row['Name'] ?? row['place'] ?? '')?.toString();
-
-                            // Determine Main Category strictly by filename
-                            let mainCat = 'Other';
-                            if (fname === 'education_final.csv') mainCat = 'Education';
-                            else if (fname === 'health_final.csv') mainCat = 'Health';
-                            else if (fname === 'temples_final.csv') mainCat = 'Temples';
-                            else if (fname === 'banks_final.csv') mainCat = 'Bank';
-                            else if (fname === 'cafe_final.csv') mainCat = 'Cafes';
-                            else if (fname === 'other_final.csv') mainCat = 'Other';
-
-                            // Determine Subcategory from the category column
-                            const subCat = (row['category'] ?? row['Category'])?.toString() || '';
-
-                            const poi: Poi = { name: nameVal || fname.replace(/\.csv$/, ''), lat: plat, lng: plng, weight, distance_km: 0, subcategory: subCat, raw: row };
-                            categoriesMap[mainCat] = categoriesMap[mainCat] || [];
-                            categoriesMap[mainCat].push(poi);
-                        }
-                    } catch { void 0; }
+                if (!res.ok) {
+                    if (mounted) setLoadedPois({});
+                    return;
                 }
-                // sort each category: prefer cafe_individual_score when available, then final_weight, then distance
-                for (const list of Object.values(categoriesMap)) {
-                    list.sort((a, b) => {
-                        const aw = Number(a.weight);
-                        const bw = Number(b.weight);
-                        if (Number.isFinite(aw) && Number.isFinite(bw)) {
-                            return bw - aw;
+                if (res.body && (res.headers.get('content-type') || '').includes('ndjson')) {
+                    const reader = res.body.getReader();
+                    const dec = new TextDecoder();
+                    let buf = '';
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+                        buf += dec.decode(value, { stream: true });
+                        const parts = buf.split(/\n/);
+                        buf = parts.pop() || '';
+                        for (const line of parts) {
+                            const trimmed = line.trim();
+                            if (!trimmed) continue;
+                            try {
+                                const obj = JSON.parse(trimmed);
+                                const catKey = obj.category as string;
+                                const arr = Array.isArray(obj.items) ? obj.items : [];
+                                const display = mapName[catKey] || catKey;
+                                const list = arr.map((it: any) => {
+                                    const plat = Number(it.lat);
+                                    const plng = Number(it.lon ?? it.lng ?? 0);
+                                    const nameVal = it.name ?? '';
+                                    const weight = Number(it.weight ?? 0) || 0;
+                                    const distance_km = Number(it.distance_km ?? 0) || 0;
+                                    const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
+                                    return poi;
+                                }).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+                                if (list.length) {
+                                    categoriesMap[display] = (categoriesMap[display] || []).concat(list);
+                                    if (mounted) setLoadedPois({ ...categoriesMap });
+                                }
+                            } catch (err) {
+                                // ignore parse errors for partial lines
+                            }
                         }
-                        return 0;
-                    });
+                    }
+                    // final buffer
+                    if (buf.trim()) {
+                        try {
+                            const obj = JSON.parse(buf.trim());
+                            const catKey = obj.category as string;
+                            const arr = Array.isArray(obj.items) ? obj.items : [];
+                            const display = mapName[catKey] || catKey;
+                            const list = arr.map((it: any) => {
+                                const plat = Number(it.lat);
+                                const plng = Number(it.lon ?? it.lng ?? 0);
+                                const nameVal = it.name ?? '';
+                                const weight = Number(it.weight ?? 0) || 0;
+                                const distance_km = Number(it.distance_km ?? 0) || 0;
+                                const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
+                                return poi;
+                            }).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+                            if (list.length) {
+                                categoriesMap[display] = (categoriesMap[display] || []).concat(list);
+                                if (mounted) setLoadedPois({ ...categoriesMap });
+                            }
+                        } catch (err) { /* ignore */ }
+                    }
+                } else {
+                    // fallback to non-streaming JSON
+                    const data = await res.json();
+                    const pois = data?.pois || {};
+                    for (const [key, arr] of Object.entries(pois)) {
+                        const display = mapName[key] || key;
+                        const list = (arr as any[]).map((it) => {
+                            const plat = Number(it.lat);
+                            const plng = Number(it.lon ?? it.lng ?? 0);
+                            const nameVal = it.name ?? '';
+                            const weight = Number(it.weight ?? 0) || 0;
+                            const distance_km = Number(it.distance_km ?? 0) || 0;
+                            const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
+                            return poi;
+                        }).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+                        if (list.length) categoriesMap[display] = list;
+                    }
+                    if (mounted) setLoadedPois(categoriesMap);
                 }
-
-                if (mounted) setLoadedPois(categoriesMap);
-            } catch (e) { void e; if (mounted) setLoadedPois({}); }
+            } catch (err) {
+                if (mounted) setLoadedPois({});
+            }
         })();
+        return () => { mounted = false; controller.abort(); };
+    }, [centerLat, centerLng]);
 
-        return () => { mounted = false; };
-    }, []);
+        // CSV fallback removed — POIs are loaded from backend `/api/v1/pois/` above.
 
     const mapRef = useRef<L.Map | null>(null);
     const [hoverPos, setHoverPos] = useState<{ lat: number; lng: number } | null>(null);
+    const [hoverPath, setHoverPath] = useState<Array<[number, number]> | null>(null);
     const [searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
@@ -522,6 +481,10 @@ export default function ResultPage() {
                                         ))}
                                         {/* hover marker */}
                                         {hoverPos && <Marker position={[hoverPos.lat, hoverPos.lng]} />}
+                                        {/* hover path (rendered inside MapContainer so Leaflet context is available) */}
+                                        {hoverPath && hoverPath.length > 0 && (
+                                            <Polyline positions={hoverPath.map(([la, lo]) => [la, lo])} pathOptions={{ color: '#ff6b6b', weight: 5 }} />
+                                        )}
                                     </MapContainer>
                                 </div>
                             </div>
@@ -615,8 +578,20 @@ export default function ResultPage() {
                                                 <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>{cat}</div>
                                                 {filteredList.map((p, idx) => (
                                                     <div key={`${p.name}-${idx}`}
-                                                        onMouseEnter={() => { setHoverPos({ lat: p.lat, lng: p.lng }); try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; } }}
-                                                        onMouseLeave={() => { setHoverPos(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
+                                                        onMouseEnter={() => {
+                                                            setHoverPos({ lat: p.lat, lng: p.lng });
+                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                            try {
+                                                                const raw = p.raw as any;
+                                                                if (raw && Array.isArray(raw.path)) {
+                                                                    const coords: Array<[number, number]> = raw.path.map((pt: any) => [Number(pt.lat), Number(pt.lon ?? pt.lng)]).filter(([a,b]) => Number.isFinite(a) && Number.isFinite(b));
+                                                                    setHoverPath(coords.length ? coords : null);
+                                                                } else {
+                                                                    setHoverPath(null);
+                                                                }
+                                                            } catch (err) { setHoverPath(null); }
+                                                        }}
+                                                            onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
                                                         style={{ display: 'flex', gap: 8, padding: 8, borderRadius: 6, alignItems: 'center', cursor: 'pointer', border: '1px solid rgba(15,23,42,0.03)', marginBottom: 8 }}>
                                                         <div style={{ flex: 1 }}>
                                                             <div style={{ fontWeight: 700 }}>{p.name}</div>
@@ -642,6 +617,7 @@ export default function ResultPage() {
                                             </div>
                                         );
                                     })}
+                                {/* hover path now rendered inside MapContainer */}
                             </div>
                         </div>
                     </div>
