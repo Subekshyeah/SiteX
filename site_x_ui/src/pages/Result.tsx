@@ -117,6 +117,23 @@ export default function ResultPage() {
     const MAX_RADIUS_KM = 1;
     // --- Load POIs from backend POI endpoint instead of CSVs ---
     const DECAY_SCALE_KM = 1.0;
+    const cachePrefix = "sitex:cache:";
+    const getCache = <T,>(key: string): T | null => {
+        try {
+            const raw = localStorage.getItem(cachePrefix + key);
+            if (!raw) return null;
+            return JSON.parse(raw) as T;
+        } catch {
+            return null;
+        }
+    };
+    const setCache = (key: string, value: unknown) => {
+        try {
+            localStorage.setItem(cachePrefix + key, JSON.stringify(value));
+        } catch {
+            // ignore storage errors
+        }
+    };
     const getDecayedWeight = (poi: Poi) => {
         const w = Number(poi.weight) || 0;
         const d = Number(poi.distance_km) || 0;
@@ -131,6 +148,11 @@ export default function ResultPage() {
         const fetchPoisForPoint = async (point: Point) => {
             const key = `${point.lat.toFixed(6)},${point.lng.toFixed(6)}`;
             if (poisCacheRef.current.has(key)) return;
+            const cachedLocal = getCache<Record<string, Poi[]>>(`pois:${key}`);
+            if (cachedLocal) {
+                poisCacheRef.current.set(key, cachedLocal);
+                return;
+            }
             const radius = 0.3; // km
             const base = `http://127.0.0.1:8000/api/v1/pois/?lat=${encodeURIComponent(point.lat)}&lon=${encodeURIComponent(point.lng)}&radius_km=${radius}`;
             const streamUrl = base + `&stream=true`;
@@ -138,6 +160,7 @@ export default function ResultPage() {
             const categoriesMap: Record<string, Poi[]> = {};
             if (!res.ok) {
                 poisCacheRef.current.set(key, {});
+                setCache(`pois:${key}`, {});
                 return;
             }
             if (res.body && (res.headers.get('content-type') || '').includes('ndjson')) {
@@ -213,6 +236,7 @@ export default function ResultPage() {
                 }
             }
             poisCacheRef.current.set(key, categoriesMap);
+            setCache(`pois:${key}`, categoriesMap);
         };
 
         (async () => {
@@ -251,6 +275,12 @@ export default function ResultPage() {
                 if (mounted) setPredictions(cached);
                 return;
             }
+            const cachedLocal = getCache<Record<string, { score: number; risk: string }>>(`predict:${pointsKey}`);
+            if (cachedLocal) {
+                predictionsCacheRef.current.set(pointsKey, cachedLocal);
+                if (mounted) setPredictions(cachedLocal);
+                return;
+            }
             try {
                 const url = `http://127.0.0.1:8000/api/v1/predict/`;
                 const res = await fetch(url, {
@@ -274,6 +304,7 @@ export default function ResultPage() {
                         });
                     }
                     predictionsCacheRef.current.set(pointsKey, newPredictions);
+                    setCache(`predict:${pointsKey}`, newPredictions);
                     setPredictions(newPredictions);
                 }
             } catch (err) {
@@ -480,6 +511,12 @@ export default function ResultPage() {
                 setAiExplanation(cached);
                 return;
             }
+            const cachedLocal = getCache<string>(`ai:${cacheKey}`);
+            if (cachedLocal) {
+                aiCacheRef.current.set(cacheKey, cachedLocal);
+                setAiExplanation(cachedLocal);
+                return;
+            }
             const res = await fetch("http://127.0.0.1:8000/api/v1/explain/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -493,6 +530,7 @@ export default function ResultPage() {
             const data = await res.json();
             const explanation = (data?.explanation || "").trim();
             aiCacheRef.current.set(cacheKey, explanation);
+            setCache(`ai:${cacheKey}`, explanation);
             setAiExplanation(explanation);
         } catch (err: unknown) {
             if ((err as { name?: string }).name !== "AbortError") {
