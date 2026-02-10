@@ -149,6 +149,10 @@ class PredictionService:
         # Copy raw POI features (averaged from neighbors)
         for col in poi_count_cols + poi_weight_cols:
             new_features[col] = nearest_cafes[col].mean()
+
+        # Include cafe_weight if present in the reference data
+        if 'cafe_weight' in self.reference_df.columns:
+            new_features['cafe_weight'] = nearest_cafes['cafe_weight'].mean()
         
         # Add lat/lng
         new_features['lat'] = lat
@@ -214,7 +218,7 @@ class PredictionService:
             print(f"Prediction error: {e}")
             # Try converting to DMatrix if it's a raw Booster
             if isinstance(self.model, xgb.Booster):
-                dtest = xgb.DMatrix(sample_df)
+                dtest = xgb.DMatrix(sample_df, feature_names=sample_df.columns.tolist())
                 predicted_score = float(self.model.predict(dtest)[0])
             else:
                 raise e

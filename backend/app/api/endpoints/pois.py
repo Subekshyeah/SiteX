@@ -282,11 +282,103 @@ def _network_path_map(
     return paths
 
 
+def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_scale_km: float = 1.0) -> Dict[str, Any]:
+    """Programmatic helper used by scripts/tests: return mapping of categories->items including path geometry.
+
+    This mirrors the behavior of the / API route but is callable directly from Python code.
+    """
+    # locate project CSV folder relative to this file
+    data_dir = Path(__file__).resolve().parents[3] / "Data" / "CSV"
+    if not data_dir.exists():
+        alt = Path(__file__).resolve().parents[3] / "Data" / "CSV_Reference" / "final"
+        if alt.exists():
+            data_dir = alt
+        else:
+            raise RuntimeError(f"Data folder not found at {data_dir} or {alt}")
+
+    road_network = _get_road_network()
+    radius_m = float(radius_km) * 1000.0
+
+    poi_files = {
+        "cafes": "cafes.csv",
+        "banks": "banks.csv",
+        "education": "education.csv",
+        "health": "health.csv",
+        "temples": "temples.csv",
+        "other": "other.csv",
+    }
+
+    results: Dict[str, Any] = {}
+    for typ, fname in poi_files.items():
+        fpath = data_dir / fname
+        if not fpath.exists():
+            continue
+        df = pd.read_csv(fpath).reset_index(drop=True)
+        lat_col = None
+        lon_col = None
+        for c in df.columns:
+            cl = c.lower()
+            if cl in ("lat", "latitude", "y"):
+                lat_col = c
+            if cl in ("lon", "lng", "longitude", "x"):
+                lon_col = c
+        if lat_col is None or lon_col is None:
+            continue
+
+        df[lat_col] = pd.to_numeric(df[lat_col], errors="coerce")
+        df[lon_col] = pd.to_numeric(df[lon_col], errors="coerce")
+
+        network_dist_map: Dict[int, float] = {}
+        paths_map: Dict[int, List[Dict[str, float]]] = {}
+        if road_network is not None:
+            try:
+                network_dist_map = _network_distance_map(road_network, lat, lon, df[lat_col], df[lon_col], radius_m)
+                paths_map = _network_path_map(road_network, lat, lon, df[lat_col], df[lon_col], radius_m)
+            except Exception:
+                network_dist_map = {}
+
+        items = []
+        for idx, row in df.iterrows():
+            try:
+                rlat = float(row[lat_col])
+                rlon = float(row[lon_col])
+            except Exception:
+                continue
+            if not math.isfinite(rlat) or not math.isfinite(rlon):
+                continue
+            d = network_dist_map.get(idx)
+            if d is None:
+                d = haversine(lat, lon, rlat, rlon)
+            if d <= radius_km:
+                name = None
+                for name_key in ("name", "Name", "NAME"):
+                    if name_key in row:
+                        name = row[name_key]
+                        break
+                try:
+                    base_weight = max(0.0, 1.0 - (d / radius_km))
+                except Exception:
+                    base_weight = 0.0
+                try:
+                    weight_val = base_weight * math.exp(-float(d) / float(decay_scale_km))
+                except Exception:
+                    weight_val = base_weight
+                item: Dict[str, Any] = {"name": name, "lat": rlat, "lon": rlon, "distance_km": round(d, 4), "weight": round(weight_val, 4)}
+                path = paths_map.get(idx)
+                if path:
+                    item["path"] = path
+                items.append(item)
+        if items:
+            results[typ] = items
+    return results
+
+
 @router.get("/")
 def get_pois(
     lat: float = Query(..., description="Latitude of center"),
     lon: float = Query(..., description="Longitude of center"),
     radius_km: float = Query(0.3, gt=0, description="Search radius in kilometers (default 0.3 km). Use smaller radius for denser areas"),
+    decay_scale_km: float = Query(1.0, gt=0, description="Exponential decay scale in kilometers for distance weighting (default 1.0 km)"),
     stream: bool = Query(False, description="If true, return a streaming (chunked) JSON response with categories as they become available"),
 ) -> Any:
     # locate project CSV folder relative to this file
@@ -374,9 +466,16 @@ def get_pois(
                         break
                 item: Dict[str, Any] = {"name": name, "lat": rlat, "lon": rlon, "distance_km": round(d, 4)}
                 try:
-                    weight_val = max(0.0, 1.0 - (d / radius_km))
+                    # base linear weight (keeps compatibility)
+                    base_weight = max(0.0, 1.0 - (d / radius_km))
                 except Exception:
-                    weight_val = 0.0
+                    base_weight = 0.0
+                try:
+                    # apply exponential decay based on distance (km)
+                    decayed = base_weight * math.exp(-float(d) / float(decay_scale_km))
+                    weight_val = decayed
+                except Exception:
+                    weight_val = base_weight
                 item["weight"] = round(weight_val, 4)
                 path = paths_map.get(idx)
                 if path:
@@ -405,3 +504,17 @@ def get_pois(
             results[typ] = items
 
     return {"center": {"lat": lat, "lon": lon}, "radius_km": radius_km, "pois": results}
+
+
+@router.get("/detailed")
+def get_pois_detailed(
+    lat: float = Query(..., description="Latitude of center"),
+    lon: float = Query(..., description="Longitude of center"),
+    radius_km: float = Query(0.3, gt=0, description="Search radius in kilometers (default 0.3 km)."),
+    decay_scale_km: float = Query(1.0, gt=0, description="Exponential decay scale in kilometers for distance weighting (default 1.0 km)"),
+) -> Any:
+    try:
+        pois = get_pois_with_paths(lat=lat, lon=lon, radius_km=radius_km, decay_scale_km=decay_scale_km)
+        return {"center": {"lat": lat, "lon": lon}, "radius_km": radius_km, "pois": pois}
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
