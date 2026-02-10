@@ -22,6 +22,18 @@ function haversineKm(aLat: number, aLon: number, bLat: number, bLon: number) {
 }
 
 type Point = { lat: number; lng: number };
+type PoiApiItem = {
+    lat: number;
+    lon?: number;
+    lng?: number;
+    name?: string;
+    weight?: number;
+    distance_km?: number;
+    path?: Array<{ lat: number; lon?: number; lng?: number }>;
+    [key: string]: unknown;
+};
+type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: PoiApiItem };
+type PredictionItem = { lat: number; lon: number; score: number; risk_level: string };
 
 function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Point[] {
     const cleaned = (raw || "").trim();
@@ -47,18 +59,7 @@ function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Poi
     return points;
 }
 
-type PoiApiItem = {
-    lat: number;
-    lon?: number;
-    lng?: number;
-    name?: string;
-    weight?: number;
-    distance_km?: number;
-    path?: Array<{ lat: number; lon?: number; lng?: number }>;
-    [key: string]: unknown;
-};
-type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: PoiApiItem };
-type PredictionItem = { lat: number; lon: number; score: number; risk_level: string };
+
 export default function ResultPage() {
     const name = decodeURIComponent(qs("name") || "");
     const lat = parseFloat(qs("lat") || "0");
@@ -373,66 +374,69 @@ export default function ResultPage() {
         return pointSummaries.slice().sort((a, b) => b.totalScore - a.totalScore)[0];
     }, [pointSummaries]);
 
-    useEffect(() => {
-        if (pointSummaries.length === 0) return;
+    const canGenerateAi = useMemo(() => {
+        const hasScore = averageScore != null || (primaryPrediction && Number.isFinite(primaryPrediction.score));
+        return hasScore && pointSummaries.length > 0 && loadedPois !== null;
+    }, [averageScore, primaryPrediction, pointSummaries, loadedPois]);
+
+    const handleGenerateAi = async () => {
+        if (!canGenerateAi || aiLoading) return;
         const controller = new AbortController();
-        (async () => {
-            try {
-                setAiLoading(true);
-                setAiError("");
-                const payload = {
-                    preferred_point_key: preferredPoint?.key ?? null,
-                    radius_km: MAX_RADIUS_KM,
-                    decay_scale_km: DECAY_SCALE_KM,
-                    points: pointSummaries.map((s) => ({
-                        key: s.key,
-                        lat: s.point.lat,
-                        lng: s.point.lng,
-                        total_score: s.totalScore,
-                        per_category: s.perCategory.map((c) => ({
-                            cat: c.cat,
-                            score: c.score,
-                            top_pois: c.topPois.map((p) => ({
-                                name: p.name,
-                                distance_km: p.distance_km,
-                                weight: p.weight,
-                                decayed_weight: p.decayed_weight,
-                                avg_weight_value: p.decayed_weight,
-                                subcategory: p.subcategory || null
-                            }))
+        try {
+            setAiLoading(true);
+            setAiError("");
+            const payload = {
+                preferred_point_key: preferredPoint?.key ?? null,
+                radius_km: MAX_RADIUS_KM,
+                decay_scale_km: DECAY_SCALE_KM,
+                points: pointSummaries.map((s) => ({
+                    key: s.key,
+                    lat: s.point.lat,
+                    lng: s.point.lng,
+                    total_score: s.totalScore,
+                    per_category: s.perCategory.map((c) => ({
+                        cat: c.cat,
+                        score: c.score,
+                        top_pois: c.topPois.map((p) => ({
+                            name: p.name,
+                            distance_km: p.distance_km,
+                            weight: p.weight,
+                            decayed_weight: p.decayed_weight,
+                            avg_weight_value: p.decayed_weight,
+                            subcategory: p.subcategory || null
                         }))
                     }))
-                };
-                const cacheKey = JSON.stringify(payload);
-                const cached = aiCacheRef.current.get(cacheKey);
-                if (cached) {
-                    setAiExplanation(cached);
-                    return;
-                }
-                const res = await fetch("http://127.0.0.1:8000/api/v1/explain/", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload),
-                    signal: controller.signal
-                });
-                if (!res.ok) {
-                    const err = await res.json().catch(() => ({}));
-                    throw new Error(err?.detail || "Explanation request failed");
-                }
-                const data = await res.json();
-                const explanation = (data?.explanation || "").trim();
-                aiCacheRef.current.set(cacheKey, explanation);
-                setAiExplanation(explanation);
-            } catch (err: unknown) {
-                if ((err as { name?: string }).name !== "AbortError") {
-                    setAiError((err as Error).message || "Failed to generate explanation.");
-                }
-            } finally {
-                setAiLoading(false);
+                }))
+            };
+            const cacheKey = JSON.stringify(payload);
+            const cached = aiCacheRef.current.get(cacheKey);
+            if (cached) {
+                setAiExplanation(cached);
+                return;
             }
-        })();
+            const res = await fetch("http://127.0.0.1:8000/api/v1/explain/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+                signal: controller.signal
+            });
+            if (!res.ok) {
+                const err = await res.json().catch(() => ({}));
+                throw new Error(err?.detail || "Explanation request failed");
+            }
+            const data = await res.json();
+            const explanation = (data?.explanation || "").trim();
+            aiCacheRef.current.set(cacheKey, explanation);
+            setAiExplanation(explanation);
+        } catch (err: unknown) {
+            if ((err as { name?: string }).name !== "AbortError") {
+                setAiError((err as Error).message || "Failed to generate explanation.");
+            }
+        } finally {
+            setAiLoading(false);
+        }
         return () => controller.abort();
-    }, [pointSummaries, preferredPoint, MAX_RADIUS_KM, DECAY_SCALE_KM]);
+    };
 
     return (
         <div style={{ padding: 20, fontFamily: "Inter, system-ui, Arial", background: "#ffffff", minHeight: "100vh", color: "#0f172a" }}>
@@ -456,7 +460,7 @@ export default function ResultPage() {
                     </div>
                     {points.length > 1 && (
                         <div style={{ marginTop: 10, fontSize: 12, color: "#475569" }}>
-                            {points.map((p, idx) => {
+                            {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
                                 const pred = predictions[key];
                                 return (
@@ -474,7 +478,7 @@ export default function ResultPage() {
                     <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
                         <h3 style={{ marginTop: 0 }}>Per-point Analysis</h3>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 10 }}>
-                            {points.map((p, idx) => {
+                            {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
                                 const pred = predictions[key];
                                 const score = pred?.score;
@@ -498,6 +502,23 @@ export default function ResultPage() {
                 {points.length > 0 && (
                     <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
                         <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3>
+                        <button
+                            onClick={handleGenerateAi}
+                            disabled={!canGenerateAi || aiLoading}
+                            style={{
+                                padding: '8px 12px',
+                                borderRadius: 8,
+                                border: '1px solid #e2e8f0',
+                                background: canGenerateAi && !aiLoading ? '#0f172a' : '#f1f5f9',
+                                color: canGenerateAi && !aiLoading ? '#ffffff' : '#94a3b8',
+                                fontSize: 12,
+                                fontWeight: 600,
+                                cursor: canGenerateAi && !aiLoading ? 'pointer' : 'not-allowed',
+                                marginBottom: 8
+                            }}
+                        >
+                            {aiLoading ? 'Generating…' : 'Generate Explanation'}
+                        </button>
                         {aiLoading && <div style={{ fontSize: 12, color: "#64748b" }}>Generating explanation…</div>}
                         {aiError && <div style={{ fontSize: 12, color: "#ef4444" }}>{aiError}</div>}
                         {aiExplanation && (
@@ -577,7 +598,7 @@ export default function ResultPage() {
 
                                     {points.length > 1 && (
                                         <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
-                                            {points.map((p, idx) => (
+                                            {points.map((p: Point, idx: number) => (
                                                 <button
                                                     key={`pt-${idx}`}
                                                     onClick={() => setSelectedPointIdx(idx)}
