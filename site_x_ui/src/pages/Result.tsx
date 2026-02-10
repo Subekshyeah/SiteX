@@ -263,7 +263,24 @@ export default function ResultPage() {
     const mapRef = useRef<L.Map | null>(null);
     const [hoverPos, setHoverPos] = useState<{ lat: number; lng: number } | null>(null);
     const [hoverPath, setHoverPath] = useState<Array<[number, number]> | null>(null);
+    const [pathDashOffset, setPathDashOffset] = useState<number>(0);
+    const [pathOpacity, setPathOpacity] = useState<number>(0);
     const [searchQuery, setSearchQuery] = useState("");
+
+    useEffect(() => {
+        if (!hoverPath || hoverPath.length === 0) return;
+        let raf = 0;
+        let offset = 0;
+        setPathOpacity(0);
+        requestAnimationFrame(() => setPathOpacity(1));
+        const tick = () => {
+            offset = (offset + 1) % 32;
+            setPathDashOffset(offset);
+            raf = requestAnimationFrame(tick);
+        };
+        raf = requestAnimationFrame(tick);
+        return () => cancelAnimationFrame(raf);
+    }, [hoverPath]);
 
     useEffect(() => {
         let mounted = true;
@@ -747,7 +764,16 @@ export default function ResultPage() {
                                         {hoverPos && <Marker position={[hoverPos.lat, hoverPos.lng]} />}
                                         {/* hover path (rendered inside MapContainer so Leaflet context is available) */}
                                         {hoverPath && hoverPath.length > 0 && (
-                                            <Polyline positions={hoverPath.map(([la, lo]) => [la, lo])} pathOptions={{ color: '#ff6b6b', weight: 5 }} />
+                                            <Polyline
+                                                positions={hoverPath.map(([la, lo]) => [la, lo])}
+                                                pathOptions={{
+                                                    color: '#ff6b6b',
+                                                    weight: 5,
+                                                    dashArray: '10 8',
+                                                    dashOffset: `${pathDashOffset}`,
+                                                    opacity: pathOpacity
+                                                }}
+                                            />
                                         )}
                                     </MapContainer>
                                 </div>
