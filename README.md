@@ -8,14 +8,14 @@ SiteX is a data-driven site suitability analysis project. The current implementa
 ## Repository layout
 
 - [backend/](backend/) — FastAPI app, model + data, notebooks
-	- [backend/app/main.py](backend/app/main.py) — API entrypoint
-	- [backend/app/api/endpoints/](backend/app/api/endpoints/) — routes
-	- [backend/app/services/prediction_service.py](backend/app/services/prediction_service.py) — model loading + prediction
-	- [backend/models/](backend/models/) — trained model artifacts (expects [backend/models/xgb_baseline.pkl](backend/models/xgb_baseline.pkl))
-	- [backend/Data/](backend/Data/) — data scripts + CSV datasets
+  - [backend/app/main.py](backend/app/main.py) — API entrypoint
+  - [backend/app/api/endpoints/](backend/app/api/endpoints/) — routes
+  - [backend/app/services/prediction_service.py](backend/app/services/prediction_service.py) — model loading + prediction
+  - [backend/models/](backend/models/) — trained model artifacts (expects [backend/models/xgb_baseline.pkl](backend/models/xgb_baseline.pkl))
+  - [backend/Data/](backend/Data/) — data scripts + CSV datasets
 - [site_x_ui/](site_x_ui/) — React UI (Vite)
-	- [site_x_ui/src/pages/Result.tsx](site_x_ui/src/pages/Result.tsx) — calls the backend prediction endpoint
-	- [site_x_ui/data/](site_x_ui/data/) — CSV/GeoJSON packaged with the UI
+  - [site_x_ui/src/pages/Result.tsx](site_x_ui/src/pages/Result.tsx) — calls the backend prediction endpoint
+  - [site_x_ui/data/](site_x_ui/data/) — CSV/GeoJSON packaged with the UI
 
 ## Tech stack
 
@@ -41,6 +41,22 @@ pip install -r requirements.txt
 
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
+
+Environment variable for Gemini (optional, for AI explanations):
+
+- macOS/Linux (bash/zsh):
+
+```bash
+export GEMINI_API_KEY="YOUR_API_KEY"
+```
+
+- Windows PowerShell:
+
+```powershell
+$env:GEMINI_API_KEY = "YOUR_API_KEY"
+```
+
+Note: keep your API key out of git (do not commit it). You can also set it in your shell profile so it persists across sessions.
 
 Then open:
 
@@ -78,15 +94,15 @@ Request body:
 
 ```json
 {
-	"data": [
-		{
-			"title": "Cafe Boh",
-			"location": {"lat": 27.67, "lng": 85.39},
-			"additionalInfo": {
-				"Amenities": [{"Free Wi-Fi": true}]
-			}
-		}
-	]
+  "data": [
+    {
+      "title": "Cafe Boh",
+      "location": { "lat": 27.67, "lng": 85.39 },
+      "additionalInfo": {
+        "Amenities": [{ "Free Wi-Fi": true }]
+      }
+    }
+  ]
 }
 ```
 
@@ -106,14 +122,20 @@ Response:
 
 ```json
 {
-	"predicted_score": 1.234,
-	"risk_level": "Medium",
-	"estimated_features": {
-		"banks_count_1km": 3.2,
-		"banks_weight_1km": 0.8
-	}
+  "predicted_score": 1.234,
+  "risk_level": "Medium",
+  "estimated_features": {
+    "banks_count_1km": 3.2,
+    "banks_weight_1km": 0.8
+  }
 }
 ```
+
+### `POST /api/v1/explain/`
+
+Generates a natural-language explanation of per-point scores and top POI contributors using Google Gemini.
+
+Requires: `GEMINI_API_KEY` environment variable (see Quickstart section).
 
 ### POIs endpoint (currently disabled)
 
@@ -130,7 +152,7 @@ The prediction service loads resources relative to the backend folder:
 - Model: [backend/models/xgb_baseline.pkl](backend/models/) (required)
 - Feature list (optional but recommended): [backend/models/model_features.pkl](backend/models/model_features.pkl)
 - Reference CSV used for local k-NN feature estimation:
-	- [backend/Data/CSV/final/master_cafes_minimal.csv](backend/Data/CSV/final/master_cafes_minimal.csv)
+  - [backend/Data/CSV/final/master_cafes_minimal.csv](backend/Data/CSV/final/master_cafes_minimal.csv)
 
 If the feature list file is missing, the service falls back to using all engineered features (you may see a warning in server logs).
 

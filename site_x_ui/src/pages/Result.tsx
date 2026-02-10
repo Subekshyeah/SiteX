@@ -68,6 +68,9 @@ export default function ResultPage() {
     const [selectedPointIdx, setSelectedPointIdx] = useState<number>(0);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
     const [predictions, setPredictions] = useState<Record<string, { score: number; risk: string }>>({});
+    const [aiExplanation, setAiExplanation] = useState<string>("");
+    const [aiLoading, setAiLoading] = useState<boolean>(false);
+    const [aiError, setAiError] = useState<string>("");
     const primaryPoint = points[0] || { lat, lng };
     const primaryKey = `${primaryPoint.lat.toFixed(6)},${primaryPoint.lng.toFixed(6)}`;
     const primaryPrediction = predictions[primaryKey] || null;
@@ -81,6 +84,8 @@ export default function ResultPage() {
     }, [points, selectedPointIdx, centerLat, centerLng]);
     const MAX_RADIUS_KM = 1;
     // --- Load POIs from backend POI endpoint instead of CSVs ---
+    const DECAY_SCALE_KM = 1.0;
+
     useEffect(() => {
         let mounted = true;
         const controller = new AbortController();
@@ -258,6 +263,133 @@ export default function ResultPage() {
         return counts;
     }, [filteredPois, searchQuery]);
 
+    const categoryDecayedAverages = useMemo(() => {
+        if (!filteredPois) return {};
+        const averages: Record<string, number> = {};
+        let totalCount = 0;
+        let totalSum = 0;
+        Object.entries(filteredPois).forEach(([cat, list]) => {
+            const filteredList = list.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            if (filteredList.length === 0) {
+                averages[cat] = 0;
+                return;
+            }
+            const sum = filteredList.reduce((acc, p) => {
+                const w = Number(p.weight) || 0;
+                const d = Number(p.distance_km) || 0;
+                return acc + (w * Math.exp(-d / DECAY_SCALE_KM));
+            }, 0);
+            averages[cat] = sum / filteredList.length;
+            totalCount += filteredList.length;
+            totalSum += sum;
+        });
+        averages['All'] = totalCount > 0 ? totalSum / totalCount : 0;
+        return averages;
+    }, [filteredPois, searchQuery, DECAY_SCALE_KM]);
+
+    const pointSummaries = useMemo(() => {
+        if (!loadedPois || points.length === 0) return [] as Array<{
+            key: string;
+            point: Point;
+            totalScore: number;
+            perCategory: Array<{ cat: string; topPois: Array<Poi & { decayed_weight: number }>; score: number }>;
+        }>;
+        return points.map((p) => {
+            const perCategory: Array<{ cat: string; topPois: Array<Poi & { decayed_weight: number }>; score: number }> = [];
+            let totalScore = 0;
+            Object.entries(loadedPois).forEach(([cat, list]) => {
+                const within = list
+                    .map((poi) => ({
+                        ...poi,
+                        distance_km: Number(haversineKm(p.lat, p.lng, poi.lat, poi.lng).toFixed(3))
+                    }))
+                    .filter((poi) => poi.distance_km <= MAX_RADIUS_KM)
+                    .sort((a, b) => {
+                        const aw = Number(a.weight) || 0;
+                        const bw = Number(b.weight) || 0;
+                        const ad = Number(a.distance_km) || 0;
+                        const bd = Number(b.distance_km) || 0;
+                        const aScore = aw * Math.exp(-ad / DECAY_SCALE_KM);
+                        const bScore = bw * Math.exp(-bd / DECAY_SCALE_KM);
+                        return bScore - aScore;
+                    });
+                const topPois = within.slice(0, 20).map((poi) => {
+                    const w = Number(poi.weight) || 0;
+                    const d = Number(poi.distance_km) || 0;
+                    const decayed_weight = w * Math.exp(-d / DECAY_SCALE_KM);
+                    return { ...poi, decayed_weight };
+                });
+                const score = topPois.reduce((acc, poi) => acc + (Number(poi.decayed_weight) || 0), 0);
+                totalScore += score;
+                perCategory.push({ cat, topPois, score });
+            });
+            return {
+                key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`,
+                point: p,
+                totalScore,
+                perCategory
+            };
+        });
+    }, [loadedPois, points, MAX_RADIUS_KM, DECAY_SCALE_KM]);
+
+    const preferredPoint = useMemo(() => {
+        if (pointSummaries.length === 0) return null;
+        return pointSummaries.slice().sort((a, b) => b.totalScore - a.totalScore)[0];
+    }, [pointSummaries]);
+
+    useEffect(() => {
+        if (pointSummaries.length === 0) return;
+        const controller = new AbortController();
+        (async () => {
+            try {
+                setAiLoading(true);
+                setAiError("");
+                const payload = {
+                    preferred_point_key: preferredPoint?.key ?? null,
+                    radius_km: MAX_RADIUS_KM,
+                    decay_scale_km: DECAY_SCALE_KM,
+                    points: pointSummaries.map((s) => ({
+                        key: s.key,
+                        lat: s.point.lat,
+                        lng: s.point.lng,
+                        total_score: s.totalScore,
+                        per_category: s.perCategory.map((c) => ({
+                            cat: c.cat,
+                            score: c.score,
+                            top_pois: c.topPois.map((p) => ({
+                                name: p.name,
+                                distance_km: p.distance_km,
+                                weight: p.weight,
+                                decayed_weight: p.decayed_weight,
+                                avg_weight_value: p.decayed_weight,
+                                subcategory: p.subcategory || null
+                            }))
+                        }))
+                    }))
+                };
+                const res = await fetch("http://127.0.0.1:8000/api/v1/explain/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload),
+                    signal: controller.signal
+                });
+                if (!res.ok) {
+                    const err = await res.json().catch(() => ({}));
+                    throw new Error(err?.detail || "Explanation request failed");
+                }
+                const data = await res.json();
+                setAiExplanation((data?.explanation || "").trim());
+            } catch (err: unknown) {
+                if ((err as { name?: string }).name !== "AbortError") {
+                    setAiError((err as Error).message || "Failed to generate explanation.");
+                }
+            } finally {
+                setAiLoading(false);
+            }
+        })();
+        return () => controller.abort();
+    }, [pointSummaries, preferredPoint, MAX_RADIUS_KM, DECAY_SCALE_KM]);
+
     return (
         <div style={{ padding: 20, fontFamily: "Inter, system-ui, Arial", background: "#ffffff", minHeight: "100vh", color: "#0f172a" }}>
             <div style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -315,6 +447,54 @@ export default function ResultPage() {
                                     </div>
                                 );
                             })}
+                        </div>
+                    </div>
+                )}
+
+                {points.length > 0 && (
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
+                        <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3>
+                        {aiLoading && <div style={{ fontSize: 12, color: "#64748b" }}>Generating explanation…</div>}
+                        {aiError && <div style={{ fontSize: 12, color: "#ef4444" }}>{aiError}</div>}
+                        {aiExplanation && (
+                            <div style={{ whiteSpace: "pre-wrap", fontSize: 13, color: "#0f172a", marginTop: 6 }}>
+                                {aiExplanation}
+                            </div>
+                        )}
+                        {preferredPoint && (
+                            <div style={{ marginBottom: 10, fontSize: 13, color: "#0f172a" }}>
+                                Preferred point: <strong>{preferredPoint.key}</strong> (highest combined decayed contribution: {preferredPoint.totalScore.toFixed(3)}).
+                            </div>
+                        )}
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 10 }}>
+                            {pointSummaries.map((summary, idx) => (
+                                <div key={`explain-${summary.key}`} style={{ border: "1px solid #e2e8f0", borderRadius: 8, padding: 12 }}>
+                                    <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
+                                    <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>{summary.key}</div>
+                                    <div style={{ marginTop: 6, fontSize: 12, color: "#0f172a" }}>
+                                        {summary.key === preferredPoint?.key
+                                            ? "This point is preferred because it has the strongest overall decayed POI contribution across categories."
+                                            : "This point has a lower total decayed contribution than the preferred point."}
+                                    </div>
+                                    <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
+                                        Total decayed contribution: <strong>{summary.totalScore.toFixed(3)}</strong>
+                                    </div>
+                                    <div style={{ marginTop: 8 }}>
+                                        {summary.perCategory.map((catSummary) => (
+                                            <div key={`${summary.key}-${catSummary.cat}`} style={{ marginBottom: 6 }}>
+                                                <div style={{ fontWeight: 700, fontSize: 12 }}>{catSummary.cat}</div>
+                                                {catSummary.topPois.length === 0 ? (
+                                                    <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs within 1 km.</div>
+                                                ) : (
+                                                    <div style={{ fontSize: 12, color: "#475569" }}>
+                                                        Top contributors: {catSummary.topPois.slice(0, 3).map((poi) => poi.name).join(", ")}. (decayed sum: {catSummary.score.toFixed(3)})
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 )}
@@ -400,7 +580,13 @@ export default function ResultPage() {
                                                     fontWeight: 500
                                                 }}
                                             >
-                                                {cat} <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 2 }}>{categoryCounts[cat] || 0}</span>
+                                                {cat}
+                                                <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
+                                                    {categoryCounts[cat] || 0}
+                                                </span>
+                                                <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
+                                                    avg: {(categoryDecayedAverages[cat] || 0).toFixed(3)}
+                                                </span>
                                             </button>
                                         ))}
                                     </div>
@@ -411,7 +597,6 @@ export default function ResultPage() {
                                 {filteredPois && Object.entries(filteredPois)
                                     .filter(([cat]) => selectedCategory === 'All' || cat === selectedCategory)
                                     .map(([cat, list]) => {
-                                        const DECAY_SCALE_KM = 1.0;
                                         const filteredList = list
                                             .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
                                             .slice()
