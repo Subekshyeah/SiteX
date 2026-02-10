@@ -47,7 +47,18 @@ function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Poi
     return points;
 }
 
-type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: Record<string, string> };
+type PoiApiItem = {
+    lat: number;
+    lon?: number;
+    lng?: number;
+    name?: string;
+    weight?: number;
+    distance_km?: number;
+    path?: Array<{ lat: number; lon?: number; lng?: number }>;
+    [key: string]: unknown;
+};
+type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: PoiApiItem };
+type PredictionItem = { lat: number; lon: number; score: number; risk_level: string };
 export default function ResultPage() {
     const name = decodeURIComponent(qs("name") || "");
     const lat = parseFloat(qs("lat") || "0");
@@ -65,6 +76,9 @@ export default function ResultPage() {
     const centerLng = center.lng;
 
     const [loadedPois, setLoadedPois] = useState<Record<string, Poi[]> | null>(null);
+    const poisCacheRef = useRef<Map<string, Record<string, Poi[]>>>(new Map());
+    const predictionsCacheRef = useRef<Map<string, Record<string, { score: number; risk: string }>>>(new Map());
+    const aiCacheRef = useRef<Map<string, string>>(new Map());
     const [selectedPointIdx, setSelectedPointIdx] = useState<number>(0);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
     const [predictions, setPredictions] = useState<Record<string, { score: number; risk: string }>>({});
@@ -82,6 +96,10 @@ export default function ResultPage() {
     const selectedPoint = useMemo(() => {
         return points[selectedPointIdx] || points[0] || { lat: centerLat, lng: centerLng };
     }, [points, selectedPointIdx, centerLat, centerLng]);
+    const pointsKey = useMemo(
+        () => points.map((p) => `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`).join("|") || "__empty__",
+        [points]
+    );
     const MAX_RADIUS_KM = 1;
     // --- Load POIs from backend POI endpoint instead of CSVs ---
     const DECAY_SCALE_KM = 1.0;
@@ -89,62 +107,39 @@ export default function ResultPage() {
     useEffect(() => {
         let mounted = true;
         const controller = new AbortController();
-        (async () => {
-            try {
-                const radius = 0.3; // km
-                const base = `http://127.0.0.1:8000/api/v1/pois/?lat=${encodeURIComponent(centerLat)}&lon=${encodeURIComponent(centerLng)}&radius_km=${radius}`;
-                const streamUrl = base + `&stream=true`;
-                const res = await fetch(streamUrl, { signal: controller.signal });
-                const mapName: Record<string, string> = { cafes: 'Cafes', banks: 'Bank', education: 'Education', health: 'Health', temples: 'Temples', other: 'Other' };
-                const categoriesMap: Record<string, Poi[]> = {};
-                if (!res.ok) {
-                    if (mounted) setLoadedPois({});
-                    return;
-                }
-                if (res.body && (res.headers.get('content-type') || '').includes('ndjson')) {
-                    const reader = res.body.getReader();
-                    const dec = new TextDecoder();
-                    let buf = '';
-                    while (true) {
-                        const { done, value } = await reader.read();
-                        if (done) break;
-                        buf += dec.decode(value, { stream: true });
-                        const parts = buf.split(/\n/);
-                        buf = parts.pop() || '';
-                        for (const line of parts) {
-                            const trimmed = line.trim();
-                            if (!trimmed) continue;
-                            try {
-                                const obj = JSON.parse(trimmed);
-                                const catKey = obj.category as string;
-                                const arr = Array.isArray(obj.items) ? obj.items : [];
-                                const display = mapName[catKey] || catKey;
-                                const list = arr.map((it: any) => {
-                                    const plat = Number(it.lat);
-                                    const plng = Number(it.lon ?? it.lng ?? 0);
-                                    const nameVal = it.name ?? '';
-                                    const weight = Number(it.weight ?? 0) || 0;
-                                    const distance_km = Number(it.distance_km ?? 0) || 0;
-                                    const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
-                                    return poi;
-                                }).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lng));
-                                if (list.length) {
-                                    categoriesMap[display] = (categoriesMap[display] || []).concat(list);
-                                    if (mounted) setLoadedPois({ ...categoriesMap });
-                                }
-                            } catch (err) {
-                                // ignore parse errors for partial lines
-                            }
-                        }
-                    }
-                    // final buffer
-                    if (buf.trim()) {
+        const mapName: Record<string, string> = { cafes: 'Cafes', banks: 'Bank', education: 'Education', health: 'Health', temples: 'Temples', other: 'Other' };
+
+        const fetchPoisForPoint = async (point: Point) => {
+            const key = `${point.lat.toFixed(6)},${point.lng.toFixed(6)}`;
+            if (poisCacheRef.current.has(key)) return;
+            const radius = 0.3; // km
+            const base = `http://127.0.0.1:8000/api/v1/pois/?lat=${encodeURIComponent(point.lat)}&lon=${encodeURIComponent(point.lng)}&radius_km=${radius}`;
+            const streamUrl = base + `&stream=true`;
+            const res = await fetch(streamUrl, { signal: controller.signal });
+            const categoriesMap: Record<string, Poi[]> = {};
+            if (!res.ok) {
+                poisCacheRef.current.set(key, {});
+                return;
+            }
+            if (res.body && (res.headers.get('content-type') || '').includes('ndjson')) {
+                const reader = res.body.getReader();
+                const dec = new TextDecoder();
+                let buf = '';
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    buf += dec.decode(value, { stream: true });
+                    const parts = buf.split(/\n/);
+                    buf = parts.pop() || '';
+                    for (const line of parts) {
+                        const trimmed = line.trim();
+                        if (!trimmed) continue;
                         try {
-                            const obj = JSON.parse(buf.trim());
+                            const obj = JSON.parse(trimmed);
                             const catKey = obj.category as string;
-                            const arr = Array.isArray(obj.items) ? obj.items : [];
+                            const arr = Array.isArray(obj.items) ? (obj.items as PoiApiItem[]) : [];
                             const display = mapName[catKey] || catKey;
-                            const list = arr.map((it: any) => {
+                            const list = arr.map((it: PoiApiItem) => {
                                 const plat = Number(it.lat);
                                 const plng = Number(it.lon ?? it.lng ?? 0);
                                 const nameVal = it.name ?? '';
@@ -152,20 +147,22 @@ export default function ResultPage() {
                                 const distance_km = Number(it.distance_km ?? 0) || 0;
                                 const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
                                 return poi;
-                            }).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+                            }).filter((p: Poi) => Number.isFinite(p.lat) && Number.isFinite(p.lng));
                             if (list.length) {
                                 categoriesMap[display] = (categoriesMap[display] || []).concat(list);
-                                if (mounted) setLoadedPois({ ...categoriesMap });
                             }
-                        } catch (err) { /* ignore */ }
+                        } catch {
+                            // ignore parse errors for partial lines
+                        }
                     }
-                } else {
-                    // fallback to non-streaming JSON
-                    const data = await res.json();
-                    const pois = data?.pois || {};
-                    for (const [key, arr] of Object.entries(pois)) {
-                        const display = mapName[key] || key;
-                        const list = (arr as any[]).map((it) => {
+                }
+                if (buf.trim()) {
+                    try {
+                        const obj = JSON.parse(buf.trim());
+                        const catKey = obj.category as string;
+                        const arr = Array.isArray(obj.items) ? (obj.items as PoiApiItem[]) : [];
+                        const display = mapName[catKey] || catKey;
+                        const list = arr.map((it: PoiApiItem) => {
                             const plat = Number(it.lat);
                             const plng = Number(it.lon ?? it.lng ?? 0);
                             const nameVal = it.name ?? '';
@@ -173,19 +170,52 @@ export default function ResultPage() {
                             const distance_km = Number(it.distance_km ?? 0) || 0;
                             const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
                             return poi;
-                        }).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lng));
-                        if (list.length) categoriesMap[display] = list;
-                    }
-                    if (mounted) setLoadedPois(categoriesMap);
+                        }).filter((p: Poi) => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+                        if (list.length) {
+                            categoriesMap[display] = (categoriesMap[display] || []).concat(list);
+                        }
+                    } catch { /* ignore */ }
                 }
-            } catch (err) {
+            } else {
+                const data = await res.json();
+                const pois = data?.pois || {};
+                for (const [catKey, arr] of Object.entries(pois)) {
+                    const display = mapName[catKey] || catKey;
+                    const list = (arr as PoiApiItem[]).map((it: PoiApiItem) => {
+                        const plat = Number(it.lat);
+                        const plng = Number(it.lon ?? it.lng ?? 0);
+                        const nameVal = it.name ?? '';
+                        const weight = Number(it.weight ?? 0) || 0;
+                        const distance_km = Number(it.distance_km ?? 0) || 0;
+                        const poi: Poi = { name: nameVal, lat: plat, lng: plng, weight, distance_km, raw: it };
+                        return poi;
+                    }).filter((p: Poi) => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+                    if (list.length) categoriesMap[display] = list;
+                }
+            }
+            poisCacheRef.current.set(key, categoriesMap);
+        };
+
+        (async () => {
+            try {
+                if (!points.length) {
+                    if (mounted) setLoadedPois({});
+                    return;
+                }
+                const selectedKey = `${selectedPoint.lat.toFixed(6)},${selectedPoint.lng.toFixed(6)}`;
+                const cachedSelected = poisCacheRef.current.get(selectedKey);
+                if (cachedSelected && mounted) setLoadedPois(cachedSelected);
+                await Promise.all(points.map((p) => fetchPoisForPoint(p)));
+                const cached = poisCacheRef.current.get(selectedKey) || {};
+                if (mounted) setLoadedPois(cached);
+            } catch {
                 if (mounted) setLoadedPois({});
             }
         })();
         return () => { mounted = false; controller.abort(); };
-    }, [centerLat, centerLng]);
+    }, [points, selectedPoint]);
 
-        // CSV fallback removed — POIs are loaded from backend `/api/v1/pois/` above.
+    // CSV fallback removed — POIs are loaded from backend `/api/v1/pois/` above.
 
     const mapRef = useRef<L.Map | null>(null);
     const [hoverPos, setHoverPos] = useState<{ lat: number; lng: number } | null>(null);
@@ -197,6 +227,11 @@ export default function ResultPage() {
         const controller = new AbortController();
         (async () => {
             if (points.length === 0) return;
+            const cached = predictionsCacheRef.current.get(pointsKey);
+            if (cached) {
+                if (mounted) setPredictions(cached);
+                return;
+            }
             try {
                 const url = `http://127.0.0.1:8000/api/v1/predict/`;
                 const res = await fetch(url, {
@@ -214,11 +249,12 @@ export default function ResultPage() {
                 if (mounted) {
                     const newPredictions: Record<string, { score: number; risk: string }> = {};
                     if (Array.isArray(data.predictions)) {
-                        data.predictions.forEach((item: any) => {
+                        (data.predictions as PredictionItem[]).forEach((item: PredictionItem) => {
                             const key = `${Number(item.lat).toFixed(6)},${Number(item.lon).toFixed(6)}`;
                             newPredictions[key] = { score: item.score, risk: item.risk_level };
                         });
                     }
+                    predictionsCacheRef.current.set(pointsKey, newPredictions);
                     setPredictions(newPredictions);
                 }
             } catch (err) {
@@ -227,7 +263,7 @@ export default function ResultPage() {
             }
         })();
         return () => { mounted = false; controller.abort(); };
-    }, [points]);
+    }, [points, pointsKey]);
 
     useEffect(() => {
         try {
@@ -367,6 +403,12 @@ export default function ResultPage() {
                         }))
                     }))
                 };
+                const cacheKey = JSON.stringify(payload);
+                const cached = aiCacheRef.current.get(cacheKey);
+                if (cached) {
+                    setAiExplanation(cached);
+                    return;
+                }
                 const res = await fetch("http://127.0.0.1:8000/api/v1/explain/", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -378,7 +420,9 @@ export default function ResultPage() {
                     throw new Error(err?.detail || "Explanation request failed");
                 }
                 const data = await res.json();
-                setAiExplanation((data?.explanation || "").trim());
+                const explanation = (data?.explanation || "").trim();
+                aiCacheRef.current.set(cacheKey, explanation);
+                setAiExplanation(explanation);
             } catch (err: unknown) {
                 if ((err as { name?: string }).name !== "AbortError") {
                     setAiError((err as Error).message || "Failed to generate explanation.");
@@ -619,16 +663,18 @@ export default function ResultPage() {
                                                             setHoverPos({ lat: p.lat, lng: p.lng });
                                                             try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
                                                             try {
-                                                                const raw = p.raw as any;
+                                                                const raw = p.raw as PoiApiItem | undefined;
                                                                 if (raw && Array.isArray(raw.path)) {
-                                                                    const coords: Array<[number, number]> = raw.path.map((pt: any) => [Number(pt.lat), Number(pt.lon ?? pt.lng)]).filter(([a,b]) => Number.isFinite(a) && Number.isFinite(b));
+                                                                    const coords: Array<[number, number]> = raw.path
+                                                                        .map((pt) => [Number(pt.lat), Number(pt.lon ?? pt.lng)] as [number, number])
+                                                                        .filter(([a, b]: [number, number]) => Number.isFinite(a) && Number.isFinite(b));
                                                                     setHoverPath(coords.length ? coords : null);
                                                                 } else {
                                                                     setHoverPath(null);
                                                                 }
-                                                            } catch (err) { setHoverPath(null); }
+                                                            } catch { setHoverPath(null); }
                                                         }}
-                                                            onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
+                                                        onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
                                                         style={{ display: 'flex', gap: 8, padding: 8, borderRadius: 6, alignItems: 'center', cursor: 'pointer', border: '1px solid rgba(15,23,42,0.03)', marginBottom: 8 }}>
                                                         <div style={{ flex: 1 }}>
                                                             <div style={{ fontWeight: 700 }}>{p.name}</div>
