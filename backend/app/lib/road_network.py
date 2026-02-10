@@ -2,6 +2,7 @@ import json
 import math
 import os
 import pickle
+from collections import OrderedDict
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
 import networkx as nx
@@ -25,6 +26,20 @@ def _haversine_pair(lat1: float, lon1: float, lat2: float, lon2: float) -> float
     return R * c
 
 
+def _haversine_vec(
+    lat1: np.ndarray, lon1: np.ndarray, lat2: np.ndarray, lon2: np.ndarray
+) -> np.ndarray:
+    """Vectorized haversine distance in meters for arrays."""
+    r = 6371000.0
+    phi1 = np.radians(lat1)
+    phi2 = np.radians(lat2)
+    dphi = phi2 - phi1
+    dlambda = np.radians(lon2 - lon1)
+    a = np.sin(dphi / 2.0) ** 2 + np.cos(phi1) * np.cos(phi2) * np.sin(dlambda / 2.0) ** 2
+    c = 2.0 * np.arctan2(np.sqrt(a), np.sqrt(1.0 - a))
+    return r * c
+
+
 class RoadNetwork:
     """Light-weight road graph that supports snapping points and shortest-path queries."""
 
@@ -33,6 +48,8 @@ class RoadNetwork:
         self.node_coords = node_coords.astype(np.float64)
         self.snap_tolerance_m = max(float(snap_tolerance_m), 0.0)
         self._tree = self._build_tree()
+        self._paths_cache: "OrderedDict[Tuple[int, Optional[float]], Dict[int, float]]" = OrderedDict()
+        self._paths_cache_size = 8
 
     @classmethod
     def from_geojson(
@@ -78,29 +95,62 @@ class RoadNetwork:
         lons: Sequence[float],
         max_snap_m: Optional[float] = None,
     ) -> Tuple[List[Optional[int]], List[float]]:
-        nodes: List[Optional[int]] = []
-        offsets: List[float] = []
-        for lat, lon in zip(lats, lons):
+        nodes: List[Optional[int]] = [None] * len(lats)
+        offsets: List[float] = [float("inf")] * len(lats)
+        if self.node_count == 0:
+            return nodes, offsets
+
+        threshold = max_snap_m if max_snap_m is not None else self.snap_tolerance_m
+
+        if self._tree is not None:
+            lat_arr = np.array(lats, dtype=np.float64)
+            lon_arr = np.array(lons, dtype=np.float64)
+            valid_mask = np.isfinite(lat_arr) & np.isfinite(lon_arr)
+            if np.any(valid_mask):
+                query_pts = np.stack((lat_arr[valid_mask], lon_arr[valid_mask]), axis=1)
+                _, idxs = self._tree.query(query_pts, k=1)
+                idxs = np.asarray(idxs, dtype=np.int64)
+                node_latlon = self.node_coords[idxs]
+                dists = _haversine_vec(
+                    lat_arr[valid_mask],
+                    lon_arr[valid_mask],
+                    node_latlon[:, 0],
+                    node_latlon[:, 1],
+                )
+                valid_idx_list = np.nonzero(valid_mask)[0]
+                for out_i, node_idx, dist in zip(valid_idx_list, idxs, dists):
+                    if threshold <= 0.0 or dist <= threshold:
+                        nodes[out_i] = int(node_idx)
+                        offsets[out_i] = float(dist)
+            return nodes, offsets
+
+        for i, (lat, lon) in enumerate(zip(lats, lons)):
             if lat is None or lon is None:
-                nodes.append(None)
-                offsets.append(float("inf"))
                 continue
             try:
                 lat_val = float(lat)
                 lon_val = float(lon)
             except (TypeError, ValueError):
-                nodes.append(None)
-                offsets.append(float("inf"))
                 continue
             node_id, offset = self.snap_point(lat_val, lon_val, max_snap_m=max_snap_m)
-            nodes.append(node_id)
-            offsets.append(float(offset) if offset is not None else float("inf"))
+            if node_id is not None:
+                nodes[i] = node_id
+                offsets[i] = float(offset) if offset is not None else float("inf")
         return nodes, offsets
 
     def shortest_paths_from(self, node_id: int, cutoff: float) -> Dict[int, float]:
         if node_id not in self.graph:
             return {}
-        return nx.single_source_dijkstra_path_length(self.graph, node_id, cutoff=cutoff, weight="weight")
+        key = (int(node_id), float(cutoff) if cutoff is not None else None)
+        cached = self._paths_cache.get(key)
+        if cached is not None:
+            self._paths_cache.move_to_end(key)
+            return cached
+        lengths = nx.single_source_dijkstra_path_length(self.graph, node_id, cutoff=cutoff, weight="weight")
+        self._paths_cache[key] = lengths
+        if len(self._paths_cache) > self._paths_cache_size:
+            self._paths_cache.popitem(last=False)
+        return lengths
 
     def distance_between(
         self,
@@ -116,14 +166,23 @@ class RoadNetwork:
             return None
         if source_node == target_node:
             return float((source_offset or 0.0) + (target_offset or 0.0))
+        cache_key = (int(source_node), None)
+        cached = self._paths_cache.get(cache_key)
+        if cached is not None:
+            self._paths_cache.move_to_end(cache_key)
+            path_len = cached.get(int(target_node))
+            if path_len is None:
+                return None
+            return float(path_len + (source_offset or 0.0) + (target_offset or 0.0))
         try:
-            path_len = nx.shortest_path_length(
-                self.graph,
-                source=source_node,
-                target=target_node,
-                weight="weight",
-            )
+            lengths = nx.single_source_dijkstra_path_length(self.graph, source_node, weight="weight")
         except (nx.NetworkXNoPath, nx.NodeNotFound):
+            return None
+        self._paths_cache[cache_key] = lengths
+        if len(self._paths_cache) > self._paths_cache_size:
+            self._paths_cache.popitem(last=False)
+        path_len = lengths.get(int(target_node))
+        if path_len is None:
             return None
         return float(path_len + (source_offset or 0.0) + (target_offset or 0.0))
 
