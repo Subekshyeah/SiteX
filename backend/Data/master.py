@@ -31,6 +31,7 @@ MASTER_OUT = os.path.join(DATA_DIR, "master_cafes_metrics.csv")
 ROADWAY_GEOJSON = os.path.join(os.path.dirname(__file__), "Roadway.geojson")
 ROAD_GRAPH_CACHE = os.path.join(os.path.dirname(__file__), "road_graph_cache.pkl")
 ROAD_SNAP_TOLERANCE_M = 120.0
+MASTER_DECAY_M = 1000.0
 
 POI_FILES = {
     "banks": os.path.join(DATA_DIR, "banks.csv"),
@@ -278,6 +279,7 @@ def compute_poi_metrics_for_cafes(
     radius_m: float = 1000.0,
     road_network: Optional["RoadNetwork"] = None,
     snap_tolerance_m: float = ROAD_SNAP_TOLERANCE_M,
+    decay_scale_m: float = MASTER_DECAY_M,
 ) -> pd.DataFrame:
     latlon = detect_latlon(poi)
     if latlon is None:
@@ -413,7 +415,11 @@ def compute_poi_metrics_for_cafes(
                 total_dist = path_dist + cafe_offset + poi_snap_offsets[poi_idx]
                 if total_dist <= radius_m:
                     total_count += 1
-                    total_weight += float(poi_weights[poi_idx])
+                    try:
+                        decayed = float(poi_weights[poi_idx]) * math.exp(-(float(total_dist) / float(decay_scale_m)))
+                    except Exception:
+                        decayed = float(poi_weights[poi_idx])
+                    total_weight += decayed
                     if min_dist is None or total_dist < min_dist:
                         min_dist = total_dist
         if total_count == 0 or min_dist is None:
@@ -444,7 +450,13 @@ def compute_poi_metrics_for_cafes(
         within_mask = dists <= radius_m
         counts.append(int(np.count_nonzero(within_mask)))
         if np.any(within_mask):
-            weight_sum = float(np.sum(poi_weights[within_mask]))
+            try:
+                ds = dists[within_mask].astype(float)
+                pws = poi_weights[within_mask].astype(float)
+                decayed_arr = pws * np.exp(-(ds / float(decay_scale_m)))
+                weight_sum = float(np.sum(decayed_arr))
+            except Exception:
+                weight_sum = float(np.sum(poi_weights[within_mask]))
             weight_sums.append(weight_sum)
             min_dists.append(float(np.min(dists[within_mask])))
         else:
@@ -470,6 +482,7 @@ def generate_master_metrics(
     use_road_network: bool = True,
     road_cache_path: Optional[str] = ROAD_GRAPH_CACHE,
     snap_tolerance_m: float = ROAD_SNAP_TOLERANCE_M,
+    decay_scale_m: float = MASTER_DECAY_M,
 ):
     cafes = pd.read_csv(cafe_file)
     if detect_latlon(cafes) is None:
@@ -587,6 +600,7 @@ def generate_master_metrics(
             radius_m=master_radius,
             road_network=road_network,
             snap_tolerance_m=snap_tolerance_m,
+            decay_scale_m=decay_scale_m,
         )
 
     # After processing all POI categories, build the composite score (using master radius)
@@ -969,6 +983,12 @@ def main():
         default=ROAD_SNAP_TOLERANCE_M,
         help="Maximum allowed snap distance from a point to the nearest road node",
     )
+    parser.add_argument(
+        "--decay-scale-meters",
+        type=float,
+        default=MASTER_DECAY_M,
+        help="Exponential decay length scale in meters for POI weight decay (default: 1000)",
+    )
     args = parser.parse_args()
 
     road_geojson = args.road_geojson if args.road_geojson else None
@@ -979,6 +999,7 @@ def main():
         use_road_network=not args.disable_road_network,
         road_cache_path=args.road_cache,
         snap_tolerance_m=args.snap_max_meters,
+        decay_scale_m=args.decay_scale_meters,
     )
 
 

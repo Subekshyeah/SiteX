@@ -1,30 +1,56 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from typing import Dict, Any
+from typing import List, Dict, Any
 from app.services.prediction_service import PredictionService
 
 router = APIRouter()
 
-class PredictionRequest(BaseModel):
+class Location(BaseModel):
     lat: float
-    lng: float
+    lon: float
+
+class PredictionRequest(BaseModel):
+    locations: List[Location]
+
+class PredictionResponseItem(BaseModel):
+    lat: float
+    lon: float
+    score: float
+    risk_level: str
 
 class PredictionResponse(BaseModel):
-    predicted_score: float
-    risk_level: str
-    estimated_features: Dict[str, float]
+    predictions: List[PredictionResponseItem]
 
-@router.post("/predict-score/", response_model=PredictionResponse)
+
+@router.post("/predict/", response_model=PredictionResponse)
 def predict_score(request: PredictionRequest):
     """
-    Predict the success score for a new cafe location based on latitude and longitude.
-    Uses k-Nearest Neighbors to estimate local POI density from the training dataset.
+    Predict success scores for multiple new cafe locations.
     """
     service = PredictionService.get_instance()
-    try:
-        result = service.predict(request.lat, request.lng)
-        return result
-    except RuntimeError as e:
-        raise HTTPException(status_code=503, detail=str(e))
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
+    results = []
+    errors = []
+    for loc in request.locations:
+        try:
+            prediction = service.predict(loc.lat, loc.lon)
+            results.append({
+                "lat": loc.lat,
+                "lon": loc.lon,
+                "score": prediction['predicted_score'],
+                "risk_level": prediction['risk_level']
+            })
+        except Exception as e:
+            errors.append({
+                "lat": loc.lat,
+                "lon": loc.lon,
+                "error": str(e)
+            })
+
+    if not results:
+        raise HTTPException(status_code=500, detail={
+            "message": "Prediction failed for all locations.",
+            "errors": errors
+        })
+
+    return {"predictions": results}
+

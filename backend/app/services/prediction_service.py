@@ -149,6 +149,10 @@ class PredictionService:
         # Copy raw POI features (averaged from neighbors)
         for col in poi_count_cols + poi_weight_cols:
             new_features[col] = nearest_cafes[col].mean()
+
+        # Include cafe_weight if present in the reference data
+        if 'cafe_weight' in self.reference_df.columns:
+            new_features['cafe_weight'] = nearest_cafes['cafe_weight'].mean()
         
         # Add lat/lng
         new_features['lat'] = lat

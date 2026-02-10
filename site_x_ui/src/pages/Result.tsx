@@ -193,6 +193,43 @@ export default function ResultPage() {
     const [searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
+        let mounted = true;
+        const controller = new AbortController();
+        (async () => {
+            if (points.length === 0) return;
+            try {
+                const url = `http://127.0.0.1:8000/api/v1/predict/`;
+                const res = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ locations: points.map(p => ({ lat: p.lat, lon: p.lng })) }),
+                    signal: controller.signal,
+                });
+                if (!res.ok) {
+                    console.error('Failed to fetch predictions');
+                    if (mounted) setPredictions({});
+                    return;
+                }
+                const data = await res.json();
+                if (mounted) {
+                    const newPredictions: Record<string, { score: number; risk: string }> = {};
+                    if (Array.isArray(data.predictions)) {
+                        data.predictions.forEach((item: any) => {
+                            const key = `${Number(item.lat).toFixed(6)},${Number(item.lon).toFixed(6)}`;
+                            newPredictions[key] = { score: item.score, risk: item.risk_level };
+                        });
+                    }
+                    setPredictions(newPredictions);
+                }
+            } catch (err) {
+                if (mounted) setPredictions({});
+                console.error('Error fetching predictions:', err);
+            }
+        })();
+        return () => { mounted = false; controller.abort(); };
+    }, [points]);
+
+    useEffect(() => {
         try {
             mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16);
         } catch (err) { void err; }

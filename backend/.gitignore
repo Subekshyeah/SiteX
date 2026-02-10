@@ -123,3 +123,5 @@ dmypy.json
 **/*all_data.csv
 **/*final.csv
 **/*master_cafes_**
+
+**.pkl
