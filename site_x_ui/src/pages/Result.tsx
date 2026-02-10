@@ -412,7 +412,7 @@ export default function ResultPage() {
                     </div>
                     {points.length > 1 && (
                         <div style={{ marginTop: 10, fontSize: 12, color: "#475569" }}>
-                            {points.map((p, idx) => {
+                            {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
                                 const pred = predictions[key];
                                 return (
@@ -430,7 +430,7 @@ export default function ResultPage() {
                     <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
                         <h3 style={{ marginTop: 0 }}>Per-point Analysis</h3>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 10 }}>
-                            {points.map((p, idx) => {
+                            {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
                                 const pred = predictions[key];
                                 const score = pred?.score;
@@ -533,7 +533,7 @@ export default function ResultPage() {
 
                                     {points.length > 1 && (
                                         <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
-                                            {points.map((p, idx) => (
+                                            {points.map((p: Point, idx: number) => (
                                                 <button
                                                     key={`pt-${idx}`}
                                                     onClick={() => setSelectedPointIdx(idx)}
@@ -621,7 +621,9 @@ export default function ResultPage() {
                                                             try {
                                                                 const raw = p.raw as any;
                                                                 if (raw && Array.isArray(raw.path)) {
-                                                                    const coords: Array<[number, number]> = raw.path.map((pt: any) => [Number(pt.lat), Number(pt.lon ?? pt.lng)]).filter(([a,b]) => Number.isFinite(a) && Number.isFinite(b));
+                                                                    const coords: Array<[number, number]> = raw.path
+                                                                        .map((pt: any) => [Number(pt.lat), Number(pt.lon ?? pt.lng)])
+                                                                        .filter(([a, b]: [number, number]) => Number.isFinite(a) && Number.isFinite(b));
                                                                     setHoverPath(coords.length ? coords : null);
                                                                 } else {
                                                                     setHoverPath(null);
