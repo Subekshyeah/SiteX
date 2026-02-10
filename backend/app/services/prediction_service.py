@@ -5,7 +5,7 @@ import numpy as np
 import xgboost as xgb
 from scipy.spatial import distance
 from pathlib import Path
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 class PredictionService:
     _instance = None
@@ -123,6 +123,27 @@ class PredictionService:
         else:
             print(f"Warning: Reference data not found at {data_path}")
 
+    def _resolve_model_feature_names(self) -> Optional[list[str]]:
+        if self.feature_names:
+            return list(self.feature_names)
+        if self.model is None:
+            return None
+        # sklearn-style attribute
+        feature_names_in = getattr(self.model, "feature_names_in_", None)
+        if feature_names_in is not None:
+            return list(feature_names_in)
+        # xgboost Booster feature names
+        if hasattr(self.model, "get_booster"):
+            try:
+                booster = self.model.get_booster()
+                if booster is not None and booster.feature_names:
+                    return list(booster.feature_names)
+            except Exception:
+                pass
+        if isinstance(self.model, xgb.Booster) and self.model.feature_names:
+            return list(self.model.feature_names)
+        return None
+
     def predict(self, lat: float, lng: float, k_neighbors: int = 5) -> Dict[str, Any]:
         if self.model is None:
             raise RuntimeError("Model not loaded. Please check server logs.")
@@ -196,16 +217,13 @@ class PredictionService:
         
         # Combine with raw features
         sample_full = pd.concat([temp_df.reset_index(drop=True), eng_new.reset_index(drop=True)], axis=1)
-        
-        # Select only features used in training
-        if self.feature_names:
-            # Ensure all model features exist
-            for col in self.feature_names:
+
+        model_feature_names = self._resolve_model_feature_names()
+        if model_feature_names:
+            for col in model_feature_names:
                 if col not in sample_full.columns:
-                    # Fallback for missing columns (shouldn't happen if logic matches)
                     sample_full[col] = 0.0
-            
-            sample_df = sample_full[self.feature_names]
+            sample_df = sample_full[model_feature_names]
         else:
             # Fallback if feature names not loaded (risky)
             print("Warning: No feature names available. Using all engineered features.")
@@ -213,7 +231,7 @@ class PredictionService:
 
         # Make prediction
         if isinstance(self.model, xgb.Booster):
-            dtest = xgb.DMatrix(sample_df)
+            dtest = xgb.DMatrix(sample_df, feature_names=list(sample_df.columns))
             predicted_score = float(self.model.predict(dtest)[0])
         else:
             predicted_score = float(self.model.predict(sample_df)[0])
