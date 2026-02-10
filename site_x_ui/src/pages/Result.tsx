@@ -1,6 +1,19 @@
 "use client";
 
 import React, { useMemo, useEffect, useState, useRef } from "react";
+import {
+    ResponsiveContainer,
+    PieChart,
+    Pie,
+    Cell,
+    Tooltip,
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Legend
+} from "recharts";
 import { MapContainer, TileLayer, Marker, Polyline } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
@@ -104,6 +117,11 @@ export default function ResultPage() {
     const MAX_RADIUS_KM = 1;
     // --- Load POIs from backend POI endpoint instead of CSVs ---
     const DECAY_SCALE_KM = 1.0;
+    const getDecayedWeight = (poi: Poi) => {
+        const w = Number(poi.weight) || 0;
+        const d = Number(poi.distance_km) || 0;
+        return w * Math.exp(-d / DECAY_SCALE_KM);
+    };
 
     useEffect(() => {
         let mounted = true;
@@ -311,18 +329,66 @@ export default function ResultPage() {
                 averages[cat] = 0;
                 return;
             }
-            const sum = filteredList.reduce((acc, p) => {
-                const w = Number(p.weight) || 0;
-                const d = Number(p.distance_km) || 0;
-                return acc + (w * Math.exp(-d / DECAY_SCALE_KM));
-            }, 0);
+            const sum = filteredList.reduce((acc, p) => acc + getDecayedWeight(p), 0);
             averages[cat] = sum / filteredList.length;
             totalCount += filteredList.length;
             totalSum += sum;
         });
         averages['All'] = totalCount > 0 ? totalSum / totalCount : 0;
         return averages;
-    }, [filteredPois, searchQuery, DECAY_SCALE_KM]);
+    }, [filteredPois, searchQuery]);
+
+    const categoryTotals = useMemo(() => {
+        if (!filteredPois) return {} as Record<string, number>;
+        const totals: Record<string, number> = {};
+        Object.entries(filteredPois).forEach(([cat, list]) => {
+            const filteredList = list.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            totals[cat] = filteredList.reduce((acc, poi) => acc + getDecayedWeight(poi), 0);
+        });
+        return totals;
+    }, [filteredPois, searchQuery]);
+
+    const allTotalDecayed = useMemo(() => {
+        if (!filteredPois) return 0;
+        return Object.values(categoryTotals).reduce((acc, v) => acc + v, 0);
+    }, [categoryTotals, filteredPois]);
+
+    const getAllSharePct = (poi: Poi) => {
+        const total = allTotalDecayed;
+        const wEff = getDecayedWeight(poi);
+        if (total <= 0) return 0;
+        return Math.round(Math.min(1, wEff / total) * 100);
+    };
+
+    const getCategorySharePct = (poi: Poi, cat: string) => {
+        const total = categoryTotals[cat] || 0;
+        const wEff = getDecayedWeight(poi);
+        if (total <= 0) return 0;
+        return Math.round(Math.min(1, wEff / total) * 100);
+    };
+
+    const chartColors = useMemo(() => ({
+        Cafes: "#22c55e",
+        Bank: "#0ea5e9",
+        Education: "#a855f7",
+        Health: "#f97316",
+        Temples: "#eab308",
+        Other: "#64748b"
+    }), []);
+
+    const categoryPieData = useMemo(() => {
+        const data = Object.entries(categoryCounts)
+            .filter(([cat]) => cat !== "All")
+            .map(([cat, count]) => ({ name: cat, value: count }));
+        return data.filter((d) => d.value > 0);
+    }, [categoryCounts]);
+
+    const categoryAvgData = useMemo(() => {
+        return Object.entries(categoryDecayedAverages)
+            .filter(([cat]) => cat !== "All")
+            .map(([cat, avg]) => ({ name: cat, value: Number(avg) || 0 }))
+            .sort((a, b) => b.value - a.value);
+    }, [categoryDecayedAverages]);
 
     const pointSummaries = useMemo(() => {
         if (!loadedPois || points.length === 0) return [] as Array<{
@@ -439,9 +505,13 @@ export default function ResultPage() {
     };
 
     return (
-        <div style={{ padding: 20, fontFamily: "Inter, system-ui, Arial", background: "#ffffff", minHeight: "100vh", color: "#0f172a" }}>
-            <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-                <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)" }}>
+        <div style={{ padding: 20, fontFamily: "Inter, system-ui, Arial", background: "linear-gradient(135deg,#f8fafc 0%,#eef2ff 50%,#fff7ed 100%)", minHeight: "100vh", color: "#0f172a" }}>
+            <style>{`
+                @keyframes floatIn { 0% { opacity: 0; transform: translateY(8px); } 100% { opacity: 1; transform: translateY(0); } }
+                @keyframes pulseGlow { 0% { box-shadow: 0 0 0 rgba(99,102,241,0.0);} 50% { box-shadow: 0 0 24px rgba(99,102,241,0.25);} 100% { box-shadow: 0 0 0 rgba(99,102,241,0.0);} }
+            `}</style>
+            <div style={{ maxWidth: 1150, margin: "0 auto" }}>
+                <div style={{ background: "#ffffff", padding: 20, borderRadius: 14, border: "1px solid rgba(15,23,42,0.06)", boxShadow: "0 10px 30px rgba(15,23,42,0.06)", animation: "floatIn 0.4s ease" }}>
                     <h1 style={{ margin: 0, color: '#0f172a' }}>{name || "Place"} — Analysis</h1>
                     {points.length > 1 ? (
                         <div style={{ color: "#475569", marginTop: 6 }}>{`points: ${points.length} · center: ${centerLat.toFixed(6)} · ${centerLng.toFixed(6)}`}</div>
@@ -452,7 +522,7 @@ export default function ResultPage() {
                     <div style={{ marginTop: 12 }}>
                         <div style={{ fontSize: 13, color: "#475569" }}>Success Score {points.length > 1 ? "(Multiple)" : (primaryPrediction ? `(${primaryPrediction.risk})` : "")}</div>
                         <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
-                            <div style={{ height: 14, width: `${Math.min((((averageScore ?? primaryPrediction?.score ?? 0) || 0) / 3) * 100, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.5s" }} />
+                            <div style={{ height: 14, width: `${Math.min((((averageScore ?? primaryPrediction?.score ?? 0) || 0) / 3) * 100, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.6s", animation: "pulseGlow 2.2s ease-in-out infinite" }} />
                         </div>
                         <div style={{ marginTop: 6, color: '#0f172a' }}>
                             {averageScore != null ? averageScore.toFixed(3) : (primaryPrediction ? primaryPrediction.score.toFixed(3) : "Calculating...")}
@@ -475,16 +545,16 @@ export default function ResultPage() {
                 </div>
 
                 {points.length > 0 && (
-                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
                         <h3 style={{ marginTop: 0 }}>Per-point Analysis</h3>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 10 }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 12 }}>
                             {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
                                 const pred = predictions[key];
                                 const score = pred?.score;
                                 const width = Math.min((((score ?? 0) / 3) * 100), 100);
                                 return (
-                                    <div key={`card-${key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 8, padding: 12 }}>
+                                    <div key={`card-${key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
                                         <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
                                         <div style={{ color: '#64748b', fontSize: 12, marginTop: 4 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
                                         <div style={{ fontSize: 12, color: '#64748b', marginTop: 6 }}>{pred ? `Risk: ${pred.risk}` : 'Risk: …'}</div>
@@ -500,7 +570,7 @@ export default function ResultPage() {
                 )}
 
                 {points.length > 0 && (
-                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 10, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12 }}>
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
                         <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3>
                         <button
                             onClick={handleGenerateAi}
@@ -531,7 +601,7 @@ export default function ResultPage() {
                                 Preferred point: <strong>{preferredPoint.key}</strong> (highest combined decayed contribution: {preferredPoint.totalScore.toFixed(3)}).
                             </div>
                         )}
-                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 10 }}>
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12 }}>
                             {pointSummaries.map((summary, idx) => (
                                 <div key={`explain-${summary.key}`} style={{ border: "1px solid #e2e8f0", borderRadius: 8, padding: 12 }}>
                                     <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
@@ -564,8 +634,62 @@ export default function ResultPage() {
                     </div>
                 )}
 
+                <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
+                    <h3 style={{ marginTop: 0 }}>Insights</h3>
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14 }}>
+                        <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                            <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Category Share</div>
+                            {categoryPieData.length === 0 ? (
+                                <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                            ) : (
+                                <div style={{ width: "100%", height: 220 }}>
+                                    <ResponsiveContainer>
+                                        <PieChart>
+                                            <Pie
+                                                data={categoryPieData}
+                                                dataKey="value"
+                                                nameKey="name"
+                                                innerRadius={50}
+                                                outerRadius={85}
+                                                paddingAngle={4}
+                                                isAnimationActive
+                                                animationDuration={900}
+                                            >
+                                                {categoryPieData.map((entry) => (
+                                                    <Cell key={entry.name} fill={chartColors[entry.name as keyof typeof chartColors] || "#94a3b8"} />
+                                                ))}
+                                            </Pie>
+                                            <Tooltip />
+                                            <Legend />
+                                        </PieChart>
+                                    </ResponsiveContainer>
+                                </div>
+                            )}
+                        </div>
+
+                        <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                            <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight by Category</div>
+                            {categoryAvgData.length === 0 ? (
+                                <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                            ) : (
+                                <div style={{ width: "100%", height: 220 }}>
+                                    <ResponsiveContainer>
+                                        <BarChart data={categoryAvgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                            <CartesianGrid strokeDasharray="3 3" />
+                                            <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                            <YAxis tick={{ fontSize: 11 }} />
+                                            <Tooltip />
+                                            <Bar dataKey="value" fill="#6366f1" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                        </BarChart>
+                                    </ResponsiveContainer>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+
                 <div style={{ display: "grid", gap: 12, marginTop: 12 }}>
-                    <div style={{ background: "#ffffff", padding: 8, borderRadius: 8, border: "1px solid rgba(15,23,42,0.04)" }}>
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.04)", boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
                         <h3 style={{ marginTop: 0 }}>Map and POIs</h3>
                         <div style={{ display: 'flex', gap: 12 }}>
                             <div style={{ flex: 1 }}>
@@ -659,20 +783,77 @@ export default function ResultPage() {
 
                                 {!filteredPois && <div>Loading...</div>}
                                 {filteredPois && Object.keys(filteredPois).length === 0 && <div>No POIs found within radius.</div>}
-                                {filteredPois && Object.entries(filteredPois)
-                                    .filter(([cat]) => selectedCategory === 'All' || cat === selectedCategory)
+                                {filteredPois && selectedCategory === 'All' && (() => {
+                                    const mixed = Object.entries(filteredPois).flatMap(([cat, list]) => {
+                                        const filteredList = list
+                                            .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                            .map((p) => ({ poi: p, cat }));
+                                        return filteredList;
+                                    });
+                                    const sorted = mixed
+                                        .slice()
+                                        .sort((a, b) => getDecayedWeight(b.poi) - getDecayedWeight(a.poi));
+                                    if (sorted.length === 0) return null;
+                                    return (
+                                        <div key="All" style={{ marginBottom: 12 }}>
+                                            <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>All</div>
+                                            {sorted.map(({ poi: p, cat }, idx) => {
+                                                const wEff = getDecayedWeight(p);
+                                                const pct = getAllSharePct(p);
+                                                return (
+                                                    <div key={`${cat}-${p.name}-${idx}`}
+                                                        onMouseEnter={() => {
+                                                            setHoverPos({ lat: p.lat, lng: p.lng });
+                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                            try {
+                                                                const raw = p.raw as PoiApiItem | undefined;
+                                                                if (raw && Array.isArray(raw.path)) {
+                                                                    const coords: Array<[number, number]> = raw.path
+                                                                        .map((pt) => [Number(pt.lat), Number(pt.lon ?? pt.lng)] as [number, number])
+                                                                        .filter(([a, b]: [number, number]) => Number.isFinite(a) && Number.isFinite(b));
+                                                                    setHoverPath(coords.length ? coords : null);
+                                                                } else {
+                                                                    setHoverPath(null);
+                                                                }
+                                                            } catch { setHoverPath(null); }
+                                                        }}
+                                                        onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
+                                                        style={{
+                                                            display: 'flex',
+                                                            gap: 8,
+                                                            padding: 8,
+                                                            borderRadius: 6,
+                                                            alignItems: 'center',
+                                                            cursor: 'pointer',
+                                                            border: '1px solid rgba(15,23,42,0.03)',
+                                                            marginBottom: 8,
+                                                            background: `linear-gradient(90deg, rgba(99,102,241,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`
+                                                        }}>
+                                                        <div style={{ flex: 1 }}>
+                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                            <div style={{ fontSize: 11, color: '#6366f1', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{cat}</div>
+                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                        </div>
+                                                        <div style={{ textAlign: 'right' }}>
+                                                            <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div>
+                                                            <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
+                                                            <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    );
+                                })()}
+                                {filteredPois && selectedCategory !== 'All' && Object.entries(filteredPois)
+                                    .filter(([cat]) => cat === selectedCategory)
                                     .map(([cat, list]) => {
                                         const filteredList = list
                                             .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
                                             .slice()
                                             .sort((a, b) => {
-                                                const aw = Number(a.weight) || 0;
-                                                const bw = Number(b.weight) || 0;
-                                                const ad = Number(a.distance_km) || 0;
-                                                const bd = Number(b.distance_km) || 0;
-                                                const aScore = aw * Math.exp(-ad / DECAY_SCALE_KM);
-                                                const bScore = bw * Math.exp(-bd / DECAY_SCALE_KM);
-                                                return bScore - aScore;
+                                                return getDecayedWeight(b) - getDecayedWeight(a);
                                             });
                                         if (filteredList.length === 0) return null;
                                         return (
@@ -696,7 +877,20 @@ export default function ResultPage() {
                                                             } catch { setHoverPath(null); }
                                                         }}
                                                         onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
-                                                        style={{ display: 'flex', gap: 8, padding: 8, borderRadius: 6, alignItems: 'center', cursor: 'pointer', border: '1px solid rgba(15,23,42,0.03)', marginBottom: 8 }}>
+                                                        style={{
+                                                            display: 'flex',
+                                                            gap: 8,
+                                                            padding: 8,
+                                                            borderRadius: 6,
+                                                            alignItems: 'center',
+                                                            cursor: 'pointer',
+                                                            border: '1px solid rgba(15,23,42,0.03)',
+                                                            marginBottom: 8,
+                                                            background: (() => {
+                                                                const pct = getCategorySharePct(p, cat);
+                                                                return `linear-gradient(90deg, rgba(99,102,241,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`;
+                                                            })()
+                                                        }}>
                                                         <div style={{ flex: 1 }}>
                                                             <div style={{ fontWeight: 700 }}>{p.name}</div>
                                                             {p.subcategory && <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
@@ -704,14 +898,12 @@ export default function ResultPage() {
                                                         </div>
                                                         <div style={{ textAlign: 'right' }}>
                                                             {(() => {
-                                                                const w = Number(p.weight) || 0;
-                                                                const d = Number(p.distance_km) || 0;
-                                                                const wEff = w * Math.exp(-d / DECAY_SCALE_KM);
+                                                                const wEff = getDecayedWeight(p);
                                                                 return (
                                                                     <>
                                                                         <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div>
-                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`${d.toFixed(3)} km`}</div>
-                                                                        <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${w.toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
+                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
+                                                                        <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
                                                                     </>
                                                                 );
                                                             })()}
