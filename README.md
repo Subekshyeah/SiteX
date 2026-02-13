@@ -156,6 +156,35 @@ The prediction service loads resources relative to the backend folder:
 
 If the feature list file is missing, the service falls back to using all engineered features (you may see a warning in server logs).
 
+## Data generation (master + paths)
+
+To regenerate the cafe metrics and path visualization data:
+
+1. Generate master metrics and final CSVs:
+
+```bash
+cd backend
+python Data/master.py
+```
+
+This writes:
+
+- [backend/Data/CSV_Reference/master_cafes_metrics.csv](backend/Data/CSV_Reference/master_cafes_metrics.csv)
+- [backend/Data/CSV_Reference/final/cafe_final.csv](backend/Data/CSV_Reference/final/cafe_final.csv)
+- [backend/Data/CSV_Reference/final/master_cafes_minimal.csv](backend/Data/CSV_Reference/final/master_cafes_minimal.csv)
+
+2. Generate combined path GeoJSON + HTML map:
+
+```bash
+python scripts/export_cafe_poi_paths.py --radius-km 0.3
+```
+
+By default, this writes outputs into:
+
+- [backend/Data/poi_paths_geojson_0.3_km](backend/Data/poi_paths_geojson_0.3_km)
+
+By default, per-cafe files are generated for merging and then removed; add `--keep-per-cafe` to preserve them.
+
 ## Training / notebooks
 
 - Model training notebook: [backend/notebooks/train_xgb.ipynb](backend/notebooks/train_xgb.ipynb)

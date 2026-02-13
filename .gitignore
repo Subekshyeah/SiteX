@@ -36,3 +36,4 @@ coverage/
 .next/
 
 **/CSV/**
+**/poi_paths_.*/

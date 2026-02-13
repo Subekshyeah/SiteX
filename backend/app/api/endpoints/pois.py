@@ -6,6 +6,7 @@ import math
 from pathlib import Path
 
 import pandas as pd
+import numpy as np
 from fastapi import APIRouter, Query, HTTPException
 from fastapi.responses import StreamingResponse
 import json
@@ -30,6 +31,17 @@ def haversine(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     dlambda = math.radians(lon2 - lon1)
     a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def _haversine_vec_km(center_lat: float, center_lon: float, lats: np.ndarray, lons: np.ndarray) -> np.ndarray:
+    r = 6371.0
+    phi1 = math.radians(center_lat)
+    phi2 = np.radians(lats)
+    dphi = phi2 - phi1
+    dlambda = np.radians(lons - center_lon)
+    a = np.sin(dphi / 2.0) ** 2 + np.cos(phi1) * np.cos(phi2) * np.sin(dlambda / 2.0) ** 2
+    c = 2.0 * np.arctan2(np.sqrt(a), np.sqrt(1.0 - a))
+    return r * c
 
 
 @lru_cache(maxsize=1)
@@ -328,17 +340,38 @@ def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_sc
         df[lat_col] = pd.to_numeric(df[lat_col], errors="coerce")
         df[lon_col] = pd.to_numeric(df[lon_col], errors="coerce")
 
+        lat_arr = df[lat_col].to_numpy(dtype=np.float64, copy=False)
+        lon_arr = df[lon_col].to_numpy(dtype=np.float64, copy=False)
+        valid_mask = np.isfinite(lat_arr) & np.isfinite(lon_arr)
+        if not np.any(valid_mask):
+            continue
+        valid_idx = np.nonzero(valid_mask)[0]
+        dists_km = _haversine_vec_km(lat, lon, lat_arr[valid_mask], lon_arr[valid_mask])
+        within_mask = dists_km <= radius_km
+        if not np.any(within_mask):
+            continue
+        candidate_idx = valid_idx[within_mask]
+        candidate_dists = dists_km[within_mask]
+        subset = df.iloc[candidate_idx].copy()
+        orig_idx = subset.index.to_numpy()
+        subset = subset.reset_index(drop=True)
+
         network_dist_map: Dict[int, float] = {}
         paths_map: Dict[int, List[Dict[str, float]]] = {}
         if road_network is not None:
             try:
-                network_dist_map = _network_distance_map(road_network, lat, lon, df[lat_col], df[lon_col], radius_m)
-                paths_map = _network_path_map(road_network, lat, lon, df[lat_col], df[lon_col], radius_m)
+                network_dist_map = _network_distance_map(
+                    road_network, lat, lon, subset[lat_col], subset[lon_col], radius_m
+                )
+                paths_map = _network_path_map(
+                    road_network, lat, lon, subset[lat_col], subset[lon_col], radius_m
+                )
             except Exception:
                 network_dist_map = {}
 
         items = []
-        for idx, row in df.iterrows():
+        for pos, row in subset.iterrows():
+            _ = orig_idx[pos]
             try:
                 rlat = float(row[lat_col])
                 rlon = float(row[lon_col])
@@ -346,9 +379,9 @@ def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_sc
                 continue
             if not math.isfinite(rlat) or not math.isfinite(rlon):
                 continue
-            d = network_dist_map.get(idx)
+            d = network_dist_map.get(pos)
             if d is None:
-                d = haversine(lat, lon, rlat, rlon)
+                d = float(candidate_dists[pos])
             if d <= radius_km:
                 name = None
                 for name_key in ("name", "Name", "NAME"):
@@ -364,7 +397,7 @@ def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_sc
                 except Exception:
                     weight_val = base_weight
                 item: Dict[str, Any] = {"name": name, "lat": rlat, "lon": rlon, "distance_km": round(d, 4), "weight": round(weight_val, 4)}
-                path = paths_map.get(idx)
+                path = paths_map.get(pos)
                 if path:
                     item["path"] = path
                 items.append(item)
@@ -436,18 +469,39 @@ def get_pois(
         df[lat_col] = pd.to_numeric(df[lat_col], errors="coerce")
         df[lon_col] = pd.to_numeric(df[lon_col], errors="coerce")
 
+        lat_arr = df[lat_col].to_numpy(dtype=np.float64, copy=False)
+        lon_arr = df[lon_col].to_numpy(dtype=np.float64, copy=False)
+        valid_mask = np.isfinite(lat_arr) & np.isfinite(lon_arr)
+        if not np.any(valid_mask):
+            return typ, []
+        valid_idx = np.nonzero(valid_mask)[0]
+        dists_km = _haversine_vec_km(lat, lon, lat_arr[valid_mask], lon_arr[valid_mask])
+        within_mask = dists_km <= radius_km
+        if not np.any(within_mask):
+            return typ, []
+        candidate_idx = valid_idx[within_mask]
+        candidate_dists = dists_km[within_mask]
+        subset = df.iloc[candidate_idx].copy()
+        orig_idx = subset.index.to_numpy()
+        subset = subset.reset_index(drop=True)
+
         network_dist_map: Dict[int, float] = {}
         paths_map: Dict[int, List[Dict[str, float]]] = {}
         if road_network is not None:
             try:
-                network_dist_map = _network_distance_map(road_network, lat, lon, df[lat_col], df[lon_col], radius_m)
-                paths_map = _network_path_map(road_network, lat, lon, df[lat_col], df[lon_col], radius_m)
+                network_dist_map = _network_distance_map(
+                    road_network, lat, lon, subset[lat_col], subset[lon_col], radius_m
+                )
+                paths_map = _network_path_map(
+                    road_network, lat, lon, subset[lat_col], subset[lon_col], radius_m
+                )
             except Exception as exc:
                 print(f"Warning: road distance calculation failed for {typ}: {exc}")
                 network_dist_map = {}
 
         items = []
-        for idx, row in df.iterrows():
+        for pos, row in subset.iterrows():
+            _ = orig_idx[pos]
             try:
                 rlat = float(row[lat_col])
                 rlon = float(row[lon_col])
@@ -455,9 +509,9 @@ def get_pois(
                 continue
             if not math.isfinite(rlat) or not math.isfinite(rlon):
                 continue
-            d = network_dist_map.get(idx)
+            d = network_dist_map.get(pos)
             if d is None:
-                d = haversine(lat, lon, rlat, rlon)
+                d = float(candidate_dists[pos])
             if d <= radius_km:
                 name = None
                 for name_key in ("name", "Name", "NAME"):
@@ -477,7 +531,7 @@ def get_pois(
                 except Exception:
                     weight_val = base_weight
                 item["weight"] = round(weight_val, 4)
-                path = paths_map.get(idx)
+                path = paths_map.get(pos)
                 if path:
                     item["path"] = path
                 items.append(item)

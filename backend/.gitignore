@@ -123,5 +123,6 @@ dmypy.json
 **/*all_data.csv
 **/*final.csv
 **/*master_cafes_**
+poi_paths_geojson_*
 
 **.pkl
