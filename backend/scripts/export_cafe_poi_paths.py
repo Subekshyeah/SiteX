@@ -24,7 +24,8 @@ from app.api.endpoints.pois import (
 )
 
 
-DEFAULT_RADIUS_KM = 0.3
+# DEFAULT_RADIUS_KM = 0.3
+DEFAULT_RADIUS_KM = 0.5
 DEFAULT_DECAY_SCALE_KM = 1.0
 
 G_CAFE_DF: Optional[pd.DataFrame] = None
@@ -187,6 +188,54 @@ def _build_combined_paths(input_dir: Path) -> Tuple[Dict[str, Any], List[float]]
 
         combined = {"type": "FeatureCollection", "features": combined_features}
         return combined, bounds
+
+
+def _build_summary_row(
+    cafe_df: pd.DataFrame,
+    cafe_idx: int,
+    decay_stats: Dict[str, Tuple[int, float]],
+    radius_label: str,
+    category_order: List[str],
+    composite_lookup: Dict[Tuple[str, float, float], float],
+    category_lookup: Dict[Tuple[str, float, float], str],
+    lat_col: str,
+    lon_col: str,
+) -> Dict[str, Any]:
+    row_data = cafe_df.iloc[cafe_idx]
+    name_val = _get_name(row_data) or ""
+    try:
+        lat_val = float(row_data[lat_col])
+    except Exception:
+        lat_val = float("nan")
+    try:
+        lon_val = float(row_data[lon_col])
+    except Exception:
+        lon_val = float("nan")
+    if not name_val or not math.isfinite(lat_val) or not math.isfinite(lon_val):
+        return None
+    try:
+        cafe_weight = float(row_data.get("cafe_weight"))
+    except Exception:
+        cafe_weight = ""
+
+    key = (name_val, round(lat_val, 6), round(lon_val, 6))
+    poi_composite = composite_lookup.get(key, "")
+    category_val = category_lookup.get(key, "")
+
+    row = {
+        "name": name_val,
+        "lat": lat_val,
+        "lng": lon_val,
+        "category": category_val,
+    }
+    for cat in category_order:
+        cnt, total = decay_stats.get(cat, (0, 0.0))
+        avg = (total / cnt) if cnt else 0.0
+        row[f"{cat}_count_{radius_label}"] = cnt
+        row[f"{cat}_weight_{radius_label}"] = round(avg, 6)
+    row["cafe_weight"] = cafe_weight
+    row["poi_composite_score"] = poi_composite
+    return row
 
 
 def _render_map_html(title: str, geojson_name: str, bounds: List[float]) -> str:
@@ -353,7 +402,6 @@ def _build_features_for_cafe(
                         "coordinates": line_coords,
                     },
                     "properties": {
-                        "cafe_index": int(cafe_idx),
                         "cafe_name": cafe_name,
                         "cafe_lat": float(cafe_lat),
                         "cafe_lon": float(cafe_lon),
@@ -475,6 +523,8 @@ def main() -> int:
         output_dir = output_dir.with_name(f"{output_dir.name}_{radius_label}")
     if not args.map_base_name:
         args.map_base_name = f"poi_paths_geojson_{radius_label}"
+    if not args.summary_csv:
+        args.summary_csv = f"{args.map_base_name}.csv"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     cafe_csv = input_dir / "cafe_final.csv"
@@ -510,8 +560,42 @@ def main() -> int:
     G_RESUME = bool(args.resume)
 
     total_cafes = int(len(cafe_df))
-    category_order = ["cafes", "banks", "education", "health", "temples", "other"]
+    category_order = list(datasets.keys())
     summary_rows: List[Dict[str, Any]] = []
+    composite_lookup: Dict[Tuple[str, float, float], float] = {}
+    category_lookup: Dict[Tuple[str, float, float], str] = {}
+    master_min_path = input_dir / "master_cafes_minimal.csv"
+    if master_min_path.exists():
+        try:
+            master_min = pd.read_csv(master_min_path)
+            min_lat_col, min_lon_col = _find_lat_lon_cols(master_min)
+            name_col = None
+            for c in ("name", "Name", "NAME"):
+                if c in master_min.columns:
+                    name_col = c
+                    break
+            category_col = None
+            for c in ("category", "categoryName", "main_category"):
+                if c in master_min.columns:
+                    category_col = c
+                    break
+            if min_lat_col and min_lon_col and name_col:
+                for _, row in master_min.iterrows():
+                    try:
+                        nval = str(row.get(name_col))
+                        latv = float(row.get(min_lat_col))
+                        lonv = float(row.get(min_lon_col))
+                        pscore = float(row.get("poi_composite_score"))
+                    except Exception:
+                        continue
+                    composite_lookup[(nval, round(latv, 6), round(lonv, 6))] = pscore
+                    if category_col is not None:
+                        try:
+                            category_lookup[(nval, round(latv, 6), round(lonv, 6))] = row.get(category_col, "")
+                        except Exception:
+                            continue
+        except Exception:
+            composite_lookup = {}
     all_indices = list(range(total_cafes))
     if G_RESUME:
         pending = []
@@ -543,16 +627,19 @@ def main() -> int:
                     print(f"  POIs found: {counts_str}")
                 else:
                     print("  POIs found: none")
-                row = {
-                    "cafe_index": cafe_idx,
-                    "cafe_name": cafe_name,
-                }
-                for cat in category_order:
-                    cnt, total = decay_stats.get(cat, (0, 0.0))
-                    avg = (total / cnt) if cnt else 0.0
-                    row[f"{cat}_count_{radius_label}"] = cnt
-                    row[f"{cat}_avg_decay_{radius_label}"] = round(avg, 6)
-                summary_rows.append(row)
+                row = _build_summary_row(
+                    cafe_df,
+                    cafe_idx,
+                    decay_stats,
+                    radius_label,
+                    category_order,
+                    composite_lookup,
+                    category_lookup,
+                    cafe_lat_col,
+                    cafe_lon_col,
+                )
+                if row:
+                    summary_rows.append(row)
         else:
             import multiprocessing as mp
 
@@ -572,16 +659,19 @@ def main() -> int:
                     else:
                         print("  POIs found: none")
                     print(f"Progress: {completed}/{len(work_indices)} processed")
-                    row = {
-                        "cafe_index": cafe_idx,
-                        "cafe_name": cafe_name,
-                    }
-                    for cat in category_order:
-                        cnt, total = decay_stats.get(cat, (0, 0.0))
-                        avg = (total / cnt) if cnt else 0.0
-                        row[f"{cat}_count_{radius_label}"] = cnt
-                        row[f"{cat}_avg_decay_{radius_label}"] = round(avg, 6)
-                    summary_rows.append(row)
+                    row = _build_summary_row(
+                        cafe_df,
+                        cafe_idx,
+                        decay_stats,
+                        radius_label,
+                        category_order,
+                        composite_lookup,
+                        category_lookup,
+                        cafe_lat_col,
+                        cafe_lon_col,
+                    )
+                    if row:
+                        summary_rows.append(row)
     combined, bounds = _build_combined_paths(output_dir)
     paths_path = output_dir / f"{args.map_base_name}_paths.geojson"
     map_path = output_dir / f"{args.map_base_name}_map.html"
@@ -595,16 +685,33 @@ def main() -> int:
 
     if args.summary_csv:
         summary_path = output_dir / args.summary_csv
-        headers = ["cafe_index", "cafe_name"]
+        headers = [
+            "name",
+            "lat",
+            "lng",
+            "category",
+        ]
         for cat in category_order:
             headers.append(f"{cat}_count_{radius_label}")
-            headers.append(f"{cat}_avg_decay_{radius_label}")
+            headers.append(f"{cat}_weight_{radius_label}")
+        headers.extend(["cafe_weight", "poi_composite_score"])
         with open(summary_path, "w", encoding="utf-8", newline="") as fh:
             writer = csv.DictWriter(fh, fieldnames=headers)
             writer.writeheader()
-            for row in sorted(summary_rows, key=lambda r: r.get("cafe_index", 0)):
+            for row in sorted(summary_rows, key=lambda r: r.get("name", "")):
                 writer.writerow({h: row.get(h, "") for h in headers})
         print(f"Wrote summary CSV: {summary_path}")
+
+        final_copy = input_dir / "master_cafe_path_minimal.csv"
+        try:
+            with open(final_copy, "w", encoding="utf-8", newline="") as fh:
+                writer = csv.DictWriter(fh, fieldnames=headers)
+                writer.writeheader()
+                for row in sorted(summary_rows, key=lambda r: r.get("name", "")):
+                    writer.writerow({h: row.get(h, "") for h in headers})
+            print(f"Wrote summary CSV copy: {final_copy}")
+        except Exception:
+            pass
 
     if not args.keep_per_cafe:
         removed = 0
