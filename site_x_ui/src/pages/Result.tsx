@@ -49,6 +49,8 @@ type Poi = { name: string; lat: number; lng: number; weight: number; distance_km
 type AccessibilityResponse = { score?: number };
 type PredictionResponse = { predictions?: Array<{ lat: number; lon: number; score: number; risk_level?: string }> };
 
+type PoisByCategory = Record<string, Poi[]>;
+
 function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Point[] {
     const cleaned = (raw || "").trim();
     if (!cleaned) {
@@ -90,37 +92,31 @@ export default function ResultPage() {
     const centerLat = center.lat;
     const centerLng = center.lng;
 
-    const [loadedPois, setLoadedPois] = useState<Record<string, Poi[]> | null>(null);
+    const [loadedPoisByPointKey, setLoadedPoisByPointKey] = useState<Record<string, PoisByCategory>>({});
     const poisCacheRef = useRef<Map<string, Record<string, Poi[]>>>(new Map());
     const accessibilityCacheRef = useRef<Map<string, Record<string, number>>>(new Map());
     const predictionCacheRef = useRef<Map<string, Record<string, { score: number; risk_level?: string }>>>(new Map());
     const aiCacheRef = useRef<Map<string, string>>(new Map());
     const [selectedPointIdx, setSelectedPointIdx] = useState<number>(0);
+    const [viewMode, setViewMode] = useState<"single" | "compare">("single");
+    const [comparePointIdxA, setComparePointIdxA] = useState<number>(0);
+    const [comparePointIdxB, setComparePointIdxB] = useState<number>(1);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
     const [accessibilityScores, setAccessibilityScores] = useState<Record<string, number>>({});
     const [predictionScores, setPredictionScores] = useState<Record<string, { score: number; risk_level?: string }>>({});
     const [aiExplanation, setAiExplanation] = useState<string>("");
     const [aiLoading, setAiLoading] = useState<boolean>(false);
     const [aiError, setAiError] = useState<string>("");
-    const primaryPoint = points[0] || { lat, lng };
-    const primaryKey = `${primaryPoint.lat.toFixed(6)},${primaryPoint.lng.toFixed(6)}`;
-    const primaryAccessibility = accessibilityScores[primaryKey] ?? null;
-    const primaryPrediction = predictionScores[primaryKey] ?? null;
-    const averageScore = useMemo(() => {
-        const vals = Object.values(accessibilityScores).filter((v) => Number.isFinite(v));
-        if (vals.length === 0) return null;
-        return vals.reduce((s, v) => s + v, 0) / vals.length;
-    }, [accessibilityScores]);
-    const averagePrediction = useMemo(() => {
-        const vals = Object.values(predictionScores)
-            .map((v) => Number(v?.score))
-            .filter((v) => Number.isFinite(v));
-        if (vals.length === 0) return null;
-        return vals.reduce((s, v) => s + v, 0) / vals.length;
-    }, [predictionScores]);
     const selectedPoint = useMemo(() => {
         return points[selectedPointIdx] || points[0] || { lat: centerLat, lng: centerLng };
     }, [points, selectedPointIdx, centerLat, centerLng]);
+    const selectedPointKey = useMemo(
+        () => `${Number(selectedPoint.lat).toFixed(6)},${Number(selectedPoint.lng).toFixed(6)}`,
+        [selectedPoint]
+    );
+    const loadedPois = loadedPoisByPointKey[selectedPointKey] ?? null;
+    const selectedAccessibility = accessibilityScores[selectedPointKey] ?? null;
+    const selectedPrediction = predictionScores[selectedPointKey] ?? null;
     const pointsKey = useMemo(
         () => points.map((p) => `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`).join("|") || "__empty__",
         [points]
@@ -159,16 +155,55 @@ export default function ResultPage() {
     };
 
     useEffect(() => {
+        if (viewMode !== "compare") return;
+        if (points.length === 0) return;
+        setSelectedPointIdx(comparePointIdxA);
+    }, [viewMode, comparePointIdxA, points.length]);
+
+    useEffect(() => {
+        if (points.length < 2) {
+            setViewMode("single");
+            setComparePointIdxA(0);
+            setComparePointIdxB(1);
+            setSelectedPointIdx(0);
+            return;
+        }
+
+        setComparePointIdxA((prev) => Math.min(Math.max(0, prev), points.length - 1));
+        setComparePointIdxB((prev) => {
+            const clamped = Math.min(Math.max(0, prev), points.length - 1);
+            if (clamped === comparePointIdxA) {
+                return comparePointIdxA === 0 ? 1 : 0;
+            }
+            return clamped;
+        });
+        setSelectedPointIdx((prev) => Math.min(Math.max(0, prev), points.length - 1));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [points.length]);
+
+    useEffect(() => {
         let mounted = true;
         const controller = new AbortController();
         const mapName: Record<string, string> = { cafes: 'Cafes', banks: 'Bank', education: 'Education', health: 'Health', temples: 'Temples', other: 'Other' };
 
+        const setPoisForKey = (key: string, categoriesMap: PoisByCategory) => {
+            setLoadedPoisByPointKey((prev) => {
+                if (prev[key] === categoriesMap) return prev;
+                return { ...prev, [key]: categoriesMap };
+            });
+        };
+
         const fetchPoisForPoint = async (point: Point) => {
             const key = `${point.lat.toFixed(6)},${point.lng.toFixed(6)}`;
-            if (poisCacheRef.current.has(key)) return;
+            const inMem = poisCacheRef.current.get(key);
+            if (inMem) {
+                if (mounted) setPoisForKey(key, inMem);
+                return;
+            }
             const cachedLocal = getCache<Record<string, Poi[]>>(`pois:${key}`);
             if (cachedLocal) {
                 poisCacheRef.current.set(key, cachedLocal);
+                if (mounted) setPoisForKey(key, cachedLocal);
                 return;
             }
             const radius = 0.3; // km
@@ -179,6 +214,7 @@ export default function ResultPage() {
             if (!res.ok) {
                 poisCacheRef.current.set(key, {});
                 setCache(`pois:${key}`, {});
+                if (mounted) setPoisForKey(key, {});
                 return;
             }
             if (res.body && (res.headers.get('content-type') || '').includes('ndjson')) {
@@ -255,26 +291,22 @@ export default function ResultPage() {
             }
             poisCacheRef.current.set(key, categoriesMap);
             setCache(`pois:${key}`, categoriesMap);
+            if (mounted) setPoisForKey(key, categoriesMap);
         };
 
         (async () => {
             try {
                 if (!points.length) {
-                    if (mounted) setLoadedPois({});
+                    if (mounted) setLoadedPoisByPointKey({});
                     return;
                 }
-                const selectedKey = `${selectedPoint.lat.toFixed(6)},${selectedPoint.lng.toFixed(6)}`;
-                const cachedSelected = poisCacheRef.current.get(selectedKey);
-                if (cachedSelected && mounted) setLoadedPois(cachedSelected);
                 await Promise.all(points.map((p) => fetchPoisForPoint(p)));
-                const cached = poisCacheRef.current.get(selectedKey) || {};
-                if (mounted) setLoadedPois(cached);
             } catch {
-                if (mounted) setLoadedPois({});
+                // keep existing state; failures are handled per-point
             }
         })();
         return () => { mounted = false; controller.abort(); };
-    }, [points, selectedPoint]);
+    }, [points]);
 
     // CSV fallback removed — POIs are loaded from backend `/api/v1/pois/` above.
 
@@ -495,21 +527,77 @@ export default function ResultPage() {
             .sort((a, b) => b.value - a.value);
     }, [categoryDecayedAverages]);
 
+    const selectedTargets = useMemo(() => {
+        const mkKey = (p: Point) => `${Number(p.lat).toFixed(6)},${Number(p.lng).toFixed(6)}`;
+        if (viewMode === "compare" && points.length >= 2) {
+            const a = points[comparePointIdxA] ?? points[0];
+            const b = points[comparePointIdxB] ?? points[1] ?? points[0];
+            const aKey = mkKey(a);
+            const bKey = mkKey(b);
+            return [
+                {
+                    label: "A" as const,
+                    idx: comparePointIdxA,
+                    point: a,
+                    key: aKey,
+                    accessibility: accessibilityScores[aKey] ?? null,
+                    prediction: predictionScores[aKey] ?? null
+                },
+                {
+                    label: "B" as const,
+                    idx: comparePointIdxB,
+                    point: b,
+                    key: bKey,
+                    accessibility: accessibilityScores[bKey] ?? null,
+                    prediction: predictionScores[bKey] ?? null
+                }
+            ];
+        }
+
+        return [
+            {
+                label: "S" as const,
+                idx: selectedPointIdx,
+                point: selectedPoint,
+                key: selectedPointKey,
+                accessibility: selectedAccessibility,
+                prediction: selectedPrediction
+            }
+        ];
+    }, [
+        viewMode,
+        points,
+        comparePointIdxA,
+        comparePointIdxB,
+        selectedPointIdx,
+        selectedPoint,
+        selectedPointKey,
+        selectedAccessibility,
+        selectedPrediction,
+        accessibilityScores,
+        predictionScores
+    ]);
+
     const pointSummaries = useMemo(() => {
-        if (!loadedPois || points.length === 0) return [] as Array<{
-            key: string;
-            point: Point;
-            totalScore: number;
-            perCategory: Array<{ cat: string; topPois: Array<Poi & { decayed_weight: number }>; score: number }>;
-        }>;
-        return points.map((p) => {
+        if (points.length === 0) {
+            return [] as Array<{
+                key: string;
+                point: Point;
+                totalScore: number;
+                perCategory: Array<{ cat: string; topPois: Array<Poi & { decayed_weight: number }>; score: number }>;
+            }>;
+        }
+
+        return selectedTargets.map((t) => {
+            const poisForPoint = loadedPoisByPointKey[t.key] || {};
             const perCategory: Array<{ cat: string; topPois: Array<Poi & { decayed_weight: number }>; score: number }> = [];
             let totalScore = 0;
-            Object.entries(loadedPois).forEach(([cat, list]) => {
+
+            Object.entries(poisForPoint).forEach(([cat, list]) => {
                 const within = list
                     .map((poi) => ({
                         ...poi,
-                        distance_km: Number(haversineKm(p.lat, p.lng, poi.lat, poi.lng).toFixed(3))
+                        distance_km: Number(haversineKm(t.point.lat, t.point.lng, poi.lat, poi.lng).toFixed(3))
                     }))
                     .filter((poi) => poi.distance_km <= MAX_RADIUS_KM)
                     .sort((a, b) => {
@@ -521,6 +609,7 @@ export default function ResultPage() {
                         const bScore = bw * Math.exp(-bd / DECAY_SCALE_KM);
                         return bScore - aScore;
                     });
+
                 const topPois = within.slice(0, 20).map((poi) => {
                     const w = Number(poi.weight) || 0;
                     const d = Number(poi.distance_km) || 0;
@@ -531,24 +620,21 @@ export default function ResultPage() {
                 totalScore += score;
                 perCategory.push({ cat, topPois, score });
             });
+
             return {
-                key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`,
-                point: p,
+                key: t.key,
+                point: t.point,
                 totalScore,
                 perCategory
             };
         });
-    }, [loadedPois, points, MAX_RADIUS_KM, DECAY_SCALE_KM]);
-
-    const preferredPoint = useMemo(() => {
-        if (pointSummaries.length === 0) return null;
-        return pointSummaries.slice().sort((a, b) => b.totalScore - a.totalScore)[0];
-    }, [pointSummaries]);
+    }, [loadedPoisByPointKey, selectedTargets, points.length, MAX_RADIUS_KM, DECAY_SCALE_KM]);
 
     const canGenerateAi = useMemo(() => {
-        const hasScore = averageScore != null || (primaryAccessibility != null && Number.isFinite(primaryAccessibility));
-        return hasScore && pointSummaries.length > 0 && loadedPois !== null;
-    }, [averageScore, primaryAccessibility, pointSummaries, loadedPois]);
+        const hasScore = selectedTargets.some((t) => t.accessibility != null && Number.isFinite(Number(t.accessibility)));
+        const hasPoisForAll = selectedTargets.every((t) => loadedPoisByPointKey[t.key] != null);
+        return hasScore && hasPoisForAll && pointSummaries.length > 0;
+    }, [selectedTargets, loadedPoisByPointKey, pointSummaries.length]);
 
     const handleGenerateAi = async () => {
         if (!canGenerateAi || aiLoading) return;
@@ -556,8 +642,12 @@ export default function ResultPage() {
         try {
             setAiLoading(true);
             setAiError("");
+            const preferred = pointSummaries.reduce<{ key: string; totalScore: number } | null>((best, cur) => {
+                if (!best) return { key: cur.key, totalScore: cur.totalScore };
+                return cur.totalScore > best.totalScore ? { key: cur.key, totalScore: cur.totalScore } : best;
+            }, null);
             const payload = {
-                preferred_point_key: preferredPoint?.key ?? null,
+                preferred_point_key: preferred?.key ?? pointSummaries[0]?.key ?? null,
                 radius_km: MAX_RADIUS_KM,
                 decay_scale_km: DECAY_SCALE_KM,
                 points: pointSummaries.map((s) => ({
@@ -623,7 +713,7 @@ export default function ResultPage() {
                 @keyframes pulseGlow { 0% { box-shadow: 0 0 0 rgba(99,102,241,0.0);} 50% { box-shadow: 0 0 24px rgba(99,102,241,0.25);} 100% { box-shadow: 0 0 0 rgba(99,102,241,0.0);} }
             `}</style>
             <div style={{ maxWidth: 1150, margin: "0 auto" }}>
-                <div style={{ background: "#ffffff", padding: 20, borderRadius: 14, border: "1px solid rgba(15,23,42,0.06)", boxShadow: "0 10px 30px rgba(15,23,42,0.06)", animation: "floatIn 0.4s ease" }}>
+                {/* <div style={{ background: "#ffffff", padding: 20, borderRadius: 14, border: "1px solid rgba(15,23,42,0.06)", boxShadow: "0 10px 30px rgba(15,23,42,0.06)", animation: "floatIn 0.4s ease" }}>
                     <h1 style={{ margin: 0, color: '#0f172a' }}>{name || "Place"} — Analysis</h1>
                     {points.length > 1 ? (
                         <div style={{ color: "#475569", marginTop: 6 }}>{`points: ${points.length} · center: ${centerLat.toFixed(6)} · ${centerLng.toFixed(6)}`}</div>
@@ -631,39 +721,43 @@ export default function ResultPage() {
                         <div style={{ color: "#475569", marginTop: 6 }}>{`lat: ${centerLat.toFixed(6)} · lng: ${centerLng.toFixed(6)}`}</div>
                     )}
                     <div style={{ color: "#94a3b8", fontSize: 12, marginTop: 4 }}>{`mode: ${mode} · pick: ${pick}`}</div>
-                    <div style={{ marginTop: 12 }}>
-                        <div style={{ fontSize: 13, color: "#475569" }}>Accessibility Score {points.length > 1 ? "(Multiple)" : ""}</div>
-                        <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
-                            <div style={{ height: 14, width: `${Math.min((averageScore ?? primaryAccessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.6s", animation: "pulseGlow 2.2s ease-in-out infinite" }} />
-                        </div>
-                        <div style={{ marginTop: 6, color: '#0f172a' }}>
-                            {averageScore != null ? averageScore.toFixed(1) : (primaryAccessibility != null ? primaryAccessibility.toFixed(1) : "Calculating...")}
-                        </div>
-                    </div>
-                    <div style={{ marginTop: 12 }}>
-                        <div style={{ fontSize: 13, color: "#475569" }}>Model Prediction Score {points.length > 1 ? "(Multiple)" : ""}</div>
-                        <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
-                            <div
-                                style={{
-                                    height: 14,
-                                    width: `${Math.min(getPredictionDisplayScore(averagePrediction ?? primaryPrediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`,
-                                    background: "linear-gradient(90deg,#f97316,#ef4444)",
-                                    borderRadius: 8,
-                                    transition: "width 0.6s"
-                                }}
-                            />
-                        </div>
-                        <div style={{ marginTop: 6, color: '#0f172a' }}>
-                            {averagePrediction != null
-                                ? (getPredictionDisplayScore(averagePrediction) ?? 0).toFixed(1)
-                                : (primaryPrediction ? (getPredictionDisplayScore(primaryPrediction.score) ?? 0).toFixed(1) : "Calculating...")}
-                        </div>
-                        {primaryPrediction?.risk_level && (
-                            <div style={{ fontSize: 12, color: "#475569", marginTop: 2 }}>
-                                Risk: {primaryPrediction.risk_level}
+                    {points.length <= 1 && (
+                        <>
+                            <div style={{ marginTop: 12 }}>
+                                <div style={{ fontSize: 13, color: "#475569" }}>Accessibility Score</div>
+                                <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
+                                    <div style={{ height: 14, width: `${Math.min((averageScore ?? primaryAccessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.6s", animation: "pulseGlow 2.2s ease-in-out infinite" }} />
+                                </div>
+                                <div style={{ marginTop: 6, color: '#0f172a' }}>
+                                    {averageScore != null ? averageScore.toFixed(1) : (primaryAccessibility != null ? primaryAccessibility.toFixed(1) : "Calculating...")}
+                                </div>
                             </div>
-                        )}
-                    </div>
+                            <div style={{ marginTop: 12 }}>
+                                <div style={{ fontSize: 13, color: "#475569" }}>Model Prediction Score</div>
+                                <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
+                                    <div
+                                        style={{
+                                            height: 14,
+                                            width: `${Math.min(getPredictionDisplayScore(averagePrediction ?? primaryPrediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`,
+                                            background: "linear-gradient(90deg,#f97316,#ef4444)",
+                                            borderRadius: 8,
+                                            transition: "width 0.6s"
+                                        }}
+                                    />
+                                </div>
+                                <div style={{ marginTop: 6, color: '#0f172a' }}>
+                                    {averagePrediction != null
+                                        ? (getPredictionDisplayScore(averagePrediction) ?? 0).toFixed(1)
+                                        : (primaryPrediction ? (getPredictionDisplayScore(primaryPrediction.score) ?? 0).toFixed(1) : "Calculating...")}
+                                </div>
+                                {primaryPrediction?.risk_level && (
+                                    <div style={{ fontSize: 12, color: "#475569", marginTop: 2 }}>
+                                        Risk: {primaryPrediction.risk_level}
+                                    </div>
+                                )}
+                            </div>
+                        </>
+                    )}
                     {points.length > 1 && (
                         <div style={{ marginTop: 10, fontSize: 12, color: "#475569" }}>
                             {points.map((p: Point, idx: number) => {
@@ -685,106 +779,220 @@ export default function ResultPage() {
                             })}
                         </div>
                     )}
-                </div>
+                </div> */}
 
                 {points.length > 0 && (
                     <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
-                        <h3 style={{ marginTop: 0 }}>Per-point Analysis</h3>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 12 }}>
-                            {points.map((p: Point, idx: number) => {
-                                const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
-                                const score = accessibilityScores[key];
-                                const prediction = predictionScores[key];
-                                const width = Math.min((score ?? 0), 100);
-                                const predWidth = Math.min(getPredictionDisplayScore(prediction?.score) ?? 0, PREDICTION_DISPLAY_MAX);
-                                return (
-                                    <div key={`card-${key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                        <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
-                                        <div style={{ color: '#64748b', fontSize: 12, marginTop: 4 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+                            <h3 style={{ marginTop: 0, marginBottom: 0 }}>Selected Point</h3>
+                            {points.length > 1 && (
+                                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                    <button
+                                        onClick={() => setViewMode("single")}
+                                        style={{
+                                            padding: '4px 10px',
+                                            borderRadius: 14,
+                                            border: '1px solid #e2e8f0',
+                                            background: viewMode === 'single' ? '#0f172a' : '#ffffff',
+                                            color: viewMode === 'single' ? '#ffffff' : '#64748b',
+                                            fontSize: 12,
+                                            cursor: 'pointer',
+                                            fontWeight: 600
+                                        }}
+                                    >
+                                        Single
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            setViewMode("compare");
+                                            setComparePointIdxA((prev) => Math.min(Math.max(0, prev), Math.max(0, points.length - 1)));
+                                            setComparePointIdxB((prev) => {
+                                                const clamped = Math.min(Math.max(0, prev), Math.max(0, points.length - 1));
+                                                if (clamped === comparePointIdxA) return comparePointIdxA === 0 ? 1 : 0;
+                                                return clamped;
+                                            });
+                                        }}
+                                        style={{
+                                            padding: '4px 10px',
+                                            borderRadius: 14,
+                                            border: '1px solid #e2e8f0',
+                                            background: viewMode === 'compare' ? '#0f172a' : '#ffffff',
+                                            color: viewMode === 'compare' ? '#ffffff' : '#64748b',
+                                            fontSize: 12,
+                                            cursor: 'pointer',
+                                            fontWeight: 600
+                                        }}
+                                    >
+                                        Compare
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+
+                        {viewMode === 'single' && (
+                            <>
+                                {points.length > 1 && (
+                                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10, marginTop: 10 }}>
+                                        {points.map((p: Point, idx: number) => (
+                                            <button
+                                                key={`pt-top-${idx}`}
+                                                onClick={() => setSelectedPointIdx(idx)}
+                                                style={{
+                                                    padding: '4px 10px',
+                                                    borderRadius: 14,
+                                                    border: '1px solid #e2e8f0',
+                                                    background: selectedPointIdx === idx ? '#0f172a' : '#ffffff',
+                                                    color: selectedPointIdx === idx ? '#ffffff' : '#64748b',
+                                                    fontSize: 12,
+                                                    cursor: 'pointer',
+                                                    fontWeight: 600
+                                                }}
+                                            >
+                                                {`P${idx + 1}`}
+                                            </button>
+                                        ))}
+                                    </div>
+                                )}
+
+                                <div style={{ color: '#64748b', fontSize: 12, marginBottom: 10 }}>
+                                    {points.length > 1
+                                        ? `Point ${selectedPointIdx + 1} of ${points.length} · ${selectedPoint.lat.toFixed(6)}, ${selectedPoint.lng.toFixed(6)}`
+                                        : `${selectedPoint.lat.toFixed(6)}, ${selectedPoint.lng.toFixed(6)}`}
+                                </div>
+
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 12 }}>
+                                    <div style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>Accessibility Score</div>
                                         <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
-                                            <div style={{ height: 10, width: `${width}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
-                                        </div>
-                                        <div style={{ marginTop: 6, fontWeight: 700 }}>{Number.isFinite(score) ? score.toFixed(1) : "Calculating..."}</div>
-                                        <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 8 }}>
-                                            <div style={{ height: 10, width: `${predWidth}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
+                                            <div style={{ height: 10, width: `${Math.min(Number(selectedAccessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
                                         </div>
                                         <div style={{ marginTop: 6, fontWeight: 700 }}>
-                                            {prediction ? (getPredictionDisplayScore(prediction.score) ?? 0).toFixed(1) : "Calculating..."}
+                                            {selectedAccessibility != null && Number.isFinite(selectedAccessibility) ? Number(selectedAccessibility).toFixed(1) : "Calculating..."}
                                         </div>
-                                        {prediction?.risk_level && (
+                                    </div>
+
+                                    <div style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>Model Prediction Score</div>
+                                        <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                            <div style={{ height: 10, width: `${Math.min(getPredictionDisplayScore(selectedPrediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
+                                        </div>
+                                        <div style={{ marginTop: 6, fontWeight: 700 }}>
+                                            {selectedPrediction ? (getPredictionDisplayScore(selectedPrediction.score) ?? 0).toFixed(1) : "Calculating..."}
+                                        </div>
+                                        {selectedPrediction?.risk_level && (
                                             <div style={{ color: '#64748b', fontSize: 12, marginTop: 2 }}>
-                                                Risk: {prediction.risk_level}
+                                                Risk: {selectedPrediction.risk_level}
                                             </div>
                                         )}
                                     </div>
-                                );
-                            })}
-                        </div>
-                    </div>
-                )}
+                                </div>
+                            </>
+                        )}
 
-                {points.length > 0 && (
-                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
-                        <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3>
-                        <button
-                            onClick={handleGenerateAi}
-                            disabled={!canGenerateAi || aiLoading}
-                            style={{
-                                padding: '8px 12px',
-                                borderRadius: 8,
-                                border: '1px solid #e2e8f0',
-                                background: canGenerateAi && !aiLoading ? '#0f172a' : '#f1f5f9',
-                                color: canGenerateAi && !aiLoading ? '#ffffff' : '#94a3b8',
-                                fontSize: 12,
-                                fontWeight: 600,
-                                cursor: canGenerateAi && !aiLoading ? 'pointer' : 'not-allowed',
-                                marginBottom: 8
-                            }}
-                        >
-                            {aiLoading ? 'Generating…' : 'Generate Explanation'}
-                        </button>
-                        {aiLoading && <div style={{ fontSize: 12, color: "#64748b" }}>Generating explanation…</div>}
-                        {aiError && <div style={{ fontSize: 12, color: "#ef4444" }}>{aiError}</div>}
-                        {aiExplanation && (
-                            <div style={{ whiteSpace: "pre-wrap", fontSize: 13, color: "#0f172a", marginTop: 6 }}>
-                                {aiExplanation}
-                            </div>
-                        )}
-                        {preferredPoint && (
-                            <div style={{ marginBottom: 10, fontSize: 13, color: "#0f172a" }}>
-                                Preferred point: <strong>{preferredPoint.key}</strong> (highest combined decayed contribution: {preferredPoint.totalScore.toFixed(3)}).
-                            </div>
-                        )}
-                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12 }}>
-                            {pointSummaries.map((summary, idx) => (
-                                <div key={`explain-${summary.key}`} style={{ border: "1px solid #e2e8f0", borderRadius: 8, padding: 12 }}>
-                                    <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
-                                    <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>{summary.key}</div>
-                                    <div style={{ marginTop: 6, fontSize: 12, color: "#0f172a" }}>
-                                        {summary.key === preferredPoint?.key
-                                            ? "This point is preferred because it has the strongest overall decayed POI contribution across categories."
-                                            : "This point has a lower total decayed contribution than the preferred point."}
+                        {viewMode === 'compare' && points.length > 1 && (
+                            <>
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 12, marginBottom: 10 }}>
+                                    <div>
+                                        <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>A</div>
+                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                            {points.map((p: Point, idx: number) => (
+                                                <button
+                                                    key={`pt-a-${idx}`}
+                                                    onClick={() => {
+                                                        setComparePointIdxA(idx);
+                                                        setSelectedPointIdx(idx);
+                                                        if (idx === comparePointIdxB) {
+                                                            setComparePointIdxB(idx === 0 ? 1 : 0);
+                                                        }
+                                                    }}
+                                                    style={{
+                                                        padding: '4px 10px',
+                                                        borderRadius: 14,
+                                                        border: '1px solid #e2e8f0',
+                                                        background: comparePointIdxA === idx ? '#0f172a' : '#ffffff',
+                                                        color: comparePointIdxA === idx ? '#ffffff' : '#64748b',
+                                                        fontSize: 12,
+                                                        cursor: 'pointer',
+                                                        fontWeight: 600
+                                                    }}
+                                                >
+                                                    {`P${idx + 1}`}
+                                                </button>
+                                            ))}
+                                        </div>
                                     </div>
-                                    <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
-                                        Total decayed contribution: <strong>{summary.totalScore.toFixed(3)}</strong>
+                                    <div>
+                                        <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>B</div>
+                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                            {points.map((p: Point, idx: number) => (
+                                                <button
+                                                    key={`pt-b-${idx}`}
+                                                    onClick={() => {
+                                                        setComparePointIdxB(idx);
+                                                        if (idx === comparePointIdxA) {
+                                                            const nextA = idx === 0 ? 1 : 0;
+                                                            setComparePointIdxA(nextA);
+                                                            setSelectedPointIdx(nextA);
+                                                        }
+                                                    }}
+                                                    style={{
+                                                        padding: '4px 10px',
+                                                        borderRadius: 14,
+                                                        border: '1px solid #e2e8f0',
+                                                        background: comparePointIdxB === idx ? '#0f172a' : '#ffffff',
+                                                        color: comparePointIdxB === idx ? '#ffffff' : '#64748b',
+                                                        fontSize: 12,
+                                                        cursor: 'pointer',
+                                                        fontWeight: 600
+                                                    }}
+                                                >
+                                                    {`P${idx + 1}`}
+                                                </button>
+                                            ))}
+                                        </div>
                                     </div>
-                                    <div style={{ marginTop: 8 }}>
-                                        {summary.perCategory.map((catSummary) => (
-                                            <div key={`${summary.key}-${catSummary.cat}`} style={{ marginBottom: 6 }}>
-                                                <div style={{ fontWeight: 700, fontSize: 12 }}>{catSummary.cat}</div>
-                                                {catSummary.topPois.length === 0 ? (
-                                                    <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs within 1 km.</div>
-                                                ) : (
-                                                    <div style={{ fontSize: 12, color: "#475569" }}>
-                                                        Top contributors: {catSummary.topPois.slice(0, 3).map((poi) => poi.name).join(", ")}. (decayed sum: {catSummary.score.toFixed(3)})
+                                </div>
+
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
+                                    {selectedTargets.map((t) => {
+                                        const summary = pointSummaries.find((s) => s.key === t.key) || null;
+                                        return (
+                                            <div key={`compare-card-${t.key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                                <div style={{ fontWeight: 800, marginBottom: 4 }}>{`${t.label}: P${t.idx + 1}`}</div>
+                                                <div style={{ color: '#64748b', fontSize: 12, marginBottom: 10 }}>{`${t.point.lat.toFixed(6)}, ${t.point.lng.toFixed(6)}`}</div>
+
+                                                <div style={{ fontWeight: 700, fontSize: 12, color: '#475569' }}>Accessibility</div>
+                                                <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                                    <div style={{ height: 10, width: `${Math.min(Number(t.accessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
+                                                </div>
+                                                <div style={{ marginTop: 6, fontWeight: 800 }}>
+                                                    {t.accessibility != null && Number.isFinite(Number(t.accessibility)) ? Number(t.accessibility).toFixed(1) : "Calculating..."}
+                                                </div>
+
+                                                <div style={{ fontWeight: 700, fontSize: 12, color: '#475569', marginTop: 10 }}>Prediction</div>
+                                                <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                                    <div style={{ height: 10, width: `${Math.min(getPredictionDisplayScore(t.prediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
+                                                </div>
+                                                <div style={{ marginTop: 6, fontWeight: 800 }}>
+                                                    {t.prediction ? (getPredictionDisplayScore(t.prediction.score) ?? 0).toFixed(1) : "Calculating..."}
+                                                </div>
+                                                {t.prediction?.risk_level && (
+                                                    <div style={{ color: '#64748b', fontSize: 12, marginTop: 2 }}>
+                                                        Risk: {t.prediction.risk_level}
+                                                    </div>
+                                                )}
+
+                                                {summary && (
+                                                    <div style={{ marginTop: 10, fontSize: 12, color: '#475569' }}>
+                                                        Total decayed contribution (within 1 km): <strong>{summary.totalScore.toFixed(3)}</strong>
                                                     </div>
                                                 )}
                                             </div>
-                                        ))}
-                                    </div>
+                                        );
+                                    })}
                                 </div>
-                            ))}
-                        </div>
+                            </>
+                        )}
                     </div>
                 )}
 
@@ -882,29 +1090,6 @@ export default function ResultPage() {
                                 <div style={{ position: 'sticky', top: 0, background: '#ffffff', zIndex: 10, paddingBottom: 8, paddingTop: 0 }}>
                                     <div style={{ fontWeight: 700, marginBottom: 4 }}>Nearby POIs (within 1 km)</div>
                                     <div style={{ fontSize: 13, color: '#64748b', marginBottom: 8 }}>{name}</div>
-
-                                    {points.length > 1 && (
-                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
-                                            {points.map((p: Point, idx: number) => (
-                                                <button
-                                                    key={`pt-${idx}`}
-                                                    onClick={() => setSelectedPointIdx(idx)}
-                                                    style={{
-                                                        padding: '4px 8px',
-                                                        borderRadius: 14,
-                                                        border: '1px solid #e2e8f0',
-                                                        background: selectedPointIdx === idx ? '#0f172a' : '#ffffff',
-                                                        color: selectedPointIdx === idx ? '#ffffff' : '#64748b',
-                                                        fontSize: 11,
-                                                        cursor: 'pointer',
-                                                        fontWeight: 600
-                                                    }}
-                                                >
-                                                    {`P${idx + 1}`}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    )}
 
                                     <div style={{ marginBottom: 8 }}>
                                         <input
@@ -1081,6 +1266,69 @@ export default function ResultPage() {
                         </div>
                     </div>
                 </div>
+
+                {points.length > 0 && (
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
+                        <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3>
+                        <button
+                            onClick={handleGenerateAi}
+                            disabled={!canGenerateAi || aiLoading}
+                            style={{
+                                padding: '8px 12px',
+                                borderRadius: 8,
+                                border: '1px solid #e2e8f0',
+                                background: canGenerateAi && !aiLoading ? '#0f172a' : '#f1f5f9',
+                                color: canGenerateAi && !aiLoading ? '#ffffff' : '#94a3b8',
+                                fontSize: 12,
+                                fontWeight: 600,
+                                cursor: canGenerateAi && !aiLoading ? 'pointer' : 'not-allowed',
+                                marginBottom: 8
+                            }}
+                        >
+                            {aiLoading ? 'Generating…' : 'Generate Explanation'}
+                        </button>
+                        {aiLoading && <div style={{ fontSize: 12, color: "#64748b" }}>Generating explanation…</div>}
+                        {aiError && <div style={{ fontSize: 12, color: "#ef4444" }}>{aiError}</div>}
+                        {aiExplanation && (
+                            <div style={{ whiteSpace: "pre-wrap", fontSize: 13, color: "#0f172a", marginTop: 6 }}>
+                                {aiExplanation}
+                            </div>
+                        )}
+                        {pointSummaries.length > 0 && (
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 10 }}>
+                                {selectedTargets.map((t) => {
+                                    const summary = pointSummaries.find((s) => s.key === t.key);
+                                    if (!summary) return null;
+                                    return (
+                                        <div key={`explain-summary-${summary.key}`} style={{ border: "1px solid #e2e8f0", borderRadius: 8, padding: 12 }}>
+                                            <div style={{ fontWeight: 800 }}>
+                                                {viewMode === 'compare' ? `${t.label}: P${t.idx + 1}` : (points.length > 1 ? `Point ${selectedPointIdx + 1}` : "Point")}
+                                            </div>
+                                            <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>{summary.key}</div>
+                                            <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
+                                                Total decayed contribution (within 1 km): <strong>{summary.totalScore.toFixed(3)}</strong>
+                                            </div>
+                                            <div style={{ marginTop: 10 }}>
+                                                {summary.perCategory.map((catSummary) => (
+                                                    <div key={`${summary.key}-${catSummary.cat}`} style={{ marginBottom: 10 }}>
+                                                        <div style={{ fontWeight: 700, fontSize: 12 }}>{catSummary.cat}</div>
+                                                        {catSummary.topPois.length === 0 ? (
+                                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs within 1 km.</div>
+                                                        ) : (
+                                                            <div style={{ fontSize: 12, color: "#475569" }}>
+                                                                Top contributors: {catSummary.topPois.slice(0, 3).map((poi) => poi.name).join(", ")}. (decayed sum: {catSummary.score.toFixed(3)})
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     );
