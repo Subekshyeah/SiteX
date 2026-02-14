@@ -57,21 +57,25 @@ def get_road_types(
     points = result.get("points", {})
     reachable: List[Dict[str, Any]] = []
     total_decayed_weight = 0.0
+    total_normalized_score = 0.0
     for road_type, dist_m in distances.items():
         if road_type in start_types:
             continue
         point = points.get(road_type)
         distance_km = round(float(dist_m) / 1000.0, 4)
+        normalized_score = max(0.0, 1.0 - (distance_km / float(radius_km)))
         weight = ROAD_TYPE_WEIGHTS.get(road_type, 1.0)
         try:
             decayed_weight = weight * math.exp(-float(distance_km) / float(decay_scale_km))
         except Exception:
             decayed_weight = weight
         total_decayed_weight += decayed_weight
+        total_normalized_score += normalized_score
         reachable.append(
             {
                 "road_type": road_type,
                 "distance_km": distance_km,
+                "normalized_score": round(normalized_score, 6),
                 "weight": weight,
                 "decayed_weight": round(decayed_weight, 6),
                 "point": point,
@@ -90,4 +94,5 @@ def get_road_types(
         },
         "reachable": reachable,
         "total_decayed_weight": round(total_decayed_weight, 6),
+        "total_normalized_score": round(total_normalized_score, 6),
     }
