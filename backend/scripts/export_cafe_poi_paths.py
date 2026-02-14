@@ -801,20 +801,35 @@ def _process_cafe(cafe_idx: int) -> Tuple[int, str, Dict[str, int], Dict[str, Tu
 
 
 def main() -> int:
+    # Avoid UnicodeEncodeError on Windows terminals with non-UTF8 codepages.
+    try:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8")
+        if hasattr(sys.stderr, "reconfigure"):
+            sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+    script_path = Path(__file__).resolve()
+    backend_dir = script_path.parents[1]
+    default_input_dir = backend_dir / "Data" / "CSV_Reference" / "final"
+    default_output_dir = backend_dir / "Data" / "poi_paths_geojson"
+
     parser = argparse.ArgumentParser(description="Export cafe->POI path GeoJSONs")
     parser.add_argument(
         "--input-dir",
-        default="/home/rise/projects/SiteX/backend/Data/CSV_Reference/final",
-        help="Directory containing the CSV files",
+        default=str(default_input_dir),
+        help="Directory containing the CSV files (default: backend/Data/CSV_Reference/final)",
     )
     parser.add_argument(
         "--output-dir",
-        default="/home/rise/projects/SiteX/backend/Data/poi_paths_geojson",
-        help="Directory to write outputs",
+        default=str(default_output_dir),
+        help="Directory to write outputs (default: backend/Data/poi_paths_geojson)",
     )
     parser.add_argument("--radius-km", type=float, default=DEFAULT_RADIUS_KM, help="Search radius in kilometers")
     parser.add_argument("--decay-scale-km", type=float, default=DEFAULT_DECAY_SCALE_KM, help="Exponential decay scale in kilometers")
-    parser.add_argument("--workers", type=int, default=max(os.cpu_count() - 1, 1), help="Number of worker processes")
+    default_workers = max((os.cpu_count() or 2) - 1, 1)
+    parser.add_argument("--workers", type=int, default=default_workers, help="Number of worker processes")
     parser.add_argument("--no-resume", action="store_false", dest="resume", help="Disable resume behavior")
     parser.add_argument("--map-base-name", default=None, help="Base name for combined paths + map")
     parser.add_argument(
