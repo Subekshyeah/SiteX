@@ -46,7 +46,8 @@ type PoiApiItem = {
     [key: string]: unknown;
 };
 type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: PoiApiItem };
-type PredictionItem = { lat: number; lon: number; score: number; risk_level: string };
+type AccessibilityResponse = { score?: number };
+type PredictionResponse = { predictions?: Array<{ lat: number; lon: number; score: number; risk_level?: string }> };
 
 function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Point[] {
     const cleaned = (raw || "").trim();
@@ -91,22 +92,32 @@ export default function ResultPage() {
 
     const [loadedPois, setLoadedPois] = useState<Record<string, Poi[]> | null>(null);
     const poisCacheRef = useRef<Map<string, Record<string, Poi[]>>>(new Map());
-    const predictionsCacheRef = useRef<Map<string, Record<string, { score: number; risk: string }>>>(new Map());
+    const accessibilityCacheRef = useRef<Map<string, Record<string, number>>>(new Map());
+    const predictionCacheRef = useRef<Map<string, Record<string, { score: number; risk_level?: string }>>>(new Map());
     const aiCacheRef = useRef<Map<string, string>>(new Map());
     const [selectedPointIdx, setSelectedPointIdx] = useState<number>(0);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
-    const [predictions, setPredictions] = useState<Record<string, { score: number; risk: string }>>({});
+    const [accessibilityScores, setAccessibilityScores] = useState<Record<string, number>>({});
+    const [predictionScores, setPredictionScores] = useState<Record<string, { score: number; risk_level?: string }>>({});
     const [aiExplanation, setAiExplanation] = useState<string>("");
     const [aiLoading, setAiLoading] = useState<boolean>(false);
     const [aiError, setAiError] = useState<string>("");
     const primaryPoint = points[0] || { lat, lng };
     const primaryKey = `${primaryPoint.lat.toFixed(6)},${primaryPoint.lng.toFixed(6)}`;
-    const primaryPrediction = predictions[primaryKey] || null;
+    const primaryAccessibility = accessibilityScores[primaryKey] ?? null;
+    const primaryPrediction = predictionScores[primaryKey] ?? null;
     const averageScore = useMemo(() => {
-        const vals = Object.values(predictions).map((p) => p.score).filter((v) => Number.isFinite(v));
+        const vals = Object.values(accessibilityScores).filter((v) => Number.isFinite(v));
         if (vals.length === 0) return null;
         return vals.reduce((s, v) => s + v, 0) / vals.length;
-    }, [predictions]);
+    }, [accessibilityScores]);
+    const averagePrediction = useMemo(() => {
+        const vals = Object.values(predictionScores)
+            .map((v) => Number(v?.score))
+            .filter((v) => Number.isFinite(v));
+        if (vals.length === 0) return null;
+        return vals.reduce((s, v) => s + v, 0) / vals.length;
+    }, [predictionScores]);
     const selectedPoint = useMemo(() => {
         return points[selectedPointIdx] || points[0] || { lat: centerLat, lng: centerLng };
     }, [points, selectedPointIdx, centerLat, centerLng]);
@@ -115,6 +126,8 @@ export default function ResultPage() {
         [points]
     );
     const MAX_RADIUS_KM = 1;
+    const ACCESS_RADIUS_KM = 0.3;
+    const PREDICTION_DISPLAY_MAX = 100;
     // --- Load POIs from backend POI endpoint instead of CSVs ---
     const DECAY_SCALE_KM = 1.0;
     const cachePrefix = "sitex:cache:";
@@ -138,6 +151,11 @@ export default function ResultPage() {
         const w = Number(poi.weight) || 0;
         const d = Number(poi.distance_km) || 0;
         return w * Math.exp(-d / DECAY_SCALE_KM);
+    };
+    const getPredictionDisplayScore = (score?: number | null) => {
+        const raw = Number(score);
+        if (!Number.isFinite(raw)) return null;
+        return Math.max(0, Math.min(raw * 25, PREDICTION_DISPLAY_MAX));
     };
 
     useEffect(() => {
@@ -286,47 +304,86 @@ export default function ResultPage() {
         let mounted = true;
         const controller = new AbortController();
         (async () => {
-            if (points.length === 0) return;
-            const cached = predictionsCacheRef.current.get(pointsKey);
-            if (cached) {
-                if (mounted) setPredictions(cached);
-                return;
-            }
-            const cachedLocal = getCache<Record<string, { score: number; risk: string }>>(`predict:${pointsKey}`);
-            if (cachedLocal) {
-                predictionsCacheRef.current.set(pointsKey, cachedLocal);
-                if (mounted) setPredictions(cachedLocal);
-                return;
-            }
-            try {
-                const url = `http://127.0.0.1:8000/api/v1/predict/`;
-                const res = await fetch(url, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ locations: points.map(p => ({ lat: p.lat, lon: p.lng })) }),
-                    signal: controller.signal,
-                });
-                if (!res.ok) {
-                    console.error('Failed to fetch predictions');
-                    if (mounted) setPredictions({});
-                    return;
-                }
-                const data = await res.json();
+            if (points.length === 0) {
                 if (mounted) {
-                    const newPredictions: Record<string, { score: number; risk: string }> = {};
-                    if (Array.isArray(data.predictions)) {
-                        (data.predictions as PredictionItem[]).forEach((item: PredictionItem) => {
-                            const key = `${Number(item.lat).toFixed(6)},${Number(item.lon).toFixed(6)}`;
-                            newPredictions[key] = { score: item.score, risk: item.risk_level };
-                        });
+                    setAccessibilityScores({});
+                    setPredictionScores({});
+                }
+                return;
+            }
+
+            const loadAccessibility = async () => {
+                const cached = accessibilityCacheRef.current.get(pointsKey);
+                if (cached) return cached;
+                const cachedLocal = getCache<Record<string, number>>(`accessibility:${pointsKey}`);
+                if (cachedLocal) {
+                    accessibilityCacheRef.current.set(pointsKey, cachedLocal);
+                    return cachedLocal;
+                }
+                const newScores: Record<string, number> = {};
+                await Promise.all(points.map(async (p) => {
+                    const url = `http://127.0.0.1:8000/api/v1/road-types/summary-accessibility?lat=${encodeURIComponent(p.lat)}&lon=${encodeURIComponent(p.lng)}&radius_km=${ACCESS_RADIUS_KM}&decay_scale_km=${ACCESS_RADIUS_KM}`;
+                    const res = await fetch(url, { signal: controller.signal });
+                    if (!res.ok) return;
+                    const data = (await res.json()) as AccessibilityResponse;
+                    const score = Number(data?.score);
+                    if (Number.isFinite(score)) {
+                        const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
+                        newScores[key] = score;
                     }
-                    predictionsCacheRef.current.set(pointsKey, newPredictions);
-                    setCache(`predict:${pointsKey}`, newPredictions);
-                    setPredictions(newPredictions);
+                }));
+                accessibilityCacheRef.current.set(pointsKey, newScores);
+                setCache(`accessibility:${pointsKey}`, newScores);
+                return newScores;
+            };
+
+            const loadPredictions = async () => {
+                const cached = predictionCacheRef.current.get(pointsKey);
+                if (cached) return cached;
+                const cachedLocal = getCache<Record<string, { score: number; risk_level?: string }>>(`prediction:${pointsKey}`);
+                if (cachedLocal) {
+                    predictionCacheRef.current.set(pointsKey, cachedLocal);
+                    return cachedLocal;
+                }
+                const payload = {
+                    locations: points.map((p) => ({ lat: p.lat, lon: p.lng }))
+                };
+                const res = await fetch("http://127.0.0.1:8000/api/v1/predict/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload),
+                    signal: controller.signal
+                });
+                if (!res.ok) return {};
+                const data = (await res.json()) as PredictionResponse;
+                const newScores: Record<string, { score: number; risk_level?: string }> = {};
+                (data?.predictions || []).forEach((item) => {
+                    const key = `${Number(item.lat).toFixed(6)},${Number(item.lon).toFixed(6)}`;
+                    newScores[key] = {
+                        score: Number(item.score) || 0,
+                        risk_level: item.risk_level
+                    };
+                });
+                predictionCacheRef.current.set(pointsKey, newScores);
+                setCache(`prediction:${pointsKey}`, newScores);
+                return newScores;
+            };
+
+            try {
+                const [accessScores, predictScores] = await Promise.all([
+                    loadAccessibility(),
+                    loadPredictions()
+                ]);
+                if (mounted) {
+                    setAccessibilityScores(accessScores);
+                    setPredictionScores(predictScores);
                 }
             } catch (err) {
-                if (mounted) setPredictions({});
-                console.error('Error fetching predictions:', err);
+                if (mounted) {
+                    setAccessibilityScores({});
+                    setPredictionScores({});
+                }
+                console.error('Error fetching accessibility/prediction scores:', err);
             }
         })();
         return () => { mounted = false; controller.abort(); };
@@ -489,9 +546,9 @@ export default function ResultPage() {
     }, [pointSummaries]);
 
     const canGenerateAi = useMemo(() => {
-        const hasScore = averageScore != null || (primaryPrediction && Number.isFinite(primaryPrediction.score));
+        const hasScore = averageScore != null || (primaryAccessibility != null && Number.isFinite(primaryAccessibility));
         return hasScore && pointSummaries.length > 0 && loadedPois !== null;
-    }, [averageScore, primaryPrediction, pointSummaries, loadedPois]);
+    }, [averageScore, primaryAccessibility, pointSummaries, loadedPois]);
 
     const handleGenerateAi = async () => {
         if (!canGenerateAi || aiLoading) return;
@@ -575,23 +632,54 @@ export default function ResultPage() {
                     )}
                     <div style={{ color: "#94a3b8", fontSize: 12, marginTop: 4 }}>{`mode: ${mode} · pick: ${pick}`}</div>
                     <div style={{ marginTop: 12 }}>
-                        <div style={{ fontSize: 13, color: "#475569" }}>Success Score {points.length > 1 ? "(Multiple)" : (primaryPrediction ? `(${primaryPrediction.risk})` : "")}</div>
+                        <div style={{ fontSize: 13, color: "#475569" }}>Accessibility Score {points.length > 1 ? "(Multiple)" : ""}</div>
                         <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
-                            <div style={{ height: 14, width: `${Math.min((((averageScore ?? primaryPrediction?.score ?? 0) || 0) / 3) * 100, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.6s", animation: "pulseGlow 2.2s ease-in-out infinite" }} />
+                            <div style={{ height: 14, width: `${Math.min((averageScore ?? primaryAccessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 8, transition: "width 0.6s", animation: "pulseGlow 2.2s ease-in-out infinite" }} />
                         </div>
                         <div style={{ marginTop: 6, color: '#0f172a' }}>
-                            {averageScore != null ? averageScore.toFixed(3) : (primaryPrediction ? primaryPrediction.score.toFixed(3) : "Calculating...")}
+                            {averageScore != null ? averageScore.toFixed(1) : (primaryAccessibility != null ? primaryAccessibility.toFixed(1) : "Calculating...")}
                         </div>
+                    </div>
+                    <div style={{ marginTop: 12 }}>
+                        <div style={{ fontSize: 13, color: "#475569" }}>Model Prediction Score {points.length > 1 ? "(Multiple)" : ""}</div>
+                        <div style={{ height: 14, background: "#f1f5f9", borderRadius: 8, marginTop: 6 }}>
+                            <div
+                                style={{
+                                    height: 14,
+                                    width: `${Math.min(getPredictionDisplayScore(averagePrediction ?? primaryPrediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`,
+                                    background: "linear-gradient(90deg,#f97316,#ef4444)",
+                                    borderRadius: 8,
+                                    transition: "width 0.6s"
+                                }}
+                            />
+                        </div>
+                        <div style={{ marginTop: 6, color: '#0f172a' }}>
+                            {averagePrediction != null
+                                ? (getPredictionDisplayScore(averagePrediction) ?? 0).toFixed(1)
+                                : (primaryPrediction ? (getPredictionDisplayScore(primaryPrediction.score) ?? 0).toFixed(1) : "Calculating...")}
+                        </div>
+                        {primaryPrediction?.risk_level && (
+                            <div style={{ fontSize: 12, color: "#475569", marginTop: 2 }}>
+                                Risk: {primaryPrediction.risk_level}
+                            </div>
+                        )}
                     </div>
                     {points.length > 1 && (
                         <div style={{ marginTop: 10, fontSize: 12, color: "#475569" }}>
                             {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
-                                const pred = predictions[key];
+                                const score = accessibilityScores[key];
+                                const prediction = predictionScores[key];
+                                const predictionDisplay = getPredictionDisplayScore(prediction?.score);
                                 return (
                                     <div key={key} style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
                                         <span>{`${idx + 1}. ${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
-                                        <span style={{ color: '#0f172a', fontWeight: 600 }}>{pred ? pred.score.toFixed(3) : "…"}</span>
+                                        <span style={{ color: '#0f172a', fontWeight: 600 }}>
+                                            {Number.isFinite(score) ? score.toFixed(1) : "…"}
+                                        </span>
+                                        <span style={{ color: '#0f172a', fontWeight: 600 }}>
+                                            {predictionDisplay != null ? predictionDisplay.toFixed(1) : "…"}
+                                        </span>
                                     </div>
                                 );
                             })}
@@ -605,18 +693,29 @@ export default function ResultPage() {
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 12 }}>
                             {points.map((p: Point, idx: number) => {
                                 const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
-                                const pred = predictions[key];
-                                const score = pred?.score;
-                                const width = Math.min((((score ?? 0) / 3) * 100), 100);
+                                const score = accessibilityScores[key];
+                                const prediction = predictionScores[key];
+                                const width = Math.min((score ?? 0), 100);
+                                const predWidth = Math.min(getPredictionDisplayScore(prediction?.score) ?? 0, PREDICTION_DISPLAY_MAX);
                                 return (
                                     <div key={`card-${key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
                                         <div style={{ fontWeight: 700 }}>{`Point ${idx + 1}`}</div>
                                         <div style={{ color: '#64748b', fontSize: 12, marginTop: 4 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
-                                        <div style={{ fontSize: 12, color: '#64748b', marginTop: 6 }}>{pred ? `Risk: ${pred.risk}` : 'Risk: …'}</div>
                                         <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
                                             <div style={{ height: 10, width: `${width}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
                                         </div>
-                                        <div style={{ marginTop: 6, fontWeight: 700 }}>{pred ? pred.score.toFixed(3) : "Calculating..."}</div>
+                                        <div style={{ marginTop: 6, fontWeight: 700 }}>{Number.isFinite(score) ? score.toFixed(1) : "Calculating..."}</div>
+                                        <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 8 }}>
+                                            <div style={{ height: 10, width: `${predWidth}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
+                                        </div>
+                                        <div style={{ marginTop: 6, fontWeight: 700 }}>
+                                            {prediction ? (getPredictionDisplayScore(prediction.score) ?? 0).toFixed(1) : "Calculating..."}
+                                        </div>
+                                        {prediction?.risk_level && (
+                                            <div style={{ color: '#64748b', fontSize: 12, marginTop: 2 }}>
+                                                Risk: {prediction.risk_level}
+                                            </div>
+                                        )}
                                     </div>
                                 );
                             })}

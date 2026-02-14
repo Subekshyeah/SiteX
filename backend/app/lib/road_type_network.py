@@ -16,8 +16,8 @@ except ImportError:  # pragma: no cover
 ROAD_TYPE_WEIGHTS: Dict[str, float] = {
     "motorway": 1.6,
     "trunk": 1.5,
-    "primary": 1.4,
-    "secondary": 1.3,
+    "primary": 2.0,
+    "secondary": 1.5,
     "tertiary": 1.2,
     "residential": 1.0,
     "unclassified": 1.0,
