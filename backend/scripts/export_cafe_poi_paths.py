@@ -25,7 +25,7 @@ from app.api.endpoints.pois import (
 
 
 # DEFAULT_RADIUS_KM = 0.3
-DEFAULT_RADIUS_KM = 0.5
+DEFAULT_RADIUS_KM = 1
 DEFAULT_DECAY_SCALE_KM = 1.0
 
 G_CAFE_DF: Optional[pd.DataFrame] = None
@@ -256,14 +256,41 @@ def _render_map_html(title: str, geojson_name: str, bounds: List[float]) -> str:
     />
     <style>
         html, body, #map {{ height: 100%; margin: 0; }}
-        .panel {{ position: absolute; top: 12px; left: 12px; background: #ffffff; padding: 10px 12px; z-index: 1000; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.15); font-family: Arial, sans-serif; }}
+        .panel {{
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #ffffff;
+            padding: 10px 12px;
+            z-index: 1000;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+            font-family: Arial, sans-serif;
+            width: 300px;
+        }}
+        .panel h1 {{ font-size: 14px; margin: 0 0 8px 0; }}
+        .panel label {{ display: block; font-size: 12px; margin: 6px 0 4px 0; color: #333; }}
+        .panel select {{ width: 100%; padding: 6px; font-size: 12px; }}
+        .panel .muted {{ color: #666; font-size: 12px; margin-top: 6px; }}
     </style>
 </head>
 <body>
     <div id=\"map\"></div>
     <div class=\"panel\">
-        <div><strong>{title}</strong></div>
-        <div id=\"status\">Loading paths...</div>
+        <h1>{title}</h1>
+        <label for=\"modeSelect\">Mode</label>
+        <select id=\"modeSelect\">
+            <option value=\"all\">All cafes</option>
+            <option value=\"cafe\">Single cafe</option>
+            <option value=\"poi\">Single cafe + POI</option>
+        </select>
+        <label for="allPartSelect">All mode part</label>
+        <select id="allPartSelect"></select>
+        <label for=\"cafeSelect\">Cafe</label>
+        <select id=\"cafeSelect\"></select>
+        <label for=\"poiSelect\">POI</label>
+        <select id=\"poiSelect\"></select>
+        <div id=\"status\" class=\"muted\">Loading paths...</div>
     </div>
     <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\" integrity=\"sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=\" crossorigin=\"\"></script>
     <script>
@@ -279,19 +306,305 @@ def _render_map_html(title: str, geojson_name: str, bounds: List[float]) -> str:
             attribution: '&copy; OpenStreetMap'
         }}).addTo(map);
 
+        const modeSelect = document.getElementById('modeSelect');
+        const allPartSelect = document.getElementById('allPartSelect');
+        const cafeSelect = document.getElementById('cafeSelect');
+        const poiSelect = document.getElementById('poiSelect');
+        const statusEl = document.getElementById('status');
+        let allData = null;
+        let layer = null;
+        const markerLayer = L.layerGroup().addTo(map);
+        const cafeIndex = new Map();
+        const partIndex = new Map();
+        const partBounds = new Map();
+        const gridRows = 4;
+        const gridCols = 4;
+
+        function formatLabel(name, lat, lon) {{
+            const labelName = name && String(name).trim() ? String(name).trim() : 'Unnamed';
+            const latStr = Number.isFinite(lat) ? lat.toFixed(5) : 'n/a';
+            const lonStr = Number.isFinite(lon) ? lon.toFixed(5) : 'n/a';
+            return `${{labelName}} (${{latStr}}, ${{lonStr}})`;
+        }}
+
+        function buildIndex(features) {{
+            cafeIndex.clear();
+            partIndex.clear();
+            partBounds.clear();
+            let minLat = Infinity;
+            let maxLat = -Infinity;
+            let minLon = Infinity;
+            let maxLon = -Infinity;
+            features.forEach((feat, idx) => {{
+                const props = feat && feat.properties ? feat.properties : {{}};
+                const cafeName = props.cafe_name || '';
+                const cafeLat = Number(props.cafe_lat);
+                const cafeLon = Number(props.cafe_lon);
+                const cafeId = `${{cafeName}}||${{cafeLat}}||${{cafeLon}}`;
+                if (!cafeIndex.has(cafeId)) {{
+                    cafeIndex.set(cafeId, {{
+                        id: cafeId,
+                        name: cafeName,
+                        lat: cafeLat,
+                        lon: cafeLon,
+                        label: formatLabel(cafeName, cafeLat, cafeLon),
+                        pois: new Map(),
+                        featureIndexes: []
+                    }});
+                }}
+                const cafeEntry = cafeIndex.get(cafeId);
+                cafeEntry.featureIndexes.push(idx);
+
+                const poiName = props.poi_name || '';
+                const poiType = props.poi_type || '';
+                const poiLat = Number(props.poi_lat);
+                const poiLon = Number(props.poi_lon);
+                const poiId = `${{poiType}}||${{poiName}}||${{poiLat}}||${{poiLon}}`;
+                if (!cafeEntry.pois.has(poiId)) {{
+                    cafeEntry.pois.set(poiId, {{
+                        id: poiId,
+                        name: poiName,
+                        type: poiType,
+                        lat: poiLat,
+                        lon: poiLon,
+                        label: `${{poiType ? poiType + ': ' : ''}}${{formatLabel(poiName, poiLat, poiLon)}}`,
+                        featureIndexes: []
+                    }});
+                }}
+                cafeEntry.pois.get(poiId).featureIndexes.push(idx);
+
+                const geom = feat && feat.geometry ? feat.geometry : null;
+                const coords = geom && geom.type === 'LineString' ? geom.coordinates : null;
+                if (Array.isArray(coords) && coords.length >= 2) {{
+                    const start = coords[0];
+                    const end = coords[coords.length - 1];
+                    const midLon = (Number(start[0]) + Number(end[0])) / 2;
+                    const midLat = (Number(start[1]) + Number(end[1])) / 2;
+                    if (Number.isFinite(midLat) && Number.isFinite(midLon)) {{
+                        minLat = Math.min(minLat, midLat);
+                        maxLat = Math.max(maxLat, midLat);
+                        minLon = Math.min(minLon, midLon);
+                        maxLon = Math.max(maxLon, midLon);
+                    }}
+                }}
+            }});
+
+            if (!Number.isFinite(minLat) || !Number.isFinite(maxLat) || !Number.isFinite(minLon) || !Number.isFinite(maxLon)) {{
+                return;
+            }}
+            const latSpan = Math.max(1e-6, maxLat - minLat);
+            const lonSpan = Math.max(1e-6, maxLon - minLon);
+            features.forEach((feat, idx) => {{
+                const geom = feat && feat.geometry ? feat.geometry : null;
+                const coords = geom && geom.type === 'LineString' ? geom.coordinates : null;
+                if (!Array.isArray(coords) || coords.length < 2) {{
+                    return;
+                }}
+                const start = coords[0];
+                const end = coords[coords.length - 1];
+                const midLon = (Number(start[0]) + Number(end[0])) / 2;
+                const midLat = (Number(start[1]) + Number(end[1])) / 2;
+                if (!Number.isFinite(midLat) || !Number.isFinite(midLon)) {{
+                    return;
+                }}
+                const row = Math.min(gridRows - 1, Math.max(0, Math.floor(((midLat - minLat) / latSpan) * gridRows)));
+                const col = Math.min(gridCols - 1, Math.max(0, Math.floor(((midLon - minLon) / lonSpan) * gridCols)));
+                const partId = `${{row}}-${{col}}`;
+                if (!partIndex.has(partId)) {{
+                    partIndex.set(partId, []);
+                }}
+                partIndex.get(partId).push(idx);
+
+                const boundsEntry = partBounds.get(partId) || [Infinity, Infinity, -Infinity, -Infinity];
+                coords.forEach(pt => {{
+                    const lon = Number(pt[0]);
+                    const lat = Number(pt[1]);
+                    if (!Number.isFinite(lat) || !Number.isFinite(lon)) {{
+                        return;
+                    }}
+                    boundsEntry[0] = Math.min(boundsEntry[0], lon);
+                    boundsEntry[1] = Math.min(boundsEntry[1], lat);
+                    boundsEntry[2] = Math.max(boundsEntry[2], lon);
+                    boundsEntry[3] = Math.max(boundsEntry[3], lat);
+                }});
+                partBounds.set(partId, boundsEntry);
+            }});
+        }}
+
+        function setSelectOptions(selectEl, options, placeholder) {{
+            selectEl.innerHTML = '';
+            const placeholderOption = document.createElement('option');
+            placeholderOption.value = '';
+            placeholderOption.textContent = placeholder;
+            selectEl.appendChild(placeholderOption);
+            options.forEach(option => {{
+                const opt = document.createElement('option');
+                opt.value = option.id;
+                opt.textContent = option.label;
+                selectEl.appendChild(opt);
+            }});
+        }}
+
+        function updatePoiOptions() {{
+            const cafeId = cafeSelect.value;
+            if (!cafeId || !cafeIndex.has(cafeId)) {{
+                setSelectOptions(poiSelect, [], 'Select a cafe first');
+                poiSelect.disabled = true;
+                return;
+            }}
+            const cafeEntry = cafeIndex.get(cafeId);
+            const pois = Array.from(cafeEntry.pois.values()).sort((a, b) => a.label.localeCompare(b.label));
+            setSelectOptions(poiSelect, pois, 'All POIs for this cafe');
+            poiSelect.disabled = false;
+        }}
+
+        function updateAllPartOptions() {{
+            const options = [];
+            partIndex.forEach((indexes, partId) => {{
+                const [row, col] = partId.split('-');
+                options.push({{
+                    id: partId,
+                    label: 'Part ' + (Number(row) + 1) + ',' + (Number(col) + 1) + ' (' + indexes.length + ' paths)'
+                }});
+            }});
+            options.sort((a, b) => a.label.localeCompare(b.label));
+            setSelectOptions(allPartSelect, options, 'All paths (slow)');
+            if (options.length > 0) {{
+                allPartSelect.value = options[0].id;
+            }}
+        }}
+
+        function applyFilters() {{
+            if (!allData) {{
+                return;
+            }}
+            const mode = modeSelect.value;
+            let indexes = [];
+            let cafeEntry = null;
+            let poiEntry = null;
+            if (mode === 'all') {{
+                const partId = allPartSelect.value;
+                if (partId && partIndex.has(partId)) {{
+                    indexes = partIndex.get(partId);
+                }} else {{
+                    indexes = allData.features.map((_, idx) => idx);
+                }}
+            }} else if (mode === 'cafe') {{
+                const cafeId = cafeSelect.value;
+                if (cafeId && cafeIndex.has(cafeId)) {{
+                    cafeEntry = cafeIndex.get(cafeId);
+                    indexes = cafeEntry.featureIndexes;
+                }}
+            }} else if (mode === 'poi') {{
+                const cafeId = cafeSelect.value;
+                const poiId = poiSelect.value;
+                if (cafeId && cafeIndex.has(cafeId)) {{
+                    cafeEntry = cafeIndex.get(cafeId);
+                    if (poiId && cafeEntry.pois.has(poiId)) {{
+                        poiEntry = cafeEntry.pois.get(poiId);
+                        indexes = poiEntry.featureIndexes;
+                    }} else {{
+                        indexes = cafeEntry.featureIndexes;
+                    }}
+                }}
+            }}
+
+            const filtered = {{
+                type: 'FeatureCollection',
+                features: indexes.map(i => allData.features[i])
+            }};
+            if (layer) {{
+                map.removeLayer(layer);
+            }}
+            layer = L.geoJSON(filtered, {{
+                style: {{ color: '#1b6ef3', weight: 2, opacity: 0.65 }}
+            }}).addTo(map);
+
+            if (filtered.features.length > 0) {{
+                map.fitBounds(layer.getBounds(), {{ padding: [24, 24] }});
+            }} else if (bounds) {{
+                map.fitBounds(bounds);
+            }}
+            markerLayer.clearLayers();
+            if (mode !== 'all' && cafeEntry && Number.isFinite(cafeEntry.lat) && Number.isFinite(cafeEntry.lon)) {{
+                L.marker([cafeEntry.lat, cafeEntry.lon])
+                    .bindPopup(cafeEntry.label)
+                    .addTo(markerLayer);
+            }}
+            if (mode === 'cafe' && cafeEntry) {{
+                cafeEntry.pois.forEach(poi => {{
+                    if (Number.isFinite(poi.lat) && Number.isFinite(poi.lon)) {{
+                        L.circleMarker([poi.lat, poi.lon], {{
+                            radius: 4,
+                            color: '#d24b4b',
+                            fillColor: '#d24b4b',
+                            fillOpacity: 0.85,
+                            weight: 1
+                        }})
+                            .bindPopup(poi.label)
+                            .addTo(markerLayer);
+                    }}
+                }});
+            }}
+            if (mode === 'poi' && poiEntry && Number.isFinite(poiEntry.lat) && Number.isFinite(poiEntry.lon)) {{
+                L.circleMarker([poiEntry.lat, poiEntry.lon], {{
+                    radius: 6,
+                    color: '#d24b4b',
+                    fillColor: '#d24b4b',
+                    fillOpacity: 0.9,
+                    weight: 2
+                }})
+                    .bindPopup(poiEntry.label)
+                    .addTo(markerLayer);
+            }}
+            statusEl.textContent = `Showing ${{filtered.features.length}} paths`;
+        }}
+
+        function updateModeUI() {{
+            const mode = modeSelect.value;
+            const cafeEnabled = mode !== 'all';
+            cafeSelect.disabled = !cafeEnabled;
+            poiSelect.disabled = mode !== 'poi';
+            allPartSelect.disabled = mode !== 'all';
+            if (mode === 'all') {{
+                cafeSelect.value = '';
+                poiSelect.value = '';
+            }} else if (mode === 'cafe') {{
+                poiSelect.value = '';
+                updatePoiOptions();
+            }} else if (mode === 'poi') {{
+                updatePoiOptions();
+            }}
+            applyFilters();
+        }}
+
+        modeSelect.addEventListener('change', updateModeUI);
+        allPartSelect.addEventListener('change', applyFilters);
+        cafeSelect.addEventListener('change', () => {{
+            updatePoiOptions();
+            applyFilters();
+        }});
+        poiSelect.addEventListener('change', applyFilters);
+
         fetch('{geojson_name}')
             .then(r => r.json())
             .then(data => {{
-                const layer = L.geoJSON(data, {{
-                    style: {{ color: '#1b6ef3', weight: 2, opacity: 0.6 }}
-                }}).addTo(map);
-                if (!bounds) {{
-                    map.fitBounds(layer.getBounds());
-                }}
-                document.getElementById('status').textContent = `Loaded ${{data.features.length}} paths`;
+                allData = data;
+                buildIndex(data.features || []);
+                const cafes = Array.from(cafeIndex.values()).sort((a, b) => {{
+                    const diff = (b.featureIndexes.length || 0) - (a.featureIndexes.length || 0);
+                    if (diff !== 0) {{
+                        return diff;
+                    }}
+                    return a.label.localeCompare(b.label);
+                }});
+                setSelectOptions(cafeSelect, cafes, 'Select a cafe');
+                updateAllPartOptions();
+                updatePoiOptions();
+                updateModeUI();
             }})
             .catch(err => {{
-                document.getElementById('status').textContent = 'Failed to load GeoJSON. Serve this folder with a local web server.';
+                statusEl.textContent = 'Failed to load GeoJSON. Serve this folder with a local web server.';
                 console.error(err);
             }});
     </script>

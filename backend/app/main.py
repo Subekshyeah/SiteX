@@ -6,6 +6,7 @@ from app.api.endpoints import analysis
 from app.api.endpoints import explain
 from app.api.endpoints import pois
 from app.api.endpoints import predict
+from app.api.endpoints import road_types
 
 app = FastAPI(
     title="Cafe Location Intelligence API",
@@ -32,6 +33,7 @@ app.add_middleware(
 app.include_router(cafe_processing.router, prefix="/api/v1", tags=["Cafe Processing"])
 app.include_router(predict.router, prefix="/api/v1", tags=["Prediction"])
 app.include_router(pois.router, prefix="/api/v1", tags=["POIS"])
+app.include_router(road_types.router, prefix="/api/v1", tags=["Road Types"])
 app.include_router(explain.router, prefix="/api/v1", tags=["Explanation"])
 app.include_router(analysis.router, prefix="/api/v1", tags=["Analysis"])
 # app.include_router(pois.router, prefix="/api/v1", tags=["POIS"])
