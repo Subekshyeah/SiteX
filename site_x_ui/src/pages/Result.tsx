@@ -76,13 +76,25 @@ type PredictionResponse = { predictions?: Array<{ lat: number; lon: number; scor
 
 type PoisByCategory = Record<string, Poi[]>;
 
-const TOLET_IMAGE_BY_INDEX: Array<string[]> = [
-    ["1-nagadesh.jpg"],
-    ["2.jpg", "2-2.jpg"],
-    ["3.jpg"],
-    ["4.jpg", "4-2.jpg"],
-    ["5.jpg"],
-];
+const toLetSlug = (value: string) => {
+    return value
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+};
+
+const buildToLetImages = (idx: number, title: string) => {
+    const base = String(idx + 1);
+    const slug = toLetSlug(title || "");
+    const candidates = [
+        slug ? `${base}-${slug}.jpg` : "",
+        `${base}.jpg`,
+        `${base}-2.jpg`,
+        `${base}-3.jpg`,
+        `${base}-4.jpg`,
+    ].filter(Boolean);
+    return Array.from(new Set(candidates)).map((name) => `/data/to-let/${name}`);
+};
 
 function parseCsvLine(line: string) {
     const out: string[] = [];
@@ -320,8 +332,7 @@ export default function ResultPage() {
                 const parsed = parseToLetCsv(txt);
                 const entries: ToLetEntry[] = parsed.map((row, idx) => {
                     const key = `${row.lat.toFixed(6)},${row.lng.toFixed(6)}`;
-                    const imageNames = TOLET_IMAGE_BY_INDEX[idx] || [];
-                    const images = imageNames.map((img) => `/data/to-let/${img}`);
+                    const images = buildToLetImages(idx, row.title);
                     return {
                         key,
                         lat: row.lat,
@@ -356,6 +367,17 @@ export default function ResultPage() {
     }, [points, rentIndexes, toLetEntries, name]);
 
     const selectedPointMeta = pointMeta[selectedPointIdx] || null;
+
+    const handleToLetImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+        const el = e.currentTarget;
+        const list = (el.dataset.images || "").split("|").filter(Boolean);
+        const idx = Number(el.dataset.imageIdx || "0");
+        const nextIdx = idx + 1;
+        if (nextIdx < list.length) {
+            el.dataset.imageIdx = String(nextIdx);
+            el.src = list[nextIdx];
+        }
+    };
 
     useEffect(() => {
         if (points.length < 2) {
@@ -1228,6 +1250,9 @@ export default function ResultPage() {
                                                 src={selectedPointMeta.image}
                                                 alt={selectedPointMeta.label}
                                                 style={{ width: 72, height: 72, borderRadius: 10, objectFit: 'cover' }}
+                                                data-images={(selectedPointMeta.entry?.images || [selectedPointMeta.image]).join("|")}
+                                                data-image-idx="0"
+                                                onError={handleToLetImageError}
                                             />
                                         )}
                                         <div>
@@ -1281,6 +1306,9 @@ export default function ResultPage() {
                                                         src={meta.image}
                                                         alt={meta.label}
                                                         style={{ width: 64, height: 64, borderRadius: 10, objectFit: 'cover' }}
+                                                        data-images={(meta.entry?.images || [meta.image]).join("|")}
+                                                        data-image-idx="0"
+                                                        onError={handleToLetImageError}
                                                     />
                                                 )}
                                                 <div style={{ flex: 1 }}>

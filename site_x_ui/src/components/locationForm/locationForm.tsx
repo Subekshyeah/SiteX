@@ -86,13 +86,25 @@ type ToLetEntry = {
   images: string[];
 };
 
-const TOLET_IMAGE_BY_INDEX: Array<string[]> = [
-  ["1-nagadesh.jpg"],
-  ["2.jpg", "2-2.jpg"],
-  ["3.jpg"],
-  ["4.jpg", "4-2.jpg"],
-  ["5.jpg"],
-];
+const toLetSlug = (value: string) => {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+};
+
+const buildToLetImages = (idx: number, title: string) => {
+  const base = String(idx + 1);
+  const slug = toLetSlug(title || "");
+  const candidates = [
+    slug ? `${base}-${slug}.jpg` : "",
+    `${base}.jpg`,
+    `${base}-2.jpg`,
+    `${base}-3.jpg`,
+    `${base}-4.jpg`,
+  ].filter(Boolean);
+  return Array.from(new Set(candidates)).map((name) => `/data/to-let/${name}`);
+};
 
 const MAP_BOUNDS_SW = L.latLng(27.6164, 85.3459);
 const MAP_BOUNDS_NE = L.latLng(27.7536, 85.4841);
@@ -148,16 +160,20 @@ const pointPickIcon = L.divIcon({
 
 const toLetPickIcon = L.divIcon({
   className: "tolet-pick-marker",
-  html: `<div style="width:18px;height:18px;border-radius:9999px;background:#16a34a;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.2)"></div>`,
-  iconSize: [18, 18],
-  iconAnchor: [9, 9],
+  html: `
+    <div style="width:26px;height:26px;border-radius:9999px;background:#16a34a;border:2px solid white;box-shadow:0 6px 12px rgba(22,163,74,0.35);display:flex;align-items:center;justify-content:center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+  `,
+  iconSize: [26, 26],
+  iconAnchor: [13, 13],
 });
 
 const toLetHoverIcon = L.divIcon({
   className: "tolet-hover-marker",
-  html: `<div style="width:18px;height:18px;border-radius:9999px;background:rgba(22,163,74,0.5);border:2px dashed #16a34a;box-shadow:0 2px 6px rgba(0,0,0,0.15)"></div>`,
-  iconSize: [18, 18],
-  iconAnchor: [9, 9],
+  html: `<div style="width:26px;height:26px;border-radius:9999px;background:rgba(22,163,74,0.2);border:2px dashed #16a34a;box-shadow:0 6px 12px rgba(22,163,74,0.2)"></div>`,
+  iconSize: [26, 26],
+  iconAnchor: [13, 13],
 });
 
 // We'll replace MapFeatures with a version that accepts a datasetId and uses per-dataset icons.
@@ -930,8 +946,7 @@ export default function LocationForm() {
         if (!parsed.length) return;
         const entries: ToLetEntry[] = parsed.map((row, idx) => {
           const key = `${row.lat.toFixed(6)},${row.lng.toFixed(6)}`;
-          const imageNames = TOLET_IMAGE_BY_INDEX[idx] || [];
-          const images = imageNames.map((name) => `/data/to-let/${name}`);
+          const images = buildToLetImages(idx, row.title);
           return {
             key,
             lat: row.lat,
@@ -1038,6 +1053,16 @@ export default function LocationForm() {
   }, [showPlaces]);
 
   const renderToLetList = () => {
+    const handleToLetImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+      const el = e.currentTarget;
+      const list = (el.dataset.images || "").split("|").filter(Boolean);
+      const idx = Number(el.dataset.imageIdx || "0");
+      const nextIdx = idx + 1;
+      if (nextIdx < list.length) {
+        el.dataset.imageIdx = String(nextIdx);
+        el.src = list[nextIdx];
+      }
+    };
     const entries = toLetEntries.length
       ? toLetEntries
       : toLetList.map((p, idx) => ({
@@ -1050,7 +1075,7 @@ export default function LocationForm() {
       }));
 
     return (
-      <div className="max-h-[78vh] overflow-auto text-sm">
+      <div className="max-h-[360px] overflow-auto text-sm">
         {entries.length === 0 ? (
           <div className="text-muted-foreground text-xs">No to-let locations added.</div>
         ) : (
@@ -1062,7 +1087,7 @@ export default function LocationForm() {
               return (
                 <li
                   key={`tolet-${idx}`}
-                  className="rounded-lg overflow-hidden border border-slate-100"
+                  className={`rounded-xl overflow-hidden border transition ${isSelected ? "border-emerald-400 shadow-md" : "border-slate-100"}`}
                   onMouseEnter={() => {
                     setLat(entry.lat);
                     setLng(entry.lng);
@@ -1073,47 +1098,55 @@ export default function LocationForm() {
                     mapRef.current?.flyTo([lat, lng], 16);
                     if (!isSelected) setHoverToLet(null);
                   }}
+                  onClick={() => setToLetSelected((prev) => ({ ...prev, [key]: !prev[key] }))}
                 >
-                  <label className="flex items-start gap-2 p-2">
-                    <input
-                      type="checkbox"
-                      checked={isSelected}
-                      onChange={(e) => setToLetSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
-                      className="mt-1"
-                    />
-                    <div className="flex-1">
-                      <div className="w-full aspect-[4/3] bg-slate-100">
-                        {hasImages ? (
-                          <img
-                            src={entry.images[0]}
-                            alt={entry.title}
-                            className="w-full h-full object-cover"
-                            loading="lazy"
-                          />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center text-[11px] text-slate-400">
-                            No image
-                          </div>
-                        )}
+                  <div className="flex items-stretch bg-white">
+                    <div className="relative w-32 aspect-square bg-slate-100">
+                      {hasImages ? (
+                        <img
+                          src={entry.images[0]}
+                          alt={entry.title}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                          data-images={entry.images.join("|")}
+                          data-image-idx="0"
+                          onError={handleToLetImageError}
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-[11px] text-slate-400">
+                          No image
+                        </div>
+                      )}
+                      {isSelected && (
+                        <div className="absolute top-2 left-2 bg-emerald-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">
+                          Selected
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex-1 p-3">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="font-semibold text-sm leading-snug">{entry.title}</div>
+                        <div className="text-[10px] text-slate-400">To-let</div>
                       </div>
-                      <div className="flex items-center justify-between gap-2 mt-2">
-                        <div className="font-semibold text-sm truncate">{entry.title}</div>
+                      {entry.ratePerMonth != null && (
+                        <div className="mt-2 text-sm font-semibold text-emerald-600">Rs {entry.ratePerMonth.toLocaleString()} / month</div>
+                      )}
+                      <div className="mt-2 flex items-center justify-between">
+                        <div className="text-[11px] text-slate-500">Tap to select</div>
                         {entry.url && (
                           <a
                             href={entry.url}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-xs text-slate-600 hover:underline whitespace-nowrap"
+                            className="text-[11px] text-slate-700 hover:underline"
+                            onClick={(e) => e.stopPropagation()}
                           >
-                            View
+                            View details
                           </a>
                         )}
                       </div>
-                      {entry.ratePerMonth != null && (
-                        <div className="mt-1 text-xs text-slate-600">Rs {entry.ratePerMonth.toLocaleString()} / month</div>
-                      )}
                     </div>
-                  </label>
+                  </div>
                 </li>
               );
             })}
@@ -1287,7 +1320,7 @@ export default function LocationForm() {
               </div>
             </form>
           </CardContent>
-          <ChartRadarLinesOnly data={radarCounts} />
+          {analysisMode !== "tolet" && <ChartRadarLinesOnly data={radarCounts} />}
         </Card>
       </div>
 
