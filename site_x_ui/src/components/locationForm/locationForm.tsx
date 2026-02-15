@@ -76,6 +76,16 @@ const DEFAULT_TOLET_POINTS: Array<{ lat: number; lng: number }> = [
   { lat: 27.671860, lng: 85.425960 },
 ];
 
+const MAP_BOUNDS_SW = L.latLng(27.6164, 85.3459);
+const MAP_BOUNDS_NE = L.latLng(27.7536, 85.4841);
+const MAP_BOUNDS = L.latLngBounds(MAP_BOUNDS_SW, MAP_BOUNDS_NE);
+
+function clampToBounds(lat: number, lng: number) {
+  const clampedLat = Math.min(MAP_BOUNDS_NE.lat, Math.max(MAP_BOUNDS_SW.lat, lat));
+  const clampedLng = Math.min(MAP_BOUNDS_NE.lng, Math.max(MAP_BOUNDS_SW.lng, lng));
+  return { lat: clampedLat, lng: clampedLng };
+}
+
 // Fix Leaflet default icons
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -97,7 +107,8 @@ function MapPicker({
   function MapEvents() {
     useMapEvents({
       click(e) {
-        onPick(Number(e.latlng.lat.toFixed(6)), Number(e.latlng.lng.toFixed(6)));
+        const clamped = clampToBounds(e.latlng.lat, e.latlng.lng);
+        onPick(Number(clamped.lat.toFixed(6)), Number(clamped.lng.toFixed(6)));
       },
     });
     return null;
@@ -1420,7 +1431,15 @@ export default function LocationForm() {
 
       {/* ---------- RIGHT SIDE – FULL-SCREEN MAP ---------- */}
       <div className="flex-1 relative min-h-[480px] bg-transparent z-100 group">
-        <MapContainer center={[lat, lng]} zoom={23} className="h-full w-full bg-transparent" scrollWheelZoom>
+        <MapContainer
+          center={[lat, lng]}
+          zoom={23}
+          className="h-full w-full bg-transparent"
+          scrollWheelZoom
+          minZoom={15}
+          maxBounds={MAP_BOUNDS}
+          maxBoundsViscosity={1.0}
+        >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
