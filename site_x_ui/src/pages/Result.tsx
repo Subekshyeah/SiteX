@@ -46,6 +46,22 @@ type PoiApiItem = {
     [key: string]: unknown;
 };
 type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: PoiApiItem };
+type CommonPoi = {
+    key: string;
+    name: string;
+    lat: number;
+    lng: number;
+    weightA: number;
+    weightB: number;
+    distanceA: number;
+    distanceB: number;
+    decayedA: number;
+    decayedB: number;
+    rawA?: PoiApiItem;
+    rawB?: PoiApiItem;
+    subcategory?: string;
+    cat: string;
+};
 type AccessibilityResponse = { score?: number };
 type PredictionResponse = { predictions?: Array<{ lat: number; lon: number; score: number; risk_level?: string }> };
 
@@ -313,12 +329,39 @@ export default function ResultPage() {
     const mapRef = useRef<L.Map | null>(null);
     const [hoverPos, setHoverPos] = useState<{ lat: number; lng: number } | null>(null);
     const [hoverPath, setHoverPath] = useState<Array<[number, number]> | null>(null);
+    const [hoverPathA, setHoverPathA] = useState<Array<[number, number]> | null>(null);
+    const [hoverPathB, setHoverPathB] = useState<Array<[number, number]> | null>(null);
     const [pathDashOffset, setPathDashOffset] = useState<number>(0);
     const [pathOpacity, setPathOpacity] = useState<number>(0);
     const [searchQuery, setSearchQuery] = useState("");
 
+    const compareMarkerA = useMemo(() => L.divIcon({
+        className: "",
+        html: '<div style="width:18px;height:18px;border-radius:50%;background:#3b82f6;border:2px solid #1e40af;box-shadow:0 0 0 2px rgba(59,130,246,0.2);"></div>',
+        iconSize: [18, 18],
+        iconAnchor: [9, 9]
+    }), []);
+
+    const compareMarkerB = useMemo(() => L.divIcon({
+        className: "",
+        html: '<div style="width:18px;height:18px;border-radius:50%;background:#f97316;border:2px solid #c2410c;box-shadow:0 0 0 2px rgba(249,115,22,0.2);"></div>',
+        iconSize: [18, 18],
+        iconAnchor: [9, 9]
+    }), []);
+
+    const getPathCoords = (raw?: PoiApiItem | null) => {
+        if (!raw || !Array.isArray(raw.path)) return null;
+        const coords: Array<[number, number]> = raw.path
+            .map((pt) => [Number(pt.lat), Number(pt.lon ?? pt.lng)] as [number, number])
+            .filter(([a, b]: [number, number]) => Number.isFinite(a) && Number.isFinite(b));
+        return coords.length ? coords : null;
+    };
+
     useEffect(() => {
-        if (!hoverPath || hoverPath.length === 0) return;
+        const hasPath = (hoverPath && hoverPath.length > 0)
+            || (hoverPathA && hoverPathA.length > 0)
+            || (hoverPathB && hoverPathB.length > 0);
+        if (!hasPath) return;
         let raf = 0;
         let offset = 0;
         setPathOpacity(0);
@@ -330,7 +373,7 @@ export default function ResultPage() {
         };
         raf = requestAnimationFrame(tick);
         return () => cancelAnimationFrame(raf);
-    }, [hoverPath]);
+    }, [hoverPath, hoverPathA, hoverPathB]);
 
     useEffect(() => {
         let mounted = true;
@@ -504,6 +547,20 @@ export default function ResultPage() {
         return Math.round(Math.min(1, wEff / total) * 100);
     };
 
+    const getCommonSharePct = (poi: CommonPoi) => {
+        const total = commonAllTotalDecayed;
+        const wEff = poi.decayedA + poi.decayedB;
+        if (total <= 0) return 0;
+        return Math.round(Math.min(1, wEff / total) * 100);
+    };
+
+    const getCommonCategorySharePct = (poi: CommonPoi, cat: string) => {
+        const total = commonCategoryTotals[cat] || 0;
+        const wEff = poi.decayedA + poi.decayedB;
+        if (total <= 0) return 0;
+        return Math.round(Math.min(1, wEff / total) * 100);
+    };
+
     const chartColors = useMemo(() => ({
         Cafes: "#22c55e",
         Bank: "#0ea5e9",
@@ -526,6 +583,7 @@ export default function ResultPage() {
             .map(([cat, avg]) => ({ name: cat, value: Number(avg) || 0 }))
             .sort((a, b) => b.value - a.value);
     }, [categoryDecayedAverages]);
+
 
     const selectedTargets = useMemo(() => {
         const mkKey = (p: Point) => `${Number(p.lat).toFixed(6)},${Number(p.lng).toFixed(6)}`;
@@ -577,6 +635,149 @@ export default function ResultPage() {
         accessibilityScores,
         predictionScores
     ]);
+
+    const compareCategoryStats = useMemo(() => {
+        if (viewMode !== "compare" || selectedTargets.length < 2) return null;
+        const [a, b] = selectedTargets;
+        const poisA = loadedPoisByPointKey[a.key] || {};
+        const poisB = loadedPoisByPointKey[b.key] || {};
+        const categories = Array.from(new Set([...Object.keys(poisA), ...Object.keys(poisB)])).sort();
+        const countData = categories.map((cat) => {
+            const listA = (poisA[cat] || [])
+                .map((p) => ({ ...p, distance_km: Number(haversineKm(a.point.lat, a.point.lng, p.lat, p.lng).toFixed(3)) }))
+                .filter((p) => p.distance_km <= MAX_RADIUS_KM)
+                .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            const listB = (poisB[cat] || [])
+                .map((p) => ({ ...p, distance_km: Number(haversineKm(b.point.lat, b.point.lng, p.lat, p.lng).toFixed(3)) }))
+                .filter((p) => p.distance_km <= MAX_RADIUS_KM)
+                .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            return { name: cat, A: listA.length, B: listB.length, delta: listA.length - listB.length };
+        });
+        const avgData = categories.map((cat) => {
+            const listA = (poisA[cat] || [])
+                .map((p) => ({ ...p, distance_km: Number(haversineKm(a.point.lat, a.point.lng, p.lat, p.lng).toFixed(3)) }))
+                .filter((p) => p.distance_km <= MAX_RADIUS_KM)
+                .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            const listB = (poisB[cat] || [])
+                .map((p) => ({ ...p, distance_km: Number(haversineKm(b.point.lat, b.point.lng, p.lat, p.lng).toFixed(3)) }))
+                .filter((p) => p.distance_km <= MAX_RADIUS_KM)
+                .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            const sumA = listA.reduce((acc, p) => acc + getDecayedWeight(p), 0);
+            const sumB = listB.reduce((acc, p) => acc + getDecayedWeight(p), 0);
+            const avgA = listA.length ? sumA / listA.length : 0;
+            const avgB = listB.length ? sumB / listB.length : 0;
+            return { name: cat, A: Number(avgA) || 0, B: Number(avgB) || 0, delta: avgA - avgB };
+        });
+        return { countData, avgData };
+    }, [viewMode, selectedTargets, loadedPoisByPointKey, MAX_RADIUS_KM, searchQuery]);
+
+    const compareCommonByCategory = useMemo(() => {
+        if (viewMode !== "compare" || selectedTargets.length < 2) return null;
+        const [a, b] = selectedTargets;
+        const poisA = loadedPoisByPointKey[a.key] || {};
+        const poisB = loadedPoisByPointKey[b.key] || {};
+        const keyFor = (poi: Poi) => `${(poi.name || "").toLowerCase()}|${poi.lat.toFixed(6)}|${poi.lng.toFixed(6)}`;
+        const result: Record<string, CommonPoi[]> = {};
+
+        Object.entries(poisA).forEach(([cat, listA]) => {
+            const listB = poisB[cat] || [];
+            const mapB = new Map<string, Poi>();
+            listB.forEach((p) => {
+                const distB = haversineKm(b.point.lat, b.point.lng, p.lat, p.lng);
+                if (distB <= MAX_RADIUS_KM) {
+                    mapB.set(keyFor(p), { ...p, distance_km: Number(distB.toFixed(3)) });
+                }
+            });
+
+            listA.forEach((pA) => {
+                const distA = haversineKm(a.point.lat, a.point.lng, pA.lat, pA.lng);
+                if (distA > MAX_RADIUS_KM) return;
+                const key = keyFor(pA);
+                const matchB = mapB.get(key);
+                if (!matchB) return;
+                const weightA = Number(pA.weight) || 0;
+                const weightB = Number(matchB.weight) || 0;
+                const distanceA = Number(distA.toFixed(3));
+                const distanceB = Number((matchB.distance_km ?? distA).toFixed(3));
+                const decayedA = weightA * Math.exp(-distanceA / DECAY_SCALE_KM);
+                const decayedB = weightB * Math.exp(-distanceB / DECAY_SCALE_KM);
+                const common: CommonPoi = {
+                    key,
+                    name: pA.name || matchB.name || "",
+                    lat: pA.lat,
+                    lng: pA.lng,
+                    weightA,
+                    weightB,
+                    distanceA,
+                    distanceB,
+                    decayedA,
+                    decayedB,
+                    rawA: pA.raw,
+                    rawB: matchB.raw,
+                    subcategory: pA.subcategory || matchB.subcategory,
+                    cat
+                };
+                result[cat] = (result[cat] || []).concat(common);
+            });
+        });
+
+        return result;
+    }, [viewMode, selectedTargets, loadedPoisByPointKey, MAX_RADIUS_KM, DECAY_SCALE_KM]);
+
+    const commonCategoryCounts = useMemo(() => {
+        if (!compareCommonByCategory) return {} as Record<string, number>;
+        const counts: Record<string, number> = {};
+        let total = 0;
+        Object.entries(compareCommonByCategory).forEach(([cat, list]) => {
+            const filteredList = list.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            counts[cat] = filteredList.length;
+            total += filteredList.length;
+        });
+        counts["All"] = total;
+        return counts;
+    }, [compareCommonByCategory, searchQuery]);
+
+    const commonCategoryTotals = useMemo(() => {
+        if (!compareCommonByCategory) return {} as Record<string, number>;
+        const totals: Record<string, number> = {};
+        Object.entries(compareCommonByCategory).forEach(([cat, list]) => {
+            const filteredList = list.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            totals[cat] = filteredList.reduce((acc, poi) => acc + (poi.decayedA + poi.decayedB), 0);
+        });
+        return totals;
+    }, [compareCommonByCategory, searchQuery]);
+
+    const commonCategoryAverages = useMemo(() => {
+        if (!compareCommonByCategory) return {} as Record<string, number>;
+        const averages: Record<string, number> = {};
+        let totalCount = 0;
+        let totalSum = 0;
+        Object.entries(compareCommonByCategory).forEach(([cat, list]) => {
+            const filteredList = list.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+            if (filteredList.length === 0) {
+                averages[cat] = 0;
+                return;
+            }
+            const sum = filteredList.reduce((acc, p) => acc + (p.decayedA + p.decayedB), 0);
+            averages[cat] = sum / (filteredList.length * 2);
+            totalCount += filteredList.length;
+            totalSum += sum;
+        });
+        averages["All"] = totalCount > 0 ? totalSum / (totalCount * 2) : 0;
+        return averages;
+    }, [compareCommonByCategory, searchQuery]);
+
+    const commonAllTotalDecayed = useMemo(() => {
+        if (!compareCommonByCategory) return 0;
+        return Object.values(commonCategoryTotals).reduce((acc, v) => acc + v, 0);
+    }, [compareCommonByCategory, commonCategoryTotals]);
+
+    const displayCategoryCounts = viewMode === "compare" && compareCommonByCategory
+        ? commonCategoryCounts
+        : categoryCounts;
+    const displayCategoryAverages = viewMode === "compare" && compareCommonByCategory
+        ? commonCategoryAverages
+        : categoryDecayedAverages;
 
     const pointSummaries = useMemo(() => {
         if (points.length === 0) {
@@ -999,54 +1200,102 @@ export default function ResultPage() {
                 <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
                     <h3 style={{ marginTop: 0 }}>Insights</h3>
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14 }}>
-                        <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                            <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Category Share</div>
-                            {categoryPieData.length === 0 ? (
-                                <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
-                            ) : (
-                                <div style={{ width: "100%", height: 220 }}>
-                                    <ResponsiveContainer>
-                                        <PieChart>
-                                            <Pie
-                                                data={categoryPieData}
-                                                dataKey="value"
-                                                nameKey="name"
-                                                innerRadius={50}
-                                                outerRadius={85}
-                                                paddingAngle={4}
-                                                isAnimationActive
-                                                animationDuration={900}
-                                            >
-                                                {categoryPieData.map((entry) => (
-                                                    <Cell key={entry.name} fill={chartColors[entry.name as keyof typeof chartColors] || "#94a3b8"} />
-                                                ))}
-                                            </Pie>
-                                            <Tooltip />
-                                            <Legend />
-                                        </PieChart>
-                                    </ResponsiveContainer>
+                        {viewMode === "compare" && compareCategoryStats ? (
+                            <>
+                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Counts (A vs B)</div>
+                                    {compareCategoryStats.countData.length === 0 ? (
+                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                    ) : (
+                                        <div style={{ width: "100%", height: 220 }}>
+                                            <ResponsiveContainer>
+                                                <BarChart data={compareCategoryStats.countData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                                    <CartesianGrid strokeDasharray="3 3" />
+                                                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                                    <YAxis tick={{ fontSize: 11 }} />
+                                                    <Tooltip />
+                                                    <Legend />
+                                                    <Bar dataKey="A" fill="#3b82f6" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                    <Bar dataKey="B" fill="#f97316" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                </BarChart>
+                                            </ResponsiveContainer>
+                                        </div>
+                                    )}
                                 </div>
-                            )}
-                        </div>
 
-                        <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                            <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight by Category</div>
-                            {categoryAvgData.length === 0 ? (
-                                <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
-                            ) : (
-                                <div style={{ width: "100%", height: 220 }}>
-                                    <ResponsiveContainer>
-                                        <BarChart data={categoryAvgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
-                                            <CartesianGrid strokeDasharray="3 3" />
-                                            <XAxis dataKey="name" tick={{ fontSize: 11 }} />
-                                            <YAxis tick={{ fontSize: 11 }} />
-                                            <Tooltip />
-                                            <Bar dataKey="value" fill="#6366f1" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
-                                        </BarChart>
-                                    </ResponsiveContainer>
+                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight (A vs B)</div>
+                                    {compareCategoryStats.avgData.length === 0 ? (
+                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                    ) : (
+                                        <div style={{ width: "100%", height: 220 }}>
+                                            <ResponsiveContainer>
+                                                <BarChart data={compareCategoryStats.avgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                                    <CartesianGrid strokeDasharray="3 3" />
+                                                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                                    <YAxis tick={{ fontSize: 11 }} />
+                                                    <Tooltip />
+                                                    <Legend />
+                                                    <Bar dataKey="A" fill="#3b82f6" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                    <Bar dataKey="B" fill="#f97316" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                </BarChart>
+                                            </ResponsiveContainer>
+                                        </div>
+                                    )}
                                 </div>
-                            )}
-                        </div>
+                            </>
+                        ) : (
+                            <>
+                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Category Share</div>
+                                    {categoryPieData.length === 0 ? (
+                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                    ) : (
+                                        <div style={{ width: "100%", height: 220 }}>
+                                            <ResponsiveContainer>
+                                                <PieChart>
+                                                    <Pie
+                                                        data={categoryPieData}
+                                                        dataKey="value"
+                                                        nameKey="name"
+                                                        innerRadius={50}
+                                                        outerRadius={85}
+                                                        paddingAngle={4}
+                                                        isAnimationActive
+                                                        animationDuration={900}
+                                                    >
+                                                        {categoryPieData.map((entry) => (
+                                                            <Cell key={entry.name} fill={chartColors[entry.name as keyof typeof chartColors] || "#94a3b8"} />
+                                                        ))}
+                                                    </Pie>
+                                                    <Tooltip />
+                                                    <Legend />
+                                                </PieChart>
+                                            </ResponsiveContainer>
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight by Category</div>
+                                    {categoryAvgData.length === 0 ? (
+                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                    ) : (
+                                        <div style={{ width: "100%", height: 220 }}>
+                                            <ResponsiveContainer>
+                                                <BarChart data={categoryAvgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                                    <CartesianGrid strokeDasharray="3 3" />
+                                                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                                    <YAxis tick={{ fontSize: 11 }} />
+                                                    <Tooltip />
+                                                    <Bar dataKey="value" fill="#6366f1" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                </BarChart>
+                                            </ResponsiveContainer>
+                                        </div>
+                                    )}
+                                </div>
+                            </>
+                        )}
                     </div>
                 </div>
 
@@ -1064,13 +1313,26 @@ export default function ResultPage() {
                                     >
                                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                                         {/* selected points */}
-                                        {points.map((p, idx) => (
-                                            <Marker key={`point-${idx}`} position={[p.lat, p.lng]} />
-                                        ))}
+                                        {viewMode === "compare" && selectedTargets.length >= 2 ? (
+                                            <>
+                                                <Marker
+                                                    key={`point-a-${selectedTargets[0].idx}`}
+                                                    position={[selectedTargets[0].point.lat, selectedTargets[0].point.lng]}
+                                                    icon={compareMarkerA}
+                                                />
+                                                <Marker
+                                                    key={`point-b-${selectedTargets[1].idx}`}
+                                                    position={[selectedTargets[1].point.lat, selectedTargets[1].point.lng]}
+                                                    icon={compareMarkerB}
+                                                />
+                                            </>
+                                        ) : (
+                                            <Marker key={`point-selected-${selectedPointKey}`} position={[selectedPoint.lat, selectedPoint.lng]} />
+                                        )}
                                         {/* hover marker */}
                                         {hoverPos && <Marker position={[hoverPos.lat, hoverPos.lng]} />}
                                         {/* hover path (rendered inside MapContainer so Leaflet context is available) */}
-                                        {hoverPath && hoverPath.length > 0 && (
+                                        {viewMode !== "compare" && hoverPath && hoverPath.length > 0 && (
                                             <Polyline
                                                 positions={hoverPath.map(([la, lo]) => [la, lo])}
                                                 pathOptions={{
@@ -1078,6 +1340,30 @@ export default function ResultPage() {
                                                     weight: 5,
                                                     dashArray: '10 8',
                                                     dashOffset: `${pathDashOffset}`,
+                                                    opacity: pathOpacity
+                                                }}
+                                            />
+                                        )}
+                                        {viewMode === "compare" && hoverPathA && hoverPathA.length > 0 && (
+                                            <Polyline
+                                                positions={hoverPathA.map(([la, lo]) => [la, lo])}
+                                                pathOptions={{
+                                                    color: '#3b82f6',
+                                                    weight: 5,
+                                                    dashArray: '10 8',
+                                                    dashOffset: `${-pathDashOffset}`,
+                                                    opacity: pathOpacity
+                                                }}
+                                            />
+                                        )}
+                                        {viewMode === "compare" && hoverPathB && hoverPathB.length > 0 && (
+                                            <Polyline
+                                                positions={hoverPathB.map(([la, lo]) => [la, lo])}
+                                                pathOptions={{
+                                                    color: '#f97316',
+                                                    weight: 5,
+                                                    dashArray: '10 8',
+                                                    dashOffset: `${-pathDashOffset}`,
                                                     opacity: pathOpacity
                                                 }}
                                             />
@@ -1119,19 +1405,138 @@ export default function ResultPage() {
                                             >
                                                 {cat}
                                                 <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
-                                                    {categoryCounts[cat] || 0}
+                                                    {displayCategoryCounts[cat] || 0}
                                                 </span>
                                                 <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
-                                                    avg: {(categoryDecayedAverages[cat] || 0).toFixed(3)}
+                                                    avg: {(displayCategoryAverages[cat] || 0).toFixed(3)}
                                                 </span>
                                             </button>
                                         ))}
                                     </div>
                                 </div>
 
-                                {!filteredPois && <div>Loading...</div>}
-                                {filteredPois && Object.keys(filteredPois).length === 0 && <div>No POIs found within radius.</div>}
-                                {filteredPois && selectedCategory === 'All' && (() => {
+                                {viewMode === "compare" && !compareCommonByCategory && <div>Loading...</div>}
+                                {viewMode === "compare" && compareCommonByCategory && Object.keys(compareCommonByCategory).length === 0 && (
+                                    <div>No common POIs found within radius.</div>
+                                )}
+                                {viewMode === "compare" && compareCommonByCategory && selectedCategory === 'All' && (() => {
+                                    const mixed = Object.entries(compareCommonByCategory).flatMap(([cat, list]) => {
+                                        const filteredList = list
+                                            .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                            .map((p) => ({ poi: p, cat }));
+                                        return filteredList;
+                                    });
+                                    const sorted = mixed
+                                        .slice()
+                                        .sort((a, b) => (b.poi.decayedA + b.poi.decayedB) - (a.poi.decayedA + a.poi.decayedB));
+                                    if (sorted.length === 0) return null;
+                                    return (
+                                        <div key="All" style={{ marginBottom: 12 }}>
+                                            <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>All (Common)</div>
+                                            {sorted.map(({ poi: p, cat }, idx) => {
+                                                const pct = getCommonSharePct(p);
+                                                return (
+                                                    <div key={`${cat}-${p.name}-${idx}`}
+                                                        onMouseEnter={() => {
+                                                            setHoverPos({ lat: p.lat, lng: p.lng });
+                                                            setHoverPath(null);
+                                                            setHoverPathA(getPathCoords(p.rawA));
+                                                            setHoverPathB(getPathCoords(p.rawB));
+                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                        }}
+                                                        onMouseLeave={() => {
+                                                            setHoverPos(null);
+                                                            setHoverPath(null);
+                                                            setHoverPathA(null);
+                                                            setHoverPathB(null);
+                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                        }}
+                                                        style={{
+                                                            display: 'flex',
+                                                            gap: 8,
+                                                            padding: 8,
+                                                            borderRadius: 6,
+                                                            alignItems: 'center',
+                                                            cursor: 'pointer',
+                                                            border: '1px solid rgba(15,23,42,0.03)',
+                                                            marginBottom: 8,
+                                                            background: `linear-gradient(90deg, rgba(59,130,246,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`
+                                                        }}>
+                                                        <div style={{ flex: 1 }}>
+                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                            <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{cat}</div>
+                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#0ea5e9', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                        </div>
+                                                        <div style={{ textAlign: 'right' }}>
+                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#3b82f6' }}>{`A: ${p.distanceA.toFixed(3)} km`}</div>
+                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#f97316' }}>{`B: ${p.distanceB.toFixed(3)} km`}</div>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    );
+                                })()}
+                                {viewMode === "compare" && compareCommonByCategory && selectedCategory !== 'All' && Object.entries(compareCommonByCategory)
+                                    .filter(([cat]) => cat === selectedCategory)
+                                    .map(([cat, list]) => {
+                                        const filteredList = list
+                                            .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                            .slice()
+                                            .sort((a, b) => (b.decayedA + b.decayedB) - (a.decayedA + a.decayedB));
+                                        if (filteredList.length === 0) return null;
+                                        return (
+                                            <div key={cat} style={{ marginBottom: 12 }}>
+                                                <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>{cat} (Common)</div>
+                                                {filteredList.map((p, idx) => (
+                                                    <div key={`${p.name}-${idx}`}
+                                                        onMouseEnter={() => {
+                                                            setHoverPos({ lat: p.lat, lng: p.lng });
+                                                            setHoverPath(null);
+                                                            setHoverPathA(getPathCoords(p.rawA));
+                                                            setHoverPathB(getPathCoords(p.rawB));
+                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                        }}
+                                                        onMouseLeave={() => {
+                                                            setHoverPos(null);
+                                                            setHoverPath(null);
+                                                            setHoverPathA(null);
+                                                            setHoverPathB(null);
+                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                        }}
+                                                        style={{
+                                                            display: 'flex',
+                                                            gap: 8,
+                                                            padding: 8,
+                                                            borderRadius: 6,
+                                                            alignItems: 'center',
+                                                            cursor: 'pointer',
+                                                            border: '1px solid rgba(15,23,42,0.03)',
+                                                            marginBottom: 8,
+                                                            background: (() => {
+                                                                const pct = getCommonCategorySharePct(p, cat);
+                                                                return `linear-gradient(90deg, rgba(59,130,246,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`;
+                                                            })()
+                                                        }}>
+                                                        <div style={{ flex: 1 }}>
+                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#0ea5e9', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                        </div>
+                                                        <div style={{ textAlign: 'right' }}>
+                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#3b82f6' }}>{`A: ${p.distanceA.toFixed(3)} km`}</div>
+                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#f97316' }}>{`B: ${p.distanceB.toFixed(3)} km`}</div>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        );
+                                    })}
+
+                                {viewMode !== "compare" && !filteredPois && <div>Loading...</div>}
+                                {viewMode !== "compare" && filteredPois && Object.keys(filteredPois).length === 0 && <div>No POIs found within radius.</div>}
+                                {viewMode !== "compare" && filteredPois && selectedCategory === 'All' && (() => {
                                     const mixed = Object.entries(filteredPois).flatMap(([cat, list]) => {
                                         const filteredList = list
                                             .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -1152,20 +1557,18 @@ export default function ResultPage() {
                                                     <div key={`${cat}-${p.name}-${idx}`}
                                                         onMouseEnter={() => {
                                                             setHoverPos({ lat: p.lat, lng: p.lng });
+                                                            setHoverPathA(null);
+                                                            setHoverPathB(null);
                                                             try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
-                                                            try {
-                                                                const raw = p.raw as PoiApiItem | undefined;
-                                                                if (raw && Array.isArray(raw.path)) {
-                                                                    const coords: Array<[number, number]> = raw.path
-                                                                        .map((pt) => [Number(pt.lat), Number(pt.lon ?? pt.lng)] as [number, number])
-                                                                        .filter(([a, b]: [number, number]) => Number.isFinite(a) && Number.isFinite(b));
-                                                                    setHoverPath(coords.length ? coords : null);
-                                                                } else {
-                                                                    setHoverPath(null);
-                                                                }
-                                                            } catch { setHoverPath(null); }
+                                                            setHoverPath(getPathCoords(p.raw));
                                                         }}
-                                                        onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
+                                                        onMouseLeave={() => {
+                                                            setHoverPos(null);
+                                                            setHoverPath(null);
+                                                            setHoverPathA(null);
+                                                            setHoverPathB(null);
+                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                        }}
                                                         style={{
                                                             display: 'flex',
                                                             gap: 8,
@@ -1184,9 +1587,9 @@ export default function ResultPage() {
                                                             <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
                                                         </div>
                                                         <div style={{ textAlign: 'right' }}>
-                                                            <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div>
+                                                            {/* <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div> */}
                                                             <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
-                                                            <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
+                                                            {/* <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div> */}
                                                         </div>
                                                     </div>
                                                 );
@@ -1194,7 +1597,7 @@ export default function ResultPage() {
                                         </div>
                                     );
                                 })()}
-                                {filteredPois && selectedCategory !== 'All' && Object.entries(filteredPois)
+                                {viewMode !== "compare" && filteredPois && selectedCategory !== 'All' && Object.entries(filteredPois)
                                     .filter(([cat]) => cat === selectedCategory)
                                     .map(([cat, list]) => {
                                         const filteredList = list
@@ -1211,20 +1614,18 @@ export default function ResultPage() {
                                                     <div key={`${p.name}-${idx}`}
                                                         onMouseEnter={() => {
                                                             setHoverPos({ lat: p.lat, lng: p.lng });
+                                                            setHoverPathA(null);
+                                                            setHoverPathB(null);
                                                             try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
-                                                            try {
-                                                                const raw = p.raw as PoiApiItem | undefined;
-                                                                if (raw && Array.isArray(raw.path)) {
-                                                                    const coords: Array<[number, number]> = raw.path
-                                                                        .map((pt) => [Number(pt.lat), Number(pt.lon ?? pt.lng)] as [number, number])
-                                                                        .filter(([a, b]: [number, number]) => Number.isFinite(a) && Number.isFinite(b));
-                                                                    setHoverPath(coords.length ? coords : null);
-                                                                } else {
-                                                                    setHoverPath(null);
-                                                                }
-                                                            } catch { setHoverPath(null); }
+                                                            setHoverPath(getPathCoords(p.raw));
                                                         }}
-                                                        onMouseLeave={() => { setHoverPos(null); setHoverPath(null); try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; } }}
+                                                        onMouseLeave={() => {
+                                                            setHoverPos(null);
+                                                            setHoverPath(null);
+                                                            setHoverPathA(null);
+                                                            setHoverPathB(null);
+                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                        }}
                                                         style={{
                                                             display: 'flex',
                                                             gap: 8,
@@ -1245,16 +1646,7 @@ export default function ResultPage() {
                                                             <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
                                                         </div>
                                                         <div style={{ textAlign: 'right' }}>
-                                                            {(() => {
-                                                                const wEff = getDecayedWeight(p);
-                                                                return (
-                                                                    <>
-                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div>
-                                                                        <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
-                                                                        <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div>
-                                                                    </>
-                                                                );
-                                                            })()}
+                                                            <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
                                                         </div>
                                                     </div>
                                                 ))}
