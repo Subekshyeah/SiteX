@@ -117,6 +117,8 @@ export default function ResultPage() {
     const [viewMode, setViewMode] = useState<"single" | "compare">("single");
     const [comparePointIdxA, setComparePointIdxA] = useState<number>(0);
     const [comparePointIdxB, setComparePointIdxB] = useState<number>(1);
+    const [singlePage, setSinglePage] = useState<"insights" | "nearby" | "explain">("insights");
+    const [comparePage, setComparePage] = useState<"insights" | "nearby" | "explain">("insights");
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
     const [accessibilityScores, setAccessibilityScores] = useState<Record<string, number>>({});
     const [predictionScores, setPredictionScores] = useState<Record<string, { score: number; risk_level?: string }>>({});
@@ -140,6 +142,7 @@ export default function ResultPage() {
     const MAX_RADIUS_KM = 1;
     const ACCESS_RADIUS_KM = 0.3;
     const PREDICTION_DISPLAY_MAX = 100;
+    const POI_SCORE_MAX = 35;
     // --- Load POIs from backend POI endpoint instead of CSVs ---
     const DECAY_SCALE_KM = 1.0;
     const cachePrefix = "sitex:cache:";
@@ -168,6 +171,56 @@ export default function ResultPage() {
         const raw = Number(score);
         if (!Number.isFinite(raw)) return null;
         return Math.max(0, Math.min(raw * 25, PREDICTION_DISPLAY_MAX));
+    };
+
+    const clampPct = (value?: number | null) => {
+        const raw = Number(value);
+        if (!Number.isFinite(raw)) return null;
+        return Math.max(0, Math.min(raw, 100));
+    };
+
+    const getPoiScorePercent = (score?: number | null) => {
+        const raw = Number(score);
+        if (!Number.isFinite(raw)) return null;
+        return Math.max(0, Math.min((raw / POI_SCORE_MAX) * 100, 100));
+    };
+
+    const renderScoreRing = (value: number | null, title: string, subtitle: string, color: string) => {
+        const pct = clampPct(value);
+        const size = 110;
+        const stroke = 10;
+        const r = (size - stroke) / 2;
+        const c = 2 * Math.PI * r;
+        const offset = pct == null ? c : c * (1 - pct / 100);
+        return (
+            <div style={{ border: '1px solid #e2e8f0', borderRadius: 14, padding: 12, background: '#f8fafc', display: 'flex', alignItems: 'center', gap: 12 }}>
+                <div style={{ position: 'relative', width: size, height: size }}>
+                    <svg width={size} height={size}>
+                        <circle cx={size / 2} cy={size / 2} r={r} stroke="#e5e7eb" strokeWidth={stroke} fill="none" />
+                        <circle
+                            cx={size / 2}
+                            cy={size / 2}
+                            r={r}
+                            stroke={color}
+                            strokeWidth={stroke}
+                            fill="none"
+                            strokeDasharray={`${c} ${c}`}
+                            strokeDashoffset={offset}
+                            strokeLinecap="round"
+                            transform={`rotate(-90 ${size / 2} ${size / 2})`}
+                            style={{ transition: 'stroke-dashoffset 0.7s ease' }}
+                        />
+                    </svg>
+                    <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ fontWeight: 800, fontSize: 20 }}>{pct == null ? '...' : `${Math.round(pct)}%`}</div>
+                        <div style={{ fontSize: 11, color: '#64748b', textAlign: 'center' }}>{subtitle}</div>
+                    </div>
+                </div>
+                <div style={{ flex: 1 }}>
+                    <div style={{ fontWeight: 800 }}>{title}</div>
+                </div>
+            </div>
+        );
     };
 
     useEffect(() => {
@@ -831,6 +884,10 @@ export default function ResultPage() {
         });
     }, [loadedPoisByPointKey, selectedTargets, points.length, MAX_RADIUS_KM, DECAY_SCALE_KM]);
 
+    const singleSummary = useMemo(() => {
+        return pointSummaries.find((s) => s.key === selectedPointKey) || null;
+    }, [pointSummaries, selectedPointKey]);
+
     const canGenerateAi = useMemo(() => {
         const hasScore = selectedTargets.some((t) => t.accessibility != null && Number.isFinite(Number(t.accessibility)));
         const hasPoisForAll = selectedTargets.every((t) => loadedPoisByPointKey[t.key] != null);
@@ -912,6 +969,10 @@ export default function ResultPage() {
             <style>{`
                 @keyframes floatIn { 0% { opacity: 0; transform: translateY(8px); } 100% { opacity: 1; transform: translateY(0); } }
                 @keyframes pulseGlow { 0% { box-shadow: 0 0 0 rgba(99,102,241,0.0);} 50% { box-shadow: 0 0 24px rgba(99,102,241,0.25);} 100% { box-shadow: 0 0 0 rgba(99,102,241,0.0);} }
+                .ytm-tabs { display: flex; gap: 24px; align-items: center; border-bottom: 1px solid rgba(15,23,42,0.08); margin: 16px 0 6px; }
+                .ytm-tab { background: transparent; border: none; padding: 10px 0; color: #64748b; font-weight: 800; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; position: relative; }
+                .ytm-tab.active { color: #0f172a; }
+                .ytm-tab.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: #0f172a; }
             `}</style>
             <div style={{ maxWidth: 1150, margin: "0 auto" }}>
                 {/* <div style={{ background: "#ffffff", padding: 20, borderRadius: 14, border: "1px solid rgba(15,23,42,0.06)", boxShadow: "0 10px 30px rgba(15,23,42,0.06)", animation: "floatIn 0.4s ease" }}>
@@ -1054,614 +1115,632 @@ export default function ResultPage() {
                                         ))}
                                     </div>
                                 )}
-
-                                <div style={{ color: '#64748b', fontSize: 12, marginBottom: 10 }}>
-                                    {points.length > 1
-                                        ? `Point ${selectedPointIdx + 1} of ${points.length} · ${selectedPoint.lat.toFixed(6)}, ${selectedPoint.lng.toFixed(6)}`
-                                        : `${selectedPoint.lat.toFixed(6)}, ${selectedPoint.lng.toFixed(6)}`}
-                                </div>
-
-                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 12 }}>
-                                    <div style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>Accessibility Score</div>
-                                        <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
-                                            <div style={{ height: 10, width: `${Math.min(Number(selectedAccessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
-                                        </div>
-                                        <div style={{ marginTop: 6, fontWeight: 700 }}>
-                                            {selectedAccessibility != null && Number.isFinite(selectedAccessibility) ? Number(selectedAccessibility).toFixed(1) : "Calculating..."}
-                                        </div>
-                                    </div>
-
-                                    <div style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>Model Prediction Score</div>
-                                        <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
-                                            <div style={{ height: 10, width: `${Math.min(getPredictionDisplayScore(selectedPrediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
-                                        </div>
-                                        <div style={{ marginTop: 6, fontWeight: 700 }}>
-                                            {selectedPrediction ? (getPredictionDisplayScore(selectedPrediction.score) ?? 0).toFixed(1) : "Calculating..."}
-                                        </div>
-                                        {selectedPrediction?.risk_level && (
-                                            <div style={{ color: '#64748b', fontSize: 12, marginTop: 2 }}>
-                                                Risk: {selectedPrediction.risk_level}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
                             </>
                         )}
 
                         {viewMode === 'compare' && points.length > 1 && (
-                            <>
-                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 12, marginBottom: 10 }}>
-                                    <div>
-                                        <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>A</div>
-                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                                            {points.map((p: Point, idx: number) => (
-                                                <button
-                                                    key={`pt-a-${idx}`}
-                                                    onClick={() => {
-                                                        setComparePointIdxA(idx);
-                                                        setSelectedPointIdx(idx);
-                                                        if (idx === comparePointIdxB) {
-                                                            setComparePointIdxB(idx === 0 ? 1 : 0);
-                                                        }
-                                                    }}
-                                                    style={{
-                                                        padding: '4px 10px',
-                                                        borderRadius: 14,
-                                                        border: '1px solid #e2e8f0',
-                                                        background: comparePointIdxA === idx ? '#0f172a' : '#ffffff',
-                                                        color: comparePointIdxA === idx ? '#ffffff' : '#64748b',
-                                                        fontSize: 12,
-                                                        cursor: 'pointer',
-                                                        fontWeight: 600
-                                                    }}
-                                                >
-                                                    {`P${idx + 1}`}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>B</div>
-                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                                            {points.map((p: Point, idx: number) => (
-                                                <button
-                                                    key={`pt-b-${idx}`}
-                                                    onClick={() => {
-                                                        setComparePointIdxB(idx);
-                                                        if (idx === comparePointIdxA) {
-                                                            const nextA = idx === 0 ? 1 : 0;
-                                                            setComparePointIdxA(nextA);
-                                                            setSelectedPointIdx(nextA);
-                                                        }
-                                                    }}
-                                                    style={{
-                                                        padding: '4px 10px',
-                                                        borderRadius: 14,
-                                                        border: '1px solid #e2e8f0',
-                                                        background: comparePointIdxB === idx ? '#0f172a' : '#ffffff',
-                                                        color: comparePointIdxB === idx ? '#ffffff' : '#64748b',
-                                                        fontSize: 12,
-                                                        cursor: 'pointer',
-                                                        fontWeight: 600
-                                                    }}
-                                                >
-                                                    {`P${idx + 1}`}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
-                                    {selectedTargets.map((t) => {
-                                        const summary = pointSummaries.find((s) => s.key === t.key) || null;
-                                        return (
-                                            <div key={`compare-card-${t.key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                                <div style={{ fontWeight: 800, marginBottom: 4 }}>{`${t.label}: P${t.idx + 1}`}</div>
-                                                <div style={{ color: '#64748b', fontSize: 12, marginBottom: 10 }}>{`${t.point.lat.toFixed(6)}, ${t.point.lng.toFixed(6)}`}</div>
-
-                                                <div style={{ fontWeight: 700, fontSize: 12, color: '#475569' }}>Accessibility</div>
-                                                <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
-                                                    <div style={{ height: 10, width: `${Math.min(Number(t.accessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
-                                                </div>
-                                                <div style={{ marginTop: 6, fontWeight: 800 }}>
-                                                    {t.accessibility != null && Number.isFinite(Number(t.accessibility)) ? Number(t.accessibility).toFixed(1) : "Calculating..."}
-                                                </div>
-
-                                                <div style={{ fontWeight: 700, fontSize: 12, color: '#475569', marginTop: 10 }}>Prediction</div>
-                                                <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
-                                                    <div style={{ height: 10, width: `${Math.min(getPredictionDisplayScore(t.prediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
-                                                </div>
-                                                <div style={{ marginTop: 6, fontWeight: 800 }}>
-                                                    {t.prediction ? (getPredictionDisplayScore(t.prediction.score) ?? 0).toFixed(1) : "Calculating..."}
-                                                </div>
-                                                {t.prediction?.risk_level && (
-                                                    <div style={{ color: '#64748b', fontSize: 12, marginTop: 2 }}>
-                                                        Risk: {t.prediction.risk_level}
-                                                    </div>
-                                                )}
-
-                                                {summary && (
-                                                    <div style={{ marginTop: 10, fontSize: 12, color: '#475569' }}>
-                                                        Total decayed contribution (within 1 km): <strong>{summary.totalScore.toFixed(3)}</strong>
-                                                    </div>
-                                                )}
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            </>
-                        )}
-                    </div>
-                )}
-
-                <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
-                    <h3 style={{ marginTop: 0 }}>Insights</h3>
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14 }}>
-                        {viewMode === "compare" && compareCategoryStats ? (
-                            <>
-                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Counts (A vs B)</div>
-                                    {compareCategoryStats.countData.length === 0 ? (
-                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
-                                    ) : (
-                                        <div style={{ width: "100%", height: 220 }}>
-                                            <ResponsiveContainer>
-                                                <BarChart data={compareCategoryStats.countData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
-                                                    <CartesianGrid strokeDasharray="3 3" />
-                                                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
-                                                    <YAxis tick={{ fontSize: 11 }} />
-                                                    <Tooltip />
-                                                    <Legend />
-                                                    <Bar dataKey="A" fill="#3b82f6" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
-                                                    <Bar dataKey="B" fill="#f97316" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
-                                                </BarChart>
-                                            </ResponsiveContainer>
-                                        </div>
-                                    )}
-                                </div>
-
-                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight (A vs B)</div>
-                                    {compareCategoryStats.avgData.length === 0 ? (
-                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
-                                    ) : (
-                                        <div style={{ width: "100%", height: 220 }}>
-                                            <ResponsiveContainer>
-                                                <BarChart data={compareCategoryStats.avgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
-                                                    <CartesianGrid strokeDasharray="3 3" />
-                                                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
-                                                    <YAxis tick={{ fontSize: 11 }} />
-                                                    <Tooltip />
-                                                    <Legend />
-                                                    <Bar dataKey="A" fill="#3b82f6" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
-                                                    <Bar dataKey="B" fill="#f97316" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
-                                                </BarChart>
-                                            </ResponsiveContainer>
-                                        </div>
-                                    )}
-                                </div>
-                            </>
-                        ) : (
-                            <>
-                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Category Share</div>
-                                    {categoryPieData.length === 0 ? (
-                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
-                                    ) : (
-                                        <div style={{ width: "100%", height: 220 }}>
-                                            <ResponsiveContainer>
-                                                <PieChart>
-                                                    <Pie
-                                                        data={categoryPieData}
-                                                        dataKey="value"
-                                                        nameKey="name"
-                                                        innerRadius={50}
-                                                        outerRadius={85}
-                                                        paddingAngle={4}
-                                                        isAnimationActive
-                                                        animationDuration={900}
-                                                    >
-                                                        {categoryPieData.map((entry) => (
-                                                            <Cell key={entry.name} fill={chartColors[entry.name as keyof typeof chartColors] || "#94a3b8"} />
-                                                        ))}
-                                                    </Pie>
-                                                    <Tooltip />
-                                                    <Legend />
-                                                </PieChart>
-                                            </ResponsiveContainer>
-                                        </div>
-                                    )}
-                                </div>
-
-                                <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                    <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight by Category</div>
-                                    {categoryAvgData.length === 0 ? (
-                                        <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
-                                    ) : (
-                                        <div style={{ width: "100%", height: 220 }}>
-                                            <ResponsiveContainer>
-                                                <BarChart data={categoryAvgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
-                                                    <CartesianGrid strokeDasharray="3 3" />
-                                                    <XAxis dataKey="name" tick={{ fontSize: 11 }} />
-                                                    <YAxis tick={{ fontSize: 11 }} />
-                                                    <Tooltip />
-                                                    <Bar dataKey="value" fill="#6366f1" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
-                                                </BarChart>
-                                            </ResponsiveContainer>
-                                        </div>
-                                    )}
-                                </div>
-                            </>
-                        )}
-                    </div>
-                </div>
-
-                <div style={{ display: "grid", gap: 12, marginTop: 12 }}>
-                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.04)", boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
-                        <h3 style={{ marginTop: 0 }}>Map and POIs</h3>
-                        <div style={{ display: 'flex', gap: 12 }}>
-                            <div style={{ flex: 1 }}>
-                                <div style={{ width: '100%', aspectRatio: '1 / 1' }}>
-                                    <MapContainer
-                                        ref={(m: unknown) => { mapRef.current = m as L.Map | null; }}
-                                        center={[selectedPoint.lat || 27.670587, selectedPoint.lng || 85.420868]}
-                                        zoom={16}
-                                        style={{ width: '100%', height: '100%', borderRadius: 8 }}
-                                    >
-                                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                                        {/* selected points */}
-                                        {viewMode === "compare" && selectedTargets.length >= 2 ? (
-                                            <>
-                                                <Marker
-                                                    key={`point-a-${selectedTargets[0].idx}`}
-                                                    position={[selectedTargets[0].point.lat, selectedTargets[0].point.lng]}
-                                                    icon={compareMarkerA}
-                                                />
-                                                <Marker
-                                                    key={`point-b-${selectedTargets[1].idx}`}
-                                                    position={[selectedTargets[1].point.lat, selectedTargets[1].point.lng]}
-                                                    icon={compareMarkerB}
-                                                />
-                                            </>
-                                        ) : (
-                                            <Marker key={`point-selected-${selectedPointKey}`} position={[selectedPoint.lat, selectedPoint.lng]} />
-                                        )}
-                                        {/* hover marker */}
-                                        {hoverPos && <Marker position={[hoverPos.lat, hoverPos.lng]} />}
-                                        {/* hover path (rendered inside MapContainer so Leaflet context is available) */}
-                                        {viewMode !== "compare" && hoverPath && hoverPath.length > 0 && (
-                                            <Polyline
-                                                positions={hoverPath.map(([la, lo]) => [la, lo])}
-                                                pathOptions={{
-                                                    color: '#ff6b6b',
-                                                    weight: 5,
-                                                    dashArray: '10 8',
-                                                    dashOffset: `${pathDashOffset}`,
-                                                    opacity: pathOpacity
-                                                }}
-                                            />
-                                        )}
-                                        {viewMode === "compare" && hoverPathA && hoverPathA.length > 0 && (
-                                            <Polyline
-                                                positions={hoverPathA.map(([la, lo]) => [la, lo])}
-                                                pathOptions={{
-                                                    color: '#3b82f6',
-                                                    weight: 5,
-                                                    dashArray: '10 8',
-                                                    dashOffset: `${-pathDashOffset}`,
-                                                    opacity: pathOpacity
-                                                }}
-                                            />
-                                        )}
-                                        {viewMode === "compare" && hoverPathB && hoverPathB.length > 0 && (
-                                            <Polyline
-                                                positions={hoverPathB.map(([la, lo]) => [la, lo])}
-                                                pathOptions={{
-                                                    color: '#f97316',
-                                                    weight: 5,
-                                                    dashArray: '10 8',
-                                                    dashOffset: `${-pathDashOffset}`,
-                                                    opacity: pathOpacity
-                                                }}
-                                            />
-                                        )}
-                                    </MapContainer>
-                                </div>
-                            </div>
-
-                            <div style={{ width: 360, maxHeight: '72vh', overflowY: 'auto', borderLeft: '1px solid rgba(15,23,42,0.04)', paddingLeft: 8, position: 'relative' }}>
-                                <div style={{ position: 'sticky', top: 0, background: '#ffffff', zIndex: 10, paddingBottom: 8, paddingTop: 0 }}>
-                                    <div style={{ fontWeight: 700, marginBottom: 4 }}>Nearby POIs (within 1 km)</div>
-                                    <div style={{ fontSize: 13, color: '#64748b', marginBottom: 8 }}>{name}</div>
-
-                                    <div style={{ marginBottom: 8 }}>
-                                        <input
-                                            type="text"
-                                            placeholder="Search POIs..."
-                                            value={searchQuery}
-                                            onChange={(e) => setSearchQuery(e.target.value)}
-                                            style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid #e2e8f0', fontSize: 13 }}
-                                        />
-                                    </div>
-
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 12 }}>
+                                <div>
+                                    <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>A</div>
                                     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                                        {['All', 'Cafes', 'Education', 'Health', 'Temples', 'Bank', 'Other'].map(cat => (
+                                        {points.map((p: Point, idx: number) => (
                                             <button
-                                                key={cat}
-                                                onClick={() => setSelectedCategory(cat)}
+                                                key={`pt-a-${idx}`}
+                                                onClick={() => {
+                                                    setComparePointIdxA(idx);
+                                                    setSelectedPointIdx(idx);
+                                                    if (idx === comparePointIdxB) {
+                                                        setComparePointIdxB(idx === 0 ? 1 : 0);
+                                                    }
+                                                }}
                                                 style={{
                                                     padding: '4px 10px',
-                                                    borderRadius: 16,
+                                                    borderRadius: 14,
                                                     border: '1px solid #e2e8f0',
-                                                    background: selectedCategory === cat ? '#0f172a' : '#ffffff',
-                                                    color: selectedCategory === cat ? '#ffffff' : '#64748b',
+                                                    background: comparePointIdxA === idx ? '#0f172a' : '#ffffff',
+                                                    color: comparePointIdxA === idx ? '#ffffff' : '#64748b',
                                                     fontSize: 12,
                                                     cursor: 'pointer',
-                                                    fontWeight: 500
+                                                    fontWeight: 600
                                                 }}
                                             >
-                                                {cat}
-                                                <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
-                                                    {displayCategoryCounts[cat] || 0}
-                                                </span>
-                                                <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
-                                                    avg: {(displayCategoryAverages[cat] || 0).toFixed(3)}
-                                                </span>
+                                                {`P${idx + 1}`}
                                             </button>
                                         ))}
                                     </div>
                                 </div>
+                                <div>
+                                    <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>B</div>
+                                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                        {points.map((p: Point, idx: number) => (
+                                            <button
+                                                key={`pt-b-${idx}`}
+                                                onClick={() => {
+                                                    setComparePointIdxB(idx);
+                                                    if (idx === comparePointIdxA) {
+                                                        const nextA = idx === 0 ? 1 : 0;
+                                                        setComparePointIdxA(nextA);
+                                                        setSelectedPointIdx(nextA);
+                                                    }
+                                                }}
+                                                style={{
+                                                    padding: '4px 10px',
+                                                    borderRadius: 14,
+                                                    border: '1px solid #e2e8f0',
+                                                    background: comparePointIdxB === idx ? '#0f172a' : '#ffffff',
+                                                    color: comparePointIdxB === idx ? '#ffffff' : '#64748b',
+                                                    fontSize: 12,
+                                                    cursor: 'pointer',
+                                                    fontWeight: 600
+                                                }}
+                                            >
+                                                {`P${idx + 1}`}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                )}
 
-                                {viewMode === "compare" && !compareCommonByCategory && <div>Loading...</div>}
-                                {viewMode === "compare" && compareCommonByCategory && Object.keys(compareCommonByCategory).length === 0 && (
-                                    <div>No common POIs found within radius.</div>
+                {(viewMode === "single" || viewMode === "compare") && (
+                    <div className="ytm-tabs">
+                        <button
+                            className={`ytm-tab ${(viewMode === "compare" ? comparePage : singlePage) === "insights" ? "active" : ""}`}
+                            onClick={() => (viewMode === "compare" ? setComparePage("insights") : setSinglePage("insights"))}
+                        >
+                            Insights
+                        </button>
+                        <button
+                            className={`ytm-tab ${(viewMode === "compare" ? comparePage : singlePage) === "nearby" ? "active" : ""}`}
+                            onClick={() => (viewMode === "compare" ? setComparePage("nearby") : setSinglePage("nearby"))}
+                        >
+                            Nearby Pois
+                        </button>
+                        <button
+                            className={`ytm-tab ${(viewMode === "compare" ? comparePage : singlePage) === "explain" ? "active" : ""}`}
+                            onClick={() => (viewMode === "compare" ? setComparePage("explain") : setSinglePage("explain"))}
+                        >
+                            Explanation
+                        </button>
+                    </div>
+                )}
+
+                {((viewMode === "compare" && comparePage === "insights") || (viewMode === "single" && singlePage === "insights")) && (
+                    <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
+                        {/* <h3 style={{ marginTop: 0 }}>Insights</h3> */}
+                        {viewMode === "single" && (
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginBottom: 12 }}>
+                                {renderScoreRing(
+                                    clampPct(selectedAccessibility),
+                                    'Accessibility Score',
+                                    'Access',
+                                    '#16a34a'
                                 )}
-                                {viewMode === "compare" && compareCommonByCategory && selectedCategory === 'All' && (() => {
-                                    const mixed = Object.entries(compareCommonByCategory).flatMap(([cat, list]) => {
-                                        const filteredList = list
-                                            .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
-                                            .map((p) => ({ poi: p, cat }));
-                                        return filteredList;
-                                    });
-                                    const sorted = mixed
-                                        .slice()
-                                        .sort((a, b) => (b.poi.decayedA + b.poi.decayedB) - (a.poi.decayedA + a.poi.decayedB));
-                                    if (sorted.length === 0) return null;
+                                {renderScoreRing(
+                                    clampPct(getPredictionDisplayScore(selectedPrediction?.score)),
+                                    'Model Prediction Score',
+                                    'Prediction',
+                                    '#f97316'
+                                )}
+                                {renderScoreRing(
+                                    getPoiScorePercent(singleSummary?.totalScore),
+                                    'POI Score',
+                                    // singleSummary ? `${singleSummary.totalScore.toFixed(2)} / ${POI_SCORE_MAX}` : 'POI score',
+                                    'POI score',
+                                    '#6366f1'
+                                )}
+                            </div>
+                        )}
+                        {viewMode === "compare" && (
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 12, marginBottom: 12 }}>
+                                {selectedTargets.map((t) => {
+                                    const summary = pointSummaries.find((s) => s.key === t.key) || null;
+                                    const poiPct = getPoiScorePercent(summary?.totalScore);
                                     return (
-                                        <div key="All" style={{ marginBottom: 12 }}>
-                                            <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>All (Common)</div>
-                                            {sorted.map(({ poi: p, cat }, idx) => {
-                                                const pct = getCommonSharePct(p);
-                                                return (
-                                                    <div key={`${cat}-${p.name}-${idx}`}
-                                                        onMouseEnter={() => {
-                                                            setHoverPos({ lat: p.lat, lng: p.lng });
-                                                            setHoverPath(null);
-                                                            setHoverPathA(getPathCoords(p.rawA));
-                                                            setHoverPathB(getPathCoords(p.rawB));
-                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
-                                                        }}
-                                                        onMouseLeave={() => {
-                                                            setHoverPos(null);
-                                                            setHoverPath(null);
-                                                            setHoverPathA(null);
-                                                            setHoverPathB(null);
-                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
-                                                        }}
-                                                        style={{
-                                                            display: 'flex',
-                                                            gap: 8,
-                                                            padding: 8,
-                                                            borderRadius: 6,
-                                                            alignItems: 'center',
-                                                            cursor: 'pointer',
-                                                            border: '1px solid rgba(15,23,42,0.03)',
-                                                            marginBottom: 8,
-                                                            background: `linear-gradient(90deg, rgba(59,130,246,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`
-                                                        }}>
-                                                        <div style={{ flex: 1 }}>
-                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
-                                                            <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{cat}</div>
-                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#0ea5e9', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
-                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
-                                                        </div>
-                                                        <div style={{ textAlign: 'right' }}>
-                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#3b82f6' }}>{`A: ${p.distanceA.toFixed(3)} km`}</div>
-                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#f97316' }}>{`B: ${p.distanceB.toFixed(3)} km`}</div>
-                                                        </div>
-                                                    </div>
-                                                );
-                                            })}
-                                        </div>
-                                    );
-                                })()}
-                                {viewMode === "compare" && compareCommonByCategory && selectedCategory !== 'All' && Object.entries(compareCommonByCategory)
-                                    .filter(([cat]) => cat === selectedCategory)
-                                    .map(([cat, list]) => {
-                                        const filteredList = list
-                                            .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
-                                            .slice()
-                                            .sort((a, b) => (b.decayedA + b.decayedB) - (a.decayedA + a.decayedB));
-                                        if (filteredList.length === 0) return null;
-                                        return (
-                                            <div key={cat} style={{ marginBottom: 12 }}>
-                                                <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>{cat} (Common)</div>
-                                                {filteredList.map((p, idx) => (
-                                                    <div key={`${p.name}-${idx}`}
-                                                        onMouseEnter={() => {
-                                                            setHoverPos({ lat: p.lat, lng: p.lng });
-                                                            setHoverPath(null);
-                                                            setHoverPathA(getPathCoords(p.rawA));
-                                                            setHoverPathB(getPathCoords(p.rawB));
-                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
-                                                        }}
-                                                        onMouseLeave={() => {
-                                                            setHoverPos(null);
-                                                            setHoverPath(null);
-                                                            setHoverPathA(null);
-                                                            setHoverPathB(null);
-                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
-                                                        }}
-                                                        style={{
-                                                            display: 'flex',
-                                                            gap: 8,
-                                                            padding: 8,
-                                                            borderRadius: 6,
-                                                            alignItems: 'center',
-                                                            cursor: 'pointer',
-                                                            border: '1px solid rgba(15,23,42,0.03)',
-                                                            marginBottom: 8,
-                                                            background: (() => {
-                                                                const pct = getCommonCategorySharePct(p, cat);
-                                                                return `linear-gradient(90deg, rgba(59,130,246,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`;
-                                                            })()
-                                                        }}>
-                                                        <div style={{ flex: 1 }}>
-                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
-                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#0ea5e9', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
-                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
-                                                        </div>
-                                                        <div style={{ textAlign: 'right' }}>
-                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#3b82f6' }}>{`A: ${p.distanceA.toFixed(3)} km`}</div>
-                                                            <div style={{ fontWeight: 800, fontSize: 13, color: '#f97316' }}>{`B: ${p.distanceB.toFixed(3)} km`}</div>
-                                                        </div>
-                                                    </div>
-                                                ))}
+                                        <div key={`compare-insights-${t.key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                            <div style={{ fontWeight: 800, marginBottom: 6 }}>{`${t.label}: P${t.idx + 1}`}</div>
+                                            <div style={{ fontWeight: 700, fontSize: 12, color: '#475569' }}>Accessibility</div>
+                                            <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                                <div style={{ height: 10, width: `${Math.min(Number(t.accessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
                                             </div>
-                                        );
-                                    })}
+                                            <div style={{ marginTop: 6, fontWeight: 800 }}>
+                                                {t.accessibility != null && Number.isFinite(Number(t.accessibility)) ? Number(t.accessibility).toFixed(1) : "Calculating..."}
+                                            </div>
 
-                                {viewMode !== "compare" && !filteredPois && <div>Loading...</div>}
-                                {viewMode !== "compare" && filteredPois && Object.keys(filteredPois).length === 0 && <div>No POIs found within radius.</div>}
-                                {viewMode !== "compare" && filteredPois && selectedCategory === 'All' && (() => {
-                                    const mixed = Object.entries(filteredPois).flatMap(([cat, list]) => {
-                                        const filteredList = list
-                                            .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
-                                            .map((p) => ({ poi: p, cat }));
-                                        return filteredList;
-                                    });
-                                    const sorted = mixed
-                                        .slice()
-                                        .sort((a, b) => getDecayedWeight(b.poi) - getDecayedWeight(a.poi));
-                                    if (sorted.length === 0) return null;
-                                    return (
-                                        <div key="All" style={{ marginBottom: 12 }}>
-                                            <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>All</div>
-                                            {sorted.map(({ poi: p, cat }, idx) => {
-                                                const wEff = getDecayedWeight(p);
-                                                const pct = getAllSharePct(p);
-                                                return (
-                                                    <div key={`${cat}-${p.name}-${idx}`}
-                                                        onMouseEnter={() => {
-                                                            setHoverPos({ lat: p.lat, lng: p.lng });
-                                                            setHoverPathA(null);
-                                                            setHoverPathB(null);
-                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
-                                                            setHoverPath(getPathCoords(p.raw));
-                                                        }}
-                                                        onMouseLeave={() => {
-                                                            setHoverPos(null);
-                                                            setHoverPath(null);
-                                                            setHoverPathA(null);
-                                                            setHoverPathB(null);
-                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
-                                                        }}
-                                                        style={{
-                                                            display: 'flex',
-                                                            gap: 8,
-                                                            padding: 8,
-                                                            borderRadius: 6,
-                                                            alignItems: 'center',
-                                                            cursor: 'pointer',
-                                                            border: '1px solid rgba(15,23,42,0.03)',
-                                                            marginBottom: 8,
-                                                            background: `linear-gradient(90deg, rgba(99,102,241,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`
-                                                        }}>
-                                                        <div style={{ flex: 1 }}>
-                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
-                                                            <div style={{ fontSize: 11, color: '#6366f1', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{cat}</div>
-                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
-                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
-                                                        </div>
-                                                        <div style={{ textAlign: 'right' }}>
-                                                            {/* <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div> */}
-                                                            <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
-                                                            {/* <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div> */}
-                                                        </div>
-                                                    </div>
-                                                );
-                                            })}
+                                            <div style={{ fontWeight: 700, fontSize: 12, color: '#475569', marginTop: 10 }}>Prediction</div>
+                                            <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                                <div style={{ height: 10, width: `${Math.min(getPredictionDisplayScore(t.prediction?.score) ?? 0, PREDICTION_DISPLAY_MAX)}%`, background: "linear-gradient(90deg,#f97316,#ef4444)", borderRadius: 6, transition: "width 0.5s" }} />
+                                            </div>
+                                            <div style={{ marginTop: 6, fontWeight: 800 }}>
+                                                {t.prediction ? (getPredictionDisplayScore(t.prediction.score) ?? 0).toFixed(1) : "Calculating..."}
+                                            </div>
+                                            {t.prediction?.risk_level && (
+                                                <div style={{ color: '#64748b', fontSize: 12, marginTop: 2 }}>
+                                                    Risk: {t.prediction.risk_level}
+                                                </div>
+                                            )}
+
+                                            <div style={{ fontWeight: 700, fontSize: 12, color: '#475569', marginTop: 10 }}>POI Score</div>
+                                            <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
+                                                <div style={{ height: 10, width: `${Math.min(poiPct ?? 0, 100)}%`, background: "linear-gradient(90deg,#6366f1,#8b5cf6)", borderRadius: 6, transition: "width 0.5s" }} />
+                                            </div>
+                                            <div style={{ marginTop: 6, fontWeight: 800 }}>
+                                                {/* {summary ? `${summary.totalScore.toFixed(2)} / ${POI_SCORE_MAX} (${Math.round(poiPct ?? 0)}%)` : "Calculating..."} */}
+                                                {summary ? `${Math.round(poiPct ?? 0)}` : "Calculating..."}
+                                            </div>
                                         </div>
                                     );
-                                })()}
-                                {viewMode !== "compare" && filteredPois && selectedCategory !== 'All' && Object.entries(filteredPois)
-                                    .filter(([cat]) => cat === selectedCategory)
-                                    .map(([cat, list]) => {
-                                        const filteredList = list
-                                            .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                })}
+                            </div>
+                        )}
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14 }}>
+                            {viewMode === "compare" && compareCategoryStats ? (
+                                <>
+                                    <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Counts (A vs B)</div>
+                                        {compareCategoryStats.countData.length === 0 ? (
+                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                        ) : (
+                                            <div style={{ width: "100%", height: 220 }}>
+                                                <ResponsiveContainer>
+                                                    <BarChart data={compareCategoryStats.countData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                                        <CartesianGrid strokeDasharray="3 3" />
+                                                        <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                                        <YAxis tick={{ fontSize: 11 }} />
+                                                        <Tooltip />
+                                                        <Legend />
+                                                        <Bar dataKey="A" fill="#3b82f6" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                        <Bar dataKey="B" fill="#f97316" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                    </BarChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight (A vs B)</div>
+                                        {compareCategoryStats.avgData.length === 0 ? (
+                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                        ) : (
+                                            <div style={{ width: "100%", height: 220 }}>
+                                                <ResponsiveContainer>
+                                                    <BarChart data={compareCategoryStats.avgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                                        <CartesianGrid strokeDasharray="3 3" />
+                                                        <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                                        <YAxis tick={{ fontSize: 11 }} />
+                                                        <Tooltip />
+                                                        <Legend />
+                                                        <Bar dataKey="A" fill="#3b82f6" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                        <Bar dataKey="B" fill="#f97316" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                    </BarChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                        )}
+                                    </div>
+                                </>
+                            ) : (
+                                <>
+                                    <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>POI Category Share</div>
+                                        {categoryPieData.length === 0 ? (
+                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                        ) : (
+                                            <div style={{ width: "100%", height: 220 }}>
+                                                <ResponsiveContainer>
+                                                    <PieChart>
+                                                        <Pie
+                                                            data={categoryPieData}
+                                                            dataKey="value"
+                                                            nameKey="name"
+                                                            innerRadius={50}
+                                                            outerRadius={85}
+                                                            paddingAngle={4}
+                                                            isAnimationActive
+                                                            animationDuration={900}
+                                                        >
+                                                            {categoryPieData.map((entry) => (
+                                                                <Cell key={entry.name} fill={chartColors[entry.name as keyof typeof chartColors] || "#94a3b8"} />
+                                                            ))}
+                                                        </Pie>
+                                                        <Tooltip />
+                                                        <Legend />
+                                                    </PieChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    <div style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 12, background: "#f8fafc" }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 6 }}>Avg Decayed Weight by Category</div>
+                                        {categoryAvgData.length === 0 ? (
+                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs loaded yet.</div>
+                                        ) : (
+                                            <div style={{ width: "100%", height: 220 }}>
+                                                <ResponsiveContainer>
+                                                    <BarChart data={categoryAvgData} margin={{ top: 10, right: 10, left: 0, bottom: 5 }}>
+                                                        <CartesianGrid strokeDasharray="3 3" />
+                                                        <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+                                                        <YAxis tick={{ fontSize: 11 }} />
+                                                        <Tooltip />
+                                                        <Bar dataKey="value" fill="#6366f1" radius={[8, 8, 0, 0]} isAnimationActive animationDuration={900} />
+                                                    </BarChart>
+                                                </ResponsiveContainer>
+                                            </div>
+                                        )}
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                )}
+
+                {((viewMode === "compare" && comparePage === "nearby") || (viewMode === "single" && singlePage === "nearby")) && (
+                    <div style={{ display: "grid", gap: 12, marginTop: 12 }}>
+                        <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.04)", boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
+                            {/* <h3 style={{ marginTop: 0 }}>Map and POIs</h3> */}
+                            <div style={{ display: 'flex', gap: 12 }}>
+                                <div style={{ flex: 1 }}>
+                                    <div style={{ width: '100%', aspectRatio: '1 / 1' }}>
+                                        <MapContainer
+                                            ref={(m: unknown) => { mapRef.current = m as L.Map | null; }}
+                                            center={[selectedPoint.lat || 27.670587, selectedPoint.lng || 85.420868]}
+                                            zoom={16}
+                                            style={{ width: '100%', height: '100%', borderRadius: 8 }}
+                                        >
+                                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                                            {/* selected points */}
+                                            {viewMode === "compare" && selectedTargets.length >= 2 ? (
+                                                <>
+                                                    <Marker
+                                                        key={`point-a-${selectedTargets[0].idx}`}
+                                                        position={[selectedTargets[0].point.lat, selectedTargets[0].point.lng]}
+                                                        icon={compareMarkerA}
+                                                    />
+                                                    <Marker
+                                                        key={`point-b-${selectedTargets[1].idx}`}
+                                                        position={[selectedTargets[1].point.lat, selectedTargets[1].point.lng]}
+                                                        icon={compareMarkerB}
+                                                    />
+                                                </>
+                                            ) : (
+                                                <Marker key={`point-selected-${selectedPointKey}`} position={[selectedPoint.lat, selectedPoint.lng]} />
+                                            )}
+                                            {/* hover marker */}
+                                            {hoverPos && <Marker position={[hoverPos.lat, hoverPos.lng]} />}
+                                            {/* hover path (rendered inside MapContainer so Leaflet context is available) */}
+                                            {viewMode !== "compare" && hoverPath && hoverPath.length > 0 && (
+                                                <Polyline
+                                                    positions={hoverPath.map(([la, lo]) => [la, lo])}
+                                                    pathOptions={{
+                                                        color: '#ff6b6b',
+                                                        weight: 5,
+                                                        dashArray: '10 8',
+                                                        dashOffset: `${pathDashOffset}`,
+                                                        opacity: pathOpacity
+                                                    }}
+                                                />
+                                            )}
+                                            {viewMode === "compare" && hoverPathA && hoverPathA.length > 0 && (
+                                                <Polyline
+                                                    positions={hoverPathA.map(([la, lo]) => [la, lo])}
+                                                    pathOptions={{
+                                                        color: '#3b82f6',
+                                                        weight: 5,
+                                                        dashArray: '10 8',
+                                                        dashOffset: `${-pathDashOffset}`,
+                                                        opacity: pathOpacity
+                                                    }}
+                                                />
+                                            )}
+                                            {viewMode === "compare" && hoverPathB && hoverPathB.length > 0 && (
+                                                <Polyline
+                                                    positions={hoverPathB.map(([la, lo]) => [la, lo])}
+                                                    pathOptions={{
+                                                        color: '#f97316',
+                                                        weight: 5,
+                                                        dashArray: '10 8',
+                                                        dashOffset: `${-pathDashOffset}`,
+                                                        opacity: pathOpacity
+                                                    }}
+                                                />
+                                            )}
+                                        </MapContainer>
+                                    </div>
+                                </div>
+
+                                <div style={{ width: 360, maxHeight: '72vh', overflowY: 'auto', borderLeft: '1px solid rgba(15,23,42,0.04)', paddingLeft: 8, position: 'relative' }}>
+                                    <div style={{ position: 'sticky', top: 0, background: '#ffffff', zIndex: 10, paddingBottom: 8, paddingTop: 0 }}>
+                                        <div style={{ fontWeight: 700, marginBottom: 4 }}>Nearby POIs</div>
+                                        <div style={{ fontSize: 13, color: '#64748b', marginBottom: 8 }}>{name}</div>
+
+                                        <div style={{ marginBottom: 8 }}>
+                                            <input
+                                                type="text"
+                                                placeholder="Search POIs..."
+                                                value={searchQuery}
+                                                onChange={(e) => setSearchQuery(e.target.value)}
+                                                style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid #e2e8f0', fontSize: 13 }}
+                                            />
+                                        </div>
+
+                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                            {['All', 'Cafes', 'Education', 'Health', 'Temples', 'Bank', 'Other'].map(cat => (
+                                                <button
+                                                    key={cat}
+                                                    onClick={() => setSelectedCategory(cat)}
+                                                    style={{
+                                                        padding: '4px 10px',
+                                                        borderRadius: 16,
+                                                        border: '1px solid #e2e8f0',
+                                                        background: selectedCategory === cat ? '#0f172a' : '#ffffff',
+                                                        color: selectedCategory === cat ? '#ffffff' : '#64748b',
+                                                        fontSize: 12,
+                                                        cursor: 'pointer',
+                                                        fontWeight: 500
+                                                    }}
+                                                >
+                                                    {cat}
+                                                    <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
+                                                        {displayCategoryCounts[cat] || 0}
+                                                    </span>
+                                                    {/* <span style={{ opacity: 0.7, fontSize: 11, marginLeft: 6 }}>
+                                                        avg: {(displayCategoryAverages[cat] || 0).toFixed(3)}
+                                                    </span> */}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {viewMode === "compare" && !compareCommonByCategory && <div>Loading...</div>}
+                                    {viewMode === "compare" && compareCommonByCategory && Object.keys(compareCommonByCategory).length === 0 && (
+                                        <div>No common POIs found within radius.</div>
+                                    )}
+                                    {viewMode === "compare" && compareCommonByCategory && selectedCategory === 'All' && (() => {
+                                        const mixed = Object.entries(compareCommonByCategory).flatMap(([cat, list]) => {
+                                            const filteredList = list
+                                                .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                                .map((p) => ({ poi: p, cat }));
+                                            return filteredList;
+                                        });
+                                        const sorted = mixed
                                             .slice()
-                                            .sort((a, b) => {
-                                                return getDecayedWeight(b) - getDecayedWeight(a);
-                                            });
-                                        if (filteredList.length === 0) return null;
+                                            .sort((a, b) => (b.poi.decayedA + b.poi.decayedB) - (a.poi.decayedA + a.poi.decayedB));
+                                        if (sorted.length === 0) return null;
                                         return (
-                                            <div key={cat} style={{ marginBottom: 12 }}>
-                                                <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>{cat}</div>
-                                                {filteredList.map((p, idx) => (
-                                                    <div key={`${p.name}-${idx}`}
-                                                        onMouseEnter={() => {
-                                                            setHoverPos({ lat: p.lat, lng: p.lng });
-                                                            setHoverPathA(null);
-                                                            setHoverPathB(null);
-                                                            try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
-                                                            setHoverPath(getPathCoords(p.raw));
-                                                        }}
-                                                        onMouseLeave={() => {
-                                                            setHoverPos(null);
-                                                            setHoverPath(null);
-                                                            setHoverPathA(null);
-                                                            setHoverPathB(null);
-                                                            try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
-                                                        }}
-                                                        style={{
-                                                            display: 'flex',
-                                                            gap: 8,
-                                                            padding: 8,
-                                                            borderRadius: 6,
-                                                            alignItems: 'center',
-                                                            cursor: 'pointer',
-                                                            border: '1px solid rgba(15,23,42,0.03)',
-                                                            marginBottom: 8,
-                                                            background: (() => {
-                                                                const pct = getCategorySharePct(p, cat);
-                                                                return `linear-gradient(90deg, rgba(99,102,241,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`;
-                                                            })()
-                                                        }}>
-                                                        <div style={{ flex: 1 }}>
-                                                            <div style={{ fontWeight: 700 }}>{p.name}</div>
-                                                            {p.subcategory && <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
-                                                            <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                            <div key="All" style={{ marginBottom: 12 }}>
+                                                <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>All (Common)</div>
+                                                {sorted.map(({ poi: p, cat }, idx) => {
+                                                    const pct = getCommonSharePct(p);
+                                                    return (
+                                                        <div key={`${cat}-${p.name}-${idx}`}
+                                                            onMouseEnter={() => {
+                                                                setHoverPos({ lat: p.lat, lng: p.lng });
+                                                                setHoverPath(null);
+                                                                setHoverPathA(getPathCoords(p.rawA));
+                                                                setHoverPathB(getPathCoords(p.rawB));
+                                                                try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                            }}
+                                                            onMouseLeave={() => {
+                                                                setHoverPos(null);
+                                                                setHoverPath(null);
+                                                                setHoverPathA(null);
+                                                                setHoverPathB(null);
+                                                                try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                            }}
+                                                            style={{
+                                                                display: 'flex',
+                                                                gap: 8,
+                                                                padding: 8,
+                                                                borderRadius: 6,
+                                                                alignItems: 'center',
+                                                                cursor: 'pointer',
+                                                                border: '1px solid rgba(15,23,42,0.03)',
+                                                                marginBottom: 8,
+                                                                background: `linear-gradient(90deg, rgba(59,130,246,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`
+                                                            }}>
+                                                            <div style={{ flex: 1 }}>
+                                                                <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                                <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{cat}</div>
+                                                                {p.subcategory && <div style={{ fontSize: 11, color: '#0ea5e9', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                                <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                            </div>
+                                                            <div style={{ textAlign: 'right' }}>
+                                                                <div style={{ fontWeight: 800, fontSize: 13, color: '#3b82f6' }}>{`A: ${p.distanceA.toFixed(3)} km`}</div>
+                                                                <div style={{ fontWeight: 800, fontSize: 13, color: '#f97316' }}>{`B: ${p.distanceB.toFixed(3)} km`}</div>
+                                                            </div>
                                                         </div>
-                                                        <div style={{ textAlign: 'right' }}>
-                                                            <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
-                                                        </div>
-                                                    </div>
-                                                ))}
+                                                    );
+                                                })}
                                             </div>
                                         );
-                                    })}
-                                {/* hover path now rendered inside MapContainer */}
+                                    })()}
+                                    {viewMode === "compare" && compareCommonByCategory && selectedCategory !== 'All' && Object.entries(compareCommonByCategory)
+                                        .filter(([cat]) => cat === selectedCategory)
+                                        .map(([cat, list]) => {
+                                            const filteredList = list
+                                                .filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                                .slice()
+                                                .sort((a, b) => (b.decayedA + b.decayedB) - (a.decayedA + a.decayedB));
+                                            if (filteredList.length === 0) return null;
+                                            return (
+                                                <div key={cat} style={{ marginBottom: 12 }}>
+                                                    <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>{cat} (Common)</div>
+                                                    {filteredList.map((p, idx) => (
+                                                        <div key={`${p.name}-${idx}`}
+                                                            onMouseEnter={() => {
+                                                                setHoverPos({ lat: p.lat, lng: p.lng });
+                                                                setHoverPath(null);
+                                                                setHoverPathA(getPathCoords(p.rawA));
+                                                                setHoverPathB(getPathCoords(p.rawB));
+                                                                try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                            }}
+                                                            onMouseLeave={() => {
+                                                                setHoverPos(null);
+                                                                setHoverPath(null);
+                                                                setHoverPathA(null);
+                                                                setHoverPathB(null);
+                                                                try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                            }}
+                                                            style={{
+                                                                display: 'flex',
+                                                                gap: 8,
+                                                                padding: 8,
+                                                                borderRadius: 6,
+                                                                alignItems: 'center',
+                                                                cursor: 'pointer',
+                                                                border: '1px solid rgba(15,23,42,0.03)',
+                                                                marginBottom: 8,
+                                                                background: (() => {
+                                                                    const pct = getCommonCategorySharePct(p, cat);
+                                                                    return `linear-gradient(90deg, rgba(59,130,246,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`;
+                                                                })()
+                                                            }}>
+                                                            <div style={{ flex: 1 }}>
+                                                                <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                                {p.subcategory && <div style={{ fontSize: 11, color: '#0ea5e9', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                                <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                            </div>
+                                                            <div style={{ textAlign: 'right' }}>
+                                                                <div style={{ fontWeight: 800, fontSize: 13, color: '#3b82f6' }}>{`A: ${p.distanceA.toFixed(3)} km`}</div>
+                                                                <div style={{ fontWeight: 800, fontSize: 13, color: '#f97316' }}>{`B: ${p.distanceB.toFixed(3)} km`}</div>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            );
+                                        })}
+
+                                    {viewMode !== "compare" && !filteredPois && <div>Loading...</div>}
+                                    {viewMode !== "compare" && filteredPois && Object.keys(filteredPois).length === 0 && <div>No POIs found within radius.</div>}
+                                    {viewMode !== "compare" && filteredPois && selectedCategory === 'All' && (() => {
+                                        const mixed = Object.entries(filteredPois).flatMap(([cat, list]) => {
+                                            const filteredList = list
+                                                .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                                .map((p) => ({ poi: p, cat }));
+                                            return filteredList;
+                                        });
+                                        const sorted = mixed
+                                            .slice()
+                                            .sort((a, b) => getDecayedWeight(b.poi) - getDecayedWeight(a.poi));
+                                        if (sorted.length === 0) return null;
+                                        return (
+                                            <div key="All" style={{ marginBottom: 12 }}>
+                                                <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>All</div>
+                                                {sorted.map(({ poi: p, cat }, idx) => {
+                                                    const wEff = getDecayedWeight(p);
+                                                    const pct = getAllSharePct(p);
+                                                    return (
+                                                        <div key={`${cat}-${p.name}-${idx}`}
+                                                            onMouseEnter={() => {
+                                                                setHoverPos({ lat: p.lat, lng: p.lng });
+                                                                setHoverPathA(null);
+                                                                setHoverPathB(null);
+                                                                try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                                setHoverPath(getPathCoords(p.raw));
+                                                            }}
+                                                            onMouseLeave={() => {
+                                                                setHoverPos(null);
+                                                                setHoverPath(null);
+                                                                setHoverPathA(null);
+                                                                setHoverPathB(null);
+                                                                try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                            }}
+                                                            style={{
+                                                                display: 'flex',
+                                                                gap: 8,
+                                                                padding: 8,
+                                                                borderRadius: 6,
+                                                                alignItems: 'center',
+                                                                cursor: 'pointer',
+                                                                border: '1px solid rgba(15,23,42,0.03)',
+                                                                marginBottom: 8,
+                                                                background: `linear-gradient(90deg, rgba(99,102,241,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`
+                                                            }}>
+                                                            <div style={{ flex: 1 }}>
+                                                                <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                                <div style={{ fontSize: 11, color: '#6366f1', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{cat}</div>
+                                                                {p.subcategory && <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                                <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                            </div>
+                                                            <div style={{ textAlign: 'right' }}>
+                                                                {/* <div style={{ fontWeight: 800, fontSize: 14 }}>{`w*e^{-d/s}: ${wEff.toFixed(3)}`}</div> */}
+                                                                <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
+                                                                {/* <div style={{ fontSize: 12, color: '#475569' }}>{`w: ${Number(p.weight).toFixed(3)} · s: ${DECAY_SCALE_KM}km`}</div> */}
+                                                            </div>
+                                                        </div>
+                                                    );
+                                                })}
+                                            </div>
+                                        );
+                                    })()}
+                                    {viewMode !== "compare" && filteredPois && selectedCategory !== 'All' && Object.entries(filteredPois)
+                                        .filter(([cat]) => cat === selectedCategory)
+                                        .map(([cat, list]) => {
+                                            const filteredList = list
+                                                .filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                                                .slice()
+                                                .sort((a, b) => {
+                                                    return getDecayedWeight(b) - getDecayedWeight(a);
+                                                });
+                                            if (filteredList.length === 0) return null;
+                                            return (
+                                                <div key={cat} style={{ marginBottom: 12 }}>
+                                                    <div style={{ fontWeight: 700, textTransform: 'capitalize', marginBottom: 6 }}>{cat}</div>
+                                                    {filteredList.map((p, idx) => (
+                                                        <div key={`${p.name}-${idx}`}
+                                                            onMouseEnter={() => {
+                                                                setHoverPos({ lat: p.lat, lng: p.lng });
+                                                                setHoverPathA(null);
+                                                                setHoverPathB(null);
+                                                                try { mapRef.current?.flyTo([p.lat, p.lng], 17); } catch (err) { void err; }
+                                                                setHoverPath(getPathCoords(p.raw));
+                                                            }}
+                                                            onMouseLeave={() => {
+                                                                setHoverPos(null);
+                                                                setHoverPath(null);
+                                                                setHoverPathA(null);
+                                                                setHoverPathB(null);
+                                                                try { mapRef.current?.flyTo([selectedPoint.lat, selectedPoint.lng], 16); } catch (err) { void err; }
+                                                            }}
+                                                            style={{
+                                                                display: 'flex',
+                                                                gap: 8,
+                                                                padding: 8,
+                                                                borderRadius: 6,
+                                                                alignItems: 'center',
+                                                                cursor: 'pointer',
+                                                                border: '1px solid rgba(15,23,42,0.03)',
+                                                                marginBottom: 8,
+                                                                background: (() => {
+                                                                    const pct = getCategorySharePct(p, cat);
+                                                                    return `linear-gradient(90deg, rgba(99,102,241,0.18) ${pct}%, rgba(255,255,255,0) ${pct}%)`;
+                                                                })()
+                                                            }}>
+                                                            <div style={{ flex: 1 }}>
+                                                                <div style={{ fontWeight: 700 }}>{p.name}</div>
+                                                                {p.subcategory && <div style={{ fontSize: 11, color: '#3b82f6', fontWeight: 600, textTransform: 'uppercase', marginTop: 2 }}>{p.subcategory}</div>}
+                                                                <div style={{ color: '#64748b', fontSize: 13 }}>{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</div>
+                                                            </div>
+                                                            <div style={{ textAlign: 'right' }}>
+                                                                <div style={{ fontWeight: 800, fontSize: 14 }}>{`${Number(p.distance_km).toFixed(3)} km`}</div>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            );
+                                        })}
+                                    {/* hover path now rendered inside MapContainer */}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                )}
 
-                {points.length > 0 && (
+                {points.length > 0 && ((viewMode === "compare" && comparePage === "explain") || (viewMode === "single" && singlePage === "explain")) && (
                     <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
-                        <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3>
+                        {/* <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3> */}
                         <button
                             onClick={handleGenerateAi}
                             disabled={!canGenerateAi || aiLoading}
@@ -1698,14 +1777,14 @@ export default function ResultPage() {
                                             </div>
                                             <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>{summary.key}</div>
                                             <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
-                                                Total decayed contribution (within 1 km): <strong>{summary.totalScore.toFixed(3)}</strong>
+                                                Total decayed contribution (within 0.3 km): <strong>{summary.totalScore.toFixed(3)}</strong>
                                             </div>
                                             <div style={{ marginTop: 10 }}>
                                                 {summary.perCategory.map((catSummary) => (
                                                     <div key={`${summary.key}-${catSummary.cat}`} style={{ marginBottom: 10 }}>
                                                         <div style={{ fontWeight: 700, fontSize: 12 }}>{catSummary.cat}</div>
                                                         {catSummary.topPois.length === 0 ? (
-                                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs within 1 km.</div>
+                                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs within 0.3 km.</div>
                                                         ) : (
                                                             <div style={{ fontSize: 12, color: "#475569" }}>
                                                                 Top contributors: {catSummary.topPois.slice(0, 3).map((poi) => poi.name).join(", ")}. (decayed sum: {catSummary.score.toFixed(3)})
