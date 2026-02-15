@@ -15,7 +15,7 @@ ROAD_GEOJSON = DATA_ROOT / "Data" / "Roadway.geojson"
 ROAD_CACHE = ROAD_GEOJSON.with_suffix(".roadtypes.pkl")
 ROAD_SNAP_TOLERANCE_M = 120.0
 SECONDARY_SNAP_TOLERANCE_M = 300.0
-DEFAULT_SNAP_WEIGHT_SHARE = 0.8
+DEFAULT_SNAP_WEIGHT_SHARE = 0.9
 
 
 @lru_cache(maxsize=1)
@@ -33,7 +33,7 @@ def _get_road_type_network() -> RoadTypeNetwork:
 def get_road_types(
     lat: float = Query(..., description="Latitude of center"),
     lon: float = Query(..., description="Longitude of center"),
-    radius_km: float = Query(0.3, gt=0, description="Search radius in kilometers (default 0.3 km)."),
+    radius_km: float = Query(1.0, gt=0, description="Search radius in kilometers (default 1.0 km)."),
     decay_scale_km: float = Query(0.3, gt=0, description="Exponential decay scale in kilometers for weighting (default 0.3 km)."),
 ) -> Any:
     try:
@@ -110,7 +110,7 @@ def _normalize_weight(weight: float, min_weight: float, max_weight: float) -> fl
 def get_summary_accessibility(
     lat: float = Query(..., description="Latitude of center"),
     lon: float = Query(..., description="Longitude of center"),
-    radius_km: float = Query(0.3, gt=0, description="Search radius in kilometers (default 0.3 km)."),
+    radius_km: float = Query(1.0, gt=0, description="Search radius in kilometers (default 1.0 km)."),
     decay_scale_km: float = Query(0.3, gt=0, description="Exponential decay scale in kilometers for weighting (default 0.3 km)."),
     snap_weight_share: float = Query(
         DEFAULT_SNAP_WEIGHT_SHARE,

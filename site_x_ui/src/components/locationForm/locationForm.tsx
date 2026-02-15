@@ -76,6 +76,24 @@ const DEFAULT_TOLET_POINTS: Array<{ lat: number; lng: number }> = [
   { lat: 27.671860, lng: 85.425960 },
 ];
 
+type ToLetEntry = {
+  key: string;
+  lat: number;
+  lng: number;
+  title: string;
+  ratePerMonth?: number;
+  url?: string;
+  images: string[];
+};
+
+const TOLET_IMAGE_BY_INDEX: Array<string[]> = [
+  ["1-nagadesh.jpg"],
+  ["2.jpg", "2-2.jpg"],
+  ["3.jpg"],
+  ["4.jpg", "4-2.jpg"],
+  ["5.jpg"],
+];
+
 const MAP_BOUNDS_SW = L.latLng(27.6164, 85.3459);
 const MAP_BOUNDS_NE = L.latLng(27.7536, 85.4841);
 const MAP_BOUNDS = L.latLngBounds(MAP_BOUNDS_SW, MAP_BOUNDS_NE);
@@ -289,6 +307,7 @@ export default function LocationForm() {
   const [analysisMode, setAnalysisMode] = useState<"point" | "tolet">("point");
   const [pointList, setPointList] = useState<Array<{ lat: number; lng: number }>>([]);
   const [toLetList, setToLetList] = useState<Array<{ lat: number; lng: number }>>(DEFAULT_TOLET_POINTS);
+  const [toLetEntries, setToLetEntries] = useState<ToLetEntry[]>([]);
   const [toLetSelected, setToLetSelected] = useState<Record<string, boolean>>({});
   const [pointSelected, setPointSelected] = useState<Record<string, boolean>>({});
   const [hoverToLet, setHoverToLet] = useState<{ lat: number; lng: number } | null>(null);
@@ -353,6 +372,14 @@ export default function LocationForm() {
       .map((p: { lat: number; lng: number }) => `${Number(p.lat).toFixed(6)},${Number(p.lng).toFixed(6)}`)
       .join(";");
 
+    const rentIndexes = analysisMode === "tolet"
+      ? listForSubmit.map((p) => {
+        const key = toKey(p);
+        const idx = toLetEntries.findIndex((entry) => entry.key === key);
+        return idx >= 0 ? idx : -1;
+      })
+      : [];
+
     // navigate to React result route (reads query params)
     const params = new URLSearchParams({
       name: String(name || ""),
@@ -362,6 +389,7 @@ export default function LocationForm() {
       lng: String(primary.lng),
     });
     if (pointsParam) params.set("points", pointsParam);
+    if (rentIndexes.length) params.set("rent", rentIndexes.join(","));
     // navigate to /result so SPA can handle it; fallback to result.html if not routed
     try {
       window.location.href = `/result?${params.toString()}`;
@@ -422,6 +450,12 @@ export default function LocationForm() {
   const selectedToLetList = useMemo(() => {
     return toLetList.filter((p) => toLetSelected[toKey(p)]);
   }, [toLetList, toLetSelected]);
+
+  const toLetEntryByKey = useMemo(() => {
+    const map = new Map<string, ToLetEntry>();
+    toLetEntries.forEach((entry) => map.set(entry.key, entry));
+    return map;
+  }, [toLetEntries]);
 
   const selectedPointList = useMemo(() => {
     return pointList.filter((p) => pointSelected[toKey(p)]);
@@ -856,6 +890,71 @@ export default function LocationForm() {
     return rows;
   };
 
+  const parseToLetCsv = (text: string) => {
+    const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);
+    if (!lines.length) return [];
+    const firstCols = parseCsvLine(lines[0]).map((v) => v.trim());
+    const hasHeader = firstCols.some((v) => v.toLowerCase() === "lat" || v.toLowerCase() === "lng");
+    const headers = hasHeader ? firstCols.map((h) => h.toLowerCase()) : [];
+    const startIdx = hasHeader ? 1 : 0;
+    const rows: Array<{ lat: number; lng: number; title: string; ratePerMonth?: number; url?: string }> = [];
+    for (let i = startIdx; i < lines.length; i++) {
+      const cols = parseCsvLine(lines[i]);
+      if (cols.length < 2) continue;
+      const latVal = Number(hasHeader ? cols[headers.indexOf("lat")] : cols[0]);
+      const lngVal = Number(hasHeader ? cols[headers.indexOf("lng")] : cols[1]);
+      if (!Number.isFinite(latVal) || !Number.isFinite(lngVal)) continue;
+      const title = (hasHeader ? cols[headers.indexOf("description")] : cols[2]) ?? "";
+      const rateRaw = (hasHeader ? cols[headers.indexOf("rate_per_month")] : cols[3]) ?? "";
+      const url = (hasHeader ? cols[headers.indexOf("url")] : cols[4]) ?? "";
+      const ratePerMonth = Number(rateRaw);
+      rows.push({
+        lat: latVal,
+        lng: lngVal,
+        title: String(title || "").trim(),
+        ratePerMonth: Number.isFinite(ratePerMonth) ? ratePerMonth : undefined,
+        url: String(url || "").trim() || undefined,
+      });
+    }
+    return rows;
+  };
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const res = await fetch("/data/to-let/listings.csv");
+        if (!res.ok) return;
+        const txt = await res.text();
+        const parsed = parseToLetCsv(txt);
+        if (!parsed.length) return;
+        const entries: ToLetEntry[] = parsed.map((row, idx) => {
+          const key = `${row.lat.toFixed(6)},${row.lng.toFixed(6)}`;
+          const imageNames = TOLET_IMAGE_BY_INDEX[idx] || [];
+          const images = imageNames.map((name) => `/data/to-let/${name}`);
+          return {
+            key,
+            lat: row.lat,
+            lng: row.lng,
+            title: row.title || `To-let ${idx + 1}`,
+            ratePerMonth: row.ratePerMonth,
+            url: row.url,
+            images,
+          };
+        });
+        if (mounted) {
+          setToLetEntries(entries);
+          setToLetList(entries.map((e) => ({ lat: e.lat, lng: e.lng })));
+        }
+      } catch (e) {
+        // ignore
+      }
+    })();
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
   const loadCsvIfNeeded = async () => {
     if (csvRows) return csvRows;
     try {
@@ -938,10 +1037,96 @@ export default function LocationForm() {
     }
   }, [showPlaces]);
 
+  const renderToLetList = () => {
+    const entries = toLetEntries.length
+      ? toLetEntries
+      : toLetList.map((p, idx) => ({
+        key: toKey(p),
+        lat: p.lat,
+        lng: p.lng,
+        title: `To-let ${idx + 1}`,
+        url: undefined,
+        images: [],
+      }));
+
+    return (
+      <div className="max-h-[78vh] overflow-auto text-sm">
+        {entries.length === 0 ? (
+          <div className="text-muted-foreground text-xs">No to-let locations added.</div>
+        ) : (
+          <ul className="space-y-3">
+            {entries.map((entry, idx) => {
+              const key = entry.key;
+              const isSelected = !!toLetSelected[key];
+              const hasImages = entry.images && entry.images.length > 0;
+              return (
+                <li
+                  key={`tolet-${idx}`}
+                  className="rounded-lg overflow-hidden border border-slate-100"
+                  onMouseEnter={() => {
+                    setLat(entry.lat);
+                    setLng(entry.lng);
+                    mapRef.current?.flyTo([entry.lat, entry.lng], 18);
+                    if (!isSelected) setHoverToLet({ lat: entry.lat, lng: entry.lng });
+                  }}
+                  onMouseLeave={() => {
+                    mapRef.current?.flyTo([lat, lng], 16);
+                    if (!isSelected) setHoverToLet(null);
+                  }}
+                >
+                  <label className="flex items-start gap-2 p-2">
+                    <input
+                      type="checkbox"
+                      checked={isSelected}
+                      onChange={(e) => setToLetSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
+                      className="mt-1"
+                    />
+                    <div className="flex-1">
+                      <div className="w-full aspect-[4/3] bg-slate-100">
+                        {hasImages ? (
+                          <img
+                            src={entry.images[0]}
+                            alt={entry.title}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-[11px] text-slate-400">
+                            No image
+                          </div>
+                        )}
+                      </div>
+                      <div className="flex items-center justify-between gap-2 mt-2">
+                        <div className="font-semibold text-sm truncate">{entry.title}</div>
+                        {entry.url && (
+                          <a
+                            href={entry.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs text-slate-600 hover:underline whitespace-nowrap"
+                          >
+                            View
+                          </a>
+                        )}
+                      </div>
+                      {entry.ratePerMonth != null && (
+                        <div className="mt-1 text-xs text-slate-600">Rs {entry.ratePerMonth.toLocaleString()} / month</div>
+                      )}
+                    </div>
+                  </label>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-gray-50">
       {/* ---------- LEFT SIDE – FORM (desktop) ---------- */}
-      <div className="hidden md:block w-full md:w-96 liquid-glass shadow-lg overflow-y-auto p-8 md:p-10 flex-shrink-0 border-r">
+      <div className="hidden md:block w-full md:w-[28rem] liquid-glass shadow-lg overflow-y-auto p-3 md:p-4 flex-shrink-0 border-r">
         <Card className="border-0 shadow-none">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center gap-3 text-2xl font-semibold">
@@ -950,7 +1135,7 @@ export default function LocationForm() {
             </CardTitle>
           </CardHeader>
 
-          <CardContent>
+          <CardContent className={analysisMode === "tolet" ? "p-2" : undefined}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name">Cafe Name</Label>
@@ -1079,67 +1264,14 @@ export default function LocationForm() {
                       Clear selection
                     </Button>
                   </div>
-                  <div className="max-h-40 overflow-auto rounded border p-2 text-sm">
-                    {toLetList.length === 0 ? (
-                      <div className="text-muted-foreground text-xs">No to-let locations added.</div>
-                    ) : (
-                      <ul className="space-y-1">
-                        {toLetList.map((p, idx) => {
-                          const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
-                          const isSelected = !!toLetSelected[key];
-                          return (
-                            <li
-                              key={`tolet-${idx}`}
-                              className="flex items-center gap-2"
-                              onMouseEnter={() => {
-                                mapRef.current?.flyTo([p.lat, p.lng], 18);
-                                setLat(p.lat);
-                                setLng(p.lng);
-                                if (!isSelected) setHoverToLet(p);
-                              }}
-                              onMouseLeave={() => {
-                                mapRef.current?.flyTo([lat, lng], 16);
-                                if (!isSelected) setHoverToLet(null);
-                              }}
-                            >
-                              <input
-                                type="checkbox"
-                                checked={isSelected}
-                                onChange={(e) => setToLetSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
-                              />
-                              <span className="font-mono">{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    )}
-                  </div>
-                  <div className="rounded border p-2 text-sm">
-                    <div className="text-xs text-muted-foreground mb-1">Selected points</div>
-                    {selectedToLetList.length === 0 ? (
-                      <div className="text-muted-foreground text-xs">None selected.</div>
-                    ) : (
-                      <ul className="space-y-1">
-                        {selectedToLetList.map((p, idx) => (
-                          <li
-                            key={`tolet-selected-${idx}`}
-                            className="font-mono text-xs"
-                            onMouseEnter={() => mapRef.current?.flyTo([p.lat, p.lng], 18)}
-                            onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
-                          >
-                            {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                  {renderToLetList()}
                 </div>
               )}
 
 
               <div className="space-y-2">
                 <Button type="submit" className="w-full py-3">
-                  Submit Location
+                  View Results
                 </Button>
               </div>
               {/* Dataset selector moved to Places panel */}
@@ -1192,7 +1324,7 @@ export default function LocationForm() {
             </div>
 
             <Card className="border-0 shadow-none">
-              <CardContent>
+              <CardContent className={analysisMode === "tolet" ? "p-2" : undefined}>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <Label htmlFor="name">Cafe Name</Label>
@@ -1332,64 +1464,7 @@ export default function LocationForm() {
                           Clear selection
                         </Button>
                       </div>
-                      <div className="max-h-40 overflow-auto rounded border p-2 text-sm">
-                        {toLetList.length === 0 ? (
-                          <div className="text-muted-foreground text-xs">No to-let locations added.</div>
-                        ) : (
-                          <ul className="space-y-1">
-                            {toLetList.map((p, idx) => {
-                              const key = `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
-                              const isSelected = !!toLetSelected[key];
-                              return (
-                                <li
-                                  key={`tolet-${idx}`}
-                                  className="flex items-center gap-2"
-                                  onMouseEnter={() => {
-                                    setLat(p.lat);
-                                    setLng(p.lng);
-                                    mapRef.current?.flyTo([p.lat, p.lng], 18);
-                                    if (!isSelected) setHoverToLet(p);
-                                  }}
-                                  onMouseLeave={() => {
-                                    mapRef.current?.flyTo([lat, lng], 16);
-                                    if (!isSelected) setHoverToLet(null);
-                                  }}
-                                >
-                                  <input
-                                    type="checkbox"
-                                    checked={isSelected}
-                                    onChange={(e) => setToLetSelected((prev) => ({ ...prev, [key]: e.target.checked }))}
-                                  />
-                                  <span className="font-mono">{`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}</span>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        )}
-                      </div>
-                      <div className="rounded border p-2 text-sm">
-                        <div className="text-xs text-muted-foreground mb-1">Selected points</div>
-                        {selectedToLetList.length === 0 ? (
-                          <div className="text-muted-foreground text-xs">None selected.</div>
-                        ) : (
-                          <ul className="space-y-1">
-                            {selectedToLetList.map((p, idx) => (
-                              <li
-                                key={`tolet-selected-${idx}`}
-                                className="font-mono text-xs"
-                                onMouseEnter={() => {
-                                  setLat(p.lat);
-                                  setLng(p.lng);
-                                  mapRef.current?.flyTo([p.lat, p.lng], 18);
-                                }}
-                                onMouseLeave={() => mapRef.current?.flyTo([lat, lng], 16)}
-                              >
-                                {`${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`}
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
+                      {renderToLetList()}
                     </div>
                   )}
 
@@ -1407,7 +1482,7 @@ export default function LocationForm() {
 
                   <div className="space-y-2">
                     <Button type="submit" className="w-full py-3">
-                      Submit Location
+                      View Results
                     </Button>
                   </div>
                   {/* Dataset selector moved to Places panel */}

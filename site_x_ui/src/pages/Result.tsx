@@ -46,6 +46,15 @@ type PoiApiItem = {
     [key: string]: unknown;
 };
 type Poi = { name: string; lat: number; lng: number; weight: number; distance_km: number; subcategory?: string; raw?: PoiApiItem };
+type ToLetEntry = {
+    key: string;
+    lat: number;
+    lng: number;
+    title: string;
+    ratePerMonth?: number;
+    url?: string;
+    images: string[];
+};
 type CommonPoi = {
     key: string;
     name: string;
@@ -66,6 +75,67 @@ type AccessibilityResponse = { score?: number };
 type PredictionResponse = { predictions?: Array<{ lat: number; lon: number; score: number; risk_level?: string }> };
 
 type PoisByCategory = Record<string, Poi[]>;
+
+const TOLET_IMAGE_BY_INDEX: Array<string[]> = [
+    ["1-nagadesh.jpg"],
+    ["2.jpg", "2-2.jpg"],
+    ["3.jpg"],
+    ["4.jpg", "4-2.jpg"],
+    ["5.jpg"],
+];
+
+function parseCsvLine(line: string) {
+    const out: string[] = [];
+    let cur = "";
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+            if (inQuotes && i + 1 < line.length && line[i + 1] === '"') {
+                cur += '"';
+                i++;
+            } else {
+                inQuotes = !inQuotes;
+            }
+        } else if (ch === ',' && !inQuotes) {
+            out.push(cur);
+            cur = "";
+        } else {
+            cur += ch;
+        }
+    }
+    out.push(cur);
+    return out;
+}
+
+function parseToLetCsv(text: string) {
+    const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);
+    if (!lines.length) return [];
+    const firstCols = parseCsvLine(lines[0]).map((v) => v.trim());
+    const hasHeader = firstCols.some((v) => v.toLowerCase() === "lat" || v.toLowerCase() === "lng");
+    const headers = hasHeader ? firstCols.map((h) => h.toLowerCase()) : [];
+    const startIdx = hasHeader ? 1 : 0;
+    const rows: Array<{ lat: number; lng: number; title: string; ratePerMonth?: number; url?: string }> = [];
+    for (let i = startIdx; i < lines.length; i++) {
+        const cols = parseCsvLine(lines[i]);
+        if (cols.length < 2) continue;
+        const latVal = Number(hasHeader ? cols[headers.indexOf("lat")] : cols[0]);
+        const lngVal = Number(hasHeader ? cols[headers.indexOf("lng")] : cols[1]);
+        if (!Number.isFinite(latVal) || !Number.isFinite(lngVal)) continue;
+        const title = (hasHeader ? cols[headers.indexOf("description")] : cols[2]) ?? "";
+        const rateRaw = (hasHeader ? cols[headers.indexOf("rate_per_month")] : cols[3]) ?? "";
+        const url = (hasHeader ? cols[headers.indexOf("url")] : cols[4]) ?? "";
+        const ratePerMonth = Number(rateRaw);
+        rows.push({
+            lat: latVal,
+            lng: lngVal,
+            title: String(title || "").trim(),
+            ratePerMonth: Number.isFinite(ratePerMonth) ? ratePerMonth : undefined,
+            url: String(url || "").trim() || undefined
+        });
+    }
+    return rows;
+}
 
 function parsePoints(raw: string, fallbackLat: number, fallbackLng: number): Point[] {
     const cleaned = (raw || "").trim();
@@ -98,6 +168,7 @@ export default function ResultPage() {
     const lng = parseFloat(qs("lng") || "0");
     const mode = qs("mode") || "point";
     const pick = qs("pick") || (qs("points") ? "multiple" : "single");
+    const rentParam = qs("rent");
     const pointsParam = qs("points");
     const points = useMemo(() => parsePoints(pointsParam, lat, lng), [pointsParam, lat, lng]);
     const center = useMemo(() => {
@@ -113,6 +184,7 @@ export default function ResultPage() {
     const accessibilityCacheRef = useRef<Map<string, Record<string, number>>>(new Map());
     const predictionCacheRef = useRef<Map<string, Record<string, { score: number; risk_level?: string }>>>(new Map());
     const aiCacheRef = useRef<Map<string, string>>(new Map());
+    const [toLetEntries, setToLetEntries] = useState<ToLetEntry[]>([]);
     const [selectedPointIdx, setSelectedPointIdx] = useState<number>(0);
     const [viewMode, setViewMode] = useState<"single" | "compare">("single");
     const [comparePointIdxA, setComparePointIdxA] = useState<number>(0);
@@ -173,6 +245,14 @@ export default function ResultPage() {
         return Math.max(0, Math.min(raw * 25, PREDICTION_DISPLAY_MAX));
     };
 
+    const rentIndexes = useMemo(() => {
+        if (!rentParam) return [] as Array<number | null>;
+        return rentParam.split(",").map((v) => {
+            const n = Number(v);
+            return Number.isFinite(n) ? Math.trunc(n) : null;
+        });
+    }, [rentParam]);
+
     const clampPct = (value?: number | null) => {
         const raw = Number(value);
         if (!Number.isFinite(raw)) return null;
@@ -228,6 +308,54 @@ export default function ResultPage() {
         if (points.length === 0) return;
         setSelectedPointIdx(comparePointIdxA);
     }, [viewMode, comparePointIdxA, points.length]);
+
+    useEffect(() => {
+        let mounted = true;
+        if (mode !== "tolet" && !rentParam) return () => { mounted = false; };
+        (async () => {
+            try {
+                const res = await fetch("/data/to-let/listings.csv");
+                if (!res.ok) return;
+                const txt = await res.text();
+                const parsed = parseToLetCsv(txt);
+                const entries: ToLetEntry[] = parsed.map((row, idx) => {
+                    const key = `${row.lat.toFixed(6)},${row.lng.toFixed(6)}`;
+                    const imageNames = TOLET_IMAGE_BY_INDEX[idx] || [];
+                    const images = imageNames.map((img) => `/data/to-let/${img}`);
+                    return {
+                        key,
+                        lat: row.lat,
+                        lng: row.lng,
+                        title: row.title || `To-let ${idx + 1}`,
+                        ratePerMonth: row.ratePerMonth,
+                        url: row.url,
+                        images
+                    };
+                });
+                if (mounted) setToLetEntries(entries);
+            } catch {
+                // ignore
+            }
+        })();
+        return () => { mounted = false; };
+    }, [mode, rentParam]);
+
+    const pointMeta = useMemo(() => {
+        return points.map((p, idx) => {
+            const rentIdx = rentIndexes[idx];
+            const entry = rentIdx != null && rentIdx >= 0 ? toLetEntries[rentIdx] : null;
+            const label = entry?.title || (name ? name : `Point ${idx + 1}`);
+            const image = entry?.images?.[0] || null;
+            return {
+                key: `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`,
+                label,
+                image,
+                entry
+            };
+        });
+    }, [points, rentIndexes, toLetEntries, name]);
+
+    const selectedPointMeta = pointMeta[selectedPointIdx] || null;
 
     useEffect(() => {
         if (points.length < 2) {
@@ -1093,12 +1221,31 @@ export default function ResultPage() {
 
                         {viewMode === 'single' && (
                             <>
+                                {selectedPointMeta && (
+                                    <div style={{ marginTop: 10, display: 'flex', gap: 12, alignItems: 'center', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: 10, padding: 10 }}>
+                                        {selectedPointMeta.image && (
+                                            <img
+                                                src={selectedPointMeta.image}
+                                                alt={selectedPointMeta.label}
+                                                style={{ width: 72, height: 72, borderRadius: 10, objectFit: 'cover' }}
+                                            />
+                                        )}
+                                        <div>
+                                            <div style={{ fontWeight: 800 }}>{selectedPointMeta.label}</div>
+                                            {selectedPointMeta.entry?.ratePerMonth != null && (
+                                                <div style={{ fontSize: 12, color: '#475569', marginTop: 2 }}>{`Rs ${selectedPointMeta.entry.ratePerMonth.toLocaleString()} / month`}</div>
+                                            )}
+                                            <div style={{ fontSize: 12, color: '#64748b' }}>{selectedPointKey}</div>
+                                        </div>
+                                    </div>
+                                )}
                                 {points.length > 1 && (
                                     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10, marginTop: 10 }}>
                                         {points.map((p: Point, idx: number) => (
                                             <button
                                                 key={`pt-top-${idx}`}
                                                 onClick={() => setSelectedPointIdx(idx)}
+                                                title={pointMeta[idx]?.label || `P${idx + 1}`}
                                                 style={{
                                                     padding: '4px 10px',
                                                     borderRadius: 14,
@@ -1110,7 +1257,7 @@ export default function ResultPage() {
                                                     fontWeight: 600
                                                 }}
                                             >
-                                                {`P${idx + 1}`}
+                                                {pointMeta[idx]?.label || `P${idx + 1}`}
                                             </button>
                                         ))}
                                     </div>
@@ -1119,67 +1266,99 @@ export default function ResultPage() {
                         )}
 
                         {viewMode === 'compare' && points.length > 1 && (
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 12 }}>
-                                <div>
-                                    <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>A</div>
-                                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                                        {points.map((p: Point, idx: number) => (
-                                            <button
-                                                key={`pt-a-${idx}`}
-                                                onClick={() => {
-                                                    setComparePointIdxA(idx);
-                                                    setSelectedPointIdx(idx);
-                                                    if (idx === comparePointIdxB) {
-                                                        setComparePointIdxB(idx === 0 ? 1 : 0);
-                                                    }
-                                                }}
-                                                style={{
-                                                    padding: '4px 10px',
-                                                    borderRadius: 14,
-                                                    border: '1px solid #e2e8f0',
-                                                    background: comparePointIdxA === idx ? '#0f172a' : '#ffffff',
-                                                    color: comparePointIdxA === idx ? '#ffffff' : '#64748b',
-                                                    fontSize: 12,
-                                                    cursor: 'pointer',
-                                                    fontWeight: 600
-                                                }}
-                                            >
-                                                {`P${idx + 1}`}
-                                            </button>
-                                        ))}
+                            <>
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 12 }}>
+                                    {[
+                                        { label: 'A', idx: comparePointIdxA },
+                                        { label: 'B', idx: comparePointIdxB }
+                                    ].map((item) => {
+                                        const meta = pointMeta[item.idx];
+                                        if (!meta) return null;
+                                        return (
+                                            <div key={`compare-meta-${item.label}`} style={{ border: '1px solid #e2e8f0', borderRadius: 10, padding: 10, background: '#f8fafc', display: 'flex', gap: 10, alignItems: 'center' }}>
+                                                {meta.image && (
+                                                    <img
+                                                        src={meta.image}
+                                                        alt={meta.label}
+                                                        style={{ width: 64, height: 64, borderRadius: 10, objectFit: 'cover' }}
+                                                    />
+                                                )}
+                                                <div style={{ flex: 1 }}>
+                                                    <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700 }}>{item.label}</div>
+                                                    <div style={{ fontWeight: 800 }}>{meta.label}</div>
+                                                    {meta.entry?.ratePerMonth != null && (
+                                                        <div style={{ fontSize: 12, color: '#475569', marginTop: 2 }}>{`Rs ${meta.entry.ratePerMonth.toLocaleString()} / month`}</div>
+                                                    )}
+                                                    <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>{meta.key}</div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 12 }}>
+                                    <div>
+                                        {/* <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>A</div> */}
+                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                            {points.map((p: Point, idx: number) => (
+                                                <button
+                                                    key={`pt-a-${idx}`}
+                                                    onClick={() => {
+                                                        setComparePointIdxA(idx);
+                                                        setSelectedPointIdx(idx);
+                                                        if (idx === comparePointIdxB) {
+                                                            setComparePointIdxB(idx === 0 ? 1 : 0);
+                                                        }
+                                                    }}
+                                                    title={pointMeta[idx]?.label || `P${idx + 1}`}
+                                                    style={{
+                                                        padding: '4px 10px',
+                                                        borderRadius: 14,
+                                                        border: '1px solid #e2e8f0',
+                                                        background: comparePointIdxA === idx ? '#0f172a' : '#ffffff',
+                                                        color: comparePointIdxA === idx ? '#ffffff' : '#64748b',
+                                                        fontSize: 12,
+                                                        cursor: 'pointer',
+                                                        fontWeight: 600
+                                                    }}
+                                                >
+                                                    {pointMeta[idx]?.label || `P${idx + 1}`}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        {/* <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>B</div> */}
+                                        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                                            {points.map((p: Point, idx: number) => (
+                                                <button
+                                                    key={`pt-b-${idx}`}
+                                                    onClick={() => {
+                                                        setComparePointIdxB(idx);
+                                                        if (idx === comparePointIdxA) {
+                                                            const nextA = idx === 0 ? 1 : 0;
+                                                            setComparePointIdxA(nextA);
+                                                            setSelectedPointIdx(nextA);
+                                                        }
+                                                    }}
+                                                    title={pointMeta[idx]?.label || `P${idx + 1}`}
+                                                    style={{
+                                                        padding: '4px 10px',
+                                                        borderRadius: 14,
+                                                        border: '1px solid #e2e8f0',
+                                                        background: comparePointIdxB === idx ? '#0f172a' : '#ffffff',
+                                                        color: comparePointIdxB === idx ? '#ffffff' : '#64748b',
+                                                        fontSize: 12,
+                                                        cursor: 'pointer',
+                                                        fontWeight: 600
+                                                    }}
+                                                >
+                                                    {pointMeta[idx]?.label || `P${idx + 1}`}
+                                                </button>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div style={{ fontSize: 12, color: '#64748b', fontWeight: 700, marginBottom: 6 }}>B</div>
-                                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                                        {points.map((p: Point, idx: number) => (
-                                            <button
-                                                key={`pt-b-${idx}`}
-                                                onClick={() => {
-                                                    setComparePointIdxB(idx);
-                                                    if (idx === comparePointIdxA) {
-                                                        const nextA = idx === 0 ? 1 : 0;
-                                                        setComparePointIdxA(nextA);
-                                                        setSelectedPointIdx(nextA);
-                                                    }
-                                                }}
-                                                style={{
-                                                    padding: '4px 10px',
-                                                    borderRadius: 14,
-                                                    border: '1px solid #e2e8f0',
-                                                    background: comparePointIdxB === idx ? '#0f172a' : '#ffffff',
-                                                    color: comparePointIdxB === idx ? '#ffffff' : '#64748b',
-                                                    fontSize: 12,
-                                                    cursor: 'pointer',
-                                                    fontWeight: 600
-                                                }}
-                                            >
-                                                {`P${idx + 1}`}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
+                            </>
                         )}
                     </div>
                 )}
@@ -1238,9 +1417,10 @@ export default function ResultPage() {
                                 {selectedTargets.map((t) => {
                                     const summary = pointSummaries.find((s) => s.key === t.key) || null;
                                     const poiPct = getPoiScorePercent(summary?.totalScore);
+                                    const label = pointMeta[t.idx]?.label || `P${t.idx + 1}`;
                                     return (
                                         <div key={`compare-insights-${t.key}`} style={{ border: '1px solid #e2e8f0', borderRadius: 12, padding: 12, background: "#f8fafc" }}>
-                                            <div style={{ fontWeight: 800, marginBottom: 6 }}>{`${t.label}: P${t.idx + 1}`}</div>
+                                            <div style={{ fontWeight: 800, marginBottom: 6 }}>{`${t.label}: ${label}`}</div>
                                             <div style={{ fontWeight: 700, fontSize: 12, color: '#475569' }}>Accessibility</div>
                                             <div style={{ height: 10, background: "#f1f5f9", borderRadius: 6, marginTop: 6 }}>
                                                 <div style={{ height: 10, width: `${Math.min(Number(t.accessibility ?? 0) || 0, 100)}%`, background: "linear-gradient(90deg,#16a34a,#06b6d4)", borderRadius: 6, transition: "width 0.5s" }} />
@@ -1373,6 +1553,48 @@ export default function ResultPage() {
                                 </>
                             )}
                         </div>
+                        <div style={{ marginTop: 16, border: "1px solid #e2e8f0", borderRadius: 12, overflow: "hidden", background: "#f8fafc" }}>
+                            {/* <div style={{ padding: "10px 12px", fontWeight: 700, borderBottom: "1px solid #e2e8f0" }}>
+                                Location Map
+                            </div> */}
+                            <div style={{ width: "100%", height: 260 }}>
+                                {viewMode === "compare" && selectedTargets.length >= 2 ? (
+                                    <MapContainer
+                                        key={`insight-map-compare-${comparePointIdxA}-${comparePointIdxB}`}
+                                        center={[
+                                            (selectedTargets[0].point.lat + selectedTargets[1].point.lat) / 2,
+                                            (selectedTargets[0].point.lng + selectedTargets[1].point.lng) / 2
+                                        ]}
+                                        zoom={15}
+                                        style={{ width: "100%", height: "100%" }}
+                                        scrollWheelZoom={false}
+                                    >
+                                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                                        <Marker
+                                            key={`insight-compare-a-${selectedTargets[0].key}`}
+                                            position={[selectedTargets[0].point.lat, selectedTargets[0].point.lng]}
+                                            icon={compareMarkerA}
+                                        />
+                                        <Marker
+                                            key={`insight-compare-b-${selectedTargets[1].key}`}
+                                            position={[selectedTargets[1].point.lat, selectedTargets[1].point.lng]}
+                                            icon={compareMarkerB}
+                                        />
+                                    </MapContainer>
+                                ) : (
+                                    <MapContainer
+                                        key={`insight-map-${selectedPointKey}`}
+                                        center={[selectedPoint.lat || 27.670587, selectedPoint.lng || 85.420868]}
+                                        zoom={16}
+                                        style={{ width: "100%", height: "100%" }}
+                                        scrollWheelZoom={false}
+                                    >
+                                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                                        <Marker key={`insight-point-${selectedPointKey}`} position={[selectedPoint.lat, selectedPoint.lng]} />
+                                    </MapContainer>
+                                )}
+                            </div>
+                        </div>
                     </div>
                 )}
 
@@ -1453,7 +1675,7 @@ export default function ResultPage() {
                                 <div style={{ width: 360, maxHeight: '72vh', overflowY: 'auto', borderLeft: '1px solid rgba(15,23,42,0.04)', paddingLeft: 8, position: 'relative' }}>
                                     <div style={{ position: 'sticky', top: 0, background: '#ffffff', zIndex: 10, paddingBottom: 8, paddingTop: 0 }}>
                                         <div style={{ fontWeight: 700, marginBottom: 4 }}>Nearby POIs</div>
-                                        <div style={{ fontSize: 13, color: '#64748b', marginBottom: 8 }}>{name}</div>
+                                        <div style={{ fontSize: 13, color: '#64748b', marginBottom: 8 }}>{selectedPointMeta?.label || name}</div>
 
                                         <div style={{ marginBottom: 8 }}>
                                             <input
@@ -1740,64 +1962,107 @@ export default function ResultPage() {
 
                 {points.length > 0 && ((viewMode === "compare" && comparePage === "explain") || (viewMode === "single" && singlePage === "explain")) && (
                     <div style={{ background: "#ffffff", padding: 18, borderRadius: 12, border: "1px solid rgba(15,23,42,0.06)", marginTop: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.05)", animation: "floatIn 0.5s ease" }}>
-                        {/* <h3 style={{ marginTop: 0 }}>Natural-language Explanation</h3> */}
-                        <button
-                            onClick={handleGenerateAi}
-                            disabled={!canGenerateAi || aiLoading}
-                            style={{
-                                padding: '8px 12px',
-                                borderRadius: 8,
-                                border: '1px solid #e2e8f0',
-                                background: canGenerateAi && !aiLoading ? '#0f172a' : '#f1f5f9',
-                                color: canGenerateAi && !aiLoading ? '#ffffff' : '#94a3b8',
-                                fontSize: 12,
-                                fontWeight: 600,
-                                cursor: canGenerateAi && !aiLoading ? 'pointer' : 'not-allowed',
-                                marginBottom: 8
-                            }}
-                        >
-                            {aiLoading ? 'Generating…' : 'Generate Explanation'}
-                        </button>
-                        {aiLoading && <div style={{ fontSize: 12, color: "#64748b" }}>Generating explanation…</div>}
-                        {aiError && <div style={{ fontSize: 12, color: "#ef4444" }}>{aiError}</div>}
-                        {aiExplanation && (
-                            <div style={{ whiteSpace: "pre-wrap", fontSize: 13, color: "#0f172a", marginTop: 6 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+                            <div>
+                                <div style={{ fontSize: 13, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.12em", fontWeight: 800 }}>Explanation</div>
+                                <div style={{ fontSize: 20, fontWeight: 900, color: "#0f172a" }}>Top contributors by category</div>
+                            </div>
+                            <div style={{ fontSize: 12, color: "#64748b" }}>Radius: {MAX_RADIUS_KM} km · decay: {DECAY_SCALE_KM} km</div>
+                        </div>
+
+                        {aiLoading && <div style={{ fontSize: 12, color: "#64748b", marginTop: 8 }}>Generating explanation…</div>}
+                        {aiError && <div style={{ fontSize: 12, color: "#ef4444", marginTop: 8 }}>{aiError}</div>}
+                        {aiExplanation ? (
+                            <div style={{ whiteSpace: "pre-wrap", fontSize: 13, color: "#0f172a", marginTop: 10, background: "#f8fafc", border: "1px solid #e2e8f0", padding: 12, borderRadius: 10 }}>
                                 {aiExplanation}
                             </div>
+                        ) : (
+                            <div style={{ fontSize: 13, color: "#64748b", marginTop: 10, background: "#f8fafc", border: "1px dashed #e2e8f0", padding: 12, borderRadius: 10 }}>
+                                Generate an explanation to see a detailed narrative of the top contributing POIs.
+                            </div>
                         )}
+
                         {pointSummaries.length > 0 && (
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12, marginTop: 10 }}>
+                            <div style={{ marginTop: 16, display: "grid", gap: 14 }}>
                                 {selectedTargets.map((t) => {
                                     const summary = pointSummaries.find((s) => s.key === t.key);
                                     if (!summary) return null;
                                     return (
-                                        <div key={`explain-summary-${summary.key}`} style={{ border: "1px solid #e2e8f0", borderRadius: 8, padding: 12 }}>
-                                            <div style={{ fontWeight: 800 }}>
-                                                {viewMode === 'compare' ? `${t.label}: P${t.idx + 1}` : (points.length > 1 ? `Point ${selectedPointIdx + 1}` : "Point")}
+                                        <div key={`explain-summary-${summary.key}`} style={{ border: "1px solid #e2e8f0", borderRadius: 12, padding: 14, background: "linear-gradient(135deg, rgba(248,250,252,1) 0%, rgba(255,255,255,1) 100%)" }}>
+                                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+                                                <div style={{ fontWeight: 900, fontSize: 14 }}>
+                                                    {viewMode === "compare"
+                                                        ? `${t.label}: ${pointMeta[t.idx]?.label || `P${t.idx + 1}`}`
+                                                        : (selectedPointMeta?.label || (points.length > 1 ? `Point ${selectedPointIdx + 1}` : "Point"))}
+                                                </div>
+                                                <div style={{ fontSize: 12, color: "#64748b" }}>{summary.key}</div>
                                             </div>
-                                            <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>{summary.key}</div>
-                                            <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
-                                                Total decayed contribution (within 0.3 km): <strong>{summary.totalScore.toFixed(3)}</strong>
+                                            <div style={{ marginTop: 6, fontSize: 12, color: "#475569" }}>
+                                                Total decayed contribution: <strong>{summary.totalScore.toFixed(3)}</strong>
                                             </div>
-                                            <div style={{ marginTop: 10 }}>
-                                                {summary.perCategory.map((catSummary) => (
-                                                    <div key={`${summary.key}-${catSummary.cat}`} style={{ marginBottom: 10 }}>
-                                                        <div style={{ fontWeight: 700, fontSize: 12 }}>{catSummary.cat}</div>
-                                                        {catSummary.topPois.length === 0 ? (
-                                                            <div style={{ fontSize: 12, color: "#94a3b8" }}>No POIs within 0.3 km.</div>
-                                                        ) : (
-                                                            <div style={{ fontSize: 12, color: "#475569" }}>
-                                                                Top contributors: {catSummary.topPois.slice(0, 3).map((poi) => poi.name).join(", ")}. (decayed sum: {catSummary.score.toFixed(3)})
-                                                            </div>
-                                                        )}
-                                                    </div>
-                                                ))}
+                                            <div style={{ marginTop: 12, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))", gap: 12 }}>
+                                                {summary.perCategory.map((catSummary) => {
+                                                    const chartData = catSummary.topPois.map((poi) => ({
+                                                        name: poi.name.length > 18 ? `${poi.name.slice(0, 17)}…` : poi.name,
+                                                        fullName: poi.name,
+                                                        value: Number(poi.decayed_weight) || 0
+                                                    }));
+                                                    return (
+                                                        <div key={`${summary.key}-${catSummary.cat}`} style={{ border: "1px solid #e2e8f0", borderRadius: 10, padding: 10, background: "#ffffff" }}>
+                                                            <div style={{ fontWeight: 800, fontSize: 12 }}>{catSummary.cat}</div>
+                                                            <div style={{ fontSize: 11, color: "#64748b", marginTop: 2 }}>Top contributors</div>
+                                                            {catSummary.topPois.length === 0 ? (
+                                                                <div style={{ fontSize: 12, color: "#94a3b8", marginTop: 8 }}>No POIs within {MAX_RADIUS_KM} km.</div>
+                                                            ) : (
+                                                                <div style={{ width: "100%", maxHeight: 220, marginTop: 6, overflowY: "auto", paddingRight: 4 }}>
+                                                                    <div style={{ height: Math.max(140, chartData.length * 28) }}>
+                                                                        <ResponsiveContainer>
+                                                                            <BarChart data={chartData} layout="vertical" margin={{ top: 6, right: 6, left: 6, bottom: 6 }}>
+                                                                                <XAxis type="number" tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                                                                                <YAxis type="category" dataKey="name" width={100} tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                                                                                <Tooltip
+                                                                                    formatter={(v) => Number(v as number).toFixed(3)}
+                                                                                    labelFormatter={(_, payload) => {
+                                                                                        const fullName = payload?.[0]?.payload?.fullName as string | undefined;
+                                                                                        return fullName || "POI";
+                                                                                    }}
+                                                                                />
+                                                                                <Bar dataKey="value" fill={chartColors[catSummary.cat as keyof typeof chartColors] || "#0ea5e9"} radius={[6, 6, 6, 6]} isAnimationActive animationDuration={800} />
+                                                                            </BarChart>
+                                                                        </ResponsiveContainer>
+                                                                    </div>
+                                                                </div>
+                                                            )}
+                                                            <div style={{ marginTop: 6, fontSize: 11, color: "#475569" }}>Decayed sum: {catSummary.score.toFixed(3)}</div>
+                                                        </div>
+                                                    );
+                                                })}
                                             </div>
                                         </div>
                                     );
                                 })}
                             </div>
                         )}
+
+                        <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: 10, marginTop: 16, paddingTop: 12, borderTop: "1px solid #e2e8f0" }}>
+                            {!canGenerateAi && <div style={{ fontSize: 12, color: "#94a3b8" }}>Load scores and POIs to enable explanation.</div>}
+                            <button
+                                onClick={handleGenerateAi}
+                                disabled={!canGenerateAi || aiLoading}
+                                style={{
+                                    padding: "8px 12px",
+                                    borderRadius: 8,
+                                    border: "1px solid #e2e8f0",
+                                    background: canGenerateAi && !aiLoading ? "#0f172a" : "#f1f5f9",
+                                    color: canGenerateAi && !aiLoading ? "#ffffff" : "#94a3b8",
+                                    fontSize: 12,
+                                    fontWeight: 700,
+                                    cursor: canGenerateAi && !aiLoading ? "pointer" : "not-allowed"
+                                }}
+                            >
+                                {aiLoading ? "Generating…" : "Generate Explanation"}
+                            </button>
+                        </div>
                     </div>
                 )}
             </div>

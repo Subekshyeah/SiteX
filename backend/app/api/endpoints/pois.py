@@ -294,7 +294,12 @@ def _network_path_map(
     return paths
 
 
-def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_scale_km: float = 1.0) -> Dict[str, Any]:
+def get_pois_with_paths(
+    lat: float,
+    lon: float,
+    radius_km: float = 0.3,
+    decay_scale_km: Optional[float] = None,
+) -> Dict[str, Any]:
     """Programmatic helper used by scripts/tests: return mapping of categories->items including path geometry.
 
     This mirrors the behavior of the / API route but is callable directly from Python code.
@@ -310,6 +315,7 @@ def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_sc
 
     road_network = _get_road_network()
     radius_m = float(radius_km) * 1000.0
+    effective_decay_km = radius_km if decay_scale_km is None else float(decay_scale_km)
 
     poi_files = {
         "cafes": "cafes.csv",
@@ -393,7 +399,7 @@ def get_pois_with_paths(lat: float, lon: float, radius_km: float = 0.3, decay_sc
                 except Exception:
                     base_weight = 0.0
                 try:
-                    weight_val = base_weight * math.exp(-float(d) / float(decay_scale_km))
+                    weight_val = base_weight * math.exp(-float(d) / float(effective_decay_km))
                 except Exception:
                     weight_val = base_weight
                 item: Dict[str, Any] = {"name": name, "lat": rlat, "lon": rlon, "distance_km": round(d, 4), "weight": round(weight_val, 4)}
@@ -411,7 +417,7 @@ def get_pois(
     lat: float = Query(..., description="Latitude of center"),
     lon: float = Query(..., description="Longitude of center"),
     radius_km: float = Query(0.3, gt=0, description="Search radius in kilometers (default 0.3 km). Use smaller radius for denser areas"),
-    decay_scale_km: float = Query(1.0, gt=0, description="Exponential decay scale in kilometers for distance weighting (default 1.0 km)"),
+    decay_scale_km: Optional[float] = Query(None, gt=0, description="Exponential decay scale in kilometers for distance weighting (defaults to radius_km)"),
     stream: bool = Query(False, description="If true, return a streaming (chunked) JSON response with categories as they become available"),
 ) -> Any:
     # locate project CSV folder relative to this file
@@ -426,6 +432,7 @@ def get_pois(
 
     road_network = _get_road_network()
     radius_m = radius_km * 1000.0
+    effective_decay_km = radius_km if decay_scale_km is None else float(decay_scale_km)
 
     poi_files = {
         "cafes": "cafes.csv",
@@ -526,7 +533,7 @@ def get_pois(
                     base_weight = 0.0
                 try:
                     # apply exponential decay based on distance (km)
-                    decayed = base_weight * math.exp(-float(d) / float(decay_scale_km))
+                    decayed = base_weight * math.exp(-float(d) / float(effective_decay_km))
                     weight_val = decayed
                 except Exception:
                     weight_val = base_weight
@@ -565,7 +572,7 @@ def get_pois_detailed(
     lat: float = Query(..., description="Latitude of center"),
     lon: float = Query(..., description="Longitude of center"),
     radius_km: float = Query(0.3, gt=0, description="Search radius in kilometers (default 0.3 km)."),
-    decay_scale_km: float = Query(1.0, gt=0, description="Exponential decay scale in kilometers for distance weighting (default 1.0 km)"),
+    decay_scale_km: Optional[float] = Query(None, gt=0, description="Exponential decay scale in kilometers for distance weighting (defaults to radius_km)"),
 ) -> Any:
     try:
         pois = get_pois_with_paths(lat=lat, lon=lon, radius_km=radius_km, decay_scale_km=decay_scale_km)
