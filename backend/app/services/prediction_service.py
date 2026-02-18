@@ -1,11 +1,34 @@
 import os
+import re
+from collections import Counter
+from functools import lru_cache
+from pathlib import Path
+from typing import Dict, Any, Optional, List, Tuple, Literal
+
 import joblib
 import pandas as pd
-import numpy as np
 import xgboost as xgb
-from scipy.spatial import distance
-from pathlib import Path
-from typing import Dict, Any, Optional
+
+from app.lib.road_type_network import ROAD_TYPE_WEIGHTS, RoadTypeNetwork
+from app.services.site_analysis_service import SiteAnalysisService
+
+
+ROAD_ACCESS_SCORE_FEATURES_0_100 = {
+    "road_access_score",
+    "road_access_score_0_100",
+    "road_accessibility_score",
+}
+ROAD_ACCESS_SCORE_FEATURES_0_1 = {
+    "road_access_score_0_1",
+    "road_accessibility",
+}
+DEFAULT_ROAD_SNAP_WEIGHT_SHARE = 0.9
+SCORE_BOOST_START = 1.8
+SCORE_MAX_FOR_SHAPING = 3.0
+SCORE_CURVE_POWER = 1.35
+SCORE_TAIL_BOOST = 0.35
+ACCESS_BONUS_THRESHOLD = 0.6
+ACCESS_BONUS_SCALE = 0.25
 
 class PredictionService:
     _instance = None
@@ -123,6 +146,106 @@ class PredictionService:
         else:
             print(f"Warning: Reference data not found at {data_path}")
 
+    @staticmethod
+    @lru_cache(maxsize=1)
+    def _get_road_type_network() -> Optional[RoadTypeNetwork]:
+        data_root = Path(__file__).resolve().parents[2]
+        road_geojson = data_root / "Data" / "Roadway.geojson"
+        road_cache = road_geojson.with_suffix(".roadtypes.pkl")
+        if not road_geojson.exists():
+            return None
+        try:
+            return RoadTypeNetwork.from_geojson(
+                road_geojson,
+                cache_path=road_cache,
+                snap_tolerance_m=120.0,
+            )
+        except Exception:
+            return None
+
+    def _compute_road_access_score(
+        self,
+        lat: float,
+        lng: float,
+        radius_km: float,
+        snap_weight_share: float = DEFAULT_ROAD_SNAP_WEIGHT_SHARE,
+    ) -> Optional[Dict[str, Any]]:
+        network = self._get_road_type_network()
+        if network is None:
+            return None
+
+        radius_m = float(radius_km) * 1000.0
+        result = network.road_type_distance_map(
+            lat,
+            lng,
+            radius_m,
+            secondary_snap_tolerance_m=300.0,
+        )
+        if result is None:
+            return None
+
+        start_types = result.get("start_types") or []
+        distances = result.get("distances") or {}
+
+        weights = list(ROAD_TYPE_WEIGHTS.values())
+        min_weight = min(weights) if weights else 0.0
+        max_weight = max(weights) if weights else 1.0
+
+        def normalize(weight: float) -> float:
+            if max_weight <= min_weight:
+                return 0.0
+            return max(0.0, min(1.0, (weight - min_weight) / (max_weight - min_weight)))
+
+        start_weight = 0.0
+        for road_type in start_types:
+            start_weight = max(start_weight, float(ROAD_TYPE_WEIGHTS.get(road_type, 1.0)))
+        snap_score = normalize(start_weight)
+
+        reachable_scores: List[float] = []
+        for road_type, dist_m in distances.items():
+            if road_type in start_types:
+                continue
+            distance_km = float(dist_m) / 1000.0
+            normalized_score = max(0.0, 1.0 - (distance_km / float(radius_km)))
+            weight = float(ROAD_TYPE_WEIGHTS.get(road_type, 1.0))
+            weighted_score = normalize(weight) * normalized_score
+            reachable_scores.append(weighted_score)
+
+        reachable_score = (sum(reachable_scores) / len(reachable_scores)) if reachable_scores else 0.0
+        share = float(snap_weight_share)
+        score_0_1 = (snap_score * share) + (reachable_score * (1.0 - share))
+        score_0_100 = max(0.0, min(100.0, score_0_1 * 100.0))
+
+        return {
+            "score_0_1": round(score_0_1, 6),
+            "score_0_100": round(score_0_100, 6),
+            "snap_score": round(snap_score, 6),
+            "reachable_score": round(reachable_score, 6),
+            "snap_weight_share": share,
+            "snap": {
+                "node_id": result.get("node_id"),
+                "snap_distance_m": result.get("snap_distance_m"),
+                "road_types": start_types,
+            },
+        }
+
+    def _shape_score(self, raw_score: float, access_score_0_1: Optional[float]) -> float:
+        score = float(raw_score)
+        max_score = float(SCORE_MAX_FOR_SHAPING)
+        if max_score > 0:
+            norm = max(0.0, min(score / max_score, 1.0))
+            base = pow(norm, SCORE_CURVE_POWER)
+            tail_start = float(SCORE_BOOST_START) / max_score
+            tail = max(0.0, norm - tail_start)
+            boosted = min(1.0, base + SCORE_TAIL_BOOST * pow(tail, 0.6))
+            score = boosted * max_score
+
+        if access_score_0_1 is not None and access_score_0_1 > ACCESS_BONUS_THRESHOLD:
+            bonus = (float(access_score_0_1) - ACCESS_BONUS_THRESHOLD) * ACCESS_BONUS_SCALE * max_score
+            score += bonus
+
+        return float(score)
+
     def _resolve_model_feature_names(self) -> Optional[list[str]]:
         if self.feature_names:
             return list(self.feature_names)
@@ -144,108 +267,254 @@ class PredictionService:
             return list(self.model.feature_names)
         return None
 
-    def predict(self, lat: float, lng: float, k_neighbors: int = 5) -> Dict[str, Any]:
+    def _extract_poi_feature_specs(self, feature_names: List[str]) -> Tuple[Dict[str, Dict[str, Any]], Optional[str]]:
+        pattern = re.compile(r"^(?P<category>.+)_(?P<kind>count|weight)_(?P<dist>\d+(?:\.\d+)?)_km$")
+        specs: Dict[str, Dict[str, Any]] = {}
+        counts = Counter()
+        for name in feature_names:
+            match = pattern.match(name)
+            if not match:
+                continue
+            dist_label = match.group("dist")
+            try:
+                dist_km = float(dist_label)
+            except Exception:
+                continue
+            spec = specs.setdefault(
+                dist_label,
+                {"distance_km": dist_km, "categories": set(), "kinds": set()},
+            )
+            spec["categories"].add(match.group("category"))
+            spec["kinds"].add(match.group("kind"))
+            counts[dist_label] += 1
+        primary = counts.most_common(1)[0][0] if counts else None
+        return specs, primary
+
+    def _compute_ring_metrics(
+        self,
+        lat: float,
+        lng: float,
+        radius_km: float,
+        decay_scale_km: Optional[float],
+        include_network: bool,
+        sort_by: Literal["auto", "haversine", "network"],
+    ) -> Dict[str, Any]:
+        svc = SiteAnalysisService()
+        effective_decay = float(decay_scale_km) if decay_scale_km is not None else float(radius_km)
+        summary = svc.ring_summary(
+            lat,
+            lng,
+            radii_km=(float(radius_km),),
+            categories=list(svc.POI_FILES.keys()),
+            decay_scale_km=effective_decay,
+            include_network=include_network,
+            sort_by=sort_by,
+        )
+        rings = summary.get("rings") or []
+        return rings[0] if rings else {"categories": {}, "totals": {}, "ratios": {}, "radius_km": radius_km}
+
+    def build_feature_payload(
+        self,
+        lat: float,
+        lng: float,
+        radius_km: Optional[float] = None,
+        decay_scale_km: Optional[float] = None,
+        include_network: bool = True,
+        sort_by: Literal["auto", "haversine", "network"] = "auto",
+        include_road_metrics: bool = False,
+        road_radius_km: Optional[float] = None,
+    ) -> Dict[str, Any]:
+        model_feature_names = self._resolve_model_feature_names() or []
+        poi_specs, primary_radius = self._extract_poi_feature_specs(model_feature_names)
+
+        if not poi_specs:
+            fallback_radius = float(radius_km) if radius_km is not None else 1.0
+            radius_label = f"{fallback_radius:g}"
+            poi_specs = {
+                radius_label: {
+                    "distance_km": fallback_radius,
+                    "categories": set(SiteAnalysisService.POI_FILES.keys()),
+                    "kinds": {"count", "weight"},
+                }
+            }
+            primary_radius = radius_label
+
+        features: Dict[str, float] = {"lat": float(lat), "lng": float(lng)}
+        ring_cache: Dict[str, Dict[str, Any]] = {}
+
+        for dist_label, spec in poi_specs.items():
+            radius_val = float(spec["distance_km"])
+            ring = self._compute_ring_metrics(
+                lat,
+                lng,
+                radius_val,
+                decay_scale_km=decay_scale_km,
+                include_network=include_network,
+                sort_by=sort_by,
+            )
+            ring_cache[dist_label] = ring
+            categories = spec["categories"] or set(SiteAnalysisService.POI_FILES.keys())
+            cat_payload = ring.get("categories") or {}
+            for cat in categories:
+                payload = cat_payload.get(cat, {})
+                if "count" in spec["kinds"]:
+                    features[f"{cat}_count_{dist_label}_km"] = float(payload.get("count") or 0.0)
+                if "weight" in spec["kinds"]:
+                    features[f"{cat}_weight_{dist_label}_km"] = float(payload.get("sum_weight") or 0.0)
+
+        if primary_radius is None:
+            primary_radius = next(iter(poi_specs.keys()))
+
+        primary_ring = ring_cache.get(primary_radius)
+        if primary_ring:
+            cat_payload = primary_ring.get("categories") or {}
+            base_categories = [
+                c for c in SiteAnalysisService.POI_FILES.keys() if c not in ("cafe", "cafes")
+            ]
+            total_count = 0.0
+            total_weight = 0.0
+            for cat in base_categories:
+                payload = cat_payload.get(cat, {})
+                total_count += float(payload.get("count") or 0.0)
+                total_weight += float(payload.get("sum_weight") or 0.0)
+
+            if "total_poi_count_km" in model_feature_names:
+                features["total_poi_count_km"] = float(total_count)
+            if "weighted_POI_strength" in model_feature_names:
+                features["weighted_POI_strength"] = float(total_weight)
+
+            eps = 1e-6
+            for name in model_feature_names:
+                if not name.endswith("_ratio"):
+                    continue
+                cat = name[: -len("_ratio")]
+                if cat not in base_categories:
+                    continue
+                payload = cat_payload.get(cat, {})
+                count_val = float(payload.get("count") or 0.0)
+                features[name] = float(count_val / (total_count + eps))
+
+            if "cafe_weight" in model_feature_names:
+                cafe_payload = cat_payload.get("cafes") or cat_payload.get("cafe") or {}
+                features["cafe_weight"] = float(cafe_payload.get("sum_weight") or 0.0)
+
+        needs_road = bool((set(model_feature_names) & ROAD_ACCESS_SCORE_FEATURES_0_100) or
+                          (set(model_feature_names) & ROAD_ACCESS_SCORE_FEATURES_0_1) or
+                          include_road_metrics)
+        road_payload = None
+        if needs_road:
+            road_radius = float(road_radius_km) if road_radius_km is not None else float(
+                poi_specs[primary_radius]["distance_km"] if primary_radius else 1.0
+            )
+            road_payload = self._compute_road_access_score(
+                float(lat),
+                float(lng),
+                road_radius,
+            )
+            if road_payload is not None:
+                for name in model_feature_names:
+                    if name in ROAD_ACCESS_SCORE_FEATURES_0_100:
+                        features[name] = float(road_payload["score_0_100"])
+                    if name in ROAD_ACCESS_SCORE_FEATURES_0_1:
+                        features[name] = float(road_payload["score_0_1"])
+
+        for col in model_feature_names:
+            if col not in features:
+                features[col] = 0.0
+
+        return {
+            "feature_names": model_feature_names,
+            "features": features,
+            "primary_radius_km": float(poi_specs[primary_radius]["distance_km"]) if primary_radius else None,
+            "rings": ring_cache,
+            "road_accessibility": road_payload,
+        }
+
+    def build_metrics_for_radius(
+        self,
+        lat: float,
+        lng: float,
+        radius_km: float,
+        decay_scale_km: Optional[float] = None,
+        include_network: bool = True,
+        sort_by: Literal["auto", "haversine", "network"] = "auto",
+    ) -> Dict[str, Any]:
+        radius_val = float(radius_km)
+        radius_label = f"{radius_val:g}"
+        ring = self._compute_ring_metrics(
+            lat,
+            lng,
+            radius_val,
+            decay_scale_km=decay_scale_km,
+            include_network=include_network,
+            sort_by=sort_by,
+        )
+        features: Dict[str, float] = {"lat": float(lat), "lng": float(lng)}
+        cat_payload = ring.get("categories") or {}
+        for cat in SiteAnalysisService.POI_FILES.keys():
+            payload = cat_payload.get(cat, {})
+            features[f"{cat}_count_{radius_label}_km"] = float(payload.get("count") or 0.0)
+            features[f"{cat}_weight_{radius_label}_km"] = float(payload.get("sum_weight") or 0.0)
+        return {
+            "radius_km": radius_val,
+            "radius_label": radius_label,
+            "ring": ring,
+            "features": features,
+        }
+
+    def predict(
+        self,
+        lat: float,
+        lng: float,
+        radius_km: Optional[float] = None,
+        decay_scale_km: Optional[float] = None,
+        include_network: bool = True,
+        sort_by: Literal["auto", "haversine", "network"] = "auto",
+        include_road_metrics: bool = False,
+        road_radius_km: Optional[float] = None,
+    ) -> Dict[str, Any]:
         if self.model is None:
             raise RuntimeError("Model not loaded. Please check server logs.")
-        if self.reference_df is None:
-            raise RuntimeError("Reference data not loaded. Cannot perform feature estimation.")
 
-        # 1. Find k-nearest neighbors
-        existing_coords = self.reference_df[['lat', 'lng']].values
-        new_coord = np.array([[lat, lng]])
-        
-        # Calculate Euclidean distances
-        distances = distance.cdist(new_coord, existing_coords, 'euclidean')[0]
-        
-        # Get k-nearest neighbors
-        nearest_indices = np.argsort(distances)[:k_neighbors]
-        nearest_cafes = self.reference_df.iloc[nearest_indices]
-        
-        # 2. Estimate POI features by averaging nearest neighbors
-        poi_count_cols = [c for c in self.reference_df.columns if c.endswith('_count_1km')]
-        poi_weight_cols = [c for c in self.reference_df.columns if c.endswith('_weight_1km')]
-        
-        new_features = {}
-        
-        # Copy raw POI features (averaged from neighbors)
-        for col in poi_count_cols + poi_weight_cols:
-            new_features[col] = nearest_cafes[col].mean()
-
-        # Include cafe_weight if present in the reference data
-        if 'cafe_weight' in self.reference_df.columns:
-            new_features['cafe_weight'] = nearest_cafes['cafe_weight'].mean()
-        
-        # Add lat/lng
-        new_features['lat'] = lat
-        new_features['lng'] = lng
-        
-        # Create a temporary dataframe for feature engineering
-        temp_df = pd.DataFrame([new_features])
-        
-        # 3. Feature Engineering (Must match notebook logic)
-        eng_new = pd.DataFrame(index=temp_df.index)
-        EPSILON = 1e-6
-        
-        # Helper to safely get column or 0
-        def get_col(df, col_name):
-            return df[col_name].fillna(0) if col_name in df.columns else 0
-
-        # Total POI Count
-        eng_new['total_poi_count_1km'] = (
-            get_col(temp_df, 'banks_count_1km') +
-            get_col(temp_df, 'education_count_1km') +
-            get_col(temp_df, 'health_count_1km') +
-            get_col(temp_df, 'temples_count_1km') +
-            get_col(temp_df, 'other_count_1km')
+        payload = self.build_feature_payload(
+            lat,
+            lng,
+            radius_km=radius_km,
+            decay_scale_km=decay_scale_km,
+            include_network=include_network,
+            sort_by=sort_by,
+            include_road_metrics=include_road_metrics,
+            road_radius_km=road_radius_km,
         )
-        
-        # Category Ratios
-        total_poi = eng_new['total_poi_count_1km'] + EPSILON
-        eng_new['bank_ratio'] = get_col(temp_df, 'banks_count_1km') / total_poi
-        eng_new['education_ratio'] = get_col(temp_df, 'education_count_1km') / total_poi
-        eng_new['temple_ratio'] = get_col(temp_df, 'temples_count_1km') / total_poi
-        eng_new['health_ratio'] = get_col(temp_df, 'health_count_1km') / total_poi
-        
-        # Weighted POI Strength
-        eng_new['weighted_POI_strength'] = (
-            get_col(temp_df, 'banks_weight_1km') +
-            get_col(temp_df, 'education_weight_1km') +
-            get_col(temp_df, 'health_weight_1km') +
-            get_col(temp_df, 'temples_weight_1km') +
-            get_col(temp_df, 'other_weight_1km')
-        )
-        
-        # Combine with raw features
-        sample_full = pd.concat([temp_df.reset_index(drop=True), eng_new.reset_index(drop=True)], axis=1)
+        feature_names = payload["feature_names"] or []
+        features = payload["features"]
+        sample_df = pd.DataFrame([features])
+        if feature_names:
+            sample_df = sample_df[feature_names]
 
-        model_feature_names = self._resolve_model_feature_names()
-        if model_feature_names:
-            for col in model_feature_names:
-                if col not in sample_full.columns:
-                    sample_full[col] = 0.0
-            sample_df = sample_full[model_feature_names]
-        else:
-            # Fallback if feature names not loaded (risky)
-            print("Warning: No feature names available. Using all engineered features.")
-            sample_df = sample_full
-
-        # Make prediction
         if isinstance(self.model, xgb.Booster):
             dtest = xgb.DMatrix(sample_df, feature_names=list(sample_df.columns))
-            predicted_score = float(self.model.predict(dtest)[0])
+            raw_score = float(self.model.predict(dtest)[0])
         else:
-            predicted_score = float(self.model.predict(sample_df)[0])
-        
-        # Risk assessment
+            raw_score = float(self.model.predict(sample_df)[0])
+
+        access_score = None
+        road_payload = payload.get("road_accessibility") if isinstance(payload, dict) else None
+        if isinstance(road_payload, dict):
+            access_score = road_payload.get("score_0_1")
+
+        predicted_score = self._shape_score(raw_score, access_score)
+
         if predicted_score < 1.0:
-            risk_level = 'High'
+            risk_level = "High"
         elif predicted_score < 2.0:
-            risk_level = 'Medium'
+            risk_level = "Medium"
         else:
-            risk_level = 'Low'
-            
+            risk_level = "Low"
+
         return {
             "predicted_score": predicted_score,
+            "raw_score": raw_score,
             "risk_level": risk_level,
-            "estimated_features": new_features
+            "feature_payload": payload,
         }

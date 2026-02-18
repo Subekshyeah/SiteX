@@ -106,8 +106,8 @@ const buildToLetImages = (idx: number, title: string) => {
   return Array.from(new Set(candidates)).map((name) => `/data/to-let/${name}`);
 };
 
-const MAP_BOUNDS_SW = L.latLng(27.6164, 85.3459);
-const MAP_BOUNDS_NE = L.latLng(27.7536, 85.4841);
+const MAP_BOUNDS_SW = L.latLng(27.574297, 85.229482);
+const MAP_BOUNDS_NE = L.latLng(27.813918, 85.492950);
 const MAP_BOUNDS = L.latLngBounds(MAP_BOUNDS_SW, MAP_BOUNDS_NE);
 
 function clampToBounds(lat: number, lng: number) {

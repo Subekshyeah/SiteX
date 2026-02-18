@@ -624,7 +624,13 @@ export default function ResultPage() {
                     return cachedLocal;
                 }
                 const payload = {
-                    locations: points.map((p) => ({ lat: p.lat, lon: p.lng }))
+                    locations: points.map((p) => ({ lat: p.lat, lon: p.lng })),
+                    radius_km: ACCESS_RADIUS_KM,
+                    decay_scale_km: ACCESS_RADIUS_KM,
+                    include_network: true,
+                    sort_by: "auto",
+                    include_road_metrics: true,
+                    road_radius_km: ACCESS_RADIUS_KM
                 };
                 const res = await fetch("http://127.0.0.1:8000/api/v1/predict/", {
                     method: "POST",

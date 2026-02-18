@@ -5,7 +5,9 @@ from app.api.endpoints import cafe_processing
 from app.api.endpoints import analysis
 from app.api.endpoints import explain
 from app.api.endpoints import pois
+from app.api.endpoints import poi_metrics
 from app.api.endpoints import predict
+from app.api.endpoints import model_input
 from app.api.endpoints import road_types
 
 app = FastAPI(
@@ -32,6 +34,8 @@ app.add_middleware(
 # Include the router from endpoint files
 app.include_router(cafe_processing.router, prefix="/api/v1", tags=["Cafe Processing"])
 app.include_router(predict.router, prefix="/api/v1", tags=["Prediction"])
+app.include_router(model_input.router, prefix="/api/v1", tags=["Model Input"])
+app.include_router(poi_metrics.router, prefix="/api/v1", tags=["POI Metrics"])
 app.include_router(pois.router, prefix="/api/v1", tags=["POIS"])
 app.include_router(road_types.router, prefix="/api/v1", tags=["Road Types"])
 app.include_router(explain.router, prefix="/api/v1", tags=["Explanation"])
