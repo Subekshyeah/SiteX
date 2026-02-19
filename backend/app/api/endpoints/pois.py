@@ -305,9 +305,9 @@ def get_pois_with_paths(
     This mirrors the behavior of the / API route but is callable directly from Python code.
     """
     # locate project CSV folder relative to this file
-    data_dir = Path(__file__).resolve().parents[3] / "Data" / "CSV"
+    data_dir = Path(__file__).resolve().parents[3] / "Data" / "CSV_Reference" / "final"
     if not data_dir.exists():
-        alt = Path(__file__).resolve().parents[3] / "Data" / "CSV_Reference" / "final"
+        alt = Path(__file__).resolve().parents[3] / "Data" / "CSV"
         if alt.exists():
             data_dir = alt
         else:
@@ -318,12 +318,12 @@ def get_pois_with_paths(
     effective_decay_km = radius_km if decay_scale_km is None else float(decay_scale_km)
 
     poi_files = {
-        "cafes": "cafes.csv",
-        "banks": "banks.csv",
-        "education": "education.csv",
-        "health": "health.csv",
-        "temples": "temples.csv",
-        "other": "other.csv",
+        "cafes": "cafe_final.csv",
+        "banks": "banks_final.csv",
+        "education": "education_final.csv",
+        "health": "health_final.csv",
+        "temples": "temples_final.csv",
+        "other": "other_final.csv",
     }
 
     results: Dict[str, Any] = {}
@@ -421,10 +421,10 @@ def get_pois(
     stream: bool = Query(False, description="If true, return a streaming (chunked) JSON response with categories as they become available"),
 ) -> Any:
     # locate project CSV folder relative to this file
-    data_dir = Path(__file__).resolve().parents[3] / "Data" / "CSV"
-    # fallback to CSV_Reference if CSV doesn't exist (some repos use that)
+    data_dir = Path(__file__).resolve().parents[3] / "Data" / "CSV_Reference" / "final"
+    # fallback to CSV if CSV_Reference isn't present
     if not data_dir.exists():
-        alt = Path(__file__).resolve().parents[3] / "Data" / "CSV_Reference" / "final"
+        alt = Path(__file__).resolve().parents[3] / "Data" / "CSV"
         if alt.exists():
             data_dir = alt
         else:
@@ -435,12 +435,12 @@ def get_pois(
     effective_decay_km = radius_km if decay_scale_km is None else float(decay_scale_km)
 
     poi_files = {
-        "cafes": "cafes.csv",
-        "banks": "banks.csv",
-        "education": "education.csv",
-        "health": "health.csv",
-        "temples": "temples.csv",
-        "other": "other.csv",
+        "cafes": "cafe_final.csv",
+        "banks": "banks_final.csv",
+        "education": "education_final.csv",
+        "health": "health_final.csv",
+        "temples": "temples_final.csv",
+        "other": "other_final.csv",
     }
 
     def process_one_category(typ: str, fname: str):

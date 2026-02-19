@@ -37,3 +37,4 @@ coverage/
 
 **/CSV/**
 **/poi_paths_.*/
+**/data/final/**.csv

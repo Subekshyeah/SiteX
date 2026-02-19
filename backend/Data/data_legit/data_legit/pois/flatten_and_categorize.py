@@ -750,6 +750,7 @@ def flatten_place(data):
     flat["country"] = data.get("countryCode", "")
     flat["phone"] = _first_non_empty(data.get("phone"), data.get("phoneUnformatted"))
     flat["website"] = data.get("website", "") or ""
+    flat["url"] = data.get("url", "") or ""
     flat["place_id"] = data.get("placeId", "")
     flat["cid"] = data.get("cid", "")
     flat["url"] = data.get("url", "")
@@ -937,7 +938,7 @@ def main():
 
     compact_fields = [
         "name","main_category","category","address","street","neighborhood","city",
-        "state","postal","country","phone","phoneUnformatted","website","price",
+        "state","postal","country","phone","phoneUnformatted","website","url","price",
         "temporarilyClosed","permanentlyClosed","claimThisBusiness",
         "rank","lat","lng","rating","reviews_count",
         "reviewsDistribution_oneStar","reviewsDistribution_twoStar",
@@ -1028,10 +1029,25 @@ def main():
     for f_out in files.values():
         f_out.close()
 
+
     # Export category CSVs into backend/Data/CSV_Reference (overwrite)
     REFERENCE_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     for csv_path in by_category_dir.glob("*.csv"):
         shutil.copy2(csv_path, REFERENCE_EXPORT_DIR / csv_path.name)
+
+    # Export category CSVs into a local data/ folder (relative to script)
+    local_data_dir = Path(__file__).parent / "data"
+    local_data_dir.mkdir(parents=True, exist_ok=True)
+    for csv_path in by_category_dir.glob("*.csv"):
+        if not csv_path.name.endswith("_all_data.csv"):
+            shutil.copy2(csv_path, local_data_dir / csv_path.name)
+
+    # Export category summary CSVs into site_x_ui/data/final (frontend)
+    site_x_ui_data_dir = Path(__file__).resolve().parents[5] / "site_x_ui" / "data" / "final"
+    site_x_ui_data_dir.mkdir(parents=True, exist_ok=True)
+    for csv_path in by_category_dir.glob("*.csv"):
+        if not csv_path.name.endswith("_all_data.csv"):
+            shutil.copy2(csv_path, site_x_ui_data_dir / csv_path.name)
 
     for bucket, items in json_buckets.items():
         out_path = by_category_dir / f"{bucket}.json"

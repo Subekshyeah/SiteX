@@ -61,10 +61,10 @@ class PredictionService:
             )
 
         candidates = [
-            self.backend_root / "Data" / "CSV" / "final",
             self.backend_root / "Data" / "CSV_Reference" / "final",
-            self.backend_root / "Data" / "CSV",
+            self.backend_root / "Data" / "CSV" / "final",
             self.backend_root / "Data" / "CSV_Reference",
+            self.backend_root / "Data" / "CSV",
         ]
 
         for candidate in candidates:
@@ -74,7 +74,7 @@ class PredictionService:
 
         print(
             "Warning: Could not locate master_cafes_minimal.csv in default locations. "
-            "Continuing with backend/Data/CSV/final."
+            "Continuing with backend/Data/CSV_Reference/final."
         )
         return candidates[0]
 

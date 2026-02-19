@@ -56,12 +56,12 @@ class SiteAnalysisService:
     """Provides Business-Analyst-like analysis using local CSV POIs and an optional road network graph."""
 
     POI_FILES: Dict[str, str] = {
-        "cafes": "cafes.csv",
-        "banks": "banks.csv",
-        "education": "education.csv",
-        "health": "health.csv",
-        "temples": "temples.csv",
-        "other": "other.csv",
+        "cafes": "cafe_final.csv",
+        "banks": "banks_final.csv",
+        "education": "education_final.csv",
+        "health": "health_final.csv",
+        "temples": "temples_final.csv",
+        "other": "other_final.csv",
     }
 
     def __init__(
@@ -82,8 +82,8 @@ class SiteAnalysisService:
         """Locate the POI CSV directory.
 
         This repo supports two layouts:
-        - backend/Data/CSV/*.csv
         - backend/Data/CSV_Reference/final/*.csv
+        - backend/Data/CSV/*.csv
         """
         env_override = os.getenv("SITEX_POI_DATA_DIR")
         if env_override:
@@ -91,11 +91,11 @@ class SiteAnalysisService:
             if candidate.exists():
                 return candidate
 
-        primary = self.data_root / "Data" / "CSV"
+        primary = self.data_root / "Data" / "CSV_Reference" / "final"
         if primary.exists():
             return primary
 
-        fallback = self.data_root / "Data" / "CSV_Reference" / "final"
+        fallback = self.data_root / "Data" / "CSV"
         if fallback.exists():
             return fallback
 

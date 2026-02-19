@@ -342,12 +342,12 @@ export default function LocationForm() {
   const [geoDataList, setGeoDataList] = useState<Array<{ id: string; name: string; data: any }>>([]);
   const DATASETS = [
     { id: 'all', name: 'All', path: '' },
-    { id: 'cafes', name: 'Cafes', path: '/data/cafes.geojson' },
-    { id: 'temples', name: 'Temples', path: '/data/temples.geojson' },
-    { id: 'banks', name: 'Banks', path: '/data/banks.geojson' },
-    { id: 'education', name: 'Education', path: '/data/education.geojson' },
-    { id: 'health', name: 'Health', path: '/data/health.geojson' },
-    { id: 'other', name: 'Other', path: '/data/other.geojson' },
+    { id: 'cafes', name: 'Cafes', path: '/data/final/cafes.csv' },
+    { id: 'temples', name: 'Temples', path: '/data/final/temples.csv' },
+    { id: 'banks', name: 'Banks', path: '/data/final/banks.csv' },
+    { id: 'education', name: 'Education', path: '/data/final/education.csv' },
+    { id: 'health', name: 'Health', path: '/data/final/health.csv' },
+    { id: 'other', name: 'Other', path: '/data/final/other.csv' },
   ];
   const [datasetId, setDatasetId] = useState<string>(DATASETS[0].id);
   const [showPlaces, setShowPlaces] = useState(false);
@@ -780,8 +780,8 @@ export default function LocationForm() {
     }
   }
 
-  // Load all datasets (prefer geojson files in /data)
-  // When `datasetId` changes we eagerly (re)load all category geojsons so
+  // Load all datasets (prefer CSV files in /data)
+  // When `datasetId` changes we eagerly (re)load all category datasets so
   // the UI can show counts and results immediately for any category.
   useEffect(() => {
     let mounted = true;
@@ -797,16 +797,7 @@ export default function LocationForm() {
     setGeoLoading(true);
     (async () => {
       try {
-        const loaders = toLoad.map(async (ds) => {
-          try {
-            const r = await fetch(ds.path);
-            if (!r.ok) return { id: ds.id, name: ds.name, data: null };
-            const json = await r.json();
-            return { id: ds.id, name: ds.name, data: json };
-          } catch {
-            return { id: ds.id, name: ds.name, data: null };
-          }
-        });
+        const loaders = toLoad.map((ds) => loadDatasetData(ds));
         const results = await Promise.all(loaders);
         if (!mounted) return;
         const loaded = results.filter((r) => r.data);
@@ -826,7 +817,7 @@ export default function LocationForm() {
     return () => { mounted = false; };
   }, [datasetId]);
 
-  // Preload all dataset geojsons on mount and whenever `searchQuery` changes
+  // Preload all dataset CSVs on mount and whenever `searchQuery` changes
   useEffect(() => {
     let mounted = true;
     const toLoad = DATASETS.filter((d) => d.path && d.id !== 'all');
@@ -834,16 +825,7 @@ export default function LocationForm() {
     setGeoLoading(true);
     (async () => {
       try {
-        const loaders = toLoad.map(async (ds) => {
-          try {
-            const r = await fetch(ds.path);
-            if (!r.ok) return { id: ds.id, name: ds.name, data: null };
-            const json = await r.json();
-            return { id: ds.id, name: ds.name, data: json };
-          } catch {
-            return { id: ds.id, name: ds.name, data: null };
-          }
-        });
+        const loaders = toLoad.map((ds) => loadDatasetData(ds));
         const results = await Promise.all(loaders);
         if (!mounted) return;
         // keep only loaded datasets that have data
@@ -905,6 +887,58 @@ export default function LocationForm() {
     }
     return rows;
   };
+
+  function csvRowsToGeoData(rows: Array<Record<string, string>>, datasetId: string) {
+    if (!rows.length) return null;
+    const keys = Object.keys(rows[0] || {});
+    const norm = (v: string) => v.toLowerCase().trim();
+    const findKey = (candidates: string[]) => keys.find((k) => candidates.includes(norm(k)));
+    const latKey = findKey(["lat", "latitude", "y"]);
+    const lonKey = findKey(["lng", "lon", "longitude", "x"]);
+    if (!latKey || !lonKey) return null;
+    const features = rows
+      .map((row, idx) => {
+        const latVal = Number(row[latKey]);
+        const lonVal = Number(row[lonKey]);
+        if (!Number.isFinite(latVal) || !Number.isFinite(lonVal)) return null;
+        const nameVal = row.name ?? row.Name ?? row.NAME ?? row.title ?? row.Title ?? row.TITLE;
+        const props: Record<string, any> = { ...row };
+        if (nameVal && !props.name) props.name = String(nameVal);
+        props.dataset = datasetId;
+        return {
+          type: "Feature",
+          id: row.id ?? row.ID ?? row.Id ?? `${datasetId}-${idx}`,
+          properties: props,
+          geometry: {
+            type: "Point",
+            coordinates: [lonVal, latVal],
+          },
+        } as any;
+      })
+      .filter(Boolean);
+    return {
+      type: "FeatureCollection",
+      features,
+    } as any;
+  }
+
+  async function loadDatasetData(ds: { id: string; name: string; path: string }) {
+    if (!ds.path) return { id: ds.id, name: ds.name, data: null };
+    try {
+      const r = await fetch(ds.path);
+      if (!r.ok) return { id: ds.id, name: ds.name, data: null };
+      if (ds.path.toLowerCase().endsWith(".csv")) {
+        const txt = await r.text();
+        const rows = parseCsv(txt);
+        const geo = csvRowsToGeoData(rows, ds.id);
+        return { id: ds.id, name: ds.name, data: geo };
+      }
+      const json = await r.json();
+      return { id: ds.id, name: ds.name, data: json };
+    } catch {
+      return { id: ds.id, name: ds.name, data: null };
+    }
+  }
 
   const parseToLetCsv = (text: string) => {
     const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);

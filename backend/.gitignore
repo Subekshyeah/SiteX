@@ -129,3 +129,4 @@ poi_paths_geojson_*
 
 **.pkl
 **/pois/csv/
+**/CSV_Reference/**
