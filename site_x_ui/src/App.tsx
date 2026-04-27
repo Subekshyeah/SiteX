@@ -1,15 +1,17 @@
 // App.tsx (top)
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ResultPage from "./pages/Result";
-import LocationForm from "@/components/locationForm/locationForm";
+import ExplorePage from "./pages/Explore";
+import DashboardLayout from "@/layouts/DashboardLayout";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LocationForm />} />         {/* your existing root */}
-        <Route path="/result" element={<ResultPage />} /> {/* new route */}
-        {/* optional: keep existing SPA routes here */}
+        <Route element={<DashboardLayout />}>
+          <Route path="/" element={<ExplorePage />} />
+        </Route>
+        <Route path="/result" element={<ResultPage />} />
       </Routes>
     </BrowserRouter>
   );
