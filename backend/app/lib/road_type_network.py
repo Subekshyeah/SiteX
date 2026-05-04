@@ -258,17 +258,44 @@ class RoadTypeNetwork:
         graph = nx.Graph()
         node_lookup: Dict[Tuple[float, float], int] = {}
         node_coords: List[Tuple[float, float]] = []
+        loaded = 0
+        skipped_no_geom = 0
+        skipped_no_type = 0
         for feature in features:
             geom = feature.get("geometry")
             props = feature.get("properties") or {}
             if geom is None or not geom.get("coordinates"):
+                skipped_no_geom += 1
                 continue
-            road_type = props.get("highway") or props.get("area:highway")
+            # Try common road-type property names used by different OSM export tools:
+            # 'highway'      — standard OSM / OSMnx
+            # 'area:highway' — area-based road features
+            # 'road_type'    — some QGIS / custom exports
+            # 'fclass'       — OpenStreetMap shapefiles (osm2shp)
+            # 'type'         — generic fallback
+            road_type = (
+                props.get("highway")
+                or props.get("area:highway")
+                or props.get("road_type")
+                or props.get("fclass")
+                or props.get("type")
+            )
             road_type = _normalize_road_type(road_type)
             if not road_type:
+                skipped_no_type += 1
                 continue
             for coord_sequence in RoadTypeNetwork._iter_lines(geom):
                 RoadTypeNetwork._add_line_to_graph(coord_sequence, graph, node_lookup, node_coords, road_type)
+            loaded += 1
+        total = loaded + skipped_no_type + skipped_no_geom
+        print(
+            f"RoadTypeNetwork: loaded {loaded}/{total} features "
+            f"({skipped_no_geom} skipped: no geometry, "
+            f"{skipped_no_type} skipped: no road-type tag)"
+        )
+        # Note: graph is undirected (nx.Graph). One-way streets are treated as
+        # bidirectional. For GNN work, switch to nx.MultiDiGraph and pass
+        # the 'oneway' property through _add_line_to_graph.
         if not node_coords:
             coords_array = np.zeros((0, 2), dtype=np.float64)
         else:
