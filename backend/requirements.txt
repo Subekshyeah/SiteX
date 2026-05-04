@@ -9,3 +9,7 @@ scipy
 joblib
 networkx
 requests
+osmnx
+geopandas
+osmnx
+geopandas
