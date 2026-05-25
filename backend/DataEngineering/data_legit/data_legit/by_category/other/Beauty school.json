@@ -1,0 +1,406 @@
+[
+  {
+    "title": "RJ Sparkles Makeup Training Centre",
+    "price": null,
+    "categoryName": "Beauty school",
+    "address": "Muldhoka, kamalvinayak Next to Kamalvinayak traffic office ,Behind bigmart, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Muldhoka, kamalvinayak Next to Kamalvinayak traffic office ,Behind bigmart",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9127821",
+    "phoneUnformatted": "+9779849127821",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6768472,
+      "lng": 85.4365543
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWbrFAG8b6zkRNY7xp39VplQ",
+    "categories": [
+      "Beauty school"
+    ],
+    "fid": "0x39eb1b6f00c5ba59:0x54a6557fa7f18e35",
+    "cid": "6099656752086748725",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:35.777Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=RJ%20Sparkles%20Makeup%20Training%20Centre&query_place_id=ChIJWbrFAG8b6zkRNY7xp39VplQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 69,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=PSGQN-PaUslooqJfNJ2NFA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=259.06256&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rtrchqy7"
+  },
+  {
+    "title": "Light Beauty Training Center",
+    "price": null,
+    "categoryName": "Beauty school",
+    "address": "MCCC+7WJ, Dudhpati Ganesthan road Sidhdhapokhari, Bhaktapur, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+7WJ, Dudhpati Ganesthan road Sidhdhapokhari",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0269991",
+    "phoneUnformatted": "+9779860269991",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6707164,
+      "lng": 85.4222805
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1wcbVNMb6zkRzcKRIyGXENQ",
+    "categories": [
+      "Beauty school"
+    ],
+    "fid": "0x39eb1bd3541b07d7:0xd41097212391c2cd",
+    "cid": "15280879704254563021",
+    "reviewsCount": 1,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Light%20Beauty%20Training%20Center&query_place_id=ChIJ1wcbVNMb6zkRzcKRIyGXENQ",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=5DSxAUoXmas3XmFpRMKP2w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=256.00308&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fmrdz3dl"
+  },
+  {
+    "title": "Zoom Beauty Academy - Best Beauty Academy in Suryabinayak Bhaktapur",
+    "price": null,
+    "categoryName": "Beauty school",
+    "address": "MC8F+9V8, सुर्यविनायक मार्ग, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+9V8, सुर्यविनायक मार्ग",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://zoombeautyacademy.com/",
+    "phone": "+977 980-2351559",
+    "phoneUnformatted": "+9779802351559",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659671,
+      "lng": 85.4247084
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhbnDziAb6zkR7pmp8kWi78o",
+    "categories": [
+      "Beauty school",
+      "Beauty salon"
+    ],
+    "fid": "0x39eb1b20cec3b985:0xcaefa245f2a999ee",
+    "cid": "14623084936402934254",
+    "reviewsCount": 52,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 3,
+      "fiveStar": 44
+    },
+    "imagesCount": 2576,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:02.093Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Service options": [
+        {
+          "Onsite services": true
+        },
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        }
+      ],
+      "Payments": [
+        {
+          "Cash-only": true
+        },
+        {
+          "Checks": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Zoom%20Beauty%20Academy%20-%20Best%20Beauty%20Academy%20in%20Suryabinayak%20Bhaktapur&query_place_id=ChIJhbnDziAb6zkR7pmp8kWi78o",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 42,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM3IX0cS_IGwT_VbBDMgNmeP30XEGGlTkJK0GNQ=w408-h272-k-no",
+    "kgmid": "/g/11t0t7shvc"
+  },
+  {
+    "title": "Zoom Beauty Academy - Best Beauty Academy in Suryabinayak Bhaktapur",
+    "price": null,
+    "categoryName": "Beauty school",
+    "address": "MC8F+9V8, सुर्यविनायक मार्ग, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+9V8, सुर्यविनायक मार्ग",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://zoombeautyacademy.com/",
+    "phone": "+977 980-2351559",
+    "phoneUnformatted": "+9779802351559",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659671,
+      "lng": 85.4247084
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhbnDziAb6zkR7pmp8kWi78o",
+    "categories": [
+      "Beauty school",
+      "Beauty salon"
+    ],
+    "fid": "0x39eb1b20cec3b985:0xcaefa245f2a999ee",
+    "cid": "14623084936402934254",
+    "reviewsCount": 52,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 3,
+      "fiveStar": 44
+    },
+    "imagesCount": 2576,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:58.365Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Service options": [
+        {
+          "Onsite services": true
+        },
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        }
+      ],
+      "Payments": [
+        {
+          "Cash-only": true
+        },
+        {
+          "Checks": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Zoom%20Beauty%20Academy%20-%20Best%20Beauty%20Academy%20in%20Suryabinayak%20Bhaktapur&query_place_id=ChIJhbnDziAb6zkR7pmp8kWi78o",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 59,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNr-j-Q1CQiCb6yeFsLtEyll6CeseWZp5_-OxLr=w408-h454-k-no",
+    "kgmid": "/g/11t0t7shvc"
+  },
+  {
+    "title": "RJ Sparkles Makeup Training Centre",
+    "price": null,
+    "categoryName": "Beauty school",
+    "address": "Muldhoka, kamalvinayak Next to Kamalvinayak traffic office ,Behind bigmart, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Muldhoka, kamalvinayak Next to Kamalvinayak traffic office ,Behind bigmart",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9127821",
+    "phoneUnformatted": "+9779849127821",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6768472,
+      "lng": 85.4365543
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWbrFAG8b6zkRNY7xp39VplQ",
+    "categories": [
+      "Beauty school"
+    ],
+    "fid": "0x39eb1b6f00c5ba59:0x54a6557fa7f18e35",
+    "cid": "6099656752086748725",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=RJ%20Sparkles%20Makeup%20Training%20Centre&query_place_id=ChIJWbrFAG8b6zkRNY7xp39VplQ",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 76,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=PSGQN-PaUslooqJfNJ2NFA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=259.06256&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rtrchqy7"
+  }
+]

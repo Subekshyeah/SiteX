@@ -1,0 +1,339 @@
+[
+  {
+    "title": "Sukul Dhoka ko Michael Momo",
+    "price": null,
+    "categoryName": "Chinese restaurant",
+    "address": "MCC5+7MQ, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC5+7MQ",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670709,
+      "lng": 85.4092365
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI8PY--Yb6zkRxywH9oI0OOM",
+    "categories": [
+      "Chinese restaurant"
+    ],
+    "fid": "0x39eb1be6fbd8c323:0xe3383482f6072cc7",
+    "cid": "16372894182383496391",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:29.112Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sukul%20Dhoka%20ko%20Michael%20Momo&query_place_id=ChIJI8PY--Yb6zkRxywH9oI0OOM",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.667695459098024,85.41290913650586,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 34,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxVuH1YSiAd52jnwULYZUaF3d-BQfy7eJC557pExpF_risXNjBT4GXVrhh0bGGUEEMM9U7ElpVSG8fQl05qiMQXwWW3Jr_kyn6Ig7Mho-bRlhaem3jw7_p73gmX32SzBblU6Tw=w520-h240-k-no",
+    "kgmid": "/g/11sm_v7gnd"
+  },
+  {
+    "title": "Shanghai Express | Chinese Restaurant",
+    "price": null,
+    "categoryName": "Chinese restaurant",
+    "address": "14 Pottery Square, Bhaktapur 00001, Nepal",
+    "neighborhood": null,
+    "street": "14 Pottery Square",
+    "city": "Bhaktapur",
+    "postalCode": "00001",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5923681",
+    "phoneUnformatted": "+97715923681",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6699502,
+      "lng": 85.4277479
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJL8kiFAAb6zkRV5Ttuw6Yw3o",
+    "categories": [
+      "Chinese restaurant"
+    ],
+    "fid": "0x39eb1b001422c92f:0x7ac3980ebbed9457",
+    "cid": "8846081282135659607",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:39:04.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shanghai%20Express%20%7C%20Chinese%20Restaurant&query_place_id=ChIJL8kiFAAb6zkRV5Ttuw6Yw3o",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.667695459098024,85.43009086349416,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 47,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=rrmsRJHL6uG8HVMJBcEWXQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=34.835724&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x0txy6wb"
+  },
+  {
+    "title": "Yummy Laphing Center",
+    "price": null,
+    "categoryName": "Chinese restaurant",
+    "address": "M978+WQG, Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "M978+WQG",
+    "city": "Anantalingeshwar",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3907213",
+    "phoneUnformatted": "+9779843907213",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6647035,
+      "lng": 85.3670857
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ7fsHNlAb6zkRodGAQk3Tr6s",
+    "categories": [
+      "Chinese restaurant"
+    ],
+    "fid": "0x39eb1b503607fbed:0xabafd34d4280d1a1",
+    "cid": "12371339030191722913",
+    "reviewsCount": 3,
+    "imagesCount": 44,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:24.691Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "11 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "11 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "11 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "11 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "11 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "11 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "11 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Yummy%20Laphing%20Center&query_place_id=ChIJ7fsHNlAb6zkRodGAQk3Tr6s",
+    "searchPageUrl": "https://www.google.com/maps/search/non%20vegetarian%20restaurant/@27.664893497689192,85.37098877360309,17z?hl=en",
+    "searchString": "non vegetarian restaurant",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzwgkFZzuzVY1GQw21deobLymBlbmWx0zsGJNFZkzIJR23WOIf9CyZl_NQM362mmHtDi2tL9JESivGiL4w0yEL62MthsEHB3jOS8JNL-C06q9ANK5-jHTt8lTfRzq47MC7wIqUvVA=w426-h240-k-no",
+    "kgmid": "/g/11trdlh6n6"
+  }
+]

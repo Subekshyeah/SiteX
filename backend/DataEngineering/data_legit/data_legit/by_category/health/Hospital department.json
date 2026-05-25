@@ -1,0 +1,85 @@
+[
+  {
+    "title": "chyamasing polyclinic pvt.ltd",
+    "price": null,
+    "categoryName": "Hospital department",
+    "address": "nala road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "nala road",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0387094",
+    "phoneUnformatted": "+9779860387094",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6739331,
+      "lng": 85.4418356
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3a6CfcYF6zkRsr64kJJ5LFQ",
+    "categories": [
+      "Hospital department"
+    ],
+    "fid": "0x39eb05c67d82aedd:0x542c799290b8beb2",
+    "cid": "6065356468561428146",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:56.720Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=chyamasing%20polyclinic%20pvt.ltd&query_place_id=ChIJ3a6CfcYF6zkRsr64kJJ5LFQ",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 35,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNTLCEyVI6hhddphic_saITg9u8IAN8hIwiA9Sh=w408-h544-k-no",
+    "kgmid": "/g/11tf9917fm"
+  }
+]

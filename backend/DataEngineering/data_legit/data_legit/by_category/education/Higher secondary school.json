@@ -1,0 +1,881 @@
+[
+  {
+    "title": "Shree Padma Secondary School",
+    "subTitle": "श्री पद्म मा.वि.",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCFG+3WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+3WW",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610326",
+    "phoneUnformatted": "+97716610326",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727274,
+      "lng": 85.4273205
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjUwh768a6zkR_DqR9AVVMME",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1aafef214c8d:0xc1305505f4913afc",
+    "cid": "13920719932268559100",
+    "reviewsCount": 0,
+    "imagesCount": 84,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:31.793Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Padma%20Secondary%20School&query_place_id=ChIJjUwh768a6zkR_DqR9AVVMME",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzk0nyUHn2e4zYdl4rTYDhk6D1adImly3FUdNmsecIS7wqmeYeypjrw3CHbu_AqMwTCOlvmtNBj3cHfkOs8_2C1z_IFouoEy3iF6sATWz9CLjtKFw5A8g_eSBgMbniQRy1-oe87Ww=w408-h544-k-no",
+    "kgmid": "/g/1tj48x1d"
+  },
+  {
+    "title": "Basu seondary school",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCHH+7QR, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHH+7QR",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.basu.edu.np/",
+    "phone": "+977 1-6615257",
+    "phoneUnformatted": "+97716615257",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6782499,
+      "lng": 85.429387
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJsRoV57Aa6zkRDaZT7jT0O0I",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1ab0e7151ab1:0x423bf434ee53a60d",
+    "cid": "4772676738303108621",
+    "reviewsCount": 0,
+    "imagesCount": 15,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:33.127Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Basu%20seondary%20school&query_place_id=ChIJsRoV57Aa6zkRDaZT7jT0O0I",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 39,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxAuDKuRgJ_E-orUtDNRCen1NpG2-ZYQCgy1wtT9WUniM02AmANL9t-_NnsNlii2OG2wl3U6HgfE8yjkFryWLdyCFzanZchR8ZyTAG9XiYDO-6F5wmrPe88dOU5NHXes3AEXVfUKA=w408-h306-k-no",
+    "kgmid": "/g/11c2pc_7pk"
+  },
+  {
+    "title": "Prabhat English Higher Secondary School (Block B)",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCGJ+F4Q, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGJ+F4Q",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.676218,
+      "lng": 85.4303581
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb26Sr7Ea6zkRqjrIc10kg-g",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1ab1af926e6f:0xe883245d73c83aaa",
+    "cid": "16754275022541437610",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:34.373Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prabhat%20English%20Higher%20Secondary%20School%20(Block%20B)&query_place_id=ChIJb26Sr7Ea6zkRqjrIc10kg-g",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 48,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nhxt5LuBQLu9nCOUSdCoeQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=81.41782&pitch=0&thumbfov=100",
+    "kgmid": "/g/1hd_l0gb7"
+  },
+  {
+    "title": "Sainik Awasiya Mahavidyalaya - Bhaktapur",
+    "subTitle": "सैनिक आवासीय महाविद्यालय - भक्तपुर",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.bsamv.edu.np/",
+    "phone": "+977 1-6610051",
+    "phoneUnformatted": "+97716610051",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6709416,
+      "lng": 85.4177728
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ27G-uqIa6zkRKpecoF2ux0U",
+    "categories": [
+      "Higher secondary school",
+      "School"
+    ],
+    "fid": "0x39eb1aa2babeb1db:0x45c7ae5da09c972a",
+    "cid": "5028179226132256554",
+    "reviewsCount": 0,
+    "imagesCount": 443,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:59.547Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sainik%20Awasiya%20Mahavidyalaya%20-%20Bhaktapur&query_place_id=ChIJ27G-uqIa6zkRKpecoF2ux0U",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 52,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyaGx8PeOoY_TFLUrEeOACoGxYJnvFmRykkTO9j1zmnlrsrAUkDVGRVpDXhU6UyKXzx2C7efjzRYgk5gp7642WzpuWKHrvlkFHMh9nf1wRIp9rgrwmQ8Mt106NLC7G2EF_au9Ev=w408-h306-k-no",
+    "kgmid": "/m/027p1hn"
+  },
+  {
+    "title": "Nyatapola Sec. School",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCHR+QPR, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHR+QPR",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6615569",
+    "phoneUnformatted": "+97716615569",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6794887,
+      "lng": 85.4417511
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVQkCEkwF6zkRtLKHP9F97tA",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb054c12020955:0xd0ee7dd13f87b2b4",
+    "cid": "15055108942013641396",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.893Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nyatapola%20Sec.%20School&query_place_id=ChIJVQkCEkwF6zkRtLKHP9F97tA",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "kgmid": "/g/11hbqv43jg"
+  },
+  {
+    "title": "Adarsha Azad Higher Sec.School",
+    "subTitle": "आदर्श आजाद मा.वि.",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MC9J+5QX, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9J+5QX",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610580",
+    "phoneUnformatted": "+97716610580",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6679894,
+      "lng": 85.4319764
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw52IU6ka6zkR1YC7bTHlnMA",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1aa953889dc3:0xc09ce5316dbb80d5",
+    "cid": "13879220152106189013",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:58.364Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Adarsha%20Azad%20Higher%20Sec.School&query_place_id=ChIJw52IU6ka6zkR1YC7bTHlnMA",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 49,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFbHTqQ3u7DW5QP54VuyASfpzhoIQDbW9fPx463glp_8xm_rFyi2O_L-xM0qXYUD7r7A1ODcFIz1j56pde7KHegNfxqOemcZcdKJPPg19Md5wNVFdZwGS1c0v9Ep4aTKFWhhCS67zFYcsref_ZYoyeTv2WZAfpXjBgwqOd0b4E6kt1aoqC0XJEIVqugUStYDOcrRqY=w408-h306-k-no",
+    "kgmid": "/g/11b6sk8ttl"
+  },
+  {
+    "title": "Shree Changu Narayan Higher Sec. School.",
+    "subTitle": "श्री चागुनारायण उच्च माध्यमिक विद्यालय",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "44600, Bhaktapur 44802, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "44600",
+    "city": "Bhaktapur",
+    "postalCode": "44802",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.7049951,
+      "lng": 85.4180073
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNeFsNt4a6zkRlDcBR-fkqbE",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1ade366ce135:0xb1a9e4e747013794",
+    "cid": "12802015097757185940",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:15.283Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 11:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 11:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 11:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 11:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 11 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4 AM to 11:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Changu%20Narayan%20Higher%20Sec.%20School.&query_place_id=ChIJNeFsNt4a6zkRlDcBR-fkqbE",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.71263488308884,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxgrlRWfziXaexVJv0r6vF3qShVoz7zj1q9fBMk68X5P5W_spOAPFMImpfVQAadOqD6BsX-G6hOAZTVvvPKo1cafVM5RDouQmwWMkqJHG2iplM9u0HGoOaD5P-IPyHvLS-4KzN7Gw=w408-h544-k-no",
+    "kgmid": "/g/12hqhwqnr"
+  },
+  {
+    "title": "सुर्यदीप माध्यमिक बिद्यालय",
+    "subTitle": "सुर्यदीप उच्च माध्यमिक बिद्यालय",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MC97+F4R, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC97+F4R, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5092322",
+    "phoneUnformatted": "+97715092322",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6687352,
+      "lng": 85.4127801
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNfr4Q5ka6zkRIkaQnZ-DX3k",
+    "categories": [
+      "Higher secondary school",
+      "Education"
+    ],
+    "fid": "0x39eb1a9943f8fa35:0x795f839f9d904622",
+    "cid": "8745853722943309346",
+    "reviewsCount": 0,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:32.808Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%A6%E0%A5%80%E0%A4%AA%20%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A4%BF%E0%A4%95%20%E0%A4%AC%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B2%E0%A4%AF&query_place_id=ChIJNfr4Q5ka6zkRIkaQnZ-DX3k",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.651779070146688,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwvyxX5vHqOe_nrWQVOuq6Z4db80RUfwHR8TLfdmusLdCKb95IS7cYjDBoiRZc1UF24BYgxeEmb3RbSIT4IWRQoJvh57N9qsQyHtFgChN0eWFRP9HKfHQKeXZF9BcqWo8EUhYA6w=w427-h240-k-no",
+    "kgmid": "/g/1tr15zzn"
+  },
+  {
+    "title": "Prabhat English Higher Secondary School (Block B)",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCGJ+F4Q, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGJ+F4Q",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.676218,
+      "lng": 85.4303581
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb26Sr7Ea6zkRqjrIc10kg-g",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1ab1af926e6f:0xe883245d73c83aaa",
+    "cid": "16754275022541437610",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:59.649Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prabhat%20English%20Higher%20Secondary%20School%20(Block%20B)&query_place_id=ChIJb26Sr7Ea6zkRqjrIc10kg-g",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 44,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nhxt5LuBQLu9nCOUSdCoeQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=81.41782&pitch=0&thumbfov=100",
+    "kgmid": "/g/1hd_l0gb7"
+  },
+  {
+    "title": "Modern English Secondary School",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCG4+34F, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCG4+34F",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 6611411",
+    "phoneUnformatted": null,
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675192,
+      "lng": 85.4052924
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJs7vFxycb6zkR23X6ONZjEXc",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1b27c7c5bbb3:0x771163d638fa75db",
+    "cid": "8579748536847594971",
+    "reviewsCount": 0,
+    "imagesCount": 26,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.184Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 5 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 5 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 5 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 5 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 5 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 5 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 5 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Modern%20English%20Secondary%20School&query_place_id=ChIJs7vFxycb6zkR23X6ONZjEXc",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyvQ4zKPOh69PUoRrpcicZ0pG0FY0djm9LzEFK5X5wJOm041OrnbaZVeiO-r3ultDZG5hsqnlAiRnSNRIkjZpa9nVKAWMbZP58691Vi3Utpl6d1mk8bI_DER7whxlPZQLqssTYg7hwHWh8=w408-h272-k-no",
+    "kgmid": "/g/11t80z02v4"
+  },
+  {
+    "title": "Shree Padma Secondary School",
+    "subTitle": "श्री पद्म मा.वि.",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCFG+3WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+3WW",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610326",
+    "phoneUnformatted": "+97716610326",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727274,
+      "lng": 85.4273205
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjUwh768a6zkR_DqR9AVVMME",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1aafef214c8d:0xc1305505f4913afc",
+    "cid": "13920719932268559100",
+    "reviewsCount": 0,
+    "imagesCount": 84,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:07.951Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Padma%20Secondary%20School&query_place_id=ChIJjUwh768a6zkR_DqR9AVVMME",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 33,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzk0nyUHn2e4zYdl4rTYDhk6D1adImly3FUdNmsecIS7wqmeYeypjrw3CHbu_AqMwTCOlvmtNBj3cHfkOs8_2C1z_IFouoEy3iF6sATWz9CLjtKFw5A8g_eSBgMbniQRy1-oe87Ww=w408-h544-k-no",
+    "kgmid": "/g/1tj48x1d"
+  },
+  {
+    "title": "Basu seondary school",
+    "price": null,
+    "categoryName": "Higher secondary school",
+    "address": "MCHH+7QR, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHH+7QR",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.basu.edu.np/",
+    "phone": "+977 1-6615257",
+    "phoneUnformatted": "+97716615257",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6782499,
+      "lng": 85.429387
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJsRoV57Aa6zkRDaZT7jT0O0I",
+    "categories": [
+      "Higher secondary school"
+    ],
+    "fid": "0x39eb1ab0e7151ab1:0x423bf434ee53a60d",
+    "cid": "4772676738303108621",
+    "reviewsCount": 0,
+    "imagesCount": 15,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:08.297Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Basu%20seondary%20school&query_place_id=ChIJsRoV57Aa6zkRDaZT7jT0O0I",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.682206976617763,85.42012009644444,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxAuDKuRgJ_E-orUtDNRCen1NpG2-ZYQCgy1wtT9WUniM02AmANL9t-_NnsNlii2OG2wl3U6HgfE8yjkFryWLdyCFzanZchR8ZyTAG9XiYDO-6F5wmrPe88dOU5NHXes3AEXVfUKA=w408-h306-k-no",
+    "kgmid": "/g/11c2pc_7pk"
+  }
+]

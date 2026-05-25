@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Chonga Ganesh Newari Khaja Ghar",
+    "price": null,
+    "categoryName": "Brunch restaurant",
+    "address": "MCGC+728 Ittapako, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGC+728 Ittapako, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1950420",
+    "phoneUnformatted": "+9779841950420",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6756675,
+      "lng": 85.4200654
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJn_bJBAAb6zkRgkZkU_XGicw",
+    "categories": [
+      "Brunch restaurant"
+    ],
+    "fid": "0x39eb1b0004c9f69f:0xcc89c6f553644682",
+    "cid": "14738530012515026562",
+    "reviewsCount": 0,
+    "imagesCount": 12,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:44.434Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Chonga%20Ganesh%20Newari%20Khaja%20Ghar&query_place_id=ChIJn_bJBAAb6zkRgkZkU_XGicw",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant%20or%20cafe/@27.67530454090198,85.41290913650586,17z?hl=en",
+    "searchString": "restaurant or cafe",
+    "language": "en",
+    "rank": 48,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzARQ02e81QRuhuW2U945vl3kuQb_hySYuPlmZPWZttEDMlMM1I9-69nnCJ4i8RdytnZ9rKXeacYDx0PWqYC9DYUf_UcLGqG0uqBJfP0q5oXJJh9PDW4JBW6XEAYGAIYYsha-hn=w426-h240-k-no",
+    "kgmid": "/g/11vx_nvhc5"
+  }
+]

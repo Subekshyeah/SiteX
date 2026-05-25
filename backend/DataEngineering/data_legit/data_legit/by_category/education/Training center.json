@@ -1,0 +1,894 @@
+[
+  {
+    "title": "Nepal Vocational Academy",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Navadurga - Ganchhen Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Navadurga - Ganchhen Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6620162",
+    "phoneUnformatted": "+97716620162",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6759344,
+      "lng": 85.4358982
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJK6I35YYb6zkRfIRhteckxV8",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b86e537a22b:0x5fc524e7b561847c",
+    "cid": "6900962581614265468",
+    "reviewsCount": 3,
+    "imagesCount": 21,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nepal%20Vocational%20Academy&query_place_id=ChIJK6I35YYb6zkRfIRhteckxV8",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM69LDOEvZWftxjgUFb_7QHmJIpo7Aw9ulmuj_l=w426-h240-k-no",
+    "kgmid": "/g/11h0yf_b0n"
+  },
+  {
+    "title": "Specialty Barista Training (SBT)",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://sbt-54701.web.app/",
+    "phone": "+977 980-5670970",
+    "phoneUnformatted": "+9779805670970",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6713414,
+      "lng": 85.4212691
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJzVWnuC0b6zkRqsOwN_ps0-Q",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b2db8a755cd:0xe4d36cfa37b0c3aa",
+    "cid": "16488642482665472938",
+    "reviewsCount": 47,
+    "imagesCount": 97,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        },
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        }
+      ],
+      "Parking": [
+        {
+          "Paid street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Specialty%20Barista%20Training%20(SBT)&query_place_id=ChIJzVWnuC0b6zkRqsOwN_ps0-Q",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMGTGOX9B8lKGXEoOLrUOlyDNySJCx73pJiVhCu=w408-h510-k-no",
+    "kgmid": "/g/11shwrf91q"
+  },
+  {
+    "title": "Luniva Barista Training Institute",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Bholachhen - Yachhen Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Bholachhen - Yachhen Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.lunivaguesthouse.com.np/",
+    "phone": "+977 986-4995262",
+    "phoneUnformatted": "+9779864995262",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6748183,
+      "lng": 85.4313468
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJQQsPqoUb6zkR_pM5v04vLZg",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b85aa0f0b41:0x982d2f4ebf3993fe",
+    "cid": "10965472682979202046",
+    "reviewsCount": 5,
+    "imagesCount": 38,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Luniva%20Barista%20Training%20Institute&query_place_id=ChIJQQsPqoUb6zkR_pM5v04vLZg",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM8Iti45dG3QxKjzplnIyap9pA-W_IJqGdzF68R=w426-h240-k-no",
+    "kgmid": "/g/11kqn9z_lw"
+  },
+  {
+    "title": "Pioneer Training Centre",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Itachhen-2, 44600, Nepal",
+    "neighborhood": null,
+    "street": "Itachhen-2",
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1285417",
+    "phoneUnformatted": "+9779841285417",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6734435,
+      "lng": 85.4244025
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJLSZ_FHwb6zkRh_Is-WULN74",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b7c147f262d:0xbe370b65f92cf287",
+    "cid": "13706436523525468807",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Pioneer%20Training%20Centre&query_place_id=ChIJLSZ_FHwb6zkRh_Is-WULN74",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=vQSCQPNQFDC-rmzVoYZDaA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=87.11007&pitch=0&thumbfov=100",
+    "kgmid": "/g/11p101rm3w"
+  },
+  {
+    "title": "CETSC - License Trial & Operator Training Center",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Sallaghari, Bhaktapur 44600, Nepal",
+    "neighborhood": null,
+    "street": "Sallaghari",
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://cetsc.com.np/",
+    "phone": "+977 985-1122136",
+    "phoneUnformatted": "+9779851122136",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6767868,
+      "lng": 85.4075952
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJyYCCrvEb6zkRG4oup15QQQk",
+    "categories": [
+      "Training center",
+      "Drivers license training school",
+      "Driving school",
+      "Driving test center",
+      "Vocational school"
+    ],
+    "fid": "0x39eb1bf1ae8280c9:0x941505ea72e8a1b",
+    "cid": "666902587289537051",
+    "reviewsCount": 55,
+    "imagesCount": 14,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=CETSC%20-%20License%20Trial%20%26%20Operator%20Training%20Center&query_place_id=ChIJyYCCrvEb6zkRG4oup15QQQk",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPE-pvIsXqE9Fzi0vWj6gG7oOn7u7G8ZYzod_vv=w426-h240-k-no",
+    "kgmid": "/g/11flbsgqz1"
+  },
+  {
+    "title": "Vygotsky Edu Center",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "MC7H+PR2, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7H+PR2",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-6675258",
+    "phoneUnformatted": "+9779846675258",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6642655,
+      "lng": 85.4294771
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJz0soIQAb6zkRhZtWvSy_XDU",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b0021284bcf:0x355cbf2cbd569b85",
+    "cid": "3845158380743596933",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Vygotsky%20Edu%20Center&query_place_id=ChIJz0soIQAb6zkRhZtWvSy_XDU",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=oknbayrY_rZnXQSx_1XNZw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=129.67722&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x5hvqywr"
+  },
+  {
+    "title": "Dreams Animation Academy & Studios",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.dreams-animation.com.np/",
+    "phone": "+977 986-3022761",
+    "phoneUnformatted": "+9779863022761",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6674822,
+      "lng": 85.426961
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJE6Iq1Wcb6zkRHCagE-wUjMs",
+    "categories": [
+      "Training center",
+      "Animation studio",
+      "Charter school"
+    ],
+    "fid": "0x39eb1b67d52aa213:0xcb8c14ec13a0261c",
+    "cid": "14667121090612962844",
+    "reviewsCount": 43,
+    "imagesCount": 15,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:38.947Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dreams%20Animation%20Academy%20%26%20Studios&query_place_id=ChIJE6Iq1Wcb6zkRHCagE-wUjMs",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyN2Y7DTKKOJBsqh6CfpltqJJ-JP3Ub_nDMKMthPcgUmVkXldXV2OaFxa5aD549djz5HWHyjBRIut4SvIp0JRX9_ltrRa7JfeTcPZErwEW5a4tIrYT-paMmX875jjEuTfEV5lROmg=w408-h306-k-no",
+    "kgmid": "/g/11kg1xmctx"
+  },
+  {
+    "title": "Unique Japanese Language School",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "MC8G+94P, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+94P",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617474",
+    "phoneUnformatted": "+97716617474",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6659563,
+      "lng": 85.42533
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIXBesaca6zkR77ABk20n3nI",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1aa7b15e7021:0x72de276d9301b0ef",
+    "cid": "8277096516724830447",
+    "reviewsCount": 1,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:59.982Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Unique%20Japanese%20Language%20School&query_place_id=ChIJIXBesaca6zkR77ABk20n3nI",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHkxLNJj_HuhA1Zx3B6EVQ15Ru1SAWxtcNAB8kimIYiv9N1qbrCTzrWvIRZYVd2CGpJdbjU0VgR5zJCZY4FY76azBdodFznW7lWjlOOY3REW5itvVHNIC64PQThWO8cqC0f5P7vJJRAXZcBX-XIwEH-C_vWFp-EA8_X0hp01g2SNXUo4o-mjFhrytaJRQ8fLIv_Lg=w408-h306-k-no",
+    "kgmid": "/g/11gfc_h0mq"
+  },
+  {
+    "title": "Techcare Chip Level Repairing and Training Center",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3906423",
+    "phoneUnformatted": "+9779843906423",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6698082,
+      "lng": 85.4105266
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJmTa9yZsa6zkRjyshXAkeYK0",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1a9bc9bd3699:0xad601e095c212b8f",
+    "cid": "12493018391874972559",
+    "reviewsCount": 4,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:59.982Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8:30 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Techcare%20Chip%20Level%20Repairing%20and%20Training%20Center&query_place_id=ChIJmTa9yZsa6zkRjyshXAkeYK0",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=-Q6WIAInUXkrECZHc2bZRg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=227.94121&pitch=0&thumbfov=100",
+    "kgmid": "/g/11f11pvrrs"
+  },
+  {
+    "title": "Sita Ram Tamakhu",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "MC9H+P8X, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+P8X",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6693527,
+      "lng": 85.4283605
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-YkGMwAb6zkRgjEoaoz3jXg",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b00330689f9:0x788df78c6a283182",
+    "cid": "8686871438716055938",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:01.076Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sita%20Ram%20Tamakhu&query_place_id=ChIJ-YkGMwAb6zkRgjEoaoz3jXg",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 32,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=SWXkn1k1pHyM2nqJvN2-7g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=75.67879&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xdmx135q"
+  },
+  {
+    "title": "Khwopa Fashion Instutute",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "MC8G+J3J, गपली मार्ग, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+J3J, गपली मार्ग",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1990890",
+    "phoneUnformatted": "+9779841990890",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.666577,
+      "lng": 85.425133
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJeRwLZ6Ya6zkRGoMIvaifAjc",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1aa6670b1c79:0x37029fa8bd08831a",
+    "cid": "3963906169114231578",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:01.076Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20Fashion%20Instutute&query_place_id=ChIJeRwLZ6Ya6zkRGoMIvaifAjc",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 33,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHrwIEKqjMDWU-3RzKIEEKZ6S_WDswPhqjWEJS6zE5PxYLD2vCbtz_6NTCFRK-0EQOpakYpKVi2f-KE8qLPz4u7CgtTQSBWrFCzukTRmwREAZ9I6cBZibVg4nVai9HNaYc14fMUShIzeJ_Q_mDWEbZf8vMB6hOcWgn05yReNrld-3b4wtB0BDSBDB5KlgZe4riYQSY=w408-h544-k-no",
+    "kgmid": "/g/11b6qcw5jr"
+  },
+  {
+    "title": "Suraj Naga, Lakolachhen",
+    "price": null,
+    "categoryName": "Training center",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-0246360",
+    "phoneUnformatted": "+9779840246360",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6693099,
+      "lng": 85.4284764
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ5bmhMQYb6zkRlQc_3sr40Ww",
+    "categories": [
+      "Training center"
+    ],
+    "fid": "0x39eb1b0631a1b9e5:0x6cd1f8cade3f0795",
+    "cid": "7841321976424499093",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:01.076Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Suraj%20Naga%2C%20Lakolachhen&query_place_id=ChIJ5bmhMQYb6zkRlQc_3sr40Ww",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 40,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=SWXkn1k1pHyM2nqJvN2-7g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=86.05527&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sqtw2zd_"
+  }
+]

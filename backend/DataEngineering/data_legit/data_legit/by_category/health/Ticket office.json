@@ -1,0 +1,46 @@
+[
+  {
+    "title": "2nd ticket counter - bhaktapur square",
+    "price": null,
+    "categoryName": "Ticket office",
+    "address": "MCGJ+426 Bus Stop, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGJ+426 Bus Stop",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6753192,
+      "lng": 85.4300027
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJi_3IQgAb6zkRNQ6mjFP9z0k",
+    "categories": [
+      "Ticket office"
+    ],
+    "fid": "0x39eb1b0042c8fd8b:0x49cffd538ca60e35",
+    "cid": "5318748220231650869",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:51.983Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=2nd%20ticket%20counter%20-%20bhaktapur%20square&query_place_id=ChIJi_3IQgAb6zkRNQ6mjFP9z0k",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 46,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=WNpb1_Fjy37doYETIKYEWw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=24.353584&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xcfgwnmj"
+  }
+]

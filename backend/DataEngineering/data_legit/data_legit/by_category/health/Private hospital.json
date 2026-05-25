@@ -1,0 +1,208 @@
+[
+  {
+    "title": "Dr. Iwamura Memorial Hospital (DRIM HOSPITAL)",
+    "subTitle": "डा इवामुरा मेमोरियल अस्पताल",
+    "price": null,
+    "categoryName": "Private hospital",
+    "address": "Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.iwamurahospital.com/",
+    "phone": "+977 1-6612705",
+    "phoneUnformatted": "+97716612705",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6724669,
+      "lng": 85.4118049
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJm-JxHZoa6zkRtWVwj5yVmDQ",
+    "categories": [
+      "Private hospital",
+      "Obstetrician-gynecologist",
+      "Orthopedic surgeon",
+      "Surgeon",
+      "Urologist"
+    ],
+    "fid": "0x39eb1a9a1d71e29b:0x3498959c8f7065b5",
+    "cid": "3789943586086217141",
+    "reviewsCount": 148,
+    "imagesCount": 52,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:22.942Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Payments": [
+        {
+          "Credit cards": true
+        },
+        {
+          "Debit cards": true
+        },
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dr.%20Iwamura%20Memorial%20Hospital%20(DRIM%20HOSPITAL)&query_place_id=ChIJm-JxHZoa6zkRtWVwj5yVmDQ",
+    "searchPageUrl": "https://www.google.com/maps/search/general%20hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "general hospital",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipODt4YhQnoDmMddyqHKhc9gKFDHopoVTlF-JnO6=w408-h272-k-no",
+    "kgmid": "/g/1hf0cn4m2"
+  },
+  {
+    "title": "Dr. Iwamura Memorial Hospital (DRIM HOSPITAL)",
+    "subTitle": "डा इवामुरा मेमोरियल अस्पताल",
+    "price": null,
+    "categoryName": "Private hospital",
+    "address": "Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.iwamurahospital.com/",
+    "phone": "+977 1-6612705",
+    "phoneUnformatted": "+97716612705",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6724669,
+      "lng": 85.4118049
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJm-JxHZoa6zkRtWVwj5yVmDQ",
+    "categories": [
+      "Private hospital",
+      "Obstetrician-gynecologist",
+      "Orthopedic surgeon",
+      "Surgeon",
+      "Urologist"
+    ],
+    "fid": "0x39eb1a9a1d71e29b:0x3498959c8f7065b5",
+    "cid": "3789943586086217141",
+    "reviewsCount": 148,
+    "imagesCount": 52,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:26.157Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Payments": [
+        {
+          "Credit cards": true
+        },
+        {
+          "Debit cards": true
+        },
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dr.%20Iwamura%20Memorial%20Hospital%20(DRIM%20HOSPITAL)&query_place_id=ChIJm-JxHZoa6zkRtWVwj5yVmDQ",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNJWOEegAud2sXXVsCs8JGyxnYjjWlTBt00N1i-=w408-h269-k-no",
+    "kgmid": "/g/1hf0cn4m2"
+  }
+]

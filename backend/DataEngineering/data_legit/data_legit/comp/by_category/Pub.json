@@ -1,0 +1,366 @@
+[
+  {
+    "title": "Jigri Sekuwa - Kaushaltar",
+    "price": null,
+    "categoryName": "Pub",
+    "address": "Bhaktapur 44600, Nepal",
+    "neighborhood": "Kausaltar",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://jigri.laviehospitality.com.np/",
+    "phone": "+977 970-5776555",
+    "phoneUnformatted": "+9779705776555",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6748348,
+      "lng": 85.3664118
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJ0HgsXgb6zkRPZE61cY0hxs",
+    "categories": [
+      "Pub"
+    ],
+    "fid": "0x39eb1b78b1e04127:0x1b8734c6d53a913d",
+    "cid": "1983612189465547069",
+    "reviewsCount": 377,
+    "imagesCount": 57,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:19.048Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "12 to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "12 to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "12 to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "12 to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "12 to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "12 to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Food": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Jigri%20Sekuwa%20-%20Kaushaltar&query_place_id=ChIJJ0HgsXgb6zkRPZE61cY0hxs",
+    "searchPageUrl": "https://www.google.com/maps/search/pub/@27.64207399075676,85.42249999999997,17z?hl=en",
+    "searchString": "pub",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwFmBoIKJjMhUg1IhoufaQ6CQzfsA9EeBYEJjV3F20novIlYZAXWm6gd-RC9rhInj7Gvcnl5WI6kiMEiIqqlxGS1cPBntbI3YySZsvra-t7RWOVDD5pgKxcItHhP6Bys8w7t3HqncCQq5AK=w408-h544-k-no",
+    "kgmid": "/g/11xcfjd_zw"
+  },
+  {
+    "title": "Aafno chotu panipuri and dahipuri",
+    "price": null,
+    "categoryName": "Pub",
+    "address": "M9GF+4RV, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9GF+4RV",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6753687,
+      "lng": 85.3745365
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJgyEyHgAb6zkRU0OHeGyBr3o",
+    "categories": [
+      "Pub"
+    ],
+    "fid": "0x39eb1b001e322183:0x7aaf816c78874353",
+    "cid": "8840426896430154579",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:42.566Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aafno%20chotu%20panipuri%20and%20dahipuri&query_place_id=ChIJgyEyHgAb6zkRU0OHeGyBr3o",
+    "searchPageUrl": "https://www.google.com/maps/search/pub/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "pub",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=1xjkErWItyXxjQTmx9JwFQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=231.55626&pitch=0&thumbfov=100",
+    "kgmid": "/g/11yjbckzvp"
+  },
+  {
+    "title": "Sabin Bhabuk Residence",
+    "price": null,
+    "categoryName": "Pub",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-2672929",
+    "phoneUnformatted": "+9779862672929",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6727835,
+      "lng": 85.3742709
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcfzAsIEb6zkR_dm_1pj78Hw",
+    "categories": [
+      "Pub"
+    ],
+    "fid": "0x39eb1b81b0c0fc71:0x7cf0fb98d6bfd9fd",
+    "cid": "9002972288970119677",
+    "reviewsCount": 2,
+    "imagesCount": 17,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:42.566Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great beer selection": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Cocktails": true
+        },
+        {
+          "Food": true
+        },
+        {
+          "Food at bar": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Wine": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sabin%20Bhabuk%20Residence&query_place_id=ChIJcfzAsIEb6zkR_dm_1pj78Hw",
+    "searchPageUrl": "https://www.google.com/maps/search/pub/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "pub",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO8y8qlNb-Au3nB4yrpe81m-HV2qTfkNcTeNBV1=w408-h725-k-no",
+    "kgmid": "/g/11svyrbbn2"
+  },
+  {
+    "title": "Sudip",
+    "price": null,
+    "categoryName": "Pub",
+    "address": "M9MV+VVQ, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9MV+VVQ",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6846682,
+      "lng": 85.3947168
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJeUWoKwAb6zkRRiso4mUmYiU",
+    "categories": [
+      "Pub"
+    ],
+    "fid": "0x39eb1b002ba84579:0x25622665e2282b46",
+    "cid": "2693757746148813638",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:59.463Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sudip&query_place_id=ChIJeUWoKwAb6zkRRiso4mUmYiU",
+    "searchPageUrl": "https://www.google.com/maps/search/pub/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "pub",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=wivq6O4BmIL90-Nx0mw5yQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=292.46106&pitch=0&thumbfov=100",
+    "kgmid": "/g/11yfdzt5b6"
+  }
+]

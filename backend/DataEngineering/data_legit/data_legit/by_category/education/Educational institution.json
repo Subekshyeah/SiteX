@@ -1,0 +1,123 @@
+[
+  {
+    "title": "स्लाश एजुकेशन फाउण्डेसन प्रा.लि.",
+    "price": null,
+    "categoryName": "Educational institution",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://slash.com.np/",
+    "phone": "+977 1-5905450",
+    "phoneUnformatted": "+97715905450",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659578,
+      "lng": 85.4253128
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJU2EQGaQb6zkRtNbnvN_QS2E",
+    "categories": [
+      "Educational institution",
+      "Educational consultant",
+      "Japanese language instructor",
+      "Language school"
+    ],
+    "fid": "0x39eb1ba419106153:0x614bd0dfbce7d6b4",
+    "cid": "7010926904297903796",
+    "reviewsCount": 46,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 46
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:00.191Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%B8%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%B6%20%E0%A4%8F%E0%A4%9C%E0%A5%81%E0%A4%95%E0%A5%87%E0%A4%B6%E0%A4%A8%20%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A5%87%E0%A4%B8%E0%A4%A8%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE.%E0%A4%B2%E0%A4%BF.&query_place_id=ChIJU2EQGaQb6zkRtNbnvN_QS2E",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 86,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=exbIVxexYtsXvmna2Gv_QA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=20.269896&pitch=0&thumbfov=100",
+    "kgmid": "/g/11l2xtb7nk"
+  }
+]

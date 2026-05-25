@@ -1,0 +1,828 @@
+[
+  {
+    "title": "Jagriti School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "MCFG+2QP, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+2QP",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6725807,
+      "lng": 85.4269453
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJEXSTySQb6zkRis6e23VK8qU",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1b24c9937411:0xa5f24a75db9ece8a",
+    "cid": "11957701830678335114",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:31.793Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Jagriti%20School&query_place_id=ChIJEXSTySQb6zkRis6e23VK8qU",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxV7FWrblQKiKatRqTotwjGWwyvOGdRQ6uZ9n85y5BcnVLAMwuD1r32yJVntFmPLrJsTEMOwMkmxyaso4dlOIOrQNrsh-pPg5C6LFjfKqkhziVFwQyYW91n6unSprcBL6gdAT8T3g=w426-h240-k-no",
+    "kgmid": "/g/11fjmc4d0q"
+  },
+  {
+    "title": "Nagadesh Government School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "M9MM+R8F, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9MM+R8F",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6845709,
+      "lng": 85.383309
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ62LWs0Ia6zkRSGupGhzsWCM",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1a42b3d662eb:0x2358ec1c1aa96b48",
+    "cid": "2547045194728565576",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:41.252Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nagadesh%20Government%20School&query_place_id=ChIJ62LWs0Ia6zkRSGupGhzsWCM",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 28,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=xXXK6aUI9LeNFNVcLqdAZA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=165.46318&pitch=0&thumbfov=100",
+    "kgmid": "/g/11dxl75g2g"
+  },
+  {
+    "title": "Mahendra Shanti School",
+    "subTitle": "महेन्द्र शान्ति माध्यामिक विद्यालय",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "44811, Nepal",
+    "neighborhood": "Balkot",
+    "street": "44811",
+    "city": "Anantalingeshwar",
+    "postalCode": "44811",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6631796",
+    "phoneUnformatted": "+97716631796",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6621793,
+      "lng": 85.3695434
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6x0_kQka6zkRV4cFcFPUtd8",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1a09913f1deb:0xdfb5d45370058757",
+    "cid": "16120023896069343063",
+    "reviewsCount": 0,
+    "imagesCount": 30,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:51.271Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mahendra%20Shanti%20School&query_place_id=ChIJ6x0_kQka6zkRV4cFcFPUtd8",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.664893497689192,85.37098877360309,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-PRtp3XZOTcjZzCBpczSCUDmkwbu-hZfcitF63qbSKHTiBVJI69JAAJCxeU6kIq4DOuJb8poD4V3muT9wTJ5HJe7g45BA8fs3sDQzYA2pb_q8vMh4HMT9qceC7QUaD-6AMFXTOQgiaTD2=w408-h306-k-no",
+    "kgmid": "/g/11by_xm6mk"
+  },
+  {
+    "title": "Mahendragram Higher Secondary School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "MFJH+XFX, Changunarayan 8, Nepal",
+    "neighborhood": "Sudal",
+    "street": "MFJH+XFX",
+    "city": "Changunarayan",
+    "postalCode": "8",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5903392",
+    "phoneUnformatted": "+97715903392",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6824797,
+      "lng": 85.4787346
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb2rAfCgF6zkRq_pl0YCCRek",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb05287cc06a6f:0xe9458280d165faab",
+    "cid": "16808984674010790571",
+    "reviewsCount": 0,
+    "imagesCount": 20,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:03.517Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mahendragram%20Higher%20Secondary%20School&query_place_id=ChIJb2rAfCgF6zkRq_pl0YCCRek",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.680106502310814,85.47401122639685,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 22,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRYde4yKuCLd-SMklc0PSYFeoVbLCGrs8w7wDxcgONod5vIh5yiGEg6D7RDZFzuvl8WLZWXpnm3iRHDoP3D0qJgfsvswI3gfDjtJu78pMHOwH8rwyy979xT-7YJb-4pu564KGKOA=w408-h306-k-no",
+    "kgmid": "/g/11gnrlt_1v"
+  },
+  {
+    "title": "khyaju",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "Near Ganesh School, Bhaktapur 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Near Ganesh School",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6551008,
+      "lng": 85.4404492
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSQtoMd4P6zkRtPpukqqzR78",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb0fde31680b49:0xbf47b3aa926efab4",
+    "cid": "13783182729773251252",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:23:10.309Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=khyaju&query_place_id=ChIJSQtoMd4P6zkRtPpukqqzR78",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.65728699537838,85.43967040879893,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 21,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPF1zW5dPZ-NREl4OB9-a_tqrDa8orqxIRYDuv2=w408-h408-k-no",
+    "kgmid": "/g/11vkjt_xv8"
+  },
+  {
+    "title": "Ganesh Secondary School",
+    "subTitle": "गणेश माध्यमिक विद्यालय",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "MC4Q+2WQ, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC4Q+2WQ",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6551008,
+      "lng": 85.4404492
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrwTUS_wP6zkRNNMebf5Nqpg",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb0ffc4bd404af:0x98aa4dfe6d1ed334",
+    "cid": "11000690794953626420",
+    "reviewsCount": 0,
+    "imagesCount": 69,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:23:10.309Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ganesh%20Secondary%20School&query_place_id=ChIJrwTUS_wP6zkRNNMebf5Nqpg",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.65728699537838,85.43967040879893,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyaQeLN5P-7nRb2LDhBaSSuDWVSQCzuZqp8yoCNNQDkf8iTL8lNrW91gzSx5q-pEmM4KN0DS2cMPnmjqjlY11MvwuT1QpiAi3p8f7qUhGeSwpDIX5uQdIGEvvACyLJslJ6R1O6c7w=w408-h306-k-no",
+    "kgmid": "/g/11g8cx9y7m"
+  },
+  {
+    "title": "Ganesh Secondary School",
+    "subTitle": "गणेश माध्यमिक विद्यालय",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "MC4Q+2WQ, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC4Q+2WQ",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6551008,
+      "lng": 85.4404492
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrwTUS_wP6zkRNNMebf5Nqpg",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb0ffc4bd404af:0x98aa4dfe6d1ed334",
+    "cid": "11000690794953626420",
+    "reviewsCount": 0,
+    "imagesCount": 69,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:29.986Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ganesh%20Secondary%20School&query_place_id=ChIJrwTUS_wP6zkRNNMebf5Nqpg",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzHTYxUgVQSL0352wB4spHc_3YM1qzVO_NyBQMkkEYJQjdczbMR8zE2XXUS6dRUSadpb_mo01nNHGF4Sf6WrxaNPzA6bmgmxLrk7gKgppYjB8AfqShTZGWqL2BWRJNYsS_hK0vy1g=w426-h240-k-no",
+    "kgmid": "/g/11g8cx9y7m"
+  },
+  {
+    "title": "Shree Aazad Secondary School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "Changunarayan 44800, Nepal",
+    "neighborhood": "Jhaukhel",
+    "street": null,
+    "city": "Changunarayan",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1290072",
+    "phoneUnformatted": "+9779841290072",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6869266,
+      "lng": 85.4272503
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3xGrCsga6zkRLloK5biwtfE",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1ac80aab11df:0xf1b5b0b8e50a5a2e",
+    "cid": "17417021442088393262",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:04.209Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 1 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Aazad%20Secondary%20School&query_place_id=ChIJ3xGrCsga6zkRLloK5biwtfE",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyQsZFjSgt7YQTZTi8tFcJjbmz_sXFGwyVFDBETpZ8jvHuT9KeGyYWGCi_s7mLb0sRdtrFA1JXT-7OLA-ebtU9Dq6QENrlTRQgILkNsxJt1j_eCazuGS90lomUsJ3qob_13X6FC=w408-h306-k-no",
+    "kgmid": "/g/11g8v903r3"
+  },
+  {
+    "title": "khyaju",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "Near Ganesh School, Bhaktapur 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Near Ganesh School",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6551008,
+      "lng": 85.4404492
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSQtoMd4P6zkRtPpukqqzR78",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb0fde31680b49:0xbf47b3aa926efab4",
+    "cid": "13783182729773251252",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:20.940Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=khyaju&query_place_id=ChIJSQtoMd4P6zkRtPpukqqzR78",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.651779070146688,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPF1zW5dPZ-NREl4OB9-a_tqrDa8orqxIRYDuv2=w408-h408-k-no",
+    "kgmid": "/g/11vkjt_xv8"
+  },
+  {
+    "title": "Subarneshwor Basic School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "Suryabinayak 5, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "5",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6620295,
+      "lng": 85.4119242
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJh3D5jdQb6zkRl_D2gnbUejs",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1bd48df97087:0x3b7ad47682f6f097",
+    "cid": "4285971600864899223",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Subarneshwor%20Basic%20School&query_place_id=ChIJh3D5jdQb6zkRl_D2gnbUejs",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=jpKdW5HbHBwcC5o93Xa7zQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=243.09642&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h_k2cnzt"
+  },
+  {
+    "title": "Jagriti School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "MCFG+2QP, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+2QP",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6725807,
+      "lng": 85.4269453
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJEXSTySQb6zkRis6e23VK8qU",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1b24c9937411:0xa5f24a75db9ece8a",
+    "cid": "11957701830678335114",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:06.939Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Jagriti%20School&query_place_id=ChIJEXSTySQb6zkRis6e23VK8qU",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxV7FWrblQKiKatRqTotwjGWwyvOGdRQ6uZ9n85y5BcnVLAMwuD1r32yJVntFmPLrJsTEMOwMkmxyaso4dlOIOrQNrsh-pPg5C6LFjfKqkhziVFwQyYW91n6unSprcBL6gdAT8T3g=w426-h240-k-no",
+    "kgmid": "/g/11fjmc4d0q"
+  },
+  {
+    "title": "Subarneshwor Basic School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "Suryabinayak 5, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "5",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6620295,
+      "lng": 85.4119242
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJh3D5jdQb6zkRl_D2gnbUejs",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1bd48df97087:0x3b7ad47682f6f097",
+    "cid": "4285971600864899223",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:57.106Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Subarneshwor%20Basic%20School&query_place_id=ChIJh3D5jdQb6zkRl_D2gnbUejs",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.660086377294068,85.41290913650586,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 26,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=jpKdW5HbHBwcC5o93Xa7zQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=243.09642&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h_k2cnzt"
+  },
+  {
+    "title": "Jagriti School",
+    "price": null,
+    "categoryName": "Government school",
+    "address": "MCFG+2QP, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+2QP",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6725807,
+      "lng": 85.4269453
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJEXSTySQb6zkRis6e23VK8qU",
+    "categories": [
+      "Government school"
+    ],
+    "fid": "0x39eb1b24c9937411:0xa5f24a75db9ece8a",
+    "cid": "11957701830678335114",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:34.747Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Jagriti%20School&query_place_id=ChIJEXSTySQb6zkRis6e23VK8qU",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 46,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxV7FWrblQKiKatRqTotwjGWwyvOGdRQ6uZ9n85y5BcnVLAMwuD1r32yJVntFmPLrJsTEMOwMkmxyaso4dlOIOrQNrsh-pPg5C6LFjfKqkhziVFwQyYW91n6unSprcBL6gdAT8T3g=w426-h240-k-no",
+    "kgmid": "/g/11fjmc4d0q"
+  }
+]

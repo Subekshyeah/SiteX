@@ -1,0 +1,102 @@
+[
+  {
+    "title": "VHS BHAKTAPUR",
+    "price": null,
+    "categoryName": "German language school",
+    "address": "Adarsha, Bhaktapur -7, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Adarsha, Bhaktapur -7",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.vhsbhaktapur.org/",
+    "phone": "+977 1-6611283",
+    "phoneUnformatted": "+97716611283",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6677716,
+      "lng": 85.4328687
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ8UVe8Ksa6zkREFrdpMwoObw",
+    "categories": [
+      "German language school",
+      "Language school",
+      "Learning center",
+      "Training center",
+      "Youth center"
+    ],
+    "fid": "0x39eb1aabf05e45f1:0xbc3928cca4dd5a10",
+    "cid": "13562916612207368720",
+    "reviewsCount": 66,
+    "reviewsDistribution": {
+      "oneStar": 12,
+      "twoStar": 1,
+      "threeStar": 10,
+      "fourStar": 10,
+      "fiveStar": 33
+    },
+    "imagesCount": 12,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=VHS%20BHAKTAPUR&query_place_id=ChIJ8UVe8Ksa6zkREFrdpMwoObw",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 68,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFIwWWrIrOIN9shmMU8gn34zicxC6eyNl4g3y_DNraYJUGH0Wek46OsYvditn_VCIr17nlFdFcm7kQhLtx3oRMHVb5dEP5hFotcVBEbBRgeEFigscNdJ-f39mWmHvvI6i0SbrF9Xg3DZGqp40bGi7sh3A2tna8ZyqSl2fK3YW4vEdej5OjO9GcnJgoiCWeJ899255M=w408-h306-k-no",
+    "kgmid": "/g/1hm6l3ppv"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "title": "YOYO ZIPLINE",
+    "subTitle": "योयो जिपलाइन",
+    "price": null,
+    "categoryName": "Adventure sports center",
+    "address": "Ghyampe Danda Sadak, Suryabinayak, Nepal",
+    "neighborhood": "Gundu",
+    "street": "Ghyampe Danda Sadak",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 980-1850901",
+    "phoneUnformatted": "+9779801850901",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6298676,
+      "lng": 85.4276306
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAZjOOnER6zkRXDecR3ADjwc",
+    "categories": [
+      "Adventure sports center",
+      "Coffee shop",
+      "Event venue",
+      "Hiking area",
+      "Restaurant",
+      "Tourist attraction"
+    ],
+    "fid": "0x39eb11713ace9801:0x78f0370479c375c",
+    "cid": "544657860707759964",
+    "reviewsCount": 218,
+    "imagesCount": 557,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:54:36.845Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9:30 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=YOYO%20ZIPLINE&query_place_id=ChIJAZjOOnER6zkRXDecR3ADjwc",
+    "searchPageUrl": "https://www.google.com/maps/search/bed%20&%20breakfast/@27.62686098613514,85.42249999999997,17z?hl=en",
+    "searchString": "bed & breakfast",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzxpL5620aRxs6KWIOmF0GVLpcbBeRBUegH3_gA_XjrUuMc6825730KHeJiKlxX3VbfuMzHdPMYRJvCGirjydKm8oy-LroEpv2QiyfZhvXoy02AYai7ijIy4fydPsJitERnPY63=w408-h306-k-no",
+    "kgmid": "/g/11lkg9s5_7"
+  }
+]

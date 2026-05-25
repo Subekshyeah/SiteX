@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Nepal Electricity Authority Training Center",
+    "subTitle": "नेपाल विद्युत प्राधिकरण तालिम केन्द्र",
+    "price": null,
+    "categoryName": "Government",
+    "address": "MFP3+VXP, Changunarayan, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MFP3+VXP",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6872115,
+      "lng": 85.4549632
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAQAAcD8F6zkRYB8_WnqOv7E",
+    "categories": [
+      "Government"
+    ],
+    "fid": "0x39eb053f70000001:0xb1bf8e7a5a3f1f60",
+    "cid": "12808112521416220512",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:44.068Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nepal%20Electricity%20Authority%20Training%20Center&query_place_id=ChIJAQAAcD8F6zkRYB8_WnqOv7E",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.687713004621624,85.44825561319841,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "kgmid": "/g/11kj3f1fz7"
+  }
+]

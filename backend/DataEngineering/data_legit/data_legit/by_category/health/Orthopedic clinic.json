@@ -1,0 +1,166 @@
+[
+  {
+    "title": "Siddhita Health Care Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Orthopedic clinic",
+    "address": "4 Degamana, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "4 Degamana",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-1751900",
+    "phoneUnformatted": "+9779761751900",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6691695,
+      "lng": 85.4251125
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhUGQCQAb6zkRG2HwA-wkKiw",
+    "categories": [
+      "Orthopedic clinic"
+    ],
+    "fid": "0x39eb1b0009904185:0x2c2a24ec03f0611b",
+    "cid": "3182396682787643675",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:29.790Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 4 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddhita%20Health%20Care%20Pvt.%20Ltd.&query_place_id=ChIJhUGQCQAb6zkRG2HwA-wkKiw",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO1xYraUSxv9cwvCjHmTxCawRH60e6_AWDWIRrh=w408-h306-k-no",
+    "kgmid": "/g/11y37djlgg"
+  },
+  {
+    "title": "Siddhita Health Care Pvt. Ltd.",
+    "price": null,
+    "categoryName": "Orthopedic clinic",
+    "address": "4 Degamana, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "4 Degamana",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-1751900",
+    "phoneUnformatted": "+9779761751900",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6691695,
+      "lng": 85.4251125
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhUGQCQAb6zkRG2HwA-wkKiw",
+    "categories": [
+      "Orthopedic clinic"
+    ],
+    "fid": "0x39eb1b0009904185:0x2c2a24ec03f0611b",
+    "cid": "3182396682787643675",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.279Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 4 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddhita%20Health%20Care%20Pvt.%20Ltd.&query_place_id=ChIJhUGQCQAb6zkRG2HwA-wkKiw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO1xYraUSxv9cwvCjHmTxCawRH60e6_AWDWIRrh=w408-h306-k-no",
+    "kgmid": "/g/11y37djlgg"
+  }
+]

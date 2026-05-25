@@ -1,0 +1,707 @@
+[
+  {
+    "title": "Swornabhumi Sahakari",
+    "subTitle": "स्वर्णभूमि सहकारी",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "M98G+VFP, Balakot 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "M98G+VFP",
+    "city": "Balakot",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5211360",
+    "phoneUnformatted": "+97715211360",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.667215,
+      "lng": 85.3761896
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJxYkYRXMa6zkRuLLKnkFbHIQ",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1a73451889c5:0x841c5b419ecab2b8",
+    "cid": "9519584049749471928",
+    "reviewsCount": 3,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:19.050Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Swornabhumi%20Sahakari&query_place_id=ChIJxYkYRXMa6zkRuLLKnkFbHIQ",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.664893497689192,85.37957397800257,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzgq3Ssic_Ozxx664sXDHH2wj8Ds2Oa5n08EWPBfKKPDKZZovjs2cOpzTHv6_5c2VHmHIy9dC61Q7ByDiMkbbAf9rVYwiEbetbelRTvi0No_lZSgsc3xhNFzTVgUkd63vh2-Yxp=w408-h306-k-no",
+    "kgmid": "/g/11g6p13nkh"
+  },
+  {
+    "title": "Sangini Women's SACCOS",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "M9FG+X6H, Gatthaghar Road, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9FG+X6H, Gatthaghar Road",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6635461",
+    "phoneUnformatted": "+97716635461",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6749321,
+      "lng": 85.3756216
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWWT7jhIa6zkRtGKzBb9Z5A4",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1a128efb6459:0xee459bf05b362b4",
+    "cid": "1073081288190288564",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:57.680Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sangini%20Women's%20SACCOS&query_place_id=ChIJWWT7jhIa6zkRtGKzBb9Z5A4",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 50,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx5Uwkn9_Vuw1MryLPUZds_ucBzXb_jPKzbIBRuK1kapS2o6ujr7cs3EalrokRtRpUgzryjXS22-2wwTy067wprbtNtkvpg7JovdCW-4bKEMJzhODyOjyg_yBXLTXHQdHJA8MJFUA=w408-h306-k-no",
+    "kgmid": "/g/11cs1dwgff"
+  },
+  {
+    "title": "Thibon SACCOS",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "M9MQ+G5W, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9MQ+G5W",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6838535,
+      "lng": 85.3879619
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJlWQKhmca6zkRaSafjj0w_to",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1a67860a6495:0xdafe303d8e9f2669",
+    "cid": "15780103185296729705",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:10.067Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Thibon%20SACCOS&query_place_id=ChIJlWQKhmca6zkRaSafjj0w_to",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.680106502310814,85.38815918240205,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eAg8CuEdrTJL8JnsfXT23A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=108.04913&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g8g12hjr"
+  },
+  {
+    "title": "Gorkha Saving & Credit Co-Operative Ltd.",
+    "subTitle": "गोरखा सेभिङ्ग एण्ड क्रेडिट सहकारी संस्था लि.",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "M9GX+959, Satdobato-Tikabhairab Rd, Lalitpur 44700, Nepal",
+    "neighborhood": null,
+    "street": "M9GX+959, Satdobato-Tikabhairab Rd",
+    "city": "Lalitpur",
+    "postalCode": "44700",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/GorkhSaveingCreditCooperative/",
+    "phone": "+977 1-6633506",
+    "phoneUnformatted": "+97716633506",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6759122,
+      "lng": 85.3979924
+    },
+    "totalScore": 2.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY7nCDn0X6zkRjgtNFHrfIX0",
+    "categories": [
+      "Savings bank",
+      "Cooperative",
+      "Banking and finance"
+    ],
+    "fid": "0x39eb177d0ec2b963:0x7d21df7a144d0b8e",
+    "cid": "9016733644392041358",
+    "reviewsCount": 2,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:22:40.681Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gorkha%20Saving%20%26%20Credit%20Co-Operative%20Ltd.&query_place_id=ChIJY7nCDn0X6zkRjgtNFHrfIX0",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.6759111,85.3979997,17.827412298028854z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyDsRLDDDuXm2iP2A-mt9M9wiY_2TJBqA0cV9m9-jQMxhbzM3sEZi4hllWTrAB6I5WDraQvLvICn5QjnGK1QUquJFUkSWK650I3QHlSjMl8bx0HC_hM8coSp8wFncSCIfyx_awT=w408-h544-k-no",
+    "kgmid": "/g/11b6qhtb_c"
+  },
+  {
+    "title": "Kumari Saving And credit cooperate limited",
+    "subTitle": "कुमारी बचत तथा ऋण सहकारी संस्था लि.",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "M9FP+G4X, Araniko Highway, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": null,
+    "street": "M9FP+G4X, Araniko Highway",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5093059",
+    "phoneUnformatted": "+97715093059",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6738638,
+      "lng": 85.3853708
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJuXm_8m8a6zkRiiOPLopN38I",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1a6ff2bf79b9:0xc2df4d8a2e8f238a",
+    "cid": "14042027419046454154",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 3
+    },
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:22:44.091Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Drive-through": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kumari%20Saving%20And%20credit%20cooperate%20limited&query_place_id=ChIJuXm_8m8a6zkRiiOPLopN38I",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.6729549,85.3856529,17.827451335683577z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 31,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHI_NUnJpVj4eorfo_pALLoV1ZQDl9QZNpzrCl_HOaXFYtlxJogxmqjOTBXpFYuHMcvSPK-RGZg76pN15p9jsxHQ-IZg6StRggq1AnQqWNYfJNKQtP88nmiIoNz0VDs781LuG5aWw3-ibv0TSSDj37yPCH8bMcVBN5yR0HGzTi_aEIqc8zocw-r80WNo49QYRk0pW4=w408-h306-k-no",
+    "kgmid": "/g/11b6n_1d1p"
+  },
+  {
+    "title": "Yogadan Savings and Credit Cooperatives Limited.",
+    "subTitle": "योगदान बचत तथा ऋण सहकारी लिमिटेड",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "MCFR+C9V, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFR+C9V",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614984",
+    "phoneUnformatted": "+97716614984",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736046,
+      "lng": 85.4409356
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJV5oiSqsF6zkRU99S-0fzuxo",
+    "categories": [
+      "Savings bank",
+      "Federal credit union"
+    ],
+    "fid": "0x39eb05ab4a229a57:0x1abbf347fb52df53",
+    "cid": "1926400756115758931",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:22:54.958Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Yogadan%20Savings%20and%20Credit%20Cooperatives%20Limited.&query_place_id=ChIJV5oiSqsF6zkRU99S-0fzuxo",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.672500000000003,85.43967040879893,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 32,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxivukx1qDREsWqqDkb0lpMGDan3xnQk0RHOytkYtYur_C54xDI8UlEAHwswVIePiZiu0EP9Y8Oj1S92kF3xLYV2I710fKqh2zBMvB-KOXJXf1yWgwcmjQa5nIMEAeffB35b9O3=w408-h272-k-no",
+    "kgmid": "/g/11h6506f57"
+  },
+  {
+    "title": "Prism Co-operative",
+    "subTitle": "पिर्‍ज्म बचत तथा ऋण सहकारी संस्था लि.",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "M9GP+75P, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": null,
+    "street": "M9GP+75P",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6631165",
+    "phoneUnformatted": "+97716631165",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675721,
+      "lng": 85.3854513
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJj1a1eW8a6zkRP7RFt7EJu0Y",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1a6f79b5568f:0x46bb09b1b745b43f",
+    "cid": "5096678062188508223",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:23:17.616Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Drive-through": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prism%20Co-operative&query_place_id=ChIJj1a1eW8a6zkRP7RFt7EJu0Y",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.672500000000003,85.38815918240205,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHB5NljVMzmDFUxEvaj_hp0lJc9KfY11HsZuMn6rxrHl8y_B_E8RfNrU-k8GrFw5eblZFIfBa-P-anZtTA-Qq_wADRIZ0tgOE5rtRkxqI4JFt9CaCuCPB8-E2EK1KBdriX9zXJHFHSwZL9kOmT7yljuCOXCC-hMe9XI47tQ4Xr4__pLH-emH-uvYhBxkqBuiDRjJg=w408-h306-k-no",
+    "kgmid": "/g/11b6nvwd7q"
+  },
+  {
+    "title": "Surya Shakti Co-operative",
+    "subTitle": "सुर्य शक्ति बचत तथा ऋण सहकारी संस्था लि.",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "MC8F+C5M, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+C5M, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612471",
+    "phoneUnformatted": "+97716612471",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6660912,
+      "lng": 85.422936
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWQNTxKYa6zkRdpUpoxjoHtE",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1aa6c4530359:0xd11ee818a3299576",
+    "cid": "15068736595742528886",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:23:38.627Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4:15 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Surya%20Shakti%20Co-operative&query_place_id=ChIJWQNTxKYa6zkRdpUpoxjoHtE",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.6656829,85.4212152,17.827547344148588z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxO0DZNcNj-vW0j_LrXGmjwdU55ZEESSPodwRZcINICNsTCyiAF5uKtdl8AZUHENabpoOfvhcweeoUSxv0UMkR8eanfrXMkowVqhpwoe_dCj_OBcICNFNsBMuvJ3muLvHUY__NJjA=w408-h306-k-no",
+    "kgmid": "/g/11b6nsck4s"
+  },
+  {
+    "title": "Service Development Savings and Credit Cooperative Society Ltd.",
+    "subTitle": "सेवा बिकास बचत तथा ऋण सहकारी संस्था लि.",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "MCC5+9W9, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC5+9W9, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709177,
+      "lng": 85.409861
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbxY0Tpoa6zkRObWspa2tg9A",
+    "categories": [
+      "Savings bank",
+      "Cooperative"
+    ],
+    "fid": "0x39eb1a9a4e34166f:0xd083adada5acb539",
+    "cid": "15025043743158613305",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:54.136Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Service%20Development%20Savings%20and%20Credit%20Cooperative%20Society%20Ltd.&query_place_id=ChIJbxY0Tpoa6zkRObWspa2tg9A",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.667695459098024,85.40431827301171,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHWTnlQdWzFfyaYoVDqd-_zaL95nbw5ddV0ztyW9Iax-YwV-xgPty_9XE1YfQGfWeSQzf5T0-Lk3jRVC797w5_20-DgjCDIzhs4WsWX_JN8EjIzFNuR5LNOgSrn_zP4nyXI9Sgfhsm9urJE0m8Ryx2EJ4KVsz6KxvBcd4aebM1LQv6pogVo-jz7BFroGHgs8pqcAps=w408-h306-k-no",
+    "kgmid": "/g/11b6qlc9cy"
+  },
+  {
+    "title": "Surya Shakti Co-operative",
+    "subTitle": "सुर्य शक्ति बचत तथा ऋण सहकारी संस्था लि.",
+    "price": null,
+    "categoryName": "Savings bank",
+    "address": "MC8F+C5M, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8F+C5M, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612471",
+    "phoneUnformatted": "+97716612471",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6660912,
+      "lng": 85.422936
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWQNTxKYa6zkRdpUpoxjoHtE",
+    "categories": [
+      "Savings bank"
+    ],
+    "fid": "0x39eb1aa6c4530359:0xd11ee818a3299576",
+    "cid": "15068736595742528886",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:41.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4:15 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4:15 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Surya%20Shakti%20Co-operative&query_place_id=ChIJWQNTxKYa6zkRdpUpoxjoHtE",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 50,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxO0DZNcNj-vW0j_LrXGmjwdU55ZEESSPodwRZcINICNsTCyiAF5uKtdl8AZUHENabpoOfvhcweeoUSxv0UMkR8eanfrXMkowVqhpwoe_dCj_OBcICNFNsBMuvJ3muLvHUY__NJjA=w408-h306-k-no",
+    "kgmid": "/g/11b6nsck4s"
+  }
+]

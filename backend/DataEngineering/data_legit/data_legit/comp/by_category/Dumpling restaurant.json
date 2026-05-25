@@ -1,0 +1,637 @@
+[
+  {
+    "title": "Sanu Mo:Mo: Center and Bhojanalay",
+    "subTitle": "सानु मःमः सेन्टर एण्ड भोजनालय",
+    "price": null,
+    "categoryName": "Dumpling restaurant",
+    "address": "MCC4+QG2, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC4+QG2, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-2296604",
+    "phoneUnformatted": "+9779842296604",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6718939,
+      "lng": 85.4062693
+    },
+    "totalScore": 2.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJiTU1SoUa6zkRknJnflyA5X8",
+    "categories": [
+      "Dumpling restaurant"
+    ],
+    "fid": "0x39eb1a854a353589:0x7fe5805c7e677292",
+    "cid": "9215913347229643410",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:44.434Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Hard liquor": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sanu%20Mo%3AMo%3A%20Center%20and%20Bhojanalay&query_place_id=ChIJiTU1SoUa6zkRknJnflyA5X8",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant%20or%20cafe/@27.67530454090198,85.41290913650586,17z?hl=en",
+    "searchString": "restaurant or cafe",
+    "language": "en",
+    "rank": 41,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhF0TlejtZUoilm5lcTt4dJt9CtW1_1gAA8cWCZTrAuNU2O9FIGg0Q6mCfzFR4AD0bbqmdJzDFFw44KpMygBZbHtBOzTVvx25KBYgZqiCm_EdLl4YOvmVfNROSc-gQWtH4mtqmDbVTtin9UpfWwxVWG5wcS6h8YBJ0OFRvP9a8lSziHZNADtZdW5fK0pig6ThQcg8Eg=w426-h240-k-no",
+    "kgmid": "/g/11b6s0pmwk"
+  },
+  {
+    "title": "New Vishnu Mo Mo Center",
+    "subTitle": "न्यू विष्णु म म सेन्टर",
+    "price": null,
+    "categoryName": "Dumpling restaurant",
+    "address": "MCCF+53X, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+53X, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6704939,
+      "lng": 85.4227322
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJs5yTfKQa6zkRDrZodIfvMr4",
+    "categories": [
+      "Dumpling restaurant"
+    ],
+    "fid": "0x39eb1aa47c939cb3:0xbe32ef877468b60e",
+    "cid": "13705279981094483470",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:38:20.458Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=New%20Vishnu%20Mo%20Mo%20Center&query_place_id=ChIJs5yTfKQa6zkRDrZodIfvMr4",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 71,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=XEFpHPZI2b4oxxavAull7g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=7.7274623&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6qj_zd_"
+  },
+  {
+    "title": "Tripura Mo:Mo Food Center",
+    "price": null,
+    "categoryName": "Dumpling restaurant",
+    "address": "JFW8+MF6, Suryabinayak, Nepal",
+    "neighborhood": "Nangkhel",
+    "street": "JFW8+MF6",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6466718,
+      "lng": 85.4661538
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-RoJ4K8P6zkRxfcjdiRxnDQ",
+    "categories": [
+      "Dumpling restaurant"
+    ],
+    "fid": "0x39eb0fafe0091af9:0x349c71247623f7c5",
+    "cid": "3791029387753945029",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:52:59.227Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "12 to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "12 to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "12 to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "12 to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "12 to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "12 to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Small plates": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tripura%20Mo%3AMo%20Food%20Center&query_place_id=ChIJ-RoJ4K8P6zkRxfcjdiRxnDQ",
+    "searchPageUrl": "https://www.google.com/maps/search/non%20vegetarian%20restaurant/@27.64207399075676,85.46542602199737,17z?hl=en",
+    "searchString": "non vegetarian restaurant",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Bbq_3XRBe3gLx5nF4Cc-Qg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=52.117195&pitch=0&thumbfov=100",
+    "kgmid": "/g/11f66b47d9"
+  },
+  {
+    "title": "Shandar Momo - Gatthaghar (शानदार मःमः)",
+    "price": null,
+    "categoryName": "Dumpling restaurant",
+    "address": "M9HJ+778, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9HJ+778",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1078080",
+    "phoneUnformatted": "+9779851078080",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.673639,
+      "lng": 85.3734622
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ56Za4PEb6zkRj19rbQCt9Uw",
+    "categories": [
+      "Dumpling restaurant"
+    ],
+    "fid": "0x39eb1bf1e05aa6e7:0x4cf5ad006d6b5f8f",
+    "cid": "5545528733523992463",
+    "reviewsCount": 167,
+    "reviewsDistribution": {
+      "oneStar": 29,
+      "twoStar": 7,
+      "threeStar": 26,
+      "fourStar": 36,
+      "fiveStar": 69
+    },
+    "imagesCount": 29,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:11.205Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Lunch": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Lunch": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "College students": true
+        },
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Accepts reservations": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free street parking": true
+        },
+        {
+          "Usually difficult to find a space": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shandar%20Momo%20-%20Gatthaghar%20(%E0%A4%B6%E0%A4%BE%E0%A4%A8%E0%A4%A6%E0%A4%BE%E0%A4%B0%20%E0%A4%AE%E0%A4%83%E0%A4%AE%E0%A4%83)&query_place_id=ChIJ56Za4PEb6zkRj19rbQCt9Uw",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 40,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwT2MQBw5u7bpxZM9oCuo81GRCJeSIAsZHp3yLBo5jlbbrU2L0Xq_dx6y7wfYsx3yjbvKnDzGV86ZSXhpLYK-tjNYmy9Mn83rg8aLkYiPlgW5rGLNo9I1EZ6GuOz585YwkCnkxe=w425-h240-k-no",
+    "kgmid": "/g/11ls64_8qx"
+  },
+  {
+    "title": "Yunisa Mo:Mo: and Khaja Ghar",
+    "subTitle": "युनिसा मःमः एण्ड खाजा घर",
+    "price": null,
+    "categoryName": "Dumpling restaurant",
+    "address": "M9GF+3Q6, Araniko Highway, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9GF+3Q6, Araniko Highway",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-3224893",
+    "phoneUnformatted": "+9779813224893",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675162,
+      "lng": 85.3743839
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwQo7IBMa6zkRsY86kwx8Tb0",
+    "categories": [
+      "Dumpling restaurant"
+    ],
+    "fid": "0x39eb1a13203b0ac1:0xbd4d7c0c933a8fb1",
+    "cid": "13640695239826640817",
+    "reviewsCount": 6,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 2,
+      "threeStar": 0,
+      "fourStar": 2,
+      "fiveStar": 1
+    },
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:13.455Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Beer": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Yunisa%20Mo%3AMo%3A%20and%20Khaja%20Ghar&query_place_id=ChIJwQo7IBMa6zkRsY86kwx8Tb0",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 84,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHIRgk1PhRWYzGUoL8kZ1OGkNpWh00Dz4usPnFR7HGEP3scdjb6sQLT_g3Fp1hICduXjGA98dFq_LJbWES1WpqTeuz_rmO2j0mNjikYBjpAixOhNeS_LRWOSJH0FMMaMBBYhgfXiVJpbTJo6Oskjmg0ObUxEZZKLLyRF5GSIY71bF8SAMuX5BTxY3juy6RWcSlB-TE=w408-h306-k-no",
+    "kgmid": "/g/11b6s0r_wm"
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "title": "MB residence",
+    "price": null,
+    "categoryName": "Business park",
+    "address": "Bhaktapur 44600, Nepal",
+    "neighborhood": "Kausaltar",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6737049,
+      "lng": 85.3674734
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPfUFRIwb6zkRRA8eZU18X6c",
+    "categories": [
+      "Business park"
+    ],
+    "fid": "0x39eb1b8c4405f53d:0xa75f7c4d651e0f44",
+    "cid": "12060494998972272452",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:59.347Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=MB%20residence&query_place_id=ChIJPfUFRIwb6zkRRA8eZU18X6c",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KxbbFj5TnyiObA4fe2tWAQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=26.217916&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y1rmfgrl"
+  },
+  {
+    "title": "भुवन किराना पसल",
+    "price": null,
+    "categoryName": "Business park",
+    "address": "Bhaktapur, Nepal",
+    "neighborhood": "Chittapol",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3725262",
+    "phoneUnformatted": "+9779843725262",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6537051,
+      "lng": 85.469883
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJpXbJWRgP6zkRpfjn5UYlgpc",
+    "categories": [
+      "Business park"
+    ],
+    "fid": "0x39eb0f1859c976a5:0x97822546e5e7f8a5",
+    "cid": "10917329433134626981",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:49.543Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 9:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4:30 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%AD%E0%A5%81%E0%A4%B5%E0%A4%A8%20%E0%A4%95%E0%A4%BF%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A4%BE%20%E0%A4%AA%E0%A4%B8%E0%A4%B2&query_place_id=ChIJpXbJWRgP6zkRpfjn5UYlgpc",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.65728699537838,85.46542602199737,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 21,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=dkqt0TWZ2zQg5eXUzPoDrQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=269.7917&pitch=0&thumbfov=100",
+    "kgmid": "/g/11v3_3k8np"
+  }
+]

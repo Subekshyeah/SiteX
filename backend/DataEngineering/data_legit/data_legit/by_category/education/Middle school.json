@@ -1,0 +1,973 @@
+[
+  {
+    "title": "Saraswati English School",
+    "subTitle": "सरस्वती अंग्रेजी स्कूल",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MCGP+7GV, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+7GV, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610202",
+    "phoneUnformatted": "+97716610202",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675735,
+      "lng": 85.4362819
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbzkhwLIa6zkRz7yB5tJIrjM",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1ab2c021396f:0x33ae48d2e681bccf",
+    "cid": "3723994012529573071",
+    "reviewsCount": 0,
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:33.126Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saraswati%20English%20School&query_place_id=ChIJbzkhwLIa6zkRz7yB5tJIrjM",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 22,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyxiV_EPV_1kASXRTVFpUrNtAAsaKI-yX7-C3o20kM0aoqWVKPdT6GDK57gO-fg3DaD-wBZxV92Q4su9NQ5ATru8k5E7DdszI2WXke8QQKFAE73HSDOqUESFF2NDe8prX3E_7gN5Q=w408-h306-k-no",
+    "kgmid": "/g/11b6q5dd19"
+  },
+  {
+    "title": "Students' Academy",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC89+4W9, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC89+4W9",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5092841",
+    "phoneUnformatted": "+97715092841",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6652974,
+      "lng": 85.4198732
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMRFlAN0b6zkR4tArrzNO0VI",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1bdd00651131:0x52d14e33af2bd0e2",
+    "cid": "5967636965131800802",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:57.486Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Students'%20Academy&query_place_id=ChIJMRFlAN0b6zkR4tArrzNO0VI",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=I-xhZ7a1OtU4p2PpxQ9pjQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=174.19745&pitch=0&thumbfov=100",
+    "kgmid": "/g/11jcjmkw0c"
+  },
+  {
+    "title": "Image secondary school",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC9P+5F6, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9P+5F6",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6679048,
+      "lng": 85.4361339
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI2h1AJ4b6zkRiHOZ4wniL0A",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1b9e00756823:0x402fe209e3997388",
+    "cid": "4625163874433856392",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:29.986Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Image%20secondary%20school&query_place_id=ChIJI2h1AJ4b6zkRiHOZ4wniL0A",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=umYhaA0Rs-vBmTbIDhk8Bw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=45.150814&pitch=0&thumbfov=100",
+    "kgmid": "/g/11mwyws21y"
+  },
+  {
+    "title": "Saraswati English School",
+    "subTitle": "सरस्वती अंग्रेजी स्कूल",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MCGP+7GV, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+7GV, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610202",
+    "phoneUnformatted": "+97716610202",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.675735,
+      "lng": 85.4362819
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbzkhwLIa6zkRz7yB5tJIrjM",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1ab2c021396f:0x33ae48d2e681bccf",
+    "cid": "3723994012529573071",
+    "reviewsCount": 0,
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.893Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Saraswati%20English%20School&query_place_id=ChIJbzkhwLIa6zkRz7yB5tJIrjM",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyxiV_EPV_1kASXRTVFpUrNtAAsaKI-yX7-C3o20kM0aoqWVKPdT6GDK57gO-fg3DaD-wBZxV92Q4su9NQ5ATru8k5E7DdszI2WXke8QQKFAE73HSDOqUESFF2NDe8prX3E_7gN5Q=w408-h306-k-no",
+    "kgmid": "/g/11b6q5dd19"
+  },
+  {
+    "title": "Ruby Valley School",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC7G+9QV, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7G+9QV",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9161106",
+    "phoneUnformatted": "+9779849161106",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6635041,
+      "lng": 85.4269349
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSeDkZjMP6zkRd07rERBa0gk",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb0f3366e4e049:0x9d25a1011eb4e77",
+    "cid": "707727116517199479",
+    "reviewsCount": 0,
+    "imagesCount": 13,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.485Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 4:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ruby%20Valley%20School&query_place_id=ChIJSeDkZjMP6zkRd07rERBa0gk",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx3PvjsUS6caG0SllGC-qfeR_x0LhQ8eQKbPlQMhWZIT7XlooaRwTIWEvhY_01bEj0BrxuQi2k69GsmIaZQy08pJ1xTfVImo7bF5c1Qap7CooeFRU6yGCd4Hg4yQ-DAs-wgIPG-=w408-h306-k-no",
+    "kgmid": "/g/11svnhqn7j"
+  },
+  {
+    "title": "Little Garden English Secondary School",
+    "subTitle": "लिटल गार्डेन ईङलिस माध्यमिक विद्यालय",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC56+6RX, F099, Suryabinayak, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC56+6RX, F099",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6581203,
+      "lng": 85.4121137
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJG-AwL3QQ6zkRuFaPVgbI2TU",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb10742f30e01b:0x35d9c806568f56b8",
+    "cid": "3880352483503986360",
+    "reviewsCount": 0,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:24.304Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Little%20Garden%20English%20Secondary%20School&query_place_id=ChIJG-AwL3QQ6zkRuFaPVgbI2TU",
+    "searchPageUrl": "https://www.google.com/maps/search/garden/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "garden",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyoD-KeAtViz9CE1Yhs14BVhknCXflzgyq0MTPGhHHw7QsK_fhaXb-hUK5Eonvgtx0UiK_IgIzXx6C-pb6u4KQ8LJCSbKIeLh_5U5095W6d1-rLl9Sz1yFAUTd59u3IPZSZZWunBQ=w533-h240-k-no",
+    "kgmid": "/g/11c52x_gbc"
+  },
+  {
+    "title": "Unity english secondary school",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC65+WMX, Suryabinayak, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC65+WMX",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1052575",
+    "phoneUnformatted": "+9779851052575",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6623541,
+      "lng": 85.409234
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJV80E5k0b6zkRORlbgVHKWEE",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1b4de604cd57:0x4158ca51815b1939",
+    "cid": "4708735861827246393",
+    "reviewsCount": 0,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Unity%20english%20secondary%20school&query_place_id=ChIJV80E5k0b6zkRORlbgVHKWEE",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwF4JMNsh_Cpgbg-ZP0h1iCNSsUdxXxe9GMAo9dUudSEHD0RkqJrqLxqxY_z-bCmEue0PL9wEiN1_rmtxzcJpocYmZvypYxBp-lX6hE8W07ZtsBMmEbpLVE26Jv8YFra7ltT4=w408-h725-k-no",
+    "kgmid": "/g/11jh8whgv0"
+  },
+  {
+    "title": "St johns English boarding school",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "123 Katunje Marg, Suryabinayak 45100, Nepal",
+    "neighborhood": "Katunje",
+    "street": "123 Katunje Marg",
+    "city": "Suryabinayak",
+    "postalCode": "45100",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6697355,
+      "lng": 85.4065883
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJX5RCGgAb6zkRyvR6NCnNk7g",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1b001a42945f:0xb893cd29347af4ca",
+    "cid": "13300199701413033162",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=St%20johns%20English%20boarding%20school&query_place_id=ChIJX5RCGgAb6zkRyvR6NCnNk7g",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "kgmid": "/g/11vy399s29"
+  },
+  {
+    "title": "binodtamang",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC5G+29G, Suryabinayak, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC5G+29G",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6575662,
+      "lng": 85.4259582
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJzVvABQAR6zkRZeuuhckytms",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb110005c05bcd:0x6bb632c985aeeb65",
+    "cid": "7761446848932277093",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:36.374Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=binodtamang&query_place_id=ChIJzVvABQAR6zkRZeuuhckytms",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.42012009644444,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=LoiYq8DqIj3uOchdD-4bgg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=170.51216&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w1f1dnf_"
+  },
+  {
+    "title": "Students' Academy",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC89+4W9, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC89+4W9",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5092841",
+    "phoneUnformatted": "+97715092841",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6652974,
+      "lng": 85.4198732
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMRFlAN0b6zkR4tArrzNO0VI",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1bdd00651131:0x52d14e33af2bd0e2",
+    "cid": "5967636965131800802",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:36.375Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Students'%20Academy&query_place_id=ChIJMRFlAN0b6zkR4tArrzNO0VI",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.42012009644444,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=I-xhZ7a1OtU4p2PpxQ9pjQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=174.19745&pitch=0&thumbfov=100",
+    "kgmid": "/g/11jcjmkw0c"
+  },
+  {
+    "title": "Prowess Academy English Secondary School",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC9Q+36C, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9Q+36C",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6620020",
+    "phoneUnformatted": "+97716620020",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.667697,
+      "lng": 85.4380207
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJi766ERUF6zkRtAJAAeKF3uM",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb051511babe8b:0xe3de85e2014002b4",
+    "cid": "16419708497169482420",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:44.154Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prowess%20Academy%20English%20Secondary%20School&query_place_id=ChIJi766ERUF6zkRtAJAAeKF3uM",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.682206976617763,85.45446650592592,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=JFi49xj1uwbhB1dwuhYYkQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=229.6488&pitch=0&thumbfov=100",
+    "kgmid": "/g/11t9cq7pmx"
+  },
+  {
+    "title": "Shree Ganesh Basic School",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MCQ5+RC8, Rudraksha Rd, Changunarayan, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCQ5+RC8, Rudraksha Rd",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.689543,
+      "lng": 85.4085753
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_2tEg9Ab6zkROlsb-hJ_J0s",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1bd083446bff:0x4b277f12fa1b5b3a",
+    "cid": "5415436796418546490",
+    "reviewsCount": 0,
+    "imagesCount": 25,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:51.842Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Ganesh%20Basic%20School&query_place_id=ChIJ_2tEg9Ab6zkROlsb-hJ_J0s",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.689813953235532,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwB23GMj4cgTkRjY-cY0HMLhujyCQPmNDKWlH-fZaISOW1bYf9xtbsGybwsjyp4er3aJH2YotNm2Ulat58ATTEqn1xuLZ4Ygcc3PJnzvDqsFTwaLX1XyX14bwrkegvtJUkYsJKfWQ=w408-h306-k-no",
+    "kgmid": "/g/11m_yx2p7l"
+  },
+  {
+    "title": "Tejaswee Pathshala",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MC95+XWC, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC95+XWC",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6611117",
+    "phoneUnformatted": "+97716611117",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6699275,
+      "lng": 85.4097536
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4ZVOiZAb6zkRhfxkwo4YEIM",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1b90894e95e1:0x8310188ec264fc85",
+    "cid": "9444075420021750917",
+    "reviewsCount": 0,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:13.840Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tejaswee%20Pathshala&query_place_id=ChIJ4ZVOiZAb6zkRhfxkwo4YEIM",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwWVrieIVjpRNcG25ctd3MrlCpp--uj35l1dY1mlShWb6_Tw457-O56K07WZEorvm1whVHsWV9mqqju0fT7YgSuJxXpVsfCwySqddRZ1M539sqUEVmDYSKHVue1CdKRcSJRL9SSmQ=w408-h306-k-no",
+    "kgmid": "/g/11h6m81n1q"
+  },
+  {
+    "title": "Dekocha, Bhaktpur",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670994,
+      "lng": 85.4298429
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJyzD7BaIb6zkRkXtObSfwox8",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1ba205fb30cb:0x1fa3f0276d4e7b91",
+    "cid": "2279929888507853713",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:06.939Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dekocha%2C%20Bhaktpur&query_place_id=ChIJyzD7BaIb6zkRkXtObSfwox8",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.4451&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vhvm3_hy"
+  },
+  {
+    "title": "Gatthaghar",
+    "price": null,
+    "categoryName": "Middle school",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-8584377",
+    "phoneUnformatted": "+9779848584377",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709997,
+      "lng": 85.4298171
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_ypnRAAb6zkRsYynabk3aB0",
+    "categories": [
+      "Middle school"
+    ],
+    "fid": "0x39eb1b0044672aff:0x1d6837b969a78cb1",
+    "cid": "2119004894158884017",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:06.939Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "3 to 5 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "3 to 5 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "3 to 5 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "3 to 5 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "3 to 5 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "3 to 5 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gatthaghar&query_place_id=ChIJ_ypnRAAb6zkRsYynabk3aB0",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nLq8QKi__V8OqYrwsXe4Uw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=204.57318&pitch=0&thumbfov=100",
+    "kgmid": "/g/11whhgjl26"
+  }
+]

@@ -1,0 +1,408 @@
+[
+  {
+    "title": "Hada Ice Cream",
+    "price": "$",
+    "categoryName": "Ice cream shop",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612561",
+    "phoneUnformatted": "+97716612561",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6667617,
+      "lng": 85.4256602
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUxfIa6Ya6zkReOAJVaNC_HA",
+    "categories": [
+      "Ice cream shop",
+      "Icelandic restaurant",
+      "Outlet store",
+      "Wi-Fi spot"
+    ],
+    "fid": "0x39eb1aa66bc81753:0x70fc42a35509e078",
+    "cid": "8141455495652827256",
+    "reviewsCount": 438,
+    "imagesCount": 101,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:36.833Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Coffee": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Quick visit": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Hada%20Ice%20Cream&query_place_id=ChIJUxfIa6Ya6zkReOAJVaNC_HA",
+    "searchPageUrl": "https://www.google.com/maps/search/dessert%20restaurant/@27.667695459098024,85.41290913650586,17z?hl=en",
+    "searchString": "dessert restaurant",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxm_y2u-wnGA7_9h56DWqaG229P5wFnbhYlCAoe7R7Ff8LDVFAdLz-I72JB7B17mt-Sb1e4XRj1JCQNaYnPAX0dRt9ghkXP1ec1Ei7X6lSPvS_RaU6qjUtfJyx9jV0WdDZN75h1=w408-h599-k-no",
+    "kgmid": "/g/11b64plgmt"
+  },
+  {
+    "title": "Hada Ice Cream",
+    "price": "$",
+    "categoryName": "Ice cream shop",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612561",
+    "phoneUnformatted": "+97716612561",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6667617,
+      "lng": 85.4256602
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUxfIa6Ya6zkReOAJVaNC_HA",
+    "categories": [
+      "Ice cream shop",
+      "Icelandic restaurant",
+      "Outlet store",
+      "Wi-Fi spot"
+    ],
+    "fid": "0x39eb1aa66bc81753:0x70fc42a35509e078",
+    "cid": "8141455495652827256",
+    "reviewsCount": 438,
+    "imagesCount": 101,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:20.554Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Coffee": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Quick visit": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Hada%20Ice%20Cream&query_place_id=ChIJUxfIa6Ya6zkReOAJVaNC_HA",
+    "searchPageUrl": "https://www.google.com/maps/search/dessert%20shop/@27.64207399075676,85.42249999999997,17z?hl=en",
+    "searchString": "dessert shop",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOtciyEmVGPDk6TIETt7_Q2ajYhPDJXX8DRx3nS=w426-h240-k-no",
+    "kgmid": "/g/11b64plgmt"
+  },
+  {
+    "title": "Hada Ice Cream",
+    "price": "$",
+    "categoryName": "Ice cream shop",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612561",
+    "phoneUnformatted": "+97716612561",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6667617,
+      "lng": 85.4256602
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUxfIa6Ya6zkReOAJVaNC_HA",
+    "categories": [
+      "Ice cream shop",
+      "Icelandic restaurant",
+      "Outlet store",
+      "Wi-Fi spot"
+    ],
+    "fid": "0x39eb1aa66bc81753:0x70fc42a35509e078",
+    "cid": "8141455495652827256",
+    "reviewsCount": 438,
+    "reviewsDistribution": {
+      "oneStar": 23,
+      "twoStar": 15,
+      "threeStar": 78,
+      "fourStar": 143,
+      "fiveStar": 179
+    },
+    "imagesCount": 101,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-11T10:08:20.473Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Coffee": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Table service": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        },
+        {
+          "Trendy": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Planning": [
+        {
+          "Quick visit": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Hada%20Ice%20Cream&query_place_id=ChIJUxfIa6Ya6zkReOAJVaNC_HA",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.640686196818166,85.46050991168464,14z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 100,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxAbGbO9AvqXOrkvJVAko1DDjgzegpS4le-MVa-ds96a8vlkyIBAjeo1cutVVAS5q0xlTa3cSU-osoYkhXRAczbI-VWKMLNxD7QWQkUlrTvkCbo6ngFOETgqiwFgStK2vco1lyMig=w426-h240-k-no",
+    "kgmid": "/g/11b64plgmt"
+  }
+]

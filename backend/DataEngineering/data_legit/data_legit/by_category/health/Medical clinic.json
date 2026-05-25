@@ -1,0 +1,4458 @@
+[
+  {
+    "title": "Bhaktapur Health Concern Pvt. LTD. (Kamalbinayak Branch)",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Kamalbinayak chwok, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak chwok",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://bhc.com.np/",
+    "phone": "+977 1-6615422",
+    "phoneUnformatted": "+97716615422",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6769675,
+      "lng": 85.4370704
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdXY0rjMb6zkRq1YZ74AJPuQ",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b33ae347675:0xe43e0980ef1956ab",
+    "cid": "16446593338575509163",
+    "reviewsCount": 6,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 4
+    },
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.485Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Health%20Concern%20Pvt.%20LTD.%20(Kamalbinayak%20Branch)&query_place_id=ChIJdXY0rjMb6zkRq1YZ74AJPuQ",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 22,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP-vNxcoW3fSke1aP86ZiWFukkMeD8pgrZyG7ig=w506-h240-k-no",
+    "kgmid": "/g/11dxbcw_2l"
+  },
+  {
+    "title": "Kamalbinayak Polyclinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Chowk Kamalbinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Chowk Kamalbinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5915875",
+    "phoneUnformatted": "+97715915875",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6769231,
+      "lng": 85.4367162
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPw_Hr4IF6zkR_G8XJi7W1z8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb0582afc70f3f:0x3fd7d62e26176ffc",
+    "cid": "4600381038078160892",
+    "reviewsCount": 13,
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 2,
+      "fiveStar": 9
+    },
+    "imagesCount": 51,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.485Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 2:10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kamalbinayak%20Polyclinic&query_place_id=ChIJPw_Hr4IF6zkR_G8XJi7W1z8",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxUrGoiGgyu0slPT2j_6lNqkbq80ZY5U6pmW5RyJLiZS3Av4mu_JIOy1rPbkPrMmjvUC4cGqmzUzCM7D_gSF2znokbLRHCv-X7F8tteQDnrUaqhAYUWycBiDn-dvwNOw1ej4bUK=w408-h306-k-no",
+    "kgmid": "/g/11txchbrk7"
+  },
+  {
+    "title": "Bhaktapur Model Clinic & Research Center Pvt. Ltd.",
+    "subTitle": "भक्तपुर मोडेल क्लिनिक र अनुसन्धान केन्द्र प्रा। लिमिटेड",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFH+4WQ, तुलाछें, इच्छु गल्ली, 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+4WQ, तुलाछें, इच्छु गल्ली",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613388",
+    "phoneUnformatted": "+97716613388",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6728285,
+      "lng": 85.4298454
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_XWjNK4a6zkRTuxQKz92QX4",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aae34a375fd:0x7e41763f2b50ec4e",
+    "cid": "9097682735946853454",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.486Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:15 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Model%20Clinic%20%26%20Research%20Center%20Pvt.%20Ltd.&query_place_id=ChIJ_XWjNK4a6zkRTuxQKz92QX4",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 26,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFOZ5wuGQBJ2Wv2IXROEzlC_wFMYmSlJjGIjsrV7dRyALcuQPfvzfYxiwUUtDEkcBfP-h45X_tAFLdCv1Ir_DbOgsL3LsMaTVjaWx5YNrXAMgCxDfruh6FQ96ishKoyhgYX5Kq25mEuA3SReQzNLap8Mr1K8n-BquaebI_7ZEE1qbSNoygJ33fVOiVZcIfvl_RD0zw=w408-h306-k-no",
+    "kgmid": "/g/11b6pzmr00"
+  },
+  {
+    "title": "National Eye Clinic Optical",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9129657",
+    "phoneUnformatted": "+9779849129657",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6769018,
+      "lng": 85.4371004
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJiV3txZkb6zkRuxnRmXYLJpA",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b99c5ed5d89:0x90260b7699d119bb",
+    "cid": "10387002194591291835",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.486Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=National%20Eye%20Clinic%20Optical&query_place_id=ChIJiV3txZkb6zkRuxnRmXYLJpA",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 28,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwhbGCbPj79_ip_ugWMYRwCMmdFcLsh-9pUPraGcCGAk88XDz7DOyqKNfn-mhtdaunqbXGd2UXNA31BR5sIjepFLl4PreQOoQkPfS_TE_9eZ5h0t3jsvS0sfuOGRqp3w0nxqArO9A=w426-h240-k-no",
+    "kgmid": "/g/11gvt2f0xk"
+  },
+  {
+    "title": "Bhaktapur Homeopathic Medical College",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Kamalbinayak NVA Building, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak NVA Building",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613197",
+    "phoneUnformatted": "+97716613197",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.675947,
+      "lng": 85.435959
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCccK-K0a6zkRs8FafsdKdI8",
+    "categories": [
+      "Medical clinic",
+      "Medical school"
+    ],
+    "fid": "0x39eb1aadf80ac709:0x8f744ac77e5ac1b3",
+    "cid": "10336969265400955315",
+    "reviewsCount": 8,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 7
+    },
+    "imagesCount": 22,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.486Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Homeopathic%20Medical%20College&query_place_id=ChIJCccK-K0a6zkRs8FafsdKdI8",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 29,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPBbfpNYQE5XC9_-jVTL1hGC24lTQQeD7EStF5y=w408-h306-k-no",
+    "kgmid": "/g/113jr9qkm"
+  },
+  {
+    "title": "Bhaktapur City Medical Centre",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFH+FJW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+FJW",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-3167603",
+    "phoneUnformatted": "+9779813167603",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6737487,
+      "lng": 85.4290772
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJK29L2K8a6zkRAvgLXRK4M4Q",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aafd84b6f2b:0x8433b8125d0bf802",
+    "cid": "9526160025828718594",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20City%20Medical%20Centre&query_place_id=ChIJK29L2K8a6zkRAvgLXRK4M4Q",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=0mBuLuyYCa3rv4AJ7EauUw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=243.59459&pitch=0&thumbfov=100",
+    "kgmid": "/g/11dfjwpdx1"
+  },
+  {
+    "title": "Bramhayeni Polyclinic & Pharmacy",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Byasi Gate, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Byasi Gate, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://bramhayenipolyclinic.com.np/",
+    "phone": "+977 1-6620260",
+    "phoneUnformatted": "+97716620260",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6752631,
+      "lng": 85.4300374
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJeR37wsQF6zkRKjKRrKPHiuw",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb05c4c2fb1d79:0xec8ac7a3ac91322a",
+    "cid": "17044655245525856810",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bramhayeni%20Polyclinic%20%26%20Pharmacy&query_place_id=ChIJeR37wsQF6zkRKjKRrKPHiuw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=NZRIRCjFxmn3SmGhXwTGIA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=13.449435&pitch=0&thumbfov=100",
+    "kgmid": "/g/11n5lwpj8g"
+  },
+  {
+    "title": "General Clinic",
+    "subTitle": "जनरल क्लिनिक",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFH+M74, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+M74, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612318",
+    "phoneUnformatted": "+97716612318",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6741301,
+      "lng": 85.4282081
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4x2kHrAa6zkRKEoqFin1LgY",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1ab01ea41de3:0x62ef529162a4a28",
+    "cid": "445562969970592296",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=General%20Clinic&query_place_id=ChIJ4x2kHrAa6zkRKEoqFin1LgY",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhF5lOGxpkq9DtkhCAKePtUENX25Fm9pIkaWzM56uc4IC-GdS6r9OViP2e46z23jm6FTu_XGjtj1JcN8bnUa0731FjE_xATfdqgcuP5EmnjiAkprIbgXj4ArxgZ4W4JXlPC7I5-1SGiEChwqqaFVsY1Uy8lVfmlDYM-mA6LOlqyV0_ZlJ-GapbaDbdMsu_d8aHC51-I=w408-h306-k-no",
+    "kgmid": "/g/11b6q41x1b"
+  },
+  {
+    "title": "Khwopa Pharmacy and Clinic (खोपो फार्मेसी एन्ड क्लिनिक)",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCGP+PVJ, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+PVJ, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 982-3647505",
+    "phoneUnformatted": "+9779823647505",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6768323,
+      "lng": 85.437144
+    },
+    "totalScore": 2.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ5V0Hzpgb6zkRFYPw6J5I2a8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b98ce075de5:0xafd9489ee8f08315",
+    "cid": "12671238873933710101",
+    "reviewsCount": 5,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        },
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20Pharmacy%20and%20Clinic%20(%E0%A4%96%E0%A5%8B%E0%A4%AA%E0%A5%8B%20%E0%A4%AB%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%B8%E0%A5%80%20%E0%A4%8F%E0%A4%A8%E0%A5%8D%E0%A4%A1%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%BF%E0%A4%95)&query_place_id=ChIJ5V0Hzpgb6zkRFYPw6J5I2a8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxZ19-FFDcaGkWzU82WAml__Qhn6gqnewXhiXJtGgeZwPrQqEjH0AQdfR9rMtxg7Mx7NksEUu8i6TyXyBU250DpoW7kaqS7TRjC3TaRORTCi98mfEwueL4lC0u2FeKi3saheu4=w408-h544-k-no",
+    "kgmid": "/g/11sbvxv43_"
+  },
+  {
+    "title": "Siddha pokhari clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCC+JPX, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+JPX, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619256",
+    "phoneUnformatted": "+97716619256",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671608,
+      "lng": 85.4218439
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcV0TY6Ma6zkRvBZx9N3kRko",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aa363135d71:0x4a46e4ddf47116bc",
+    "cid": "5352216849116370620",
+    "reviewsCount": 2,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddha%20pokhari%20clinic&query_place_id=ChIJcV0TY6Ma6zkRvBZx9N3kRko",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGsxhq_qkV49jq6vQwnTv3vzCYdYa1gM6ayrGRc19DRgRUw3Gps2G4_3s4248qYdZmuCiDMTCR1gfHcWegFhGDOzlVeWzp3pqskZJm7ogma-HM-keueUA_YJphdA92iOGWKmaaJsAMeNSYBar8hqDhyBGwg9KXaOUA4EnogzCVZ6bolixiXvWiscBvSpKjnHvdTr-o=w408-h306-k-no",
+    "kgmid": "/g/11b6pzms1d"
+  },
+  {
+    "title": "HPN Clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Araniko Raj Marg Suryabinayak, Suryabinayak Chwok, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Araniko Raj Marg Suryabinayak, Suryabinayak Chwok",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1715973",
+    "phoneUnformatted": "+9779841715973",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659564,
+      "lng": 85.4247077
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJR9NOoHkb6zkR06T5IPnExRk",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b79a04ed347:0x19c5c4f920f9a4d3",
+    "cid": "1857106995639330003",
+    "reviewsCount": 1,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=HPN%20Clinic&query_place_id=ChIJR9NOoHkb6zkR06T5IPnExRk",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwAWeu1-_Qg7XYrrMVTfglSb_3NDNVMImzEAzyZTTMZzjf_z-MnxK3mSGEKFF4hihno3rHVJbYZqb2F4oABngHSXcoIB-F0czZMFZcvcmD8lyxgA18obpViqGdnhH4ERrj5TLiDIi0aCb5D=w408-h306-k-no",
+    "kgmid": "/g/11yhf60rfv"
+  },
+  {
+    "title": "Health Clinic Operated By Siddhi Ganesh Saving And Cooperative Pvt. Ltd",
+    "subTitle": "सिद्धि गणेश बचत तथा ऋण सहकारी संस्था लि. द्धारा संचालित' स्वास्थ्य क्लिनिक'",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCM+2MV, हनुमानघाट, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCM+2MV, हनुमानघाट",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6621201",
+    "phoneUnformatted": "+97716621201",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670125,
+      "lng": 85.434178
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1bSJRKwa6zkR1bu-Uv1SCyw",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aac4489b4d5:0x2c0b52fd52bebbd5",
+    "cid": "3173721610381081557",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Health%20Clinic%20Operated%20By%20Siddhi%20Ganesh%20Saving%20And%20Cooperative%20Pvt.%20Ltd&query_place_id=ChIJ1bSJRKwa6zkR1bu-Uv1SCyw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGYgqR2z-yrll5VsTsCx7IkQWitSllcYMAOx9GzI78FCm0fDTgWdoJcHPaHdmETjX9aU5ZABnHwCai0uY7ja9tzH-g6j_pb5a5p3nOMPWUI8fgkmT1U7-3hL9KCJ2tkzyP6GoAed97cfVMyggJ2Ny-RHl8LMMPTkYJCSpbc3Qugghd56oee-j9uOvZfpeg04niWJQ=w408-h306-k-no",
+    "kgmid": "/g/11b6qlfvtt"
+  },
+  {
+    "title": "Siddhi Poli Clinic",
+    "subTitle": "सिद्धि पोलीफोनिक क्लिनिक",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCM+3M4, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCM+3M4",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6701445,
+      "lng": 85.4341977
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb73tRKwa6zkRDIuvmLdtjLw",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aac44edbd6f:0xbc8c6db798af8b0c",
+    "cid": "13586354811178027788",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddhi%20Poli%20Clinic&query_place_id=ChIJb73tRKwa6zkRDIuvmLdtjLw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Ugft-GWh2v-mETsL_LrhvA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=294.3253&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g71b23k8"
+  },
+  {
+    "title": "Milestone Health Clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFR+C37, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFR+C37",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6735488,
+      "lng": 85.4401733
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHRvXyVEF6zkRR7Cnh-ncR50",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb0551c9d71b1d:0x9d47dce987a7b047",
+    "cid": "11333269882862547015",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:23.896Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Milestone%20Health%20Clinic&query_place_id=ChIJHRvXyVEF6zkRR7Cnh-ncR50",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=_sabFDHut3jUExvGcVLyGw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=181.65952&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vlxfb7d7"
+  },
+  {
+    "title": "Bhaktapur polyclinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Napukhu",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6719342,
+      "lng": 85.422781
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJu3d9zDEb6zkRIKwgw5gAeFA",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b31cc7d77bb:0x50780098c320ac20",
+    "cid": "5798385176348240928",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:24.723Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20polyclinic&query_place_id=ChIJu3d9zDEb6zkRIKwgw5gAeFA",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMliWLMu7GWqWSjvebc08UjZbX33Y74VzUe1hqh=w408-h544-k-no",
+    "kgmid": "/g/11vq2rxtcy"
+  },
+  {
+    "title": "Unipath Bhaktapur",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Itachhen-01, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Itachhen-01",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.unipath.com.np/",
+    "phone": "+977 981-6211995",
+    "phoneUnformatted": "+9779816211995",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.672291,
+      "lng": 85.4241316
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl3Zc0yhSQ2sRJUkOWM9N7f8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x6b435228d35c7697:0xffed4dcf580e4925",
+    "cid": "18441481602082949413",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:24.723Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Unipath%20Bhaktapur&query_place_id=ChIJl3Zc0yhSQ2sRJUkOWM9N7f8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 29,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=hZCmhVGZlL4doCRTzXUObQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=103.853874&pitch=0&thumbfov=100",
+    "kgmid": "/g/11yjxld032"
+  },
+  {
+    "title": "Well Health Care",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Tinkune, Sallahghari, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Tinkune, Sallahghari",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 970-3549503",
+    "phoneUnformatted": "+9779703549503",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6703492,
+      "lng": 85.4105663
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6W9Ajmb79AcRkBokVoinoEE",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x7f4fb668e406fe9:0x41a0a78856241a90",
+    "cid": "4728963812741618320",
+    "reviewsCount": 3,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:29.789Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Well%20Health%20Care&query_place_id=ChIJ6W9Ajmb79AcRkBokVoinoEE",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZoJM5Q5ddGGr2R3EZi_Euw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=47.602932&pitch=0&thumbfov=100",
+    "kgmid": "/g/11m742sbb3"
+  },
+  {
+    "title": "Munankarmi forme and dentala Clinic",
+    "subTitle": "मुनंकर्मी फर्मा एण्ड डेण्टल क्लिनिक",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MC8G+J3X, गःपलि मार्ग, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+J3X, गःपलि मार्ग",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1358448",
+    "phoneUnformatted": "+9779841358448",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.666616,
+      "lng": 85.425226
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJd_nHZ6Ya6zkReEYai3du3KU",
+    "categories": [
+      "Medical clinic",
+      "Dentist"
+    ],
+    "fid": "0x39eb1aa667c7f977:0xa5dc6e778b1a4678",
+    "cid": "11951548970848372344",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:53.262Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Munankarmi%20forme%20and%20dentala%20Clinic&query_place_id=ChIJd_nHZ6Ya6zkReEYai3du3KU",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEsjwDBTO1V2NR-hVk5OuGk_C5oZMO-LkXzNY7D56OBqYZum4t6KlAYK83ZIAEBD4HNz54KDOK1fpFCUKYK-A9QOMlFA1BlU23rshXED9YMVrRx0IlNGJxQ-0_wfG0Q_qzBE_JF8JdsxFWTKb01z8T4Qx5OjP25659GJVyCDoI-1tqjvJ_glRJujA2cgRelmGgJJA=w408-h306-k-no",
+    "kgmid": "/g/11b6ql2s_s"
+  },
+  {
+    "title": "Om Sanjeevani Pharma",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MC7G+F7G Laxmi complex, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC7G+F7G Laxmi complex",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6636788,
+      "lng": 85.4257096
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwbIfRQAb6zkRuOJliIi6ec4",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b00451fb2c1:0xce79ba888865e2b8",
+    "cid": "14878127939561841336",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:53.263Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Om%20Sanjeevani%20Pharma&query_place_id=ChIJwbIfRQAb6zkRuOJliIi6ec4",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=-ZRUG0Jtf6d2OSmldaXiFw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=267.46997&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x2v44bmt"
+  },
+  {
+    "title": "ॐ P.M. Hall",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCF+G2H, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+G2H, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6713119,
+      "lng": 85.4225951
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDdaohaQa6zkRfHG2hWeoOI8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aa485a8d60d:0x8f38a86785b6717c",
+    "cid": "10320183708697915772",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:54.876Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A5%90%20P.M.%20Hall&query_place_id=ChIJDdaohaQa6zkRfHG2hWeoOI8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 50,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=PVd8TPl587PgjrMq38FnaQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=359.93338&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6qftdcv"
+  },
+  {
+    "title": "Khwopa Pharmacy and Clinic (खोपो फार्मेसी एन्ड क्लिनिक)",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCGP+PVJ, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+PVJ, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 982-3647505",
+    "phoneUnformatted": "+9779823647505",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6768323,
+      "lng": 85.437144
+    },
+    "totalScore": 2.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ5V0Hzpgb6zkRFYPw6J5I2a8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b98ce075de5:0xafd9489ee8f08315",
+    "cid": "12671238873933710101",
+    "reviewsCount": 5,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        },
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20Pharmacy%20and%20Clinic%20(%E0%A4%96%E0%A5%8B%E0%A4%AA%E0%A5%8B%20%E0%A4%AB%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%B8%E0%A5%80%20%E0%A4%8F%E0%A4%A8%E0%A5%8D%E0%A4%A1%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A4%BF%E0%A4%95)&query_place_id=ChIJ5V0Hzpgb6zkRFYPw6J5I2a8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxZ19-FFDcaGkWzU82WAml__Qhn6gqnewXhiXJtGgeZwPrQqEjH0AQdfR9rMtxg7Mx7NksEUu8i6TyXyBU250DpoW7kaqS7TRjC3TaRORTCi98mfEwueL4lC0u2FeKi3saheu4=w408-h544-k-no",
+    "kgmid": "/g/11sbvxv43_"
+  },
+  {
+    "title": "SARVODAYA HEALTH CLINIC PVT LTD",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Jhaukhel",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-9814002",
+    "phoneUnformatted": "+9779819814002",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6834075,
+      "lng": 85.4300708
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJP0QqO3Ib6zkR3Qd7wosz07Q",
+    "categories": [
+      "Medical clinic",
+      "Laboratory",
+      "Pharmacy"
+    ],
+    "fid": "0x39eb1b723b2a443f:0xb4d3338bc27b07dd",
+    "cid": "13029814822269290461",
+    "reviewsCount": 11,
+    "imagesCount": 30,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointment required": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=SARVODAYA%20HEALTH%20CLINIC%20PVT%20LTD&query_place_id=ChIJP0QqO3Ib6zkR3Qd7wosz07Q",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNMgi9QuI9zxGOTxCtHk5FAKSg2CV0RbAH-dLg=w533-h240-k-no",
+    "kgmid": "/g/11v5y2mshs"
+  },
+  {
+    "title": "Milestone Health Clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFR+C37, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFR+C37",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6735488,
+      "lng": 85.4401733
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHRvXyVEF6zkRR7Cnh-ncR50",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb0551c9d71b1d:0x9d47dce987a7b047",
+    "cid": "11333269882862547015",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Milestone%20Health%20Clinic&query_place_id=ChIJHRvXyVEF6zkRR7Cnh-ncR50",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=_sabFDHut3jUExvGcVLyGw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=181.65952&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vlxfb7d7"
+  },
+  {
+    "title": "HPN Clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Araniko Raj Marg Suryabinayak, Suryabinayak Chwok, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Araniko Raj Marg Suryabinayak, Suryabinayak Chwok",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1715973",
+    "phoneUnformatted": "+9779841715973",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6659564,
+      "lng": 85.4247077
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJR9NOoHkb6zkR06T5IPnExRk",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b79a04ed347:0x19c5c4f920f9a4d3",
+    "cid": "1857106995639330003",
+    "reviewsCount": 1,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=HPN%20Clinic&query_place_id=ChIJR9NOoHkb6zkR06T5IPnExRk",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwAWeu1-_Qg7XYrrMVTfglSb_3NDNVMImzEAzyZTTMZzjf_z-MnxK3mSGEKFF4hihno3rHVJbYZqb2F4oABngHSXcoIB-F0czZMFZcvcmD8lyxgA18obpViqGdnhH4ERrj5TLiDIi0aCb5D=w408-h306-k-no",
+    "kgmid": "/g/11yhf60rfv"
+  },
+  {
+    "title": "Jhaukhel Clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Changunarayan 44800, Nepal",
+    "neighborhood": "Jhaukhel",
+    "street": null,
+    "city": "Changunarayan",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-8623508",
+    "phoneUnformatted": "+9779868623508",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6841433,
+      "lng": 85.4303512
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJhZr4fp4b6zkRWWv9x5zUGhI",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b9e7ef89a85:0x121ad49cc7fd6b59",
+    "cid": "1304588811912440665",
+    "reviewsCount": 0,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Jhaukhel%20Clinic&query_place_id=ChIJhZr4fp4b6zkRWWv9x5zUGhI",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNqeoGZ2Ibqu2YGOaPc4h2h6PO2uITunY5jmqZP=w408-h725-k-no",
+    "kgmid": "/g/11q4c8nhsn"
+  },
+  {
+    "title": "National Eye Clinic Optical",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9129657",
+    "phoneUnformatted": "+9779849129657",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6769018,
+      "lng": 85.4371004
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJiV3txZkb6zkRuxnRmXYLJpA",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b99c5ed5d89:0x90260b7699d119bb",
+    "cid": "10387002194591291835",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.946Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=National%20Eye%20Clinic%20Optical&query_place_id=ChIJiV3txZkb6zkRuxnRmXYLJpA",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwhbGCbPj79_ip_ugWMYRwCMmdFcLsh-9pUPraGcCGAk88XDz7DOyqKNfn-mhtdaunqbXGd2UXNA31BR5sIjepFLl4PreQOoQkPfS_TE_9eZ5h0t3jsvS0sfuOGRqp3w0nxqArO9A=w426-h240-k-no",
+    "kgmid": "/g/11gvt2f0xk"
+  },
+  {
+    "title": "Siddha pokhari clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCC+JPX, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+JPX, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619256",
+    "phoneUnformatted": "+97716619256",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671608,
+      "lng": 85.4218439
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcV0TY6Ma6zkRvBZx9N3kRko",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aa363135d71:0x4a46e4ddf47116bc",
+    "cid": "5352216849116370620",
+    "reviewsCount": 2,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.947Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddha%20pokhari%20clinic&query_place_id=ChIJcV0TY6Ma6zkRvBZx9N3kRko",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGsxhq_qkV49jq6vQwnTv3vzCYdYa1gM6ayrGRc19DRgRUw3Gps2G4_3s4248qYdZmuCiDMTCR1gfHcWegFhGDOzlVeWzp3pqskZJm7ogma-HM-keueUA_YJphdA92iOGWKmaaJsAMeNSYBar8hqDhyBGwg9KXaOUA4EnogzCVZ6bolixiXvWiscBvSpKjnHvdTr-o=w408-h306-k-no",
+    "kgmid": "/g/11b6pzms1d"
+  },
+  {
+    "title": "Harina Medico clinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6620113",
+    "phoneUnformatted": "+97716620113",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6709633,
+      "lng": 85.4391693
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ____G1MF6zkRRIfwbOzOc1c",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb05531bffffff:0x5773ceec6cf08744",
+    "cid": "6301607818456762180",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.947Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Harina%20Medico%20clinic&query_place_id=ChIJ____G1MF6zkRRIfwbOzOc1c",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=0K4UaKdnrIQfbZaHLvyuWg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=200.33199&pitch=0&thumbfov=100",
+    "kgmid": "/g/11c1ww0psr"
+  },
+  {
+    "title": "General Clinic",
+    "subTitle": "जनरल क्लिनिक",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFH+M74, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+M74, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612318",
+    "phoneUnformatted": "+97716612318",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6741301,
+      "lng": 85.4282081
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4x2kHrAa6zkRKEoqFin1LgY",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1ab01ea41de3:0x62ef529162a4a28",
+    "cid": "445562969970592296",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:32.947Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=General%20Clinic&query_place_id=ChIJ4x2kHrAa6zkRKEoqFin1LgY",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhF5lOGxpkq9DtkhCAKePtUENX25Fm9pIkaWzM56uc4IC-GdS6r9OViP2e46z23jm6FTu_XGjtj1JcN8bnUa0731FjE_xATfdqgcuP5EmnjiAkprIbgXj4ArxgZ4W4JXlPC7I5-1SGiEChwqqaFVsY1Uy8lVfmlDYM-mA6LOlqyV0_ZlJ-GapbaDbdMsu_d8aHC51-I=w408-h306-k-no",
+    "kgmid": "/g/11b6q41x1b"
+  },
+  {
+    "title": "Bhaktapur polyclinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Napukhu",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6719342,
+      "lng": 85.422781
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJu3d9zDEb6zkRIKwgw5gAeFA",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b31cc7d77bb:0x50780098c320ac20",
+    "cid": "5798385176348240928",
+    "reviewsCount": 3,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:43.444Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20polyclinic&query_place_id=ChIJu3d9zDEb6zkRIKwgw5gAeFA",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.63656511691115,85.43729330118518,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMliWLMu7GWqWSjvebc08UjZbX33Y74VzUe1hqh=w408-h544-k-no",
+    "kgmid": "/g/11vq2rxtcy"
+  },
+  {
+    "title": "Bhaktapur Health Concern Pvt. LTD. (Kamalbinayak Branch)",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Kamalbinayak chwok, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak chwok",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://bhc.com.np/",
+    "phone": "+977 1-6615422",
+    "phoneUnformatted": "+97716615422",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6769675,
+      "lng": 85.4370704
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdXY0rjMb6zkRq1YZ74AJPuQ",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b33ae347675:0xe43e0980ef1956ab",
+    "cid": "16446593338575509163",
+    "reviewsCount": 6,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:43.444Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Health%20Concern%20Pvt.%20LTD.%20(Kamalbinayak%20Branch)&query_place_id=ChIJdXY0rjMb6zkRq1YZ74AJPuQ",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.63656511691115,85.43729330118518,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP-vNxcoW3fSke1aP86ZiWFukkMeD8pgrZyG7ig=w506-h240-k-no",
+    "kgmid": "/g/11dxbcw_2l"
+  },
+  {
+    "title": "Om Sanjeevani Pharma",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MC7G+F7G Laxmi complex, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC7G+F7G Laxmi complex",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6636788,
+      "lng": 85.4257096
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwbIfRQAb6zkRuOJliIi6ec4",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b00451fb2c1:0xce79ba888865e2b8",
+    "cid": "14878127939561841336",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.280Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Om%20Sanjeevani%20Pharma&query_place_id=ChIJwbIfRQAb6zkRuOJliIi6ec4",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=-ZRUG0Jtf6d2OSmldaXiFw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=267.46997&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x2v44bmt"
+  },
+  {
+    "title": "Health Clinic Operated By Siddhi Ganesh Saving And Cooperative Pvt. Ltd",
+    "subTitle": "सिद्धि गणेश बचत तथा ऋण सहकारी संस्था लि. द्धारा संचालित' स्वास्थ्य क्लिनिक'",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCM+2MV, हनुमानघाट, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCM+2MV, हनुमानघाट",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6621201",
+    "phoneUnformatted": "+97716621201",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670125,
+      "lng": 85.434178
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1bSJRKwa6zkR1bu-Uv1SCyw",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aac4489b4d5:0x2c0b52fd52bebbd5",
+    "cid": "3173721610381081557",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.280Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Health%20Clinic%20Operated%20By%20Siddhi%20Ganesh%20Saving%20And%20Cooperative%20Pvt.%20Ltd&query_place_id=ChIJ1bSJRKwa6zkR1bu-Uv1SCyw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGYgqR2z-yrll5VsTsCx7IkQWitSllcYMAOx9GzI78FCm0fDTgWdoJcHPaHdmETjX9aU5ZABnHwCai0uY7ja9tzH-g6j_pb5a5p3nOMPWUI8fgkmT1U7-3hL9KCJ2tkzyP6GoAed97cfVMyggJ2Ny-RHl8LMMPTkYJCSpbc3Qugghd56oee-j9uOvZfpeg04niWJQ=w408-h306-k-no",
+    "kgmid": "/g/11b6qlfvtt"
+  },
+  {
+    "title": "Munankarmi forme and dentala Clinic",
+    "subTitle": "मुनंकर्मी फर्मा एण्ड डेण्टल क्लिनिक",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MC8G+J3X, गःपलि मार्ग, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+J3X, गःपलि मार्ग",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1358448",
+    "phoneUnformatted": "+9779841358448",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.666616,
+      "lng": 85.425226
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJd_nHZ6Ya6zkReEYai3du3KU",
+    "categories": [
+      "Medical clinic",
+      "Dentist"
+    ],
+    "fid": "0x39eb1aa667c7f977:0xa5dc6e778b1a4678",
+    "cid": "11951548970848372344",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.280Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 7:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Munankarmi%20forme%20and%20dentala%20Clinic&query_place_id=ChIJd_nHZ6Ya6zkReEYai3du3KU",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEsjwDBTO1V2NR-hVk5OuGk_C5oZMO-LkXzNY7D56OBqYZum4t6KlAYK83ZIAEBD4HNz54KDOK1fpFCUKYK-A9QOMlFA1BlU23rshXED9YMVrRx0IlNGJxQ-0_wfG0Q_qzBE_JF8JdsxFWTKb01z8T4Qx5OjP25659GJVyCDoI-1tqjvJ_glRJujA2cgRelmGgJJA=w408-h306-k-no",
+    "kgmid": "/g/11b6ql2s_s"
+  },
+  {
+    "title": "Siddhi Poli Clinic",
+    "subTitle": "सिद्धि पोलीफोनिक क्लिनिक",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCM+3M4, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCM+3M4",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6701445,
+      "lng": 85.4341977
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJb73tRKwa6zkRDIuvmLdtjLw",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aac44edbd6f:0xbc8c6db798af8b0c",
+    "cid": "13586354811178027788",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:52.280Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Siddhi%20Poli%20Clinic&query_place_id=ChIJb73tRKwa6zkRDIuvmLdtjLw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Ugft-GWh2v-mETsL_LrhvA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=294.3253&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g71b23k8"
+  },
+  {
+    "title": "Kamalbinayak Polyclinic",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Chowk Kamalbinayak, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Chowk Kamalbinayak",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5915875",
+    "phoneUnformatted": "+97715915875",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6769231,
+      "lng": 85.4367162
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPw_Hr4IF6zkR_G8XJi7W1z8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb0582afc70f3f:0x3fd7d62e26176ffc",
+    "cid": "4600381038078160892",
+    "reviewsCount": 13,
+    "imagesCount": 51,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:08.698Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 2:10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kamalbinayak%20Polyclinic&query_place_id=ChIJPw_Hr4IF6zkR_G8XJi7W1z8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNTw6insS-c9WPdJC4kHG-Tft9CdZvA6zTgpfuW=w408-h306-k-no",
+    "kgmid": "/g/11txchbrk7"
+  },
+  {
+    "title": "Baidya Ayurveda Pharma/Sewa",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Suryabinayak height, F099, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "Suryabinayak height, F099",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.baidyaayurveda.wordpress.com/",
+    "phone": "+977 1-5092697",
+    "phoneUnformatted": "+97715092697",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6585661,
+      "lng": 85.4247509
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ8y0u-AgQ6zkRdae2rGc-tN8",
+    "categories": [
+      "Medical clinic",
+      "Pharmacy"
+    ],
+    "fid": "0x39eb1008f82e2df3:0xdfb43e67acb6a775",
+    "cid": "16119577581266052981",
+    "reviewsCount": 3,
+    "imagesCount": 21,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:16.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Baidya%20Ayurveda%20Pharma%2FSewa&query_place_id=ChIJ8y0u-AgQ6zkRdae2rGc-tN8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.659386046764457,85.42012009644444,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPdCFN59vm68Kmr5j65QKXjlBt5hUsEcLf8fzur=w425-h240-k-no",
+    "kgmid": "/g/11gbq2yrdw"
+  },
+  {
+    "title": "Tathali Medical Centre",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "nala road, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Tathali",
+    "street": "nala road",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-6245007",
+    "phoneUnformatted": "+9779866245007",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6691444,
+      "lng": 85.4634543
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJz6yohmMF6zkRPmzceXsfVrc",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb056386a8accf:0xb7561f7b79dc6c3e",
+    "cid": "13210781172123855934",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:38.228Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "additionalOpeningHours": {
+      "Delivery": [
+        {
+          "day": "Monday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Tuesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Wednesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Thursday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Friday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Sunday",
+          "hours": "9 AM–5 PM"
+        }
+      ],
+      "Online service hours": [
+        {
+          "day": "Monday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Tuesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Wednesday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Thursday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Friday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "9 AM–5 PM"
+        },
+        {
+          "day": "Sunday",
+          "hours": "9 AM–5 PM"
+        }
+      ]
+    },
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "From the business": [
+        {
+          "Identifies as women-owned": true
+        }
+      ],
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tathali%20Medical%20Centre&query_place_id=ChIJz6yohmMF6zkRPmzceXsfVrc",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.666993023382226,85.4630531082963,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 22,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=18eRDp-QB2xNc_e4au811Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=240.26082&pitch=0&thumbfov=100",
+    "kgmid": "/g/11d_x2yq9v"
+  },
+  {
+    "title": "Narayantar Veterinary Centre",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "PC6G+277, Changunarayan 44600, Nepal",
+    "neighborhood": null,
+    "street": "PC6G+277",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1029320",
+    "phoneUnformatted": "+9779851029320",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.7100395,
+      "lng": 85.4256669
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJOZxKTgAb6zkR14FsIR3Nn7Q",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b004e4a9c39:0xb49fcd1d216c81d7",
+    "cid": "13015346973122527703",
+    "reviewsCount": 3,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:47.641Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Narayantar%20Veterinary%20Centre&query_place_id=ChIJOZxKTgAb6zkR14FsIR3Nn7Q",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.70502790647107,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=YMmyS-YYlj85cuAnfWfe-w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=155.57545&pitch=0&thumbfov=100",
+    "kgmid": "/g/11wvy7v6z9"
+  },
+  {
+    "title": "Anmol Pharmacy",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCHR+GRR, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHR+GRR, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6788745,
+      "lng": 85.4420157
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVZ4hGEwF6zkRC6UI4XA8VBE",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb054c18219e55:0x11543c70e108a50b",
+    "cid": "1248689452197913867",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:32.624Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Anmol%20Pharmacy&query_place_id=ChIJVZ4hGEwF6zkRC6UI4XA8VBE",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.682206976617763,85.44587990355555,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3gvSDdNs6pgaa1JirgRrTA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=325.72043&pitch=0&thumbfov=100",
+    "kgmid": "/g/11cmmr9svz"
+  },
+  {
+    "title": "Sabitra Niwas",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Nankhel Street, 44800, Nepal",
+    "neighborhood": "Nangkhel",
+    "street": "Nankhel Street",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1131833",
+    "phoneUnformatted": "+9779851131833",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6584434,
+      "lng": 85.4502909
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-WZlKNUP6zkRqoSIyYEVodc",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb0fd5286566f9:0xd7a11581c98884aa",
+    "cid": "15537723836581053610",
+    "reviewsCount": 4,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:42.459Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sabitra%20Niwas&query_place_id=ChIJ-WZlKNUP6zkRqoSIyYEVodc",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.651779070146688,85.45446650592592,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP5OHXsGNgn6KHRBFLYAFqoyVXZa1QKWGlQ1eGE=w408-h478-k-no",
+    "kgmid": "/g/11yfm_pwv5"
+  },
+  {
+    "title": "Well Health Care",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Tinkune, Sallahghari, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Tinkune, Sallahghari",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 970-3549503",
+    "phoneUnformatted": "+9779703549503",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6703492,
+      "lng": 85.4105663
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6W9Ajmb79AcRkBokVoinoEE",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x7f4fb668e406fe9:0x41a0a78856241a90",
+    "cid": "4728963812741618320",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 3
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:44.158Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6:30 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Well%20Health%20Care&query_place_id=ChIJ6W9Ajmb79AcRkBokVoinoEE",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.666993023382226,85.41153349407406,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 21,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZoJM5Q5ddGGr2R3EZi_Euw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=47.602932&pitch=0&thumbfov=100",
+    "kgmid": "/g/11m742sbb3"
+  },
+  {
+    "title": "Bramhayeni Polyclinic & Pharmacy",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Byasi Gate, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Byasi Gate, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://bramhayenipolyclinic.com.np/",
+    "phone": "+977 1-6620260",
+    "phoneUnformatted": "+97716620260",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6752631,
+      "lng": 85.4300374
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJeR37wsQF6zkRKjKRrKPHiuw",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb05c4c2fb1d79:0xec8ac7a3ac91322a",
+    "cid": "17044655245525856810",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:56.528Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bramhayeni%20Polyclinic%20%26%20Pharmacy&query_place_id=ChIJeR37wsQF6zkRKjKRrKPHiuw",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 22,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=NZRIRCjFxmn3SmGhXwTGIA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=13.449435&pitch=0&thumbfov=100",
+    "kgmid": "/g/11n5lwpj8g"
+  },
+  {
+    "title": "Bhaktapur Homeopathic Medical College",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Kamalbinayak NVA Building, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Kamalbinayak NVA Building",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613197",
+    "phoneUnformatted": "+97716613197",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.675947,
+      "lng": 85.435959
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCccK-K0a6zkRs8FafsdKdI8",
+    "categories": [
+      "Medical clinic",
+      "Medical school"
+    ],
+    "fid": "0x39eb1aadf80ac709:0x8f744ac77e5ac1b3",
+    "cid": "10336969265400955315",
+    "reviewsCount": 8,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 0,
+      "fiveStar": 7
+    },
+    "imagesCount": 22,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:57.335Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Homeopathic%20Medical%20College&query_place_id=ChIJCccK-K0a6zkRs8FafsdKdI8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 50,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPBbfpNYQE5XC9_-jVTL1hGC24lTQQeD7EStF5y=w408-h306-k-no",
+    "kgmid": "/g/113jr9qkm"
+  },
+  {
+    "title": "Bhaktapur Heart & Diabetic Center",
+    "subTitle": "भक्तपुर मुटु र मधुमेह केन्द्र",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCC4+QJF, Araniko Highway, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC4+QJF, Araniko Highway",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617812",
+    "phoneUnformatted": "+97716617812",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6719259,
+      "lng": 85.4065463
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIW5AS4Ua6zkRL2YJ0KMaefs",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1a854b406e21:0xfb791aa3d009662f",
+    "cid": "18120543866574169647",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:57.985Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Appointments recommended": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Heart%20%26%20Diabetic%20Center&query_place_id=ChIJIW5AS4Ua6zkRL2YJ0KMaefs",
+    "searchPageUrl": "https://www.google.com/maps/search/hospital/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "hospital",
+    "language": "en",
+    "rank": 27,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFpe-Qw2HdlwMKZ1gFx6VsiH86KKhZ7RzUB_4Ou8jdYzQRsEDmOXYaPTh1OKz6XXl2XbtPB1MloLDgR6Z04Us0suyjHHQIw8p6kEB8siBop1Ox50L6X0c-x6zkJ-KmkMWnP6Xi-vVV0WWiCXS4siN6stzGgwXC68uCi0qQ2wgOYKH7A_eG53h3KO-y4Dlu5zx1wDyw=w426-h240-k-no",
+    "kgmid": "/g/11b6s06x5d"
+  },
+  {
+    "title": "Mangalam Pharma",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Shyama Shyam Dham, Nikosera Araniko Highway, Madhyapur Thimi 44811, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Shyama Shyam Dham, Nikosera Araniko Highway",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44811",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0733605",
+    "phoneUnformatted": "+9779860733605",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6723223,
+      "lng": 85.4052091
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBQdSXYUa6zkRgetM3413q7M",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1a855d520705:0xb3ab778ddf4ceb81",
+    "cid": "12946573005027076993",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 1,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:59.999Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mangalam%20Pharma&query_place_id=ChIJBQdSXYUa6zkRgetM3413q7M",
+    "searchPageUrl": "https://www.google.com/maps/search/pharmacy/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "pharmacy",
+    "language": "en",
+    "rank": 28,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLEusAVyVWUpg6i2mKmjqDcoT7MC97nMwmCpGS_qaLndJbeAxce8u3QhwMcqVHjN-NRRtydEl_6y_1ifDI3kkoKKWcHx6o5PDeTKXejUw1DefOeZa8ClIEPIbplqf0l7h0w1k=w408-h544-k-no",
+    "kgmid": "/g/11bz_zj_ws"
+  },
+  {
+    "title": "REYMAN PHARMACY रेमन फामेर्सी",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Srijananagar, Bhaktapur Srijannagar, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "Srijananagar",
+    "city": "Bhaktapur",
+    "postalCode": "Srijannagar",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9720771",
+    "phoneUnformatted": "+9779849720771",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6741776,
+      "lng": 85.4057793
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ78jvhCYb6zkRO3HRbuy2WlE",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b2684efc8ef:0x515ab6ec6ed1713b",
+    "cid": "5862198991563878715",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:00.000Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 to 9:30 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 to 9:30 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 to 9:30 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 to 9:30 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 to 9:30 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6:30 to 9:30 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 to 9:30 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=REYMAN%20PHARMACY%20%E0%A4%B0%E0%A5%87%E0%A4%AE%E0%A4%A8%20%E0%A4%AB%E0%A4%BE%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A5%8D%E0%A4%B8%E0%A5%80&query_place_id=ChIJ78jvhCYb6zkRO3HRbuy2WlE",
+    "searchPageUrl": "https://www.google.com/maps/search/pharmacy/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "pharmacy",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=9czmc5KP4f-2AN0mg0HFyQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=129.69531&pitch=0&thumbfov=100",
+    "kgmid": "/g/11wmvvr2xq"
+  },
+  {
+    "title": "Bhaktapur City Medical Centre",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFH+FJW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+FJW",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-3167603",
+    "phoneUnformatted": "+9779813167603",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6737487,
+      "lng": 85.4290772
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJK29L2K8a6zkRAvgLXRK4M4Q",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aafd84b6f2b:0x8433b8125d0bf802",
+    "cid": "9526160025828718594",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:03.010Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20City%20Medical%20Centre&query_place_id=ChIJK29L2K8a6zkRAvgLXRK4M4Q",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=0mBuLuyYCa3rv4AJ7EauUw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=243.59459&pitch=0&thumbfov=100",
+    "kgmid": "/g/11dfjwpdx1"
+  },
+  {
+    "title": "Unipath Bhaktapur",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "Itachhen-01, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Itachhen-01",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.unipath.com.np/",
+    "phone": "+977 981-6211995",
+    "phoneUnformatted": "+9779816211995",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.672291,
+      "lng": 85.4241316
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl3Zc0yhSQ2sRJUkOWM9N7f8",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x6b435228d35c7697:0xffed4dcf580e4925",
+    "cid": "18441481602082949413",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:03.010Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Unipath%20Bhaktapur&query_place_id=ChIJl3Zc0yhSQ2sRJUkOWM9N7f8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=hZCmhVGZlL4doCRTzXUObQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=103.853874&pitch=0&thumbfov=100",
+    "kgmid": "/g/11yjxld032"
+  },
+  {
+    "title": "Bhaktapur Model Clinic & Research Center Pvt. Ltd.",
+    "subTitle": "भक्तपुर मोडेल क्लिनिक र अनुसन्धान केन्द्र प्रा। लिमिटेड",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCFH+4WQ, तुलाछें, इच्छु गल्ली, 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+4WQ, तुलाछें, इच्छु गल्ली",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613388",
+    "phoneUnformatted": "+97716613388",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6728285,
+      "lng": 85.4298454
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_XWjNK4a6zkRTuxQKz92QX4",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1aae34a375fd:0x7e41763f2b50ec4e",
+    "cid": "9097682735946853454",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:03.010Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7:15 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:15 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Model%20Clinic%20%26%20Research%20Center%20Pvt.%20Ltd.&query_place_id=ChIJ_XWjNK4a6zkRTuxQKz92QX4",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFOZ5wuGQBJ2Wv2IXROEzlC_wFMYmSlJjGIjsrV7dRyALcuQPfvzfYxiwUUtDEkcBfP-h45X_tAFLdCv1Ir_DbOgsL3LsMaTVjaWx5YNrXAMgCxDfruh6FQ96ishKoyhgYX5Kq25mEuA3SReQzNLap8Mr1K8n-BquaebI_7ZEE1qbSNoygJ33fVOiVZcIfvl_RD0zw=w408-h306-k-no",
+    "kgmid": "/g/11b6pzmr00"
+  },
+  {
+    "title": "जिवन्त स्वास्थ्य सेवा सदन प्रा. लि.",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCCF+MV3, भक्तपुर मार्ग, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+MV3, भक्तपुर मार्ग",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6615164",
+    "phoneUnformatted": "+97716615164",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6716289,
+      "lng": 85.4246572
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJP7Cl4qQa6zkRWWktvJ-Bu-8",
+    "categories": [
+      "Medical clinic",
+      "Drug store"
+    ],
+    "fid": "0x39eb1aa4e2a5b03f:0xefbb819fbc2d6959",
+    "cid": "17274543318766545241",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:04.112Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%9C%E0%A4%BF%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%A4%20%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A5%8D%E0%A4%AF%20%E0%A4%B8%E0%A5%87%E0%A4%B5%E0%A4%BE%20%E0%A4%B8%E0%A4%A6%E0%A4%A8%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE.%20%E0%A4%B2%E0%A4%BF.&query_place_id=ChIJP7Cl4qQa6zkRWWktvJ-Bu-8",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.4287066988148,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 30,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGfXm-Of2C56fvSZc9bSRnvf3rFuHhD7reeHlryb-j1vG6d7jnV3JEkDPZTzk4yk6DIs79PcL90awX2C9cl5G6Rok3s6he_Mv-eqnTYPeJFKe67NWOVXG14SpwulyE8net3A42lb87PHJkUmHFjcYRb2Dhe63CU5lZNExHa571Cof1uBxZmiMv1ffrWj-piX01zmcU=w408-h306-k-no",
+    "kgmid": "/g/11b6qfpl3s"
+  },
+  {
+    "title": "Valley Health And Research Centre",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCF2+8P3, Srijananagar, Bhaktapur, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCF2+8P3, Srijananagar",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-0256685",
+    "phoneUnformatted": "+9779840256685",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.673252,
+      "lng": 85.4018087
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYVJVPyEb6zkRDpby8vJrOHE",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1b213f555261:0x71386bf2f2f2960e",
+    "cid": "8158389416183895566",
+    "reviewsCount": 10,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:04.410Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        },
+        {
+          "Wheelchair accessible restroom": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Valley%20Health%20And%20Research%20Centre&query_place_id=ChIJYVJVPyEb6zkRDpby8vJrOHE",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxgelxt-N4ASrrixjZ5gjNQR7V2-dFnWItMj7fFoxQC-GX5VEttBmwYmftkKKPYl4Xe-G2KNCNQIUYdajg2GEhaNcyq5UUxePPLEhK_UkslNulxq-349BntKOJa0bAIWMz6uKPq=w408-h290-k-no",
+    "kgmid": "/g/11gy44zkjb"
+  },
+  {
+    "title": "BHDC Sallaghari Branch",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "MCC4+RCW, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MCC4+RCW, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 981-8755285",
+    "phoneUnformatted": "+9779818755285",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6721207,
+      "lng": 85.4060642
+    },
+    "totalScore": 1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJmTW9Bcgb6zkRvvbVql3GvXY",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x39eb1bc805bd3599:0x76bdc65daad5f6be",
+    "cid": "8556212972674217662",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:04.410Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BHDC%20Sallaghari%20Branch&query_place_id=ChIJmTW9Bcgb6zkRvvbVql3GvXY",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.40294689170369,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GzJf1lKloaI3P6IAKGcKLw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=189.14134&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fl0lw6dp"
+  },
+  {
+    "title": "Ajima Neuro Center",
+    "price": null,
+    "categoryName": "Medical clinic",
+    "address": "01 Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "01 Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9623308",
+    "phoneUnformatted": "+9779849623308",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6755851,
+      "lng": 85.4129732
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY8uMgKpuw0UR7BAQLlTaa7k",
+    "categories": [
+      "Medical clinic"
+    ],
+    "fid": "0x45c36eaa808ccb63:0xb96bda542e1010ec",
+    "cid": "13361012774609621228",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:24.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 9:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 9:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 9:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 9:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 9:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 9:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 9:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ajima%20Neuro%20Center&query_place_id=ChIJY8uMgKpuw0UR7BAQLlTaa7k",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.41153349407406,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 22,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=wsf8Q3M0V_7axBD-d8kH-g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=195.49268&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xyc8sn2w"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Chundevi Sallaghari Traffic Office",
+    "subTitle": "चुनदेवि सल्लाघारी ट्राफिक कार्यालय",
+    "price": null,
+    "categoryName": "Traffic police station",
+    "address": "MC88+7PW, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC88+7PW",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-4219641",
+    "phoneUnformatted": "+97714219641",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6657479,
+      "lng": 85.4168249
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJZSvwsBMb6zkRKU80OXmIb9o",
+    "categories": [
+      "Traffic police station",
+      "Government office"
+    ],
+    "fid": "0x39eb1b13b0f02b65:0xda6f887939344f29",
+    "cid": "15739949276915322665",
+    "reviewsCount": 0,
+    "imagesCount": 23,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:09.068Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Chundevi%20Sallaghari%20Traffic%20Office&query_place_id=ChIJZSvwsBMb6zkRKU80OXmIb9o",
+    "searchPageUrl": "https://www.google.com/maps/search/government/@27.667695459098024,85.41290913650586,17z?hl=en",
+    "searchString": "government",
+    "language": "en",
+    "rank": 30,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwFRobCAAn3CCFQ96aG46KphT9zcDHSJJL-LdOJmTH4CV7wuDprJILhvE7fRsV94bavQXsRU-RzWzP9YhKzdV16zZMHiwcvMBJR94wj2Tk_trko9HB5Aic96dLn49_79--r0-ZmmQ=w408-h544-k-no",
+    "kgmid": "/g/11ryb007k_"
+  }
+]

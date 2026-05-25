@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Disaraa Nepal",
+    "price": null,
+    "categoryName": "Health and beauty shop",
+    "address": "Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.disaraa.com/",
+    "phone": "+977 984-0057958",
+    "phoneUnformatted": "+9779840057958",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6738731,
+      "lng": 85.4272014
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJH0cAoXwb6zkRKm2K0QzEHyE",
+    "categories": [
+      "Health and beauty shop"
+    ],
+    "fid": "0x39eb1b7ca100471f:0x211fc40cd18a6d2a",
+    "cid": "2386841886863813930",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.079Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Disaraa%20Nepal&query_place_id=ChIJH0cAoXwb6zkRKm2K0QzEHyE",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 49,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=U0T8W1nXdil8KVW6mGGq2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=101.69045&pitch=0&thumbfov=100",
+    "kgmid": "/g/11ybh1vdy6"
+  }
+]

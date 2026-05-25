@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Shree Jagati Mithai Bhandar",
+    "price": null,
+    "categoryName": "Candy store",
+    "address": "jagati, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "jagati",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616913",
+    "phoneUnformatted": "+97716616913",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6665544,
+      "lng": 85.4377743
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbdN4lpQF6zkRUTXB7mc97Vw",
+    "categories": [
+      "Candy store",
+      "Vegetarian cafe and deli",
+      "Vegetarian restaurant"
+    ],
+    "fid": "0x39eb05949678d36d:0x5ced3d67eec13551",
+    "cid": "6696075737566360913",
+    "reviewsCount": 8,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 2,
+      "fourStar": 0,
+      "fiveStar": 5
+    },
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:38:43.507Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Planning": [
+        {
+          "Quick visit": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shree%20Jagati%20Mithai%20Bhandar&query_place_id=ChIJbdN4lpQF6zkRUTXB7mc97Vw",
+    "searchPageUrl": "https://www.google.com/maps/search/cafe/@27.667695459098024,85.4386817269883,17z?hl=en",
+    "searchString": "cafe",
+    "language": "en",
+    "rank": 33,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyO2ZDvMv91DJS7nEruRLVF5iNkeP3abWL38qFh68j3tWK1SejYy8a4B3HQbcUv3rKYLvDuQ_tJ_Ac1M4e8oMFxH6sfkUGrEFuKLmpEdumx1Gyd_4L47z3XN9dWevndgW6UFeLR=w408-h594-k-no",
+    "kgmid": "/g/11g196qlm9"
+  }
+]

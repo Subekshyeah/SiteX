@@ -1,0 +1,163 @@
+[
+  {
+    "title": "जिल्ला सरकारी वकिल कार्यलय भक्तपुर",
+    "price": null,
+    "categoryName": "Post office",
+    "address": "MCFF+26G, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFF+26G",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6725702,
+      "lng": 85.4230774
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw5L1SwAb6zkRZLNG2YW_FQo",
+    "categories": [
+      "Post office"
+    ],
+    "fid": "0x39eb1b004bf592c3:0xa15bf85d946b364",
+    "cid": "726697496487048036",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:49.631Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%9C%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A4%BE%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B5%E0%A4%95%E0%A4%BF%E0%A4%B2%20%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%B2%E0%A4%AF%20%E0%A4%AD%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0&query_place_id=ChIJw5L1SwAb6zkRZLNG2YW_FQo",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=BZ24QqJpZav0Dss_v_u_RA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=241.68336&pitch=0&thumbfov=100",
+    "kgmid": "/g/11vrr_89sc"
+  },
+  {
+    "title": "Bhaktapur District Post Office",
+    "subTitle": "भक्तपुर जिल्ला हुलाक कार्यालय",
+    "price": null,
+    "categoryName": "Post office",
+    "address": "MCCF+W55, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+W55",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614153",
+    "phoneUnformatted": "+97716614153",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6722742,
+      "lng": 85.4229832
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJY8T1vaQa6zkR6S3Z_9unJew",
+    "categories": [
+      "Post office"
+    ],
+    "fid": "0x39eb1aa4bdf5c463:0xec25a7dbffd92de9",
+    "cid": "17016191330421386729",
+    "reviewsCount": 19,
+    "imagesCount": 21,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:49.631Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20District%20Post%20Office&query_place_id=ChIJY8T1vaQa6zkR6S3Z_9unJew",
+    "searchPageUrl": "https://www.google.com/maps/search/office/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "office",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzksgFevJjjk0OsGJ7MltAoMaFjUKujU2drnDV7_qXrUW0iCZvxbQqEDK8gxdm4UBhiHrnljcgpqrDC1vv1cwHvw_7QyY5H711gS2Ibkcvx8xPMpOZ0VdPWBXO1qXYkHdKwixhL-A=w408-h287-k-no",
+    "kgmid": "/g/1hf2f2x6f"
+  }
+]

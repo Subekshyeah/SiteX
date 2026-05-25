@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Fashion store",
+    "price": null,
+    "categoryName": "Business school",
+    "address": "MC8J+4XJ, Bhaktapur, Kathmandu, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC8J+4XJ, Bhaktapur",
+    "city": "Kathmandu",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 980-3820832",
+    "phoneUnformatted": "+9779803820832",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6653488,
+      "lng": 85.4323851
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYz4zcmcb6zkRveMQQ2YC60U",
+    "categories": [
+      "Business school"
+    ],
+    "fid": "0x39eb1b6772333e63:0x45eb02664310e3bd",
+    "cid": "5038123246379131837",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Fashion%20store&query_place_id=ChIJYz4zcmcb6zkRveMQQ2YC60U",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 77,
+    "isAdvertisement": false,
+    "kgmid": "/g/11qp2766cp"
+  },
+  {
+    "title": "Army multiple campus",
+    "subTitle": "सैनिक बहुमुखी क्याम्पस",
+    "price": null,
+    "categoryName": "Business school",
+    "address": "MCC7+VMR, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC7+VMR",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.bsamv.edu.np/",
+    "phone": "+977 1-6618830",
+    "phoneUnformatted": "+97716618830",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6722437,
+      "lng": 85.4141379
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRaDCypka6zkRiG_jzEexHk4",
+    "categories": [
+      "Business school"
+    ],
+    "fid": "0x39eb1a99cac2a045:0x4e1eb147cce36f88",
+    "cid": "5629131506197950344",
+    "reviewsCount": 7,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 7
+    },
+    "imagesCount": 25,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:24.529Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Army%20multiple%20campus&query_place_id=ChIJRaDCypka6zkRiG_jzEexHk4",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 38,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz2uc4tDEUjHjymc-eWHhLNAAX-VbyHAUpmUFVeSc8xSn69zgvm1AeaMjIDsl58wK0F8Fu6pBPnw7NsEFheUALBZprzCIMSHieJeCrvkbnckQui2OXy-AwTAFUI4dm8mh2vfes=w641-h240-k-no",
+    "kgmid": "/g/11c2q3yv8h"
+  }
+]

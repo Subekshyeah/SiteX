@@ -1,0 +1,1315 @@
+[
+  {
+    "title": "manisundara library",
+    "subTitle": "मणिसुन्दर पुस्तकालय",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCCF+C82, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+C82, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6710207,
+      "lng": 85.42326
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAagbi6Qa6zkRNq8kErE5A8E",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1aa48b1ba801:0xc10339b11224af36",
+    "cid": "13908023506926612278",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=manisundara%20library&query_place_id=ChIJAagbi6Qa6zkRNq8kErE5A8E",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GIK6uOfIB6tMqZC68GsyqA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=320.46878&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6qn6g02"
+  },
+  {
+    "title": "Central Library-SAMB",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCC8+CVP, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC8+CVP",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://bsamv.edu.np/",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6710999,
+      "lng": 85.4172166
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJabEvdP4b6zkRan1NBLzLCQ8",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1bfe742fb169:0xf09cbbc044d7d6a",
+    "cid": "1083621193745792362",
+    "reviewsCount": 1,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Central%20Library-SAMB&query_place_id=ChIJabEvdP4b6zkRan1NBLzLCQ8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxlF_md0A6bEXHmzwYKAujm5twHpzY4Hdbi8s19y4FzRBH9k1WU4sHMhoHpVrBe9jySH7gzZ7ntUzgrE4takIoHP3_WNPZAPWXQVZiANxb4oIRP8eQI0dMFSVyhg5tYNsidnbPU=w448-h240-k-no",
+    "kgmid": "/g/11j8wk_f1f"
+  },
+  {
+    "title": "unity reading",
+    "subTitle": "एकता वाचनालय",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MC9H+WF7, Lakolachhen, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+WF7, Lakolachhen",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6697823,
+      "lng": 85.428685
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJkVdEFK8a6zkRA9Mzqt1mG_M",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1aaf14445791:0xf31b66ddaa33d303",
+    "cid": "17517708277817004803",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=unity%20reading&query_place_id=ChIJkVdEFK8a6zkRA9Mzqt1mG_M",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFuCfjZtMfDa3F9q8CKalMO7A4JT2yWLUbKT7CrllNGFsbdUTHZIRo3oKHJ_oC1VN7W7EB8YUk6inoy8bckIOYFJNdDt8HdA1i_E7uZoYpXGgSlC0WIZ0RiXWm3Ut6IEmIBTZrIU0AYV5xPwNELhF_YxiV2VA1XztnydlVzcfdgmnTiU7wx3x1GuBm-AB3mAfB94lA=w408-h306-k-no",
+    "kgmid": "/g/11b6s0bxh1"
+  },
+  {
+    "title": "Garden of Books (Reading Room in Bhaktapur)",
+    "price": null,
+    "categoryName": "Library",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3290091",
+    "phoneUnformatted": "+9779843290091",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6648373,
+      "lng": 85.4194059
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYYusjcob6zkRQg1D-F6FHHg",
+    "categories": [
+      "Library",
+      "Education center",
+      "Student dormitory",
+      "Studying center"
+    ],
+    "fid": "0x39eb1bca8dac8b61:0x781c855ef8430d42",
+    "cid": "8654939226837814594",
+    "reviewsCount": 34,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Garden%20of%20Books%20(Reading%20Room%20in%20Bhaktapur)&query_place_id=ChIJYYusjcob6zkRQg1D-F6FHHg",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO5_uMpnvrhAJ39Bkm05RHt9I8_8sXRkE3_8sSK=w408-h725-k-no",
+    "kgmid": "/g/11y310c1z7"
+  },
+  {
+    "title": "Pragati Pustakalaya",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCFP+CWF, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFP+CWF",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6735701,
+      "lng": 85.4372858
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJx8k3OQAb6zkRk1fD5-N2VDA",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b003937c9c7:0x305476e3e7c35793",
+    "cid": "3482539133082228627",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Pragati%20Pustakalaya&query_place_id=ChIJx8k3OQAb6zkRk1fD5-N2VDA",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=St85nel9zb-icUf1MJYZFg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=39.47091&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y0rgl5jj"
+  },
+  {
+    "title": "Digital Library SAMB",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCC8+HW7, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC8+HW7, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610051",
+    "phoneUnformatted": "+97716610051",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671363,
+      "lng": 85.417264
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ728ZfwAb6zkRE8KrU2nIxXw",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b007f196fef:0x7cc5c86953abc213",
+    "cid": "8990812585815949843",
+    "reviewsCount": 1,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.190Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Digital%20Library%20SAMB&query_place_id=ChIJ728ZfwAb6zkRE8KrU2nIxXw",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwNwGrK03_D5ltGlVpwrDgoAj2w8riqPNJJJFKe3JbDYHaBhFiVmoP_FTKEdlmY4cgB9a7vXFiN4uJIZ2DcynWBeY5af-yqVdWD40yhCeATumA3DcAgXOwVBH_pcFFGoXukINnBw=w426-h240-k-no",
+    "kgmid": "/g/11wp4sn202"
+  },
+  {
+    "title": "bmc library",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MC9C+W8H, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+W8H",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6698132,
+      "lng": 85.4208663
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPyMmWgAb6zkRFSZLx4eg64Q",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b005a26233f:0x84eba087c74b2615",
+    "cid": "9577925537558111765",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.190Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=bmc%20library&query_place_id=ChIJPyMmWgAb6zkRFSZLx4eg64Q",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9i05ReUxrMNxHtZ941DWMB3JRvXfyQ5CyPtniGvdAqBU2toaNFfu5wzuzcmr_xUrjWEgYps6nA_YfzeSGsOrIIFmsIS5hE5wjF186sCbs4dm0xeWEoABTKb9Zi8WX6G8NDtHf=w408-h306-k-no",
+    "kgmid": "/g/11lcw8bmw8"
+  },
+  {
+    "title": "Kanchan Library (Reading Room)",
+    "price": null,
+    "categoryName": "Library",
+    "address": "Radhe Radhe Rd, bhaktapur, Nepal",
+    "neighborhood": null,
+    "street": "Radhe Radhe Rd",
+    "city": "bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/kanchanstudyroomlibrary?mibextid=ZbWKwL",
+    "phone": "+977 1-5905230",
+    "phoneUnformatted": "+97715905230",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6779189,
+      "lng": 85.3950804
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJm9fD1EQb6zkRXvV3zC4Od7A",
+    "categories": [
+      "Library",
+      "Studying center"
+    ],
+    "fid": "0x39eb1b44d4c3d79b:0xb0770e2ecc77f55e",
+    "cid": "12715647667065582942",
+    "reviewsCount": 15,
+    "imagesCount": 23,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:30.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kanchan%20Library%20(Reading%20Room)&query_place_id=ChIJm9fD1EQb6zkRXvV3zC4Od7A",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwlXVVcS_XRhwyUpaNE1AqjMVXIJSr4q9w8AIHyBVbbxwrpGHhkMYql3NcYkK13vb75vwQPFy5EFrFR4O0zusUzjV8B5A9KkAxL1kYxOTV8W9u_ozakTT2AWqax8M4bf9iNVDnel0mavcKE=w408-h543-k-no",
+    "kgmid": "/g/11kr_dcz9t"
+  },
+  {
+    "title": "Asmita's Study Room",
+    "price": null,
+    "categoryName": "Library",
+    "address": "Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": null,
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-9380160",
+    "phoneUnformatted": "+9779849380160",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6734504,
+      "lng": 85.3759689
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJmbOXBwAb6zkR6eQB8HjFs0c",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b000797b399:0x47b3c578f001e4e9",
+    "cid": "5166690320737494249",
+    "reviewsCount": 27,
+    "imagesCount": 13,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:30.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Asmita's%20Study%20Room&query_place_id=ChIJmbOXBwAb6zkR6eQB8HjFs0c",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO_d9SVcgygkLUCr7L3o76IqRVcelVTIHTTDuiT=w408-h873-k-no",
+    "kgmid": "/g/11x60zw406"
+  },
+  {
+    "title": "Be Cool Reading Home",
+    "price": null,
+    "categoryName": "Library",
+    "address": "M9GV+633, Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": "M9GV+633",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 980-8660500",
+    "phoneUnformatted": "+9779808660500",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6755158,
+      "lng": 85.3926778
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ70DvRAAb6zkR_Mdpi1mshes",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b0044ef40ef:0xeb85ac598b69c7fc",
+    "cid": "16971160271406614524",
+    "reviewsCount": 3,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:30.732Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Be%20Cool%20Reading%20Home&query_place_id=ChIJ70DvRAAb6zkR_Mdpi1mshes",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=tEF0wupqlqCut1F7KtzK2w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=309.2265&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xrrpwxmm"
+  },
+  {
+    "title": "Digital Library SAMB",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCC8+HW7, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC8+HW7, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610051",
+    "phoneUnformatted": "+97716610051",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671363,
+      "lng": 85.417264
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ728ZfwAb6zkRE8KrU2nIxXw",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b007f196fef:0x7cc5c86953abc213",
+    "cid": "8990812585815949843",
+    "reviewsCount": 1,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:45.602Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Digital%20Library%20SAMB&query_place_id=ChIJ728ZfwAb6zkRE8KrU2nIxXw",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwNwGrK03_D5ltGlVpwrDgoAj2w8riqPNJJJFKe3JbDYHaBhFiVmoP_FTKEdlmY4cgB9a7vXFiN4uJIZ2DcynWBeY5af-yqVdWD40yhCeATumA3DcAgXOwVBH_pcFFGoXukINnBw=w426-h240-k-no",
+    "kgmid": "/g/11wp4sn202"
+  },
+  {
+    "title": "Garden of Books (Reading Room in Bhaktapur)",
+    "price": null,
+    "categoryName": "Library",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3290091",
+    "phoneUnformatted": "+9779843290091",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6648373,
+      "lng": 85.4194059
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYYusjcob6zkRQg1D-F6FHHg",
+    "categories": [
+      "Library",
+      "Education center",
+      "Student dormitory",
+      "Studying center"
+    ],
+    "fid": "0x39eb1bca8dac8b61:0x781c855ef8430d42",
+    "cid": "8654939226837814594",
+    "reviewsCount": 34,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:45.602Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Garden%20of%20Books%20(Reading%20Room%20in%20Bhaktapur)&query_place_id=ChIJYYusjcob6zkRQg1D-F6FHHg",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO5_uMpnvrhAJ39Bkm05RHt9I8_8sXRkE3_8sSK=w408-h725-k-no",
+    "kgmid": "/g/11y310c1z7"
+  },
+  {
+    "title": "NEC Library",
+    "subTitle": "परिषद पुस्तकालय",
+    "price": null,
+    "categoryName": "Library",
+    "address": "PC67+3XG, Neupane Gaun Road, Changunarayan 44804, Nepal",
+    "neighborhood": null,
+    "street": "PC67+3XG, Neupane Gaun Road",
+    "city": "Changunarayan",
+    "postalCode": "44804",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.7101758,
+      "lng": 85.4149457
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ5VyYtx8b6zkRZDmJKX0hvv4",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b1fb7985ce5:0xfebe217d29893964",
+    "cid": "18356145952660207972",
+    "reviewsCount": 3,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:15.020Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=NEC%20Library&query_place_id=ChIJ5VyYtx8b6zkRZDmJKX0hvv4",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.710532511554057,85.42249999999997,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzb2bBLVnFgq1gFYBlxgLIKlR8EtXRnCo13gpuuHnwWpa3Xwk5dgTYLjUDa-FYypeJuNd3deXZ3jRBf-aY_bgObZQ9Pw0NqKVRp78JeLnNZlZzYI8vB0hKO2QuFg5jtmlLOzQGC=w408-h544-k-no",
+    "kgmid": "/g/1hd_48q4s"
+  },
+  {
+    "title": "Pragati Pustakalaya",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCFP+CWF, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFP+CWF",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6735701,
+      "lng": 85.4372858
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJx8k3OQAb6zkRk1fD5-N2VDA",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b003937c9c7:0x305476e3e7c35793",
+    "cid": "3482539133082228627",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.121Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Pragati%20Pustakalaya&query_place_id=ChIJx8k3OQAb6zkRk1fD5-N2VDA",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=St85nel9zb-icUf1MJYZFg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=39.47091&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y0rgl5jj"
+  },
+  {
+    "title": "unity reading",
+    "subTitle": "एकता वाचनालय",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MC9H+WF7, Lakolachhen, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+WF7, Lakolachhen",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6697823,
+      "lng": 85.428685
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJkVdEFK8a6zkRA9Mzqt1mG_M",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1aaf14445791:0xf31b66ddaa33d303",
+    "cid": "17517708277817004803",
+    "reviewsCount": 0,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.121Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=unity%20reading&query_place_id=ChIJkVdEFK8a6zkRA9Mzqt1mG_M",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFuCfjZtMfDa3F9q8CKalMO7A4JT2yWLUbKT7CrllNGFsbdUTHZIRo3oKHJ_oC1VN7W7EB8YUk6inoy8bckIOYFJNdDt8HdA1i_E7uZoYpXGgSlC0WIZ0RiXWm3Ut6IEmIBTZrIU0AYV5xPwNELhF_YxiV2VA1XztnydlVzcfdgmnTiU7wx3x1GuBm-AB3mAfB94lA=w408-h306-k-no",
+    "kgmid": "/g/11b6s0bxh1"
+  },
+  {
+    "title": "Central Library-SAMB",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCC8+CVP, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC8+CVP",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://bsamv.edu.np/",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6710999,
+      "lng": 85.4172166
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJabEvdP4b6zkRan1NBLzLCQ8",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1bfe742fb169:0xf09cbbc044d7d6a",
+    "cid": "1083621193745792362",
+    "reviewsCount": 1,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.122Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Central%20Library-SAMB&query_place_id=ChIJabEvdP4b6zkRan1NBLzLCQ8",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxlF_md0A6bEXHmzwYKAujm5twHpzY4Hdbi8s19y4FzRBH9k1WU4sHMhoHpVrBe9jySH7gzZ7ntUzgrE4takIoHP3_WNPZAPWXQVZiANxb4oIRP8eQI0dMFSVyhg5tYNsidnbPU=w448-h240-k-no",
+    "kgmid": "/g/11j8wk_f1f"
+  },
+  {
+    "title": "Garden of Books (Reading Room in Bhaktapur)",
+    "price": null,
+    "categoryName": "Library",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3290091",
+    "phoneUnformatted": "+9779843290091",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6648373,
+      "lng": 85.4194059
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYYusjcob6zkRQg1D-F6FHHg",
+    "categories": [
+      "Library",
+      "Education center",
+      "Student dormitory",
+      "Studying center"
+    ],
+    "fid": "0x39eb1bca8dac8b61:0x781c855ef8430d42",
+    "cid": "8654939226837814594",
+    "reviewsCount": 34,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.122Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Garden%20of%20Books%20(Reading%20Room%20in%20Bhaktapur)&query_place_id=ChIJYYusjcob6zkRQg1D-F6FHHg",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipO5_uMpnvrhAJ39Bkm05RHt9I8_8sXRkE3_8sSK=w408-h725-k-no",
+    "kgmid": "/g/11y310c1z7"
+  },
+  {
+    "title": "manisundara library",
+    "subTitle": "मणिसुन्दर पुस्तकालय",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCCF+C82, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+C82, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6710207,
+      "lng": 85.42326
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAagbi6Qa6zkRNq8kErE5A8E",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1aa48b1ba801:0xc10339b11224af36",
+    "cid": "13908023506926612278",
+    "reviewsCount": 1,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.122Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=manisundara%20library&query_place_id=ChIJAagbi6Qa6zkRNq8kErE5A8E",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=GIK6uOfIB6tMqZC68GsyqA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=320.46878&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6qn6g02"
+  },
+  {
+    "title": "Digital Library SAMB",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MCC8+HW7, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC8+HW7, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6610051",
+    "phoneUnformatted": "+97716610051",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.671363,
+      "lng": 85.417264
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ728ZfwAb6zkRE8KrU2nIxXw",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b007f196fef:0x7cc5c86953abc213",
+    "cid": "8990812585815949843",
+    "reviewsCount": 1,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.122Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Digital%20Library%20SAMB&query_place_id=ChIJ728ZfwAb6zkRE8KrU2nIxXw",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxwNwGrK03_D5ltGlVpwrDgoAj2w8riqPNJJJFKe3JbDYHaBhFiVmoP_FTKEdlmY4cgB9a7vXFiN4uJIZ2DcynWBeY5af-yqVdWD40yhCeATumA3DcAgXOwVBH_pcFFGoXukINnBw=w426-h240-k-no",
+    "kgmid": "/g/11wp4sn202"
+  },
+  {
+    "title": "bmc library",
+    "price": null,
+    "categoryName": "Library",
+    "address": "MC9C+W8H, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+W8H",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6698132,
+      "lng": 85.4208663
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPyMmWgAb6zkRFSZLx4eg64Q",
+    "categories": [
+      "Library"
+    ],
+    "fid": "0x39eb1b005a26233f:0x84eba087c74b2615",
+    "cid": "9577925537558111765",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.122Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=bmc%20library&query_place_id=ChIJPyMmWgAb6zkRFSZLx4eg64Q",
+    "searchPageUrl": "https://www.google.com/maps/search/library/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "library",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9i05ReUxrMNxHtZ941DWMB3JRvXfyQ5CyPtniGvdAqBU2toaNFfu5wzuzcmr_xUrjWEgYps6nA_YfzeSGsOrIIFmsIS5hE5wjF186sCbs4dm0xeWEoABTKb9Zi8WX6G8NDtHf=w408-h306-k-no",
+    "kgmid": "/g/11lcw8bmw8"
+  }
+]

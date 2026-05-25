@@ -1,0 +1,154 @@
+[
+  {
+    "title": "R.A. Banquet",
+    "price": null,
+    "categoryName": "Banquet hall",
+    "address": "PC76+M2X, Kathmandu 44600, Nepal",
+    "neighborhood": "Mulpani",
+    "street": "PC76+M2X",
+    "city": "Kathmandu",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1213735",
+    "phoneUnformatted": "+9779851213735",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.7145138,
+      "lng": 85.4092619
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1_SNaf0b6zkROeJ17zZ8SZg",
+    "categories": [
+      "Banquet hall",
+      "Fast food restaurant",
+      "Takeout Restaurant",
+      "Nepalese restaurant"
+    ],
+    "fid": "0x39eb1bfd698df4d7:0x98497c36ef75e239",
+    "cid": "10973438542452482617",
+    "reviewsCount": 65,
+    "imagesCount": 58,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:53:36.759Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "additionalOpeningHours": {
+      "Takeout": [
+        {
+          "day": "Monday",
+          "hours": "9 AM–10 PM"
+        },
+        {
+          "day": "Tuesday",
+          "hours": "9 AM–10 PM"
+        },
+        {
+          "day": "Wednesday",
+          "hours": "9 AM–10 PM"
+        },
+        {
+          "day": "Thursday",
+          "hours": "9 AM–10 PM"
+        },
+        {
+          "day": "Friday",
+          "hours": "9 AM–10 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "9 AM–10 PM"
+        },
+        {
+          "day": "Sunday",
+          "hours": "9 AM–10 PM"
+        }
+      ]
+    },
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids birthday": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=R.A.%20Banquet&query_place_id=ChIJ1_SNaf0b6zkROeJ17zZ8SZg",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.710532511554057,85.41391479560049,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM0SpMHk51pdpSZnD3-IKLrfUVzBK7FAuem6nkG=w426-h240-k-no",
+    "kgmid": "/g/11p5qd9z0_"
+  }
+]

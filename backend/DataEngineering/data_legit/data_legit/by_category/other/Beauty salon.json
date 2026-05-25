@@ -1,0 +1,396 @@
+[
+  {
+    "title": "Fine Beauty Parlour & Traning Centre",
+    "subTitle": "ठीक ब्यूटी पार्लर र ट्रेनिंग सेन्टर",
+    "price": null,
+    "categoryName": "Beauty salon",
+    "address": "MCCH+PR6, तौमादी, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+PR6, तौमादी",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612295",
+    "phoneUnformatted": "+97716612295",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6717949,
+      "lng": 85.4295299
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJZ6MMsq8a6zkRGGyK4yuBKMQ",
+    "categories": [
+      "Beauty salon",
+      "Training center"
+    ],
+    "fid": "0x39eb1aafb20ca367:0xc428812be38a6c18",
+    "cid": "14134689456003378200",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:43.249Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Fine%20Beauty%20Parlour%20%26%20Traning%20Centre&query_place_id=ChIJZ6MMsq8a6zkRGGyK4yuBKMQ",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 29,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFwBjdoh0Nz3_TPVcGpMtBYfmAyvaZbjyY9TitPIZ06XaO6E7uzaD2ikwnb5tlOWY6UBxkAII6zIWufi3saUipMpfBM3fCSPUai-QzrOVm4m1I-2eMTzMJx4rdWZTEN-MfEpe2TRJKCrVB5ODBwSmBlQ7DLfJ0z5f3Abnzv-_dSRbjQBsq7CzhjgSTOsGPrkGOUtw=w408-h306-k-no",
+    "kgmid": "/g/11b6q2v19n"
+  },
+  {
+    "title": "Ground Zero Beauty Parlour & Training Center",
+    "subTitle": "जमीन शून्य ब्यूटी पार्लर र प्रशिक्षण केन्द्र",
+    "price": null,
+    "categoryName": "Beauty salon",
+    "address": "MCFG+237, इताहँ सडक, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFG+237, इताहँ सडक",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.672525,
+      "lng": 85.425185
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJFy0dI6Ua6zkRo432wvmUuf8",
+    "categories": [
+      "Beauty salon",
+      "Training center"
+    ],
+    "fid": "0x39eb1aa5231d2d17:0xffb994f9c2f68da3",
+    "cid": "18426923150801800611",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:43.250Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ground%20Zero%20Beauty%20Parlour%20%26%20Training%20Center&query_place_id=ChIJFy0dI6Ua6zkRo432wvmUuf8",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 30,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=-Z9ej2OTnMQTvlxAJAlFFg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=178.16426&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6pthkmv"
+  },
+  {
+    "title": "Sweta Beauty Home & Training Center",
+    "price": null,
+    "categoryName": "Beauty salon",
+    "address": "MC9H+J53, राम मन्दिर रोड, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+J53, राम मन्दिर रोड",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617051",
+    "phoneUnformatted": "+97716617051",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.669006,
+      "lng": 85.427928
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJy5zFRK8a6zkRCXNyCf2QItU",
+    "categories": [
+      "Beauty salon",
+      "Training center"
+    ],
+    "fid": "0x39eb1aaf44c59ccb:0xd52290fd09727309",
+    "cid": "15357997095746433801",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:02.093Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sweta%20Beauty%20Home%20%26%20Training%20Center&query_place_id=ChIJy5zFRK8a6zkRCXNyCf2QItU",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 49,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=TeODpgkZdC6VHaquJW_BXA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=256.6424&pitch=0&thumbfov=100",
+    "kgmid": "/g/11b6rz34zl"
+  },
+  {
+    "title": "Sarita Beauty parlor and traning Center",
+    "subTitle": "सरीता पार्लर एण्ड ट्र्‍ेनिङ्ग सेन्टर",
+    "price": null,
+    "categoryName": "Beauty salon",
+    "address": "MC8G+98X, सुर्यविनायक, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+98X, सुर्यविनायक",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6615567",
+    "phoneUnformatted": "+97716615567",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6659873,
+      "lng": 85.4258637
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3zf5RqYa6zkRTOJoo5cXdS8",
+    "categories": [
+      "Beauty salon",
+      "Training center"
+    ],
+    "fid": "0x39eb1aa646f937df:0x2f751797a368e24c",
+    "cid": "3419665432106820172",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:02.093Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sarita%20Beauty%20parlor%20and%20traning%20Center&query_place_id=ChIJ3zf5RqYa6zkRTOJoo5cXdS8",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 57,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGQezRo1Oo-ly9t33Ywmw3ArpP_O-u9g0vV76-vrAXGo_c513cvHcfRjK3n4-GUuP2JT4Sv2HeUodrP01Fm21MvyzUdyCAQngdS5P0FGbRXMIpijkGDYSXXEIo8-4GuR0HszLKqAcIBaryjwJeaUHzx-AyyduOfht6hvGkWE44h1BfxViMwo34Go2O8aIo-PDEhSA=w408-h306-k-no",
+    "kgmid": "/g/11b6s1_t_j"
+  },
+  {
+    "title": "एलिगेन्स ब्युटी पार्लर एण्ड टे्र्‍निङ्ग सेन्टर",
+    "price": null,
+    "categoryName": "Beauty salon",
+    "address": "MC9H+J5G, बोलाछें सडक, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9H+J5G, बोलाछें सडक",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6612757",
+    "phoneUnformatted": "+97716612757",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6690692,
+      "lng": 85.4279485
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHSWeRK8a6zkRjgneFGeteOs",
+    "categories": [
+      "Beauty salon",
+      "Training center"
+    ],
+    "fid": "0x39eb1aaf449e251d:0xeb78ad6714de098e",
+    "cid": "16967502254361676174",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:14:02.093Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%8F%E0%A4%B2%E0%A4%BF%E0%A4%97%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%B8%20%E0%A4%AC%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%9F%E0%A5%80%20%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B2%E0%A4%B0%20%E0%A4%8F%E0%A4%A3%E0%A5%8D%E0%A4%A1%20%E0%A4%9F%E0%A5%87%E0%A5%8D%E0%A4%B0%E0%A5%8D%E2%80%8D%E0%A4%A8%E0%A4%BF%E0%A4%99%E0%A5%8D%E0%A4%97%20%E0%A4%B8%E0%A5%87%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A4%B0&query_place_id=ChIJHSWeRK8a6zkRjgneFGeteOs",
+    "searchPageUrl": "https://www.google.com/maps/search/training%20center/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "training center",
+    "language": "en",
+    "rank": 59,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHYOUGFFDDLMl6bdVZ7y0Y6kQQ3fxg2cGfDv83vzQmB3Ol71Qd-T1dgNFyCvvufxe1HSYqH5tVskJJ45k20uHR_chIX8vvciFDc43muHwZGOfB5sQy5mTMm6Eu5ZZqO0Cnbfr6x8ISCCzgBc5JlT6uIhsrYeDekRN211Z-pBPqkFcMgjRx7p0M_EDkEyh4ctcW4TkU=w408-h306-k-no",
+    "kgmid": "/g/11b6s31d82"
+  }
+]

@@ -1,0 +1,433 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.plan{padding:1rem 0}
+.phase{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);margin-bottom:1rem;overflow:hidden}
+.phase-header{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:0.5px solid var(--color-border-tertiary);cursor:pointer;user-select:none}
+.phase-header:hover{background:var(--color-background-secondary)}
+.phase-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.phase-title{font-size:15px;font-weight:500;color:var(--color-text-primary);flex:1}
+.phase-meta{font-size:12px;color:var(--color-text-tertiary)}
+.phase-chevron{font-size:11px;color:var(--color-text-tertiary);transition:transform .2s}
+.phase-chevron.open{transform:rotate(90deg)}
+.phase-body{display:none;padding:0}
+.phase-body.open{display:block}
+.task-row{display:grid;grid-template-columns:1fr 140px 90px;align-items:start;gap:8px;padding:10px 16px;border-bottom:0.5px solid var(--color-border-tertiary);font-size:13px}
+.task-row:last-child{border-bottom:none}
+.task-row.moved{background:var(--color-background-warning)}
+.task-name{color:var(--color-text-primary);line-height:1.5}
+.task-sub{font-size:11px;color:var(--color-text-tertiary);margin-top:2px}
+.moved-tag{display:inline-block;font-size:10px;font-weight:500;background:#FAEEDA;color:#633806;padding:1px 6px;border-radius:20px;margin-left:6px;vertical-align:middle}
+.owner-badges{display:flex;flex-wrap:wrap;gap:4px}
+.badge{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:500;white-space:nowrap}
+.b-sujal{background:#E6F1FB;color:#0C447C}
+.b-roj{background:#EAF3DE;color:#27500A}
+.b-sub{background:#EEEDFE;color:#3C3489}
+.b-anish{background:#FAEEDA;color:#633806}
+.b-all{background:#F1EFE8;color:#444441}
+.priority{font-size:11px;padding:2px 8px;border-radius:20px;text-align:center;font-weight:500}
+.p-crit{background:#FCEBEB;color:#791F1F}
+.p-high{background:#FAEEDA;color:#633806}
+.p-med{background:#EAF3DE;color:#27500A}
+.p-low{background:#F1EFE8;color:#444441}
+.milestone-bar{display:flex;align-items:center;gap:0;margin-bottom:1rem;background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 16px;border:0.5px solid var(--color-border-tertiary)}
+.m-item{flex:1;text-align:center;font-size:11px;color:var(--color-text-secondary);position:relative}
+.m-item:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:1px;height:24px;background:var(--color-border-tertiary)}
+.m-item.today .m-date{color:var(--color-text-success)}
+.m-item.shifted .m-date{color:var(--color-text-warning)}
+.m-date{font-weight:500;font-size:12px;color:var(--color-text-primary);display:block}
+.m-label{color:var(--color-text-tertiary)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1rem;align-items:center}
+.legend-label{font-size:12px;color:var(--color-text-tertiary);margin-right:4px}
+.rule-section{background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px 16px;margin-bottom:1rem}
+.rule-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:10px}
+.rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rule-item{font-size:12px;color:var(--color-text-secondary);line-height:1.6;padding-left:12px;border-left:2px solid var(--color-border-secondary)}
+.section-label{font-size:11px;font-weight:500;color:var(--color-text-tertiary);letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px}
+.change-note{background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);border-radius:var(--border-radius-md);padding:10px 14px;margin-bottom:1rem;font-size:12px;color:var(--color-text-warning);line-height:1.6}
+</style>
+
+<div class="plan">
+  <h2 class="sr-only">SiteX updated semester plan — dates shifted +2 days, frontend redesign moved to Phase 1</h2>
+
+  <div class="change-note">
+    <strong style="display:block;margin-bottom:4px">What changed in this version</strong>
+    All dates shifted +2 days from today (Apr 13). Frontend redesign &amp; heatmaps promoted to Phase 1 so the team has a visual skeleton to build features into from week 1. DB decision, graph pipeline, and other foundation tasks pushed to run alongside.
+  </div>
+
+  <div class="milestone-bar">
+    <div class="m-item today"><span class="m-date">Apr 13</span><span class="m-label">Start (today)</span></div>
+    <div class="m-item"><span class="m-date">Apr 27</span><span class="m-label">Phase 1 done</span></div>
+    <div class="m-item shifted"><span class="m-date">May 13</span><span class="m-label">Mid defense</span></div>
+    <div class="m-item shifted"><span class="m-date">Jun 1</span><span class="m-label">Feature freeze</span></div>
+    <div class="m-item shifted"><span class="m-date">Jun 7</span><span class="m-label">Report done</span></div>
+    <div class="m-item shifted"><span class="m-date">Jun 13</span><span class="m-label">Final submission</span></div>
+  </div>
+
+  <div class="legend">
+    <span class="legend-label">Team:</span>
+    <span class="badge b-sujal">Sujal</span>
+    <span class="badge b-roj">Roj</span>
+    <span class="badge b-sub">Subekshya</span>
+    <span class="badge b-anish">Anish</span>
+    <span class="badge b-all">All</span>
+    <span style="margin-left:8px;font-size:12px;color:var(--color-text-tertiary)">Priority:</span>
+    <span class="priority p-crit">Critical</span>
+    <span class="priority p-high">High</span>
+    <span class="priority p-med">Med</span>
+  </div>
+
+  <p class="section-label">Click any phase to expand</p>
+
+  <!-- PHASE 1 -->
+  <div class="phase">
+    <div class="phase-header" onclick="toggle(this)">
+      <div class="phase-dot" style="background:#378ADD"></div>
+      <div>
+        <div class="phase-title">Phase 1 — Frontend skeleton + foundation</div>
+        <div class="phase-meta">Week 1–2 · Apr 13–27</div>
+      </div>
+      <span class="phase-chevron">▶</span>
+    </div>
+    <div class="phase-body">
+
+      <div class="task-row moved">
+        <div>
+          <div class="task-name">Frontend redesign — full UI skeleton <span class="moved-tag">moved up</span></div>
+          <div class="task-sub">Build the complete shell: sidebar, map area, results panel, layer toggles, persona input form. No logic yet — just the visual layout so the team can see where every feature lands.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row moved">
+        <div>
+          <div class="task-name">Heatmap layer implementation <span class="moved-tag">moved up</span></div>
+          <div class="task-sub">Competitor density + POI density heatmaps as toggleable layers on the Leaflet map. Visual output immediately usable for mid-defense demo.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row moved">
+        <div>
+          <div class="task-name">Road-network routing + isochrone overlays <span class="moved-tag">moved up</span></div>
+          <div class="task-sub">Add walkability paths and bounding polygon overlays to Leaflet. Ties visual UI to the graph data being built in parallel.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Decide and set up database</div>
+          <div class="task-sub">Evaluate PostgreSQL+PostGIS vs SQLite. Recommendation: PostGIS for native spatial indexing. Blocks data migration.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span><span class="badge b-roj">Roj</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Migrate data pipeline to database</div>
+          <div class="task-sub">Move master_cafes_metrics.csv + GeoJSONs into DB tables with spatial indexing</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-roj">Roj</span><span class="badge b-sub">Subekshya</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Enrich café/retail categorization dataset</div>
+          <div class="task-sub">Sub-classify competitors by price tier, chain vs. independent, ambiance</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-roj">Roj</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Set up Trello board with sprint structure</div>
+          <div class="task-sub">Cards for all tasks, owners assigned, due dates per phase — do this on day 1</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Establish communication protocol</div>
+          <div class="task-sub">Fix weekly Discord sync day/time, Trello-only task updates, 3-day early flag rule for blockers</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-all">All</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 2 -->
+  <div class="phase">
+    <div class="phase-header" onclick="toggle(this)">
+      <div class="phase-dot" style="background:#1D9E75"></div>
+      <div>
+        <div class="phase-title">Phase 2 — Mid-defense build (demo-ready)</div>
+        <div class="phase-meta">Week 3–4 · Apr 28 – May 13 · 🎯 Mid defense May 13</div>
+      </div>
+      <span class="phase-chevron">▶</span>
+    </div>
+    <div class="phase-body">
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Graph construction pipeline</div>
+          <div class="task-sub">Merge POIs + Roadway.geojson into PyTorch-compatible node/edge format. Frontend UI built in Phase 1 now shows where this data will be visualized.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span><span class="badge b-roj">Roj</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Road-network snapping logic</div>
+          <div class="task-sub">Snap candidate lat/lng to nearest road node, extract subgraph within N km</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Wire frontend to live backend data</div>
+          <div class="task-sub">Connect the Phase 1 UI skeleton to real API calls — map layers, pin-drop scoring, POI toggle data</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Competitor analytics — basic synergy/cannibalization</div>
+          <div class="task-sub">Backend endpoint for synergy vs. cannibalization signals using enriched dataset</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sub">Subekshya</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Dynamic dashboard polish</div>
+          <div class="task-sub">Toggle controls, responsive layout, state management cleanup in React — now easier since skeleton exists</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Mid-defense slides + demo script</div>
+          <div class="task-sub">Slides: sem 7 recap, what's new (redesigned UI + heatmaps), live demo, roadmap ahead</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span><span class="badge b-all">All</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 3 -->
+  <div class="phase">
+    <div class="phase-header" onclick="toggle(this)">
+      <div class="phase-dot" style="background:#BA7517"></div>
+      <div>
+        <div class="phase-title">Phase 3 — Core ML & personalization</div>
+        <div class="phase-meta">Week 5–7 · May 14 – Jun 1 · Feature freeze Jun 1</div>
+      </div>
+      <span class="phase-chevron">▶</span>
+    </div>
+    <div class="phase-body">
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Train HeteroGAT model (or enhanced XGBoost fallback)</div>
+          <div class="task-sub">PyTorch Geometric HeteroGAT. Escape hatch: if not working by May 22, ship XGBoost with graph-derived features — no debate.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Replace /predict-score/ with new model</div>
+          <div class="task-sub">FastAPI endpoint serving new model. The UI slot for results already exists from Phase 1 — just wire it up.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">User persona input UI — finalize</div>
+          <div class="task-sub">Complete the persona form component stubbed in Phase 1. Connect to backend scoring logic.</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Persona-aware scoring backend</div>
+          <div class="task-sub">Adjust feature weights and Gemini prompt based on user's business model input</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sub">Subekshya</span><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Upgrade Gemini /explain/ endpoint</div>
+          <div class="task-sub">Rewrite prompt to interpret graph-topology factors (centrality, walkability, road network barriers)</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Synergy vs. cannibalization metric — finalize</div>
+          <div class="task-sub">Model output flag + frontend indicator in the results panel (slot already exists in UI)</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-sub">Subekshya</span></div>
+        <div><span class="priority p-med">Med</span></div>
+      </div>
+
+      <div class="task-row">
+        <div>
+          <div class="task-name">Automated data pipeline refinement</div>
+          <div class="task-sub">Script to re-ingest and rebuild graph for a new area without manual steps</div>
+        </div>
+        <div class="owner-badges"><span class="badge b-roj">Roj</span></div>
+        <div><span class="priority p-med">Med</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 4 -->
+  <div class="phase">
+    <div class="phase-header" onclick="toggle(this)">
+      <div class="phase-dot" style="background:#993C1D"></div>
+      <div>
+        <div class="phase-title">Phase 4 — Report writing</div>
+        <div class="phase-meta">Week 8 · Jun 2–7 · Report due Jun 7</div>
+      </div>
+      <span class="phase-chevron">▶</span>
+    </div>
+    <div class="phase-body">
+
+      <div class="task-row">
+        <div><div class="task-name">Write system architecture chapter</div><div class="task-sub">Full-stack diagram, API design, model pipeline, data flow</div></div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Write ML model chapter</div><div class="task-sub">Graph construction, HeteroGAT/XGBoost methodology, training results, evaluation metrics</div></div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span><span class="badge b-sub">Subekshya</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Write data chapter</div><div class="task-sub">Dataset sources, preprocessing steps, feature engineering, enrichment pipeline</div></div>
+        <div class="owner-badges"><span class="badge b-roj">Roj</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Write results & evaluation chapter</div><div class="task-sub">Model performance, persona testing, synergy metric validation</div></div>
+        <div class="owner-badges"><span class="badge b-sub">Subekshya</span><span class="badge b-anish">Anish</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Introduction, abstract, conclusion</div><div class="task-sub">Problem statement, motivation, future work, limitations</div></div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">API documentation</div><div class="task-sub">All FastAPI endpoints, request/response schemas, error codes</div></div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Cross-review all report sections</div><div class="task-sub">Everyone reads each other's sections. Sujal does final technical accuracy pass.</div></div>
+        <div class="owner-badges"><span class="badge b-all">All</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 5 -->
+  <div class="phase">
+    <div class="phase-header" onclick="toggle(this)">
+      <div class="phase-dot" style="background:#534AB7"></div>
+      <div>
+        <div class="phase-title">Phase 5 — Final defense prep & submission</div>
+        <div class="phase-meta">Week 9 · Jun 8–13 · 🎯 Final submission Jun 13</div>
+      </div>
+      <span class="phase-chevron">▶</span>
+    </div>
+    <div class="phase-body">
+
+      <div class="task-row">
+        <div><div class="task-name">End-to-end demo rehearsal</div><div class="task-sub">Full live run: pin-drop → score → heatmap layers → Gemini explanation. Fix any crashes.</div></div>
+        <div class="owner-badges"><span class="badge b-all">All</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Final presentation slides</div><div class="task-sub">Problem → solution → architecture → demo → results → future work</div></div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span><span class="badge b-all">All</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Bug fixes and UX polish</div><div class="task-sub">No new features — crash fixes, performance, and visual cleanup only</div></div>
+        <div class="owner-badges"><span class="badge b-sujal">Sujal</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">GitHub cleanup & README</div><div class="task-sub">Clean commit history, clear README with setup instructions, remove dead code</div></div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span><span class="badge b-roj">Roj</span></div>
+        <div><span class="priority p-high">High</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="task-name">Final report submission</div><div class="task-sub">PDF export, formatting check, submit by deadline</div></div>
+        <div class="owner-badges"><span class="badge b-anish">Anish</span></div>
+        <div><span class="priority p-crit">Critical</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Rules -->
+  <div class="rule-section">
+    <div class="rule-title">Team operating rules</div>
+    <div class="rule-grid">
+      <div class="rule-item">Weekly sync every Sunday on Discord — 30 min max, fixed time, no skipping</div>
+      <div class="rule-item">All task updates go on Trello — not WhatsApp messages that get lost</div>
+      <div class="rule-item">If a task will miss its deadline, flag it 3 days early — no silent failures</div>
+      <div class="rule-item">Feature freeze Jun 1 — zero new features after this date, only fixes</div>
+      <div class="rule-item">Report writing starts May 14 alongside development — not after features are done</div>
+      <div class="rule-item">Sujal reviews all technical output before submission</div>
+      <div class="rule-item">HeteroGAT escape hatch: if not working by May 22 → ship enhanced XGBoost, no debate</div>
+      <div class="rule-item">No paid APIs — Gemini free tier + PyTorch + open OSM data covers everything</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(header){
+  const body=header.nextElementSibling;
+  const chev=header.querySelector('.phase-chevron');
+  const isOpen=body.classList.contains('open');
+  body.classList.toggle('open',!isOpen);
+  chev.classList.toggle('open',!isOpen);
+}
+</script>

@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Kritam Mobile House",
+    "price": null,
+    "categoryName": "Mobile home park",
+    "address": "Thimi-Biruwa Rd, Anantalingeshwar, Nepal",
+    "neighborhood": "Dadhikot",
+    "street": "Thimi-Biruwa Rd",
+    "city": "Anantalingeshwar",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1241655",
+    "phoneUnformatted": "+9779851241655",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6651406,
+      "lng": 85.389679
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw3abl8wb6zkRiyYD2yEW8kk",
+    "categories": [
+      "Mobile home park"
+    ],
+    "fid": "0x39eb1bcc979b76c3:0x49f21621db03268b",
+    "cid": "5328345643796866699",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 0
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:17.562Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kritam%20Mobile%20House&query_place_id=ChIJw3abl8wb6zkRiyYD2yEW8kk",
+    "searchPageUrl": "https://www.google.com/maps/search/park/@27.664893497689192,85.39674438680153,17z?hl=en",
+    "searchString": "park",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=-YR6K2RAif-m-moXdDUfPQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=255.30872&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h75pk20v"
+  }
+]

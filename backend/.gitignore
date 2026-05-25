@@ -128,3 +128,5 @@ dmypy.json
 poi_paths_geojson_*
 
 **.pkl
+
+**.db

@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Madhyapur dairy and coffee shop",
+    "subTitle": "मध्यपुर डेरी एण्ड कफी शप",
+    "price": null,
+    "categoryName": "Dairy store",
+    "address": "M9JP+9CW, Madhyapur Thimi 44800, Nepal",
+    "neighborhood": null,
+    "street": "M9JP+9CW",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6637494",
+    "phoneUnformatted": "+97716637494",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6809973,
+      "lng": 85.3860676
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJlfs1KmYa6zkRgLlawSzFheU",
+    "categories": [
+      "Dairy store",
+      "Coffee shop"
+    ],
+    "fid": "0x39eb1a662a35fb95:0xe585c52cc15ab980",
+    "cid": "16538842002601195904",
+    "reviewsCount": 16,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 1,
+      "threeStar": 3,
+      "fourStar": 4,
+      "fiveStar": 7
+    },
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:54:18.144Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Planning": [
+        {
+          "Quick visit": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Madhyapur%20dairy%20and%20coffee%20shop&query_place_id=ChIJlfs1KmYa6zkRgLlawSzFheU",
+    "searchPageUrl": "https://www.google.com/maps/search/tea%20store/@27.680106502310814,85.38815918240205,17z?hl=en",
+    "searchString": "tea store",
+    "language": "en",
+    "rank": 41,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFm56wNWLgaMTdv31PMEfZh_7ZFbpF_7T82eg8eh1OqvCu-Jk887Apq6kzX5u7Xemj9-YFTiB_S5HT084i42kgbYuoBc7kBm5WR7OMVv8Qdd8Eg2mY4GNkvkXTrbhIgbthXN3v-_nkPVZmQLSow7cVwkmP6mAEt4qnDMnawba2s8HW5QW9XXc0rAgHT7ZHY_gARBXM=w408-h306-k-no",
+    "kgmid": "/g/11b6q3r61_"
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "title": "Banglamukhi Savings And Credit Cooperative Ltd.",
+    "price": null,
+    "categoryName": "Financial institution",
+    "address": "M99F+W2Q, Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "M99F+W2Q",
+    "city": "Anantalingeshwar",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://banglamukhisaving.coop.np/",
+    "phone": "+977 1-5211167",
+    "phoneUnformatted": "+97715211167",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6698454,
+      "lng": 85.3726057
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJC9J8rw0a6zkRciSHEgcRr3A",
+    "categories": [
+      "Financial institution",
+      "Bank"
+    ],
+    "fid": "0x39eb1a0daf7cd20b:0x70af110712872472",
+    "cid": "8119727375245583474",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:57.680Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Banglamukhi%20Savings%20And%20Credit%20Cooperative%20Ltd.&query_place_id=ChIJC9J8rw0a6zkRciSHEgcRr3A",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 46,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=xNIzipYxePhSmUMJyOVZ6Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=115.57471&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g8ngk2zd"
+  },
+  {
+    "title": "Sindhu Container Saving & Credit Co-operative Ltd.",
+    "price": null,
+    "categoryName": "Financial institution",
+    "address": "Araniko Highway, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "Araniko Highway",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6637244",
+    "phoneUnformatted": "+97716637244",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6737891,
+      "lng": 85.3704257
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJsaoulxEa6zkRwtZkkwSredA",
+    "categories": [
+      "Financial institution",
+      "Bank"
+    ],
+    "fid": "0x39eb1a11972eaab1:0xd079ab049364d6c2",
+    "cid": "15022226068212078274",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 26,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:57.680Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 3 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sindhu%20Container%20Saving%20%26%20Credit%20Co-operative%20Ltd.&query_place_id=ChIJsaoulxEa6zkRwtZkkwSredA",
+    "searchPageUrl": "https://www.google.com/maps/search/bank/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "bank",
+    "language": "en",
+    "rank": 56,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOTiMNWEQmXeCFdE79B1bEpMBvz_zbgehvrZiTJ=w426-h240-k-no",
+    "kgmid": "/g/11bw4s0rpg"
+  }
+]

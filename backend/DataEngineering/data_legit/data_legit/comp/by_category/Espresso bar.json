@@ -1,0 +1,345 @@
+[
+  {
+    "title": "Chandrayan Espresso Bar",
+    "price": null,
+    "categoryName": "Espresso bar",
+    "address": "Nagarkot Road, Ittachhen - 17, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Road, Ittachhen - 17",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1057383",
+    "phoneUnformatted": "+9779851057383",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6721252,
+      "lng": 85.4235942
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMTMW66Qa6zkROWzKHDL665M",
+    "categories": [
+      "Espresso bar",
+      "Restaurant"
+    ],
+    "fid": "0x39eb1aa4eb163331:0x93ebfa321cca6c39",
+    "cid": "10658888036240747577",
+    "reviewsCount": 86,
+    "reviewsDistribution": {
+      "oneStar": 6,
+      "twoStar": 4,
+      "threeStar": 22,
+      "fourStar": 19,
+      "fiveStar": 35
+    },
+    "imagesCount": 28,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:37:56.069Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great coffee": true
+        },
+        {
+          "Great dessert": true
+        },
+        {
+          "Great tea selection": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Brunch": true
+        },
+        {
+          "Dessert": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        },
+        {
+          "Tourists": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Chandrayan%20Espresso%20Bar&query_place_id=ChIJMTMW66Qa6zkROWzKHDL665M",
+    "searchPageUrl": "https://www.google.com/maps/search/coffee%20shop/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "coffee shop",
+    "language": "en",
+    "rank": 31,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzoXTdC2SlMGDJRs2bnRBfUvXhkMx5IM0OrrF1a8mCFDuY5v2bfS66PdbZAazhcmzzhqO8vgx0iV0ZaJOMvAl0w6bj2G7CghF-NGWBZ4jI8e11nWCSc9jX-KTCIphfVqd8scF9X=w408-h306-k-no",
+    "kgmid": "/g/11cm8cz_t1"
+  },
+  {
+    "title": "Chandrayan Espresso Bar",
+    "price": null,
+    "categoryName": "Espresso bar",
+    "address": "Nagarkot Road, Ittachhen - 17, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Nagarkot Road, Ittachhen - 17",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1057383",
+    "phoneUnformatted": "+9779851057383",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6721252,
+      "lng": 85.4235942
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMTMW66Qa6zkROWzKHDL665M",
+    "categories": [
+      "Espresso bar",
+      "Restaurant"
+    ],
+    "fid": "0x39eb1aa4eb163331:0x93ebfa321cca6c39",
+    "cid": "10658888036240747577",
+    "reviewsCount": 86,
+    "imagesCount": 28,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:51:17.340Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Highlights": [
+        {
+          "Great coffee": true
+        },
+        {
+          "Great dessert": true
+        },
+        {
+          "Great tea selection": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Solo dining": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Offerings": [
+        {
+          "Alcohol": true
+        },
+        {
+          "Coffee": true
+        },
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Dining options": [
+        {
+          "Breakfast": true
+        },
+        {
+          "Brunch": true
+        },
+        {
+          "Dessert": true
+        },
+        {
+          "Table service": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Bar onsite": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        },
+        {
+          "Tourists": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Chandrayan%20Espresso%20Bar&query_place_id=ChIJMTMW66Qa6zkROWzKHDL665M",
+    "searchPageUrl": "https://www.google.com/maps/search/espresso%20bar/@27.64207399075676,85.42249999999997,17z?hl=en",
+    "searchString": "espresso bar",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx6kD_5yEab-x0WFqs3AEQjilou6znGBIfyreZCOT4O6SJ9FuFKruMRoyVUr-O4bzggLgrDEihNNNkLi2Q1OTFbkisgvk67RBCjxzJ_p-zFkBMgLHex7kN4jHnF08-lb_QRe1uqag=w408-h306-k-no",
+    "kgmid": "/g/11cm8cz_t1"
+  }
+]

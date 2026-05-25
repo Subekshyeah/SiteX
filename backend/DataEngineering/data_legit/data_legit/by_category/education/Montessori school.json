@@ -1,0 +1,537 @@
+[
+  {
+    "title": "Goden Gate Kids' Villa",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "Mahakalisthan, Byasi, Bhaktapur Municipality - 6, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Mahakalisthan, Byasi, Bhaktapur Municipality - 6",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614392",
+    "phoneUnformatted": "+97716614392",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6777709,
+      "lng": 85.4307883
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ7xApx50b6zkRvYn5VIM8nkk",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1b9dc72910ef:0x499e3c8354f989bd",
+    "cid": "5304743945853045181",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:34.373Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Goden%20Gate%20Kids'%20Villa&query_place_id=ChIJ7xApx50b6zkRvYn5VIM8nkk",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 51,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=C7fDJ7FIgGWJnZ7fOkM4ng&cb_client=search.gws-prod.gps&w=408&h=240&yaw=26.147068&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h5km95hf"
+  },
+  {
+    "title": "Wings Montessori",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "MC97+4PC, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC97+4PC",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://wingsschool.edu.np/",
+    "phone": "+977 1-5092222",
+    "phoneUnformatted": "+97715092222",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6678143,
+      "lng": 85.4142732
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1-FeKpka6zkRwaTtQ5AlA6g",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1a992a5ee1d7:0xa803259043eda4c1",
+    "cid": "12106561524847191233",
+    "reviewsCount": 0,
+    "imagesCount": 13,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.411Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Wings%20Montessori&query_place_id=ChIJ1-FeKpka6zkRwaTtQ5AlA6g",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJjCUUArz_ulcFwu5y5fLGC49g6j0yNAG3BsvXOKv5uvMH1jfVT7waTKgu40_UJBPpoT4_aFMlJoWZpz10FgR6qJFWXiI0SAc4EcirksrX4XUVVp4-7ThJ1h432lh5rVO7QfZfOg=w408-h544-k-no",
+    "kgmid": "/g/11f1n9jm33"
+  },
+  {
+    "title": "S.S. Montessori Pre-School",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "MC95+5Q5, Unnamed Road, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC95+5Q5, Unnamed Road",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1113998",
+    "phoneUnformatted": "+9779851113998",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6677247,
+      "lng": 85.410312
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJyYufj2wb6zkRYA29dJb5EFw",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1b6c8f9f8bc9:0x5c10f99674bd0d60",
+    "cid": "6634076675715698016",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:48.786Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=S.S.%20Montessori%20Pre-School&query_place_id=ChIJyYufj2wb6zkRYA29dJb5EFw",
+    "searchPageUrl": "https://www.google.com/maps/search/preschool/@27.63656511691115,85.43729330118518,17z?hl=en",
+    "searchString": "preschool",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzQ2--azXD7nnXRIKabv0kiJy0Coa5LqRgEkSM3eEz0euKpR7lcwyQ4SP302Wz6X6Hi8qzi78PNPnYs1xvL-qR1NyLGQGy0r45XoJ6ra8EjkILwN2Gb75-lSpmQk0gwtY6rwoSv8g=w408-h275-k-no",
+    "kgmid": "/g/11m4mfdzh_"
+  },
+  {
+    "title": "Kikampa Montessori International",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "MC7J+V3X, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7J+V3X",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6620199",
+    "phoneUnformatted": "+97716620199",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6647404,
+      "lng": 85.4302258
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJd17oGHcb6zkRdtdkM9DirTU",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1b7718e85e77:0x35ade2d03364d776",
+    "cid": "3867997038824445814",
+    "reviewsCount": 0,
+    "imagesCount": 50,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:59.377Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kikampa%20Montessori%20International&query_place_id=ChIJd17oGHcb6zkRdtdkM9DirTU",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 65,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhjhut2u2Ulw-2krbbw_jaykamVNRsI0-W6jODq_iQPyFH4x8zBgsyehS_oBUfd3AxbvoPOCqgz5Nwduq2XJ6wwBLiXxRMDPHL7hJd_yTEEEpKwOeMdSBKEfZHeUsTZXn9JZqIxT_C4AG5=w408-h306-k-no",
+    "kgmid": "/g/11h1yh6zvn"
+  },
+  {
+    "title": "Wings Montessori",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "MC97+4PC, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC97+4PC",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://wingsschool.edu.np/",
+    "phone": "+977 1-5092222",
+    "phoneUnformatted": "+97715092222",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6678143,
+      "lng": 85.4142732
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1-FeKpka6zkRwaTtQ5AlA6g",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1a992a5ee1d7:0xa803259043eda4c1",
+    "cid": "12106561524847191233",
+    "reviewsCount": 0,
+    "imagesCount": 13,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:25.070Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Wings%20Montessori&query_place_id=ChIJ1-FeKpka6zkRwaTtQ5AlA6g",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.659386046764457,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJjCUUArz_ulcFwu5y5fLGC49g6j0yNAG3BsvXOKv5uvMH1jfVT7waTKgu40_UJBPpoT4_aFMlJoWZpz10FgR6qJFWXiI0SAc4EcirksrX4XUVVp4-7ThJ1h432lh5rVO7QfZfOg=w408-h544-k-no",
+    "kgmid": "/g/11f1n9jm33"
+  },
+  {
+    "title": "Dolphin Kids World",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "MC96+34P, Unnamed Road, Suryabinayak 44800, Nepal",
+    "neighborhood": "Katunje",
+    "street": "MC96+34P, Unnamed Road",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0818704",
+    "phoneUnformatted": "+9779860818704",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6677113,
+      "lng": 85.4103372
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRx2Rdysb6zkR0UgjbqBlEz0",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1b2b77911d47:0x3d1365a06e2348d1",
+    "cid": "4400973000588085457",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:49.011Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "12 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Dolphin%20Kids%20World&query_place_id=ChIJRx2Rdysb6zkR0UgjbqBlEz0",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.666993023382226,85.41153349407406,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 36,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=rhOEdx-yF5w95e0833G32Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=148.96011&pitch=0&thumbfov=100",
+    "kgmid": "/g/11qqvfqv31"
+  },
+  {
+    "title": "Goden Gate Kids' Villa",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "Mahakalisthan, Byasi, Bhaktapur Municipality - 6, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Mahakalisthan, Byasi, Bhaktapur Municipality - 6",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6614392",
+    "phoneUnformatted": "+97716614392",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6777709,
+      "lng": 85.4307883
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ7xApx50b6zkRvYn5VIM8nkk",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1b9dc72910ef:0x499e3c8354f989bd",
+    "cid": "5304743945853045181",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:59.649Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Goden%20Gate%20Kids'%20Villa&query_place_id=ChIJ7xApx50b6zkRvYn5VIM8nkk",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 48,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=C7fDJ7FIgGWJnZ7fOkM4ng&cb_client=search.gws-prod.gps&w=408&h=240&yaw=26.147068&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h5km95hf"
+  },
+  {
+    "title": "Rajaswi Pathshala",
+    "price": null,
+    "categoryName": "Montessori school",
+    "address": "MCJ3+H4P, Nikoshera-Hindunagar Rd, Madhyapur Thimi, Nepal",
+    "neighborhood": "Nikoshera",
+    "street": "MCJ3+H4P, Nikoshera-Hindunagar Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6631906",
+    "phoneUnformatted": "+97716631906",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6814747,
+      "lng": 85.4028133
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCepvyKIb6zkR9tl1CVpU6V0",
+    "categories": [
+      "Montessori school"
+    ],
+    "fid": "0x39eb1ba2c86fea09:0x5de9545a0975d9f6",
+    "cid": "6767032660783389174",
+    "reviewsCount": 0,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:43:15.657Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Rajaswi%20Pathshala&query_place_id=ChIJCepvyKIb6zkR9tl1CVpU6V0",
+    "searchPageUrl": "https://www.google.com/maps/search/school/@27.682206976617763,85.40294689170369,17z?hl=en",
+    "searchString": "school",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxNv5iWNgGx-eNHps8EBKNHfGXavf5loGmU8XXOzmzoiG_JwhVMPk2IDYe3vDL-VyD0rhWtzhZawgvEzOdABRpflgjuuLESt9Bv6E5RsZY6SrJsnp8Y_x3lffHO3eMGWT8ajGLe=w426-h240-k-no",
+    "kgmid": "/g/11j7l1phx8"
+  }
+]

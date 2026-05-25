@@ -1,0 +1,353 @@
+[
+  {
+    "title": "Pasa Veterinary Clinic (Dr. Ram Gopal Kayastha)",
+    "price": null,
+    "categoryName": "Veterinary pharmacy",
+    "address": "Bidhyarthi Niketan Higher Secondary School, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Bidhyarthi Niketan Higher Secondary School",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6611056",
+    "phoneUnformatted": "+97716611056",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6720639,
+      "lng": 85.4295029
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_YqIKBUb6zkRcaN35UvAh2w",
+    "categories": [
+      "Veterinary pharmacy"
+    ],
+    "fid": "0x39eb1b1528888afd:0x6c87c04be577a371",
+    "cid": "7820430710157058929",
+    "reviewsCount": 22,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:20.147Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Pasa%20Veterinary%20Clinic%20(Dr.%20Ram%20Gopal%20Kayastha)&query_place_id=ChIJ_YqIKBUb6zkRcaN35UvAh2w",
+    "searchPageUrl": "https://www.google.com/maps/search/animal%20hospital/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "animal hospital",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyGqVzf_wvbLn9SN6TaOCmaGhmEXIEEQx8VedKWa3ST0_DLqXlxq3LaRbguuqVG-ieZfvItehPnPHr4XDD3one7YrM1KohGG9fKfQHpXt7qRrCt9-pH0DTz_7ij8T8aLc9xsR4w=w426-h240-k-no",
+    "kgmid": "/g/11h0llx336"
+  },
+  {
+    "title": "Laxmi Vet Pharma",
+    "price": null,
+    "categoryName": "Veterinary pharmacy",
+    "address": "Golmadhi-7, 44600, Nepal",
+    "neighborhood": null,
+    "street": "Golmadhi-7",
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613382",
+    "phoneUnformatted": "+97716613382",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6725839,
+      "lng": 85.4322696
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_3XQmtob6zkR5dLGDaTeswE",
+    "categories": [
+      "Veterinary pharmacy"
+    ],
+    "fid": "0x39eb1bda9ad075ff:0x1b3dea40dc6d2e5",
+    "cid": "122686411056272101",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:37.524Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Laxmi%20Vet%20Pharma&query_place_id=ChIJ_3XQmtob6zkR5dLGDaTeswE",
+    "searchPageUrl": "https://www.google.com/maps/search/pharmacy/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "pharmacy",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhH94yaARabCuLWNzNO97WeDWLCc7IkgmOLQ35ZuVce1TZgSbq8Xd97IgCgnmX-4VH68AVnaUX9GG4LJIUzxIbUAAq37rGGZygwK4UHoDZg1na0XvMd9pgIU_sKuFAzCDq9ng0vihSBYnkjrTfKvT3iN6T9F-zzRH2e5cA8prICZWUHTfxmSvdUXpHznPe4MvboWA8E=w408-h306-k-no",
+    "kgmid": "/g/11h4wb2g3s"
+  },
+  {
+    "title": "Pasa Veterinary Clinic (Dr. Ram Gopal Kayastha)",
+    "price": null,
+    "categoryName": "Veterinary pharmacy",
+    "address": "Bidhyarthi Niketan Higher Secondary School, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "Bidhyarthi Niketan Higher Secondary School",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6611056",
+    "phoneUnformatted": "+97716611056",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6720639,
+      "lng": 85.4295029
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_YqIKBUb6zkRcaN35UvAh2w",
+    "categories": [
+      "Veterinary pharmacy"
+    ],
+    "fid": "0x39eb1b1528888afd:0x6c87c04be577a371",
+    "cid": "7820430710157058929",
+    "reviewsCount": 22,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:55.434Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Pasa%20Veterinary%20Clinic%20(Dr.%20Ram%20Gopal%20Kayastha)&query_place_id=ChIJ_YqIKBUb6zkRcaN35UvAh2w",
+    "searchPageUrl": "https://www.google.com/maps/search/pharmacy/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "pharmacy",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyGqVzf_wvbLn9SN6TaOCmaGhmEXIEEQx8VedKWa3ST0_DLqXlxq3LaRbguuqVG-ieZfvItehPnPHr4XDD3one7YrM1KohGG9fKfQHpXt7qRrCt9-pH0DTz_7ij8T8aLc9xsR4w=w426-h240-k-no",
+    "kgmid": "/g/11h0llx336"
+  },
+  {
+    "title": "Ujjwal Veterinary Clinic",
+    "price": null,
+    "categoryName": "Veterinary pharmacy",
+    "address": "MCCQ+G7C, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCQ+G7C, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1620414",
+    "phoneUnformatted": "+9779841620414",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6713042,
+      "lng": 85.4381391
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJo4XU11IF6zkRHCh2RT35khU",
+    "categories": [
+      "Veterinary pharmacy"
+    ],
+    "fid": "0x39eb0552d7d485a3:0x1592f93d4576281c",
+    "cid": "1554578862949935132",
+    "reviewsCount": 7,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 2,
+      "fiveStar": 3
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:57.335Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:25 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:25 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:25 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:25 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:25 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7:25 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:25 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ujjwal%20Veterinary%20Clinic&query_place_id=ChIJo4XU11IF6zkRHCh2RT35khU",
+    "searchPageUrl": "https://www.google.com/maps/search/clinic/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "clinic",
+    "language": "en",
+    "rank": 51,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSytNbacV8YJOLCKfgBgc_eZpzLO3rjXySxV-ULj0gv0DE9unFxJuAlBkFgEPaXT0D2god1r0qg7EPLyXLzs9H_Evl2HVWE5_d-skOfHBT9daEdHKuP7BrDYAeKml-cWbbL55NdV=w426-h240-k-no",
+    "kgmid": "/g/11c60v91h_"
+  },
+  {
+    "title": "Laxmi Vet Pharma",
+    "price": null,
+    "categoryName": "Veterinary pharmacy",
+    "address": "Golmadhi-7, 44600, Nepal",
+    "neighborhood": null,
+    "street": "Golmadhi-7",
+    "city": "Bhaktapur",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6613382",
+    "phoneUnformatted": "+97716613382",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6725839,
+      "lng": 85.4322696
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ_3XQmtob6zkR5dLGDaTeswE",
+    "categories": [
+      "Veterinary pharmacy"
+    ],
+    "fid": "0x39eb1bda9ad075ff:0x1b3dea40dc6d2e5",
+    "cid": "122686411056272101",
+    "reviewsCount": 0,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:58.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Laxmi%20Vet%20Pharma&query_place_id=ChIJ_3XQmtob6zkR5dLGDaTeswE",
+    "searchPageUrl": "https://www.google.com/maps/search/pharmacy/@27.674599999999995,85.43729330118518,17z?hl=en",
+    "searchString": "pharmacy",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhH94yaARabCuLWNzNO97WeDWLCc7IkgmOLQ35ZuVce1TZgSbq8Xd97IgCgnmX-4VH68AVnaUX9GG4LJIUzxIbUAAq37rGGZygwK4UHoDZg1na0XvMd9pgIU_sKuFAzCDq9ng0vihSBYnkjrTfKvT3iN6T9F-zzRH2e5cA8prICZWUHTfxmSvdUXpHznPe4MvboWA8E=w408-h306-k-no",
+    "kgmid": "/g/11h4wb2g3s"
+  }
+]

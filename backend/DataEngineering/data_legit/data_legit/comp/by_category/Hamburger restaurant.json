@@ -1,0 +1,388 @@
+[
+  {
+    "title": "Durbar Restaurant & Burger Hub",
+    "price": null,
+    "categoryName": "Hamburger restaurant",
+    "address": "MCFF+4V3, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFF+4V3",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727348,
+      "lng": 85.4246806
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrU_3IQAb6zkRAQ8fCHCrO-Q",
+    "categories": [
+      "Hamburger restaurant"
+    ],
+    "fid": "0x39eb1b0021f74fad:0xe43bab70081f0f01",
+    "cid": "16445926961934438145",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:38:09.453Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Durbar%20Restaurant%20%26%20Burger%20Hub&query_place_id=ChIJrU_3IQAb6zkRAQ8fCHCrO-Q",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 84,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=EnR89KUpY_ZLSg4bBgzIDA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=2.178352&pitch=0&thumbfov=100",
+    "kgmid": "/g/11wbh4f7dn"
+  },
+  {
+    "title": "Surybanyak",
+    "price": null,
+    "categoryName": "Hamburger restaurant",
+    "address": "MC8G+P78, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+P78",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6668246,
+      "lng": 85.425633
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRdReWQAb6zkRpRT629epokY",
+    "categories": [
+      "Hamburger restaurant"
+    ],
+    "fid": "0x39eb1b00595ed445:0x46a2a9d7dbfa14a5",
+    "cid": "5089817273455744165",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T07:39:04.967Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Surybanyak&query_place_id=ChIJRdReWQAb6zkRpRT629epokY",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.667695459098024,85.43009086349416,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 49,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=fkJmzhReg_w6W1bu3j1-OA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=320.01492&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y2nyc8bm"
+  },
+  {
+    "title": "Surybanyak",
+    "price": null,
+    "categoryName": "Hamburger restaurant",
+    "address": "MC8G+P78, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+P78",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6668246,
+      "lng": 85.425633
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRdReWQAb6zkRpRT629epokY",
+    "categories": [
+      "Hamburger restaurant"
+    ],
+    "fid": "0x39eb1b00595ed445:0x46a2a9d7dbfa14a5",
+    "cid": "5089817273455744165",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:55:10.038Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Surybanyak&query_place_id=ChIJRdReWQAb6zkRpRT629epokY",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.664893497689192,85.42249999999997,17z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 42,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=fkJmzhReg_w6W1bu3j1-OA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=320.01492&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y2nyc8bm"
+  },
+  {
+    "title": "Durbar Restaurant & Burger Hub",
+    "price": null,
+    "categoryName": "Hamburger restaurant",
+    "address": "MCFF+4V3, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFF+4V3",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727348,
+      "lng": 85.4246806
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJrU_3IQAb6zkRAQ8fCHCrO-Q",
+    "categories": [
+      "Hamburger restaurant"
+    ],
+    "fid": "0x39eb1b0021f74fad:0xe43bab70081f0f01",
+    "cid": "16445926961934438145",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T09:55:15.427Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Popular for": [
+        {
+          "Solo dining": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        },
+        {
+          "Small plates": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Durbar%20Restaurant%20%26%20Burger%20Hub&query_place_id=ChIJrU_3IQAb6zkRAQ8fCHCrO-Q",
+    "searchPageUrl": "https://www.google.com/maps/search/fast%20food%20restaurant/@27.672500000000003,85.43108520439945,17z?hl=en",
+    "searchString": "fast food restaurant",
+    "language": "en",
+    "rank": 39,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=EnR89KUpY_ZLSg4bBgzIDA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=2.178352&pitch=0&thumbfov=100",
+    "kgmid": "/g/11wbh4f7dn"
+  },
+  {
+    "title": "Surybanyak",
+    "price": null,
+    "categoryName": "Hamburger restaurant",
+    "address": "MC8G+P78, Suryabinayak 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+P78",
+    "city": "Suryabinayak",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6668246,
+      "lng": 85.425633
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRdReWQAb6zkRpRT629epokY",
+    "categories": [
+      "Hamburger restaurant"
+    ],
+    "fid": "0x39eb1b00595ed445:0x46a2a9d7dbfa14a5",
+    "cid": "5089817273455744165",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-11T10:08:20.473Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Takeout": true
+        },
+        {
+          "Dine-in": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Quick bite": true
+        }
+      ],
+      "Atmosphere": [
+        {
+          "Casual": true
+        }
+      ],
+      "Crowd": [
+        {
+          "Groups": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Surybanyak&query_place_id=ChIJRdReWQAb6zkRpRT629epokY",
+    "searchPageUrl": "https://www.google.com/maps/search/restaurant/@27.640686196818166,85.46050991168464,14z?hl=en",
+    "searchString": "restaurant",
+    "language": "en",
+    "rank": 84,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=fkJmzhReg_w6W1bu3j1-OA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=320.01492&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y2nyc8bm"
+  }
+]

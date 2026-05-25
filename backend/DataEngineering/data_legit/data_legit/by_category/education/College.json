@@ -1,0 +1,2906 @@
+[
+  {
+    "title": "Khwopa College (TU Affiliated)",
+    "subTitle": "ख्वप कलेज (त्रि. वि. आबद्ध)",
+    "price": null,
+    "categoryName": "College",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.khwopacollege.edu.np/",
+    "phone": "+977 6610932",
+    "phoneUnformatted": null,
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.678014,
+      "lng": 85.4324319
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJk2njFj0b6zkR-seTMv_K460",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b3d16e36993:0xade3caff3293c7fa",
+    "cid": "12530081785688868858",
+    "reviewsCount": 210,
+    "imagesCount": 334,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20College%20(TU%20Affiliated)&query_place_id=ChIJk2njFj0b6zkR-seTMv_K460",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxL6BeORGdUnylGF4XKQxJqiu28IH9SUBbJGFdYwgfoH1YUAGcZXv0DUf-APnnjtUMZT251tQ7P_MHoEW5ivmP3jM5B4tLjrcnGpNb3pXYnieaNDk8uY9uAbGGOLlbhXtT7WmuPtA=w408-h306-k-no",
+    "kgmid": "/g/11q7y6z6d2"
+  },
+  {
+    "title": "BMC Bsc. Csit Block",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+GGP, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+GGP, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6688451,
+      "lng": 85.4213352
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJS_E-WtQb6zkR5Cp3sy1k7HI",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1bd45a3ef14b:0x72ec642db3772ae4",
+    "cid": "8281103962274736868",
+    "reviewsCount": 2,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20Bsc.%20Csit%20Block&query_place_id=ChIJS_E-WtQb6zkR5Cp3sy1k7HI",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxazoQzA0KeNohDf0_TQFslFylBysr0b8Bc6DhZ7LBnkgNWI3YbALiLUdnxTXjKdNEUnUgaRa2SLNeEdJxL8d7KpNkmDRk6f2Sv62I9XA37ikJUTkjTNk3ubTZZrjow4LRPmo-pdqvA5FH4=w532-h240-k-no",
+    "kgmid": "/g/11pf5vshbp"
+  },
+  {
+    "title": "ICH COLLEGE [INSTITUTE OF COMMUNITY HEALTH]",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCC+32H, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+32H, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.ich.edu.np/",
+    "phone": "+977 1-6612138",
+    "phoneUnformatted": "+97716612138",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6703725,
+      "lng": 85.4195802
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6ce1ynQb6zkRMQ52Miyy4w4",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b74cab5c7e9:0xee3b22c32760e31",
+    "cid": "1072897039139212849",
+    "reviewsCount": 0,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=ICH%20COLLEGE%20%5BINSTITUTE%20OF%20COMMUNITY%20HEALTH%5D&query_place_id=ChIJ6ce1ynQb6zkRMQ52Miyy4w4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw1Je2ca7bI_8WSVhc_hAcLlcVXK0E6GAN_v0kKRdHepyEbd1oz0MrchVn0NKT9AXsVouU-0iN6MdJB_wL_regmbXSYdPg8tbAG4XAEDQEb_l2fgM88bbivL6AbrJgIzzjCS8CS2pxVSSbh=w408-h306-k-no",
+    "kgmid": "/g/11lcbt40q6"
+  },
+  {
+    "title": "Education minister science and technology",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709939,
+      "lng": 85.4298429
+    },
+    "totalScore": 1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJidVWImMb6zkRnG7hpj7ym-4",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b632256d589:0xee9bf23ea6e16e9c",
+    "cid": "17193602353318686364",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Education%20minister%20science%20and%20technology&query_place_id=ChIJidVWImMb6zkRnG7hpj7ym-4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.44382&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sfb3z026"
+  },
+  {
+    "title": "Khwopa Engineering College(Block A)",
+    "subTitle": "ख्वोपा कॉलेज ऑफ़ इंजीनियरिंग",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCQ+9XQ Libali 8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCQ+9XQ Libali 8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.khec.edu.np/",
+    "phone": "+977 1-5122094",
+    "phoneUnformatted": "+97715122094",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.67096,
+      "lng": 85.4399895
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSa0UHFMF6zkR3HjEKS3H2K0",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb05531c14ad49:0xadd8c72d29c478dc",
+    "cid": "12526981360319232220",
+    "reviewsCount": 19,
+    "imagesCount": 32,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.605Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20Engineering%20College(Block%20A)&query_place_id=ChIJSa0UHFMF6zkR3HjEKS3H2K0",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw1kSHS7soqdD_sq_OYckIrbgNrsrWnhaX9Sn1MkjqQCtnKW2koU8P69RP6BVMej5YRf9iYOgkPErcHB884rd0Dx4pVMew6GrP6miOwUeznuzoUJM_7q5fHI15mdstEse1vWe70nA=w408-h306-k-no",
+    "kgmid": "/m/02qb77y"
+  },
+  {
+    "title": "Ashmi tamang",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670994,
+      "lng": 85.4298429
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcecNAwAb6zkRczgbRulAkfU",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b00030de771:0xf59140e9461b3873",
+    "cid": "17694995781563136115",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.606Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ashmi%20tamang&query_place_id=ChIJcecNAwAb6zkRczgbRulAkfU",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.4451&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y40v_gdv"
+  },
+  {
+    "title": "Nicholson College / Secondary School",
+    "subTitle": "निकल्सन कलेज / मा. बि .",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCF4+73V, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF4+73V",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.nicholson.edu.np/",
+    "phone": "+977 1-6615931",
+    "phoneUnformatted": "+97716615931",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6732361,
+      "lng": 85.4051609
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl9OYio8a6zkRdZQG2U4075k",
+    "categories": [
+      "College",
+      "University"
+    ],
+    "fid": "0x39eb1a8f8a98d397:0x99ef344ed9069475",
+    "cid": "11092141920490001525",
+    "reviewsCount": 43,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.606Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nicholson%20College%20%2F%20Secondary%20School&query_place_id=ChIJl9OYio8a6zkRdZQG2U4075k",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzq-U3DF7Mt5_YPIvgJuBztHvLOnxcVHAlUFVD2AIYNB6VPbMvZtz9AEmBLwgp7KPiWAbX6Y1TqFP4ldrWqZ1kzkrrJf9-dkpq_EVvOvEjBc0ebMLdfrTXJ_vc_0lnOQez4XdTG=w408-h272-k-no",
+    "kgmid": "/g/1tj4x3bn"
+  },
+  {
+    "title": "Madan Ashrit College",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCC7+259, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC7+259",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-8689003",
+    "phoneUnformatted": "+9779868689003",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6700454,
+      "lng": 85.4129891
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHaKmdJka6zkROIl366MYWA0",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a9974a6a21d:0xd5818a3eb778938",
+    "cid": "961545612752816440",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.606Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Madan%20Ashrit%20College&query_place_id=ChIJHaKmdJka6zkROIl366MYWA0",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=owNajvZ_QR7z36kknRrTGQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=333.47592&pitch=0&thumbfov=100",
+    "kgmid": "/g/11cs1sfl8v"
+  },
+  {
+    "title": "Aadarsha Azad College",
+    "price": null,
+    "categoryName": "College",
+    "address": "101 Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "101 Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6679931,
+      "lng": 85.4319817
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCbvHU6ka6zkR_rExav66IhA",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1aa953c7bb09:0x1022bafe6a31b1fe",
+    "cid": "1162697255681110526",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.606Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aadarsha%20Azad%20College&query_place_id=ChIJCbvHU6ka6zkR_rExav66IhA",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gR8kg2Kv9hgfZbTpNJfxUQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=196.9892&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g8xgmr_h"
+  },
+  {
+    "title": "BMC Computer and Science Office",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+HJG, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+HJG, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6689445,
+      "lng": 85.421577
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJK9MDEFgb6zkR7kefJe-PIYA",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b581003d32b:0x80218fef259f47ee",
+    "cid": "9232818968377378798",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.606Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20Computer%20and%20Science%20Office&query_place_id=ChIJK9MDEFgb6zkR7kefJe-PIYA",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=wGyzVgnK-u3DS5HyaT0LWw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=340.21188&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rk8y292h"
+  },
+  {
+    "title": "Silwal house near SS college",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6636201",
+    "phoneUnformatted": "+97716636201",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709939,
+      "lng": 85.4298429
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUXgYTzob6zkRqbMQpYx_d_s",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b3a4f187851:0xfb777f8ca510b3a9",
+    "cid": "18120091867789964201",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.606Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Silwal%20house%20near%20SS%20college&query_place_id=ChIJUXgYTzob6zkRqbMQpYx_d_s",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.44382&pitch=0&thumbfov=100",
+    "kgmid": "/g/11hdscb_yz"
+  },
+  {
+    "title": "BMC BBA Block",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+WPX, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+WPX, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616652",
+    "phoneUnformatted": "+97716616652",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6698504,
+      "lng": 85.4218693
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJLf1wj_Ub6zkRPgJURtnrzCw",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1bf58f70fd2d:0x2cccebd94654023e",
+    "cid": "3228214351338144318",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20BBA%20Block&query_place_id=ChIJLf1wj_Ub6zkRPgJURtnrzCw",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eXGEcQPrIoJIoz23jwbn9A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=154.633&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rk8y4fz5"
+  },
+  {
+    "title": "Iwamura College of Health Science",
+    "subTitle": "इवामुरा कलेज अफ हेल्थ साइन्स",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCC6+WGR, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC6+WGR, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.iwamuracollege.edu.np/",
+    "phone": "+977 1-6614816",
+    "phoneUnformatted": "+97716614816",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6723726,
+      "lng": 85.4112782
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ58yagZAa6zkRe4zI9IeNNPg",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a90819acce7:0xf8348d87f4c88c7b",
+    "cid": "17885075635261967483",
+    "reviewsCount": 29,
+    "imagesCount": 313,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Iwamura%20College%20of%20Health%20Science&query_place_id=ChIJ58yagZAa6zkRe4zI9IeNNPg",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXmsjoyzy_xIGAayO8XGg_ZgVr-ujnbkYE2q1Ek9uZkv1-SHPnJWyvvDUMl-PzGLEEn7JJtcBxneoPNJtSlNv-TqAbn6ZgOirdgUwPtUdLcbEDYQrTS0_QKkxNWj1IEhldve1C=w408-h408-k-no",
+    "kgmid": "/g/11b6qr70ps"
+  },
+  {
+    "title": "स्व.वि.यु भवन",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+W8H, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+W8H",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6697991,
+      "lng": 85.4209875
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJk31VcQAb6zkR9kWnaqQlX4o",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b0071557d93:0x8a5f25a46aa745f6",
+    "cid": "9970729488115779062",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=%E0%A4%B8%E0%A5%8D%E0%A4%B5.%E0%A4%B5%E0%A4%BF.%E0%A4%AF%E0%A5%81%20%E0%A4%AD%E0%A4%B5%E0%A4%A8&query_place_id=ChIJk31VcQAb6zkR9kWnaqQlX4o",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "kgmid": "/g/11y2nv2qpn"
+  },
+  {
+    "title": "BMC BBM/BIM/BCA Block",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+W69, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+W69, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6611938",
+    "phoneUnformatted": "+97716611938",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6697816,
+      "lng": 85.4206096
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl3Acy6Ab6zkRSkeMOLb4YVc",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1ba0cb1c7097:0x5761f8b6388c474a",
+    "cid": "6296587215557117770",
+    "reviewsCount": 1,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20BBM%2FBIM%2FBCA%20Block&query_place_id=ChIJl3Acy6Ab6zkRSkeMOLb4YVc",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz6DMB1gC4EMthHyQnNtw2mQDSLWEQTaE0kyiieQu6LTmOTNufK4ISr0KkEG3ORU3JSmz73I5PrOu11OCqRkeY-LdjLqSRcMpzpj3lH3c9L83vbqt3KZQ3vqW7iaP1cEMCZ8tU=w408-h306-k-no",
+    "kgmid": "/g/11pf69pzzv"
+  },
+  {
+    "title": "Universal Modern College/ Modern English Secondary School",
+    "subTitle": "(यूनिभर्सल मोडर्न कलेज)",
+    "price": null,
+    "categoryName": "College",
+    "address": "Srijana Nagar, 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "Srijana Nagar",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619681",
+    "phoneUnformatted": "+97716619681",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745078,
+      "lng": 85.4051265
+    },
+    "totalScore": 3.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJc9K5ZZka6zkREilQdquFotM",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a9965b9d273:0xd3a285ab76502912",
+    "cid": "15249898259700787474",
+    "reviewsCount": 23,
+    "imagesCount": 32,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Universal%20Modern%20College%2F%20Modern%20English%20Secondary%20School&query_place_id=ChIJc9K5ZZka6zkREilQdquFotM",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyLDM71_-3Qgt-u3W4owuyY28uOZwLg3CA_B4tqGBOidzeHJvLLr7WlboXvhjetEERNQCuP8IaTrKtcXha9xN6eI345MiTjsLwf40s7Cce-uMtlHk7oQrsEf59hYUODPT72A8t0=w408-h544-k-no",
+    "kgmid": "/g/11fyx96c81"
+  },
+  {
+    "title": "BMC Basketball Court",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+H4W Near, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+H4W Near, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.668975,
+      "lng": 85.4203313
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJy7PPEAAb6zkRt5tuX1oK0Os",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b0010cfb3cb:0xebd00a5a5f6e9bb7",
+    "cid": "16992092777333300151",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20Basketball%20Court&query_place_id=ChIJy7PPEAAb6zkRt5tuX1oK0Os",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=AoSpbazTnNI4751gY0otBw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=341.4551&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y5yf9bdf"
+  },
+  {
+    "title": "Iwamura College of Health Science (Nursing Unit)",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC7G+X9Q, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7G+X9Q",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6649571,
+      "lng": 85.4259719
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJa7cUjVob6zkRH2taVUkhBuo",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b5a8d14b76b:0xea062149555a6b1f",
+    "cid": "16863202453583719199",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:58.221Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Iwamura%20College%20of%20Health%20Science%20(Nursing%20Unit)&query_place_id=ChIJa7cUjVob6zkRH2taVUkhBuo",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 19,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bLHyJfd3vHeW0QJ5YQzmGA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=270.8568&pitch=0&thumbfov=100",
+    "kgmid": "/g/11k9bld7_0"
+  },
+  {
+    "title": "BMC Bsc. Csit Block",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+GGP, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+GGP, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6688451,
+      "lng": 85.4213352
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJS_E-WtQb6zkR5Cp3sy1k7HI",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1bd45a3ef14b:0x72ec642db3772ae4",
+    "cid": "8281103962274736868",
+    "reviewsCount": 2,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20Bsc.%20Csit%20Block&query_place_id=ChIJS_E-WtQb6zkR5Cp3sy1k7HI",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxazoQzA0KeNohDf0_TQFslFylBysr0b8Bc6DhZ7LBnkgNWI3YbALiLUdnxTXjKdNEUnUgaRa2SLNeEdJxL8d7KpNkmDRk6f2Sv62I9XA37ikJUTkjTNk3ubTZZrjow4LRPmo-pdqvA5FH4=w532-h240-k-no",
+    "kgmid": "/g/11pf5vshbp"
+  },
+  {
+    "title": "Nicholson College / Secondary School",
+    "subTitle": "निकल्सन कलेज / मा. बि .",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCF4+73V, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF4+73V",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.nicholson.edu.np/",
+    "phone": "+977 1-6615931",
+    "phoneUnformatted": "+97716615931",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6732361,
+      "lng": 85.4051609
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJl9OYio8a6zkRdZQG2U4075k",
+    "categories": [
+      "College",
+      "University"
+    ],
+    "fid": "0x39eb1a8f8a98d397:0x99ef344ed9069475",
+    "cid": "11092141920490001525",
+    "reviewsCount": 43,
+    "imagesCount": 10,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Nicholson%20College%20%2F%20Secondary%20School&query_place_id=ChIJl9OYio8a6zkRdZQG2U4075k",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzq-U3DF7Mt5_YPIvgJuBztHvLOnxcVHAlUFVD2AIYNB6VPbMvZtz9AEmBLwgp7KPiWAbX6Y1TqFP4ldrWqZ1kzkrrJf9-dkpq_EVvOvEjBc0ebMLdfrTXJ_vc_0lnOQez4XdTG=w408-h272-k-no",
+    "kgmid": "/g/1tj4x3bn"
+  },
+  {
+    "title": "Kathmandu Medical College Basic Science Building",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCJ6+CRP, TathastuNagar Road, Changunarayan 44800, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCJ6+CRP, TathastuNagar Road",
+    "city": "Changunarayan",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6810936,
+      "lng": 85.4120632
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBQ_6pfob6zkR0wH_y78lc_M",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1bfaa5fa0f05:0xf37325bfcbff01d3",
+    "cid": "17542406479229682131",
+    "reviewsCount": 1,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kathmandu%20Medical%20College%20Basic%20Science%20Building&query_place_id=ChIJBQ_6pfob6zkR0wH_y78lc_M",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz5vQHNafyTgzuB7BGLCsm3QEwlkXUx4EGQSgZ7pYqiQQ1Pp7Wq-o4NsSnEjPnj_0iAA2RYWdAHrZkOefHwYOV8pZsJ3RdC4p5fgArO6OsQmodXiUfXS8gF9NXrQEnmaCMIvoY6=w408-h906-k-no",
+    "kgmid": "/g/11t7d9yjbr"
+  },
+  {
+    "title": "Khwopa College (TU Affiliated)",
+    "subTitle": "ख्वप कलेज (त्रि. वि. आबद्ध)",
+    "price": null,
+    "categoryName": "College",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.khwopacollege.edu.np/",
+    "phone": "+977 6610932",
+    "phoneUnformatted": null,
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.678014,
+      "lng": 85.4324319
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJk2njFj0b6zkR-seTMv_K460",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b3d16e36993:0xade3caff3293c7fa",
+    "cid": "12530081785688868858",
+    "reviewsCount": 210,
+    "imagesCount": 334,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20College%20(TU%20Affiliated)&query_place_id=ChIJk2njFj0b6zkR-seTMv_K460",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxL6BeORGdUnylGF4XKQxJqiu28IH9SUBbJGFdYwgfoH1YUAGcZXv0DUf-APnnjtUMZT251tQ7P_MHoEW5ivmP3jM5B4tLjrcnGpNb3pXYnieaNDk8uY9uAbGGOLlbhXtT7WmuPtA=w408-h306-k-no",
+    "kgmid": "/g/11q7y6z6d2"
+  },
+  {
+    "title": "Madan Ashrit College",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCC7+259, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC7+259",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-8689003",
+    "phoneUnformatted": "+9779868689003",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6700454,
+      "lng": 85.4129891
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHaKmdJka6zkROIl366MYWA0",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a9974a6a21d:0xd5818a3eb778938",
+    "cid": "961545612752816440",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Madan%20Ashrit%20College&query_place_id=ChIJHaKmdJka6zkROIl366MYWA0",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=owNajvZ_QR7z36kknRrTGQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=333.47592&pitch=0&thumbfov=100",
+    "kgmid": "/g/11cs1sfl8v"
+  },
+  {
+    "title": "Aadarsha Azad College",
+    "price": null,
+    "categoryName": "College",
+    "address": "101 Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "101 Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6679931,
+      "lng": 85.4319817
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCbvHU6ka6zkR_rExav66IhA",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1aa953c7bb09:0x1022bafe6a31b1fe",
+    "cid": "1162697255681110526",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Aadarsha%20Azad%20College&query_place_id=ChIJCbvHU6ka6zkR_rExav66IhA",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gR8kg2Kv9hgfZbTpNJfxUQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=196.9892&pitch=0&thumbfov=100",
+    "kgmid": "/g/11g8xgmr_h"
+  },
+  {
+    "title": "Khwopa Engineering College(Block A)",
+    "subTitle": "ख्वोपा कॉलेज ऑफ़ इंजीनियरिंग",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCQ+9XQ Libali 8, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCQ+9XQ Libali 8",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.khec.edu.np/",
+    "phone": "+977 1-5122094",
+    "phoneUnformatted": "+97715122094",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.67096,
+      "lng": 85.4399895
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSa0UHFMF6zkR3HjEKS3H2K0",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb05531c14ad49:0xadd8c72d29c478dc",
+    "cid": "12526981360319232220",
+    "reviewsCount": 19,
+    "imagesCount": 32,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.581Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khwopa%20Engineering%20College(Block%20A)&query_place_id=ChIJSa0UHFMF6zkR3HjEKS3H2K0",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw1kSHS7soqdD_sq_OYckIrbgNrsrWnhaX9Sn1MkjqQCtnKW2koU8P69RP6BVMej5YRf9iYOgkPErcHB884rd0Dx4pVMew6GrP6miOwUeznuzoUJM_7q5fHI15mdstEse1vWe70nA=w408-h306-k-no",
+    "kgmid": "/m/02qb77y"
+  },
+  {
+    "title": "Oxford Practical English School / College",
+    "price": null,
+    "categoryName": "College",
+    "address": "Oxford Marg, Sallaghari Bhaktapur-1, Bhaktapur 97701, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "Oxford Marg, Sallaghari Bhaktapur-1",
+    "city": "Bhaktapur",
+    "postalCode": "97701",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.oxfords.edu.np/",
+    "phone": "+977 1-6611721",
+    "phoneUnformatted": "+97716611721",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6746985,
+      "lng": 85.4085805
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAXX_Z5Aa6zkR-LVwq4BxFXU",
+    "categories": [
+      "College",
+      "Higher secondary school",
+      "Management school",
+      "Montessori school",
+      "Preschool",
+      "Primary school",
+      "School",
+      "Secondary school"
+    ],
+    "fid": "0x39eb1a9067ff7501:0x75157180ab70b5f8",
+    "cid": "8436774274394535416",
+    "reviewsCount": 0,
+    "imagesCount": 65,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:22.582Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 3 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Oxford%20Practical%20English%20School%20%2F%20College&query_place_id=ChIJAXX_Z5Aa6zkR-LVwq4BxFXU",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.64417209352892,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP1JkdNGi6EftIniovrAh71PV2LQH_pLO6ucGeV=w408-h306-k-no",
+    "kgmid": "/g/11g_cbc70"
+  },
+  {
+    "title": "Kirtipur",
+    "price": null,
+    "categoryName": "College",
+    "address": "MFP5+J7M, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MFP5+J7M",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6865852,
+      "lng": 85.4581859
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ9XjidAAF6zkRQ-XeEXlbRhE",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb050074e278f5:0x11465b7911dee543",
+    "cid": "1244782922563511619",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.310Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kirtipur&query_place_id=ChIJ9XjidAAF6zkRQ-XeEXlbRhE",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "kgmid": "/g/11w8fbd2qc"
+  },
+  {
+    "title": "KHWOPA POLY-TECHNIC INSTITUTE ENGINEERING DEPARTMENT",
+    "subTitle": "ख्वप बहु-प्राविधिक इन्स्टिच्युट - इन्जिनियरिङ विभाग",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCJW+WCG शारदा क्याम्पस, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCJW+WCG शारदा क्याम्पस, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619585",
+    "phoneUnformatted": "+97716619585",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6797432,
+      "lng": 85.4446131
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ37_Sz04F6zkR-BspRhqHwiM",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb054ecfd2bfdf:0x23c2871a46291bf8",
+    "cid": "2576770483725343736",
+    "reviewsCount": 10,
+    "imagesCount": 17,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.310Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=KHWOPA%20POLY-TECHNIC%20INSTITUTE%20ENGINEERING%20DEPARTMENT&query_place_id=ChIJ37_Sz04F6zkR-BspRhqHwiM",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxjWYGxW4HFwbUEbGL-E7DULPAdQzk_WJWZ3nzY6R62Vlw13ntYfMU0-I6_hbmCdCfHi0gdN-JMJUS3oAFS3GRHDGkZLS8yAGUnixm7qxKEd4uwzEPVUo9LqRGZqFXniaIRYRWh=w408-h544-k-no",
+    "kgmid": "/g/11g6wvngd2"
+  },
+  {
+    "title": "Rhombus National Collage",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCHV+6VX, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHV+6VX",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6617709",
+    "phoneUnformatted": "+97716617709",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6781129,
+      "lng": 85.4447394
+    },
+    "totalScore": 3.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJpYBlIW8F6zkR2ViabwWUhh0",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb056f216580a5:0x1d8694056f9a58d9",
+    "cid": "2127550625047271641",
+    "reviewsCount": 22,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.310Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 4 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 4 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Rhombus%20National%20Collage&query_place_id=ChIJpYBlIW8F6zkR2ViabwWUhh0",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw5YJz1FiY9JJSQk1NC0DBZKOqN1ysvFdB50_OeB4lGSvZc4Dkt9l2TbBe6-cFcDg8w9ssLDoILjTgfHArpnsX_9QTD4dYXthepE0UXHcuq6lqMJ1eBR0B-vgyzysvdBes4l4idW-4i8RA=w408-h544-k-no",
+    "kgmid": "/g/11h_7n4pcz"
+  },
+  {
+    "title": "Prajwol House",
+    "price": null,
+    "categoryName": "College",
+    "address": "MFM3+P3G, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Kharipati",
+    "street": "MFM3+P3G",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.683519,
+      "lng": 85.4520142
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBTyuonsF6zkRN86u0EH-0Jc",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb057ba2ae3c05:0x97d0fe41d0aece37",
+    "cid": "10939523053510381111",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.310Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Prajwol%20House&query_place_id=ChIJBTyuonsF6zkRN86u0EH-0Jc",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gl6whYus0nG-TmBJwZwt-w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=169.23808&pitch=0&thumbfov=100",
+    "kgmid": "/g/11tmsvv34h"
+  },
+  {
+    "title": "Kathmandu Medical College",
+    "subTitle": "काठमाडौँ मेडिकल कलेज",
+    "price": null,
+    "categoryName": "College",
+    "address": "Basic Science Complex, Saraswotikhel Rd, Bhaktapur 44802, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "Basic Science Complex, Saraswotikhel Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44802",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-4476152",
+    "phoneUnformatted": "+97714476152",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6872117,
+      "lng": 85.4082908
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJtUzncu0a6zkROJ3fSkFIY7k",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1aed72e74cb5:0xb96348414adf9d38",
+    "cid": "13358600364977265976",
+    "reviewsCount": 64,
+    "imagesCount": 81,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:37.310Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Kathmandu%20Medical%20College&query_place_id=ChIJtUzncu0a6zkROJ3fSkFIY7k",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.45446650592592,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwP3Jyboh4V4ByrLLtrlQG805aWF3Ya05py-3PsgDNZ-xGrOcz4O-TcVmKdiLzPdHg_meIVhJBk6Im25ZxZaM3p-7QxQy7gDmbmJeDlz4kUj-j7ehWZgLYYyc7rhUd9HjkJClk=w408-h306-k-no",
+    "kgmid": "/m/0jwg47y"
+  },
+  {
+    "title": "Education minister science and technology",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709939,
+      "lng": 85.4298429
+    },
+    "totalScore": 1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJidVWImMb6zkRnG7hpj7ym-4",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b632256d589:0xee9bf23ea6e16e9c",
+    "cid": "17193602353318686364",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Education%20minister%20science%20and%20technology&query_place_id=ChIJidVWImMb6zkRnG7hpj7ym-4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.44382&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sfb3z026"
+  },
+  {
+    "title": "BMC Computer and Science Office",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+HJG, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+HJG, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6689445,
+      "lng": 85.421577
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJK9MDEFgb6zkR7kefJe-PIYA",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b581003d32b:0x80218fef259f47ee",
+    "cid": "9232818968377378798",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20Computer%20and%20Science%20Office&query_place_id=ChIJK9MDEFgb6zkR7kefJe-PIYA",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=wGyzVgnK-u3DS5HyaT0LWw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=340.21188&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rk8y292h"
+  },
+  {
+    "title": "ICH COLLEGE [INSTITUTE OF COMMUNITY HEALTH]",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCC+32H, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCC+32H, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.ich.edu.np/",
+    "phone": "+977 1-6612138",
+    "phoneUnformatted": "+97716612138",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6703725,
+      "lng": 85.4195802
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6ce1ynQb6zkRMQ52Miyy4w4",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b74cab5c7e9:0xee3b22c32760e31",
+    "cid": "1072897039139212849",
+    "reviewsCount": 0,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 2 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 2 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=ICH%20COLLEGE%20%5BINSTITUTE%20OF%20COMMUNITY%20HEALTH%5D&query_place_id=ChIJ6ce1ynQb6zkRMQ52Miyy4w4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw1Je2ca7bI_8WSVhc_hAcLlcVXK0E6GAN_v0kKRdHepyEbd1oz0MrchVn0NKT9AXsVouU-0iN6MdJB_wL_regmbXSYdPg8tbAG4XAEDQEb_l2fgM88bbivL6AbrJgIzzjCS8CS2pxVSSbh=w408-h306-k-no",
+    "kgmid": "/g/11lcbt40q6"
+  },
+  {
+    "title": "BMC BBA Block",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC9C+WPX, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9C+WPX, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616652",
+    "phoneUnformatted": "+97716616652",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6698504,
+      "lng": 85.4218693
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJLf1wj_Ub6zkRPgJURtnrzCw",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1bf58f70fd2d:0x2cccebd94654023e",
+    "cid": "3228214351338144318",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=BMC%20BBA%20Block&query_place_id=ChIJLf1wj_Ub6zkRPgJURtnrzCw",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eXGEcQPrIoJIoz23jwbn9A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=154.633&pitch=0&thumbfov=100",
+    "kgmid": "/g/11rk8y4fz5"
+  },
+  {
+    "title": "Iwamura College of Health Science (Nursing Unit)",
+    "price": null,
+    "categoryName": "College",
+    "address": "MC7G+X9Q, Suryabinayak 44800, Nepal",
+    "neighborhood": "Sipadol",
+    "street": "MC7G+X9Q",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6649571,
+      "lng": 85.4259719
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJa7cUjVob6zkRH2taVUkhBuo",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b5a8d14b76b:0xea062149555a6b1f",
+    "cid": "16863202453583719199",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Iwamura%20College%20of%20Health%20Science%20(Nursing%20Unit)&query_place_id=ChIJa7cUjVob6zkRH2taVUkhBuo",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=bLHyJfd3vHeW0QJ5YQzmGA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=270.8568&pitch=0&thumbfov=100",
+    "kgmid": "/g/11k9bld7_0"
+  },
+  {
+    "title": "Silwal house near SS college",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6636201",
+    "phoneUnformatted": "+97716636201",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6709939,
+      "lng": 85.4298429
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUXgYTzob6zkRqbMQpYx_d_s",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b3a4f187851:0xfb777f8ca510b3a9",
+    "cid": "18120091867789964201",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Silwal%20house%20near%20SS%20college&query_place_id=ChIJUXgYTzob6zkRqbMQpYx_d_s",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.44382&pitch=0&thumbfov=100",
+    "kgmid": "/g/11hdscb_yz"
+  },
+  {
+    "title": "Iwamura College of Health Science",
+    "subTitle": "इवामुरा कलेज अफ हेल्थ साइन्स",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCC6+WGR, Nagarkot Road, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCC6+WGR, Nagarkot Road",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://www.iwamuracollege.edu.np/",
+    "phone": "+977 1-6614816",
+    "phoneUnformatted": "+97716614816",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6723726,
+      "lng": 85.4112782
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ58yagZAa6zkRe4zI9IeNNPg",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a90819acce7:0xf8348d87f4c88c7b",
+    "cid": "17885075635261967483",
+    "reviewsCount": 29,
+    "imagesCount": 313,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Iwamura%20College%20of%20Health%20Science&query_place_id=ChIJ58yagZAa6zkRe4zI9IeNNPg",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXmsjoyzy_xIGAayO8XGg_ZgVr-ujnbkYE2q1Ek9uZkv1-SHPnJWyvvDUMl-PzGLEEn7JJtcBxneoPNJtSlNv-TqAbn6ZgOirdgUwPtUdLcbEDYQrTS0_QKkxNWj1IEhldve1C=w408-h408-k-no",
+    "kgmid": "/g/11b6qr70ps"
+  },
+  {
+    "title": "Ashmi tamang",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCCH+9WW, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCH+9WW",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.670994,
+      "lng": 85.4298429
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcecNAwAb6zkRczgbRulAkfU",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b00030de771:0xf59140e9461b3873",
+    "cid": "17694995781563136115",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:40:56.189Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ashmi%20tamang&query_place_id=ChIJcecNAwAb6zkRczgbRulAkfU",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.4287066988148,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xiwkb2LIzRqxgf6gIkv8Jw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=356.4451&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y40v_gdv"
+  },
+  {
+    "title": "Universal Modern College/ Modern English Secondary School",
+    "subTitle": "(यूनिभर्सल मोडर्न कलेज)",
+    "price": null,
+    "categoryName": "College",
+    "address": "Srijana Nagar, 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "Srijana Nagar",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6619681",
+    "phoneUnformatted": "+97716619681",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745078,
+      "lng": 85.4051265
+    },
+    "totalScore": 3.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJc9K5ZZka6zkREilQdquFotM",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a9965b9d273:0xd3a285ab76502912",
+    "cid": "15249898259700787474",
+    "reviewsCount": 23,
+    "imagesCount": 32,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:04.262Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Universal%20Modern%20College%2F%20Modern%20English%20Secondary%20School&query_place_id=ChIJc9K5ZZka6zkREilQdquFotM",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.43729330118518,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 14,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyLDM71_-3Qgt-u3W4owuyY28uOZwLg3CA_B4tqGBOidzeHJvLLr7WlboXvhjetEERNQCuP8IaTrKtcXha9xN6eI345MiTjsLwf40s7Cce-uMtlHk7oQrsEf59hYUODPT72A8t0=w408-h544-k-no",
+    "kgmid": "/g/11fyx96c81"
+  },
+  {
+    "title": "Sanothimi college hostel",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCH3+P6C, Bhaktapur Road, Madhyapur Thimi, Nepal",
+    "neighborhood": "Nikoshera",
+    "street": "MCH3+P6C, Bhaktapur Road",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6793164,
+      "lng": 85.4030016
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRQqOZCQb6zkRw8mFBSLCge0",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1b24648e0a45:0xed81c2220585c9c3",
+    "cid": "17114173510361926083",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:41:49.575Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sanothimi%20college%20hostel&query_place_id=ChIJRQqOZCQb6zkRw8mFBSLCge0",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.40294689170369,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=V5HuKE00mwkqZsNy8e92cA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=21.012323&pitch=0&thumbfov=100",
+    "kgmid": "/g/11v3nyfwgc"
+  },
+  {
+    "title": "Chakrabarti Habi Education Academy - College of Health Science",
+    "price": null,
+    "categoryName": "College",
+    "address": "Madhyapur Thimi 44800, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Madhyapur Thimi",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://chakrabarticollege.com/",
+    "phone": "+977 1-5925311",
+    "phoneUnformatted": "+97715925311",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6738432,
+      "lng": 85.4020597
+    },
+    "totalScore": 3.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6-KMnIka6zkRI3BE5GimpZU",
+    "categories": [
+      "College",
+      "Nursing school"
+    ],
+    "fid": "0x39eb1a899c8ce2eb:0x95a5a668e4447023",
+    "cid": "10783207852245020707",
+    "reviewsCount": 18,
+    "imagesCount": 20,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:15.330Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 5 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Chakrabarti%20Habi%20Education%20Academy%20-%20College%20of%20Health%20Science&query_place_id=ChIJ6-KMnIka6zkRI3BE5GimpZU",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.40294689170369,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzoe8LSdDtyNpOn3l7N_xykWVQiA5syQDLeS-18JWiXrqtMLj7yU1Wo-2GSpvy9QQdDtJVzrXirE1nWRGmcXTsQEprPz0W_ftvbfTmvMRGHapBq2sM9xf-fNx4-yF-f1FC3EKzNSQ=w408-h306-k-no",
+    "kgmid": "/g/11b6gpn8wq"
+  },
+  {
+    "title": "Bhaktapaur",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCR6+9M9, Changunarayan, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "MCR6+9M9",
+    "city": "Changunarayan",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6909221,
+      "lng": 85.411736
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTfIwz84b6zkRcTDYQ1-NVkc",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1bcecf30f24d:0x47568d5f43d83071",
+    "cid": "5140451464989651057",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:30.674Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapaur&query_place_id=ChIJTfIwz84b6zkRcTDYQ1-NVkc",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.689813953235532,85.41153349407406,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "kgmid": "/g/11t3t_lzkp"
+  },
+  {
+    "title": "Rajdhani national collage",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCHV+6VX, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHV+6VX",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6780668,
+      "lng": 85.4446684
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJV8XlLLsF6zkRdmqXlrQYAhQ",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb05bb2ce5c557:0x140218b496976a76",
+    "cid": "1441741994611665526",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:36.655Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Rajdhani%20national%20collage&query_place_id=ChIJV8XlLLsF6zkRdmqXlrQYAhQ",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.682206976617763,85.44587990355555,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8MuqF3t479VNVxUCs1trdg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=141.32948&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sc2807v4"
+  },
+  {
+    "title": "Sainik School for Bachelor Studies",
+    "price": null,
+    "categoryName": "College",
+    "address": "MCF7+3JJ, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCF7+3JJ",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://bsamv.edu.np/",
+    "phone": "+977 1-6618830",
+    "phoneUnformatted": "+97716618830",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727143,
+      "lng": 85.414011
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJt5yYzpka6zkRHIanOoWiUI4",
+    "categories": [
+      "College"
+    ],
+    "fid": "0x39eb1a99ce989cb7:0x8e50a2853aa7861c",
+    "cid": "10254875044621026844",
+    "reviewsCount": 7,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:42:48.854Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Sainik%20School%20for%20Bachelor%20Studies&query_place_id=ChIJt5yYzpka6zkRHIanOoWiUI4",
+    "searchPageUrl": "https://www.google.com/maps/search/college/@27.666993023382226,85.41153349407406,17z?hl=en",
+    "searchString": "college",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxkF4HSSMX0thAZt9p8m8SyaWR0ETm4jHwgYfMhAfbrdZjUT0CGLHDFCl-f4RVZbCrxS7R3mm63iHtCYAXw8PcIN2NGcdQBP7MNsXq3qdLNazOjD3MoY7L9QVaJ-CNWQ-ooj9vo=w408-h244-k-no",
+    "kgmid": "/g/11f15jhzb1"
+  }
+]

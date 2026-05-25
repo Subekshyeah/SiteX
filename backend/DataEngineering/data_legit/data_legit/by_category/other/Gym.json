@@ -1,0 +1,4879 @@
+[
+  {
+    "title": "Ittachhen",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCCF+RR9, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+RR9",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6720418,
+      "lng": 85.4246034
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYaoeXnMb6zkRRnQDgzjPFj0",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b735e1eaa61:0x3d16cf3883037446",
+    "cid": "4401933527424398406",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:31.022Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ittachhen&query_place_id=ChIJYaoeXnMb6zkRRnQDgzjPFj0",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 38,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8uU4Du8-vz0yEu07GIGdwQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=63.268936&pitch=0&thumbfov=100",
+    "kgmid": "/g/11l34bbhpw"
+  },
+  {
+    "title": "Luniva's Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGP+M2M, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+M2M",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-8942736",
+    "phoneUnformatted": "+9779848942736",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6767221,
+      "lng": 85.435053
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYxTOhIIb6zkR1EnRG-mEerE",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b8284ce1463:0xb17a84e91bd149d4",
+    "cid": "12788680228600891860",
+    "reviewsCount": 7,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 5,
+      "fiveStar": 1
+    },
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:31.023Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 AM to 7:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Luniva's%20Fitness&query_place_id=ChIJYxTOhIIb6zkR1EnRG-mEerE",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 40,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy4kYFmIBUySAvA8vnMIJdP5y0wfT3kUGJw20_pgK9xOrl0m50qo5wcuAsEeM6a-gj3lx4rZR_NO_pAqGk0HTbywXhHmJ2gzPxpDQafyvVs7l6-mrlnC516_mx1uvM9UW2IdB6i=w408-h269-k-no",
+    "kgmid": "/g/11h6g3ygkc"
+  },
+  {
+    "title": "Ajima dahi vandar",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCFH+R7C, The tourist bus park, 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+R7C, The tourist bus park",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616543",
+    "phoneUnformatted": "+97716616543",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745571,
+      "lng": 85.4281363
+    },
+    "totalScore": 3.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDY-_17ob6zkR4ts2TZXjNQs",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bbad7bf8f0d:0xb35e3954d36dbe2",
+    "cid": "807801938567945186",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 1,
+      "fiveStar": 1
+    },
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:32.079Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ajima%20dahi%20vandar&query_place_id=ChIJDY-_17ob6zkR4ts2TZXjNQs",
+    "searchPageUrl": "https://www.google.com/maps/search/health/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "health",
+    "language": "en",
+    "rank": 55,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=q-lGvc7XihL4sZ755xST7Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=357.49777&pitch=0&thumbfov=100",
+    "kgmid": "/g/11q7plrwws"
+  },
+  {
+    "title": "Club Desparado Gym & Zumba",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGG+2PQ Byasi, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGG+2PQ Byasi",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1044356",
+    "phoneUnformatted": "+9779851044356",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6750858,
+      "lng": 85.4268628
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6xBsb9ob6zkRRTRaaY1SzFY",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bda6f6c10eb:0x56cc528d695a3445",
+    "cid": "6254464749822161989",
+    "reviewsCount": 18,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.920Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Club%20Desparado%20Gym%20%26%20Zumba&query_place_id=ChIJ6xBsb9ob6zkRRTRaaY1SzFY",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lmTbctmTGQ4pOeyN7y1P3A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=333.19235&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h0b4n2tm"
+  },
+  {
+    "title": "Tripurasundari Gymnastics Hall",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCFJ+428, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFJ+428",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727873,
+      "lng": 85.4300842
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw5RNNK4a6zkRg2D0-Eao_ZQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1aae344d94c3:0x94fda846f8f46083",
+    "cid": "10735922109499072643",
+    "reviewsCount": 4,
+    "imagesCount": 20,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.920Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 to 9 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tripurasundari%20Gymnastics%20Hall&query_place_id=ChIJw5RNNK4a6zkRg2D0-Eao_ZQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwl2gfXQ7m_24CZjyZ0sf_aLAp9qpcSdupiokKQX4IE3RNrWFLb5aVFPGOewneQEFyWRoyUZuMfstzxpUb8U7YPFGnnvDOFx_klbEk6bfQPcH8f9s8XZcPv8cbBdkpYL7z8hzlf=w408-h306-k-no",
+    "kgmid": "/g/1hf1p4lr3"
+  },
+  {
+    "title": "Maheshwari Open Gym Garden",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCCP+763 Maheshwari Temple, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCP+763 Maheshwari Temple",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6706307,
+      "lng": 85.4355555
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbzdDQGYb6zkRk2AIacQWVbg",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b664043376f:0xb85516c469086093",
+    "cid": "13282547708830703763",
+    "reviewsCount": 3,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.920Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Maheshwari%20Open%20Gym%20Garden&query_place_id=ChIJbzdDQGYb6zkRk2AIacQWVbg",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw9OmNxNKpkNoreemaXvHaK5RSB5rp6fC3ULiAFh_Z6B412nN3fRNRYQCFhlFobyl3LB-xeil6QKmKbx33sOkLkwX38EUZnjN67er6OpQa2zjcQKMcL5-g9dyqdUcIkeNBwj3m5=w426-h240-k-no",
+    "kgmid": "/g/11h81lz7gf"
+  },
+  {
+    "title": "Mulkdhoka",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGM+MX7, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGM+MX7, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6766728,
+      "lng": 85.4349274
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTUpr3WQb6zkRXLOqTDWd35g",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b64dd6b4a4d:0x98df9d354caab35c",
+    "cid": "11015696065816605532",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mulkdhoka&query_place_id=ChIJTUpr3WQb6zkRXLOqTDWd35g",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gIAtCesO40k5-9EdVNGXag&cb_client=search.gws-prod.gps&w=408&h=240&yaw=347.07697&pitch=0&thumbfov=100",
+    "kgmid": "/g/11syv9q8nw"
+  },
+  {
+    "title": "Lion Physical Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCCQ+7G9, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCQ+7G9",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3159718",
+    "phoneUnformatted": "+9779843159718",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6707145,
+      "lng": 85.4388469
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTXrlod0F6zkRqbX1RybmJ_k",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb05dda1e57a4d:0xf927e62647f5b5a9",
+    "cid": "17953571491626202537",
+    "reviewsCount": 12,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Lion%20Physical%20Fitness&query_place_id=ChIJTXrlod0F6zkRqbX1RybmJ_k",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRbqBFu1_yfmMpk4A-m3jXgo_xAfBPYBcN8UY9kb2YyoafJkYngEWSEAAz2718P1njwvyKeEkHZO9oFkxb6yTZFUZpRwgdgUZ_HmP5GhRMP-Pwex8lKhAlfnJtzY2a56TwHkv0iQ=w408-h306-k-no",
+    "kgmid": "/g/11k3lpxcvh"
+  },
+  {
+    "title": "Gymcha",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC8G+VPC, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+VPC",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.instagram.com/gymcha.np?igsh=MTllZmtyNXR2dng5Yw==",
+    "phone": "+977 970-2221313",
+    "phoneUnformatted": "+9779702221313",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6671531,
+      "lng": 85.427496
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJzRs5qpUb6zkRHSUxQS5-PrU",
+    "categories": [
+      "Gym",
+      "Fitness center"
+    ],
+    "fid": "0x39eb1b95aa391bcd:0xb53e7e2e4131251d",
+    "cid": "13060014706548352285",
+    "reviewsCount": 58,
+    "imagesCount": 52,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        },
+        {
+          "Onsite services": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Assistive hearing loop": false
+        },
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Membership required": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gymcha&query_place_id=ChIJzRs5qpUb6zkRHSUxQS5-PrU",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwOAZfgLxB6oVFDEHwyWy5GXDXPUWBB48VsvB-t6xTKn-YzQ4gi6aRnOwG4cGypibOvkZj-KqtNN9N7zgm2u2Mu2NwoAxfaUrkW9Ea4C5yqyoPQ88B22GGqkBWx8TpXmFUqICSd=w408-h544-k-no",
+    "kgmid": "/g/11kj_brhb6"
+  },
+  {
+    "title": "Active Gym",
+    "subTitle": "सक्रिय जिम",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCHQ+73W, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+73W, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.678232,
+      "lng": 85.4376925
+    },
+    "totalScore": 3.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ716AzEwF6zkRjYO4h1Pk_JQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb054ccc805eef:0x94fce45387b8838d",
+    "cid": "10735706659154854797",
+    "reviewsCount": 14,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Active%20Gym&query_place_id=ChIJ716AzEwF6zkRjYO4h1Pk_JQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxqLznggHObrkhEIpUC4ok-riPFGg-rGk-EmCdDpDjyUVbIXqfCc1KcPrRHxnckObGBIs_x31SlpQk_u5APQ2Gv5iB5oDnfYbPmHSZdCvO3yDBkL-tCUssU8WH_np69uTBaEuua=w408-h544-k-no",
+    "kgmid": "/g/1ptzgrxm2"
+  },
+  {
+    "title": "Oxygen Physical FItness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC8P+XXV, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8P+XXV, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6674892,
+      "lng": 85.4374257
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3QDTenEb6zkRGLIS46NIMig",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b717ad300dd:0x283248a3e312b218",
+    "cid": "2896457379079172632",
+    "reviewsCount": 12,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Oxygen%20Physical%20FItness&query_place_id=ChIJ3QDTenEb6zkRGLIS46NIMig",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=cxitWAP27fM3uUFuN1S4dg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=106.52129&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fn5_dyv_"
+  },
+  {
+    "title": "Grind'On Strength & Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCF5+8R6, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF5+8R6",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://grindongym.com/",
+    "phone": "+977 981-8950290",
+    "phoneUnformatted": "+9779818950290",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6735146,
+      "lng": 85.409604
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4wbdmVob6zkRcL1UgXbUIww",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b5a99dd06e3:0xc23d4768154bd70",
+    "cid": "874776358081052016",
+    "reviewsCount": 192,
+    "imagesCount": 43,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Grind'On%20Strength%20%26%20Fitness&query_place_id=ChIJ4wbdmVob6zkRcL1UgXbUIww",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPKXE0SEbNXUkw4RezQZLcYz1YBdBtZaW_jE2rj=w408-h306-k-no",
+    "kgmid": "/g/11s4ym_mfd"
+  },
+  {
+    "title": "Flex Anytime Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC96+HX6, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MC96+HX6, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-2451443",
+    "phoneUnformatted": "+9779762451443",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6687796,
+      "lng": 85.4124847
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJ_-ys4Mb6zkRGlCyaqhvV7s",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b83b3b2ff27:0xbb576fa86ab2501a",
+    "cid": "13499381177201610778",
+    "reviewsCount": 16,
+    "imagesCount": 18,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:13:40.921Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 8 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Flex%20Anytime%20Fitness&query_place_id=ChIJJ_-ys4Mb6zkRGlCyaqhvV7s",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 20,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzaYSwoWLGwWMc5Xn6qd0nOMgavVlQrv5-T-MJwINm3ioknH7QYA26Z-svZae3FWG1ZTPOSsqgURkpTUTxD2S16fO6WbElHFM_8ctOsfmQaYnTXcmeIQTgNAbXijGOq8rrekFBv=w426-h240-k-no",
+    "kgmid": "/g/11twfmhf0k"
+  },
+  {
+    "title": "Skova Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9RM+6X8, Dhunche Rd, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9RM+6X8, Dhunche Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-4781204",
+    "phoneUnformatted": "+9779764781204",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.690537,
+      "lng": 85.3849422
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJp-HaRAAb6zkRk3Ia6vvIEEg",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b0044dae1a7:0x4810c8fbea1a7293",
+    "cid": "5192871354648130195",
+    "reviewsCount": 9,
+    "imagesCount": 104,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:28.207Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4:30 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4:30 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4:30 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4:30 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4:30 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4:30 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Skova%20Fitness&query_place_id=ChIJp-HaRAAb6zkRk3Ia6vvIEEg",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyDeWKbPh8ydXshrRvq8egCTv5rUthOK5Y9HCWuOn0ZxmOoRjgsgt9fW7eclASHxiK8206PNUuC5APL6Sis-5jBACunnv2Fub5zA4Acya4ww9MkELzuEJiBAXMPKyFXq164xCnEnAS3JrUT=w408-h306-k-no",
+    "kgmid": "/g/11yf6hs15k"
+  },
+  {
+    "title": "Gymtaar",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Harhar mahadev, Kadaghari, Kathmandu 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "Harhar mahadev, Kadaghari",
+    "city": "Kathmandu",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0560832",
+    "phoneUnformatted": "+9779860560832",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6962486,
+      "lng": 85.3791994
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJpekan-8b6zkRfByl4DYRqrQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bef9f1ae9a5:0xb4aa1136e0a51c7c",
+    "cid": "13018236600262663292",
+    "reviewsCount": 109,
+    "imagesCount": 89,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:28.207Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gymtaar&query_place_id=ChIJpekan-8b6zkRfByl4DYRqrQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxGfUd9mq1WQHs5Vck3K2BCexlqIdvs5LZIkv5SiSFrWGglQnnig8icOKNjLdeLQhygnhA0VTjdGXt_OordrqqU65a_QbmvnWwf33b1SW-DsiQI1sX6oP1R1WVtqzD4wHpAER3xiQ=w408-h544-k-no",
+    "kgmid": "/g/11tt5kwhxt"
+  },
+  {
+    "title": "Fitness Evolution",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://m.facebook.com/fitness.evolution.2073/?ref=bookmarks",
+    "phone": "+977 985-1141203",
+    "phoneUnformatted": "+9779851141203",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6740433,
+      "lng": 85.3885384
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-X1MqrAb6zkRS68fQFlDI34",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bb0aa4c7df9:0x7e234359401faf4b",
+    "cid": "9089182523570761547",
+    "reviewsCount": 48,
+    "imagesCount": 7,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:28.209Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Fitness%20Evolution&query_place_id=ChIJ-X1MqrAb6zkRS68fQFlDI34",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyiTVwDMBmZE2c7eVeQhe1-Tso2K11TSrk5Lt9PRl6FxgWHMZSlQr__fl-3U--v4m2f16nkVUm2qQWP4J9anT1SjqTpevX-hoW5clHQ1feXL-s0JfKCiP24oz9bdmxXUGG0kBfXHg=w426-h240-k-no",
+    "kgmid": "/g/11g2svstg3"
+  },
+  {
+    "title": "Gym Go Fit",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Amar Hall Park, Anantalingeshwar, Nepal",
+    "neighborhood": "Balkot",
+    "street": "Amar Hall Park",
+    "city": "Anantalingeshwar",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6635572",
+    "phoneUnformatted": "+97716635572",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.669819,
+      "lng": 85.3852254
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJPy0fOMQb6zkRaqiGtF-YjrQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bc4381f2d3f:0xb48e985fb486a86a",
+    "cid": "13010503910337980522",
+    "reviewsCount": 70,
+    "imagesCount": 76,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:28.209Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4 to 11 AM, 2 to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 11 AM, 2 to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4 to 11 AM, 2 to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 11 AM, 2 to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4 to 11 AM, 2 to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4 to 11 AM, 2 to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gym%20Go%20Fit&query_place_id=ChIJPy0fOMQb6zkRaqiGtF-YjrQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyNv1E3tGCOLKbWjakRqtQiGhDFWjDvcXUek1NZkkWD3TaY1zkhD-dXqsgA5gRXOZQsBNrQuPXxpXTmbIg3MG9klszuiM30_DP2DvpdWAUCZBmjQNQVsBa3x5mF5avlPraILHcz=w408-h544-k-no",
+    "kgmid": "/g/11pzr13qh1"
+  },
+  {
+    "title": "Iron Echo Gym",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Kadaghari Medical chowk, Kathmandu 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "Kadaghari Medical chowk",
+    "city": "Kathmandu",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-5925777",
+    "phoneUnformatted": "+97715925777",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6956099,
+      "lng": 85.3739245
+    },
+    "totalScore": 3.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJQZPJ1hMZ6zkR23qmE7wAU70",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1913d6c99341:0xbd5300bc13a67adb",
+    "cid": "13642248504018893531",
+    "reviewsCount": 5,
+    "imagesCount": 25,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:28.209Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 to 11 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 11 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 to 11 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 to 11 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 to 11 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 to 11 AM, 3 to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Iron%20Echo%20Gym&query_place_id=ChIJQZPJ1hMZ6zkR23qmE7wAU70",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNKNLUPjL8uRFtz7zltG_mFC3QcA9wrNHu5aF8W=w408-h306-k-no",
+    "kgmid": "/g/11md2sn60c"
+  },
+  {
+    "title": "ENERGY FITNESS GYM",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Balkot, Balakot, Nepal",
+    "neighborhood": "Sirutar",
+    "street": "Balkot",
+    "city": "Balakot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-5136340",
+    "phoneUnformatted": "+9779865136340",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6641055,
+      "lng": 85.3673229
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJESTUNhEb6zkRcoIeEANyaV8",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b1136d42411:0x5f697203101e8272",
+    "cid": "6875151663638676082",
+    "reviewsCount": 68,
+    "imagesCount": 20,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:28.210Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=ENERGY%20FITNESS%20GYM&query_place_id=ChIJESTUNhEb6zkRcoIeEANyaV8",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPWHkztUMOMV5iyitwUZHYTHatJLaiwCWpNmYo=w408-h544-k-no",
+    "kgmid": "/g/11nn26pnhb"
+  },
+  {
+    "title": "Alctron Gym",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Bhaktapur 44800, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": null,
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/profile.php?id=100091178100289&mibextid=ZbWKwL",
+    "phone": "+977 985-1218788",
+    "phoneUnformatted": "+9779851218788",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6756617,
+      "lng": 85.3740391
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4bd9uLYb6zkR-UuSbez91UQ",
+    "categories": [
+      "Gym",
+      "Fitness center"
+    ],
+    "fid": "0x39eb1bb6b87db7e1:0x44d5fdec6d924bf9",
+    "cid": "4960149756510882809",
+    "reviewsCount": 36,
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:38.997Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 to 9 AM, 3 to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 to 9 AM, 3 to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 to 9 AM, 3 to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 to 9 AM, 3 to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 to 9 AM, 3 to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 to 9 AM, 3 to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Onsite services": true
+        },
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Assistive hearing loop": false
+        },
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible parking lot": false
+        },
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        },
+        {
+          "Wi-Fi": true
+        },
+        {
+          "Free Wi-Fi": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Alctron%20Gym&query_place_id=ChIJ4bd9uLYb6zkR-UuSbez91UQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMO6__jm7O5uys-HTMpst-QJIP6pd05uJAlzYx6=w408-h306-k-no",
+    "kgmid": "/g/11svpd47y9"
+  },
+  {
+    "title": "Open GYM Facilities - Bishnu kundol, Thimi",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9GM+WG3, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": null,
+    "street": "M9GM+WG3",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6771554,
+      "lng": 85.3836358
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjxnzIwAb6zkRs74kXBi0Dlc",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b0023f3198f:0x570eb4185c24beb3",
+    "cid": "6273149347691806387",
+    "reviewsCount": 1,
+    "imagesCount": 8,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:38.998Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Open%20GYM%20Facilities%20-%20Bishnu%20kundol%2C%20Thimi&query_place_id=ChIJjxnzIwAb6zkRs74kXBi0Dlc",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.687713004621624,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyvBEcmdsJUAChr7vPwSfLlIutkllykJD0HpB2yBAiDxkWbuOtENMrOJGNqVk54em9ViB26i4RkfLxIwGi9JoqLzldaHB-soZvrTSiWxnyNIsicFDk0NgE0_xOUdYZV_vt7b-Tim6cX50DF=w408-h306-k-no",
+    "kgmid": "/g/11xkpjnjv6"
+  },
+  {
+    "title": "Club Desparado Gym & Zumba",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGG+2PQ Byasi, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGG+2PQ Byasi",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1044356",
+    "phoneUnformatted": "+9779851044356",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6750858,
+      "lng": 85.4268628
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6xBsb9ob6zkRRTRaaY1SzFY",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bda6f6c10eb:0x56cc528d695a3445",
+    "cid": "6254464749822161989",
+    "reviewsCount": 18,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:44.878Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Club%20Desparado%20Gym%20%26%20Zumba&query_place_id=ChIJ6xBsb9ob6zkRRTRaaY1SzFY",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lmTbctmTGQ4pOeyN7y1P3A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=333.19235&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h0b4n2tm"
+  },
+  {
+    "title": "Ajima dahi vandar",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCFH+R7C, The tourist bus park, 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+R7C, The tourist bus park",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616543",
+    "phoneUnformatted": "+97716616543",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745571,
+      "lng": 85.4281363
+    },
+    "totalScore": 3.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDY-_17ob6zkR4ts2TZXjNQs",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bbad7bf8f0d:0xb35e3954d36dbe2",
+    "cid": "807801938567945186",
+    "reviewsCount": 3,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:44.878Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ajima%20dahi%20vandar&query_place_id=ChIJDY-_17ob6zkR4ts2TZXjNQs",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=q-lGvc7XihL4sZ755xST7Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=357.49777&pitch=0&thumbfov=100",
+    "kgmid": "/g/11q7plrwws"
+  },
+  {
+    "title": "Gym Junkies",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "10 Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "10 Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-8941427",
+    "phoneUnformatted": "+9779848941427",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6773436,
+      "lng": 85.4404356
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJn93wkxQb6zkRICU59aQIY9Y",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b1493f0dd9f:0xd66308a4f5392520",
+    "cid": "15448200651392754976",
+    "reviewsCount": 64,
+    "imagesCount": 23,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:44.878Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 to 10 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 10 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        },
+        {
+          "Outdoor services": true
+        },
+        {
+          "Onsite services": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        },
+        {
+          "Wheelchair accessible restroom": true
+        },
+        {
+          "Wheelchair accessible seating": true
+        },
+        {
+          "Assistive hearing loop": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Gender-neutral restroom": true
+        },
+        {
+          "Restroom": true
+        },
+        {
+          "Wi-Fi": true
+        },
+        {
+          "Free Wi-Fi": true
+        }
+      ],
+      "Crowd": [
+        {
+          "LGBTQ+ friendly": true
+        },
+        {
+          "Transgender safespace": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gym%20Junkies&query_place_id=ChIJn93wkxQb6zkRICU59aQIY9Y",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.672500000000003,85.42249999999997,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz-EJ2zcDF6P5pslisnF0eq2JApSbpGpdhbHNx9wl82UzMH5ABFb_-CHw1o2m5_wokhYrfypG_ZTUSXLc37HMNoc6V74AvhwbXU-QuMo5wSJ9QoZmR-zZM0_vRw1yh4w1B_vN1Y=w408-h544-k-no",
+    "kgmid": "/g/11sbc3g7k8"
+  },
+  {
+    "title": "Gym Hall (Radhe Radhe)",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9GX+MGH, Unnamed Road, Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": "M9GX+MGH, Unnamed Road",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-7023154",
+    "phoneUnformatted": "+9779857023154",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.676697,
+      "lng": 85.3988702
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw1z5GiUb6zkRpNi9stkBCfQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b251af95cc3:0xf40901d9b2bdd8a4",
+    "cid": "17584588254563129508",
+    "reviewsCount": 10,
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:54.197Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4:55 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4:55 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4:55 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4:55 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4:55 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4:55 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4:55 AM to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gym%20Hall%20(Radhe%20Radhe)&query_place_id=ChIJw1z5GiUb6zkRpNi9stkBCfQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.39674438680153,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 1,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyH1rZsDAR0wfF2qjL6ryX6eCy2y-1d7SD_64LGcgit4XZKo_hELMboNoGM1rkExdVtOH1boL27OzReR8Sha9p60_fAHS1PKH1pyhMVEprZ9_Pe6cEiFXQoC8XswlJGs6oxehokYw=w683-h240-k-no",
+    "kgmid": "/g/11n8t2hq3v"
+  },
+  {
+    "title": "Gymcha Radhe Radhe",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "AITC St, Bhaktapur, Nepal",
+    "neighborhood": null,
+    "street": "AITC St",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3351071",
+    "phoneUnformatted": "+9779843351071",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6787885,
+      "lng": 85.3972428
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-Qj2BoMb6zkRjpUdWN2V1Nc",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b8306f608f9:0xd7d495dd581d958e",
+    "cid": "15552220191115810190",
+    "reviewsCount": 15,
+    "imagesCount": 5,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:54.198Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gymcha%20Radhe%20Radhe&query_place_id=ChIJ-Qj2BoMb6zkRjpUdWN2V1Nc",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.39674438680153,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyhYRb4HxkX_6yMExfZdlpdp288-kJUAutKiBnRz42Te_Og14XmHS8W8qze14rFD4Rn1gztK7n7O5axZnpTZuK8qHGrJ8DeW6dyo-aZ-J_EaA4uoddA8CkAoYX4cpmOGqle5kGdLUVcRySd=w408-h544-k-no",
+    "kgmid": "/g/11md81rzqz"
+  },
+  {
+    "title": "Universal Physical Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9GW+RJ3, Radhe Radhe Rd, Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": "M9GW+RJ3, Radhe Radhe Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0163237",
+    "phoneUnformatted": "+9779860163237",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6774769,
+      "lng": 85.3962145
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRV6XNwAb6zkRFBbyKE3HXws",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b0037975e45:0xb5fc74d28f21614",
+    "cid": "819592791418082836",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 2
+    },
+    "imagesCount": 4,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:54.956Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Universal%20Physical%20Fitness&query_place_id=ChIJRV6XNwAb6zkRFBbyKE3HXws",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.39674438680153,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipM0nvqjGi2iB4mGucpTozA-DBVp4k0T3K01Mx8r=w408-h725-k-no",
+    "kgmid": "/g/11x63ct53z"
+  },
+  {
+    "title": "Ghamcha",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9GX+V7G, Radhe Radhe Rd, Madhyapur Thimi, Nepal",
+    "neighborhood": null,
+    "street": "M9GX+V7G, Radhe Radhe Rd",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6771892,
+      "lng": 85.3982044
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJwVSlDgAb6zkRP2ynTcSWZ1k",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b000ea554c1:0x596796c44da76c3f",
+    "cid": "6442283561837358143",
+    "reviewsCount": 0,
+    "imagesCount": null,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:19:54.956Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ghamcha&query_place_id=ChIJwVSlDgAb6zkRP2ynTcSWZ1k",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.39674438680153,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 28,
+    "isAdvertisement": false,
+    "kgmid": "/g/11ynyshnrf"
+  },
+  {
+    "title": "Ujwal Gym And Zumba",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCHR+8Q7 Lancha falcha, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHR+8Q7 Lancha falcha",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-6818625",
+    "phoneUnformatted": "+9779846818625",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6782831,
+      "lng": 85.4419063
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJM0LbwWUF6zkRwdhx9Q5JHG4",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb0565c1db4233:0x6e1c490ef571d8c1",
+    "cid": "7934296972116220097",
+    "reviewsCount": 9,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:05.689Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:05 AM to 9:05 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:05 AM to 9:05 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:05 AM to 9:05 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:05 AM to 9:05 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:05 AM to 9:05 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:06 AM to 9:06 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ujwal%20Gym%20And%20Zumba&query_place_id=ChIJM0LbwWUF6zkRwdhx9Q5JHG4",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.4568408175979,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyQIdmlDHEnCqYDYchP5nf89lI6l-I_1Oy-HsugSRgPb2uuYxFuyBL0POBnrsS17D7fJ_DMH507qMvglhaZy0AKXBamCxLNsvm82LJvFR4OtxY9viBwmfi5HTmSk0qywaDz1Twn=w408-h306-k-no",
+    "kgmid": "/g/11stlm0rmx"
+  },
+  {
+    "title": "Tiger gym House tathali",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MF9C+CHF, Bhaktapur Nala Rd, Mahamanjushree Nagarkot, Nepal",
+    "neighborhood": "Tathali",
+    "street": "MF9C+CHF, Bhaktapur Nala Rd",
+    "city": "Mahamanjushree Nagarkot",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6686108,
+      "lng": 85.4714833
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJy5-5BQAF6zkRuPR_O2cOFQc",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb050005b99fcb:0x7150e673b7ff4b8",
+    "cid": "510329969319081144",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:05.689Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tiger%20gym%20House%20tathali&query_place_id=ChIJy5-5BQAF6zkRuPR_O2cOFQc",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.4568408175979,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 17,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=K4cemYpl1yNI2VEh2uNAOQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=349.64536&pitch=0&thumbfov=100",
+    "kgmid": "/g/11xnbjvq9b"
+  },
+  {
+    "title": "Madhyapur VR Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Anantalingeshwar, Nepal",
+    "neighborhood": "Balkot",
+    "street": null,
+    "city": "Anantalingeshwar",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6686633,
+      "lng": 85.3849639
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRR9PPzUb6zkRiaw20Q7QtbI",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b353f4f1f45:0xb2b5d00ed136ac89",
+    "cid": "12877427471593942153",
+    "reviewsCount": 11,
+    "imagesCount": 16,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:19.239Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Madhyapur%20VR%20Fitness&query_place_id=ChIJRR9PPzUb6zkRiaw20Q7QtbI",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOSU-RFrJM75hvywTpn5BYZ2PqFQOtKZq6qLBNY=w408-h676-k-no",
+    "kgmid": "/g/11kpxtjx9b"
+  },
+  {
+    "title": "The Muscles lab",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": null,
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-3695832",
+    "phoneUnformatted": "+9779763695832",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6731028,
+      "lng": 85.3741844
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ5Xt9QgAb6zkRisEIcQDblTo",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b00427d7be5:0x3a95db007108c18a",
+    "cid": "4221521020672590218",
+    "reviewsCount": 16,
+    "imagesCount": 27,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:19.239Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 9 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 to 11 AM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 9 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=The%20Muscles%20lab&query_place_id=ChIJ5Xt9QgAb6zkRisEIcQDblTo",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyNx3_t-fjqj5Ej_ZE3cwYexmdCfdtBTnJWm-H048vHWW_2LzHh3FXsxoRUUDdSE1_iMMAgwUGNKnEk0pP49MoCaPbNpfUIk87cWR4YqtWO3CyTGfR4bZhNhoyVFF8rMXCXUDm4NA=w408-h306-k-no",
+    "kgmid": "/g/11yb8hlsd9"
+  },
+  {
+    "title": "Xtreme Muscle Gym N Physical Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M978+MM9, Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "M978+MM9",
+    "city": "Anantalingeshwar",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1791498",
+    "phoneUnformatted": "+9779841791498",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6641586,
+      "lng": 85.3667253
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6eLNF1gb6zkRQBxUpY3wYlI",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b5817cde2e9:0x5262f08da5541c40",
+    "cid": "5936571749982542912",
+    "reviewsCount": 13,
+    "imagesCount": 9,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:19.240Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4:30 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Xtreme%20Muscle%20Gym%20N%20Physical%20Fitness&query_place_id=ChIJ6eLNF1gb6zkRQBxUpY3wYlI",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy2cPTvj-keiyz1iMx1DwDmi-Bwt843Lcch-P572DmKIQqD1-OuJEL0_ED-O_jkEs8P1LoOgjTLYarWVcN0D3YJRRuNolhaa8cyOCMWK_jE8w-Byr3OhJVxzmi79Xdx_CVpzi1bSA=w426-h240-k-no",
+    "kgmid": "/g/11fjtw7cpj"
+  },
+  {
+    "title": "Fitness 24x7",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M999+V2V, Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "M999+V2V",
+    "city": "Anantalingeshwar",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6697269,
+      "lng": 85.3675463
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNzo8FwAb6zkRTs8kp-s1bC0",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b00173c3a37:0x2d6c35eba724cf4e",
+    "cid": "3273050315429302094",
+    "reviewsCount": 7,
+    "imagesCount": 11,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:19.240Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Fitness%2024x7&query_place_id=ChIJNzo8FwAb6zkRTs8kp-s1bC0",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 13,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSynQkwXl8DkpfdFxpUz-7xdpd1tOv8eJv2j_YvweJ1vNNHx1ai-kn8MaETSqszvoiYVdWyuLTz9wgwRSGxkRY73_1G5UmyBIeZlZalZ1GcB2L-nq4CSp7z4EOuClaD9jQe_WCbBfm6ob3rW=w408-h544-k-no",
+    "kgmid": "/g/11yd9lytxg"
+  },
+  {
+    "title": "Beast Empire Gym",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M98Q+9JX, Thimi, Madhyapur Thimi, Nepal",
+    "neighborhood": "Dadhikot",
+    "street": "M98Q+9JX, Thimi",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6659777,
+      "lng": 85.3891171
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJy8JGTAAb6zkRos4TPHqdU6E",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b004c46c2cb:0xa1539d7a3c13cea2",
+    "cid": "11624808211492884130",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:19.240Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Beast%20Empire%20Gym&query_place_id=ChIJy8JGTAAb6zkRos4TPHqdU6E",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=DpqHMPkci1yDT_Ngvq6NiQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=57.577435&pitch=0&thumbfov=100",
+    "kgmid": "/g/11yhvhd33h"
+  },
+  {
+    "title": "Bhaktapur Wellness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9F8+RMQ, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Kausaltar",
+    "street": "M9F8+RMQ",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/share/1ANucmpnFy/?mibextid=wwXIfr",
+    "phone": "+977 985-1007207",
+    "phoneUnformatted": "+9779851007207",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745884,
+      "lng": 85.3667377
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJaRvcfgAb6zkRXWmAcp5Lwmg",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b007edc1b69:0x68c24b9e7280695d",
+    "cid": "7548679069324306781",
+    "reviewsCount": 23,
+    "imagesCount": 36,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:47.069Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Bhaktapur%20Wellness&query_place_id=ChIJaRvcfgAb6zkRXWmAcp5Lwmg",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37098877360309,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz8xhS66Ru53PtMckZzkHSbB0OpClnpzbs-aktk76tS_e8J50CK4I3IDqz8MgaJ97rw_LLUJgXhXQD8ZmoNBsswYILtxryxxeJ7mhR_yaKcdhGnADUEu-UmUCdlPUE9FT4eTV7aSKii4ag=w408-h272-k-no",
+    "kgmid": "/g/11x7yxhjwk"
+  },
+  {
+    "title": "Anil fitness equipment",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": null,
+    "city": "Anantalingeshwar",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-5136340",
+    "phoneUnformatted": "+9779865136340",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6652922,
+      "lng": 85.3672327
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJkd0hinMb6zkRlLDIWbnIOMk",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b738a21dd91:0xc938c8b959c8b094",
+    "cid": "14499559698720141460",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:47.854Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Anil%20fitness%20equipment&query_place_id=ChIJkd0hinMb6zkRlLDIWbnIOMk",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37098877360309,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=G6Ixhh1ZaQy_e1G6ovq_cQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=341.87897&pitch=0&thumbfov=100",
+    "kgmid": "/g/11sqndp9ps"
+  },
+  {
+    "title": "Balkot",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M978+HVW, F091, Anantalingeshwar 44600, Nepal",
+    "neighborhood": "Balkot",
+    "street": "M978+HVW, F091",
+    "city": "Anantalingeshwar",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6639312,
+      "lng": 85.3670674
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJLTvkBAAb6zkRyVw2-Ppo4vc",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b0004e43b2d:0xf7e268faf8365cc9",
+    "cid": "17861954499220233417",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:20:47.854Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Balkot&query_place_id=ChIJLTvkBAAb6zkRyVw2-Ppo4vc",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.664893497689192,85.37098877360309,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=VuYRYkQYQZxb7HXj6EyKVw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=230.01573&pitch=0&thumbfov=100",
+    "kgmid": "/g/11ybj3_tr9"
+  },
+  {
+    "title": "Club",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9F7+HP2, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Kausaltar",
+    "street": "M9F7+HP2",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6740154,
+      "lng": 85.3641843
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ0e5EMegb6zkRO3qjN3af5Oo",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1be83144eed1:0xeae49f7637a37a3b",
+    "cid": "16925828629653584443",
+    "reviewsCount": 2,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:00.757Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        },
+        {
+          "Swimming pool": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Club&query_place_id=ChIJ0e5EMegb6zkRO3qjN3af5Oo",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.672500000000003,85.37098877360309,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 27,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=BS0FeWJujlOMWKpWPMddHA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=123.97685&pitch=0&thumbfov=100",
+    "kgmid": "/g/11ks121qw_"
+  },
+  {
+    "title": "Yota Fitness club",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Nagadesh 44600, Nepal",
+    "neighborhood": null,
+    "street": null,
+    "city": "Nagadesh",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.facebook.com/profile.php?id=100091334791547&mibextid=ZbWKwL",
+    "phone": "+977 984-9192013",
+    "phoneUnformatted": "+9779849192013",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6832312,
+      "lng": 85.3857237
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTY4O7jYb6zkRt9-hkTCBZ_c",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b36ee0e8e4d:0xf767813091a1dfb7",
+    "cid": "17827359695571115959",
+    "reviewsCount": 6,
+    "imagesCount": 22,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:21.171Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 to 10 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 10 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 to 10 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 to 10 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 to 10 AM, 3 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 to 10 AM, 3 to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Yota%20Fitness%20club&query_place_id=ChIJTY4O7jYb6zkRt9-hkTCBZ_c",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.38815918240205,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 2,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzr3HTazQylx3XrCgjUnLFrfWZGp3OWLZNSrg4DAA_qiJc3Y7_r8n9VCLITUR9yYgdMra_0Tku-YQMgXP5vOoBnNtSNEnLz0bq2RVCBY1U9_Eepm6n8p53HyW4Dl0oak4losjns=w533-h240-k-no",
+    "kgmid": "/g/11sty9xx5n"
+  },
+  {
+    "title": "Universal Physical Fitness and Pool House",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Taja Tole, Suryabinayak, Nepal",
+    "neighborhood": "Katunje",
+    "street": "Taja Tole",
+    "city": "Suryabinayak",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1343412",
+    "phoneUnformatted": "+9779851343412",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6725088,
+      "lng": 85.3985241
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJZyfJTAAb6zkR1FrrV07n1M8",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b004cc92767:0xcfd4e74e57eb5ad4",
+    "cid": "14975848984582249172",
+    "reviewsCount": 1,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 1
+    },
+    "imagesCount": 6,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:37.356Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "12 to 10 AM, 3:30 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 to 10 AM, 3:30 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 to 10 AM, 3:30 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 to 10 AM, 3:30 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 to 10 AM, 3:30 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 to 10 AM, 3:30 PM to 12 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Universal%20Physical%20Fitness%20and%20Pool%20House&query_place_id=ChIJZyfJTAAb6zkR1FrrV07n1M8",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.672500000000003,85.40532959120101,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyYzHeknJYO65DnNaP-pcLvU-E62Y4C4P_lL6lLxyTaPBjSvr0B3Fuce70HaSt8ImzbKE6h_oXhOkrtOdPiKuL1nyizhHljzgruyx3WFXECk8kBK9n4C-_NOCFlBhTtBCT6BtVSrrvRk1dD=w408-h544-k-no",
+    "kgmid": "/g/11x6qtbtff"
+  },
+  {
+    "title": "New Golds Physical Fitness Centre",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9WF+WXM, Kathmandu 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "M9WF+WXM",
+    "city": "Kathmandu",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1039935",
+    "phoneUnformatted": "+9779851039935",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6973354,
+      "lng": 85.3749252
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ0SetSAAb6zkRQSZKo0hrTTQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b0048ad27d1:0x344d6b48a34a2641",
+    "cid": "3768786422900336193",
+    "reviewsCount": 3,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 3
+    },
+    "imagesCount": 19,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:56.906Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=New%20Golds%20Physical%20Fitness%20Centre&query_place_id=ChIJ0SetSAAb6zkRQSZKo0hrTTQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 23,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyNFVF22OILxdoOKMBKcXXoRpxc3Q0xbFMopJu2ulmyVwtNKN9FkTixs5gWDwGInQfmVKKCdRs6ovBsI4waQmNkdp9SifgwThBdGPXEVcdm07zb4IK-fN2CcZR1_ENDqFEUDRTC=w408-h306-k-no",
+    "kgmid": "/g/11m6hr6bvl"
+  },
+  {
+    "title": "Manahara Football Club",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9VH+G2P, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "M9VH+G2P",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3617196",
+    "phoneUnformatted": "+9779843617196",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6938445,
+      "lng": 85.3775762
+    },
+    "totalScore": 3.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": true,
+    "placeId": "ChIJZy0eukca6zkRSx4OJ9elGeQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1a47ba1e2d67:0xe419a5d7270e1e4b",
+    "cid": "16436350658557124171",
+    "reviewsCount": 12,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 1,
+      "threeStar": 6,
+      "fourStar": 2,
+      "fiveStar": 3
+    },
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:21:56.907Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Manahara%20Football%20Club&query_place_id=ChIJZy0eukca6zkRSx4OJ9elGeQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.695319506932435,85.37957397800257,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 25,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxGEbHS0tttZTH0nFT1aw-QiJKGpdpYOs0K1fHmslA-ZOE7EMxuChpVJTAsNcuiOiLKKy8vdQNsC7bHfTcEZtn7rXyCSf85GZeviiOLNg8wT_6ThOkq8sYXkpnJip2TnWelUYK2jw=w424-h240-k-no",
+    "kgmid": "/g/11c284g82c"
+  },
+  {
+    "title": "Energym",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9HG+G62, Madhyapur Thimi 44600, Nepal",
+    "neighborhood": "Gatthaghar",
+    "street": "M9HG+G62",
+    "city": "Madhyapur Thimi",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6787637,
+      "lng": 85.3755273
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCdFbaAAb6zkR9ds7bS8wo0k",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b00685bd109:0x49a3302f6d3bdbf5",
+    "cid": "5306137766226811893",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:22:25.682Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Energym&query_place_id=ChIJCdFbaAAb6zkR9ds7bS8wo0k",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.37098877360309,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8jbutOBxWBz78bcQPDYN3Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=84.26517&pitch=0&thumbfov=100",
+    "kgmid": "/g/11y8lq3g24"
+  },
+  {
+    "title": "Madhyapur thimi kharibot",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M99Q+F4Q, Madhyapur Thimi, Nepal",
+    "neighborhood": "kharibot",
+    "street": "M99Q+F4Q",
+    "city": "Madhyapur Thimi",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6687182,
+      "lng": 85.3878507
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJR-p8LgAb6zkRUTiojk_pLUs",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b002e7cea47:0x4b2de94f8ea83851",
+    "cid": "5417242454701652049",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:22:43.665Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Madhyapur%20thimi%20kharibot&query_place_id=ChIJR-p8LgAb6zkRUTiojk_pLUs",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.669819,85.3852254,17.82749274098734z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 24,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8D5TYhVCdW8sn_YCsMeOHQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=267.00107&pitch=0&thumbfov=100",
+    "kgmid": "/g/11w4n_jbs8"
+  },
+  {
+    "title": "DUWAKOT BANQUET",
+    "subTitle": "DUWAKOT BANQUET PVT. LTD.",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "Duwakot, Changunarayan-02, Bhaktapur, Nepal",
+    "neighborhood": "Duwakot",
+    "street": "Duwakot, Changunarayan-02",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-1303540",
+    "phoneUnformatted": "+9779841303540",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6848448,
+      "lng": 85.4110763
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ7zCOK5Ib6zkR10i-jn_1Q98",
+    "categories": [
+      "Gym",
+      "Banquet hall",
+      "Public sauna",
+      "Public swimming pool"
+    ],
+    "fid": "0x39eb1b922b8e30ef:0xdf43f57f8ebe48d7",
+    "cid": "16087972222102030551",
+    "reviewsCount": 64,
+    "imagesCount": 36,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:22:49.409Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Dine-in": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": true
+        },
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ],
+      "Offerings": [
+        {
+          "Sauna": true
+        }
+      ],
+      "Amenities": [
+        {
+          "Restaurant": true
+        },
+        {
+          "Restroom": true
+        }
+      ],
+      "Children": [
+        {
+          "Good for kids birthday": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free street parking": true
+        },
+        {
+          "On-site parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=DUWAKOT%20BANQUET&query_place_id=ChIJ7zCOK5Ib6zkR10i-jn_1Q98",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.680106502310814,85.41391479560049,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOmXAZlS_2O9txSnnSuHp8t15f9Fb2Szgx6F23k=w408-h408-k-no",
+    "kgmid": "/g/11t9mhvsvh"
+  },
+  {
+    "title": "Khags",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "M9XG+JJ8, Kathmandu 44600, Nepal",
+    "neighborhood": "Thapagaon",
+    "street": "M9XG+JJ8",
+    "city": "Kathmandu",
+    "postalCode": "44600",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6990526,
+      "lng": 85.3765804
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ7ydfYwAb6zkRnG25ZSd-eL0",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b00635f27ef:0xbd787e2765b96d9c",
+    "cid": "13652800978049133980",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T10:24:03.609Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Khags&query_place_id=ChIJ7ydfYwAb6zkRnG25ZSd-eL0",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.6973354,85.3749252,17.827129236292123z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=WMvHTd72csPdG2BrurHZGA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=45.295242&pitch=0&thumbfov=100",
+    "kgmid": "/g/11x_5pn6qn"
+  },
+  {
+    "title": "Lion Physical Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCCQ+7G9, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCQ+7G9",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-3159718",
+    "phoneUnformatted": "+9779843159718",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6707145,
+      "lng": 85.4388469
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTXrlod0F6zkRqbX1RybmJ_k",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb05dda1e57a4d:0xf927e62647f5b5a9",
+    "cid": "17953571491626202537",
+    "reviewsCount": 12,
+    "imagesCount": 35,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.881Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Lion%20Physical%20Fitness&query_place_id=ChIJTXrlod0F6zkRqbX1RybmJ_k",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 3,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRbqBFu1_yfmMpk4A-m3jXgo_xAfBPYBcN8UY9kb2YyoafJkYngEWSEAAz2718P1njwvyKeEkHZO9oFkxb6yTZFUZpRwgdgUZ_HmP5GhRMP-Pwex8lKhAlfnJtzY2a56TwHkv0iQ=w408-h306-k-no",
+    "kgmid": "/g/11k3lpxcvh"
+  },
+  {
+    "title": "Luniva's Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGP+M2M, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGP+M2M",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 984-8942736",
+    "phoneUnformatted": "+9779848942736",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6767221,
+      "lng": 85.435053
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYxTOhIIb6zkR1EnRG-mEerE",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b8284ce1463:0xb17a84e91bd149d4",
+    "cid": "12788680228600891860",
+    "reviewsCount": 7,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 AM to 7:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Luniva's%20Fitness&query_place_id=ChIJYxTOhIIb6zkR1EnRG-mEerE",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 6,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy4kYFmIBUySAvA8vnMIJdP5y0wfT3kUGJw20_pgK9xOrl0m50qo5wcuAsEeM6a-gj3lx4rZR_NO_pAqGk0HTbywXhHmJ2gzPxpDQafyvVs7l6-mrlnC516_mx1uvM9UW2IdB6i=w408-h269-k-no",
+    "kgmid": "/g/11h6g3ygkc"
+  },
+  {
+    "title": "Active Gym",
+    "subTitle": "सक्रिय जिम",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCHQ+73W, Nagarkot Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCHQ+73W, Nagarkot Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.678232,
+      "lng": 85.4376925
+    },
+    "totalScore": 3.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ716AzEwF6zkRjYO4h1Pk_JQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb054ccc805eef:0x94fce45387b8838d",
+    "cid": "10735706659154854797",
+    "reviewsCount": 14,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5:30 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Active%20Gym&query_place_id=ChIJ716AzEwF6zkRjYO4h1Pk_JQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 7,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxqLznggHObrkhEIpUC4ok-riPFGg-rGk-EmCdDpDjyUVbIXqfCc1KcPrRHxnckObGBIs_x31SlpQk_u5APQ2Gv5iB5oDnfYbPmHSZdCvO3yDBkL-tCUssU8WH_np69uTBaEuua=w408-h544-k-no",
+    "kgmid": "/g/1ptzgrxm2"
+  },
+  {
+    "title": "Maheshwari Open Gym Garden",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCCP+763 Maheshwari Temple, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCP+763 Maheshwari Temple",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6706307,
+      "lng": 85.4355555
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJbzdDQGYb6zkRk2AIacQWVbg",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b664043376f:0xb85516c469086093",
+    "cid": "13282547708830703763",
+    "reviewsCount": 3,
+    "imagesCount": 3,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Maheshwari%20Open%20Gym%20Garden&query_place_id=ChIJbzdDQGYb6zkRk2AIacQWVbg",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 8,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw9OmNxNKpkNoreemaXvHaK5RSB5rp6fC3ULiAFh_Z6B412nN3fRNRYQCFhlFobyl3LB-xeil6QKmKbx33sOkLkwX38EUZnjN67er6OpQa2zjcQKMcL5-g9dyqdUcIkeNBwj3m5=w426-h240-k-no",
+    "kgmid": "/g/11h81lz7gf"
+  },
+  {
+    "title": "Mulkdhoka",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGM+MX7, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGM+MX7, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6766728,
+      "lng": 85.4349274
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTUpr3WQb6zkRXLOqTDWd35g",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b64dd6b4a4d:0x98df9d354caab35c",
+    "cid": "11015696065816605532",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Mulkdhoka&query_place_id=ChIJTUpr3WQb6zkRXLOqTDWd35g",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gIAtCesO40k5-9EdVNGXag&cb_client=search.gws-prod.gps&w=408&h=240&yaw=347.07697&pitch=0&thumbfov=100",
+    "kgmid": "/g/11syv9q8nw"
+  },
+  {
+    "title": "Oxygen Physical FItness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC8P+XXV, Jagati-KamalBinayak Rd, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8P+XXV, Jagati-KamalBinayak Rd",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6674892,
+      "lng": 85.4374257
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3QDTenEb6zkRGLIS46NIMig",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b717ad300dd:0x283248a3e312b218",
+    "cid": "2896457379079172632",
+    "reviewsCount": 12,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 to 9:30 AM, 3 to 8:30 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Oxygen%20Physical%20FItness&query_place_id=ChIJ3QDTenEb6zkRGLIS46NIMig",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 10,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=cxitWAP27fM3uUFuN1S4dg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=106.52129&pitch=0&thumbfov=100",
+    "kgmid": "/g/11fn5_dyv_"
+  },
+  {
+    "title": "Gymcha",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC8G+VPC, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC8G+VPC",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "https://www.instagram.com/gymcha.np?igsh=MTllZmtyNXR2dng5Yw==",
+    "phone": "+977 970-2221313",
+    "phoneUnformatted": "+9779702221313",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6671531,
+      "lng": 85.427496
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJzRs5qpUb6zkRHSUxQS5-PrU",
+    "categories": [
+      "Gym",
+      "Fitness center"
+    ],
+    "fid": "0x39eb1b95aa391bcd:0xb53e7e2e4131251d",
+    "cid": "13060014706548352285",
+    "reviewsCount": 58,
+    "imagesCount": 52,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": true
+        },
+        {
+          "Onsite services": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Assistive hearing loop": false
+        },
+        {
+          "Wheelchair accessible entrance": false
+        },
+        {
+          "Wheelchair accessible restroom": false
+        },
+        {
+          "Wheelchair accessible seating": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Planning": [
+        {
+          "Membership required": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Gymcha&query_place_id=ChIJzRs5qpUb6zkRHSUxQS5-PrU",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwOAZfgLxB6oVFDEHwyWy5GXDXPUWBB48VsvB-t6xTKn-YzQ4gi6aRnOwG4cGypibOvkZj-KqtNN9N7zgm2u2Mu2NwoAxfaUrkW9Ea4C5yqyoPQ88B22GGqkBWx8TpXmFUqICSd=w408-h544-k-no",
+    "kgmid": "/g/11kj_brhb6"
+  },
+  {
+    "title": "Club Desparado Gym & Zumba",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCGG+2PQ Byasi, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCGG+2PQ Byasi",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 985-1044356",
+    "phoneUnformatted": "+9779851044356",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6750858,
+      "lng": 85.4268628
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6xBsb9ob6zkRRTRaaY1SzFY",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bda6f6c10eb:0x56cc528d695a3445",
+    "cid": "6254464749822161989",
+    "reviewsCount": 18,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible entrance": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Club%20Desparado%20Gym%20%26%20Zumba&query_place_id=ChIJ6xBsb9ob6zkRRTRaaY1SzFY",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 12,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lmTbctmTGQ4pOeyN7y1P3A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=333.19235&pitch=0&thumbfov=100",
+    "kgmid": "/g/11h0b4n2tm"
+  },
+  {
+    "title": "Grind'On Strength & Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCF5+8R6, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF5+8R6",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "website": "http://grindongym.com/",
+    "phone": "+977 981-8950290",
+    "phoneUnformatted": "+9779818950290",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6735146,
+      "lng": 85.409604
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4wbdmVob6zkRcL1UgXbUIww",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b5a99dd06e3:0xc23d4768154bd70",
+    "cid": "874776358081052016",
+    "reviewsCount": 192,
+    "imagesCount": 43,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Parking": [
+        {
+          "Free parking garage": true
+        },
+        {
+          "Free parking lot": true
+        },
+        {
+          "Free street parking": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Grind'On%20Strength%20%26%20Fitness&query_place_id=ChIJ4wbdmVob6zkRcL1UgXbUIww",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 15,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPKXE0SEbNXUkw4RezQZLcYz1YBdBtZaW_jE2rj=w408-h306-k-no",
+    "kgmid": "/g/11s4ym_mfd"
+  },
+  {
+    "title": "Flex Anytime Fitness",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC96+HX6, Araniko Highway, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MC96+HX6, Araniko Highway",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 976-2451443",
+    "phoneUnformatted": "+9779762451443",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 27.6687796,
+      "lng": 85.4124847
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJ_-ys4Mb6zkRGlCyaqhvV7s",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b83b3b2ff27:0xbb576fa86ab2501a",
+    "cid": "13499381177201610778",
+    "reviewsCount": 16,
+    "imagesCount": 18,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:36.882Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 to 8 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "5 AM to 8 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Online classes": false
+        }
+      ],
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ],
+      "Payments": [
+        {
+          "NFC mobile payments": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Flex%20Anytime%20Fitness&query_place_id=ChIJJ_-ys4Mb6zkRGlCyaqhvV7s",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 16,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzaYSwoWLGwWMc5Xn6qd0nOMgavVlQrv5-T-MJwINm3ioknH7QYA26Z-svZae3FWG1ZTPOSsqgURkpTUTxD2S16fO6WbElHFM_8ctOsfmQaYnTXcmeIQTgNAbXijGOq8rrekFBv=w426-h240-k-no",
+    "kgmid": "/g/11twfmhf0k"
+  },
+  {
+    "title": "Karunya Fitness Center",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCC5+GQ4, Bhaktapur 44800, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCC5+GQ4",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 986-0488608",
+    "phoneUnformatted": "+9779860488608",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6712576,
+      "lng": 85.4094636
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJL06fX18b6zkR2TaeEH-o7Ro",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b5f5f9f4e2f:0x1aeda87f109e36d9",
+    "cid": "1940392278159668953",
+    "reviewsCount": 12,
+    "imagesCount": 13,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:46.403Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 7 PM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Karunya%20Fitness%20Center&query_place_id=ChIJL06fX18b6zkR2TaeEH-o7Ro",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.660086377294068,85.4386817269883,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 18,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwRGAS1HFf6DMk_ldyPIKPx8anNHqvExl5Ze5jzLEgmJDUXV-dAPAcVhJbWNPcFBq6e6yrYWP-favdRosxLK-X0k4J_ee7doXlSw7ImEFoe1M9sMaWiEdFZLNtkOLiXNAKVYm3E7g=w408-h544-k-no",
+    "kgmid": "/g/11h3vgsr1j"
+  },
+  {
+    "title": "Open GYM Fitness - Srijana Nagar",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCF4+F6G, Srijananagar, Bhaktapur, Nepal",
+    "neighborhood": "SallaGhari",
+    "street": "MCF4+F6G, Srijananagar",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6736897,
+      "lng": 85.4055801
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJP9gFbwAb6zkReLwFTdxPCdw",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b006f05d83f:0xdc094fdc4d05bc78",
+    "cid": "15855291770738162808",
+    "reviewsCount": 3,
+    "imagesCount": 16,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:26:53.401Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Open%20GYM%20Fitness%20-%20Srijana%20Nagar&query_place_id=ChIJP9gFbwAb6zkReLwFTdxPCdw",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.667695459098024,85.40431827301171,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwX18EMR-CW3fWCHJ1UPiaSsp0clU-H9FaJG_eA1DGHPTA7t73Ni3yPzuMa6zEZobG6xzPggWXwvW03myue2zGmK4ZMyydBsNOocZyWdzdPIy7mOjrI_WDTItUet4htsOaC92t1uAsR3wOq=w408-h306-k-no",
+    "kgmid": "/g/11xlxtjcck"
+  },
+  {
+    "title": "Shakya home",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MC9F+5QQ, Barahisthan, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MC9F+5QQ, Barahisthan",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6679553,
+      "lng": 85.4244698
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTUF6wsIb6zkRCLIk4WwsQ0o",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bc2c27a414d:0x4a432c6ce124b208",
+    "cid": "5351169628391649800",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:22.145Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Shakya%20home&query_place_id=ChIJTUF6wsIb6zkRCLIk4WwsQ0o",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.667695459098024,85.42150000000001,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 9,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=YxQaBRxlJD2vsgiZ_bAxwg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=71.54707&pitch=0&thumbfov=100",
+    "kgmid": "/g/11k9tsjtcy"
+  },
+  {
+    "title": "Tripurasundari Gymnastics Hall",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCFJ+428, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFJ+428",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6727873,
+      "lng": 85.4300842
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJw5RNNK4a6zkRg2D0-Eao_ZQ",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1aae344d94c3:0x94fda846f8f46083",
+    "cid": "10735922109499072643",
+    "reviewsCount": 4,
+    "imagesCount": 20,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:33.678Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 to 9 AM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 to 9 AM"
+      }
+    ],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Tripurasundari%20Gymnastics%20Hall&query_place_id=ChIJw5RNNK4a6zkRg2D0-Eao_ZQ",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 4,
+    "isAdvertisement": false,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwl2gfXQ7m_24CZjyZ0sf_aLAp9qpcSdupiokKQX4IE3RNrWFLb5aVFPGOewneQEFyWRoyUZuMfstzxpUb8U7YPFGnnvDOFx_klbEk6bfQPcH8f9s8XZcPv8cbBdkpYL7z8hzlf=w408-h306-k-no",
+    "kgmid": "/g/1hf1p4lr3"
+  },
+  {
+    "title": "Ajima dahi vandar",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCFH+R7C, The tourist bus park, 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCFH+R7C, The tourist bus park",
+    "city": "Bhaktapur",
+    "postalCode": "44800",
+    "state": null,
+    "countryCode": "NP",
+    "phone": "+977 1-6616543",
+    "phoneUnformatted": "+97716616543",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6745571,
+      "lng": 85.4281363
+    },
+    "totalScore": 3.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDY-_17ob6zkR4ts2TZXjNQs",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1bbad7bf8f0d:0xb35e3954d36dbe2",
+    "cid": "807801938567945186",
+    "reviewsCount": 3,
+    "imagesCount": 2,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:33.678Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ajima%20dahi%20vandar&query_place_id=ChIJDY-_17ob6zkR4ts2TZXjNQs",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 5,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=q-lGvc7XihL4sZ755xST7Q&cb_client=search.gws-prod.gps&w=408&h=240&yaw=357.49777&pitch=0&thumbfov=100",
+    "kgmid": "/g/11q7plrwws"
+  },
+  {
+    "title": "Ittachhen",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "MCCF+RR9, Bhaktapur 44800, Nepal",
+    "neighborhood": null,
+    "street": "MCCF+RR9",
+    "city": "Bhaktapur",
+    "postalCode": null,
+    "state": null,
+    "countryCode": "NP",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 27.6720418,
+      "lng": 85.4246034
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYaoeXnMb6zkRRnQDgzjPFj0",
+    "categories": [
+      "Gym"
+    ],
+    "fid": "0x39eb1b735e1eaa61:0x3d16cf3883037446",
+    "cid": "4401933527424398406",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "imageCategories": [],
+    "scrapedAt": "2025-11-14T08:27:33.678Z",
+    "googleFoodUrl": null,
+    "hotelAds": [],
+    "openingHours": [],
+    "peopleAlsoSearch": [],
+    "placesTags": [],
+    "reviewsTags": [],
+    "additionalInfo": {
+      "Amenities": [
+        {
+          "Restroom": true
+        }
+      ]
+    },
+    "gasPrices": [],
+    "url": "https://www.google.com/maps/search/?api=1&query=Ittachhen&query_place_id=ChIJYaoeXnMb6zkRRnQDgzjPFj0",
+    "searchPageUrl": "https://www.google.com/maps/search/gym/@27.67530454090198,85.43009086349416,17z?hl=en",
+    "searchString": "gym",
+    "language": "en",
+    "rank": 11,
+    "isAdvertisement": false,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8uU4Du8-vz0yEu07GIGdwQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=63.268936&pitch=0&thumbfov=100",
+    "kgmid": "/g/11l34bbhpw"
+  }
+]
