@@ -37,3 +37,6 @@ coverage/
 
 **/CSV/**
 **/poi_paths_.*/
+**cache/
+
+**/mod_*/
