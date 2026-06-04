@@ -2,7 +2,7 @@
 
 SiteX is a data-driven site suitability analysis project. The current implementation focuses on **franchised cafés / coffee shops**, providing:
 
-- A **FastAPI** backend that can (a) flatten raw cafe place JSON into a clean tabular shape and (b) **predict a suitability score** for a latitude/longitude using a trained XGBoost model + local feature estimation.
+- A **FastAPI** backend that can (a) flatten raw cafe place JSON into a clean tabular shape and (b) **predict a suitability score** for a latitude/longitude. The project is currently transitioning from a baseline XGBoost model with local feature estimation to a **Heterogeneous Graph Neural Network (HeteroGNN)** leveraging spatial road networks and POI graphs.
 - A **React + TypeScript + Vite** frontend that lets you pick a location and view a result page with a map, nearby POIs (from packaged CSVs), and the predicted score.
 
 ## Repository layout
@@ -19,7 +19,7 @@ SiteX is a data-driven site suitability analysis project. The current implementa
 
 ## Tech stack
 
-- Backend: FastAPI, Uvicorn, Pandas, scikit-learn, XGBoost, SciPy, joblib
+- Backend: FastAPI, Uvicorn, Pandas, scikit-learn, XGBoost (baseline), PyTorch / PyTorch Geometric (for HeteroGNN), NetworkX, SciPy, joblib
 - Frontend: React, TypeScript, Vite, Tailwind, Leaflet (react-leaflet)
 
 ## Quickstart (local development)
@@ -147,9 +147,9 @@ If you enable it (uncomment the router include), it exposes:
 
 ## Model & data
 
-The prediction service loads resources relative to the backend folder:
+The project is actively shifting from a tabular k-NN + XGBoost approach to a graph-based HeteroGNN approach (see `backend/app/lib/gnn/`). Currently, the prediction service still loads baseline resources relative to the backend folder:
 
-- Model: [backend/models/xgb_baseline.pkl](backend/models/) (required)
+- Model: [backend/models/xgb_baseline.pkl](backend/models/) (baseline required)
 - Feature list (optional but recommended): [backend/models/model_features.pkl](backend/models/model_features.pkl)
 - Reference CSV used for local k-NN feature estimation:
   - [backend/Data/CSV/final/master_cafes_minimal.csv](backend/Data/CSV/final/master_cafes_minimal.csv)
@@ -185,9 +185,10 @@ By default, this writes outputs into:
 
 By default, per-cafe files are generated for merging and then removed; add `--keep-per-cafe` to preserve them.
 
-## Training / notebooks
+## Training, Notebooks, & Architecture
 
-- Model training notebook: [backend/notebooks/train_xgb.ipynb](backend/notebooks/train_xgb.ipynb)
+- **Baseline Training**: [backend/notebooks/train_xgb.ipynb](backend/notebooks/train_xgb.ipynb)
+- **HeteroGNN Transition**: The project is being upgraded to use Graph Neural Networks. The new graph construction and feature engineering logic can be found in [backend/app/lib/gnn/](backend/app/lib/gnn/). This architecture replaces simple distance-based features with rich topological representations of roads and POIs.
 
 ## Troubleshooting
 
