@@ -26,6 +26,8 @@ class GNNPredictionService:
         self.model = None
         self.data = None
         self.kdtree = None
+        self.road_graph = None
+        self.road_nodes_list = None
         self.hidden_dim = 64
         
         self._load_resources()
@@ -39,6 +41,25 @@ class GNNPredictionService:
     def _load_resources(self):
         graph_path = self.ml_dir / "hetero_graph.pt"
         model_path = self.ml_dir / "best_hetero_gnn.pth"
+        mappings_path = self.ml_dir / "hetero_graph_mappings.pt"
+        
+        self.idx_to_cat = {}
+        self.idx_to_place_id = {}
+        if mappings_path.exists():
+            mappings = torch.load(mappings_path, map_location='cpu', weights_only=False)
+            if 'cat_to_idx' in mappings:
+                self.idx_to_cat = {v: k for k, v in mappings['cat_to_idx'].items()}
+            if 'place_id_to_idx' in mappings:
+                self.idx_to_place_id = {v: k for k, v in mappings['place_id_to_idx'].items()}
+        
+        import pickle
+        road_pkl_path = self.backend_root / "DataEngineering" / "road_graph_cache_osmnx_osmnx_valley.pkl"
+        if road_pkl_path.exists():
+            print(f"Loading road pkl file from {road_pkl_path} for logging...")
+            with open(road_pkl_path, "rb") as f:
+                self.road_graph = pickle.load(f)
+                self.road_nodes_list = list(self.road_graph.nodes(data=True))
+                print(f"Loaded road graph for logging with {len(self.road_nodes_list)} nodes.")
         
         if not graph_path.exists():
             print(f"Warning: Graph not found at {graph_path}")
@@ -119,6 +140,24 @@ class GNNPredictionService:
         if self.kdtree is not None:
             distances, indices = self.kdtree.query([[lat, lng]], k=3)
             
+            # --- LOGGING ROAD NEIGHBORS ---
+            if self.road_graph is not None and self.road_nodes_list is not None:
+                print(f"\n[{lat:.6f}, {lng:.6f}] Connecting to {len(indices[0])} nearest road nodes:")
+                for i, r_idx in enumerate(indices[0]):
+                    node_id, node_data = self.road_nodes_list[r_idx]
+                    street_count = node_data.get('street_count', 0)
+                    connected_edges = list(self.road_graph.edges(node_id, data=True))
+                    highway_types = set()
+                    for u, v, e_data in connected_edges:
+                        hw = e_data.get('highway', 'unknown')
+                        if isinstance(hw, list):
+                            highway_types.update(hw)
+                        else:
+                            highway_types.add(hw)
+                    dist_deg = distances[0][i]
+                    print(f"  -> Road Node {i+1}: Intersections: {street_count}, Distance: {dist_deg:.5f} deg, Types: {', '.join(highway_types)}")
+            # ------------------------------
+            
             place_idx_list = [new_place_idx, new_place_idx, new_place_idx]
             road_idx_list = indices[0].tolist()
             
@@ -140,17 +179,34 @@ class GNNPredictionService:
         place_lngs = (place_x_np[:, 1] * 0.1) + 85.3
         place_coords_np = np.column_stack((place_lats, place_lngs))
         place_kdtree = cKDTree(place_coords_np)
-        _, nearest_place_indices = place_kdtree.query([[lat, lng]], k=5)
+        distances_place, nearest_place_indices = place_kdtree.query([[lat, lng]], k=5)
         nearest_place_indices = nearest_place_indices[0].tolist()
         
         # Find all categories connected to these nearby places
         edge_src = orig_place_cat_edges[0]  # place indices
         edge_dst = orig_place_cat_edges[1]  # category indices
-        nearby_cats = []
-        for pi in nearest_place_indices:
+        
+        print(f"\n[{lat:.6f}, {lng:.6f}] Connecting to 5 nearest place nodes:")
+        nearby_cats_all = []
+        for i, pi in enumerate(nearest_place_indices):
             mask = (edge_src == pi)
-            nearby_cats.extend(edge_dst[mask].tolist())
-        nearby_cats = list(set(nearby_cats))[:5]  # unique, up to 5
+            cats_for_place = edge_dst[mask].tolist()
+            nearby_cats_all.extend(cats_for_place)
+            
+            p_lat = place_lats[pi]
+            p_lng = place_lngs[pi]
+            dist_deg = distances_place[0][i]
+            
+            place_id = self.idx_to_place_id.get(pi, f"Unknown_{pi}")
+            cat_names = [self.idx_to_cat.get(c, str(c)) for c in cats_for_place]
+            
+            print(f"  -> Place Node {i+1} (ID: {place_id}) at [{p_lat:.5f}, {p_lng:.5f}]:")
+            print(f"       Distance: {dist_deg:.5f} deg")
+            print(f"       Categories ({len(cat_names)}): {', '.join(cat_names)}")
+            
+        nearby_cats = list(set(nearby_cats_all))[:5]  # unique, up to 5
+        inherited_cat_names = [self.idx_to_cat.get(c, str(c)) for c in nearby_cats]
+        print(f"  => Inheriting {len(nearby_cats)} unique categories: {', '.join(inherited_cat_names)}\n")
         
         if nearby_cats:
             new_place_cat_src = [new_place_idx] * len(nearby_cats)
