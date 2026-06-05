@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
-from app.services.prediction_service import PredictionService
+from app.services.gnn_prediction_service import GNNPredictionService
 
 router = APIRouter()
 
@@ -25,9 +25,9 @@ class PredictionResponse(BaseModel):
 @router.post("/predict/", response_model=PredictionResponse)
 def predict_score(request: PredictionRequest):
     """
-    Predict success scores for multiple new cafe locations.
+    Predict success scores for multiple new cafe locations using GNN.
     """
-    service = PredictionService.get_instance()
+    service = GNNPredictionService.get_instance()
     results = []
     errors = []
     for loc in request.locations:
