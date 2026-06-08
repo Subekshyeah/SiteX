@@ -254,7 +254,8 @@ export default function ResultPage() {
     const getPredictionDisplayScore = (score?: number | null) => {
         const raw = Number(score);
         if (!Number.isFinite(raw)) return null;
-        return Math.max(0, Math.min(raw * 25, PREDICTION_DISPLAY_MAX));
+        // API returns scores in 0–100 range directly — no scaling needed
+        return Math.max(0, Math.min(raw, PREDICTION_DISPLAY_MAX));
     };
 
     const rentIndexes = useMemo(() => {

@@ -11,5 +11,9 @@ networkx
 requests
 osmnx
 geopandas
-osmnx
-geopandas
+nltk
+textblob
+python-dotenv
+torch
+torch_geometric
+matplotlib
