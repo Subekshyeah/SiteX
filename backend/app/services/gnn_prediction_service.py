@@ -138,12 +138,20 @@ class GNNPredictionService:
         orig_rev_place_cat_edges = self.data['category', 'rev_has_category', 'place'].edge_index
         
         if self.kdtree is not None:
-            distances, indices = self.kdtree.query([[lat, lng]], k=3)
+            distances, indices = self.kdtree.query([[lat, lng]], k=100)
+            
+            MAX_ROAD_DIST_DEG = 0.005
+            valid_mask = distances[0] <= MAX_ROAD_DIST_DEG
+            valid_indices = indices[0][valid_mask]
+            valid_dists = distances[0][valid_mask]
+            if len(valid_indices) == 0:
+                valid_indices = [indices[0][0]]
+                valid_dists = [distances[0][0]]
             
             # --- LOGGING ROAD NEIGHBORS ---
             if self.road_graph is not None and self.road_nodes_list is not None:
-                print(f"\n[{lat:.6f}, {lng:.6f}] Connecting to {len(indices[0])} nearest road nodes:")
-                for i, r_idx in enumerate(indices[0]):
+                print(f"\n[{lat:.6f}, {lng:.6f}] Connecting to {len(valid_indices)} nearest road nodes (dist <= {MAX_ROAD_DIST_DEG}):")
+                for i, r_idx in enumerate(valid_indices):
                     node_id, node_data = self.road_nodes_list[r_idx]
                     street_count = node_data.get('street_count', 0)
                     connected_edges = list(self.road_graph.edges(node_id, data=True))
@@ -154,12 +162,12 @@ class GNNPredictionService:
                             highway_types.update(hw)
                         else:
                             highway_types.add(hw)
-                    dist_deg = distances[0][i]
+                    dist_deg = valid_dists[i]
                     print(f"  -> Road Node {i+1}: Intersections: {street_count}, Distance: {dist_deg:.5f} deg, Types: {', '.join(highway_types)}")
             # ------------------------------
             
-            place_idx_list = [new_place_idx, new_place_idx, new_place_idx]
-            road_idx_list = indices[0].tolist()
+            place_idx_list = [new_place_idx] * len(valid_indices)
+            road_idx_list = valid_indices.tolist() if hasattr(valid_indices, 'tolist') else list(valid_indices)
             
             new_edges = torch.tensor([place_idx_list, road_idx_list], dtype=torch.long).to(self.device)
             
@@ -179,14 +187,24 @@ class GNNPredictionService:
         place_lngs = (place_x_np[:, 1] * 0.1) + 85.3
         place_coords_np = np.column_stack((place_lats, place_lngs))
         place_kdtree = cKDTree(place_coords_np)
-        distances_place, nearest_place_indices = place_kdtree.query([[lat, lng]], k=5)
-        nearest_place_indices = nearest_place_indices[0].tolist()
+        distances_place, nearest_place_indices = place_kdtree.query([[lat, lng]], k=100)
+        
+        MAX_PLACE_DIST_DEG = 0.01
+        valid_place_mask = distances_place[0] <= MAX_PLACE_DIST_DEG
+        valid_place_indices = nearest_place_indices[0][valid_place_mask]
+        valid_place_dists = distances_place[0][valid_place_mask]
+        if len(valid_place_indices) == 0:
+            valid_place_indices = [nearest_place_indices[0][0]]
+            valid_place_dists = [distances_place[0][0]]
+            
+        nearest_place_indices = valid_place_indices.tolist() if hasattr(valid_place_indices, 'tolist') else list(valid_place_indices)
+        valid_place_dists = valid_place_dists.tolist() if hasattr(valid_place_dists, 'tolist') else list(valid_place_dists)
         
         # Find all categories connected to these nearby places
         edge_src = orig_place_cat_edges[0]  # place indices
         edge_dst = orig_place_cat_edges[1]  # category indices
         
-        print(f"\n[{lat:.6f}, {lng:.6f}] Connecting to 5 nearest place nodes:")
+        print(f"\n[{lat:.6f}, {lng:.6f}] Connecting to {len(nearest_place_indices)} nearest place nodes (dist <= {MAX_PLACE_DIST_DEG}):")
         nearby_cats_all = []
         for i, pi in enumerate(nearest_place_indices):
             mask = (edge_src == pi)
@@ -195,7 +213,7 @@ class GNNPredictionService:
             
             p_lat = place_lats[pi]
             p_lng = place_lngs[pi]
-            dist_deg = distances_place[0][i]
+            dist_deg = valid_place_dists[i]
             
             place_id = self.idx_to_place_id.get(pi, f"Unknown_{pi}")
             cat_names = [self.idx_to_cat.get(c, str(c)) for c in cats_for_place]
@@ -204,7 +222,7 @@ class GNNPredictionService:
             print(f"       Distance: {dist_deg:.5f} deg")
             print(f"       Categories ({len(cat_names)}): {', '.join(cat_names)}")
             
-        nearby_cats = list(set(nearby_cats_all))[:5]  # unique, up to 5
+        nearby_cats = list(set(nearby_cats_all))[:20]  # unique, up to 20
         inherited_cat_names = [self.idx_to_cat.get(c, str(c)) for c in nearby_cats]
         print(f"  => Inheriting {len(nearby_cats)} unique categories: {', '.join(inherited_cat_names)}\n")
         

@@ -131,3 +131,5 @@ poi_paths_geojson_*
 
 **.db
 **.db**
+MachineLearning/
+mod_spatialite-5.1.0-win-amd64/
